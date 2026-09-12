@@ -1,0 +1,22 @@
+{
+  "stage": 1,
+  "simplemma_version": "2.0.0",
+  "fingerprint": {
+    "lines": 118469705,
+    "tokens": 623911554,
+    "types": 960588
+  },
+  "bigram_pairs": 8796010,
+  "context_types": 60000,
+  "lemmatized_types": 960588,
+  "mwes_retained": 1911,
+  "bp_excluded": 16,
+  "proper_nouns_dropped": 260487,
+  "entries": 10000,
+  "suspects": 1109,
+  "gold": {
+    "simplemma": 0.9075,
+    "spacy": NaN
+  },
+  "elapsed_s": 23.6
+}

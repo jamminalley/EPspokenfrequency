@@ -58,5 +58,6 @@ ENV/
 # Pipeline intermediates (pass-1/pass-2 caches)
 .cache/
 
-# Rebuild outputs (uncomment to keep them out of git)
-# out_rebuild*/
+# Dev-run outputs from --sample N. The full rebuild in out_rebuild/ is
+# committed; sample runs are throwaway.
+out_rebuild_sample*/

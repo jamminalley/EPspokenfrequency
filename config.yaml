@@ -89,6 +89,11 @@ bigrams:
   min_constituent_count: 100
   min_g2: 2500.0
   min_collocation_share: 0.05
+  # "collocation share >= 5%" in the README does not say share of what.
+  # min  -> count / min(count(left), count(right))   most permissive
+  # max  -> count / max(count(left), count(right))   most restrictive
+  # See COMPARISON.md for the sweep that settled this.
+  collocation_share_denominator: max
   # Deterministic memory control: at fixed chunk boundaries, drop pairs
   # seen fewer than prune_min_count times. Safe because min_g2 requires
   # counts in the thousands.
@@ -105,9 +110,20 @@ filters:
      "vocês", "xícara", "ônibus"]
   proper_nouns:
     enabled: true
-    # OOV heuristic: not in the PT dictionary, and not lemmatized to a
-    # known lemma. Reconstructed against out/dropped_proper_nouns.txt.
-    require_oov: true
+    # The original's OOV heuristic was lost and cannot be recovered from
+    # out/: 14% of what it dropped IS in the PT dictionary (jack, mary) and
+    # 845 lemmas it kept are not (including leaked names -- charlie, joe,
+    # bob -- and legitimate pre-1990 EP spellings: óptimo, exactamente,
+    # direcção). So this is a defensible reconstruction, not a replica, and
+    # COMPARISON.md reports how far it agrees with the original's log.
+    require_oov: true          # must be absent from the PT dictionary
+    # Share of non-line-initial occurrences that are capitalized. Names sit
+    # near 1.0 (john 1.00, maria 1.00); common nouns near 0 (casa 0.03).
+    cap_ratio_threshold: 0.90
+    # Stage 2 (fixes.extended_proper_nouns) relaxes the dictionary
+    # requirement so that capitalization alone can catch a name the
+    # dictionary happens to contain, such as `cristina`.
+    stage2_cap_ratio_threshold: 0.85
     min_count: 1
 
 # Stage 2 fixes. Each is independently switchable so its effect on the

@@ -1,0 +1,191 @@
+"""Step 5: rank, normalize, and write every output file.
+
+README: "Top 5000 entries by raw lemma count, output as TSV and CSV" (the
+published set actually runs to 10,000 across two bands).
+
+Columns, exactly as the original: rank, lemma, is_mwe, pos_guess, raw_freq,
+freq_per_million.  The per-million figure is round(raw / total_tokens * 1e6,
+3), which reproduces all 10,000 original rows exactly.
+
+MWEs are an overlay: a multi-word entry's raw_freq is its bigram count and
+is NOT subtracted from its constituents' lemma counts, per the original and
+the usual frequency-list convention.
+"""
+
+from __future__ import annotations
+
+import csv
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any, Iterable, Mapping, Sequence
+
+
+@dataclass(frozen=True)
+class Entry:
+    rank: int
+    lemma: str
+    is_mwe: bool
+    pos_guess: str
+    raw_freq: int
+    freq_per_million: float
+
+    def row(self) -> list[str]:
+        return [
+            str(self.rank),
+            self.lemma,
+            "1" if self.is_mwe else "0",
+            self.pos_guess,
+            str(self.raw_freq),
+            f"{self.freq_per_million:.3f}",
+        ]
+
+
+HEADER = ["rank", "lemma", "is_mwe", "pos_guess", "raw_freq", "freq_per_million"]
+
+
+def band_label(rank: int, size: int) -> str:
+    """Anki band label for a rank: rank 1 size 500 -> '0001-0500'."""
+    lo = ((rank - 1) // size) * size + 1
+    return f"{lo:04d}-{lo + size - 1:04d}"
+
+
+def build_tags(rank: int, pos: str, cfg: dict[str, Any]) -> str:
+    """Tag string for one Anki note, in the original's field order."""
+    tcfg = cfg["output"]["anki"]["tags"]
+    b500 = band_label(rank, tcfg["band500"])
+    b1000 = band_label(rank, tcfg["band1000"])
+    return " ".join(
+        [f"freq::{b500}", f"freq500::{b500}", f"freq1000::{b1000}", f"pos::{pos}"]
+        + list(tcfg["static"])
+    )
+
+
+def rank_entries(
+    lemma_counts: Mapping[str, int],
+    mwes: Sequence[Mapping[str, Any]],
+    total_tokens: int,
+    tagger,
+    limit: int,
+) -> list[Entry]:
+    """Merge single lemmas and MWEs into one ranked list.
+
+    Ordering is count desc then lemma ascending, so ties are broken
+    deterministically rather than by dict insertion order.
+    """
+    combined: list[tuple[str, int, bool]] = [
+        (lemma, count, False) for lemma, count in lemma_counts.items()
+    ]
+    combined += [(m["mwe"], int(m["raw_freq"]), True) for m in mwes]
+    combined.sort(key=lambda t: (-t[1], t[0]))
+
+    out: list[Entry] = []
+    for i, (lemma, count, is_mwe) in enumerate(combined[:limit], start=1):
+        out.append(
+            Entry(
+                rank=i,
+                lemma=lemma,
+                is_mwe=is_mwe,
+                pos_guess=tagger.tag(lemma, is_mwe=is_mwe),
+                raw_freq=count,
+                freq_per_million=round(count / total_tokens * 1e6, 3),
+            )
+        )
+    return out
+
+
+def _write_delimited(path: Path, rows: Iterable[Sequence[str]], delimiter: str) -> None:
+    with path.open("w", encoding="utf-8", newline="") as fh:
+        writer = csv.writer(fh, delimiter=delimiter, lineterminator="\n")
+        for row in rows:
+            writer.writerow(row)
+
+
+def write_band(entries: Sequence[Entry], spec: Mapping[str, Any], out_dir: Path, cfg) -> None:
+    rows = [HEADER] + [e.row() for e in entries]
+    _write_delimited(out_dir / f"{spec['stem']}.tsv", rows, "\t")
+    _write_delimited(out_dir / f"{spec['stem']}.csv", rows, ",")
+    write_anki(entries, spec, out_dir, cfg, enrichable=False)
+    write_anki(entries, spec, out_dir, cfg, enrichable=True)
+
+
+def write_anki(
+    entries: Sequence[Entry],
+    spec: Mapping[str, Any],
+    out_dir: Path,
+    cfg: dict[str, Any],
+    enrichable: bool,
+) -> None:
+    """Write an Anki import file.
+
+    The header directives are reproduced exactly as in the original files so
+    that an existing import, note type and deck keep working: separator,
+    html, notetype, deck, columns, tags column.
+    """
+    acfg = cfg["output"]["anki"]
+    columns = acfg["enrichable_columns"] if enrichable else acfg["minimal_columns"]
+    kind = "enrichable" if enrichable else "minimal"
+    path = out_dir / f"{spec['anki_stem']}_anki_{kind}.tsv"
+
+    with path.open("w", encoding="utf-8", newline="") as fh:
+        fh.write(f"#separator:{acfg['separator']}\n")
+        fh.write(f"#html:{str(acfg['html']).lower()}\n")
+        fh.write(f"#notetype:{acfg['notetype']}\n")
+        fh.write(f"#deck:{spec['deck']}\n")
+        fh.write("#columns:" + "\t".join(columns) + "\n")
+        fh.write(f"#tags column:{len(columns)}\n")
+        writer = csv.writer(fh, delimiter="\t", lineterminator="\n")
+        for e in entries:
+            tags = build_tags(e.rank, e.pos_guess, cfg)
+            if enrichable:
+                writer.writerow(
+                    [e.rank, e.lemma, e.pos_guess, "", "", "",
+                     "1" if e.is_mwe else "0", e.raw_freq,
+                     f"{e.freq_per_million:.3f}", tags]
+                )
+            else:
+                writer.writerow(
+                    [e.rank, e.lemma, e.pos_guess, "1" if e.is_mwe else "0",
+                     e.raw_freq, f"{e.freq_per_million:.3f}", tags]
+                )
+
+
+def write_all(entries: Sequence[Entry], cfg: dict[str, Any], out_dir: Path) -> list[Path]:
+    """Write every band plus the QC sample.  Returns the paths written."""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    written: list[Path] = []
+    by_rank = {e.rank: e for e in entries}
+
+    for (lo, hi), spec in zip(cfg["output"]["bands"], cfg["output"]["files"]):
+        band = [by_rank[r] for r in range(lo, hi + 1) if r in by_rank]
+        write_band(band, spec, out_dir, cfg)
+        written += [
+            out_dir / f"{spec['stem']}.tsv",
+            out_dir / f"{spec['stem']}.csv",
+            out_dir / f"{spec['anki_stem']}_anki_minimal.tsv",
+            out_dir / f"{spec['anki_stem']}_anki_enrichable.tsv",
+        ]
+
+    # QC sample: a fixed stride through the first band, as in the original.
+    first_lo, first_hi = cfg["output"]["bands"][0]
+    stride = max((first_hi - first_lo + 1) // 60, 1)
+    sample = [by_rank[r] for r in range(first_lo, first_hi + 1, stride) if r in by_rank]
+    qc = out_dir / cfg["output"]["qc_sample"]
+    _write_delimited(qc, [HEADER] + [e.row() for e in sample], ",")
+    written.append(qc)
+    return written
+
+
+def write_dropped(log, cfg: dict[str, Any], out_dir: Path) -> Path:
+    """Everything the filters removed, with the reason."""
+    path = out_dir / cfg["output"]["dropped_proper_nouns"]
+    with path.open("w", encoding="utf-8", newline="\n") as fh:
+        fh.write("# Lemmas filtered out by the proper-noun/OOV heuristic.\n")
+        fh.write("# Sorted desc by raw count -- review to rescue any false positives.\n")
+        fh.write("# count\tlemma\tcap_ratio\treason\n")
+        for lemma, count, ratio, reason in log.proper_nouns:
+            fh.write(f"{count}\t{lemma}\t{ratio:.3f}\t{reason}\n")
+        if log.bp_excluded:
+            fh.write("#\n# BP-leaning lemmas excluded by the exclusion list:\n")
+            for lemma, reason in log.bp_excluded:
+                fh.write(f"#\t{lemma}\t{reason}\n")
+    return path
