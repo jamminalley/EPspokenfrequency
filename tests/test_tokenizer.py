@@ -33,7 +33,7 @@ class TestBasicTokenization:
 
 class TestArtifactStripping:
     def test_html_italics(self, tok):
-        assert tok.tokenize("<i>Dá-me isso</i>") == ["dá", "me", "isso"]
+        assert tok.tokenize("<i>Olá isso</i>") == ["olá", "isso"]
 
     def test_leading_dialogue_dash(self, tok):
         assert tok.tokenize("- Não, minha senhora.") == ["não", "minha", "senhora"]
@@ -52,6 +52,9 @@ class TestArtifactStripping:
 
 
 class TestEncliticSplitting:
+    """Splitting is off in the stage 1 baseline; these exercise the splitter
+    itself, which stage 2 can enable."""
+
     @pytest.mark.parametrize(
         "word,expected",
         [
@@ -62,36 +65,40 @@ class TestEncliticSplitting:
             ("deram-lhes", ["deram", "lhes"]),
         ],
     )
-    def test_true_enclitics_split(self, tok, word, expected):
-        assert tok.split_enclitic(word) == expected
+    def test_true_enclitics_split(self, tok_split, word, expected):
+        assert tok_split.split_enclitic(word) == expected
 
     @pytest.mark.parametrize(
         "word",
         ["guarda-chuva", "arco-íris", "bem-te-vi", "porta-a-porta", "não-sei-quê"],
     )
-    def test_compounds_left_whole(self, tok, word):
+    def test_compounds_left_whole(self, tok_split, word):
         """A hyphenated compound whose tail is not a clitic must survive
         intact -- splitting these would invent spurious types."""
-        assert tok.split_enclitic(word) == [word]
+        assert tok_split.split_enclitic(word) == [word]
 
     @pytest.mark.parametrize(
         "word,expected",
         [("dar-lhe-ia", ["dar", "lhe", "ia"]), ("far-se-ia", ["far", "se", "ia"])],
     )
-    def test_mesoclisis(self, tok, word, expected):
+    def test_mesoclisis(self, tok_split, word, expected):
         """The tense infix sits right of the clitic; both come off."""
-        assert tok.split_enclitic(word) == expected
+        assert tok_split.split_enclitic(word) == expected
 
-    def test_longest_clitic_wins(self, tok):
+    def test_longest_clitic_wins(self, tok_split):
         """`lhes` must not be read as `lhe` + stray `s`."""
-        assert tok.split_enclitic("deu-lhes") == ["deu", "lhes"]
+        assert tok_split.split_enclitic("deu-lhes") == ["deu", "lhes"]
 
-    def test_no_hyphen_is_identity(self, tok):
-        assert tok.split_enclitic("casa") == ["casa"]
+    def test_no_hyphen_is_identity(self, tok_split):
+        assert tok_split.split_enclitic("casa") == ["casa"]
 
-    def test_disabling_splitting_keeps_cluster(self, cfg):
-        off = dict(cfg["tokenizer"], split_enclitics=False)
-        assert Tokenizer(off).tokenize("dá-me isso") == ["dá-me", "isso"]
+    def test_enabling_splitting_splits_in_tokenize(self, tok_split):
+        assert tok_split.tokenize("dá-me isso") == ["dá", "me", "isso"]
+
+    def test_baseline_config_keeps_clusters_whole(self, tok):
+        """Stage 1 fidelity guard: the shipped config must not split, or the
+        token total stops matching the original build."""
+        assert tok.tokenize("dá-me isso") == ["dá-me", "isso"]
 
 
 class TestDiacritics:

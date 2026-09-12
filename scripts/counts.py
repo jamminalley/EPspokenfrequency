@@ -232,7 +232,25 @@ if __name__ == "__main__":  # calibration entry point
     ap.add_argument("--sample", type=int, default=None, help="read only the first N lines")
     ap.add_argument("--workers", type=int, default=None)
     ap.add_argument("--top", type=int, default=0, help="print the N most common types")
+    ap.add_argument(
+        "--set",
+        action="append",
+        default=[],
+        metavar="PATH=VALUE",
+        help="override a dotted config path, e.g. --set tokenizer.split_enclitics=false",
+    )
     args = ap.parse_args()
+
+    def _coerce(text: str) -> Any:
+        low = text.lower()
+        if low in ("true", "false"):
+            return low == "true"
+        if low in ("null", "none"):
+            return None
+        try:
+            return int(text)
+        except ValueError:
+            return text
 
     cfg = config_mod.load(args.config)
     overrides: dict[str, Any] = {}
@@ -240,6 +258,9 @@ if __name__ == "__main__":  # calibration entry point
         overrides["run.sample_lines"] = args.sample
     if args.workers is not None:
         overrides["run.workers"] = args.workers
+    for item in args.set:
+        path, _, raw = item.partition("=")
+        overrides[path] = _coerce(raw)
     if overrides:
         cfg = config_mod.with_overrides(cfg, overrides)
 

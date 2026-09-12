@@ -25,3 +25,14 @@ def cfg() -> dict:
 @pytest.fixture(scope="session")
 def tok(cfg) -> Tokenizer:
     return Tokenizer(cfg["tokenizer"])
+
+
+@pytest.fixture(scope="session")
+def tok_split(cfg) -> Tokenizer:
+    """Tokenizer with enclitic splitting forced on.
+
+    The stage 1 baseline runs with splitting OFF, because the original
+    pipeline did not split despite its README saying so.  The splitter is
+    still shipped for stage 2, so it still needs testing.
+    """
+    return Tokenizer(dict(cfg["tokenizer"], split_enclitics=True))

@@ -52,7 +52,15 @@ tokenizer:
     - '\(([^)]{1,60})\)'        # (whispering)
     - '[♪♫♩ᴖ0]'  # musical notes
     - '^\s*-+\s*'               # leading dialogue dash
-  split_enclitics: true
+  # FALSE for the stage 1 baseline, despite the original README claiming
+  # "enclitic-cluster splitting" in step 1.  The published outputs prove no
+  # splitting happened: out/ contains unsplit clusters (`vai-te embora`,
+  # `vou-me embora`, `levem-no` at rank 3492, `hei-de`, `há-de`), which
+  # could not exist as tokens if clusters had been split.  Disabling it
+  # reproduces the published token total to within 0.0014% (623,911,554 vs
+  # 623,920,347) where splitting overshoots by 2.04%.
+  # The splitter is implemented and tested; stage 2 can enable it.
+  split_enclitics: false
   # Clitic pronouns that may attach after a hyphen. Longest-first matching.
   # Quoted: YAML 1.1 would otherwise read `no` as boolean false.
   enclitics: ["lhes", "lhe", "nos", "vos", "los", "las", "lo", "la",
@@ -115,6 +123,9 @@ fixes:
   # are ser or ir depending on context) by majority vote over the sampled
   # sentence contexts collected in pass 2.
   ambiguous_by_context: false
+  # Enable the enclitic splitter the original README described but did not
+  # apply.  Changes the token inventory substantially -- off until reviewed.
+  split_enclitics: false
   ambiguous_forms:
     ["foi", "fui", "fomos", "foram", "fora", "era", "eram", "for"]
   mwe_constituent_whitelist: [d, c, s, p, q, n, dr, sr, sra]
