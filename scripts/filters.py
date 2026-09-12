@@ -110,12 +110,20 @@ def fold_diacritics(
 ) -> tuple[dict[str, int], list[tuple[str, str, int]]]:
     """Stage 2 fix (a): fold an unaccented form into its accented twin.
 
-    Three conditions, all required:
+    Four conditions, all required:
       1. the form has no diacritics;
       2. it is NOT itself a valid PT word -- this is what keeps the real
          minimal pairs apart (e/é, da/dá, esta/está, so/só are distinct
          words and must never be merged);
-      3. an accented variant actually occurs in the corpus.
+      3. an accented variant actually occurs in the corpus;
+      4. that variant is at least ``min_target_ratio`` times as frequent as
+         the form being folded.
+
+    Condition 4 is not optional.  Without it the rule folded `exactamente`
+    (120,806 occurrences, the correct pre-1990 EP spelling, which the PT
+    dictionary does not contain) into `exactámente` (1 occurrence, a typo),
+    and relabelled a rank-496 entry with the misspelling.  A fold must move
+    counts towards the commoner form, never away from it.
 
     Returns the folded counts and a log of (from, into, count).
     """
@@ -128,6 +136,7 @@ def fold_diacritics(
         if strip_diacritics(word) != word:
             by_folded.setdefault(strip_diacritics(word), []).append(word)
 
+    ratio = cfg["fixes"].get("diacritic_fold_min_target_ratio", 1.0)
     folded: dict[str, int] = {}
     log: list[tuple[str, str, int]] = []
     for word, count in counts.items():
@@ -136,9 +145,10 @@ def fold_diacritics(
             if candidates:
                 # Most frequent accented variant wins; ties lexicographic.
                 target = sorted(candidates, key=lambda w: (-counts[w], w))[0]
-                folded[target] = folded.get(target, 0) + count
-                log.append((word, target, count))
-                continue
+                if counts[target] >= count * ratio:
+                    folded[target] = folded.get(target, 0) + count
+                    log.append((word, target, count))
+                    continue
         folded[word] = folded.get(word, 0) + count
 
     log.sort(key=lambda t: (-t[2], t[0]))

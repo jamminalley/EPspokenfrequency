@@ -76,6 +76,22 @@ class TestDiacriticFolding:
         folded, _ = filters.fold_diacritics({"xpto": 7}, stage2, fake_dict)
         assert folded == {"xpto": 7}
 
+    def test_never_folds_a_common_form_into_a_rare_typo(self, stage2):
+        """Regression: `exactamente` (120,806) was folded into `exactámente`
+        (1) because the PT dictionary has no pre-1990 EP spellings, so the
+        correct form looked like a typo. A fold must move counts toward the
+        commoner form."""
+        counts = {"exactamente": 120_806, "exactámente": 1}
+        folded, log = filters.fold_diacritics(counts, stage2, fake_dict)
+        assert folded == counts
+        assert log == []
+
+    def test_still_folds_when_the_target_is_commoner(self, stage2):
+        folded, log = filters.fold_diacritics(
+            {"nao": 10, "não": 90}, stage2, fake_dict
+        )
+        assert folded == {"não": 100}
+
     def test_most_frequent_accented_variant_wins(self, stage2):
         folded, _ = filters.fold_diacritics(
             {"avo": 5, "avô": 30, "avó": 70}, stage2, fake_dict

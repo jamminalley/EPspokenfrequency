@@ -95,10 +95,43 @@ are consumed in corpus order; ties break lexicographically; sampled contexts
 are chosen by digest of `(seed, type, sentence)` rather than by an RNG, so
 selection does not depend on worker count or scheduling.
 
+## Stage 2
+
+Run with every fix on:
+
+```bash
+./.venv/bin/python -m scripts.build --stage 2 \
+  --set fixes.diacritic_folding=true --set fixes.bp_after_folding=true \
+  --set fixes.extended_proper_nouns=true --set fixes.mwe_constituent_check=true \
+  --set fixes.lemma_closure=true
+```
+
+Writes to `out_rebuild_stage2/` and compares against both `out/` and the
+stage 1 baseline in `out_rebuild/`.
+
+**The gate is red, on purpose.** 249 suspect duplicate entries remain and
+are not whitelisted, because they are real defects rather than acceptable
+coexistence. 50 pairs that genuinely are two different words (`avô`/`avó`,
+`pôr`/`por`, `março`/`marco`) are whitelisted in config; the rule that
+separates the two is in `make_whitelist.py`. Whitelisting the rest would
+make the build green by hiding the problem it exists to report.
+
+Lemmatizer: Stanza primary with a PT-dictionary gate falling back to
+simplemma (95.0% on the gold set, against Stanza's 92.2% and simplemma's
+90.8%). Stanza runs only on the 69,924 types frequent enough to reach the
+published bands — about an hour on 4 workers — and simplemma takes the
+890,664-type tail. The lemma map is cached, so reruns are seconds.
+
 ## Not yet done
 
-- Stage 2 fixes are implemented but off; they await review of the Stage 1
-  comparison report.
-- The empirical override table (`data/lemma_overrides.tsv`) is not yet
+- 249 duplicate-entry defects: 212 unfolded plurals and 37 diacritic
+  variants. 64 of the plurals are enclitic clusters that would disappear if
+  `fixes.split_enclitics` were enabled; the rest need plural folding added
+  to `lemma_closure`.
+- `fixes.split_enclitics` is implemented and tested but off. It is not a
+  defect fix — it changes the token inventory wholesale — so it needs an
+  explicit decision.
+- The empirical override table (`data/lemma_overrides.tsv`) is not
   populated; `overrides.py` will generate a review file.
-- Stanza backend is written but untested — no model installed.
+- The gold set has no human verdicts yet, so every accuracy figure in the
+  reports is labelled provisional.
