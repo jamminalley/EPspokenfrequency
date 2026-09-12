@@ -114,9 +114,14 @@ def out_dir(cfg: dict[str, Any]) -> Path:
     """Output directory.  Sample runs get their own suffix so that a dev run
     can never overwrite the artifacts of a full run."""
     base = Path(cfg["paths"]["out_dir"])
+    name = base.name
+    if cfg["run"]["stage"] >= 2:
+        # Stage 2 must not overwrite the stage 1 baseline: it is the thing
+        # stage 2 is measured against.
+        name = f"{name}_stage2"
     if is_sample_run(cfg):
-        return base.with_name(f"{base.name}_sample{cfg['run']['sample_lines']}")
-    return base
+        name = f"{name}_sample{cfg['run']['sample_lines']}"
+    return base.with_name(name)
 
 
 def with_overrides(cfg: dict[str, Any], overrides: dict[str, Any]) -> dict[str, Any]:

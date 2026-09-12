@@ -183,6 +183,153 @@ class StanzaBackend:
         return out
 
 
+# Stanza worker state, set by the pool initializer.
+_STANZA_NLP = None
+_STANZA_CTX: dict[str, list[str]] = {}
+
+
+def _init_stanza_worker(lang: str, contexts: dict[str, list[str]]) -> None:
+    global _STANZA_NLP, _STANZA_CTX
+    import os
+
+    # One torch thread per worker: the parallelism is across processes, and
+    # letting each worker spawn its own thread pool oversubscribes the CPU.
+    os.environ.setdefault("OMP_NUM_THREADS", "1")
+    import torch
+
+    torch.set_num_threads(1)
+    import stanza
+
+    _STANZA_NLP = stanza.Pipeline(
+        lang=lang, processors="tokenize,pos,lemma", verbose=False,
+        tokenize_no_ssplit=True,
+    )
+    _STANZA_CTX = contexts
+
+
+def _stanza_chunk(types: list[str]) -> dict[str, str]:
+    """Lemmatize a slice of types, batching every sentence into one call.
+
+    Feeding sentences to the pipeline one at a time wastes most of Stanza's
+    throughput -- measured 242 ms/type that way even across 4 processes.
+    Batching the whole slice through ``bulk_process`` amortizes the neural
+    forward passes over many sentences at once.
+    """
+    assert _STANZA_NLP is not None
+    from stanza import Document
+
+    texts: list[str] = []
+    owners: list[str] = []
+    for surface in types:
+        for text in _STANZA_CTX.get(surface) or [surface]:
+            texts.append(text)
+            owners.append(surface)
+
+    votes: dict[str, Counter] = {t: Counter() for t in types}
+    if texts:
+        docs = _STANZA_NLP.bulk_process([Document([], text=t) for t in texts])
+        for surface, doc in zip(owners, docs):
+            for sent in doc.sentences:
+                for word in sent.words:
+                    if word.text.lower() == surface:
+                        votes[surface][(word.lemma or surface).lower()] += 1
+
+    return {t: _majority(votes[t], fallback=t) for t in types}
+
+
+class ParallelStanzaBackend:
+    """Stanza across a process pool.
+
+    Stanza is ~1000x slower per type than simplemma, so a full-inventory run
+    is impractical single-threaded (measured: 309 ms/type, ~6 h for 70k
+    types).  Each worker loads its own pipeline and handles a contiguous
+    slice of the type list; slices are recombined in order, so the result
+    does not depend on scheduling.
+    """
+
+    name = "stanza"
+
+    def __init__(self, lang: str = "pt", workers: int = 4, chunk: int = 200) -> None:
+        self.lang = lang
+        self.workers = workers
+        self.chunk = chunk
+
+    def lemmatize_types(
+        self, types: Sequence[str], contexts: Contexts | None = None
+    ) -> dict[str, str]:
+        import multiprocessing as mp
+        import sys
+        import time
+
+        types = list(types)
+        if not types:
+            return {}
+        ctx = {t: list(contexts.get(t, ())) for t in types} if contexts else {}
+        slices = [types[i : i + self.chunk] for i in range(0, len(types), self.chunk)]
+
+        out: dict[str, str] = {}
+        started = time.monotonic()
+        mpctx = mp.get_context("spawn")
+        with mpctx.Pool(
+            processes=self.workers,
+            initializer=_init_stanza_worker,
+            initargs=(self.lang, ctx),
+        ) as pool:
+            for i, part in enumerate(pool.imap(_stanza_chunk, slices, chunksize=1), 1):
+                out.update(part)
+                if i % 10 == 0 or i == len(slices):
+                    done = len(out)
+                    rate = done / max(time.monotonic() - started, 1e-9)
+                    eta = (len(types) - done) / rate if rate else float("nan")
+                    print(
+                        f"    stanza {done:,}/{len(types):,} types "
+                        f"({rate:.1f}/s, eta {eta / 60:.0f}m)",
+                        file=sys.stderr, flush=True,
+                    )
+        return out
+
+
+class TieredBackend:
+    """Expensive backend for frequent types, cheap backend for the tail.
+
+    Only types frequent enough to reach the published bands justify the
+    expensive lemmatizer.  ``min_count`` is derived from the count at the
+    last published rank divided by a safety factor, so a surface well below
+    the cutoff can still be lemmatized accurately if several surfaces
+    aggregate onto one lemma.
+    """
+
+    def __init__(
+        self,
+        primary: "LemmaBackend",
+        fallback: "LemmaBackend",
+        counts: Mapping[str, int],
+        min_count: int,
+    ) -> None:
+        self.primary = primary
+        self.fallback = fallback
+        self.counts = counts
+        self.min_count = min_count
+        self.name = f"tiered({primary.name}>={min_count},{fallback.name})"
+
+    def lemmatize_types(
+        self, types: Sequence[str], contexts: Contexts | None = None
+    ) -> dict[str, str]:
+        import sys
+
+        hot = [t for t in types if self.counts.get(t, 0) >= self.min_count]
+        tail = [t for t in types if self.counts.get(t, 0) < self.min_count]
+        print(
+            f"  tiered: {len(hot):,} types -> {self.primary.name}, "
+            f"{len(tail):,} -> {self.fallback.name}",
+            file=sys.stderr, flush=True,
+        )
+        out = self.fallback.lemmatize_types(tail, contexts) if tail else {}
+        if hot:
+            out.update(self.primary.lemmatize_types(hot, contexts))
+        return out
+
+
 class VoteBackend:
     """Majority vote across member backends.
 
@@ -239,6 +386,63 @@ class VoteBackend:
         return out
 
 
+class GatedBackend:
+    """Primary backend with a dictionary-validated fallback.
+
+    Stanza is the most accurate backend on European Portuguese but it
+    occasionally emits forms that are not words at all (`agradeço` ->
+    `agradeçar`, `Comprei` -> `comprir`).  Those are detectable without a
+    gold set: they are absent from the PT dictionary.  When that happens the
+    fallback backend's answer is used instead.
+
+    This is the same validation the original pipeline applied to simplemma,
+    turned into a backend-selection rule rather than a surface-form reset.
+    """
+
+    def __init__(
+        self,
+        primary: "LemmaBackend",
+        fallback: "LemmaBackend",
+        lang: str = "pt",
+    ) -> None:
+        self.primary = primary
+        self.fallback = fallback
+        self.lang = lang
+        self.name = f"{primary.name}+gate"
+
+    def lemmatize_types(
+        self, types: Sequence[str], contexts: Contexts | None = None
+    ) -> dict[str, str]:
+        primary = self.primary.lemmatize_types(types, contexts)
+        # Only ask the fallback about the forms the gate actually rejects.
+        vocab = pt_dictionary(self.lang)
+        rejected = [
+            t
+            for t in types
+            if primary.get(t, t) != t and primary.get(t, t).lower() not in vocab
+        ]
+        secondary = (
+            self.fallback.lemmatize_types(rejected, contexts) if rejected else {}
+        )
+        out = dict(primary)
+        for surface in rejected:
+            out[surface] = secondary.get(surface, surface)
+        return out
+
+    def gate_stats(
+        self, types: Sequence[str], contexts: Contexts | None = None
+    ) -> dict[str, Any]:
+        """How often the gate fires -- for the report."""
+        primary = self.primary.lemmatize_types(types, contexts)
+        vocab = pt_dictionary(self.lang)
+        rejected = [
+            t for t in types
+            if primary.get(t, t) != t and primary.get(t, t).lower() not in vocab
+        ]
+        return {"n_types": len(types), "n_rejected": len(rejected),
+                "examples": [(t, primary[t]) for t in sorted(rejected)[:15]]}
+
+
 def _majority(votes: Counter, fallback: str) -> str:
     """Most-voted item; ties broken lexicographically for determinism."""
     if not votes:
@@ -257,10 +461,23 @@ def get_backend(name: str, cfg: dict[str, Any]) -> LemmaBackend:
     if name == "spacy":
         return SpacyBackend(model=lem["spacy_model"])
     if name == "stanza":
+        workers = lem.get("stanza_workers", 1)
+        if workers > 1:
+            return ParallelStanzaBackend(
+                lang=lem["stanza_lang"], workers=workers,
+                chunk=lem.get("stanza_chunk", 200),
+            )
         return StanzaBackend(lang=lem["stanza_lang"])
     if name == "vote":
         members = [get_backend(n, cfg) for n in lem["vote"]["members"]]
         return VoteBackend(members, lem["vote"]["tiebreak"])
+    if name in ("gated", "stanza+gate"):
+        gate = lem["gate"]
+        return GatedBackend(
+            get_backend(gate["primary"], cfg),
+            get_backend(gate["fallback"], cfg),
+            lem.get("spellchecker_lang", "pt"),
+        )
     raise ValueError(f"unknown lemmatizer backend: {name!r}")
 
 
@@ -293,6 +510,122 @@ def load_overrides(path: str | None) -> dict[str, str]:
     return out
 
 
+def close_lemma_map(
+    lemma_map: Mapping[str, str],
+    backend: "LemmaBackend" | None = None,
+    contexts: Contexts | None = None,
+    max_iterations: int = 5,
+) -> tuple[dict[str, str], list[tuple[str, str]]]:
+    """Make the lemma inventory closed under its own lemmatizer.
+
+    A lemmatizer can be inconsistent across the surfaces of one paradigm:
+    `achas` -> `achar` but `acha` -> `acha`, leaving both `acha` and `achar`
+    as separate entries for the same verb.  This is the defect the project
+    set out to fix -- inflected forms surfacing as their own entries.
+
+    Each distinct lemma is fed back through the lemmatizer; when the result
+    is a *different* lemma that is also in the inventory, the first is
+    redirected onto the second.  Redirects are followed to a fixed point.
+    A cycle (A -> B -> A) is resolved to its lexicographically smallest
+    member so the outcome does not depend on iteration order.
+
+    The map is its own oracle wherever possible: nearly every lemma is also
+    a surface form that has already been lemmatized, so its answer is looked
+    up rather than recomputed.  That keeps closure consistent with the
+    backend that built the map -- a mismatch here leaves exactly the
+    duplicates closure is supposed to remove -- and avoids re-running an
+    expensive backend over the inventory.
+
+    Returns the rewritten map and the list of (from, into) redirects.
+    """
+    mapping = dict(lemma_map)
+    all_redirects: list[tuple[str, str]] = []
+
+    for _ in range(max_iterations):
+        inventory = set(mapping.values())
+        probe = sorted(inventory)
+
+        relemma = {l: mapping[l] for l in probe if l in mapping}
+        missing = [l for l in probe if l not in mapping]
+        if missing and backend is not None:
+            relemma.update(backend.lemmatize_types(missing, contexts))
+
+        redirect = {
+            lemma: relemma[lemma]
+            for lemma in probe
+            if relemma.get(lemma, lemma) != lemma and relemma[lemma] in inventory
+        }
+        if not redirect:
+            break
+
+        # Follow chains to a fixed point; break cycles deterministically.
+        resolved: dict[str, str] = {}
+        for start in sorted(redirect):
+            seen = [start]
+            current = start
+            while current in redirect:
+                current = redirect[current]
+                if current in seen:
+                    current = min(seen + [current])
+                    break
+                seen.append(current)
+            resolved[start] = current
+
+        resolved = {k: v for k, v in resolved.items() if k != v}
+        if not resolved:
+            break
+        all_redirects += sorted(resolved.items())
+        mapping = {s: resolved.get(l, l) for s, l in mapping.items()}
+
+    return mapping, all_redirects
+
+
+def lemma_cache_path(cfg: dict[str, Any], types: Sequence[str]) -> "Path":
+    """Cache key covers everything that can change a lemma decision."""
+    import hashlib
+    import json
+    from pathlib import Path
+
+    h = hashlib.sha256()
+    for t in types:
+        h.update(t.encode("utf-8"))
+        h.update(b"\x00")
+    material = {
+        "lemmatizer": cfg["lemmatizer"],
+        "types_digest": h.hexdigest()[:16],
+        "n_types": len(types),
+    }
+    digest = hashlib.sha256(
+        json.dumps(material, sort_keys=True, ensure_ascii=False).encode("utf-8")
+    ).hexdigest()[:16]
+    return Path(cfg["paths"]["cache_dir"]) / f"lemmas_{digest}.tsv.gz"
+
+
+def save_lemma_map(mapping: Mapping[str, str], path) -> None:
+    import gzip
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".tmp")
+    with gzip.open(tmp, "wt", encoding="utf-8", newline="\n") as fh:
+        for surface in sorted(mapping):
+            fh.write(f"{surface}\t{mapping[surface]}\n")
+    tmp.replace(path)
+
+
+def load_lemma_map(path) -> dict[str, str] | None:
+    import gzip
+
+    if not path.is_file():
+        return None
+    out: dict[str, str] = {}
+    with gzip.open(path, "rt", encoding="utf-8") as fh:
+        for line in fh:
+            surface, _, lemma = line.rstrip("\n").partition("\t")
+            if surface:
+                out[surface] = lemma
+    return out
+
+
 def build_lemma_map(
     cfg: dict[str, Any],
     types: Sequence[str],
@@ -306,7 +639,21 @@ def build_lemma_map(
     """
     lem = cfg["lemmatizer"]
     backend = backend or get_backend(lem["backend"], cfg)
-    mapping = backend.lemmatize_types(list(types), contexts)
+
+    # Stanza costs ~1 hour over the full inventory, so the raw backend
+    # output is cached before overrides and the dictionary gate are applied.
+    # Those are cheap and may change between runs.
+    types = list(types)
+    cache = lemma_cache_path(cfg, types)
+    mapping = load_lemma_map(cache)
+    if mapping is None:
+        mapping = backend.lemmatize_types(types, contexts)
+        save_lemma_map(mapping, cache)
+    else:
+        import sys
+
+        print(f"  lemmas: reusing cache {cache}", file=sys.stderr)
+    mapping = dict(mapping)
 
     overrides = load_overrides(lem.get("overrides_path"))
     for surface, lemma in overrides.items():

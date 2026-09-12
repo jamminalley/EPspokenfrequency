@@ -175,17 +175,42 @@ def write_all(entries: Sequence[Entry], cfg: dict[str, Any], out_dir: Path) -> l
     return written
 
 
-def write_dropped(log, cfg: dict[str, Any], out_dir: Path) -> Path:
-    """Everything the filters removed, with the reason."""
-    path = out_dir / cfg["output"]["dropped_proper_nouns"]
+def _write_dropped_file(
+    path: Path, rows, bp_excluded, min_count: int, total: int
+) -> None:
     with path.open("w", encoding="utf-8", newline="\n") as fh:
         fh.write("# Lemmas filtered out by the proper-noun/OOV heuristic.\n")
         fh.write("# Sorted desc by raw count -- review to rescue any false positives.\n")
+        if min_count > 1:
+            fh.write(
+                f"# Truncated to entries with >= {min_count} occurrences: "
+                f"{len(rows):,} of {total:,}. The full list is written next to\n"
+                f"# this file as *_full.txt and is not committed.\n"
+            )
         fh.write("# count\tlemma\tcap_ratio\treason\n")
-        for lemma, count, ratio, reason in log.proper_nouns:
+        for lemma, count, ratio, reason in rows:
             fh.write(f"{count}\t{lemma}\t{ratio:.3f}\t{reason}\n")
-        if log.bp_excluded:
+        if bp_excluded:
             fh.write("#\n# BP-leaning lemmas excluded by the exclusion list:\n")
-            for lemma, reason in log.bp_excluded:
+            for lemma, reason in bp_excluded:
                 fh.write(f"#\t{lemma}\t{reason}\n")
-    return path
+
+
+def write_dropped(log, cfg: dict[str, Any], out_dir: Path) -> list[Path]:
+    """Write the drop log twice.
+
+    The full list runs to ~260k entries and 10 MB, nearly all of it hapax
+    noise, so only the reviewable head is committed; the complete list is
+    written alongside it and gitignored.
+    """
+    ocfg = cfg["output"]
+    min_count = ocfg.get("dropped_min_count", 100)
+    total = len(log.proper_nouns)
+
+    full_path = out_dir / ocfg["dropped_proper_nouns_full"]
+    _write_dropped_file(full_path, log.proper_nouns, log.bp_excluded, 1, total)
+
+    head = [r for r in log.proper_nouns if r[1] >= min_count]
+    path = out_dir / ocfg["dropped_proper_nouns"]
+    _write_dropped_file(path, head, log.bp_excluded, min_count, total)
+    return [path, full_path]

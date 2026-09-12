@@ -82,11 +82,18 @@ def render(
     quality_summary: str,
     gold_summary: str,
     stats: Mapping[str, Any],
+    baseline_reports: Sequence[tuple[str, dict[str, Any]]] = (),
 ) -> str:
     from scripts.counts import format_fingerprint
 
+    stage = cfg["run"]["stage"]
+    title = (
+        "# Stage 2 comparison: fixes vs original `out/` and the stage 1 baseline"
+        if stage >= 2
+        else "# Stage 1 comparison: rebuild vs original `out/`"
+    )
     lines = [
-        "# Stage 1 comparison: rebuild vs original `out/`",
+        title,
         "",
         "Stage 1 is a **baseline**, not a target. The original pipeline's",
         "scripts were lost; this is a reconstruction from the README's",
@@ -179,6 +186,38 @@ def render(
             f"_{len(rep['only_rebuilt']):,} total._",
             "",
         ]
+
+    if baseline_reports:
+        lines += [
+            "## Against the stage 1 baseline",
+            "",
+            "Stage 1 reproduced the original pipeline including its flaws.",
+            "These figures isolate what the stage 2 fixes actually changed.",
+            "",
+        ]
+        for name, rep in baseline_reports:
+            lines += [
+                f"### Band: {name}",
+                "",
+                f"- Shared with baseline: {rep['shared']:,} "
+                f"({rep['overlap_pct']:.1f}%)",
+                f"- Spearman rho vs baseline: {rep['spearman']:.4f}",
+                "",
+                "**Dropped by the fixes** (in stage 1, gone in stage 2):",
+                "",
+                "`" + "`, `".join(rep["only_original"][:60]) + "`"
+                if rep["only_original"] else "_none_",
+                "",
+                f"_{len(rep['only_original']):,} total._",
+                "",
+                "**Promoted by the fixes** (new in stage 2):",
+                "",
+                "`" + "`, `".join(rep["only_rebuilt"][:60]) + "`"
+                if rep["only_rebuilt"] else "_none_",
+                "",
+                f"_{len(rep['only_rebuilt']):,} total._",
+                "",
+            ]
 
     lines += ["## Gold-set lemmatizer accuracy", "", gold_summary, "",
               "## Quality report", "", quality_summary, ""]

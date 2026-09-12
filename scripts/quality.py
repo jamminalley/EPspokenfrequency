@@ -69,11 +69,23 @@ def _gender_forms(lemma: str) -> set[str]:
     return out
 
 
-def inflections(lemma: str) -> set[str]:
-    """Regular inflected forms of a lemma, excluding the lemma itself."""
-    forms = _plural_forms(lemma) | _gender_forms(lemma)
-    for gendered in list(_gender_forms(lemma)):
-        forms |= _plural_forms(gendered)
+def inflections(lemma: str, include_gender: bool = False) -> set[str]:
+    """Regular inflected forms of a lemma, excluding the lemma itself.
+
+    Gender is off by default.  A masculine/feminine pair in Portuguese is
+    usually two legitimate entries rather than one word counted twice
+    (`menino`/`menina`), and the rule also fires on contractions that are
+    simply different words -- `na`/`no` (em+a, em+o), `pela`/`pelo`
+    (por+a, por+o) -- and on non-words like `problemo`. Including it made
+    the gate unusable: 1,274 suspects, nearly all spurious.
+
+    Plurals are the real duplicate risk, and are kept.
+    """
+    forms = set(_plural_forms(lemma))
+    if include_gender:
+        forms |= _gender_forms(lemma)
+        for gendered in list(_gender_forms(lemma)):
+            forms |= _plural_forms(gendered)
     forms.discard(lemma)
     return forms
 
@@ -122,11 +134,12 @@ def find_suspects(
                 )
 
     if qcfg.get("check_inflected_forms"):
+        include_gender = qcfg.get("inflection_include_gender", False)
         inflected_index: dict[str, str] = {}
         for lemma in lemmas:
             if lemma in closed_class:
                 continue
-            for form in inflections(lemma):
+            for form in inflections(lemma, include_gender):
                 # First lemma wins; ties resolved by rank for determinism.
                 if form not in inflected_index or rank_of[lemma] < rank_of[inflected_index[form]]:
                     inflected_index[form] = lemma

@@ -61,3 +61,7 @@ ENV/
 # Dev-run outputs from --sample N. The full rebuild in out_rebuild/ is
 # committed; sample runs are throwaway.
 out_rebuild_sample*/
+
+# Full proper-noun drop log: ~260k entries / 10 MB of mostly hapax noise.
+# The truncated dropped_proper_nouns.txt is committed instead.
+*_full.txt

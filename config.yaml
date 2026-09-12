@@ -26,6 +26,7 @@ paths:
   cache_dir: .cache          # pass-1/pass-2 intermediates; gitignored
   out_dir: out_rebuild
   original_dir: out        # never written to
+  baseline_dir: out_rebuild # stage 1 output; what stage 2 is measured against
   eval_dir: eval
   reports:
     comparison: COMPARISON.md
@@ -71,14 +72,32 @@ tokenizer:
   min_token_len: 1
 
 lemmatizer:
-  backend: simplemma          # simplemma | spacy | stanza | vote
+  backend: gated              # simplemma | spacy | stanza | vote | gated
   vote:
     # Needs 3+ members to mean anything: with 2, every disagreement is a
-    # 1-1 tie and the tiebreak backend always wins. Stanza is the third.
-    members: [simplemma, spacy, stanza]
-    tiebreak: [simplemma, stanza, spacy]   # deterministic tie-break order
+    # 1-1 tie and the tiebreak backend always wins.
+    members: [simplemma, stanza]   # spaCy dropped: last by 7 points, emits non-words
+    tiebreak: [stanza, simplemma]   # deterministic tie-break order
+  # `gated`: primary backend, but when its lemma is not a PT dictionary word
+  # (stanza's agradeçar, comprir) fall back to the secondary's answer.
+  gate:
+    primary: stanza
+    fallback: simplemma
+  # Stanza is ~1000x slower per type than simplemma, so it is used only for
+  # types frequent enough to reach the published bands; the tail gets
+  # simplemma. See COMPARISON.md for the runtime estimate.
+  tiered:
+    enabled: true
+    # Derived from the stage 1 baseline: the lemma at rank 10,000 has a raw
+    # count of 1,443, so any surface at or above 1443/safety_factor could
+    # plausibly contribute to a published entry. Set explicitly rather than
+    # computed, so the tier boundary is reproducible across runs.
+    primary_min_count: 144
+    safety_factor: 10
   spacy_model: pt_core_news_lg
   stanza_lang: pt
+  stanza_workers: 4        # processes; each loads its own Stanza pipeline
+  stanza_chunk: 200        # types per worker task
   context:
     enabled: true             # lemmatize in sampled sentence context
     samples_per_type: 5
@@ -135,17 +154,23 @@ fixes:
   bp_after_folding: false
   extended_proper_nouns: false
   mwe_constituent_check: false
+  # Make the lemma inventory closed under its own lemmatizer: if `acha` is
+  # an entry and lemmatizes to `achar`, which is also an entry, merge them.
+  # This is the defect the rebuild set out to fix -- inflected forms
+  # appearing as separate entries.
+  lemma_closure: false
   # `cara` (face) is ordinary EP and was excluded in error by the original.
   bp_exclusion_removals: ["cara"]
-  # Split forms that are ambiguous between lemmas (foi/fui/fomos/foram/fora
-  # are ser or ir depending on context) by majority vote over the sampled
-  # sentence contexts collected in pass 2.
-  ambiguous_by_context: false
-  # Enable the enclitic splitter the original README described but did not
-  # apply.  Changes the token inventory substantially -- off until reviewed.
+  # ser/ir disambiguation needs no flag: a context-aware backend (stanza)
+  # votes over the sampled sentences collected in pass 2 and resolves
+  # foi/fui/fomos/foram from real usage, which is what the original
+  # README's headline caveat asked for.
+  #
+  # Enclitic splitting is NOT part of stage 2. The original README claims
+  # it but the published outputs disprove it, and turning it on changes the
+  # token inventory wholesale (2% more tokens, 13% fewer types) rather than
+  # correcting a defect. Kept as a separate, reviewable switch.
   split_enclitics: false
-  ambiguous_forms:
-    ["foi", "fui", "fomos", "foram", "fora", "era", "eram", "for"]
   mwe_constituent_whitelist: [d, c, s, p, q, n, dr, sr, sra]
 
 quality:
@@ -155,6 +180,10 @@ quality:
   check_relemmatize: true
   check_diacritic_pairs: true
   check_inflected_forms: true
+  # Gender pairs are normally two real entries (menino/menina), and the rule
+  # also fires on contractions (na/no, pela/pelo) and non-words (problemo).
+  # Off: it produced ~1,200 spurious suspects and made the gate unusable.
+  inflection_include_gender: false
   whitelist_pairs: []       # ["nao|não", ...] pairs allowed to coexist
 
 output:
@@ -169,7 +198,12 @@ output:
       anki_stem: ep_spoken_5001_10000
       deck: "Portuguese::European Portuguese - Spoken - 5001 to 10000"
   qc_sample: qc_sample.csv
+  # Committed: entries with >= dropped_min_count occurrences. The full list
+  # (~260k entries, 10 MB, nearly all hapax noise) goes to the _full file,
+  # which .gitignore excludes.
   dropped_proper_nouns: dropped_proper_nouns.txt
+  dropped_proper_nouns_full: dropped_proper_nouns_full.txt
+  dropped_min_count: 100
   anki:
     notetype: "Portuguese (EP) – Spoken Frequency"
     html: false

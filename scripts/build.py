@@ -73,7 +73,35 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     # -- step 2: lemmatize -------------------------------------------------
     _log(f"step 2: lemmatize ({cfg['lemmatizer']['backend']})")
     types = sorted(uni.counts)
-    lemma_map = lemmas_mod.build_lemma_map(cfg, types, bg.contexts)
+    backend = lemmas_mod.get_backend(cfg["lemmatizer"]["backend"], cfg)
+
+    tier = cfg["lemmatizer"].get("tiered", {})
+    if tier.get("enabled"):
+        limit = max(hi for _, hi in cfg["output"]["bands"])
+        min_count = tier.get("primary_min_count")
+        if min_count is None:
+            # Count at the last published rank, as a surface-level proxy,
+            # divided by the safety factor. Conservative: surfaces well
+            # below the cutoff still qualify, because several surfaces can
+            # aggregate onto one lemma.
+            ordered = sorted(uni.counts.values(), reverse=True)
+            at_limit = ordered[limit - 1] if len(ordered) >= limit else 1
+            min_count = max(at_limit // tier.get("safety_factor", 10), 1)
+        stats["tier_min_count"] = min_count
+        backend = lemmas_mod.TieredBackend(
+            backend, lemmas_mod.SimplemmaBackend(), uni.counts, min_count
+        )
+        _log(f"  tier threshold: surface count >= {min_count:,}")
+
+    lemma_map = lemmas_mod.build_lemma_map(cfg, types, bg.contexts, backend=backend)
+
+    if cfg["fixes"].get("lemma_closure"):
+        lemma_map, redirects = lemmas_mod.close_lemma_map(
+            lemma_map, lemmas_mod.SimplemmaBackend(), bg.contexts
+        )
+        stats["lemma_closure_iterations"] = True
+        stats["lemma_closure_redirects"] = len(redirects)
+        _log(f"  closure: merged {len(redirects):,} lemmas onto other entries")
     stats["lemmatized_types"] = len(lemma_map)
     lemma_counts = aggregate_lemmas(uni.counts, lemma_map)
     _log(f"  {len(lemma_counts):,} lemmas from {len(types):,} types")
@@ -108,15 +136,17 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     limit = max(hi for _, hi in cfg["output"]["bands"])
     entries = emit_mod.rank_entries(kept, mwes, uni.n_tokens, tagger, limit)
     written = emit_mod.write_all(entries, cfg, out_dir)
-    written.append(emit_mod.write_dropped(flog, cfg, out_dir))
+    written += emit_mod.write_dropped(flog, cfg, out_dir)
     stats["entries"] = len(entries)
     _log(f"  wrote {len(written)} files to {out_dir}/")
 
     # -- quality report ----------------------------------------------------
     _log("quality report")
-    backend = lemmas_mod.get_backend(cfg["lemmatizer"]["backend"], cfg)
+    # Use the lemma map itself as the oracle, so the check asks "is this
+    # inventory closed under the lemmatizer that built it?" rather than
+    # under some other backend, which would report spurious duplicates.
     entry_lemmas = [e.lemma for e in entries if not e.is_mwe]
-    relemma = backend.lemmatize_types(entry_lemmas, bg.contexts)
+    relemma = {w: lemma_map.get(w, w) for w in entry_lemmas}
     suspects = quality_mod.find_suspects(
         entries, cfg, lambda w: relemma.get(w, w),
         closed_class=frozenset(tagger.closed),
@@ -150,8 +180,20 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
             band_reports.append(
                 (f"ranks {lo}-{hi}", compare_mod.compare_bands(orig, rebuilt, hi))
             )
+    baseline_reports = []
+    baseline_dir = Path(cfg["paths"].get("baseline_dir", ""))
+    if cfg["run"]["stage"] >= 2 and baseline_dir.is_dir() and baseline_dir != out_dir:
+        for (lo, hi), spec in zip(cfg["output"]["bands"], cfg["output"]["files"]):
+            base = compare_mod.read_band(baseline_dir / f"{spec['stem']}.tsv")
+            rebuilt = compare_mod.read_band(out_dir / f"{spec['stem']}.tsv")
+            if base and rebuilt:
+                baseline_reports.append(
+                    (f"ranks {lo}-{hi}", compare_mod.compare_bands(base, rebuilt, hi))
+                )
+
     report = compare_mod.render(
-        cfg, fingerprint_rows, band_reports, quality_text, gold_text, stats
+        cfg, fingerprint_rows, band_reports, quality_text, gold_text, stats,
+        baseline_reports=baseline_reports,
     )
     (out_dir / cfg["paths"]["reports"]["comparison"]).write_text(report, encoding="utf-8")
 
