@@ -1,0 +1,20 @@
+# Dependencies for the pipeline described in README.md.
+# The original scripts were lost and are being rebuilt; these are the
+# libraries that pipeline used. See scripts/README.md.
+#
+#   python3 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+
+# Lookup-based lemmatization of the Portuguese type inventory (step 2).
+simplemma>=1.0
+
+# PT dictionary used to validate proposed lemmas; unknown lemmas are
+# rejected and fall back to the surface form (step 2).
+pyspellchecker>=0.8
+
+# Table assembly, ranking, and TSV/CSV output (step 5).
+pandas>=2.0
+
+# Unicode-property-aware tokenization — \p{L} classes the stdlib `re`
+# module does not support (step 1).
+regex>=2023.0

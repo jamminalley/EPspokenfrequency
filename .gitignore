@@ -1,0 +1,56 @@
+# ---- Corpus data -------------------------------------------------------
+# data/ holds the raw OpenSubtitles download (pt.txt.gz, ~1.1 GB).
+# It must never be committed. See DATA_SOURCES.md for how to fetch it.
+data/
+
+# ---- Python ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---- Editors / IDEs ----------------------------------------------------
+.vscode/
+*.code-workspace
+.idea/
+
+# ---- Claude Code -------------------------------------------------------
+.claude-account
+.claude/settings.local.json
+
+# ---- macOS -------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
