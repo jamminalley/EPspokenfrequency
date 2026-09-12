@@ -54,3 +54,9 @@ ENV/
 ._*
 .Spotlight-V100
 .Trashes
+
+# Pipeline intermediates (pass-1/pass-2 caches)
+.cache/
+
+# Rebuild outputs (uncomment to keep them out of git)
+# out_rebuild*/
