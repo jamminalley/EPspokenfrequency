@@ -198,6 +198,18 @@ class VoteBackend:
             raise ValueError("vote backend needs at least one member")
         self.members = list(members)
         self.tiebreak = list(tiebreak)
+        if len(self.members) == 2:
+            # With two members every disagreement is a 1-1 tie, so the
+            # tiebreak backend always wins and the vote is just that backend
+            # wearing a hat. Three or more is needed for a real majority.
+            import warnings
+
+            warnings.warn(
+                "VoteBackend with 2 members is equivalent to the first "
+                f"tiebreak backend ({self.tiebreak[0] if self.tiebreak else '?'}); "
+                "add a third member for a meaningful majority.",
+                stacklevel=2,
+            )
 
     def lemmatize_types(
         self, types: Sequence[str], contexts: Contexts | None = None

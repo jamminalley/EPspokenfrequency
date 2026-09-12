@@ -73,8 +73,10 @@ tokenizer:
 lemmatizer:
   backend: simplemma          # simplemma | spacy | stanza | vote
   vote:
-    members: [simplemma, spacy]
-    tiebreak: [simplemma, spacy]   # deterministic tie-break order
+    # Needs 3+ members to mean anything: with 2, every disagreement is a
+    # 1-1 tie and the tiebreak backend always wins. Stanza is the third.
+    members: [simplemma, spacy, stanza]
+    tiebreak: [simplemma, stanza, spacy]   # deterministic tie-break order
   spacy_model: pt_core_news_lg
   stanza_lang: pt
   context:
