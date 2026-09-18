@@ -60,7 +60,7 @@ class TestEncliticSplitting:
         [
             ("dá-me", ["dá", "me"]),
             ("diz-lhe", ["diz", "lhe"]),
-            ("vê-lo", ["vê", "lo"]),
+            ("vê-lo", ["ver", "lo"]),
             ("diz-me-o", ["diz", "me", "o"]),
             ("deram-lhes", ["deram", "lhes"]),
         ],
@@ -79,10 +79,30 @@ class TestEncliticSplitting:
 
     @pytest.mark.parametrize(
         "word,expected",
-        [("dar-lhe-ia", ["dar", "lhe", "ia"]), ("far-se-ia", ["far", "se", "ia"])],
+        [("dar-lhe-ia", ["daria", "lhe"]), ("far-se-ia", ["faria", "se"]),
+         ("fá-lo-ia", ["faria", "lo"]), ("dir-lhe-ei", ["direi", "lhe"])],
     )
     def test_mesoclisis(self, tok_split, word, expected):
-        """The tense infix sits right of the clitic; both come off."""
+        """The verb is rejoined around the clitic, so the tense infix never
+        becomes a token of its own (`ia` would count as a form of `ir`)."""
+        assert tok_split.split_enclitic(word) == expected
+
+    @pytest.mark.parametrize(
+        "word,expected",
+        [
+            ("fazê-lo", ["fazer", "lo"]),        # infinitive -r restored
+            ("apanhá-lo", ["apanhar", "lo"]),
+            ("pô-lo", ["pôr", "lo"]),            # not the preposition `por`
+            ("apanhámo-lo", ["apanhámos", "lo"]),  # 1pl -s restored
+            ("di-lo", ["diz", "lo"]),            # -z restored
+            ("qui-lo", ["quis", "lo"]),          # -s restored
+            ("vamo-nos", ["vamos", "nos"]),      # 1pl -s before nos
+            ("dão-no", ["dão", "no"]),           # nasal allomorph: no change
+        ],
+    )
+    def test_clitic_stem_restoration(self, tok_split, word, expected):
+        """eval/conventions.md: stems like `apanhámo` are tokenizer
+        artifacts. The verb is restored before it is counted."""
         assert tok_split.split_enclitic(word) == expected
 
     def test_longest_clitic_wins(self, tok_split):

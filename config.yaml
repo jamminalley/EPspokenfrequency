@@ -62,6 +62,10 @@ tokenizer:
   # 623,920,347) where splitting overshoots by 2.04%.
   # The splitter is implemented and tested; stage 2 can enable it.
   split_enclitics: false
+  # When splitting (stage 2), undo the sound change the clitic forced on the
+  # verb (fazê-lo -> fazer + lo, apanhámo-lo -> apanhámos + lo) and rejoin
+  # mesoclitic futures (dar-lhe-ia -> daria + lhe).
+  restore_clitic_stems: true
   # Clitic pronouns that may attach after a hyphen. Longest-first matching.
   # Quoted: YAML 1.1 would otherwise read `no` as boolean false.
   enclitics: ["lhes", "lhe", "nos", "vos", "los", "las", "lo", "la",
@@ -150,13 +154,19 @@ filters:
 # Stage 2 fixes. Each is independently switchable so its effect on the
 # output can be measured in isolation.
 fixes:
+  # Fold a lemma into the most frequent lemma that shares its accent-
+  # stripped spelling when that one is >= diacritic_fold_ratio times as
+  # frequent. Runs on lemmas, after lemmatization, so verb forms such as
+  # está and é have already gone to estar and ser and cannot be merged with
+  # esta or e. Every fold is listed in QUALITY.md.
+  diacritic_fold_ratio: 20
+  # (a) unaccented forms: nao -> não, numero -> número. Frequency only.
   diacritic_folding: false
-  # An accented target must be at least this many times as frequent as the
-  # unaccented form being folded into it. Without this guard the rule folded
-  # `exactamente` (120,806 occurrences) into `exactámente` (1), because the
-  # PT dictionary lacks pre-1990 EP spellings so the correct form looked
-  # like a typo. Folds must move counts toward the commoner form.
-  diacritic_fold_min_target_ratio: 1.0
+  # (a') wrong or Brazilian accents: näo -> não, sâo -> são, idéia -> ideia,
+  # prêmio -> prémio. Same ratio, but the source must also be absent from
+  # the PT dictionary, which is what keeps pôr/por, quê/que, dê/de and
+  # avô/avó apart.
+  accent_variant_folding: false
   bp_after_folding: false
   extended_proper_nouns: false
   mwe_constituent_check: false
@@ -165,6 +175,34 @@ fixes:
   # This is the defect the rebuild set out to fix -- inflected forms
   # appearing as separate entries.
   lemma_closure: false
+  # Inside closure: fold a regular plural onto its singular when the
+  # singular is also an entry. The singular must be open-class (bens is not
+  # the plural of the adverb bem) and the plural must not be listed below.
+  # NOTE: the brief also asked that the plural not be a dictionary word, but
+  # the PT dictionary contains regular plurals (anjos, casas, estados), so
+  # that test would block every fold; this list is the working guard.
+  plural_folding: false
+  plurale_tantum: ["óculos", "parabéns", "férias", "costas", "bens", "calças",
+                   "pêsames", "arredores", "núpcias", "fezes", "cócegas",
+                   "trevas", "víveres", "graças", "afazeres", "eis"]
+  # English plurals (zombies, chips, t-shirts) go to the foreign-word
+  # filter rather than being folded: absent from the PT dictionary, present
+  # in pyspellchecker's English one.
+  english_plurals_foreign: false
+  # Split a surface's count across lemmas by per-occurrence Stanza tags over
+  # the sampled contexts instead of giving the whole count to one lemma:
+  # participles (VERB -> infinitive, ADJ -> masculine participle, NOUN ->
+  # the noun), and the forms listed in ambiguous_forms (fomos: ir|ser).
+  split_ambiguous: false
+  ambiguous_forms: ["foi", "fui", "fomos", "foram", "fora", "for", "esta"]
+  irregular_participles: ["morto", "feito", "dito", "visto", "escrito",
+                          "aberto", "posto", "coberto", "preso", "solto",
+                          "aceite", "entregue", "ganho", "gasto", "pago",
+                          "eleito", "suspenso", "expulso", "aceso", "frito",
+                          "descoberto", "desfeito", "satisfeito", "proposto",
+                          "composto", "imposto", "disposto", "exposto",
+                          "morta", "feita", "dita", "vista", "escrita",
+                          "aberta", "posta", "presa", "solta", "paga"]
   # `cara` (face) is ordinary EP and was excluded in error by the original.
   bp_exclusion_removals: ["cara"]
   # ser/ir disambiguation needs no flag: a context-aware backend (stanza)
@@ -220,6 +258,13 @@ conventions:
   # 3. Diminutives stay separate (coisinha, patinho, dinheirinho).
   diminutives:
     enabled: true
+  # Clitic l-forms are allomorphs of o/a/os/as (vê-lo = vê + o), as the gold
+  # set records. Only appear as tokens once enclitics are split.
+  clitic_allomorphs:
+    lo: o
+    la: a
+    los: os
+    las: as
   # 4. Comparatives and superlatives are their own lemmas.
   comparatives:
     enabled: true

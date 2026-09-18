@@ -23,7 +23,7 @@ from __future__ import annotations
 
 import functools
 from collections import Counter
-from typing import Any, Iterable, Mapping, Protocol, Sequence, runtime_checkable
+from typing import Any, Callable, Iterable, Mapping, Protocol, Sequence, runtime_checkable
 
 Contexts = Mapping[str, Sequence[str]]
 
@@ -45,6 +45,11 @@ def pt_dictionary(lang: str = "pt") -> frozenset[str]:
 
 def in_dictionary(word: str, lang: str = "pt") -> bool:
     return word.lower() in pt_dictionary(lang)
+
+
+def in_english(word: str) -> bool:
+    """pyspellchecker's English list; the foreign-word filter's test."""
+    return word.lower() in pt_dictionary("en")
 
 
 # -- backends -------------------------------------------------------------
@@ -515,6 +520,8 @@ def close_lemma_map(
     backend: "LemmaBackend" | None = None,
     contexts: Contexts | None = None,
     max_iterations: int = 5,
+    protected: frozenset[str] = frozenset(),
+    plural_rule: Callable[[str, set[str]], str | None] | None = None,
 ) -> tuple[dict[str, str], list[tuple[str, str]]]:
     """Make the lemma inventory closed under its own lemmatizer.
 
@@ -528,6 +535,11 @@ def close_lemma_map(
     redirected onto the second.  Redirects are followed to a fixed point.
     A cycle (A -> B -> A) is resolved to its lexicographically smallest
     member so the outcome does not depend on iteration order.
+
+    ``protected`` lemmas are never redirected: headwords a convention keeps
+    on purpose, and participle adjectives produced by per-occurrence
+    splitting (educado must not be closed onto educar).  ``plural_rule``,
+    when given, also folds a plural onto its singular.
 
     The map is its own oracle wherever possible: nearly every lemma is also
     a surface form that has already been lemmatized, so its answer is looked
@@ -553,8 +565,18 @@ def close_lemma_map(
         redirect = {
             lemma: relemma[lemma]
             for lemma in probe
-            if relemma.get(lemma, lemma) != lemma and relemma[lemma] in inventory
+            if lemma not in protected
+            and relemma.get(lemma, lemma) != lemma
+            and relemma[lemma] in inventory
         }
+        # Plural folding: a regular plural whose singular is also an entry.
+        if plural_rule is not None:
+            for lemma in probe:
+                if lemma in protected or lemma in redirect:
+                    continue
+                singular = plural_rule(lemma, inventory)
+                if singular and singular != lemma:
+                    redirect[lemma] = singular
         if not redirect:
             break
 

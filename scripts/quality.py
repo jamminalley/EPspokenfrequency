@@ -57,6 +57,28 @@ def _plural_forms(lemma: str) -> set[str]:
     return out
 
 
+def singular_of(plural: str, inventory: set[str]) -> str | None:
+    """Singular in ``inventory`` of which ``plural`` is a regular plural."""
+    if not plural.endswith("s") or len(plural) < 3:
+        return None
+    cands: list[str] = []
+    if plural.endswith(("ões", "ães", "ãos")):
+        cands.append(plural[:-3] + "ão")
+    if plural.endswith("eses"):
+        cands.append(plural[:-4] + "ês")
+    if plural.endswith("es"):
+        cands.append(plural[:-2])
+    if plural.endswith("is"):
+        cands.append(plural[:-2] + "l")
+    if plural.endswith("ns"):
+        cands.append(plural[:-2] + "m")
+    cands.append(plural[:-1])
+    for cand in cands:
+        if cand in inventory and plural in _plural_forms(cand):
+            return cand
+    return None
+
+
 def _gender_forms(lemma: str) -> set[str]:
     out: set[str] = set()
     # -ão is not the masculine -o ending; coração has no *coraçãa.
@@ -204,6 +226,44 @@ def render_report(suspects: Sequence[Suspect], cfg: dict[str, Any]) -> str:
         lines.append(f"\n_{len(suspects) - 200} further suspects omitted; "
                      "see the TSV for the full list._")
     return "\n".join(lines) + "\n"
+
+
+def render_folds(fold_log, cfg: dict[str, Any]) -> str:
+    """Every accent-variant fold the build made, for review.
+
+    Folds whose source is itself a PT dictionary word come first: the
+    frequency ratio merged them anyway, and those are the ones that could
+    be a real minimal pair rather than a typo.
+    """
+    ratio = cfg["fixes"].get("diacritic_fold_ratio", 20)
+    words = [f for f in fold_log if f[5]]
+    lines = [
+        "",
+        "## Diacritic folds",
+        "",
+        f"{len(fold_log):,} lemmas were folded into an accent variant at least "
+        f"{ratio}x as frequent ({sum(1 for f in fold_log if f[4] == 'unaccented'):,} "
+        f"unaccented, {sum(1 for f in fold_log if f[4] == 'accent_variant'):,} wrong "
+        "or Brazilian accent). Every fold is listed.",
+        "",
+        f"### Folds of a dictionary word ({len(words):,}) — review these",
+        "",
+        "The source is a real PT word, merged on frequency alone. Most are "
+        "missing-accent typos of a far commoner word; any that is a genuine "
+        "second word should go on a keep-list.",
+        "",
+        "| from | count | into | count | ratio |",
+        "|---|---:|---|---:|---:|",
+    ]
+    for src, dst, sc, dc, kind, _ in words:
+        lines.append(f"| `{src}` | {sc:,} | `{dst}` | {dc:,} | {dc / sc:,.0f}x |")
+    rest = [f for f in fold_log if not f[5]]
+    lines += ["", f"<details><summary>All other folds ({len(rest):,})</summary>", "",
+              "| from | count | into | count | kind |", "|---|---:|---|---:|---|"]
+    for src, dst, sc, dc, kind, _ in rest:
+        lines.append(f"| `{src}` | {sc:,} | `{dst}` | {dc:,} | {kind} |")
+    lines += ["", "</details>", ""]
+    return "\n".join(lines)
 
 
 def write_tsv(suspects: Sequence[Suspect], path) -> None:

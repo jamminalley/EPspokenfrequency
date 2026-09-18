@@ -26,9 +26,12 @@ class FilterLog:
 
     bp_excluded: list[tuple[str, str]] = field(default_factory=list)
     proper_nouns: list[tuple[str, int, float, str]] = field(default_factory=list)
+    foreign: list[tuple[str, int, str]] = field(default_factory=list)
 
     def dropped_lemmas(self) -> set[str]:
-        return {w for w, _ in self.bp_excluded} | {w for w, _, _, _ in self.proper_nouns}
+        return ({w for w, _ in self.bp_excluded}
+                | {w for w, _, _, _ in self.proper_nouns}
+                | {w for w, _, _ in self.foreign})
 
 
 def bp_exclusion_set(cfg: dict[str, Any]) -> set[str]:
@@ -45,6 +48,18 @@ def bp_exclusion_set(cfg: dict[str, Any]) -> set[str]:
     if cfg["fixes"].get("bp_after_folding"):
         listed |= {strip_diacritics(w) for w in listed}
     return listed
+
+
+def is_english_plural(
+    lemma: str, in_dictionary: Callable[[str], bool], in_english: Callable[[str], bool]
+) -> bool:
+    """zombies, chips, t-shirts: absent from the PT dictionary, and an
+    English plural of an English word.  For a hyphenated form the last part
+    is tested (t-shirts -> shirts / shirt)."""
+    if not lemma.endswith("s") or len(lemma) < 4 or in_dictionary(lemma):
+        return False
+    last = lemma.rsplit("-", 1)[-1]
+    return in_english(last) and (in_english(last[:-1]) or in_english(last[:-2]))
 
 
 def is_proper_noun(
@@ -80,6 +95,7 @@ def apply(
     cap_ratios: Mapping[str, float],
     cfg: dict[str, Any],
     in_dictionary: Callable[[str], bool],
+    in_english: Callable[[str], bool] | None = None,
 ) -> tuple[dict[str, int], FilterLog]:
     """Run both filters.  Returns the surviving counts and a log."""
     log = FilterLog()
@@ -90,6 +106,11 @@ def apply(
         if lemma in bp:
             log.bp_excluded.append((lemma, "bp_exclusion"))
             continue
+        if (cfg["run"]["stage"] >= 2 and cfg["fixes"].get("english_plurals_foreign")
+                and in_english is not None
+                and is_english_plural(lemma, in_dictionary, in_english)):
+            log.foreign.append((lemma, count, "english_plural"))
+            continue
         drop, reason = is_proper_noun(
             lemma, count, cap_ratios.get(lemma, 0.0), cfg, in_dictionary
         )
@@ -99,6 +120,7 @@ def apply(
         kept[lemma] = count
 
     log.proper_nouns.sort(key=lambda t: (-t[1], t[0]))
+    log.foreign.sort(key=lambda t: (-t[1], t[0]))
     log.bp_excluded.sort()
     return kept, log
 
@@ -107,49 +129,65 @@ def fold_diacritics(
     counts: Mapping[str, int],
     cfg: dict[str, Any],
     in_dictionary: Callable[[str], bool],
-) -> tuple[dict[str, int], list[tuple[str, str, int]]]:
-    """Stage 2 fix (a): fold an unaccented form into its accented twin.
+) -> tuple[dict[str, int], list[tuple[str, str, int, int, str, bool]]]:
+    """Stage 2 fixes (a) and (a'): fold accent variants of one word together.
 
-    Four conditions, all required:
-      1. the form has no diacritics;
-      2. it is NOT itself a valid PT word -- this is what keeps the real
-         minimal pairs apart (e/é, da/dá, esta/está, so/só are distinct
-         words and must never be merged);
-      3. an accented variant actually occurs in the corpus;
-      4. that variant is at least ``min_target_ratio`` times as frequent as
-         the form being folded.
+    Lemmas are grouped by their accent-stripped spelling.  Within a group,
+    a lemma folds into the group's most frequent lemma when that one is at
+    least ``fixes.diacritic_fold_ratio`` times as frequent:
 
-    Condition 4 is not optional.  Without it the rule folded `exactamente`
-    (120,806 occurrences, the correct pre-1990 EP spelling, which the PT
-    dictionary does not contain) into `exactámente` (1 occurrence, a typo),
-    and relabelled a rank-496 entry with the misspelling.  A fold must move
-    counts towards the commoner form, never away from it.
+      (a)  an unaccented lemma (nao -> não, numero -> número), on frequency
+           alone -- fixes.diacritic_folding;
+      (a') a lemma with a wrong or Brazilian accent (näo -> não, idéia ->
+           ideia, prêmio -> prémio), only if it is also absent from the PT
+           dictionary -- fixes.accent_variant_folding.  The dictionary test
+           is what keeps pôr/por, quê/que, dê/de and avô/avó apart: the
+           accented member of each is a real word.
 
-    Returns the folded counts and a log of (from, into, count).
+    This runs on lemma counts, after lemmatization, so the classic minimal
+    pairs cannot meet here: está, é and dá have already become estar, ser
+    and dar.  A fold always moves counts towards the commoner form, so
+    `exactamente` can never be folded into a one-off typo.
+
+    Returns the folded counts and a log of (from, into, from_count,
+    into_count, kind, from_is_dictionary_word).
     """
-    if not cfg["fixes"].get("diacritic_folding"):
+    fixes = cfg["fixes"]
+    unaccented = fixes.get("diacritic_folding", False)
+    variants = fixes.get("accent_variant_folding", False)
+    if not (unaccented or variants):
         return dict(counts), []
+    ratio = fixes.get("diacritic_fold_ratio", 20)
 
-    # Accented forms grouped by their folded key.
-    by_folded: dict[str, list[str]] = {}
+    groups: dict[str, list[str]] = {}
     for word in counts:
-        if strip_diacritics(word) != word:
-            by_folded.setdefault(strip_diacritics(word), []).append(word)
+        groups.setdefault(strip_diacritics(word), []).append(word)
 
-    ratio = cfg["fixes"].get("diacritic_fold_min_target_ratio", 1.0)
-    folded: dict[str, int] = {}
-    log: list[tuple[str, str, int]] = []
-    for word, count in counts.items():
-        if strip_diacritics(word) == word and not in_dictionary(word):
-            candidates = by_folded.get(word)
-            if candidates:
-                # Most frequent accented variant wins; ties lexicographic.
-                target = sorted(candidates, key=lambda w: (-counts[w], w))[0]
-                if counts[target] >= count * ratio:
-                    folded[target] = folded.get(target, 0) + count
-                    log.append((word, target, count))
+    redirect: dict[str, str] = {}
+    log: list[tuple[str, str, int, int, str, bool]] = []
+    for key, members in groups.items():
+        if len(members) < 2:
+            continue
+        head = sorted(members, key=lambda w: (-counts[w], w))[0]
+        for word in members:
+            if word == head or counts[head] < ratio * counts[word]:
+                continue
+            is_word = in_dictionary(word)
+            if strip_diacritics(word) == word:
+                if not unaccented:
                     continue
-        folded[word] = folded.get(word, 0) + count
+                kind = "unaccented"
+            else:
+                if not variants or is_word:
+                    continue
+                kind = "accent_variant"
+            redirect[word] = head
+            log.append((word, head, counts[word], counts[head], kind, is_word))
+
+    folded: dict[str, int] = {}
+    for word, count in counts.items():
+        target = redirect.get(word, word)
+        folded[target] = folded.get(target, 0) + count
 
     log.sort(key=lambda t: (-t[2], t[0]))
     return folded, log

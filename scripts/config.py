@@ -36,9 +36,15 @@ _REQUIRED_SECTIONS = (
 
 _FIX_FLAGS = (
     "diacritic_folding",
+    "accent_variant_folding",
     "bp_after_folding",
     "extended_proper_nouns",
     "mwe_constituent_check",
+    "lemma_closure",
+    "plural_folding",
+    "split_enclitics",
+    "english_plurals_foreign",
+    "split_ambiguous",
 )
 
 

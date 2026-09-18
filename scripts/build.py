@@ -27,9 +27,18 @@ from scripts import counts as counts_mod
 from scripts import emit as emit_mod
 from scripts import eval_lemmas as eval_mod
 from scripts import filters as filters_mod
+from scripts import occurrence as occurrence_mod
 from scripts import lemmas as lemmas_mod
 from scripts import quality as quality_mod
 from scripts.postag import PosTagger
+
+
+FIX_FLAGS = (
+    "diacritic_folding", "accent_variant_folding", "bp_after_folding",
+    "extended_proper_nouns", "mwe_constituent_check", "lemma_closure",
+    "plural_folding", "split_enclitics", "english_plurals_foreign",
+    "split_ambiguous",
+)
 
 
 def _log(msg: str) -> None:
@@ -37,16 +46,37 @@ def _log(msg: str) -> None:
 
 
 def aggregate_lemmas(
-    surface_counts: dict[str, int], lemma_map: dict[str, str]
+    surface_counts: dict[str, int],
+    lemma_map: dict[str, str],
+    splits: dict[str, Counter] | None = None,
+    redirect=lambda lemma: lemma,
 ) -> dict[str, int]:
-    """Sum surface counts onto their lemmas, deterministically."""
+    """Sum surface counts onto their lemmas, deterministically.  A surface
+    with a per-occurrence split has its count divided across lemmas."""
     out: Counter = Counter()
+    splits = splits or {}
     for surface in sorted(surface_counts):
-        out[lemma_map.get(surface, surface)] += surface_counts[surface]
+        count = surface_counts[surface]
+        if surface in splits:
+            for lemma, share in occurrence_mod.apportion(count, splits[surface]).items():
+                out[redirect(lemma)] += share
+        else:
+            out[lemma_map.get(surface, surface)] += count
     return dict(out)
 
 
+def effective_config(cfg: dict[str, Any]) -> dict[str, Any]:
+    """Settings a stage implies.  Stage 1 keeps the tokenizer exactly as the
+    original pipeline ran it; stage 2 turns enclitic splitting on when
+    fixes.split_enclitics is set.  Every cache is keyed on the tokenizer, so
+    the two stages never share a stale cache."""
+    if cfg["run"]["stage"] >= 2 and cfg["fixes"].get("split_enclitics"):
+        cfg = config_mod.with_overrides(cfg, {"tokenizer.split_enclitics": True})
+    return cfg
+
+
 def run(cfg: dict[str, Any]) -> dict[str, Any]:
+    cfg = effective_config(cfg)
     started = time.monotonic()
     out_dir = config_mod.out_dir(cfg)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -116,15 +146,67 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
             _log(f"  convention {name}: {info['surfaces']:,} surfaces, "
                  f"{info['tokens']:,} tokens")
 
+    # Per-occurrence resolution: participles and fomos-type forms.
+    splits: dict[str, Counter] = {}
+    split_protected: set[str] = set()
+    if cfg["run"]["stage"] >= 2 and cfg["fixes"].get("split_ambiguous"):
+        tier_min = stats.get("tier_min_count") or cfg["lemmatizer"]["tiered"]["primary_min_count"]
+        cands = occurrence_mod.candidates(uni.counts, cfg, tier_min)
+        _log(f"  per-occurrence: {len(cands):,} candidate surfaces (count >= {tier_min})")
+        tagged = occurrence_mod.tag_cached(cands, bg.contexts, cfg)
+        simple = lemmas_mod.SimplemmaBackend()
+        sm = lambda w: simple.lemmatize_types([w])[w]
+        votes = occurrence_mod.resolve(tagged, lemma_map, cfg, lemmas_mod.in_dictionary, sm)
+        for surface, v in votes.items():
+            norm: Counter = Counter()
+            for lemma, n in v.items():
+                norm[conventions_mod.normalize_lemma(lemma, cfg, lemmas_mod.in_dictionary, sm)] += n
+            splits[surface] = norm
+            lemma_map[surface] = sorted(norm, key=lambda l: (-norm[l], l))[0]
+            for lemma in norm:
+                if lemma in (occurrence_mod.adjective_form(surface), occurrence_mod.noun_form(surface)):
+                    split_protected.add(lemma)
+        multi = {s: v for s, v in splits.items() if len(v) > 1}
+        stats["split_surfaces"] = len(splits)
+        stats["split_multi_lemma"] = len(multi)
+        stats["split_tokens"] = sum(uni.counts[s] for s in multi)
+        _log(f"  per-occurrence: {len(splits):,} surfaces resolved, {len(multi):,} split "
+             f"across lemmas ({stats['split_tokens']:,} tokens)")
+
+    closure_redirect: dict[str, str] = {}
     if cfg["fixes"].get("lemma_closure"):
+        protected = frozenset(split_protected)
+        plural_rule = None
+        if cfg["run"]["stage"] >= 2:
+            protected |= frozenset(conventions_mod.protected_forms(cfg)
+                                   if cfg["conventions"].get("enabled") else ())
+        if cfg["run"]["stage"] >= 2 and cfg["fixes"].get("plural_folding"):
+            tantum = set(cfg["fixes"].get("plurale_tantum", ()))
+            closed = set(PosTagger.load().closed)
+            from scripts.quality import singular_of
+
+            def plural_rule(lemma, inventory):
+                if lemma in tantum:
+                    return None
+                sg = singular_of(lemma, inventory)
+                return None if sg is None or sg in closed else sg
+
         lemma_map, redirects = lemmas_mod.close_lemma_map(
-            lemma_map, lemmas_mod.SimplemmaBackend(), bg.contexts
+            lemma_map, lemmas_mod.SimplemmaBackend(), bg.contexts,
+            protected=protected, plural_rule=plural_rule,
         )
-        stats["lemma_closure_iterations"] = True
+        closure_redirect = dict(redirects)
         stats["lemma_closure_redirects"] = len(redirects)
         _log(f"  closure: merged {len(redirects):,} lemmas onto other entries")
-    stats["lemmatized_types"] = len(lemma_map)
-    lemma_counts = aggregate_lemmas(uni.counts, lemma_map)
+
+    def follow(lemma: str) -> str:
+        seen = set()
+        while lemma in closure_redirect and lemma not in seen:
+            seen.add(lemma)
+            lemma = closure_redirect[lemma]
+        return lemma
+
+    lemma_counts = aggregate_lemmas(uni.counts, lemma_map, splits, follow)
     _log(f"  {len(lemma_counts):,} lemmas from {len(types):,} types")
 
     # -- step 3 (score): MWEs ---------------------------------------------
@@ -135,17 +217,19 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
 
     # -- step 4: filters ---------------------------------------------------
     _log("step 4: filters")
-    if cfg["fixes"].get("diacritic_folding"):
+    fold_log: list = []
+    if cfg["fixes"].get("diacritic_folding") or cfg["fixes"].get("accent_variant_folding"):
         lemma_counts, fold_log = filters_mod.fold_diacritics(
             lemma_counts, cfg, lemmas_mod.in_dictionary
         )
         stats["diacritic_folded"] = len(fold_log)
-        _log(f"  folded {len(fold_log):,} unaccented forms")
+        _log(f"  folded {len(fold_log):,} accent variants")
 
     cap_ratios = {w: bg.cap_ratio(w) for w in lemma_counts}
     kept, flog = filters_mod.apply(
-        lemma_counts, cap_ratios, cfg, lemmas_mod.in_dictionary
+        lemma_counts, cap_ratios, cfg, lemmas_mod.in_dictionary, lemmas_mod.in_english
     )
+    stats["foreign_dropped"] = len(flog.foreign)
     stats["bp_excluded"] = len(flog.bp_excluded)
     stats["proper_nouns_dropped"] = len(flog.proper_nouns)
     _log(f"  dropped {len(flog.proper_nouns):,} proper nouns, "
@@ -166,17 +250,21 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     # Use the lemma map itself as the oracle, so the check asks "is this
     # inventory closed under the lemmatizer that built it?" rather than
     # under some other backend, which would report spurious duplicates.
+    # Headwords kept apart on purpose are exempt.
+    exempt = set(tagger.closed) | set(split_protected)
+    if cfg["run"]["stage"] >= 2:
+        exempt |= set(cfg["fixes"].get("plurale_tantum", ()))
+        if cfg["conventions"].get("enabled"):
+            exempt |= conventions_mod.protected_forms(cfg)
     entry_lemmas = [e.lemma for e in entries if not e.is_mwe]
-    relemma = {w: lemma_map.get(w, w) for w in entry_lemmas}
+    relemma = {w: (w if w in exempt else follow(lemma_map.get(w, w))) for w in entry_lemmas}
     suspects = quality_mod.find_suspects(
-        entries, cfg, lambda w: relemma.get(w, w),
-        closed_class=frozenset(tagger.closed)
-        | frozenset(conventions_mod.protected_forms(cfg)
-                    if cfg["run"]["stage"] >= 2 and cfg["conventions"].get("enabled")
-                    else ()),
+        entries, cfg, lambda w: relemma.get(w, w), closed_class=frozenset(exempt),
     )
     quality_mod.write_tsv(suspects, out_dir / cfg["paths"]["reports"]["quality_tsv"])
     quality_text = quality_mod.render_report(suspects, cfg)
+    if fold_log:
+        quality_text += quality_mod.render_folds(fold_log, cfg)
     (out_dir / cfg["paths"]["reports"]["quality"]).write_text(quality_text, encoding="utf-8")
     stats["suspects"] = len(suspects)
     _log(f"  {len(suspects):,} suspect duplicate entries")
@@ -246,6 +334,8 @@ def main() -> None:
     ap.add_argument("--workers", type=int, default=None)
     ap.add_argument("--stage", type=int, default=None, choices=(1, 2))
     ap.add_argument("--set", action="append", default=[], metavar="PATH=VALUE")
+    ap.add_argument("--all-fixes", action="store_true",
+                    help="stage 2 with every fixes.* flag on")
     args = ap.parse_args()
 
     def coerce(text: str) -> Any:
@@ -269,6 +359,11 @@ def main() -> None:
         overrides["run.stage"] = args.stage
         if args.stage == 2:
             overrides["quality.fail_on_suspects"] = True
+    if args.all_fixes:
+        overrides["run.stage"] = 2
+        overrides["quality.fail_on_suspects"] = True
+        for flag in FIX_FLAGS:
+            overrides[f"fixes.{flag}"] = True
     for item in args.set:
         path, _, raw = item.partition("=")
         overrides[path] = coerce(raw)

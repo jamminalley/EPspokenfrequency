@@ -121,8 +121,17 @@ def apply(
     fold_pairs, keep_pairs = gender_pairs(cfg) if conv["gender"]["enabled"] else ({}, {})
     gender_exceptions = set(conv["gender"].get("exceptions", ())) if conv["gender"]["enabled"] else set()
 
+    allomorphs = dict(conv.get("clitic_allomorphs") or {})
+
     for surface in sorted(out):
         lemma = out[surface]
+
+        # Clitic l-forms (vê-lo -> ver + lo) are the pronoun o/a/os/as.
+        if surface in allomorphs:
+            if lemma != allomorphs[surface]:
+                log.add("1_clitic_allomorphs", surface, lemma, allomorphs[surface])
+            out[surface] = allomorphs[surface]
+            continue
 
         # 4. comparatives and superlatives are their own lemmas
         if surface in comparatives:
@@ -229,3 +238,21 @@ def protected_forms(cfg: dict[str, Any]) -> set[str]:
             keep.add(lemma)
             keep |= set(forms)
     return keep
+
+
+def normalize_lemma(
+    lemma: str,
+    cfg: dict[str, Any],
+    in_dictionary: Callable[[str], bool],
+    relemmatize: Callable[[str], str],
+) -> str:
+    """Apply the lemma-level conventions (spelling reform, gender pairs) to
+    a lemma that did not come through the surface map -- the lemmas that
+    per-occurrence splitting produces."""
+    conv = cfg["conventions"]
+    if conv["spelling_reform"]["enabled"]:
+        lemma = reformed_spelling(lemma, in_dictionary, relemmatize) or lemma
+    if conv["gender"]["enabled"]:
+        fold, _ = gender_pairs(cfg)
+        lemma = fold.get(lemma, lemma)
+    return lemma

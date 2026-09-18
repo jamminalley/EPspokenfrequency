@@ -230,6 +230,7 @@ def render(
 
 _CONVENTION_TITLES = {
     "1_contractions": "1. Contractions are their own entries",
+    "1_clitic_allomorphs": "Clitic l-forms are the pronoun o/a (lo -> o)",
     "2_gender": "2. Gendered nouns fold into the masculine",
     "2_gender_exception": "2. (exception) Feminines with their own meaning kept separate",
     "3_diminutives": "3. Diminutives stay separate",

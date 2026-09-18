@@ -27,6 +27,9 @@ _WORD_RE = re.compile(r"\p{L}+(?:[-'’]\p{L}+)*")
 
 _APOSTROPHES = {"’": "'", "ʼ": "'"}
 
+# Final-vowel accents that an enclitic l-form adds to the verb before it.
+_ACCENT_OFF = {"á": "a", "é": "e", "ê": "e", "í": "i", "ó": "o", "ô": "o"}
+
 
 class Tokenizer:
     """Configured tokenizer.  Construct once, reuse across lines.
@@ -51,6 +54,42 @@ class Tokenizer:
         )
         self._enclitic_set = frozenset(self.enclitics)
         self._mesoclitic_set = frozenset(tok_cfg.get("mesoclitic_suffixes", ()))
+        self.restore_stems: bool = tok_cfg.get("restore_clitic_stems", False)
+        self._is_word = None  # PT dictionary, loaded on first use
+
+    def _word(self, w: str) -> bool:
+        if self._is_word is None:
+            from scripts.lemmas import pt_dictionary
+
+            vocab = pt_dictionary("pt")
+            self._is_word = vocab.__contains__
+        return self._is_word(w)
+
+    def restore_stem(self, stem: str, clitic: str) -> str:
+        """Undo the sound change a clitic forces on the verb before it.
+
+        Before lo/la/los/las a verb drops its final -r, -s or -z and an
+        infinitive gains an accent (fazer-o -> fazê-lo, apanhar-o ->
+        apanhá-lo, diz-o -> di-lo, apanhámos-o -> apanhámo-lo); before nos a
+        first-person plural drops its -s (vamos-nos -> vamo-nos).  Splitting
+        without undoing this leaves non-words such as `fazê` and `apanhámo`,
+        which eval/conventions.md lists as tokenizer artifacts.
+
+        Candidates are tried in a fixed order and the first dictionary word
+        wins, so `pô-lo` restores to `pôr`, not to the preposition `por`.
+        """
+        if not self.restore_stems or not stem:
+            return stem
+        if clitic in ("lo", "la", "los", "las"):
+            base = stem[:-1] + _ACCENT_OFF.get(stem[-1], stem[-1])
+            for cand in (stem + "r", base + "r", stem + "s", base + "s",
+                         base + "z", stem + "z"):
+                if self._word(cand):
+                    return cand
+            return stem
+        if clitic == "nos" and stem.endswith("mo") and self._word(stem + "s"):
+            return stem + "s"
+        return stem
 
     # -- line level -------------------------------------------------------
 
@@ -127,7 +166,19 @@ class Tokenizer:
             return [word]
         stem = "-".join(parts[:idx])
         tail.reverse()
-        return [stem, *tail] if stem else tail
+        if not stem:
+            return tail
+        if self.restore_stems and tail[-1] in self._mesoclitic_set:
+            # Mesoclisis splits the future/conditional around the clitic:
+            # dar-lhe-ia is daria + lhe. Reassemble the verb rather than
+            # leaving `ia`, which would count as a form of `ir`. The stem is
+            # always the future stem, so an accented one restores to -r
+            # (fá-lo-ia -> far + ia = faria, not fazia).
+            if stem[-1] in _ACCENT_OFF:
+                stem = stem[:-1] + _ACCENT_OFF[stem[-1]] + "r"
+            return [stem + tail[-1], *tail[:-1]]
+        stem = self.restore_stem(stem, tail[0])
+        return [stem, *tail]
 
 
 def strip_diacritics(word: str) -> str:
