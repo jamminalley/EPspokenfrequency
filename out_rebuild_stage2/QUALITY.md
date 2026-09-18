@@ -6,12 +6,12 @@ Stage 2. Gate: FAIL on suspects.
 
 | kind | entry | rank | duplicate of | rank | detail |
 |---|---|---:|---|---:|---|
-| diacritic | `camera` | 6972 | `câmera` | 3427 | both fold to 'camera' |
-| diacritic | `frigorifico` | 7999 | `frigorífico` | 2781 | both fold to 'frigorifico' |
-| diacritic | `amen` | 8939 | `ámen` | 2852 | both fold to 'amen' |
-| diacritic | `bla` | 9378 | `blá` | 4132 | both fold to 'bla' |
-| diacritic | `mafia` | 9798 | `máfia` | 3434 | both fold to 'mafia' |
-| diacritic | `karate` | 9824 | `karaté` | 6736 | both fold to 'karate' |
+| diacritic | `camera` | 6970 | `câmera` | 3426 | both fold to 'camera' |
+| diacritic | `frigorifico` | 7995 | `frigorífico` | 2780 | both fold to 'frigorifico' |
+| diacritic | `amen` | 8935 | `ámen` | 2851 | both fold to 'amen' |
+| diacritic | `bla` | 9374 | `blá` | 4131 | both fold to 'bla' |
+| diacritic | `mafia` | 9794 | `máfia` | 3433 | both fold to 'mafia' |
+| diacritic | `karate` | 9820 | `karaté` | 6734 | both fold to 'karate' |
 
 ## Diacritic folds
 
@@ -30936,3 +30936,31 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ženi` | 1 | `zeni` | 14 | accent_variant |
 
 </details>
+
+## Tried and rejected: sentence-start capitalization rule
+
+`fixes.cap_sentence_starts` — off, and not enabled by `--all-fixes`. The
+code stays in place behind the flag.
+
+**The idea.** The proper-noun filter measures how often a word is
+capitalized away from the start of a line. A capital at the start of a
+*sentence* in mid-line (`Sim. Iá, claro.`) is also no evidence of a name,
+and counting it made the interjection `iá` look like one (98% capitalized).
+The rule treats a capital after `.` `!` `?` `…` or a dialogue dash as
+sentence-initial too.
+
+**What it did on the full corpus**, measured against the 286-word human
+review (`eval/proper_noun_drops_review.tsv`):
+
+| | result |
+|---|---|
+| Of the 29 words reviewed as **keep** | it rescued **0** on its own; cap ratios barely moved |
+| Of the 257 words reviewed as **drop** | it would have kept **1** (`v`, cap ratio 0.857 → 0.842) |
+| Net effect on the published list | **5 wrong entries**: `v`, plus four names below the review threshold — `silva`, `feng`, `ventura`, `song` |
+
+**Why it failed.** The review words are not capitalized because they start
+sentences: `Deus`, `Sr.`, `Natal` and pre-1990 month names are capitalized
+mid-sentence by convention. The rule was right about `iá`, but `iá` is
+already protected by the interjection list. Everything the rule was meant
+to fix is handled by the reviewed keep-list, and all it adds on this corpus
+is leakage of names whose capitals happen to fall at sentence starts.

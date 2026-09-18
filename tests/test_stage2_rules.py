@@ -114,7 +114,7 @@ def test_keep_list_protects_reviewed_words(cfg, tmp_path):
                       "deus\t9\t0.96\tx\tkeep\njack\t9\t1.0\tx\tdrop\n", encoding="utf-8")
     c = config_mod.with_overrides(cfg, {
         "run.stage": 2, "quality.fail_on_suspects": True,
-        "fixes.extended_proper_nouns": True, "fixes.proper_noun_keep_list": True,
+        "fixes.extended_proper_nouns": True, "fixes.proper_noun_review": True,
         "filters.proper_nouns.keep_file": str(review)})
     kept, log = filters.apply({"deus": 700_000, "jack": 130_000},
                               {"deus": 0.96, "jack": 1.0}, c, lambda w: True)

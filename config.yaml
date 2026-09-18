@@ -143,8 +143,8 @@ filters:
                     "iá", "ya", "ho", "hi", "hm"]
   proper_nouns:
     enabled: true
-    # Stage 2 (fixes.proper_noun_keep_list): words with decision `keep` in
-    # this reviewed file are never dropped as proper nouns.
+    # Stage 2 (fixes.proper_noun_review): human decisions in this file --
+    # `keep` is never dropped as a proper noun, `drop` always is.
     keep_file: eval/proper_noun_drops_review.tsv
     review_min_count: 5000
     # The original's OOV heuristic was lost and cannot be recovered from
@@ -224,11 +224,14 @@ fixes:
   # A 1-2 letter lemma survives only if it is a PT dictionary word or a
   # listed interjection; the rest are fragments (ã, nã, ra, sa).
   short_token_rule: false
-  # Count a capital after . ! ? … or a dialogue dash as sentence-initial,
-  # like a line-initial one, when measuring cap_ratio.
+  # TRIED AND REJECTED -- leave false. Counts a capital after . ! ? … or a
+  # dialogue dash as sentence-initial when measuring cap_ratio. It rescued
+  # none of the 29 reviewed keep words and let 5 names into the list; see
+  # the note in QUALITY.md. Not enabled by --all-fixes.
   cap_sentence_starts: false
-  # Load keep decisions from filters.proper_nouns.keep_file.
-  proper_noun_keep_list: false
+  # Apply the human decisions in filters.proper_nouns.keep_file: `keep`
+  # words are never dropped as proper nouns, `drop` words always are.
+  proper_noun_review: false
   ambiguous_forms: ["foi", "fui", "fomos", "foram", "fora", "for", "esta"]
   irregular_participles: ["morto", "feito", "dito", "visto", "escrito",
                           "aberto", "posto", "coberto", "preso", "solto",

@@ -271,8 +271,10 @@ def cache_path(cfg: dict[str, Any]) -> "Path":
         "prune_min_count": cfg["bigrams"]["prune_min_count"],
         "context": cfg["lemmatizer"]["context"],
         "seed": cfg["run"]["seed"],
-        "sentence_starts": sentence_starts_rule(cfg),
     }
+    if sentence_starts_rule(cfg):
+        # Only when on, so caches built before the flag existed stay valid.
+        material["sentence_starts"] = True
     digest = hashlib.sha256(
         json.dumps(material, sort_keys=True, ensure_ascii=False).encode("utf-8")
     ).hexdigest()[:16]

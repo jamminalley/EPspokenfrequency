@@ -48,11 +48,11 @@
   "foreign_dropped": 11152,
   "short_dropped": 721,
   "bp_excluded": 16,
-  "proper_nouns_dropped": 244249,
+  "proper_nouns_dropped": 251318,
   "entries": 10000,
   "suspects": 6,
   "gold": {
     "pipeline, stage 2 (gated)": 0.9849397590361446
   },
-  "elapsed_s": 446.6
+  "elapsed_s": 28.1
 }

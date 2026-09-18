@@ -37,9 +37,10 @@ FIX_FLAGS = (
     "diacritic_folding", "accent_variant_folding", "bp_after_folding",
     "extended_proper_nouns", "mwe_constituent_check", "lemma_closure",
     "plural_folding", "split_enclitics", "english_plurals_foreign",
-    "split_ambiguous", "short_token_rule", "cap_sentence_starts",
-    "proper_noun_keep_list",
+    "split_ambiguous", "short_token_rule", "proper_noun_review",
 )
+# fixes.cap_sentence_starts is deliberately not here: tried and rejected
+# (see scripts/data/quality_notes.md). The code stays behind the flag.
 
 
 def _log(msg: str) -> None:
@@ -325,6 +326,10 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     quality_text = quality_mod.render_report(suspects, cfg)
     if fold_log:
         quality_text += quality_mod.render_folds(fold_log, cfg)
+    notes = Path(__file__).parent / "data" / "quality_notes.md"
+    if cfg["run"]["stage"] >= 2 and notes.is_file():
+        # Standing notes (experiments tried and rejected), kept in the report.
+        quality_text += notes.read_text(encoding="utf-8")
     (out_dir / cfg["paths"]["reports"]["quality"]).write_text(quality_text, encoding="utf-8")
     stats["suspects"] = len(suspects)
     _log(f"  {len(suspects):,} suspect duplicate entries")

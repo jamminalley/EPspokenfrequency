@@ -47,7 +47,7 @@ _FIX_FLAGS = (
     "split_ambiguous",
     "short_token_rule",
     "cap_sentence_starts",
-    "proper_noun_keep_list",
+    "proper_noun_review",
 )
 
 
