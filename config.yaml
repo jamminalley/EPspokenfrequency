@@ -204,7 +204,10 @@ conventions:
             "àqueles", "àquelas", "àquilo", "dele", "dela", "deles", "delas",
             "nele", "nela", "neles", "nelas", "daqui", "daí", "dali", "noutro",
             "noutra", "noutros", "noutras", "doutro", "doutra",
-            "comigo", "contigo", "consigo", "connosco", "convosco"]
+            "comigo", "contigo", "connosco", "convosco"]
+    # `consigo` (com + si) is deliberately absent: in speech it is almost
+    # always the verb -- "não consigo", 1sg of conseguir -- and forcing it
+    # to a pronoun headword stole 350,530 tokens from conseguir.
   # 2. Gendered nouns fold into the masculine, unless the feminine has its
   # own meaning. No automatic test tells menina/menino (fold) from
   # música/músico (keep) -- simplemma folds every -a form and stanza keeps

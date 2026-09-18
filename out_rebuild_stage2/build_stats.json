@@ -9,18 +9,43 @@
   "bigram_pairs": 8796010,
   "context_types": 60000,
   "tier_min_count": 144,
+  "conventions": {
+    "1_contractions": {
+      "surfaces": 3,
+      "tokens": 5243
+    },
+    "2_gender": {
+      "surfaces": 102,
+      "tokens": 990471
+    },
+    "2_gender_exception": {
+      "surfaces": 24,
+      "tokens": 49147
+    },
+    "3_diminutives": {
+      "surfaces": 1349,
+      "tokens": 49742
+    },
+    "4_comparatives": {
+      "surfaces": 4,
+      "tokens": 123094
+    },
+    "5_spelling_reform": {
+      "surfaces": 2399,
+      "tokens": 1584787
+    }
+  },
   "lemma_closure_iterations": true,
-  "lemma_closure_redirects": 3989,
+  "lemma_closure_redirects": 4022,
   "lemmatized_types": 960588,
   "mwes_retained": 664,
-  "diacritic_folded": 10354,
+  "diacritic_folded": 10252,
   "bp_excluded": 16,
-  "proper_nouns_dropped": 263718,
+  "proper_nouns_dropped": 263649,
   "entries": 10000,
-  "suspects": 249,
+  "suspects": 205,
   "gold": {
-    "gated": 0.95,
-    "spacy": 0.8375
+    "pipeline, stage 2 (gated)": 0.9457831325301205
   },
-  "elapsed_s": 49.2
+  "elapsed_s": 23.7
 }

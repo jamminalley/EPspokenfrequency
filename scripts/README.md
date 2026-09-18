@@ -109,29 +109,39 @@ Run with every fix on:
 Writes to `out_rebuild_stage2/` and compares against both `out/` and the
 stage 1 baseline in `out_rebuild/`.
 
-**The gate is red, on purpose.** 249 suspect duplicate entries remain and
+**The gate is red, on purpose.** 205 suspect duplicate entries remain and
 are not whitelisted, because they are real defects rather than acceptable
 coexistence. 50 pairs that genuinely are two different words (`avô`/`avó`,
 `pôr`/`por`, `março`/`marco`) are whitelisted in config; the rule that
-separates the two is in `make_whitelist.py`. Whitelisting the rest would
-make the build green by hiding the problem it exists to report.
+separates the two is in `make_whitelist.py`. Headwords a convention keeps
+separate on purpose (contractions, comparatives) are exempt.
 
 Lemmatizer: Stanza primary with a PT-dictionary gate falling back to
-simplemma (95.0% on the gold set, against Stanza's 92.2% and simplemma's
-90.8%). Stanza runs only on the 69,924 types frequent enough to reach the
-published bands — about an hour on 4 workers — and simplemma takes the
-890,664-type tail. The lemma map is cached, so reruns are seconds.
+simplemma — 94.9% on the reviewed gold set with conventions applied (see
+`out_rebuild/backend_scores.md`). Stanza runs only on the 69,924 types
+frequent enough to reach the published bands — about an hour on 4 workers
+— and simplemma takes the tail. The lemma map is cached, so reruns take
+seconds.
+
+Conventions (`eval/conventions.md`) live in `conventions.py` and the
+top-level `conventions:` config section, which sits outside `lemmatizer:`
+so that editing a convention never invalidates the Stanza cache. Gender
+pairs are not automated: `eval/gender_pairs.tsv` lists the 146 candidates
+with a first-pass decision and a `jim_decision` column that overrides it.
 
 ## Not yet done
 
-- 249 duplicate-entry defects: 212 unfolded plurals and 37 diacritic
-  variants. 64 of the plurals are enclitic clusters that would disappear if
-  `fixes.split_enclitics` were enabled; the rest need plural folding added
-  to `lemma_closure`.
-- `fixes.split_enclitics` is implemented and tested but off. It is not a
-  defect fix — it changes the token inventory wholesale — so it needs an
-  explicit decision.
+- 205 duplicate-entry defects fail the gate: 85 noun/adjective plurals the
+  lemmatizer did not fold, 68 enclitic clusters (`vê-los`/`vê-lo`) that
+  exist only because `split_enclitics` is off, 39 diacritic variants (typos,
+  wrong diacritics such as `näo`, Brazilian spellings such as `idéia`), 11
+  English loanword plurals, and one possessive (`tuas`/`tua`).
+- `eval/gender_pairs.tsv` needs review: 68 fold / 78 keep are first-pass.
+- Two gold rows contradict `eval/conventions.md` (`detector`, `numero`);
+  see `out_rebuild/backend_scores.md`.
+- Participles have no convention: the gold sends some to the verb
+  (`arruinado`) and some to the adjective (`educado`), and closure can chain
+  a feminine participle onto the verb (`batidas` -> `bater`).
+- `fixes.split_enclitics` is implemented and tested but off.
 - The empirical override table (`data/lemma_overrides.tsv`) is not
-  populated; `overrides.py` will generate a review file.
-- The gold set has no human verdicts yet, so every accuracy figure in the
-  reports is labelled provisional.
+  populated.
