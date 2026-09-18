@@ -37,7 +37,8 @@ FIX_FLAGS = (
     "diacritic_folding", "accent_variant_folding", "bp_after_folding",
     "extended_proper_nouns", "mwe_constituent_check", "lemma_closure",
     "plural_folding", "split_enclitics", "english_plurals_foreign",
-    "split_ambiguous", "short_token_rule",
+    "split_ambiguous", "short_token_rule", "cap_sentence_starts",
+    "proper_noun_keep_list",
 )
 
 
@@ -261,6 +262,33 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
         lemma_counts, cap_ratios, cfg, lemmas_mod.in_dictionary, lemmas_mod.in_english
     )
     stats["foreign_dropped"] = len(flog.foreign)
+
+    # Proper-noun audit: for every reviewed word, and every dictionary word
+    # the filter drops at >= review_min_count, what the filter decides on its
+    # own (keep-list ignored). Feeds scripts/make_proper_noun_review.py.
+    if cfg["run"]["stage"] >= 2:
+        import csv as _csv
+
+        pn = cfg["filters"]["proper_nouns"]
+        review_min = pn.get("review_min_count", 5000)
+        reviewed: set[str] = set()
+        kf = Path(pn.get("keep_file", ""))
+        if kf.is_file():
+            with kf.open(encoding="utf-8", newline="") as fh:
+                reviewed = {r["lemma"] for r in _csv.DictReader(fh, delimiter="\t")}
+        audit = []
+        for lemma, count in lemma_counts.items():
+            ratio = cap_ratios.get(lemma, 0.0)
+            drops, _ = filters_mod.is_proper_noun(lemma, count, ratio, cfg,
+                                                  lemmas_mod.in_dictionary)
+            if lemma in reviewed or (drops and count >= review_min
+                                     and lemmas_mod.in_dictionary(lemma)):
+                audit.append((lemma, count, ratio, drops))
+        audit.sort(key=lambda r: (-r[1], r[0]))
+        with (out_dir / "proper_noun_audit.tsv").open("w", encoding="utf-8", newline="\n") as fh:
+            fh.write("lemma\tcount\tcap_ratio\tfilter_drops\n")
+            for lemma, count, ratio, drops in audit:
+                fh.write(f"{lemma}\t{count}\t{ratio:.3f}\t{'yes' if drops else 'no'}\n")
     stats["short_dropped"] = len(flog.short)
     stats["bp_excluded"] = len(flog.bp_excluded)
     stats["proper_nouns_dropped"] = len(flog.proper_nouns)

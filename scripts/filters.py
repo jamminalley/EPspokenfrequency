@@ -73,6 +73,22 @@ def is_english_plural(
     return in_english(last) and (in_english(last[:-1]) or in_english(last[:-2]))
 
 
+def proper_noun_keep_list(cfg: dict[str, Any]) -> set[str]:
+    """Words the proper-noun review decided to keep (deus, sr, natal ...),
+    read from the review file's decision column."""
+    import csv
+    from pathlib import Path
+
+    if cfg["run"]["stage"] < 2 or not cfg["fixes"].get("proper_noun_keep_list"):
+        return set()
+    path = Path(cfg["filters"]["proper_nouns"]["keep_file"])
+    if not path.is_file():
+        return set()
+    with path.open(encoding="utf-8", newline="") as fh:
+        return {r["lemma"].strip() for r in csv.DictReader(fh, delimiter="\t")
+                if (r.get("decision") or "").strip() == "keep"}
+
+
 def is_proper_noun(
     lemma: str,
     count: int,
@@ -111,6 +127,7 @@ def apply(
     """Run both filters.  Returns the surviving counts and a log."""
     log = FilterLog()
     bp = bp_exclusion_set(cfg)
+    keep = proper_noun_keep_list(cfg)
     interjections = (set(cfg["filters"]["short_tokens"]["interjections"])
                      if cfg["run"]["stage"] >= 2 and cfg["fixes"].get("short_token_rule")
                      else set())
@@ -133,7 +150,7 @@ def apply(
         # to false positives: capitalization is measured away from the start
         # of a line but not of a sentence, and interjections usually open
         # one (iá: 98% capitalized).
-        if lemma in interjections:
+        if lemma in interjections or lemma in keep:
             kept[lemma] = count
             continue
         drop, reason = is_proper_noun(

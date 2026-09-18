@@ -143,6 +143,10 @@ filters:
                     "iá", "ya", "ho", "hi", "hm"]
   proper_nouns:
     enabled: true
+    # Stage 2 (fixes.proper_noun_keep_list): words with decision `keep` in
+    # this reviewed file are never dropped as proper nouns.
+    keep_file: eval/proper_noun_drops_review.tsv
+    review_min_count: 5000
     # The original's OOV heuristic was lost and cannot be recovered from
     # out/: 14% of what it dropped IS in the PT dictionary (jack, mary) and
     # 845 lemmas it kept are not (including leaked names -- charlie, joe,
@@ -220,6 +224,11 @@ fixes:
   # A 1-2 letter lemma survives only if it is a PT dictionary word or a
   # listed interjection; the rest are fragments (ã, nã, ra, sa).
   short_token_rule: false
+  # Count a capital after . ! ? … or a dialogue dash as sentence-initial,
+  # like a line-initial one, when measuring cap_ratio.
+  cap_sentence_starts: false
+  # Load keep decisions from filters.proper_nouns.keep_file.
+  proper_noun_keep_list: false
   ambiguous_forms: ["foi", "fui", "fomos", "foram", "fora", "for", "esta"]
   irregular_participles: ["morto", "feito", "dito", "visto", "escrito",
                           "aberto", "posto", "coberto", "preso", "solto",

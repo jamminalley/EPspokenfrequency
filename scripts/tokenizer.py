@@ -25,6 +25,10 @@ import regex as re
 # runs are split further by ``split_enclitic`` when the tail is a clitic.
 _WORD_RE = re.compile(r"\p{L}+(?:[-'’]\p{L}+)*")
 
+# Text between two tokens that ends a sentence: final punctuation, or a
+# dialogue dash (a hyphen with a space on either side, or an en/em dash).
+_SENTENCE_BREAK = re.compile(r"[.!?…]|(?:^|\s)-|-(?:\s|$)|[–—]")
+
 _APOSTROPHES = {"’": "'", "ʼ": "'"}
 
 # Final-vowel accents that an enclitic l-form adds to the verb before it.
@@ -107,21 +111,42 @@ class Tokenizer:
 
     def tokenize(self, line: str) -> list[str]:
         """Turn one corpus line into a list of surface forms."""
+        return [tok for tok, _ in self.tokenize_with_starts(line)]
+
+    def tokenize_with_starts(self, line: str) -> list[tuple[str, bool]]:
+        """Like tokenize, but flag each token that starts a sentence.
+
+        A token starts a sentence if it is first on the line, or if the text
+        since the previous token contains sentence-final punctuation (. ! ?
+        …) or a dialogue dash.  A capital there says nothing about whether
+        the word is a name, so the proper-noun filter must not count it --
+        counting it made interjections such as `iá` (98% capitalized) look
+        like names.  Only the first part of a split cluster can start one.
+        """
         line = self.clean(line)
-        out: list[str] = []
+        out: list[tuple[str, bool]] = []
+        prev_end = 0
         for match in _WORD_RE.finditer(line):
-            word = match.group(0)
-            if "-" in word and self.split_enclitics:
-                parts = self.split_enclitic(word)
-            else:
-                parts = [word]
-            for part in parts:
-                part = part.strip("'-")
-                if len(part) < self.min_token_len:
-                    continue
-                if not self.keep_digits and any(ch.isdigit() for ch in part):
-                    continue
-                out.append(part)
+            gap = line[prev_end:match.start()]
+            starts = not out or bool(_SENTENCE_BREAK.search(gap))
+            prev_end = match.end()
+            first = True
+            for part in self._parts(match.group(0)):
+                out.append((part, starts and first))
+                first = False
+        return out
+
+    def _parts(self, word: str) -> list[str]:
+        """One regex match -> surface forms (split, stripped, filtered)."""
+        parts = self.split_enclitic(word) if "-" in word and self.split_enclitics else [word]
+        out: list[str] = []
+        for part in parts:
+            part = part.strip("'-")
+            if len(part) < self.min_token_len:
+                continue
+            if not self.keep_digits and any(ch.isdigit() for ch in part):
+                continue
+            out.append(part)
         return out
 
     # -- enclitic handling ------------------------------------------------

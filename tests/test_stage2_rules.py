@@ -85,3 +85,38 @@ class TestOccurrenceResolution:
     def test_apportion_is_exact(self):
         parts = occurrence.apportion(1001, {"a": 1, "b": 1, "c": 1})
         assert sum(parts.values()) == 1001 and parts == {"a": 334, "b": 334, "c": 333}
+
+
+class TestCapitalizationEvidence:
+    def _counts(self, cfg, lines, rule):
+        from scripts import bigrams
+        bigrams._init_worker(cfg["tokenizer"], {}, frozenset(), 0, 0, rule)
+        _, _, cap, noninit = bigrams._process_chunk(lines)
+        return cap, noninit
+
+    def test_sentence_start_capital_is_not_evidence(self, cfg):
+        cap, noninit = self._counts(cfg, ["Sim. Iá, claro."], True)
+        assert noninit["iá"] == 0 and cap["iá"] == 0
+
+    def test_without_the_rule_it_was(self, cfg):
+        cap, noninit = self._counts(cfg, ["Sim. Iá, claro."], False)
+        assert cap["iá"] == 1 and noninit["iá"] == 1
+
+    def test_mid_sentence_name_still_counts(self, cfg):
+        cap, noninit = self._counts(cfg, ["Eu e a Maria. Sim."], True)
+        assert cap["maria"] == 1 and noninit["maria"] == 1
+
+
+def test_keep_list_protects_reviewed_words(cfg, tmp_path):
+    from scripts import config as config_mod, filters
+    review = tmp_path / "review.tsv"
+    review.write_text("lemma\tcount\tcap_ratio\treason\tdecision\n"
+                      "deus\t9\t0.96\tx\tkeep\njack\t9\t1.0\tx\tdrop\n", encoding="utf-8")
+    c = config_mod.with_overrides(cfg, {
+        "run.stage": 2, "quality.fail_on_suspects": True,
+        "fixes.extended_proper_nouns": True, "fixes.proper_noun_keep_list": True,
+        "filters.proper_nouns.keep_file": str(review)})
+    kept, log = filters.apply({"deus": 700_000, "jack": 130_000},
+                              {"deus": 0.96, "jack": 1.0}, c, lambda w: True)
+    assert kept == {"deus": 700_000}
+    assert [w for w, *_ in log.proper_nouns] == ["jack"]

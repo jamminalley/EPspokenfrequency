@@ -1,14 +1,22 @@
-"""Write eval/proper_noun_drops_review.tsv.
+"""Regenerate eval/proper_noun_drops_review.tsv without losing decisions.
 
-Lists every word the proper-noun filter dropped that is also a PT
-dictionary word and has at least --min-count occurrences: the drops most
-likely to be mistakes (deus, sr, natal) rather than names (jack, paris).
+The review file lists PT dictionary words the proper-noun filter drops
+(>= review_min_count occurrences) for a human keep/drop decision.  Once
+those decisions are loaded as a keep-list, the kept words stop appearing in
+the drop log -- so the file is merged, never rebuilt from the log:
 
-The file is for human review, so it is never overwritten blindly: if it
-exists, decisions already filled in are carried over by lemma.
+  * every row already in the file is kept, with its decision;
+  * count and cap_ratio are refreshed from the latest stage 2 build, and
+    the previous cap_ratio is kept alongside for comparison;
+  * filter_drops says whether the filter, keep-list ignored, still drops
+    the word on its own;
+  * words the filter now drops that were not in the file are appended with
+    a blank decision, and printed.
 
-Run after a stage 2 build:
-    python -m scripts.make_proper_noun_review --min-count 5000
+Input: out_rebuild_stage2/proper_noun_audit.tsv, written by every stage 2
+build.
+
+    python -m scripts.make_proper_noun_review
 """
 
 from __future__ import annotations
@@ -17,46 +25,51 @@ import argparse
 import csv
 from pathlib import Path
 
+COLUMNS = ["lemma", "count", "cap_ratio", "cap_ratio_before", "filter_drops", "decision"]
+
 
 def main() -> None:
-    from scripts import config as config_mod
-    from scripts.lemmas import in_dictionary
-
     ap = argparse.ArgumentParser()
-    ap.add_argument("--config", default="config.yaml")
-    ap.add_argument("--drops", default="out_rebuild_stage2/dropped_proper_nouns_full.txt")
+    ap.add_argument("--audit", default="out_rebuild_stage2/proper_noun_audit.tsv")
     ap.add_argument("--out", default="eval/proper_noun_drops_review.tsv")
-    ap.add_argument("--min-count", type=int, default=5000)
     args = ap.parse_args()
-    config_mod.load(args.config)
 
-    rows = []
-    with open(args.drops, encoding="utf-8") as fh:
-        for line in fh:
-            if line.startswith("#"):
-                continue
-            parts = line.rstrip("\n").split("\t")
-            if len(parts) < 4:
-                continue
-            count, lemma, ratio, reason = int(parts[0]), parts[1], parts[2], parts[3]
-            if count >= args.min_count and in_dictionary(lemma):
-                rows.append((lemma, count, ratio, reason))
+    with open(args.audit, encoding="utf-8", newline="") as fh:
+        audit = {r["lemma"]: r for r in csv.DictReader(fh, delimiter="\t")}
 
     out = Path(args.out)
-    previous: dict[str, str] = {}
+    previous: list[dict[str, str]] = []
     if out.is_file():
         with out.open(encoding="utf-8", newline="") as fh:
-            for rec in csv.DictReader(fh, delimiter="\t"):
-                if rec.get("decision", "").strip():
-                    previous[rec["lemma"]] = rec["decision"].strip()
+            previous = list(csv.DictReader(fh, delimiter="\t"))
+    known = {r["lemma"] for r in previous}
 
-    rows.sort(key=lambda r: (-r[1], r[0]))
+    rows: list[dict[str, str]] = []
+    for r in previous:
+        a = audit.get(r["lemma"], {})
+        before = r.get("cap_ratio_before") or r.get("cap_ratio", "")
+        rows.append({
+            "lemma": r["lemma"],
+            "count": a.get("count", r.get("count", "")),
+            "cap_ratio": a.get("cap_ratio", ""),
+            "cap_ratio_before": before,
+            "filter_drops": a.get("filter_drops", ""),
+            "decision": (r.get("decision") or "").strip(),
+        })
+    new = [a for lemma, a in audit.items() if lemma not in known and a["filter_drops"] == "yes"]
+    for a in sorted(new, key=lambda a: (-int(a["count"]), a["lemma"])):
+        rows.append({"lemma": a["lemma"], "count": a["count"], "cap_ratio": a["cap_ratio"],
+                     "cap_ratio_before": "", "filter_drops": "yes", "decision": ""})
+
     with out.open("w", encoding="utf-8", newline="\n") as fh:
-        fh.write("lemma\tcount\tcap_ratio\treason\tdecision\n")
-        for lemma, count, ratio, reason in rows:
-            fh.write(f"{lemma}\t{count}\t{ratio}\t{reason}\t{previous.get(lemma, '')}\n")
-    print(f"{len(rows)} rows -> {out}"
-          + (f" ({len(previous)} existing decisions kept)" if previous else ""))
+        fh.write("\t".join(COLUMNS) + "\n")
+        for r in rows:
+            fh.write("\t".join(str(r[c]) for c in COLUMNS) + "\n")
+
+    decided = sum(1 for r in rows if r["decision"])
+    print(f"{len(rows)} rows -> {out} ({decided} decisions kept, {len(new)} new rows)")
+    for a in sorted(new, key=lambda a: (-int(a["count"]), a["lemma"])):
+        print(f"  NEW  {a['lemma']:16} {int(a['count']):>9,}  cap_ratio {a['cap_ratio']}")
 
 
 if __name__ == "__main__":

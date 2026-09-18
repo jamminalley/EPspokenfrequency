@@ -148,3 +148,35 @@ class TestDiacritics:
         """Fold c-cedilla too: `acao` and `ação` are the same word typed
         with and without diacritics."""
         assert strip_diacritics("ç") == "c"
+
+
+class TestSentenceStarts:
+    @pytest.fixture
+    def cased(self, cfg):
+        return Tokenizer(dict(cfg["tokenizer"], lowercase=False))
+
+    def starts(self, tok, line):
+        return [w for w, b in tok.tokenize_with_starts(line) if b]
+
+    def test_line_start(self, cased):
+        assert self.starts(cased, "O João foi.") == ["O"]
+
+    @pytest.mark.parametrize("line,expected", [
+        ("Sim. Iá, está bem.", ["Sim", "Iá"]),
+        ("Olá! Como estás? Bem… Obrigado.", ["Olá", "Como", "Bem", "Obrigado"]),
+        ("Vem cá - Não quero.", ["Vem", "Não"]),
+        ("Vem cá—Não.", ["Vem", "Não"]),
+    ])
+    def test_after_final_punctuation_or_dialogue_dash(self, cased, line, expected):
+        assert self.starts(cased, line) == expected
+
+    def test_name_mid_sentence_is_not_a_start(self, cased):
+        """The evidence the filter needs: Maria capitalized mid-sentence."""
+        assert "Maria" not in self.starts(cased, "Eu e a Maria fomos.")
+
+    def test_word_internal_hyphen_is_not_a_dash(self, cased):
+        assert self.starts(cased, "Um guarda-chuva Azul.") == ["Um"]
+
+    def test_tokens_match_tokenize(self, tok):
+        line = "Sim. Dá-me isso - agora!"
+        assert [w for w, _ in tok.tokenize_with_starts(line)] == tok.tokenize(line)

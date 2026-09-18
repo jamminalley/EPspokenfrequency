@@ -45,6 +45,7 @@ _NVOCAB: int = 0
 _CTX_TYPES: frozenset[str] = frozenset()
 _CTX_K: int = 0
 _SEED: int = 0
+_SENTENCE_STARTS: bool = False
 
 
 def _init_worker(
@@ -53,8 +54,9 @@ def _init_worker(
     ctx_types: frozenset[str],
     ctx_k: int,
     seed: int,
+    sentence_starts: bool = False,
 ) -> None:
-    global _TOKENIZER, _VOCAB, _NVOCAB, _CTX_TYPES, _CTX_K, _SEED
+    global _TOKENIZER, _VOCAB, _NVOCAB, _CTX_TYPES, _CTX_K, _SEED, _SENTENCE_STARTS
     # Case is kept so the proper-noun heuristic can see it; the
     # lowercase form is derived per token, which is what the lowercasing
     # tokenizer would have produced anyway.
@@ -64,6 +66,7 @@ def _init_worker(
     _CTX_TYPES = ctx_types
     _CTX_K = ctx_k
     _SEED = seed
+    _SENTENCE_STARTS = sentence_starts
 
 
 def _ctx_digest(seed: int, surface: str, sentence: str) -> int:
@@ -92,13 +95,23 @@ def _process_chunk(
     nv = _NVOCAB
 
     for line in lines:
-        raw = tokenize(line)
+        if _SENTENCE_STARTS:
+            flagged = _TOKENIZER.tokenize_with_starts(line)
+            raw = [t for t, _ in flagged]
+            starts = [b for _, b in flagged]
+        else:
+            raw = tokenize(line)
+            starts = [i == 0 for i in range(len(raw))]
         if not raw:
             continue
         toks = [t.lower() for t in raw]
 
-        # Casing evidence, skipping the line-initial token.
-        for i in range(1, len(raw)):
+        # Casing evidence. A capital at the start of a line -- or, with the
+        # stage 2 fix, at the start of any sentence -- says nothing about
+        # whether a word is a name, so those positions are not counted.
+        for i in range(len(raw)):
+            if starts[i]:
+                continue
             lowered = toks[i]
             noninitial[lowered] += 1
             if raw[i][:1].isupper():
@@ -188,7 +201,8 @@ def bigram_pass(
     with ctxm.Pool(
         processes=cfg["run"]["workers"],
         initializer=_init_worker,
-        initargs=(cfg["tokenizer"], vocab, ctx_types, ctx_k, cfg["run"]["seed"]),
+        initargs=(cfg["tokenizer"], vocab, ctx_types, ctx_k, cfg["run"]["seed"],
+                  sentence_starts_rule(cfg)),
     ) as pool:
         stream = corpus.chunks(cfg)
         for i, (chunk_pairs, chunk_ctx, chunk_cap, chunk_noninit) in enumerate(
@@ -233,6 +247,12 @@ def bigram_pass(
     )
 
 
+def sentence_starts_rule(cfg: dict[str, Any]) -> bool:
+    """Stage 2 fix: ignore capitals at every sentence start, not only at the
+    start of a line. Off in stage 1 so the baseline stays reproducible."""
+    return cfg["run"]["stage"] >= 2 and bool(cfg["fixes"].get("cap_sentence_starts"))
+
+
 # -- caching ---------------------------------------------------------------
 
 
@@ -251,6 +271,7 @@ def cache_path(cfg: dict[str, Any]) -> "Path":
         "prune_min_count": cfg["bigrams"]["prune_min_count"],
         "context": cfg["lemmatizer"]["context"],
         "seed": cfg["run"]["seed"],
+        "sentence_starts": sentence_starts_rule(cfg),
     }
     digest = hashlib.sha256(
         json.dumps(material, sort_keys=True, ensure_ascii=False).encode("utf-8")
