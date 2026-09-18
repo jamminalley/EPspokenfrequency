@@ -41,7 +41,7 @@ culpada	culpado	9242	4891	fold	adjective: general rule folds to masculine	fold
 lógica	lógico	9168	4544	keep	feminine has its own meaning (logic)	keep
 química	químico	9123	11886	keep	feminine has its own meaning (chemistry)	keep
 florida	florido	8772	359	keep	place name, not the feminine (Florida)	keep
-serena	sereno	8596	871	fold	given name (Serena), not the adjective	keep
+serena	sereno	8596	871	fold	adjective (calm) folds to sereno; the name Serena is for the proper-noun filter/tagger to remove	fold
 parva	parvo	8488	24609	fold	adjective: general rule folds to masculine	fold
 vestida	vestido	8323	51901	keep	feminine has its own meaning (masculine form is 'vestido', a dress)	keep
 pegada	pegado	8193	230	keep	feminine has its own meaning (footprint)	keep
