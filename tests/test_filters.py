@@ -99,6 +99,16 @@ class TestDiacriticFolding:
         )
         assert folded == {plain: 100_000, accented: 10}
 
+    def test_brazilian_accent_folds_without_a_ratio(self, stage2):
+        folded, _ = filters.fold_diacritics({"prémio": 100, "prêmio": 20}, stage2, fake_dict)
+        assert folded == {"prémio": 120}
+
+    def test_feminine_in_a_tilde_is_not_folded(self, stage2):
+        """cirurgiã (a surgeon) is not a misspelling of cirurgia (surgery)."""
+        folded, _ = filters.fold_diacritics(
+            {"cirurgia": 25_000, "cirurgiã": 1_800}, stage2, fake_dict)
+        assert folded == {"cirurgia": 25_000, "cirurgiã": 1_800}
+
     def test_minimal_pair_within_ratio_survives(self, stage2):
         folded, _ = filters.fold_diacritics({"avô": 30, "avó": 70}, stage2, lambda w: True)
         assert folded == {"avô": 30, "avó": 70}

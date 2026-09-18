@@ -138,11 +138,12 @@ def fold_diacritics(
 
       (a)  an unaccented lemma (nao -> não, numero -> número), on frequency
            alone -- fixes.diacritic_folding;
-      (a') a lemma with a wrong or Brazilian accent (näo -> não, idéia ->
-           ideia, prêmio -> prémio), only if it is also absent from the PT
-           dictionary -- fixes.accent_variant_folding.  The dictionary test
-           is what keeps pôr/por, quê/que, dê/de and avô/avó apart: the
-           accented member of each is a real word.
+      (a') a lemma with a wrong or Brazilian accent (näo -> não, prêmio
+           -> prémio), whenever it is absent from the PT dictionary, with no
+           ratio -- fixes.accent_variant_folding.  The dictionary test is
+           what keeps pôr/por, quê/que, dê/de and avô/avó apart: the
+           accented member of each is a real word.  Feminine -ã nouns are
+           exempt (cirurgiã is not a misspelling of cirurgia).
 
     This runs on lemma counts, after lemmatization, so the classic minimal
     pairs cannot meet here: está, é and dá have already become estar, ser
@@ -170,15 +171,22 @@ def fold_diacritics(
             continue
         head = sorted(members, key=lambda w: (-counts[w], w))[0]
         for word in members:
-            if word == head or counts[head] < ratio * counts[word]:
+            if word == head:
                 continue
             is_word = in_dictionary(word)
             if strip_diacritics(word) == word:
-                if not unaccented:
+                # (a) unaccented: frequency ratio only, as decided.
+                if not unaccented or counts[head] < ratio * counts[word]:
                     continue
                 kind = "unaccented"
             else:
+                # (a') wrong/Brazilian accent: no ratio -- the dictionary
+                # test is the safeguard (pôr, quê, dê are words and stay).
+                # A feminine in -ã is its own noun, not a misspelling of the
+                # -a word: cirurgiã is a surgeon, cirurgia is surgery.
                 if not variants or is_word:
+                    continue
+                if word.endswith("ã") and head.endswith("a"):
                     continue
                 kind = "accent_variant"
             redirect[word] = head

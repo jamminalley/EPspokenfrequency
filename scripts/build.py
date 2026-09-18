@@ -183,13 +183,44 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
         if cfg["run"]["stage"] >= 2 and cfg["fixes"].get("plural_folding"):
             tantum = set(cfg["fixes"].get("plurale_tantum", ()))
             closed = set(PosTagger.load().closed)
-            from scripts.quality import singular_of
+            from scripts.quality import singular_candidates
+
+            # Lemma counts before closure, to judge whether a candidate
+            # plural really is the plural of its candidate singular.
+            est: Counter = Counter()
+            for surface, count in uni.counts.items():
+                if surface in splits:
+                    for lemma, share in occurrence_mod.apportion(count, splits[surface]).items():
+                        est[lemma] += share
+                else:
+                    est[lemma_map.get(surface, surface)] += count
+            max_ratio = cfg["fixes"].get("plural_max_ratio", 5)
+            min_sg = cfg["fixes"].get("plural_min_singular_count", 1000)
+            in_dict = lemmas_mod.in_dictionary
 
             def plural_rule(lemma, inventory):
-                if lemma in tantum:
+                # Guards, each learned from a real misfire on the full run:
+                #   closed class   nós -> nó, pois -> poi, três -> trê
+                #   real singular  país -> *paí, depois -> *depoi (junk tail
+                #                  lemmas are in the inventory)
+                #   frequency      deus (750k) -> deu, férias -> féria: a
+                #                  "plural" far commoner than its "singular"
+                #                  is not its plural
+                # The singular must be a real word: in the PT dictionary, or
+                # common enough in the corpus not to be tail junk (elfo,
+                # gangue and slang are missing from the dictionary; *paí and
+                # *depoi have a handful of occurrences).
+                if lemma in tantum or lemma in closed:
                     return None
-                sg = singular_of(lemma, inventory)
-                return None if sg is None or sg in closed else sg
+                for sg in singular_candidates(lemma, inventory):
+                    if sg in closed:
+                        continue
+                    if not (in_dict(sg) or est.get(sg, 0) >= min_sg):
+                        continue
+                    if est.get(lemma, 0) > max_ratio * max(est.get(sg, 0), 1):
+                        continue
+                    return sg
+                return None
 
         lemma_map, redirects = lemmas_mod.close_lemma_map(
             lemma_map, lemmas_mod.SimplemmaBackend(), bg.contexts,
@@ -277,7 +308,11 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     try:
         gold_rows, gold_meta = eval_mod.load_gold(cfg)
         label = f"pipeline, stage {cfg['run']['stage']} ({cfg['lemmatizer']['backend']})"
-        result = eval_mod.score(gold_rows, lemma_map)
+        # What a surface is published under: its lemma, after closure and
+        # after any accent-variant fold of that lemma's count.
+        fold_to = {src: dst for src, dst, *_ in fold_log}
+        published = {s: fold_to.get(follow(l), follow(l)) for s, l in lemma_map.items()}
+        result = eval_mod.score(gold_rows, published)
         gold_text = eval_mod.render({label: result}, gold_meta)
         stats["gold"] = {label: result["accuracy"]}
     except FileNotFoundError as exc:

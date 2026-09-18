@@ -56,12 +56,27 @@ def _singular(word: str) -> str:
     return word[:-1] if word.endswith("s") and len(word) > 3 else word
 
 
+# Accents the 1990 Agreement removed: the acute on the open diphthongs éi
+# and ói (idéia, jóia, paranóico), the circumflex on êe/ôo (vôo, lêem), and
+# the differential accents (pêra, pólo, pêlo, pára).
+_REFORM_ACCENTS = (("éi", "ei"), ("ói", "oi"), ("ôo", "oo"), ("êe", "ee"))
+_DIFFERENTIAL = {"pêra": "pera", "pêras": "peras", "pólo": "polo", "pólos": "polos",
+                 "pêlo": "pelo", "pêlos": "pelos", "pára": "para"}
+
+
 def reform_candidates(word: str) -> list[str]:
     """Post-1990 spellings to try for a pre-1990 word, in fixed order."""
+    if word in _DIFFERENTIAL:
+        return [_DIFFERENTIAL[word]]
     full = word
-    for old, new in _REFORM_RULES:
+    for old, new in _REFORM_RULES + _REFORM_ACCENTS:
         full = full.replace(old, new)
     cands = [full] if full != word else []
+    for old, new in _REFORM_ACCENTS:
+        if old in word:
+            cand = word.replace(old, new)
+            if cand not in cands:
+                cands.append(cand)
     for old, new in _REFORM_RULES:
         start = 0
         while (i := word.find(old, start)) >= 0:
@@ -86,8 +101,13 @@ def reformed_spelling(
         return None
     for cand in reform_candidates(lemma):
         if in_dictionary(cand):
-            again = relemmatize(cand)
-            return again if in_dictionary(again) else cand
+            # Only a reformed plural goes back through the lemmatizer
+            # (acções -> ações -> ação). A singular must not: pêlo -> pelo
+            # would come back as pelar, from "eu pelo".
+            if cand.endswith("s"):
+                again = relemmatize(cand)
+                return again if in_dictionary(again) else cand
+            return cand
     return None
 
 

@@ -96,6 +96,18 @@ class TestSpellingReform:
     def test_reformed_plural_reaches_its_singular(self, ccfg):
         assert run(ccfg, {"acções": "acções"}) == {"acções": "ação"}
 
+    @pytest.mark.parametrize("old,new", [
+        ("idéia", "ideia"), ("jóia", "joia"), ("pêra", "pera"), ("pólo", "polo"),
+        ("vôo", "voo"), ("paranóico", "paranoico")])
+    def test_accents_removed_by_the_1990_agreement(self, ccfg, old, new):
+        assert conventions.reformed_spelling(
+            old, {new}.__contains__, relemma) == new
+
+    def test_reformed_singular_is_not_relemmatized(self, ccfg):
+        """pêlo -> pelo, not pelar ("eu pelo")."""
+        assert conventions.reformed_spelling(
+            "pêlo", {"pelo", "pelar"}.__contains__, lambda w: "pelar") == "pelo"
+
     @pytest.mark.parametrize("word", ["facto", "contacto"])
     def test_consonant_kept_in_european_spelling_is_untouched(self, ccfg, word):
         """facto and contacto keep their consonant post-1990 in Portugal and

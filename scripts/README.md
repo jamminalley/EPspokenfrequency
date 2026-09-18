@@ -97,51 +97,44 @@ selection does not depend on worker count or scheduling.
 
 ## Stage 2
 
-Run with every fix on:
-
 ```bash
-./.venv/bin/python -m scripts.build --stage 2 \
-  --set fixes.diacritic_folding=true --set fixes.bp_after_folding=true \
-  --set fixes.extended_proper_nouns=true --set fixes.mwe_constituent_check=true \
-  --set fixes.lemma_closure=true
+./.venv/bin/python -m scripts.build --all-fixes
 ```
 
 Writes to `out_rebuild_stage2/` and compares against both `out/` and the
-stage 1 baseline in `out_rebuild/`.
+stage 1 baseline in `out_rebuild/`. Full run from cold: ~1 hour, nearly all
+of it Stanza over the 63,253 frequent types; every pass is cached, so a
+rerun after a config change takes about a minute.
 
-**The gate is red, on purpose.** 205 suspect duplicate entries remain and
-are not whitelisted, because they are real defects rather than acceptable
-coexistence. 50 pairs that genuinely are two different words (`avô`/`avó`,
-`pôr`/`por`, `março`/`marco`) are whitelisted in config; the rule that
-separates the two is in `make_whitelist.py`. Headwords a convention keeps
-separate on purpose (contractions, comparatives) are exempt.
+What stage 2 does on top of the baseline:
 
-Lemmatizer: Stanza primary with a PT-dictionary gate falling back to
-simplemma — 94.9% on the reviewed gold set with conventions applied (see
-`out_rebuild/backend_scores.md`). Stanza runs only on the 69,924 types
-frequent enough to reach the published bands — about an hour on 4 workers
-— and simplemma takes the tail. The lemma map is cached, so reruns take
-seconds.
+- **Enclitic splitting**, with the verb restored (`fazê-lo` -> `fazer` +
+  `lo`, `dar-lhe-ia` -> `daria` + `lhe`). Tokens 636.2M, types 838k.
+- **Lemmatizer**: Stanza with a PT-dictionary gate, simplemma for the tail.
+- **Conventions** from `eval/conventions.md`, with gender pairs taken from
+  the advisor's `jim_decision` in `eval/gender_pairs.tsv`.
+- **Per-occurrence splitting** of participles and fomos-type forms by
+  Stanza POS over the sampled contexts: 1,388 surfaces split across lemmas.
+- **Lemma closure** with plural folding (guards: plurale tantum and
+  invariant nouns in config, no closed-class words, a real singular, and a
+  frequency ratio).
+- **Diacritic folding**: unaccented forms at >= 20x; wrong and Brazilian
+  accents whenever the form is not a PT word. Every fold is in QUALITY.md.
+- **Filters**: BP list (with `cara` restored), proper nouns by
+  capitalization, English plurals to the foreign-word filter.
 
-Conventions (`eval/conventions.md`) live in `conventions.py` and the
-top-level `conventions:` config section, which sits outside `lemmatizer:`
-so that editing a convention never invalidates the Stanza cache. Gender
-pairs are not automated: `eval/gender_pairs.tsv` lists the 146 candidates
-with a first-pass decision and a `jim_decision` column that overrides it.
+Published lemma map: 98.5% on the reviewed gold set.
+
+**The gate fails on 18 suspects**, listed with reasons in QUALITY.md. 44
+pairs whose members are both PT dictionary words are whitelisted by the
+rule in `make_whitelist.py`.
 
 ## Not yet done
 
-- 205 duplicate-entry defects fail the gate: 85 noun/adjective plurals the
-  lemmatizer did not fold, 68 enclitic clusters (`vê-los`/`vê-lo`) that
-  exist only because `split_enclitics` is off, 39 diacritic variants (typos,
-  wrong diacritics such as `näo`, Brazilian spellings such as `idéia`), 11
-  English loanword plurals, and one possessive (`tuas`/`tua`).
-- `eval/gender_pairs.tsv` needs review: 68 fold / 78 keep are first-pass.
-- Two gold rows contradict `eval/conventions.md` (`detector`, `numero`);
-  see `out_rebuild/backend_scores.md`.
-- Participles have no convention: the gold sends some to the verb
-  (`arruinado`) and some to the adjective (`educado`), and closure can chain
-  a feminine participle onto the verb (`batidas` -> `bater`).
-- `fixes.split_enclitics` is implemented and tested but off.
-- The empirical override table (`data/lemma_overrides.tsv`) is not
-  populated.
+- 18 duplicate-entry suspects: 11 missing-accent typos below the 20x
+  ratio, 2 feminine nouns the dictionary lacks (`cirurgiã`, `espiã`), and
+  5 pairs of junk or distinct short tokens (`hã`/`ha`, `ã`, `nã`, `ra`,
+  `sa`).
+- The extended proper-noun filter drops capitalized common words:
+  `deus`, `sr`, `sra`, `dr`, `natal`, `cristo`, `majestade`.
+- `data/lemma_overrides.tsv` (the empirical override table) is empty.

@@ -79,6 +79,28 @@ def singular_of(plural: str, inventory: set[str]) -> str | None:
     return None
 
 
+def singular_candidates(plural: str, inventory: set[str]) -> list[str]:
+    """Every singular in ``inventory`` that ``plural`` could be the plural
+    of, in rule order.  The caller picks the first that passes its guards:
+    taking only the first hit let a junk tail lemma (`bol`, `rel`) shadow
+    the real singular (`boi`, `rei`)."""
+    if not plural.endswith("s") or len(plural) < 3:
+        return []
+    cands: list[str] = []
+    if plural.endswith(("ões", "ães", "ãos")):
+        cands.append(plural[:-3] + "ão")
+    if plural.endswith("eses"):
+        cands.append(plural[:-4] + "ês")
+    if plural.endswith("es"):
+        cands.append(plural[:-2])
+    if plural.endswith("is"):
+        cands.append(plural[:-2] + "l")
+    if plural.endswith("ns"):
+        cands.append(plural[:-2] + "m")
+    cands.append(plural[:-1])
+    return [c for c in cands if c in inventory and plural in _plural_forms(c)]
+
+
 def _gender_forms(lemma: str) -> set[str]:
     out: set[str] = set()
     # -ão is not the masculine -o ending; coração has no *coraçãa.

@@ -3,49 +3,55 @@
   "simplemma_version": "2.0.0",
   "fingerprint": {
     "lines": 118469705,
-    "tokens": 623911554,
-    "types": 960588
+    "tokens": 636214452,
+    "types": 838358
   },
-  "bigram_pairs": 8796010,
+  "bigram_pairs": 8365112,
   "context_types": 60000,
   "tier_min_count": 144,
   "conventions": {
+    "1_clitic_allomorphs": {
+      "surfaces": 4,
+      "tokens": 1895087
+    },
     "1_contractions": {
-      "surfaces": 3,
-      "tokens": 5243
+      "surfaces": 4,
+      "tokens": 1719397
     },
     "2_gender": {
-      "surfaces": 102,
-      "tokens": 990471
+      "surfaces": 29,
+      "tokens": 135534
     },
     "2_gender_exception": {
-      "surfaces": 24,
-      "tokens": 49147
+      "surfaces": 35,
+      "tokens": 52776
     },
     "3_diminutives": {
       "surfaces": 1349,
-      "tokens": 49742
+      "tokens": 49745
     },
     "4_comparatives": {
       "surfaces": 4,
-      "tokens": 123094
+      "tokens": 123100
     },
     "5_spelling_reform": {
-      "surfaces": 2399,
-      "tokens": 1584787
+      "surfaces": 2751,
+      "tokens": 1693184
     }
   },
-  "lemma_closure_iterations": true,
-  "lemma_closure_redirects": 4022,
-  "lemmatized_types": 960588,
-  "mwes_retained": 664,
-  "diacritic_folded": 10252,
+  "split_surfaces": 4692,
+  "split_multi_lemma": 1388,
+  "split_tokens": 6788290,
+  "lemma_closure_redirects": 7813,
+  "mwes_retained": 657,
+  "diacritic_folded": 29457,
+  "foreign_dropped": 11168,
   "bp_excluded": 16,
-  "proper_nouns_dropped": 263649,
+  "proper_nouns_dropped": 251898,
   "entries": 10000,
-  "suspects": 205,
+  "suspects": 18,
   "gold": {
-    "pipeline, stage 2 (gated)": 0.9457831325301205
+    "pipeline, stage 2 (gated)": 0.9849397590361446
   },
-  "elapsed_s": 23.7
+  "elapsed_s": 24.9
 }
