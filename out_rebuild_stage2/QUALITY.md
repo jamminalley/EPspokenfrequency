@@ -6,12 +6,12 @@ Stage 2. Gate: FAIL on suspects.
 
 | kind | entry | rank | duplicate of | rank | detail |
 |---|---|---:|---|---:|---|
-| diacritic | `camera` | 6942 | `câmera` | 3407 | both fold to 'camera' |
-| diacritic | `frigorifico` | 7967 | `frigorífico` | 2766 | both fold to 'frigorifico' |
-| diacritic | `amen` | 8907 | `ámen` | 2837 | both fold to 'amen' |
-| diacritic | `bla` | 9346 | `blá` | 4109 | both fold to 'bla' |
-| diacritic | `mafia` | 9766 | `máfia` | 3414 | both fold to 'mafia' |
-| diacritic | `karate` | 9792 | `karaté` | 6706 | both fold to 'karate' |
+| diacritic | `camera` | 6972 | `câmera` | 3427 | both fold to 'camera' |
+| diacritic | `frigorifico` | 7999 | `frigorífico` | 2781 | both fold to 'frigorifico' |
+| diacritic | `amen` | 8939 | `ámen` | 2852 | both fold to 'amen' |
+| diacritic | `bla` | 9378 | `blá` | 4132 | both fold to 'bla' |
+| diacritic | `mafia` | 9798 | `máfia` | 3434 | both fold to 'mafia' |
+| diacritic | `karate` | 9824 | `karaté` | 6736 | both fold to 'karate' |
 
 ## Diacritic folds
 
