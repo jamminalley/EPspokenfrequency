@@ -142,9 +142,17 @@ def apply(
     gender_exceptions = set(conv["gender"].get("exceptions", ())) if conv["gender"]["enabled"] else set()
 
     allomorphs = dict(conv.get("clitic_allomorphs") or {})
+    pronouns = set(conv.get("pronouns") or ())
 
     for surface in sorted(out):
         lemma = out[surface]
+
+        # Pronouns are their own lemmas (me, not eu; lhe, not ele).
+        if surface in pronouns:
+            if lemma != surface:
+                log.add("1_pronouns", surface, lemma, surface)
+            out[surface] = surface
+            continue
 
         # Clitic l-forms (vê-lo -> ver + lo) are the pronoun o/a/os/as.
         if surface in allomorphs:
@@ -250,7 +258,7 @@ def protected_forms(cfg: dict[str, Any]) -> set[str]:
     """Headwords a convention deliberately keeps separate.  The quality
     report must not flag them as duplicates of their neighbours."""
     conv = cfg["conventions"]
-    keep: set[str] = set()
+    keep: set[str] = set(conv.get("pronouns") or ())
     if conv["contractions"]["enabled"]:
         keep |= set(conv["contractions"]["forms"])
     if conv["comparatives"]["enabled"]:

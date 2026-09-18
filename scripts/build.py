@@ -67,6 +67,17 @@ def aggregate_lemmas(
     return dict(out)
 
 
+def stage1_overrides(cfg: dict[str, Any]) -> dict[str, Any]:
+    """Everything that makes stage 1 the April pipeline again: every fix
+    off, simplemma alone, and a gate that only warns."""
+    out: dict[str, Any] = {f"fixes.{k}": False for k, v in cfg["fixes"].items()
+                           if isinstance(v, bool)}
+    out["quality.fail_on_suspects"] = False
+    out["lemmatizer.backend"] = "simplemma"
+    out["lemmatizer.tiered.enabled"] = False
+    return out
+
+
 def effective_config(cfg: dict[str, Any]) -> dict[str, Any]:
     """Settings a stage implies.  Stage 1 keeps the tokenizer exactly as the
     original pipeline ran it; stage 2 turns enclitic splitting on when
@@ -82,6 +93,8 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     started = time.monotonic()
     out_dir = config_mod.out_dir(cfg)
     out_dir.mkdir(parents=True, exist_ok=True)
+    rep_dir = config_mod.reports_dir(cfg)
+    rep_dir.mkdir(parents=True, exist_ok=True)
     stats: dict[str, Any] = {"stage": cfg["run"]["stage"]}
 
     import simplemma
@@ -286,7 +299,7 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
                                      and lemmas_mod.in_dictionary(lemma)):
                 audit.append((lemma, count, ratio, drops))
         audit.sort(key=lambda r: (-r[1], r[0]))
-        with (out_dir / "proper_noun_audit.tsv").open("w", encoding="utf-8", newline="\n") as fh:
+        with (rep_dir / "proper_noun_audit.tsv").open("w", encoding="utf-8", newline="\n") as fh:
             fh.write("lemma\tcount\tcap_ratio\tfilter_drops\n")
             for lemma, count, ratio, drops in audit:
                 fh.write(f"{lemma}\t{count}\t{ratio:.3f}\t{'yes' if drops else 'no'}\n")
@@ -322,7 +335,7 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     suspects = quality_mod.find_suspects(
         entries, cfg, lambda w: relemma.get(w, w), closed_class=frozenset(exempt),
     )
-    quality_mod.write_tsv(suspects, out_dir / cfg["paths"]["reports"]["quality_tsv"])
+    quality_mod.write_tsv(suspects, rep_dir / cfg["paths"]["reports"]["quality_tsv"])
     quality_text = quality_mod.render_report(suspects, cfg)
     if fold_log:
         quality_text += quality_mod.render_folds(fold_log, cfg)
@@ -330,7 +343,7 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     if cfg["run"]["stage"] >= 2 and notes.is_file():
         # Standing notes (experiments tried and rejected), kept in the report.
         quality_text += notes.read_text(encoding="utf-8")
-    (out_dir / cfg["paths"]["reports"]["quality"]).write_text(quality_text, encoding="utf-8")
+    (rep_dir / cfg["paths"]["reports"]["quality"]).write_text(quality_text, encoding="utf-8")
     stats["suspects"] = len(suspects)
     _log(f"  {len(suspects):,} suspect duplicate entries")
 
@@ -383,10 +396,10 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
         cfg, fingerprint_rows, band_reports, quality_text, gold_text, stats,
         baseline_reports=baseline_reports, conventions_text=conventions_text,
     )
-    (out_dir / cfg["paths"]["reports"]["comparison"]).write_text(report, encoding="utf-8")
+    (rep_dir / cfg["paths"]["reports"]["comparison"]).write_text(report, encoding="utf-8")
 
     stats["elapsed_s"] = round(time.monotonic() - started, 1)
-    (out_dir / cfg["paths"]["reports"]["stats"]).write_text(
+    (rep_dir / cfg["paths"]["reports"]["stats"]).write_text(
         json.dumps(stats, indent=2, ensure_ascii=False), encoding="utf-8"
     )
 
@@ -426,8 +439,8 @@ def main() -> None:
         overrides["run.workers"] = args.workers
     if args.stage is not None:
         overrides["run.stage"] = args.stage
-        if args.stage == 2:
-            overrides["quality.fail_on_suspects"] = True
+        if args.stage == 1:
+            overrides.update(stage1_overrides(cfg))
     if args.all_fixes:
         overrides["run.stage"] = 2
         overrides["quality.fail_on_suspects"] = True

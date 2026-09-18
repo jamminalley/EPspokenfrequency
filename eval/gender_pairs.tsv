@@ -145,3 +145,5 @@ calçada	calçado	1520	347	keep	feminine has its own meaning (pavement)	keep
 salvadora	salvador	1514	6761	keep	person noun / adjective	fold
 serva	servo	1514	4542	fold	person noun: feminine kept as its own entry (convention 2 revised — nouns keep, adjectives fold)	keep
 vitela	vitelo	1490	331	keep	feminine has its own meaning (veal)	keep
+rapariga	rapaz	147141	0	keep	person noun, different stem: rapariga is its own word (EP "girl"), not a form of rapaz; folded by Stanza, found in the release audit	keep
+mãe	pai	0	0	keep	person noun, different stem; Stanza folds the plural mães into pai; found in the release audit	keep

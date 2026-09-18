@@ -120,18 +120,27 @@ def is_sample_run(cfg: dict[str, Any]) -> bool:
     return cfg["run"].get("sample_lines") is not None
 
 
-def out_dir(cfg: dict[str, Any]) -> Path:
-    """Output directory.  Sample runs get their own suffix so that a dev run
-    can never overwrite the artifacts of a full run."""
-    base = Path(cfg["paths"]["out_dir"])
-    name = base.name
-    if cfg["run"]["stage"] >= 2:
-        # Stage 2 must not overwrite the stage 1 baseline: it is the thing
-        # stage 2 is measured against.
-        name = f"{name}_stage2"
+def _root(cfg: dict[str, Any]) -> Path | None:
+    """Scratch root for non-release builds, or None for the release build."""
+    build = Path(cfg["paths"]["build_dir"])
     if is_sample_run(cfg):
-        name = f"{name}_sample{cfg['run']['sample_lines']}"
-    return base.with_name(name)
+        return build / f"sample{cfg['run']['sample_lines']}_stage{cfg['run']['stage']}"
+    if cfg["run"]["stage"] < 2:
+        return build / "stage1"
+    return None
+
+
+def out_dir(cfg: dict[str, Any]) -> Path:
+    """Where the lists go. Only the full stage 2 build writes to out/; the
+    stage 1 baseline and --sample runs go under build/, so neither can ever
+    overwrite the published lists."""
+    root = _root(cfg)
+    return root if root is not None else Path(cfg["paths"]["out_dir"])
+
+
+def reports_dir(cfg: dict[str, Any]) -> Path:
+    root = _root(cfg)
+    return root / "reports" if root is not None else Path(cfg["paths"]["reports_dir"])
 
 
 def with_overrides(cfg: dict[str, Any], overrides: dict[str, Any]) -> dict[str, Any]:

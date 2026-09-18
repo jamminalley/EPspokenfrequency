@@ -180,3 +180,23 @@ def test_manual_whitelist_is_order_independent(cfg):
     entries = [SimpleNamespace(lemma="cirurgia", rank=1, is_mwe=False),
                SimpleNamespace(lemma="cirurgiã", rank=2, is_mwe=False)]
     assert quality.find_suspects(entries, c) == []
+
+
+def test_known_typo_pairs_are_accepted_but_new_suspects_still_fail(release_cfg):
+    from types import SimpleNamespace
+    from scripts import config as config_mod, quality
+    c = config_mod.with_overrides(release_cfg, {"quality.check_relemmatize": False,
+                                                "quality.check_inflected_forms": False})
+    known = [SimpleNamespace(lemma="máfia", rank=1, is_mwe=False),
+             SimpleNamespace(lemma="mafia", rank=2, is_mwe=False)]
+    assert quality.find_suspects(known, c) == []
+    new = [SimpleNamespace(lemma="máquina", rank=1, is_mwe=False),
+           SimpleNamespace(lemma="maquina", rank=2, is_mwe=False)]
+    suspects = quality.find_suspects(new, c)
+    assert [s.pair_key for s in suspects] == ["maquina|máquina"]
+    try:
+        quality.enforce(suspects, c)
+    except quality.QualityGateFailure:
+        pass
+    else:
+        raise AssertionError("a new suspect must fail the gate")

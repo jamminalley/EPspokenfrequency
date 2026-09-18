@@ -203,6 +203,7 @@ def find_suspects(
 
     whitelist = {_key(p) for p in (qcfg.get("whitelist_pairs") or ())}
     whitelist |= {_key(p) for p in (qcfg.get("manual_whitelist_pairs") or ())}
+    whitelist |= {_key(p) for p in (qcfg.get("known_typo_pairs") or ())}
     found = [s for s in found if s.pair_key not in whitelist]
     # Deduplicate (a pair can trip more than one check) and order by rank.
     seen: set[tuple[str, str]] = set()
@@ -238,8 +239,18 @@ def render_report(suspects: Sequence[Suspect], cfg: dict[str, Any]) -> str:
         ]
     lines += [f"**{len(suspects)} suspects**: " + (
         ", ".join(f"{k} {v}" for k, v in sorted(by_kind.items())) or "none"), ""]
+    known = list(cfg["quality"].get("known_typo_pairs") or ())
+    if known:
+        lines += [
+            f"Accepted as known typo pairs ({len(known)}): a missing-accent spelling "
+            "below the folding ratio, which appears as its own entry. Not counted "
+            "as suspects; see `quality.known_typo_pairs` in config.yaml.",
+            "",
+            "  " + ", ".join(f"`{p}`" for p in known),
+            "",
+        ]
     if not suspects:
-        lines.append("No suspect pairs found.")
+        lines.append("No unaccepted suspect pairs: the gate passes.")
         return "\n".join(lines) + "\n"
 
     lines += ["| kind | entry | rank | duplicate of | rank | detail |",

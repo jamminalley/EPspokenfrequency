@@ -2,17 +2,24 @@
 
 A frequency list of the **10,000 most common lemmas in European Portuguese
 film and TV dialogue**, built from the Portugal-tagged portion of the
-OpenSubtitles 2018 corpus — 623.9 million tokens of subtitle text.
+OpenSubtitles 2018 corpus — 636 million tokens of subtitle text.
 
 Ready-to-import Anki decks are included.
 
 | | |
 |---|---|
 | Entries | 10,000 lemmas (two files of 5,000) |
-| Multi-word expressions | 290, flagged with `is_mwe` |
+| Multi-word expressions | 302 in the top 10,000, flagged with `is_mwe` |
 | Corpus | OPUS OpenSubtitles v2018, `pt` (Portugal-tagged) |
-| Corpus size | 118,469,705 lines · 623,920,347 tokens · 955,446 unique surface types |
+| Corpus size | 118,469,705 lines · 636,214,452 tokens · 838,358 unique surface types |
+| Lemmatization accuracy | 98.5% on a 332-word human-reviewed sample |
 | Licence | CC BY-SA 4.0 — see [LICENSE](LICENSE) |
+
+This is the second release. The first (April 2026) was produced by a
+pipeline whose scripts were lost; it is kept in
+[`archive/out_april_2026/`](archive/out_april_2026/) and tagged
+`v0-april-2026`. What changed, and why ranks moved, is in
+[CHANGELOG.md](CHANGELOG.md).
 
 ---
 
@@ -56,7 +63,7 @@ That has real consequences.
   said. Real conversation looks different.
 - **The register is dramatic dialogue.** Film and TV over-represent crime,
   conflict, romance, and emergencies. *Matar* ("to kill") lands at rank
-  116, *morrer* at 153, *arma* at 225 and *polícia* at 242 — higher than
+  120, *morrer* at 148, *arma* at 242 and *polícia* at 259 — higher than
   any corpus of everyday life would put them. The vocabulary of work,
   admin, school and errands correspondingly sits lower.
 - **Much of it is translated.** A large share of these subtitles are
@@ -65,9 +72,8 @@ That has real consequences.
   produced Portuguese.
 - **The `pt` tag is corpus metadata, not verified provenance.** It is a
   strong signal of European Portuguese, but Brazilian material can leak
-  through. An explicit BP exclusion list was applied (see the pipeline
-  below), and it is a blunt instrument — it removes obvious markers, not
-  every Brazilianism.
+  through. An explicit BP exclusion list is applied, and it is a blunt
+  instrument — it removes obvious markers, not every Brazilianism.
 - **It is single-genre and one snapshot in time.** No news, no academic
   prose, no fiction, no non-fiction, no actual recorded conversation, and
   nothing newer than the 2018 corpus release.
@@ -81,53 +87,63 @@ professionally edited, and comes with the things this list lacks.
 
 |  | This list | Davies |
 |---|---|---|
-| Corpus | ~624M tokens, subtitles only | ~20M tokens, balanced across registers |
+| Corpus | ~636M tokens, subtitles only | ~20M tokens, balanced across registers |
 | Registers | Film/TV dialogue | Spoken, fiction, newspaper, academic |
-| Variety | Portugal-tagged, BP markers excluded post hoc | Both varieties, with BP/EP marked per entry |
+| Variety | Portugal-tagged, BP markers excluded post hoc; headwords in post-1990 spelling | Both varieties, with BP/EP marked per entry |
 | Glosses & examples | None | English glosses and example sentences throughout |
-| POS tags | Heuristic guess, unverified | Professionally tagged |
-| Lemmatization | Automatic, lookup-based | Curated |
-| Review | None — unreviewed automatic output | Edited and peer-reviewed |
+| Lemmatization | Automatic: a neural tagger (Stanza) reading each word in real sentences, checked against a dictionary. 98.5% correct on a 332-word hand-checked sample | Curated |
+| POS tags | **Still a rule-based guess**, not tagger output — see caveats | Professionally tagged |
+| Contractions (*do*, *ao*, *pela*) | Kept as their own entries | Split into preposition + article |
+| Review | Automatic output. Spot-checked against a hand-reviewed sample, with about 830 individual decisions made by hand (gold set, gender pairs, proper-noun drops); not edited entry by entry | Edited and peer-reviewed |
 | Cost | Free | A book you buy |
 
 What this list offers that Davies does not is scale on a single register
 and a strictly European-Portuguese slant: 30× more tokens, all of it
 dialogue, with Brazilian markers filtered out. That makes it a decent
 *complement* to Davies for a learner targeting spoken EP. It is not a
-replacement, and it has not been checked by anyone.
+replacement, and it has not been edited the way a published dictionary is.
 
 ### Known technical caveats
 
 These are specific and worth knowing before you study from the list.
 
-- **`ser`/`ir` conflation.** `foi`, `fui`, `fomos`, `foram` and `fora` are
-  lemmatized as `ir`. In a conversational register many of these are in
-  fact preterite forms of `ser` (the copula, "was"). This biases `ir`
-  upward. Consider downstream POS-disambiguation if precise `ser`/`ir`
-  splits matter to you.
-- **Accent-stripped duplicates are counted separately.** Subtitle text is
-  often typed without diacritics, and the pipeline does not fold these back
-  together. So `nao` appears at rank 1004 alongside `não` at rank 4, and
-  the same happens for `so`/`só`, `ja`/`já`, `familia`/`família` and
-  `dificil`/`difícil`. Treat an unaccented entry as a spelling artifact of
-  a word you already have, not as a separate word to learn.
-- **One BP marker slipped through on spelling.** The exclusion list held the
-  accented `você`, so the unaccented `voce` survived at rank 2182. Ignore
-  it; it is not EP usage.
-- **Lemmatization misses.** The lemmatizer is lookup-based, so a handful of
-  low-frequency verb 2sg forms fall out as distinct lemmas (e.g. `chega`
-  from `chegas` instead of rolling into `chegar`). These errors are in the
-  low single digits at ranks ≥ 3000 and are generally harmless.
-- **`pos_guess` is a heuristic, not a tagger.** It is a closed-class lookup
-  plus suffix rules. Feminine/masculine nouns with bare `-a`/`-o` endings
-  fall through to `noun`; some of those are really adjectives or verb
-  forms. Verify downstream. A real POS tagger would do better — spaCy's
-  `pt_core_news_sm` is the obvious upgrade, but was unavailable in the
-  build environment.
-- **Proper nouns still leak.** The OOV heuristic caught ~500 of them
-  (listed in `out/dropped_proper_nouns.txt`), but it is not exhaustive —
-  e.g. `cristina` survives at rank 4999. Likewise a few MWE candidates are
-  junk rather than expressions (`d c`).
+- **`pos_guess` is a heuristic, not a tagger.** Stanza is used to decide
+  lemmas, but the published POS column still comes from a closed-class
+  lookup plus suffix rules, reconstructed from the April list. It
+  reproduces that list's choices *including its mistakes* (`aqui` as a
+  pronoun, `também` as a conjunction, `deus` as `unk`). Use it to filter
+  roughly; do not trust it entry by entry.
+- **Lemmatization is not perfect.** 98.5% on the hand-checked sample means
+  something like 150 of the 10,000 entries may carry a lemma error. The
+  known pattern: Stanza sometimes reads a verb form as a noun (`procura`,
+  `mentes`, `sacas` kept as nouns) or picks the wrong verb (`vejam` as
+  *vir*, not *ver*).
+- **Split counts are estimates.** Forms whose lemma depends on the
+  sentence — participles (`educados`: *educar* or *educado*) and forms like
+  `fomos` (*ser* or *ir*) — have their counts divided according to how the
+  tagger reads five sample sentences per word. That is a 20%-granular
+  estimate, not a count of every occurrence.
+- **Six known duplicates remain.** Missing-accent forms are folded into
+  their accented twin only when the accented form is at least 10× as
+  frequent. Six pairs fall below that and appear twice: `camera`/`câmera`,
+  `frigorifico`/`frigorífico`, `amen`/`ámen`, `bla`/`blá`, `mafia`/`máfia`,
+  `karate`/`karaté`. They are accepted as known typo pairs rather than
+  hidden. Treat the unaccented one as a typo of the other.
+- **Folding by frequency can over-merge.** The same 10× rule folds a rare
+  unaccented form into a common accented one even when the rare form is a
+  real word. Every fold is listed in `reports/QUALITY.md`, with the
+  borderline ones (10–20×) in their own section.
+- **Proper nouns are removed by capitalization, and some will slip
+  through.** A word is treated as a name if it is capitalized away from the
+  start of a line almost every time. Dictionary words that the filter
+  removed at 5,000+ occurrences were reviewed one by one — `deus`, `sr`,
+  `natal` and 26 others were restored — but names below that threshold were
+  not reviewed. Everything removed with 100+ occurrences is listed in
+  `out/dropped_proper_nouns.txt`.
+- **English words are only partly filtered.** English plurals and many
+  English names are removed; other English words that turn up in
+  Portuguese dialogue (`ok`, `zombie`) are kept, deliberately in the case of
+  `ok`.
 - **MWE counts are an overlay, not a replacement.** An MWE's `raw_freq` is
   the bigram count, and it is *not* subtracted from its constituent words'
   lemma counts. This is the usual frequency-list convention, but it means
@@ -138,7 +154,9 @@ These are specific and worth knowing before you study from the list.
 ## What's in `out/`
 
 Two rank bands — **1–5000** and **5001–10000** — each published in four
-formats. Files without a number in the name are the first band.
+formats. Files without a number in the name are the first band. File
+names and the Anki header directives are the same as in the April release,
+so an existing import keeps working.
 
 ### The frequency lists
 
@@ -154,9 +172,9 @@ TSV and CSV hold identical data; pick whichever your tools prefer. Columns:
 | `rank` | 1-based rank by `raw_freq`. |
 | `lemma` | Lemma form, or the surface multi-word expression for MWE entries. |
 | `is_mwe` | `1` for a multi-word expression, `0` otherwise. |
-| `pos_guess` | Rule-based POS heuristic. One of `det`, `prep`, `conj`, `pron`, `adv`, `intj`, `num`, `noun`, `adj`, `verb`, `mwe`, `unk`. Verify downstream. |
+| `pos_guess` | Rule-based POS heuristic. One of `det`, `prep`, `conj`, `pron`, `adv`, `intj`, `num`, `noun`, `adj`, `verb`, `mwe`, `unk`. Not tagger output — see caveats. |
 | `raw_freq` | Lemma occurrence count across the full corpus. |
-| `freq_per_million` | Occurrences per million tokens. |
+| `freq_per_million` | Occurrences per million tokens (of 636,214,452). |
 
 ### The Anki decks
 
@@ -171,41 +189,123 @@ TSV and CSV hold identical data; pick whichever your tools prefer. Columns:
 
 | File | What it is |
 |---|---|
-| `qc_sample.csv` | A spot-check sample across the rank range — a quick way to eyeball output quality without opening a 5,000-row file. |
-| `dropped_proper_nouns.txt` | ~500 lemmas removed by the proper-noun/OOV heuristic, sorted by count. Review it to rescue any false positives. |
+| `qc_sample.csv` | A spot-check sample across the first band — a quick way to eyeball output quality without opening a 5,000-row file. |
+| `dropped_proper_nouns.txt` | Words removed as proper nouns (with 100+ occurrences), plus the BP exclusions, English plurals and fragments removed by the other filters. |
+
+The build reports are in [`reports/`](reports/): `COMPARISON.md` (this
+release against the April one), `QUALITY.md` (the quality gate and every
+accent fold), and `backend_scores.md` (how the lemmatizers compared).
 
 ---
 
-## Pipeline
+## How the list is built
 
-How the lists were produced from `pt.txt.gz`:
+From `pt.txt.gz` to `out/`, in one command (`python -m scripts.build`):
 
-1. **Tokenize and count** unigram surface forms, using a Portuguese-aware
-   regex: subtitle artifacts stripped, lowercase normalization, and
-   enclitic clusters split.
-2. **Lemmatize** the type inventory with [`simplemma`](https://github.com/adbar/simplemma)
-   (lookup-based). Known simplemma PT errors are corrected via a
-   hand-curated override table of ~200 surface→lemma mappings, then
-   validated against the [`pyspellchecker`](https://github.com/barrust/pyspellchecker)
-   PT dictionary — lemmas absent from the dictionary are rejected and fall
-   back to the surface form.
-3. **Collect bigrams** in a second corpus pass, restricted to surface forms
-   with ≥ 100 occurrences. MWE candidates are retained on log-likelihood
-   ratio (Dunning G² ≥ 2500) and collocation share ≥ 5%. 290 of the
-   surviving MWEs land inside the top 10,000 — 179 in the first band, 111
-   in the second.
-4. **Filter.** BP-leaning lemmas are excluded — `aeromoça`, `bacana`,
-   `banheiro`, `cara`, `celular`, `galera`, `geladeira`, `legal`, `mano`,
-   `massa`, `né`, `oi`, `trem`, `você`, `vocês`, `xícara`, `ônibus` —
-   and proper-noun leaks are filtered by an OOV heuristic, logged to
-   `out/dropped_proper_nouns.txt`.
-5. **Rank and emit** the top 10,000 entries by raw lemma count as TSV, CSV
-   and Anki TSV.
+1. **Tokenize and count.** A Portuguese-aware tokenizer strips subtitle
+   artifacts and lowercases. Enclitic clusters are split and the verb is
+   restored: `fazê-lo` counts as *fazer* + *lo*, and `dar-lhe-ia` as
+   *daria* + *lhe*.
+2. **Second pass.** Bigram counts for multi-word expressions, five sample
+   sentences for every frequent word, and capitalization statistics for
+   the proper-noun filter.
+3. **Lemmatize.** The 63,253 surface forms frequent enough to reach the
+   list are lemmatized by [Stanza](https://stanfordnlp.github.io/stanza/),
+   reading each word inside its sample sentences. When Stanza's answer is
+   not a dictionary word (it occasionally invents forms like *agradeçar*),
+   [simplemma](https://github.com/adbar/simplemma) is used instead; simplemma
+   also handles the rare tail. A small table of hand-verified corrections
+   covers errors Stanza makes at high frequency (`dói` is *doer*, not
+   *dizer*).
+4. **Resolve context-dependent forms per occurrence.** Participles and
+   forms like `fomos` are split between lemmas according to how Stanza tags
+   them in their sample sentences.
+5. **Apply the lemmatization conventions** in
+   [eval/conventions.md](eval/conventions.md):
+   1. contractions (`do`, `ao`, `pela`) are their own entries;
+   2. adjectives fold to the masculine, but nouns for people keep the
+      feminine (`senhora`, `rapariga`), and a feminine with its own meaning
+      always stays (`música`, `sexta`) — decided pair by pair in
+      [eval/gender_pairs.tsv](eval/gender_pairs.tsv);
+   3. diminutives stay separate (`coisinha`);
+   4. comparatives and irregular superlatives are their own entries
+      (`maior`, `melhor`, `ótimo`);
+   5. spelling-reform variants merge under the post-1990 spelling
+      (`acção` → `ação`, `óptimo` → `ótimo`), while words that keep their
+      consonant in European spelling (`facto`, `contacto`) are left alone.
 
-> **Note on reproducing this.** The scripts that produced `out/` were lost;
-> they are being rebuilt. `out/` is the output of the original run and is
-> left untouched. See [scripts/README.md](scripts/README.md) for status, and
-> [DATA_SOURCES.md](DATA_SOURCES.md) for how to obtain the corpus.
+   Pronouns are their own entries too (`me`, not *eu*).
+6. **Fold remaining duplicates.** Each lemma is checked against the
+   lemmatizer again, and regular plurals are folded onto their singular
+   (guarded: `óculos`, `férias` and `cais` are not plurals of anything). An
+   unaccented form folds into its accented twin when the accented form is at
+   least 10× as frequent, and wrong or Brazilian accents (`näo`, `prêmio`)
+   fold into the European spelling.
+7. **Filter.** BP-leaning words are removed from the exclusion list —
+   `aeromoça`, `bacana`, `banheiro`, `celular`, `galera`, `geladeira`,
+   `legal`, `mano`, `massa`, `né`, `oi`, `trem`, `você`, `vocês`, `xícara`,
+   `ônibus`, with their unaccented variants. Proper nouns are removed by
+   capitalization, subject to the reviewed decisions in
+   [eval/proper_noun_drops_review.tsv](eval/proper_noun_drops_review.tsv).
+   English plurals are removed, and so are one- and two-letter fragments
+   that are neither words nor interjections.
+8. **Rank and emit** the top 10,000 by lemma count, with multi-word
+   expressions — kept by log-likelihood (Dunning G² ≥ 2500) and a
+   collocation share of at least 5% — ranked alongside them. 302 of them
+   make the top 10,000: 194 in the first band and 108 in the second.
+
+### How it is checked
+
+- **A human-reviewed gold set.** [eval/lemma_gold.tsv](eval/lemma_gold.tsv)
+  is 400 words sampled from the corpus across the frequency range, each
+  checked by hand. 332 are scored; 68 were marked as names, foreign words or
+  junk. The published lemmas are correct for **98.5%** of them.
+- **A quality gate.** Every build looks for entries that are probably the
+  same word counted twice — a form that lemmatizes to another entry, an
+  accent variant of another entry, a regular plural of another entry — and
+  fails if it finds any that are not explicitly accepted. **This release
+  passes.** Two kinds of pair are accepted in `config.yaml`, each listed:
+  words that are genuinely different (`avô`/`avó`, `pôr`/`por`,
+  `cirurgiã`/`cirurgia`), and the six known typo pairs from the caveats,
+  which sit below the 10× folding threshold. Any new suspect fails the
+  build.
+- **Determinism.** The same corpus, configuration and library versions
+  produce byte-identical output.
+
+---
+
+## Reproducing this
+
+You need Python 3.13 and several GB of free disk (the corpus, Stanza's
+models and PyTorch). The first build takes about an hour on an 8-core
+machine; later builds reuse cached passes and take a minute.
+
+```bash
+git clone https://github.com/jamminalley/EPspokenfrequency.git
+cd EPspokenfrequency
+python3 -m venv .venv
+./.venv/bin/pip install -r requirements.txt
+./.venv/bin/python -c "import stanza; stanza.download('pt')"
+```
+
+Download the corpus (1.1 GB) into `data/` as described in
+[DATA_SOURCES.md](DATA_SOURCES.md), then:
+
+```bash
+./.venv/bin/python -m scripts.build
+```
+
+This writes `out/` and `reports/` and exits with status 0. If you change
+the configuration and the build exits with status 1, the quality gate has
+found a new suspected duplicate: it is listed in `reports/QUALITY.md`, and
+every output has still been written.
+
+`requirements.txt` pins the exact versions used for this release. With
+them the build reproduces `out/` byte for byte; a different Stanza or
+simplemma release can change individual lemmas. To rebuild the April-style
+list for comparison, run `python -m scripts.build --stage 1` (output in
+`build/stage1/`). [scripts/README.md](scripts/README.md) covers the other
+options.
 
 ---
 
@@ -239,6 +339,11 @@ you plan to import:
 automatically.) Then design your own card templates; front/back layout is
 a personal choice and none is shipped here.
 
+**Upgrading from the April release?** The files, note type and deck names
+are unchanged, so re-importing updates matching notes. Ranks and some
+headwords have changed (see [CHANGELOG.md](CHANGELOG.md)), so notes for
+words that left the list are not removed automatically.
+
 ### Which file should I import?
 
 Take **`ep_spoken_anki_enrichable.tsv`** if you intend to add your own
@@ -271,12 +376,16 @@ to it.
 ## Repository layout
 
 ```
-out/                 Published frequency lists and Anki decks
-scripts/             Pipeline scripts (being rebuilt)
-data/                Corpus download target — gitignored, never committed
-DATA_SOURCES.md      Corpus citation and download instructions
-requirements.txt     Python dependencies for the pipeline
-LICENSE              CC BY-SA 4.0
+out/                   Published frequency lists and Anki decks
+reports/               Build reports: comparison, quality gate, backend scores
+archive/out_april_2026/  The April 2026 release, kept for comparison
+eval/                  Gold set, conventions, and the hand-reviewed decision files
+scripts/               The pipeline (python -m scripts.build)
+tests/                 Unit tests (pytest; no corpus needed)
+config.yaml            Every threshold, list and switch the pipeline uses
+data/                  Corpus download target — gitignored, never committed
+DATA_SOURCES.md        Corpus citation and download instructions
+CHANGELOG.md           What changed between releases
 ```
 
 `data/` is excluded from version control because the corpus is a 1.1 GB

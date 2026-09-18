@@ -13,7 +13,7 @@ the drop log -- so the file is merged, never rebuilt from the log:
   * words the filter now drops that were not in the file are appended with
     a blank decision, and printed.
 
-Input: out_rebuild_stage2/proper_noun_audit.tsv, written by every stage 2
+Input: reports/proper_noun_audit.tsv, written by every stage 2
 build.
 
     python -m scripts.make_proper_noun_review
@@ -30,7 +30,7 @@ COLUMNS = ["lemma", "count", "cap_ratio", "cap_ratio_before", "filter_drops", "d
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--audit", default="out_rebuild_stage2/proper_noun_audit.tsv")
+    ap.add_argument("--audit", default="reports/proper_noun_audit.tsv")
     ap.add_argument("--out", default="eval/proper_noun_drops_review.tsv")
     args = ap.parse_args()
 

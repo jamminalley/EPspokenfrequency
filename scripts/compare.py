@@ -1,4 +1,4 @@
-"""Compare a rebuild against the original out/ and write COMPARISON.md.
+"""Compare a build against the April 2026 release and write COMPARISON.md.
 
 Reports, per the brief: top-5000 lemma set overlap, Spearman correlation of
 ranks for shared lemmas, and the largest discrepancies -- plus the tokenizer
@@ -88,19 +88,28 @@ def render(
     from scripts.counts import format_fingerprint
 
     stage = cfg["run"]["stage"]
-    title = (
-        "# Stage 2 comparison: fixes vs original `out/` and the stage 1 baseline"
-        if stage >= 2
-        else "# Stage 1 comparison: rebuild vs original `out/`"
-    )
-    lines = [
-        title,
-        "",
-        "Stage 1 is a **baseline**, not a target. The original pipeline's",
-        "scripts were lost; this is a reconstruction from the README's",
-        "description, and the README turned out to be wrong in at least one",
-        "place (see Tokenizer below). Divergence is reported, not tuned away.",
-        "",
+    if stage >= 2:
+        lines = [
+            "# Release comparison: this build vs the April 2026 release",
+            "",
+            "The April 2026 release is kept in `archive/out_april_2026/` (tag",
+            "`v0-april-2026`). This release departs from it deliberately -- see",
+            "CHANGELOG.md -- so the overlap figures measure how much changed, not",
+            "how well it was reproduced. The stage 1 reconstruction of the April",
+            "pipeline is compared too, when `build/stage1/` exists.",
+            "",
+        ]
+    else:
+        lines = [
+            "# Stage 1 comparison: reconstruction vs the April 2026 release",
+            "",
+            "Stage 1 is a **baseline**, not a target. The original pipeline's",
+            "scripts were lost; this is a reconstruction from the README's",
+            "description, and the README turned out to be wrong in at least one",
+            "place (see Tokenizer below). Divergence is reported, not tuned away.",
+            "",
+        ]
+    lines += [
         f"- Lemmatizer backend: `{cfg['lemmatizer']['backend']}`",
         f"- Enclitic splitting: `{cfg['tokenizer']['split_enclitics']}`",
         f"- simplemma: `{stats.get('simplemma_version', '?')}`",
@@ -115,7 +124,10 @@ def render(
         "",
         format_fingerprint(list(fingerprint_rows)),
         "",
-        "> The original README's step 1 claims *enclitic-cluster splitting*.",
+        ("> This release splits enclitic clusters on purpose, so its token total"
+         " is higher than April's and its type total lower. The note below is"
+         " about how the April pipeline itself worked.\n>\n" if stage >= 2 else "")
+        + "> The original README's step 1 claims *enclitic-cluster splitting*.",
         "> It did not happen: splitting overshoots the published token total",
         "> by 2.04%, while not splitting matches it to 0.0014%, and `out/`",
         "> itself contains unsplit clusters (`vai-te embora`, `vou-me",
@@ -231,6 +243,7 @@ def render(
 _CONVENTION_TITLES = {
     "1_contractions": "1. Contractions are their own entries",
     "1_clitic_allomorphs": "Clitic l-forms are the pronoun o/a (lo -> o)",
+    "1_pronouns": "Pronouns are their own lemmas (me, not eu)",
     "2_gender": "2. Gendered nouns fold into the masculine",
     "2_gender_exception": "2. (exception) Feminines with their own meaning kept separate",
     "3_diminutives": "3. Diminutives stay separate",

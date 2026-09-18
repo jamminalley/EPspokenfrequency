@@ -18,41 +18,45 @@
       "surfaces": 4,
       "tokens": 1719397
     },
+    "1_pronouns": {
+      "surfaces": 7,
+      "tokens": 13530404
+    },
     "2_gender": {
       "surfaces": 30,
       "tokens": 144130
     },
     "2_gender_exception": {
-      "surfaces": 35,
-      "tokens": 52776
+      "surfaces": 37,
+      "tokens": 211900
     },
     "3_diminutives": {
       "surfaces": 1349,
       "tokens": 49745
     },
     "4_comparatives": {
-      "surfaces": 4,
-      "tokens": 123100
+      "surfaces": 16,
+      "tokens": 453357
     },
     "5_spelling_reform": {
-      "surfaces": 2751,
-      "tokens": 1693184
+      "surfaces": 2748,
+      "tokens": 1471646
     }
   },
   "split_surfaces": 4692,
   "split_multi_lemma": 1388,
   "split_tokens": 6788290,
-  "lemma_closure_redirects": 7813,
+  "lemma_closure_redirects": 7805,
   "mwes_retained": 657,
-  "diacritic_folded": 30178,
+  "diacritic_folded": 30183,
   "foreign_dropped": 11152,
-  "short_dropped": 721,
+  "short_dropped": 718,
   "bp_excluded": 16,
   "proper_nouns_dropped": 251318,
   "entries": 10000,
-  "suspects": 6,
+  "suspects": 0,
   "gold": {
     "pipeline, stage 2 (gated)": 0.9849397590361446
   },
-  "elapsed_s": 28.1
+  "elapsed_s": 24.6
 }

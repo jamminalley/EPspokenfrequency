@@ -13,7 +13,7 @@ rather than by ad-hoc judgement:
                      noun counted twice); otherwise a plural that should
                      have been folded, which is a real defect
 
-Run:  python -m scripts.make_whitelist --suspects out_rebuild_stage2/quality_suspects.tsv
+Run:  python -m scripts.make_whitelist --suspects reports/quality_suspects.tsv
 Emits YAML for config.quality.whitelist_pairs plus a defect summary.
 """
 

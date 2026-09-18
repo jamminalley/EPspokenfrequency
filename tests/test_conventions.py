@@ -118,3 +118,22 @@ class TestSpellingReform:
 def test_protected_forms_cover_contractions_and_comparatives(ccfg):
     keep = conventions.protected_forms(ccfg)
     assert {"aos", "nas", "maiores"} <= keep
+
+
+def test_irregular_superlatives_are_their_own_lemmas(ccfg):
+    """Stanza folds ótimo into bom; convention 4 keeps it, and merges the
+    pre-1990 óptimo into it."""
+    out = run(ccfg, {"ótimo": "bom", "óptima": "bom", "máxima": "grande",
+                     "mínimas": "pequeno", "péssimo": "péssimo"})
+    assert out == {"ótimo": "ótimo", "óptima": "ótimo", "máxima": "máximo",
+                   "mínimas": "mínimo", "péssimo": "péssimo"}
+
+
+def test_object_pronouns_are_their_own_lemmas(ccfg):
+    """Stanza gives me -> eu, lhe -> ele; the convention keeps them."""
+    assert run(ccfg, {"me": "eu", "lhe": "ele", "mim": "eu", "ti": "tu"}) == {
+        "me": "me", "lhe": "lhe", "mim": "mim", "ti": "ti"}
+
+
+def test_protected_forms_include_pronouns(ccfg):
+    assert {"me", "te", "lhe"} <= conventions.protected_forms(ccfg)

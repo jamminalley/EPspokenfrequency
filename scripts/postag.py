@@ -5,7 +5,7 @@ Values: det, prep, conj, pron, adv, intj, num, noun, adj, verb, mwe, unk.
 Verify downstream."
 
 The rule tables live in scripts/data/postag_rules.yaml, fitted from the
-original out/ by scripts/fit_postag.py.  Order matters and mirrors what the
+April 2026 release (archive/out_april_2026/) by scripts/fit_postag.py.  Order matters and mirrors what the
 original's outputs imply: MWE, then the closed-class lookup, then -mente,
 then infinitive endings, then open-class suffixes, then unk.
 """

@@ -120,3 +120,17 @@ def test_keep_list_protects_reviewed_words(cfg, tmp_path):
                               {"deus": 0.96, "jack": 1.0}, c, lambda w: True)
     assert kept == {"deus": 700_000}
     assert [w for w, *_ in log.proper_nouns] == ["jack"]
+
+
+def test_release_config_is_stage_2_with_every_fix_but_the_rejected_one(release_cfg):
+    fixes = {k: v for k, v in release_cfg["fixes"].items() if isinstance(v, bool)}
+    assert release_cfg["run"]["stage"] == 2
+    assert release_cfg["quality"]["fail_on_suspects"] is True
+    assert fixes.pop("cap_sentence_starts") is False
+    assert all(fixes.values()), [k for k, v in fixes.items() if not v]
+
+
+def test_stage1_view_is_the_april_pipeline(cfg):
+    assert cfg["run"]["stage"] == 1
+    assert cfg["lemmatizer"]["backend"] == "simplemma"
+    assert not any(v for v in cfg["fixes"].values() if isinstance(v, bool))

@@ -1,4 +1,4 @@
-"""Derive the pos_guess rule tables from the original out/ files.
+"""Derive the pos_guess rule tables from the April 2026 release (archive/).
 
 The original's POS heuristic -- a closed-class lookup plus suffix rules --
 was lost with the scripts.  Its behaviour is, however, fully observable in

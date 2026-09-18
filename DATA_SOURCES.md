@@ -5,8 +5,8 @@ Portugal-tagged monolingual portion of the **OpenSubtitles 2018** corpus,
 distributed by the [OPUS](https://opus.nlpl.eu/) project.
 
 No other corpus, word list, or dictionary contributed frequency counts.
-`simplemma` and `pyspellchecker` were used as lemmatization and validation
-resources only (see [README.md](README.md#pipeline)).
+Stanza, simplemma and pyspellchecker were used to lemmatize and validate
+words, never to count them (see [README.md](README.md#how-the-list-is-built)).
 
 ## The corpus
 
@@ -20,8 +20,12 @@ resources only (see [README.md](README.md#pipeline)).
 | Published | 2018-11-17 |
 | Homepage | https://opus.nlpl.eu/OpenSubtitles/corpus/version/OpenSubtitles |
 
-As measured by this project's first pass, that file contains 118,469,705
-lines, 623,920,347 tokens, and 955,446 unique surface types.
+As counted by this release's tokenizer, that file contains 118,469,705
+lines, 636,214,452 tokens and 838,358 unique surface types (April 2026
+release: 623,920,347 tokens, 955,446 types). The token and type counts
+depend on the tokenizer: splitting enclitic clusters (`dá-me` -> `dá` +
+`me`) adds tokens, and it turns every clitic cluster into forms that
+already exist, which reduces the number of distinct types.
 
 The `pt` tag is the corpus's own metadata, not a verified judgment about
 each subtitle file. It is a strong signal of European Portuguese, but it
@@ -109,9 +113,12 @@ subtitle text.
 
 | Tool | Role |
 |---|---|
-| [`simplemma`](https://github.com/adbar/simplemma) | Lookup-based lemmatization of the type inventory |
-| [`pyspellchecker`](https://github.com/barrust/pyspellchecker) | PT dictionary used to validate/reject proposed lemmas |
-| [`pandas`](https://pandas.pydata.org/) | Table assembly and output formatting |
+| [Stanza](https://stanfordnlp.github.io/stanza/) | Primary lemmatizer over sampled sentence context; its POS tags split participles and ambiguous forms per occurrence |
+| [`simplemma`](https://github.com/adbar/simplemma) | Fallback lemmatizer when Stanza's lemma is not a dictionary word, and for the low-frequency tail |
+| [`pyspellchecker`](https://github.com/barrust/pyspellchecker) | PT word list for the dictionary gate and several filters; its English list for the foreign-word filter |
 | [`regex`](https://github.com/mrabarnett/mrab-regex) | Unicode-property-aware Portuguese tokenization |
+
+spaCy's `pt_core_news_lg` was evaluated and rejected (last of four backends
+on the gold set; see `reports/backend_scores.md`).
 
 Pinned in [requirements.txt](requirements.txt).

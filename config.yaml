@@ -14,9 +14,11 @@ corpus:
     types: 955446
 
 run:
-  # 1 = faithful baseline reproduction (fixes off, quality gate warns)
-  # 2 = fixes enabled (see `fixes:`; quality gate fails the build)
-  stage: 1
+  # 2 = the release build (writes out/ and reports/).
+  # 1 = faithful reconstruction of the April 2026 pipeline, for comparison:
+  #     `--stage 1` switches every fix off and uses simplemma alone, and
+  #     writes to build/stage1/.
+  stage: 2
   sample_lines: null      # int => read only the first N lines (dev mode)
   workers: 8
   chunk_lines: 250000
@@ -24,9 +26,11 @@ run:
 
 paths:
   cache_dir: .cache          # pass-1/pass-2 intermediates; gitignored
-  out_dir: out_rebuild
-  original_dir: out        # never written to
-  baseline_dir: out_rebuild # stage 1 output; what stage 2 is measured against
+  out_dir: out                 # the published lists
+  reports_dir: reports         # COMPARISON.md, QUALITY.md, audits
+  build_dir: build             # stage 1 baseline and --sample runs; gitignored
+  original_dir: archive/out_april_2026   # the April 2026 output, never written
+  baseline_dir: build/stage1   # stage 1 output, if built; compared when present
   eval_dir: eval
   reports:
     comparison: COMPARISON.md
@@ -175,28 +179,28 @@ fixes:
   # Folds between the ratio and this value get their own review section.
   diacritic_review_below: 20
   # (a) unaccented forms: nao -> não, numero -> número. Frequency only.
-  diacritic_folding: false
+  diacritic_folding: true
   # (a') wrong or Brazilian accents: näo -> não, sâo -> são, prêmio ->
   # prémio, by accent-stripped match to a commoner lemma. No ratio: the
   # source must be absent from the PT dictionary, which is what keeps
   # pôr/por, quê/que, dê/de and avô/avó apart. Feminine -ã nouns
   # (cirurgiã, espiã) are exempt.
-  accent_variant_folding: false
-  bp_after_folding: false
-  extended_proper_nouns: false
-  mwe_constituent_check: false
+  accent_variant_folding: true
+  bp_after_folding: true
+  extended_proper_nouns: true
+  mwe_constituent_check: true
   # Make the lemma inventory closed under its own lemmatizer: if `acha` is
   # an entry and lemmatizes to `achar`, which is also an entry, merge them.
   # This is the defect the rebuild set out to fix -- inflected forms
   # appearing as separate entries.
-  lemma_closure: false
+  lemma_closure: true
   # Inside closure: fold a regular plural onto its singular when the
   # singular is also an entry. The singular must be open-class (bens is not
   # the plural of the adverb bem) and the plural must not be listed below.
   # NOTE: the brief also asked that the plural not be a dictionary word, but
   # the PT dictionary contains regular plurals (anjos, casas, estados), so
   # that test would block every fold; this list is the working guard.
-  plural_folding: false
+  plural_folding: true
   # A "plural" more than this many times as frequent as its "singular" is
   # not its plural (deus 750k vs deu; férias vs féria) and is left alone.
   plural_max_ratio: 5
@@ -215,15 +219,15 @@ fixes:
   # English plurals (zombies, chips, t-shirts) go to the foreign-word
   # filter rather than being folded: absent from the PT dictionary, present
   # in pyspellchecker's English one.
-  english_plurals_foreign: false
+  english_plurals_foreign: true
   # Split a surface's count across lemmas by per-occurrence Stanza tags over
   # the sampled contexts instead of giving the whole count to one lemma:
   # participles (VERB -> infinitive, ADJ -> masculine participle, NOUN ->
   # the noun), and the forms listed in ambiguous_forms (fomos: ir|ser).
-  split_ambiguous: false
+  split_ambiguous: true
   # A 1-2 letter lemma survives only if it is a PT dictionary word or a
   # listed interjection; the rest are fragments (ã, nã, ra, sa).
-  short_token_rule: false
+  short_token_rule: true
   # TRIED AND REJECTED -- leave false. Counts a capital after . ! ? … or a
   # dialogue dash as sentence-initial when measuring cap_ratio. It rescued
   # none of the 29 reviewed keep words and let 5 names into the list; see
@@ -231,7 +235,7 @@ fixes:
   cap_sentence_starts: false
   # Apply the human decisions in filters.proper_nouns.keep_file: `keep`
   # words are never dropped as proper nouns, `drop` words always are.
-  proper_noun_review: false
+  proper_noun_review: true
   ambiguous_forms: ["foi", "fui", "fomos", "foram", "fora", "for", "esta"]
   irregular_participles: ["morto", "feito", "dito", "visto", "escrito",
                           "aberto", "posto", "coberto", "preso", "solto",
@@ -252,7 +256,7 @@ fixes:
   # it but the published outputs disprove it, and turning it on changes the
   # token inventory wholesale (2% more tokens, 13% fewer types) rather than
   # correcting a defect. Kept as a separate, reviewable switch.
-  split_enclitics: false
+  split_enclitics: true
   # Abbreviations only. Single letters were listed here originally and that
   # defeated the check: `d` and `c` are exactly the junk fragments the `d c`
   # example is made of. Real one-letter Portuguese words (a, e, o, à) are in
@@ -296,6 +300,11 @@ conventions:
   # 3. Diminutives stay separate (coisinha, patinho, dinheirinho).
   diminutives:
     enabled: true
+  # Pronouns lemmatize to themselves (eval/conventions.md, general rule).
+  # Stanza lemmatizes object pronouns to the subject form (me -> eu,
+  # lhe -> ele: 13.5M tokens), which would erase the object pronouns from
+  # the list; the gold set agrees (lo -> o, not ele).
+  pronouns: ["me", "te", "lhe", "lhes", "mim", "ti", "vos"]
   # Clitic l-forms are allomorphs of o/a/os/as (vê-lo = vê + o), as the gold
   # set records. Only appear as tokens once enclitics are split.
   clitic_allomorphs:
@@ -311,6 +320,15 @@ conventions:
       melhor: ["melhor", "melhores"]
       pior: ["pior", "piores"]
       menor: ["menor", "menores"]
+      # The irregular synthetic superlatives are headwords in every
+      # dictionary too. Stanza lemmatizes them to the positive (ótimo ->
+      # bom, máxima -> grande), which put ~290k tokens of ótimo/óptimo --
+      # one of the commonest words in spoken EP -- under `bom`.
+      ótimo: ["ótimo", "ótima", "ótimos", "ótimas",
+              "óptimo", "óptima", "óptimos", "óptimas"]
+      péssimo: ["péssimo", "péssima", "péssimos", "péssimas"]
+      máximo: ["máximo", "máxima", "máximos", "máximas"]
+      mínimo: ["mínimo", "mínima", "mínimos", "mínimas"]
   # 5. Pre-1990 spellings merge under the post-1990 spelling, but only when
   # the old spelling is not in the PT dictionary and the new one is -- which
   # leaves facto and contacto (still correct in European spelling) alone.
@@ -320,7 +338,7 @@ conventions:
 quality:
   # Stage 1 reproduces the original's known flaws, so the gate warns.
   # Stage 2 sets this true (enforced in config validation).
-  fail_on_suspects: false
+  fail_on_suspects: true
   check_relemmatize: true
   check_diacritic_pairs: true
   check_inflected_forms: true
@@ -334,8 +352,19 @@ quality:
     - "cirurgia|cirurgiã"   # surgery / a (female) surgeon
     - "espia|espiã"         # spies, he spies / a (female) spy
     - "ha|hã"               # laughter / hesitation: two interjections
+  # Known typo pairs: a missing-accent spelling below the 10x folding
+  # ratio, so it survives as its own entry. Accepted as known rather than
+  # folded, so the release build passes; any new suspect still fails it.
+  # Listed with the accented form's frequency ratio at acceptance.
+  known_typo_pairs:
+    - "camera|câmera"             # 3.6x; câmera is itself the BP spelling of câmara
+    - "frigorifico|frigorífico"   # 6.8x
+    - "amen|ámen"                 # 8.1x
+    - "bla|blá"                   # 4.8x
+    - "mafia|máfia"               # 7.2x
+    - "karate|karaté"             # 2.1x
   whitelist_pairs:
-    # 44 pairs accepted as legitimately distinct (diacritic 44).
+    # 34 pairs accepted as legitimately distinct (diacritic 34).
     # Generated by scripts/make_whitelist.py; see that module for the rule.
     - "ai|aí"
     - "aquele|àquele"
@@ -344,42 +373,32 @@ quality:
     - "a|à"
     - "baba|babá"
     - "bebé|bebê"
-    - "caca|caça"
     - "calcar|calçar"
     - "calculo|cálculo"
-    - "circulo|círculo"
     - "coca|coça"
     - "coco|cocó"
     - "dai|daí"
-    - "divida|dívida"
     - "do|dó"
-    - "duvida|dúvida"
     - "fluido|fluído"
-    - "forcar|forçar"
     - "individuo|indivíduo"
-    - "inicio|início"
     - "lá|lã"
     - "maca|maçã"
     - "magnifico|magnífico"
     - "mama|mamã"
     - "marco|março"
     - "matricula|matrícula"
-    - "ma|má"
     - "moca|moça"
     - "nos|nós"
-    - "noticia|notícia"
     - "no|nó"
     - "o|ó"
     - "papa|papá"
     - "policia|polícia"
     - "porque|porquê"
     - "por|pôr"
-    - "principio|princípio"
     - "pro|pró"
     - "que|quê"
-    - "radio|rádio"
     - "sitio|sítio"
-    - "vitima|vítima"
+    - "vos|vós"
     - "vovó|vovô"
 
 output:

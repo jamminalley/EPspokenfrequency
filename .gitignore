@@ -58,9 +58,9 @@ ENV/
 # Pipeline intermediates (pass-1/pass-2 caches)
 .cache/
 
-# Dev-run outputs from --sample N. The full rebuild in out_rebuild/ is
-# committed; sample runs are throwaway.
-out_rebuild_sample*/
+# Stage 1 baseline and --sample runs (python -m scripts.build --stage 1 /
+# --sample N). Only the release build's out/ and reports/ are committed.
+build/
 
 # Full proper-noun drop log: ~260k entries / 10 MB of mostly hapax noise.
 # The truncated dropped_proper_nouns.txt is committed instead.

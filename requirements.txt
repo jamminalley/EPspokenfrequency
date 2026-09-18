@@ -1,20 +1,16 @@
-# Dependencies for the pipeline described in README.md.
-# The original scripts were lost and are being rebuilt; these are the
-# libraries that pipeline used. See scripts/README.md.
+# Exact versions that produced the published out/. The build is
+# deterministic for a given set of versions; a different simplemma, Stanza
+# or Stanza model release can change individual lemmas.
 #
-#   python3 -m venv .venv && source .venv/bin/activate
-#   pip install -r requirements.txt
+#   python3 -m venv .venv && ./.venv/bin/pip install -r requirements.txt
+#   ./.venv/bin/python -c "import stanza; stanza.download('pt')"
 
-# Lookup-based lemmatization of the Portuguese type inventory (step 2).
-simplemma>=1.0
+stanza==1.14.0          # primary lemmatizer, and POS for participle splitting
+torch==2.14.0           # required by stanza
+simplemma==2.0.0        # fallback lemmatizer (dictionary gate, frequency tail)
+pyspellchecker==0.9.0   # PT dictionary for the gate and filters; EN list for foreign words
+regex==2026.9.10        # Unicode-aware tokenization
+pyyaml==6.0.3           # config.yaml
 
-# PT dictionary used to validate proposed lemmas; unknown lemmas are
-# rejected and fall back to the surface form (step 2).
-pyspellchecker>=0.8
-
-# Table assembly, ranking, and TSV/CSV output (step 5).
-pandas>=2.0
-
-# Unicode-property-aware tokenization — \p{L} classes the stdlib `re`
-# module does not support (step 1).
-regex>=2023.0
+# Tests only
+pytest==9.1.1

@@ -16,10 +16,20 @@ from scripts.tokenizer import Tokenizer  # noqa: E402
 
 
 @pytest.fixture(scope="session")
-def cfg() -> dict:
-    """The real config.yaml.  Tests assert on behaviour it configures, so
-    a config change that breaks tokenization shows up here."""
+def release_cfg() -> dict:
+    """The real config.yaml: the release (stage 2) build."""
     return config_mod.load(ROOT / "config.yaml")
+
+
+@pytest.fixture(scope="session")
+def cfg(release_cfg) -> dict:
+    """The stage 1 view of config.yaml, derived exactly as `--stage 1`
+    derives it. Most unit tests start here and switch on the fix under
+    test, so each fix is tested in isolation."""
+    from scripts.build import stage1_overrides
+
+    overrides = dict(stage1_overrides(release_cfg), **{"run.stage": 1})
+    return config_mod.with_overrides(release_cfg, overrides)
 
 
 @pytest.fixture(scope="session")
