@@ -52,10 +52,10 @@ off by 10-40x. Set in config as
 ## Band: ranks 1-5000
 
 - Entries: original 5,000, rebuild 5,000
-- **Shared lemmas: 3,952 (79.0% of the original)**
-- Jaccard: 0.653
-- **Spearman rho on shared lemmas: 0.9467**
-- pos_guess agreement: 97.3% over 3,952 shared lemmas
+- **Shared lemmas: 3,943 (78.9% of the original)**
+- Jaccard: 0.651
+- **Spearman rho on shared lemmas: 0.9468**
+- pos_guess agreement: 97.3% over 3,943 shared lemmas
 - MWEs: original 179, rebuild 194, shared 166
 
 > pos_guess rules were fitted to `out/` (see scripts/fit_postag.py),
@@ -67,52 +67,52 @@ off by 10-40x. Set in config as
 
 | lemma | original | rebuild | move |
 |---|---:|---:|---:|
-| `visto` | 346 | 4474 | +4,128 |
-| `entendido` | 833 | 4800 | +3,967 |
-| `surpreso` | 857 | 4787 | +3,930 |
-| `pedido` | 4851 | 1042 | -3,809 |
-| `saída` | 4557 | 806 | -3,751 |
-| `exato` | 4754 | 1155 | -3,599 |
-| `feito` | 294 | 3792 | +3,498 |
-| `entrevista` | 4996 | 1654 | -3,342 |
-| `direto` | 4490 | 1184 | -3,306 |
-| `partida` | 4703 | 1398 | -3,305 |
+| `visto` | 346 | 4454 | +4,108 |
+| `entendido` | 833 | 4777 | +3,944 |
+| `surpreso` | 857 | 4765 | +3,908 |
+| `pedido` | 4851 | 1039 | -3,812 |
+| `saída` | 4557 | 805 | -3,752 |
+| `exato` | 4754 | 1154 | -3,600 |
+| `feito` | 294 | 3782 | +3,488 |
+| `entrevista` | 4996 | 1650 | -3,346 |
+| `direto` | 4490 | 1181 | -3,309 |
+| `partida` | 4703 | 1396 | -3,307 |
+| `exceto` | 4514 | 1210 | -3,304 |
 | `sentido` | 3865 | 564 | -3,301 |
-| `exceto` | 4514 | 1215 | -3,299 |
-| `entrega` | 4710 | 1536 | -3,174 |
-| `vista` | 3864 | 940 | -2,924 |
-| `maravilha` | 4828 | 1905 | -2,923 |
+| `entrega` | 4710 | 1532 | -3,178 |
+| `maravilha` | 4828 | 1898 | -2,930 |
+| `vista` | 3864 | 939 | -2,925 |
 | `cuidado` | 3253 | 345 | -2,908 |
 | `procura` | 3297 | 396 | -2,901 |
-| `luta` | 3626 | 731 | -2,895 |
-| `reserva` | 4564 | 1676 | -2,888 |
-| `proteção` | 4219 | 1343 | -2,876 |
+| `luta` | 3626 | 730 | -2,896 |
+| `reserva` | 4564 | 1672 | -2,892 |
+| `proteção` | 4219 | 1338 | -2,881 |
 | `ajuda` | 3141 | 270 | -2,871 |
-| `ato` | 4313 | 1470 | -2,843 |
+| `ato` | 4313 | 1466 | -2,847 |
 | `errar` | 3435 | 606 | -2,829 |
 | `espera` | 2949 | 169 | -2,780 |
-| `projeto` | 4034 | 1259 | -2,775 |
+| `projeto` | 4034 | 1254 | -2,780 |
 
 ### In the original, missing from the rebuild
 
 `me`, `te`, `lhe`, `mim`, `quer`, `deus`, `ti`, `tinha`, `sr`, `preciso`, `vão`, `desculpa`, `vá`, `vê`, `volta`, `fez`, `vos`, `acha`, `se passa`, `óptimo`, `gosto`, `dr`, `lamento`, `calma`, `amo`, `sai`, `john`, `pais`, `penso`, `exactamente`, `estivar`, `certa`, `toma`, `sam`, `mr`, `dê`, `deve`, `esteve`, `esposo`, `olhe`, `trouxe`, `te preocupes`, `chamado`, `michael`, `natal`, `jesus`, `tira`, `vale`, `charlie`, `peter`, `fbi`, `miúdos`, `david`, `joe`, `vário`, `era`, `parabém`, `bebido`, `aposto`, `saído`
 
-_1,048 total._
+_1,057 total._
 
 ### New in the rebuild, absent from the original
 
-`a`, `o que`, `no`, `na`, `nos`, `é que`, `é o`, `eles`, `que não`, `o meu`, `tua`, `é um`, `é uma`, `pelo`, `por isso`, `pela`, `num`, `disso`, `fora`, `contigo`, `nas`, `numa`, `parte`, `todos os`, `deles`, `com ele`, `senhora`, `sozinho`, `todas as`, `cara`, `da minha`, `desta`, `filha`, `neste`, `disto`, `ei`, `deste`, `nisso`, `menina`, `irmã`, `nesta`, `na minha`, `miúda`, `pelos`, `dizem`, `amiga`, `connosco`, `h`, `esposa`, `mente`, `pelas`, `graças`, `s`, `nessa`, `dessa`, `pra`, `parabéns`, `surpresa`, `namorada`, `nesse`
+`a`, `o que`, `no`, `na`, `nos`, `é que`, `é o`, `eles`, `que não`, `o meu`, `tua`, `é um`, `é uma`, `pelo`, `por isso`, `pela`, `num`, `disso`, `fora`, `contigo`, `nas`, `numa`, `parte`, `todos os`, `deles`, `com ele`, `senhora`, `sozinho`, `todas as`, `cara`, `da minha`, `desta`, `filha`, `neste`, `disto`, `ei`, `deste`, `nisso`, `menina`, `irmã`, `nesta`, `na minha`, `miúda`, `pelos`, `dizem`, `amiga`, `connosco`, `esposa`, `mente`, `pelas`, `graças`, `nessa`, `dessa`, `pra`, `parabéns`, `surpresa`, `namorada`, `nesse`, `desse`, `ver lo`
 
-_1,048 total._
+_1,057 total._
 
 ## Band: ranks 5001-10000
 
 - Entries: original 5,000, rebuild 5,000
-- **Shared lemmas: 3,139 (62.8% of the original)**
-- Jaccard: 0.458
-- **Spearman rho on shared lemmas: 0.8808**
-- pos_guess agreement: 98.5% over 3,139 shared lemmas
-- MWEs: original 111, rebuild 106, shared 83
+- **Shared lemmas: 3,094 (61.9% of the original)**
+- Jaccard: 0.448
+- **Spearman rho on shared lemmas: 0.8745**
+- pos_guess agreement: 98.5% over 3,094 shared lemmas
+- MWEs: original 111, rebuild 110, shared 83
 
 > pos_guess rules were fitted to `out/` (see scripts/fit_postag.py),
 > so this agreement figure is partly circular and is not evidence
@@ -123,43 +123,43 @@ _1,048 total._
 
 | lemma | original | rebuild | move |
 |---|---:|---:|---:|
-| `congelado` | 5251 | 9751 | +4,500 |
-| `lisonjeado` | 9460 | 5222 | -4,238 |
-| `afiado` | 5164 | 9382 | +4,218 |
-| `metanfetamina` | 9402 | 5302 | -4,100 |
-| `emocionado` | 9593 | 5813 | -3,780 |
-| `desfeito` | 5217 | 8974 | +3,757 |
-| `admirado` | 9904 | 6157 | -3,747 |
-| `exagerado` | 9015 | 5321 | -3,694 |
-| `catar` | 6324 | 9980 | +3,656 |
-| `bailarino` | 5087 | 8742 | +3,655 |
-| `legendar` | 5411 | 9026 | +3,615 |
-| `enjoado` | 8561 | 5102 | -3,459 |
-| `vagar` | 5857 | 9268 | +3,411 |
-| `sírio` | 5878 | 9272 | +3,394 |
-| `empenhado` | 9268 | 5878 | -3,390 |
-| `coxo` | 6441 | 9755 | +3,314 |
-| `desempregado` | 8693 | 5380 | -3,313 |
-| `arrasado` | 9676 | 6472 | -3,204 |
-| `suado` | 9338 | 6160 | -3,178 |
-| `marreta` | 9964 | 6798 | -3,166 |
-| `cozer` | 8443 | 5300 | -3,143 |
-| `disputar` | 5208 | 8330 | +3,122 |
-| `absolver` | 9213 | 6112 | -3,101 |
-| `isolado` | 5238 | 8303 | +3,065 |
-| `poster` | 9854 | 6799 | -3,055 |
+| `congelado` | 5251 | 9678 | +4,427 |
+| `lisonjeado` | 9460 | 5197 | -4,263 |
+| `afiado` | 5164 | 9312 | +4,148 |
+| `metanfetamina` | 9402 | 5275 | -4,127 |
+| `atraído` | 5462 | 9547 | +4,085 |
+| `emocionado` | 9593 | 5782 | -3,811 |
+| `admirado` | 9904 | 6124 | -3,780 |
+| `exagerado` | 9015 | 5294 | -3,721 |
+| `desfeito` | 5217 | 8909 | +3,692 |
+| `bailarino` | 5087 | 8675 | +3,588 |
+| `catar` | 6324 | 9903 | +3,579 |
+| `legendar` | 5411 | 8960 | +3,549 |
+| `enjoado` | 8561 | 5078 | -3,483 |
+| `empenhado` | 9268 | 5847 | -3,421 |
+| `vagar` | 5857 | 9199 | +3,342 |
+| `desempregado` | 8693 | 5353 | -3,340 |
+| `sírio` | 5878 | 9203 | +3,325 |
+| `arrasado` | 9676 | 6434 | -3,242 |
+| `coxo` | 6441 | 9682 | +3,241 |
+| `suado` | 9338 | 6127 | -3,211 |
+| `marreta` | 9964 | 6755 | -3,209 |
+| `cozer` | 8443 | 5273 | -3,170 |
+| `absolver` | 9213 | 6079 | -3,134 |
+| `poster` | 9854 | 6756 | -3,098 |
+| `tecla` | 9793 | 6730 | -3,063 |
 
 ### In the original, missing from the rebuild
 
 `fulano`, `dificil`, `broche`, `falcão`, `fundador`, `riso`, `solidão`, `mamilo`, `t-shirt`, `atormentar`, `nadia`, `refúgio`, `complicação`, `presta atenção`, `riscar`, `cubo`, `encanto`, `phoenix`, `bónus`, `extensão`, `naval`, `embrulhar`, `hambúrguer`, `vapor`, `pierce`, `drive`, `salvamento`, `percurso`, `orientar`, `daniels`, `tirado`, `elite`, `câmbio`, `mills`, `obrigatório`, `andrea`, `técnica`, `garrett`, `beneficiar`, `hans`, `vermelhas`, `stevens`, `river`, `contabilista`, `desmoronar`, `jeitoso`, `jurisdição`, `impressionado`, `bebes`, `invocar`, `inocência`, `intervir`, `magoado`, `perfurar`, `paula`, `douglas`, `fatiar`, `passarinhar`, `necessariamente`, `judicial`
 
-_1,861 total._
+_1,906 total._
 
 ### New in the rebuild, absent from the original
 
-`strip`, `marina`, `infetar`, `hobbit`, `comunicado`, `diversos`, `registro`, `brandy`, `carinho`, `sarar`, `crack`, `fluir`, `loura`, `ditado`, `viciar`, `bunker`, `terço`, `afeto`, `coitar`, `tequila`, `fritar`, `dróide`, `prancha`, `mantem`, `pátria`, `vitamina`, `aterrorizar`, `mãezinha`, `penteado`, `arredores`, `beijinho`, `mação`, `dane`, `pecar`, `conheçoa`, `juíza`, `matoua`, `lsso`, `patroa`, `lindíssimo`, `certificado`, `casca`, `pira`, `dá-mo`, `inicio`, `palestra`, `enfermeiro`, `mademoiselle`, `gama`, `coça`, `internar`, `espinha`, `plasma`, `comporta`, `diploma`, `down`, `cantora`, `viking`, `gin`, `doméstico`
+`brandy`, `carinho`, `sarar`, `crack`, `fluir`, `loura`, `ditado`, `viciar`, `bunker`, `terço`, `afeto`, `coitar`, `tequila`, `fritar`, `prancha`, `mantem`, `pátria`, `vitamina`, `aterrorizar`, `mãezinha`, `penteado`, `arredores`, `beijinho`, `mação`, `dane`, `pecar`, `conheçoa`, `juíza`, `matoua`, `lsso`, `patroa`, `lindíssimo`, `certificado`, `casca`, `pira`, `dá-mo`, `palestra`, `enfermeiro`, `mademoiselle`, `gama`, `coça`, `internar`, `espinha`, `plasma`, `comporta`, `diploma`, `down`, `cantora`, `viking`, `gin`, `doméstico`, `p'ra`, `varinha`, `radioativo`, `parecias`, `tiraa`, `perceção`, `temor`, `queroa`, `balançar`
 
-_1,861 total._
+_1,906 total._
 
 ## Against the stage 1 baseline
 
@@ -168,44 +168,44 @@ These figures isolate what the stage 2 fixes actually changed.
 
 ### Band: ranks 1-5000
 
-- Shared with baseline: 4,218 (84.4%)
-- Spearman rho vs baseline: 0.9591
+- Shared with baseline: 4,201 (84.0%)
+- Spearman rho vs baseline: 0.9589
 
 **Dropped by the fixes** (in stage 1, gone in stage 2):
 
-`uma`, `me`, `te`, `pelar`, `mim`, `sua`, `quer`, `deus`, `ti`, `sr`, `lhe`, `preciso`, `desculpa`, `volta`, `acha`, `se passa`, `gosto`, `óptimo`, `dr`, `lamento`, `primeira`, `distar`, `nossos`, `calmar`, `umas`, `dá-me`, `jack`, `tuas`, `john`, `vos`, `pais`, `exactamente`, `diz-me`, `papar`, `certa`, `amigar`, `sam`, `deve`, `tinha`, `vê`, `irar`, `te preocupes`, `esposar`, `chamado`, `michael`, `natal`, `vale`, `frank`, `jesus`, `vai-te`, `á`, `tira`, `amo-te`, `fbi`, `david`, `amo`, `verter`, `era`, `leve`, `bebido`
+`uma`, `me`, `te`, `pelar`, `mim`, `sua`, `quer`, `deus`, `ti`, `sr`, `lhe`, `preciso`, `desculpa`, `volta`, `acha`, `se passa`, `gosto`, `óptimo`, `dr`, `lamento`, `primeira`, `distar`, `nossos`, `calmar`, `umas`, `dá-me`, `jack`, `tuas`, `john`, `vos`, `pais`, `exactamente`, `diz-me`, `papar`, `certa`, `amigar`, `h`, `sam`, `deve`, `tinha`, `vê`, `irar`, `te preocupes`, `esposar`, `chamado`, `michael`, `natal`, `vale`, `frank`, `jesus`, `vai-te`, `á`, `tira`, `amo-te`, `fbi`, `david`, `amo`, `verter`, `s`, `era`
 
-_782 total._
+_799 total._
 
 **Promoted by the fixes** (new in stage 2):
 
 `a`, `da`, `no`, `na`, `nos`, `eles`, `dos`, `das`, `pela`, `fora`, `às`, `contigo`, `nas`, `numa`, `aos`, `sozinho`, `cara`, `causa`, `disto`, `ei`, `menina`, `irmã`, `nesta`, `miúda`, `falta`, `pelos`, `dizem`, `amiga`, `connosco`, `esposa`, `papá`, `mente`, `pelas`, `graças`, `nessa`, `pra`, `namorada`, `naquela`, `ver lo`, `posso ajudar`, `direita`, `avó`, `destes`, `rio`, `ama`, `ias`, `destas`, `morta`, `nela`, `verão`, `calça`, `combate`, `daquela`, `tia`, `irão`, `várias`, `aspeto`, `busca`, `bruxa`, `política`
 
-_782 total._
+_799 total._
 
 ### Band: ranks 5001-10000
 
-- Shared with baseline: 3,295 (65.9%)
-- Spearman rho vs baseline: 0.8848
+- Shared with baseline: 3,244 (64.9%)
+- Spearman rho vs baseline: 0.8822
 
 **Dropped by the fixes** (in stage 1, gone in stage 2):
 
 `ingrediente`, `definição`, `porno`, `altar`, `concorrer`, `chef`, `cigano`, `deduzir`, `honestidade`, `indefeso`, `gaiola`, `reconsiderar`, `ponto final`, `anual`, `iate`, `recomendação`, `concreto`, `cultivar`, `furar`, `thor`, `monitorizar`, `válido`, `esplêndido`, `deu-te`, `bébé`, `hudson`, `terramoto`, `política`, `rodado`, `patente`, `flechar`, `formal`, `insecto`, `restrito`, `claque`, `feriado`, `escotilha`, `aleatório`, `enervar`, `cortina`, `nasa`, `artilharia`, `marijuana`, `desobedecer`, `ooh`, `cenoura`, `manda`, `morango`, `dvd`, `irlanda`, `facebook`, `indicação`, `húmido`, `precipitar`, `endireitar`, `pontaria`, `fêmeo`, `bernard`, `moore`, `poeira`
 
-_1,705 total._
+_1,756 total._
 
 **Promoted by the fixes** (new in stage 2):
 
-`fundar`, `infetar`, `comunicado`, `diversos`, `sarar`, `fluir`, `loura`, `ditado`, `viciar`, `terço`, `afeto`, `coitar`, `fritar`, `prancha`, `vitamina`, `aterrorizar`, `mãezinha`, `penteado`, `arredores`, `beijinho`, `mação`, `dane`, `conheçoa`, `juíza`, `matoua`, `patroa`, `lindíssimo`, `certificado`, `saudar`, `casca`, `pira`, `inicio`, `enfermeiro`, `coça`, `espinha`, `plasma`, `comporta`, `cantora`, `doméstico`, `varinha`, `radioativo`, `parecias`, `tiraa`, `perceção`, `temor`, `queroa`, `balançar`, `dançarina`, `negativa`, `ames`, `bailarina`, `mecânica`, `moço`, `lenha`, `safado`, `balança`, `manada`, `bosta`, `magoaste`, `espetador`
+`sarar`, `fluir`, `loura`, `ditado`, `viciar`, `terço`, `afeto`, `coitar`, `fritar`, `prancha`, `vitamina`, `aterrorizar`, `mãezinha`, `penteado`, `arredores`, `beijinho`, `mação`, `dane`, `conheçoa`, `juíza`, `matoua`, `patroa`, `lindíssimo`, `certificado`, `saudar`, `casca`, `pira`, `enfermeiro`, `coça`, `espinha`, `plasma`, `comporta`, `cantora`, `doméstico`, `varinha`, `radioativo`, `parecias`, `tiraa`, `perceção`, `temor`, `queroa`, `balançar`, `dançarina`, `negativa`, `ames`, `bailarina`, `mecânica`, `moço`, `lenha`, `safado`, `balança`, `manada`, `bosta`, `magoaste`, `espetador`, `deveras`, `recetor`, `manchar`, `revestir`, `coçar`
 
-_1,705 total._
+_1,756 total._
 
 ## Lemmatization conventions (eval/conventions.md)
 
 Each convention remaps surfaces from one headword to another. Below:
 the published entries each one created, grew or protected, and the
 former headwords it merged away that were big enough to have been
-published on their own (>= 1,121 tokens, the rank-10000 count).
+published on their own (>= 1,102 tokens, the rank-10000 count).
 
 | convention | surfaces remapped | tokens moved |
 |---|---:|---:|
@@ -231,37 +231,37 @@ Former headwords merged away: `las` (93,302)
 | entry | rank | tokens gained | from surfaces |
 |---|---:|---:|---|
 | `nos` | 52 | 1,714,154 | `nos` |
-| `noutros` | 6399 | 2,714 | `noutros` |
-| `nuns` | 8210 | 1,679 | `nuns` |
+| `noutros` | 6362 | 2,714 | `noutros` |
+| `nuns` | 8150 | 1,679 | `nuns` |
 
 ### 2. Gendered nouns fold into the masculine
 
 | entry | rank | tokens gained | from surfaces |
 |---|---:|---:|---|
-| `branco` | 530 | 39,435 | `branca` |
-| `parvo` | 1370 | 8,488 | `parva`, `parvas` |
-| `tolo` | 1638 | 5,541 | `tola` |
-| `bravo` | 1690 | 3,483 | `brava` |
-| `solto` | 1913 | 22,585 | `solta` |
-| `drogado` | 2360 | 3,671 | `drogada` |
-| `desgraçado` | 2429 | 1,690 | `desgraçada` |
-| `franco` | 2516 | 2,338 | `franca` |
-| `falhado` | 2532 | 2,861 | `falhada`, `falhadas` |
-| `culpado` | 3014 | 9,242 | `culpada` |
-| `católico` | 3084 | 4,102 | `católica` |
-| `soviético` | 3098 | 4,164 | `soviética` |
-| `salvador` | 3217 | 1,514 | `salvadora` |
-| `silencioso` | 3367 | 2,215 | `silenciosa` |
-| `bruto` | 3420 | 2,886 | `bruta`, `brutas` |
-| `criativo` | 3767 | 2,179 | `criativa` |
-| `encantado` | 3839 | 3,286 | `encantada` |
-| `operador` | 4150 | 1,623 | `operadora`, `operadoras` |
-| `tremendo` | 4546 | 2,176 | `tremenda` |
-| `vegetariano` | 4681 | 1,827 | `vegetariana` |
-| `moreno` | 4720 | 2,818 | `morena`, `morenas` |
-| `costeiro` | 4907 | 3,925 | `costeira` |
-| `farmacêutico` | 5057 | 1,741 | `farmacêutica` |
-| `nono` | 5433 | 1,744 | `nona` |
+| `branco` | 531 | 39,435 | `branca` |
+| `parvo` | 1366 | 8,488 | `parva`, `parvas` |
+| `tolo` | 1634 | 5,541 | `tola` |
+| `bravo` | 1686 | 3,483 | `brava` |
+| `solto` | 1906 | 22,585 | `solta` |
+| `drogado` | 2353 | 3,671 | `drogada` |
+| `desgraçado` | 2422 | 1,690 | `desgraçada` |
+| `franco` | 2508 | 2,338 | `franca` |
+| `falhado` | 2524 | 2,861 | `falhada`, `falhadas` |
+| `culpado` | 3008 | 9,242 | `culpada` |
+| `católico` | 3076 | 4,102 | `católica` |
+| `soviético` | 3090 | 4,164 | `soviética` |
+| `salvador` | 3209 | 1,514 | `salvadora` |
+| `silencioso` | 3356 | 2,215 | `silenciosa` |
+| `bruto` | 3408 | 2,886 | `bruta`, `brutas` |
+| `criativo` | 3756 | 2,179 | `criativa` |
+| `encantado` | 3827 | 3,286 | `encantada` |
+| `operador` | 4133 | 1,623 | `operadora`, `operadoras` |
+| `tremendo` | 4525 | 2,176 | `tremenda` |
+| `vegetariano` | 4660 | 1,827 | `vegetariana` |
+| `moreno` | 4698 | 2,818 | `morena`, `morenas` |
+| `costeiro` | 4884 | 3,925 | `costeira` |
+| `farmacêutico` | 5034 | 1,741 | `farmacêutica` |
+| `nono` | 5406 | 1,744 | `nona` |
 
 Former headwords merged away: `branca` (39,435), `solta` (22,585), `culpada` (9,242), `parva` (8,488), `tola` (5,541), `soviética` (4,164), `católica` (4,102), `costeira` (3,925), `drogada` (3,671), `brava` (3,483), `encantada` (3,286), `bruta` (2,886), `falhada` (2,861), `morena` (2,818), `franca` (2,338), `silenciosa` (2,215), `criativa` (2,179), `tremenda` (2,176), `vegetariana` (1,827), `nona` (1,744), `farmacêutica` (1,741), `desgraçada` (1,690), `operadora` (1,623), `salvadora` (1,514)
 
@@ -269,31 +269,31 @@ Former headwords merged away: `branca` (39,435), `solta` (22,585), `culpada` (9,
 
 | entry | rank | tokens gained | from surfaces |
 |---|---:|---:|---|
-| `política` | 1400 | 5,020 | `políticas` |
-| `ferida` | 1687 | 31,416 | `ferida`, `feridas` |
-| `santa` | 2070 | 340 | `santas` |
-| `marinha` | 2139 | 1,163 | `marinhas` |
-| `seca` | 2221 | 2,087 | `secas` |
-| `matemática` | 2571 | 545 | `matemáticas` |
-| `química` | 2898 | 1,873 | `químicas` |
-| `lógica` | 3176 | 259 | `lógicas` |
-| `solitária` | 3274 | 1,110 | `solitárias` |
-| `secundária` | 4012 | 967 | `secundárias` |
-| `indiana` | 4301 | 255 | `indianas` |
-| `inimiga` | 4404 | 2,322 | `inimigas` |
-| `senadora` | 4542 | 19 | `senadoras` |
-| `doméstica` | 4683 | 1,003 | `domésticas` |
-| `prisioneira` | 4988 | 464 | `prisioneiras` |
-| `mecânica` | 5390 | 420 | `mecânicas` |
-| `cozinheira` | 5735 | 111 | `cozinheiras` |
-| `pedrada` | 6261 | 301 | `pedradas` |
-| `balística` | 6264 | 38 | `balísticas` |
-| `traidora` | 6560 | 128 | `traidoras` |
-| `conselheira` | 6950 | 43 | `conselheiras` |
-| `idosa` | 7070 | 623 | `idosas` |
-| `dinâmica` | 7459 | 208 | `dinâmicas` |
-| `perita` | 7783 | 70 | `peritas` |
-| `herdeira` | 7822 | 79 | `herdeiras` |
+| `política` | 1352 | 5,020 | `políticas` |
+| `ferida` | 1683 | 31,416 | `ferida`, `feridas` |
+| `santa` | 2064 | 340 | `santas` |
+| `marinha` | 2132 | 1,163 | `marinhas` |
+| `seca` | 2213 | 2,087 | `secas` |
+| `matemática` | 2563 | 545 | `matemáticas` |
+| `química` | 2893 | 1,873 | `químicas` |
+| `lógica` | 3168 | 259 | `lógicas` |
+| `solitária` | 3265 | 1,110 | `solitárias` |
+| `secundária` | 3996 | 967 | `secundárias` |
+| `indiana` | 4284 | 255 | `indianas` |
+| `inimiga` | 4385 | 2,322 | `inimigas` |
+| `senadora` | 4522 | 19 | `senadoras` |
+| `doméstica` | 4662 | 1,003 | `domésticas` |
+| `prisioneira` | 4965 | 464 | `prisioneiras` |
+| `mecânica` | 5363 | 420 | `mecânicas` |
+| `cozinheira` | 5706 | 111 | `cozinheiras` |
+| `pedrada` | 6225 | 301 | `pedradas` |
+| `balística` | 6228 | 38 | `balísticas` |
+| `traidora` | 6520 | 128 | `traidoras` |
+| `conselheira` | 6909 | 43 | `conselheiras` |
+| `idosa` | 7028 | 623 | `idosas` |
+| `dinâmica` | 7410 | 208 | `dinâmicas` |
+| `perita` | 7728 | 70 | `peritas` |
+| `herdeira` | 7767 | 79 | `herdeiras` |
 
 _4 further published entries affected._
 
@@ -301,33 +301,33 @@ _4 further published entries affected._
 
 | entry | rank | tokens gained | from surfaces |
 |---|---:|---:|---|
-| `paizinho` | 4287 | 79 | `paizinhos` |
-| `irmãozinho` | 5577 | 87 | `irmãozinhos` |
-| `ajudinha` | 5605 | 9 | `ajudinhas` |
-| `engraçadinho` | 5719 | 267 | `engraçadinhos` |
-| `espertinho` | 5726 | 320 | `espertinhos` |
-| `avozinha` | 5884 | 98 | `avozinhas` |
-| `amorzinho` | 6005 | 74 | `amorzinhos` |
-| `irmãzinha` | 6839 | 57 | `irmãzinhas` |
-| `voltinha` | 7217 | 307 | `voltinhas` |
-| `carinha` | 7308 | 213 | `carinhas` |
-| `calminha` | 7356 | 2,084 | `calminha`, `calminhas` |
-| `avozinho` | 7682 | 43 | `avozinhos` |
-| `certinho` | 7699 | 194 | `certinhos` |
-| `queridinha` | 8005 | 31 | `queridinhas` |
-| `maminha` | 8135 | 1,525 | `maminhas` |
-| `pobrezinha` | 8424 | 61 | `pobrezinhas` |
-| `filhinha` | 8567 | 41 | `filhinhas` |
-| `trabalhinho` | 8602 | 205 | `trabalhinhos` |
-| `rabinho` | 8694 | 131 | `rabinhos` |
-| `coitadinha` | 8703 | 48 | `coitadinhas` |
-| `garotinha` | 8856 | 138 | `garotinhas` |
-| `magrinho` | 9250 | 105 | `magrinhos` |
-| `olhinho` | 9338 | 102 | `olhinho` |
-| `caixinha` | 9355 | 122 | `caixinhas` |
-| `limpinho` | 9419 | 155 | `limpinhos` |
+| `paizinho` | 4269 | 79 | `paizinhos` |
+| `irmãozinho` | 5549 | 87 | `irmãozinhos` |
+| `ajudinha` | 5577 | 9 | `ajudinhas` |
+| `engraçadinho` | 5690 | 267 | `engraçadinhos` |
+| `espertinho` | 5697 | 320 | `espertinhos` |
+| `avozinha` | 5853 | 98 | `avozinhas` |
+| `amorzinho` | 5973 | 74 | `amorzinhos` |
+| `irmãzinha` | 6796 | 57 | `irmãzinhas` |
+| `voltinha` | 7170 | 307 | `voltinhas` |
+| `carinha` | 7260 | 213 | `carinhas` |
+| `calminha` | 7308 | 2,084 | `calminha`, `calminhas` |
+| `avozinho` | 7626 | 43 | `avozinhos` |
+| `certinho` | 7643 | 194 | `certinhos` |
+| `queridinha` | 7948 | 31 | `queridinhas` |
+| `maminha` | 8077 | 1,525 | `maminhas` |
+| `pobrezinha` | 8363 | 61 | `pobrezinhas` |
+| `filhinha` | 8505 | 41 | `filhinhas` |
+| `trabalhinho` | 8538 | 205 | `trabalhinhos` |
+| `rabinho` | 8629 | 131 | `rabinhos` |
+| `coitadinha` | 8638 | 48 | `coitadinhas` |
+| `garotinha` | 8791 | 138 | `garotinhas` |
+| `magrinho` | 9181 | 105 | `magrinhos` |
+| `olhinho` | 9269 | 102 | `olhinho` |
+| `caixinha` | 9286 | 122 | `caixinhas` |
+| `limpinho` | 9350 | 155 | `limpinhos` |
 
-_7 further published entries affected._
+_8 further published entries affected._
 
 Former headwords merged away: `calma` (2,084)
 
@@ -337,8 +337,8 @@ Former headwords merged away: `calma` (2,084)
 |---|---:|---:|---|
 | `melhor` | 109 | 73,976 | `melhores` |
 | `maior` | 378 | 26,512 | `maiores` |
-| `pior` | 510 | 15,844 | `piores` |
-| `menor` | 1614 | 6,768 | `menores` |
+| `pior` | 511 | 15,844 | `piores` |
+| `menor` | 1609 | 6,768 | `menores` |
 
 ### 5. Spelling-reform variants merge under the post-1990 spelling
 
@@ -402,84 +402,103 @@ Gold set: `eval/lemma_gold.tsv` — 332 scored rows, 68 marked `drop` and exclud
 
 Stage 2. Gate: FAIL on suspects.
 
-**18 suspects**: diacritic 18
+**6 suspects**: diacritic 6
 
 | kind | entry | rank | duplicate of | rank | detail |
 |---|---|---:|---|---:|---|
-| diacritic | `hã` | 2855 | `ha` | 2567 | both fold to 'ha' |
-| diacritic | `ã` | 4793 | `a` | 3 | both fold to 'a' |
-| diacritic | `nã` | 5565 | `na` | 36 | both fold to 'na' |
-| diacritic | `pa` | 5636 | `pá` | 1006 | both fold to 'pa' |
-| diacritic | `video` | 6184 | `vídeo` | 1123 | both fold to 'video' |
-| diacritic | `ra` | 6749 | `rã` | 5434 | both fold to 'ra' |
-| diacritic | `camera` | 6984 | `câmera` | 3419 | both fold to 'camera' |
-| diacritic | `obvio` | 7142 | `óbvio` | 1335 | both fold to 'obvio' |
-| diacritic | `sa` | 7429 | `sã` | 6008 | both fold to 'sa' |
-| diacritic | `taxi` | 7464 | `táxi` | 1469 | both fold to 'taxi' |
-| diacritic | `cirurgiã` | 7775 | `cirurgia` | 1670 | both fold to 'cirurgia' |
-| diacritic | `frigorifico` | 8024 | `frigorífico` | 2772 | both fold to 'frigorifico' |
-| diacritic | `politica` | 8060 | `política` | 1400 | both fold to 'politica' |
-| diacritic | `amen` | 8972 | `ámen` | 2842 | both fold to 'amen' |
-| diacritic | `espiã` | 9363 | `espia` | 5795 | both fold to 'espia' |
-| diacritic | `bla` | 9415 | `blá` | 4125 | both fold to 'bla' |
-| diacritic | `mafia` | 9840 | `máfia` | 3426 | both fold to 'mafia' |
-| diacritic | `karate` | 9866 | `karaté` | 6747 | both fold to 'karate' |
+| diacritic | `camera` | 6942 | `câmera` | 3407 | both fold to 'camera' |
+| diacritic | `frigorifico` | 7967 | `frigorífico` | 2766 | both fold to 'frigorifico' |
+| diacritic | `amen` | 8907 | `ámen` | 2837 | both fold to 'amen' |
+| diacritic | `bla` | 9346 | `blá` | 4109 | both fold to 'bla' |
+| diacritic | `mafia` | 9766 | `máfia` | 3414 | both fold to 'mafia' |
+| diacritic | `karate` | 9792 | `karaté` | 6706 | both fold to 'karate' |
 
 ## Diacritic folds
 
-29,457 lemmas were folded into an accent variant at least 20x as frequent (3,715 unaccented, 25,742 wrong or Brazilian accent). Every fold is listed.
+30,178 lemmas were folded into an accent variant at least 10x as frequent (4,436 unaccented, 25,742 wrong or Brazilian accent). Every fold is listed.
 
-### Folds of a dictionary word (71) — review these
+### Folds of a dictionary word (111) — review these
 
 The source is a real PT word, merged on frequency alone. Most are missing-accent typos of a far commoner word; any that is a genuine second word should go on a keep-list.
 
 | from | count | into | count | ratio |
 |---|---:|---|---:|---:|
+| `noticia` | 9,566 | `notícia` | 114,775 | 12x |
 | `ultimo` | 9,122 | `último` | 344,329 | 38x |
+| `ma` | 9,093 | `má` | 104,243 | 11x |
+| `vitima` | 4,834 | `vítima` | 88,814 | 18x |
 | `numero` | 4,449 | `número` | 180,051 | 40x |
 | `tao` | 4,191 | `tão` | 730,506 | 174x |
+| `inicio` | 3,940 | `início` | 40,853 | 10x |
 | `forca` | 3,934 | `força` | 175,144 | 45x |
 | `historia` | 3,660 | `história` | 248,045 | 68x |
 | `ola` | 3,226 | `olá` | 703,259 | 218x |
+| `duvida` | 3,179 | `dúvida` | 63,380 | 20x |
 | `musica` | 3,061 | `música` | 92,595 | 30x |
 | `serio` | 2,775 | `sério` | 394,125 | 142x |
+| `forcar` | 2,509 | `forçar` | 30,205 | 12x |
 | `ate` | 2,404 | `até` | 905,561 | 377x |
 | `amanha` | 2,301 | `amanhã` | 211,690 | 92x |
 | `agua` | 2,249 | `água` | 179,558 | 80x |
+| `principio` | 2,238 | `princípio` | 28,505 | 13x |
+| `radio` | 2,185 | `rádio` | 42,826 | 20x |
+| `caca` | 2,142 | `caça` | 27,157 | 13x |
 | `manha` | 1,964 | `manhã` | 172,553 | 88x |
 | `mao` | 1,954 | `mão` | 330,328 | 169x |
 | `publico` | 1,846 | `público` | 68,950 | 37x |
+| `divida` | 1,839 | `dívida` | 24,232 | 13x |
 | `exercito` | 1,740 | `exército` | 75,648 | 43x |
+| `circulo` | 1,385 | `círculo` | 17,898 | 13x |
 | `secretaria` | 1,328 | `secretária` | 26,803 | 20x |
 | `maquina` | 1,216 | `máquina` | 73,410 | 60x |
+| `pacifico` | 1,071 | `pacífico` | 11,275 | 11x |
 | `alem` | 1,060 | `além` | 116,045 | 109x |
+| `especifico` | 1,048 | `específico` | 14,781 | 14x |
 | `copia` | 995 | `cópia` | 25,251 | 25x |
+| `industria` | 982 | `indústria` | 12,094 | 12x |
 | `memoria` | 975 | `memória` | 57,670 | 59x |
 | `veiculo` | 930 | `veículo` | 24,022 | 26x |
 | `analise` | 929 | `análise` | 21,118 | 23x |
 | `titulo` | 867 | `título` | 18,023 | 21x |
+| `intimo` | 850 | `íntimo` | 10,243 | 12x |
 | `medico` | 837 | `médico` | 160,690 | 192x |
+| `legitimo` | 802 | `legítimo` | 11,170 | 14x |
+| `transito` | 801 | `trânsito` | 14,138 | 18x |
+| `alo` | 766 | `alô` | 10,737 | 14x |
+| `beneficio` | 758 | `benefício` | 8,963 | 12x |
+| `liquido` | 752 | `líquido` | 9,854 | 13x |
 | `mascara` | 731 | `máscara` | 25,014 | 34x |
+| `capitulo` | 704 | `capítulo` | 10,555 | 15x |
 | `contrario` | 689 | `contrário` | 49,431 | 72x |
 | `critico` | 675 | `crítico` | 17,126 | 25x |
+| `influencia` | 647 | `influência` | 11,925 | 18x |
 | `varias` | 613 | `várias` | 35,106 | 57x |
+| `evidencia` | 584 | `evidência` | 8,491 | 15x |
 | `deposito` | 543 | `depósito` | 15,875 | 29x |
+| `canada` | 504 | `canadá` | 8,223 | 16x |
 | `aniversario` | 501 | `aniversário` | 50,357 | 101x |
 | `divorcio` | 500 | `divórcio` | 15,892 | 32x |
+| `orbita` | 474 | `órbita` | 7,086 | 15x |
 | `circunstancia` | 471 | `circunstância` | 17,649 | 37x |
 | `republica` | 468 | `república` | 12,204 | 26x |
+| `formula` | 445 | `fórmula` | 6,660 | 15x |
+| `fotografo` | 441 | `fotógrafo` | 6,067 | 14x |
 | `cerimonia` | 394 | `cerimónia` | 13,099 | 33x |
 | `pagina` | 370 | `página` | 29,951 | 81x |
 | `autopsia` | 366 | `autópsia` | 8,671 | 24x |
 | `credito` | 363 | `crédito` | 27,046 | 75x |
+| `refugio` | 350 | `refúgio` | 5,346 | 15x |
 | `conferencia` | 345 | `conferência` | 16,086 | 47x |
 | `avo` | 344 | `avó` | 52,801 | 153x |
+| `vicio` | 299 | `vício` | 5,971 | 20x |
 | `vitoria` | 281 | `vitória` | 30,321 | 108x |
 | `ferias` | 272 | `férias` | 35,151 | 129x |
 | `custodia` | 271 | `custódia` | 12,573 | 46x |
 | `habito` | 263 | `hábito` | 13,510 | 51x |
+| `oficio` | 257 | `ofício` | 2,917 | 11x |
 | `voluntario` | 255 | `voluntário` | 12,692 | 50x |
 | `gravido` | 251 | `grávido` | 34,688 | 138x |
+| `animo` | 249 | `ânimo` | 3,035 | 12x |
 | `autografo` | 246 | `autógrafo` | 5,451 | 22x |
 | `trafico` | 231 | `tráfico` | 6,994 | 30x |
 | `lamina` | 219 | `lâmina` | 11,102 | 51x |
@@ -489,12 +508,19 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `acido` | 195 | `ácido` | 8,610 | 44x |
 | `autentico` | 195 | `autêntico` | 9,031 | 46x |
 | `capita` | 187 | `capitã` | 8,557 | 46x |
+| `baco` | 185 | `baço` | 2,165 | 12x |
 | `comissario` | 184 | `comissário` | 11,780 | 64x |
+| `ancora` | 180 | `âncora` | 3,305 | 18x |
+| `angustia` | 175 | `angústia` | 2,076 | 12x |
 | `secretario` | 174 | `secretário` | 10,808 | 62x |
+| `estimulo` | 165 | `estímulo` | 1,945 | 12x |
 | `comercio` | 164 | `comércio` | 6,454 | 39x |
 | `arbitro` | 147 | `árbitro` | 3,018 | 21x |
 | `cocar` | 81 | `coçar` | 3,532 | 44x |
+| `latex` | 81 | `látex` | 869 | 11x |
+| `acoitar` | 68 | `açoitar` | 922 | 14x |
 | `astucia` | 44 | `astúcia` | 1,031 | 23x |
+| `jerico` | 36 | `jericó` | 420 | 12x |
 | `prototipo` | 32 | `protótipo` | 4,363 | 136x |
 | `rele` | 12 | `relé` | 625 | 52x |
 | `extravagancia` | 11 | `extravagância` | 578 | 53x |
@@ -502,12 +528,742 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `inercia` | 10 | `inércia` | 506 | 51x |
 | `abobada` | 9 | `abóbada` | 389 | 43x |
 | `avido` | 4 | `ávido` | 998 | 250x |
+| `aguem` | 3 | `aguém` | 39 | 13x |
 | `eletrolise` | 3 | `eletrólise` | 83 | 28x |
 | `cacada` | 1 | `caçada` | 5,674 | 5,674x |
 | `calcadeira` | 1 | `calçadeira` | 81 | 81x |
 | `embolo` | 1 | `êmbolo` | 187 | 187x |
+| `telescopia` | 1 | `telescópia` | 12 | 12x |
 
-<details><summary>All other folds (29,386)</summary>
+### Folds between 10x and 20x (721) — review these
+
+Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent form at 10-20x less frequent than its accented twin.
+
+| from | count | into | count | ratio | from is a PT word |
+|---|---:|---|---:|---:|---|
+| `noticia` | 9,566 | `notícia` | 114,775 | 12.0x | yes |
+| `ma` | 9,093 | `má` | 104,243 | 11.5x | yes |
+| `vitima` | 4,834 | `vítima` | 88,814 | 18.4x | yes |
+| `inicio` | 3,940 | `início` | 40,853 | 10.4x | yes |
+| `pa` | 3,472 | `pá` | 51,345 | 14.8x |  |
+| `duvida` | 3,179 | `dúvida` | 63,380 | 19.9x | yes |
+| `video` | 2,905 | `vídeo` | 44,133 | 15.2x |  |
+| `forcar` | 2,509 | `forçar` | 30,205 | 12.0x | yes |
+| `frances` | 2,308 | `francês` | 41,164 | 17.8x |  |
+| `principio` | 2,238 | `princípio` | 28,505 | 12.7x | yes |
+| `obvio` | 2,194 | `óbvio` | 34,283 | 15.6x |  |
+| `radio` | 2,185 | `rádio` | 42,826 | 19.6x | yes |
+| `caca` | 2,142 | `caça` | 27,157 | 12.7x | yes |
+| `california` | 2,038 | `califórnia` | 21,589 | 10.6x |  |
+| `taxi` | 2,027 | `táxi` | 29,949 | 14.8x |  |
+| `divida` | 1,839 | `dívida` | 24,232 | 13.2x | yes |
+| `politica` | 1,736 | `política` | 31,827 | 18.3x |  |
+| `circulo` | 1,385 | `círculo` | 17,898 | 12.9x | yes |
+| `pacifico` | 1,071 | `pacífico` | 11,275 | 10.5x | yes |
+| `especifico` | 1,048 | `específico` | 14,781 | 14.1x | yes |
+| `industria` | 982 | `indústria` | 12,094 | 12.3x | yes |
+| `intimo` | 850 | `íntimo` | 10,243 | 12.1x | yes |
+| `africa` | 845 | `áfrica` | 16,372 | 19.4x |  |
+| `legitimo` | 802 | `legítimo` | 11,170 | 13.9x | yes |
+| `transito` | 801 | `trânsito` | 14,138 | 17.7x | yes |
+| `alo` | 766 | `alô` | 10,737 | 14.0x | yes |
+| `beneficio` | 758 | `benefício` | 8,963 | 11.8x | yes |
+| `liquido` | 752 | `líquido` | 9,854 | 13.1x | yes |
+| `capitulo` | 704 | `capítulo` | 10,555 | 15.0x | yes |
+| `influencia` | 647 | `influência` | 11,925 | 18.4x | yes |
+| `hamburguer` | 633 | `hambúrguer` | 9,222 | 14.6x |  |
+| `evidencia` | 584 | `evidência` | 8,491 | 14.5x | yes |
+| `canada` | 504 | `canadá` | 8,223 | 16.3x | yes |
+| `orbita` | 474 | `órbita` | 7,086 | 14.9x | yes |
+| `formula` | 445 | `fórmula` | 6,660 | 15.0x | yes |
+| `fotografo` | 441 | `fotógrafo` | 6,067 | 13.8x | yes |
+| `refugio` | 350 | `refúgio` | 5,346 | 15.3x | yes |
+| `audio` | 344 | `áudio` | 3,700 | 10.8x |  |
+| `mare` | 319 | `maré` | 5,590 | 17.5x |  |
+| `droide` | 317 | `dróide` | 4,147 | 13.1x |  |
+| `asia` | 309 | `ásia` | 3,340 | 10.8x |  |
+| `vicio` | 299 | `vício` | 5,971 | 20.0x | yes |
+| `oficio` | 257 | `ofício` | 2,917 | 11.4x | yes |
+| `panama` | 251 | `panamá` | 3,163 | 12.6x |  |
+| `animo` | 249 | `ânimo` | 3,035 | 12.2x | yes |
+| `dracula` | 246 | `drácula` | 3,177 | 12.9x |  |
+| `senor` | 227 | `señor` | 3,426 | 15.1x |  |
+| `francois` | 199 | `françois` | 2,358 | 11.8x |  |
+| `baco` | 185 | `baço` | 2,165 | 11.7x | yes |
+| `ancora` | 180 | `âncora` | 3,305 | 18.4x | yes |
+| `iman` | 178 | `íman` | 1,840 | 10.3x |  |
+| `medium` | 177 | `médium` | 2,005 | 11.3x |  |
+| `angustia` | 175 | `angústia` | 2,076 | 11.9x | yes |
+| `capua` | 173 | `cápua` | 1,810 | 10.5x |  |
+| `tita` | 167 | `titã` | 2,430 | 14.6x |  |
+| `estimulo` | 165 | `estímulo` | 1,945 | 11.8x | yes |
+| `austria` | 163 | `áustria` | 2,210 | 13.6x |  |
+| `cleopatra` | 156 | `cleópatra` | 1,612 | 10.3x |  |
+| `cancer` | 151 | `câncer` | 1,682 | 11.1x |  |
+| `exilio` | 138 | `exílio` | 2,216 | 16.1x |  |
+| `consul` | 133 | `cônsul` | 2,314 | 17.4x |  |
+| `ze` | 125 | `zé` | 1,528 | 12.2x |  |
+| `agricola` | 124 | `agrícola` | 1,691 | 13.6x |  |
+| `disneylandia` | 120 | `disneylândia` | 1,277 | 10.6x |  |
+| `lixivia` | 119 | `lixívia` | 1,616 | 13.6x |  |
+| `anus` | 114 | `ânus` | 1,144 | 10.0x |  |
+| `noe` | 112 | `noé` | 1,421 | 12.7x |  |
+| `colon` | 106 | `cólon` | 1,273 | 12.0x |  |
+| `atraido` | 105 | `atraído` | 1,119 | 10.7x |  |
+| `possuido` | 104 | `possuído` | 1,779 | 17.1x |  |
+| `menage` | 103 | `ménage` | 1,277 | 12.4x |  |
+| `fenix` | 100 | `fénix` | 1,740 | 17.4x |  |
+| `porta-avioes` | 98 | `porta-aviões` | 1,515 | 15.5x |  |
+| `sicilia` | 96 | `sicília` | 1,643 | 17.1x |  |
+| `tunica` | 94 | `túnica` | 1,248 | 13.3x |  |
+| `peninsula` | 93 | `península` | 1,029 | 11.1x |  |
+| `galia` | 87 | `gália` | 1,006 | 11.6x |  |
+| `latex` | 81 | `látex` | 869 | 10.7x | yes |
+| `touche` | 79 | `touché` | 1,142 | 14.5x |  |
+| `ambar` | 77 | `âmbar` | 1,328 | 17.2x |  |
+| `narnia` | 77 | `nárnia` | 1,101 | 14.3x |  |
+| `decadencia` | 74 | `decadência` | 1,226 | 16.6x |  |
+| `acoitar` | 68 | `açoitar` | 922 | 13.6x | yes |
+| `harmonica` | 68 | `harmónica` | 896 | 13.2x |  |
+| `bogota` | 66 | `bogotá` | 798 | 12.1x |  |
+| `chale` | 61 | `chalé` | 1,151 | 18.9x |  |
+| `gemeas` | 61 | `gêmeas` | 698 | 11.4x |  |
+| `eletrodos` | 60 | `elétrodos` | 600 | 10.0x |  |
+| `energico` | 59 | `enérgico` | 807 | 13.7x |  |
+| `senorita` | 59 | `señorita` | 827 | 14.0x |  |
+| `persia` | 57 | `pérsia` | 858 | 15.1x |  |
+| `intercambio` | 55 | `intercâmbio` | 963 | 17.5x |  |
+| `biceps` | 52 | `bíceps` | 601 | 11.6x |  |
+| `saudem` | 51 | `saúdem` | 667 | 13.1x |  |
+| `fraguas` | 50 | `fráguas` | 650 | 13.0x |  |
+| `tropico` | 50 | `trópico` | 653 | 13.1x |  |
+| `meretissimo` | 49 | `meretíssimo` | 855 | 17.4x |  |
+| `acer` | 48 | `ácer` | 548 | 11.4x |  |
+| `harem` | 40 | `harém` | 712 | 17.8x |  |
+| `caligula` | 38 | `calígula` | 523 | 13.8x |  |
+| `esfincter` | 37 | `esfíncter` | 393 | 10.6x |  |
+| `macedonia` | 37 | `macedónia` | 604 | 16.3x |  |
+| `jerico` | 36 | `jericó` | 420 | 11.7x | yes |
+| `rimel` | 36 | `rímel` | 473 | 13.1x |  |
+| `excluido` | 35 | `excluído` | 482 | 13.8x |  |
+| `evoluido` | 32 | `evoluído` | 578 | 18.1x |  |
+| `homofobico` | 32 | `homofóbico` | 520 | 16.2x |  |
+| `souffle` | 32 | `soufflé` | 511 | 16.0x |  |
+| `hilario` | 31 | `hilário` | 310 | 10.0x |  |
+| `ariete` | 30 | `aríete` | 341 | 11.4x |  |
+| `hibrida` | 27 | `híbrida` | 301 | 11.1x |  |
+| `incognito` | 27 | `incógnito` | 482 | 17.9x |  |
+| `tanzania` | 27 | `tanzânia` | 390 | 14.4x |  |
+| `tarantula` | 27 | `tarântula` | 461 | 17.1x |  |
+| `monolito` | 26 | `monólito` | 392 | 15.1x |  |
+| `clamidia` | 25 | `clamídia` | 370 | 14.8x |  |
+| `cardassia` | 24 | `cardássia` | 341 | 14.2x |  |
+| `liberia` | 24 | `libéria` | 401 | 16.7x |  |
+| `canabis` | 23 | `canábis` | 246 | 10.7x |  |
+| `retrovirus` | 23 | `retrovírus` | 307 | 13.3x |  |
+| `bide` | 22 | `bidé` | 261 | 11.9x |  |
+| `faberge` | 22 | `fabergé` | 221 | 10.0x |  |
+| `marcio` | 22 | `márcio` | 359 | 16.3x |  |
+| `aserio` | 21 | `asério` | 416 | 19.8x |  |
+| `demetrio` | 21 | `demétrio` | 369 | 17.6x |  |
+| `humus` | 21 | `húmus` | 275 | 13.1x |  |
+| `mandragora` | 21 | `mandrágora` | 373 | 17.8x |  |
+| `fortissimo` | 20 | `fortíssimo` | 298 | 14.9x |  |
+| `toscania` | 20 | `toscânia` | 261 | 13.1x |  |
+| `lncrivel` | 19 | `lncrível` | 283 | 14.9x |  |
+| `nenem` | 19 | `neném` | 309 | 16.3x |  |
+| `porques` | 19 | `porquês` | 200 | 10.5x |  |
+| `enta` | 18 | `entã` | 223 | 12.4x |  |
+| `huseyin` | 18 | `hüseyin` | 189 | 10.5x |  |
+| `lancado` | 18 | `lançado` | 352 | 19.6x |  |
+| `dionisio` | 17 | `dionísio` | 284 | 16.7x |  |
+| `paladio` | 17 | `paládio` | 283 | 16.6x |  |
+| `atomica` | 16 | `atômica` | 277 | 17.3x |  |
+| `elfica` | 16 | `élfica` | 310 | 19.4x |  |
+| `telefonicas` | 16 | `telefônicas` | 165 | 10.3x |  |
+| `alinea` | 15 | `alínea` | 252 | 16.8x |  |
+| `emporio` | 15 | `empório` | 154 | 10.3x |  |
+| `fuca` | 15 | `fuça` | 212 | 14.1x |  |
+| `subnivel` | 15 | `subnível` | 171 | 11.4x |  |
+| `tantrico` | 15 | `tântrico` | 213 | 14.2x |  |
+| `vivencia` | 15 | `vivência` | 199 | 13.3x |  |
+| `bagaco` | 14 | `bagaço` | 141 | 10.1x |  |
+| `descaido` | 14 | `descaído` | 200 | 14.3x |  |
+| `namibia` | 14 | `namíbia` | 142 | 10.1x |  |
+| `patogeno` | 14 | `patógeno` | 234 | 16.7x |  |
+| `beneficiencia` | 13 | `beneficiência` | 139 | 10.7x |  |
+| `destroia` | 13 | `destróia` | 171 | 13.2x |  |
+| `enchante` | 13 | `enchanté` | 229 | 17.6x |  |
+| `neuronios` | 13 | `neurônios` | 217 | 16.7x |  |
+| `nortumbria` | 13 | `nortúmbria` | 231 | 17.8x |  |
+| `para-quedismo` | 13 | `pára-quedismo` | 239 | 18.4x |  |
+| `baritono` | 12 | `barítono` | 203 | 16.9x |  |
+| `dossies` | 12 | `dossiês` | 151 | 12.6x |  |
+| `eustaquio` | 12 | `eustáquio` | 237 | 19.8x |  |
+| `linfocito` | 12 | `linfócito` | 153 | 12.8x |  |
+| `morcao` | 12 | `morcão` | 152 | 12.7x |  |
+| `academicos` | 11 | `acadêmicos` | 111 | 10.1x |  |
+| `arquetipo` | 11 | `arquétipo` | 153 | 13.9x |  |
+| `barbarie` | 11 | `barbárie` | 176 | 16.0x |  |
+| `despota` | 11 | `déspota` | 219 | 19.9x |  |
+| `difiicil` | 11 | `difíicil` | 148 | 13.5x |  |
+| `egomaniaco` | 11 | `egomaníaco` | 145 | 13.2x |  |
+| `excluida` | 11 | `excluída` | 128 | 11.6x |  |
+| `pireneus` | 11 | `pirenéus` | 169 | 15.4x |  |
+| `tipografico` | 11 | `tipográfico` | 130 | 11.8x |  |
+| `zambia` | 11 | `zâmbia` | 159 | 14.5x |  |
+| `ziper` | 11 | `zíper` | 174 | 15.8x |  |
+| `bassora` | 10 | `bassorá` | 138 | 13.8x |  |
+| `cliches` | 10 | `clichês` | 103 | 10.3x |  |
+| `cono` | 10 | `coño` | 163 | 16.3x |  |
+| `estagnacao` | 10 | `estagnação` | 143 | 14.3x |  |
+| `hinduismo` | 10 | `hinduísmo` | 127 | 12.7x |  |
+| `honravel` | 10 | `honrável` | 175 | 17.5x |  |
+| `ionica` | 10 | `iónica` | 158 | 15.8x |  |
+| `ligia` | 10 | `lígia` | 187 | 18.7x |  |
+| `naves-mae` | 10 | `naves-mãe` | 188 | 18.8x |  |
+| `priamo` | 10 | `príamo` | 184 | 18.4x |  |
+| `protons` | 10 | `prótons` | 122 | 12.2x |  |
+| `academica` | 9 | `acadêmica` | 94 | 10.4x |  |
+| `aufidio` | 9 | `aufídio` | 94 | 10.4x |  |
+| `chone` | 9 | `choné` | 149 | 16.6x |  |
+| `conduites` | 9 | `conduítes` | 94 | 10.4x |  |
+| `ecrans` | 9 | `écrans` | 90 | 10.0x |  |
+| `estragao` | 9 | `estragão` | 146 | 16.2x |  |
+| `fabricio` | 9 | `fabrício` | 110 | 12.2x |  |
+| `flambe` | 9 | `flambé` | 109 | 12.1x |  |
+| `hematocrito` | 9 | `hematócrito` | 167 | 18.6x |  |
+| `hidroponica` | 9 | `hidropónica` | 91 | 10.1x |  |
+| `milenios` | 9 | `milênios` | 145 | 16.1x |  |
+| `nepias` | 9 | `népias` | 159 | 17.7x |  |
+| `pinzon` | 9 | `pinzón` | 96 | 10.7x |  |
+| `pulover` | 9 | `pulôver` | 138 | 15.3x |  |
+| `silverhojd` | 9 | `silverhöjd` | 136 | 15.1x |  |
+| `t-virus` | 9 | `t-vírus` | 141 | 15.7x |  |
+| `austro-hungaro` | 8 | `austro-húngaro` | 108 | 13.5x |  |
+| `carnica` | 8 | `carniça` | 105 | 13.1x |  |
+| `conteiner` | 8 | `contêiner` | 98 | 12.2x |  |
+| `espacamento` | 8 | `espaçamento` | 101 | 12.6x |  |
+| `formico` | 8 | `fórmico` | 83 | 10.4x |  |
+| `genia` | 8 | `gênia` | 85 | 10.6x |  |
+| `hispania` | 8 | `hispânia` | 143 | 17.9x |  |
+| `lelia` | 8 | `lélia` | 86 | 10.8x |  |
+| `mache` | 8 | `machê` | 80 | 10.0x |  |
+| `maleficio` | 8 | `malefício` | 80 | 10.0x |  |
+| `oncologico` | 8 | `oncológico` | 133 | 16.6x |  |
+| `pieta` | 8 | `pietà` | 117 | 14.6x |  |
+| `pre-julgamento` | 8 | `pré-julgamento` | 136 | 17.0x |  |
+| `traduvarius` | 8 | `traduvárius` | 140 | 17.5x |  |
+| `adelia` | 7 | `adélia` | 70 | 10.0x |  |
+| `begonia` | 7 | `begónia` | 76 | 10.9x |  |
+| `catalitico` | 7 | `catalítico` | 105 | 15.0x |  |
+| `criancola` | 7 | `criançola` | 86 | 12.3x |  |
+| `criogenica` | 7 | `criogênica` | 134 | 19.1x |  |
+| `dize-io` | 7 | `dizê-io` | 99 | 14.1x |  |
+| `economicos` | 7 | `econômicos` | 71 | 10.1x |  |
+| `fotons` | 7 | `fótons` | 74 | 10.6x |  |
+| `hormonio` | 7 | `hormônio` | 93 | 13.3x |  |
+| `managua` | 7 | `manágua` | 92 | 13.1x |  |
+| `peco-ihe` | 7 | `peço-ihe` | 110 | 15.7x |  |
+| `pirulas` | 7 | `pírulas` | 99 | 14.1x |  |
+| `theodred` | 7 | `théodred` | 136 | 19.4x |  |
+| `turbinio` | 7 | `turbínio` | 73 | 10.4x |  |
+| `atica` | 6 | `ática` | 75 | 12.5x |  |
+| `azaleas` | 6 | `azáleas` | 102 | 17.0x |  |
+| `castano` | 6 | `castaño` | 109 | 18.2x |  |
+| `cataclismico` | 6 | `cataclísmico` | 89 | 14.8x |  |
+| `colquida` | 6 | `cólquida` | 66 | 11.0x |  |
+| `culpavel` | 6 | `culpável` | 64 | 10.7x |  |
+| `deixa-ios` | 6 | `deixá-ios` | 103 | 17.2x |  |
+| `epiteto` | 6 | `epíteto` | 112 | 18.7x |  |
+| `espana` | 6 | `españa` | 62 | 10.3x |  |
+| `feromonios` | 6 | `feromônios` | 99 | 16.5x |  |
+| `ignominia` | 6 | `ignomínia` | 67 | 11.2x |  |
+| `tataravo` | 6 | `tataravô` | 107 | 17.8x |  |
+| `anagua` | 5 | `anágua` | 88 | 17.6x |  |
+| `anonimas` | 5 | `anônimas` | 70 | 14.0x |  |
+| `antigeno` | 5 | `antígeno` | 53 | 10.6x |  |
+| `apia` | 5 | `ápia` | 58 | 11.6x |  |
+| `basilico` | 5 | `basílico` | 56 | 11.2x |  |
+| `comica` | 5 | `cômica` | 90 | 18.0x |  |
+| `congenita` | 5 | `congênita` | 62 | 12.4x |  |
+| `destroias` | 5 | `destróias` | 50 | 10.0x |  |
+| `dosimetro` | 5 | `dosímetro` | 64 | 12.8x |  |
+| `elae` | 5 | `elaé` | 57 | 11.4x |  |
+| `esras` | 5 | `esrás` | 85 | 17.0x |  |
+| `estatudo` | 5 | `estátudo` | 57 | 11.4x |  |
+| `homicidio-suicidio` | 5 | `homicídio-suicídio` | 98 | 19.6x |  |
+| `ilio` | 5 | `ílio` | 73 | 14.6x |  |
+| `lcar` | 5 | `lçar` | 96 | 19.2x |  |
+| `micronesia` | 5 | `micronésia` | 81 | 16.2x |  |
+| `nois` | 5 | `nóis` | 75 | 15.0x |  |
+| `nomades` | 5 | `nômades` | 81 | 16.2x |  |
+| `ozonio` | 5 | `ozônio` | 81 | 16.2x |  |
+| `pomerania` | 5 | `pomerânia` | 50 | 10.0x |  |
+| `pre-adolescente` | 5 | `pré-adolescente` | 96 | 19.2x |  |
+| `previlegios` | 5 | `previlégios` | 80 | 16.0x |  |
+| `removivel` | 5 | `removível` | 93 | 18.6x |  |
+| `rugbi` | 5 | `rúgbi` | 94 | 18.8x |  |
+| `sigurbjorn` | 5 | `sigurbjörn` | 96 | 19.2x |  |
+| `afericao` | 4 | `aferição` | 68 | 17.0x |  |
+| `alucinogenico` | 4 | `alucinogénico` | 60 | 15.0x |  |
+| `asturias` | 4 | `astúrias` | 41 | 10.2x |  |
+| `bolsao` | 4 | `bolsão` | 69 | 17.2x |  |
+| `busca-ios` | 4 | `buscá-ios` | 51 | 12.8x |  |
+| `cimeria` | 4 | `ciméria` | 54 | 13.5x |  |
+| `citia` | 4 | `cítia` | 73 | 18.2x |  |
+| `colle` | 4 | `collé` | 60 | 15.0x |  |
+| `criminalistica` | 4 | `criminalística` | 65 | 16.2x |  |
+| `importacao-exportacao` | 4 | `importação-exportação` | 55 | 13.8x |  |
+| `incomodos` | 4 | `incômodos` | 41 | 10.2x |  |
+| `ironica` | 4 | `irônica` | 75 | 18.8x |  |
+| `neofito` | 4 | `neófito` | 48 | 12.0x |  |
+| `oao` | 4 | `oão` | 63 | 15.8x |  |
+| `patogenos` | 4 | `patógenos` | 62 | 15.5x |  |
+| `perdoavel` | 4 | `perdoável` | 71 | 17.8x |  |
+| `silio` | 4 | `sílio` | 50 | 12.5x |  |
+| `abrao` | 3 | `abrão` | 47 | 15.7x |  |
+| `activacao` | 3 | `activaçao` | 40 | 13.3x |  |
+| `aguem` | 3 | `aguém` | 39 | 13.0x | yes |
+| `alto-nivel` | 3 | `alto-nível` | 33 | 11.0x |  |
+| `angouleme` | 3 | `angoulême` | 36 | 12.0x |  |
+| `ansiolitico` | 3 | `ansiolítico` | 51 | 17.0x |  |
+| `ao-ao` | 3 | `ão-ão` | 30 | 10.0x |  |
+| `aupa` | 3 | `aúpa` | 53 | 17.7x |  |
+| `autonoma` | 3 | `autônoma` | 32 | 10.7x |  |
+| `betania` | 3 | `betânia` | 49 | 16.3x |  |
+| `cabaco` | 3 | `cabaço` | 34 | 11.3x |  |
+| `canideos` | 3 | `canídeos` | 46 | 15.3x |  |
+| `cartaozinho` | 3 | `cartãozinho` | 45 | 15.0x |  |
+| `chachacha` | 3 | `chachachá` | 49 | 16.3x |  |
+| `cometario` | 3 | `cometário` | 30 | 10.0x |  |
+| `construistea` | 3 | `construístea` | 36 | 12.0x |  |
+| `deixa-ia` | 3 | `deixá-ia` | 58 | 19.3x |  |
+| `destacavel` | 3 | `destacável` | 37 | 12.3x |  |
+| `dola` | 3 | `dóla` | 45 | 15.0x |  |
+| `encontra-ia` | 3 | `encontrá-ia` | 52 | 17.3x |  |
+| `esquizofrenicos` | 3 | `esquizofrênicos` | 50 | 16.7x |  |
+| `euripedes` | 3 | `eurípedes` | 32 | 10.7x |  |
+| `euripides` | 3 | `eurípides` | 49 | 16.3x |  |
+| `ex-mercenario` | 3 | `ex-mercenário` | 54 | 18.0x |  |
+| `fa-io-ei` | 3 | `fá-io-ei` | 47 | 15.7x |  |
+| `fortimbras` | 3 | `fortimbrás` | 48 | 16.0x |  |
+| `futuristico` | 3 | `futurístico` | 35 | 11.7x |  |
+| `hieroglifico` | 3 | `hieroglífico` | 59 | 19.7x |  |
+| `hipoxico` | 3 | `hipóxico` | 31 | 10.3x |  |
+| `imponencia` | 3 | `imponência` | 44 | 14.7x |  |
+| `indiscritivel` | 3 | `indiscritível` | 47 | 15.7x |  |
+| `intergalacticas` | 3 | `intergalácticas` | 44 | 14.7x |  |
+| `lrao` | 3 | `lrão` | 56 | 18.7x |  |
+| `manicomios` | 3 | `manicômios` | 35 | 11.7x |  |
+| `mante-io` | 3 | `mantê-io` | 58 | 19.3x |  |
+| `masnao` | 3 | `masnão` | 37 | 12.3x |  |
+| `megapixeis` | 3 | `megapixéis` | 36 | 12.0x |  |
+| `naoposso` | 3 | `nãoposso` | 45 | 15.0x |  |
+| `neurociencias` | 3 | `neurociências` | 32 | 10.7x |  |
+| `obersturmbannfuhrer` | 3 | `obersturmbannführer` | 44 | 14.7x |  |
+| `opioides` | 3 | `opióides` | 43 | 14.3x |  |
+| `oregano` | 3 | `orégano` | 36 | 12.0x |  |
+| `pancuronio` | 3 | `pancurónio` | 41 | 13.7x |  |
+| `perde-io` | 3 | `perdê-io` | 42 | 14.0x |  |
+| `pontificio` | 3 | `pontifício` | 45 | 15.0x |  |
+| `pre-aprovado` | 3 | `pré-aprovado` | 52 | 17.3x |  |
+| `pro-armas` | 3 | `pró-armas` | 33 | 11.0x |  |
+| `proboscide` | 3 | `probóscide` | 39 | 13.0x |  |
+| `quadrilatero` | 3 | `quadrilátero` | 38 | 12.7x |  |
+| `quipa` | 3 | `quipá` | 52 | 17.3x |  |
+| `saturnalia` | 3 | `saturnália` | 40 | 13.3x |  |
+| `shonte` | 3 | `shonté` | 39 | 13.0x |  |
+| `solideu` | 3 | `solidéu` | 58 | 19.3x |  |
+| `super-heroinas` | 3 | `super-heroínas` | 34 | 11.3x |  |
+| `super-virus` | 3 | `super-vírus` | 42 | 14.0x |  |
+| `taquicardico` | 3 | `taquicárdico` | 37 | 12.3x |  |
+| `tchecoslovaquia` | 3 | `tchecoslováquia` | 47 | 15.7x |  |
+| `tete-a-tete` | 3 | `tête-à-tête` | 49 | 16.3x |  |
+| `uberes` | 3 | `úberes` | 38 | 12.7x |  |
+| `vice-lider` | 3 | `vice-líder` | 33 | 11.0x |  |
+| `xiongdi` | 3 | `xiongdì` | 34 | 11.3x |  |
+| `adenoides` | 2 | `adenóides` | 39 | 19.5x |  |
+| `aksinia` | 2 | `aksínia` | 28 | 14.0x |  |
+| `alumen` | 2 | `alúmen` | 31 | 15.5x |  |
+| `angele` | 2 | `angèle` | 23 | 11.5x |  |
+| `atalo` | 2 | `átalo` | 27 | 13.5x |  |
+| `berinio` | 2 | `berínio` | 23 | 11.5x |  |
+| `bientot` | 2 | `bientôt` | 30 | 15.0x |  |
+| `biofisico` | 2 | `biofísico` | 26 | 13.0x |  |
+| `bonacheirao` | 2 | `bonacheirão` | 25 | 12.5x |  |
+| `carlen` | 2 | `carlén` | 23 | 11.5x |  |
+| `cerefolio` | 2 | `cerefólio` | 24 | 12.0x |  |
+| `champs-elysees` | 2 | `champs-elysées` | 24 | 12.0x |  |
+| `cianidrico` | 2 | `cianídrico` | 29 | 14.5x |  |
+| `cirio` | 2 | `círio` | 28 | 14.0x |  |
+| `comfortavel` | 2 | `comfortável` | 33 | 16.5x |  |
+| `condilo` | 2 | `côndilo` | 21 | 10.5x |  |
+| `coneco` | 2 | `coneço` | 33 | 16.5x |  |
+| `contigencia` | 2 | `contigência` | 32 | 16.0x |  |
+| `contra-feitico` | 2 | `contra-feitiço` | 28 | 14.0x |  |
+| `cristaos` | 2 | `cristäos` | 27 | 13.5x |  |
+| `debiloide` | 2 | `debilóide` | 33 | 16.5x |  |
+| `demonia` | 2 | `demônia` | 39 | 19.5x |  |
+| `directorio-k` | 2 | `directório-k` | 39 | 19.5x |  |
+| `dolmen` | 2 | `dólmen` | 20 | 10.0x |  |
+| `dubles` | 2 | `dublês` | 29 | 14.5x |  |
+| `duranio` | 2 | `durânio` | 32 | 16.0x |  |
+| `electroquimicos` | 2 | `electroquímicos` | 21 | 10.5x |  |
+| `elitaire` | 2 | `élitaire` | 36 | 18.0x |  |
+| `elysee` | 2 | `elysée` | 34 | 17.0x |  |
+| `encontra-ios` | 2 | `encontrá-ios` | 36 | 18.0x |  |
+| `eomund` | 2 | `éomund` | 33 | 16.5x |  |
+| `esposa-trofeu` | 2 | `esposa-troféu` | 20 | 10.0x |  |
+| `eua-mexico` | 2 | `eua-méxico` | 24 | 12.0x |  |
+| `ex-lider` | 2 | `ex-líder` | 26 | 13.0x |  |
+| `execito` | 2 | `exécito` | 30 | 15.0x |  |
+| `fenolftaleina` | 2 | `fenolftaleína` | 38 | 19.0x |  |
+| `frisios` | 2 | `frísios` | 36 | 18.0x |  |
+| `galoes` | 2 | `galöes` | 23 | 11.5x |  |
+| `genitalias` | 2 | `genitálias` | 23 | 11.5x |  |
+| `gres` | 2 | `grés` | 20 | 10.0x |  |
+| `holguin` | 2 | `holguín` | 39 | 19.5x |  |
+| `idiotes` | 2 | `idiotês` | 21 | 10.5x |  |
+| `ija` | 2 | `ijá` | 20 | 10.0x |  |
+| `insectoide` | 2 | `insectóide` | 26 | 13.0x |  |
+| `insectoides` | 2 | `insectóides` | 38 | 19.0x |  |
+| `inventorio` | 2 | `inventório` | 20 | 10.0x |  |
+| `isopropilico` | 2 | `isopropílico` | 26 | 13.0x |  |
+| `itenerario` | 2 | `itenerário` | 28 | 14.0x |  |
+| `jaures` | 2 | `jaurès` | 23 | 11.5x |  |
+| `mante-ios` | 2 | `mantê-ios` | 21 | 10.5x |  |
+| `mesias` | 2 | `mesías` | 26 | 13.0x |  |
+| `multivitaminico` | 2 | `multivitamínico` | 22 | 11.0x |  |
+| `murio` | 2 | `murió` | 21 | 10.5x |  |
+| `nematodes` | 2 | `nemátodes` | 24 | 12.0x |  |
+| `nomade` | 2 | `nômade` | 33 | 16.5x |  |
+| `ondee` | 2 | `ondeé` | 28 | 14.0x |  |
+| `opioide` | 2 | `opióide` | 21 | 10.5x |  |
+| `optogenetica` | 2 | `optogenética` | 27 | 13.5x |  |
+| `oracoes` | 2 | `oraçoes` | 20 | 10.0x |  |
+| `oximetro` | 2 | `oxímetro` | 30 | 15.0x |  |
+| `pareos` | 2 | `páreos` | 30 | 15.0x |  |
+| `peco-to` | 2 | `peço-to` | 39 | 19.5x |  |
+| `pisao` | 2 | `pisão` | 21 | 10.5x |  |
+| `pre-aquecer` | 2 | `pré-aquecer` | 36 | 18.0x |  |
+| `pre-seleccionados` | 2 | `pré-seleccionados` | 21 | 10.5x |  |
+| `pre-visualizacao` | 2 | `pré-visualização` | 24 | 12.0x |  |
+| `protoplasmica` | 2 | `protoplásmica` | 30 | 15.0x |  |
+| `prova-io` | 2 | `prová-io` | 38 | 19.0x |  |
+| `pugilistica` | 2 | `pugilística` | 20 | 10.0x |  |
+| `puplica` | 2 | `púplica` | 34 | 17.0x |  |
+| `rabanos` | 2 | `rábanos` | 31 | 15.5x |  |
+| `regulavel` | 2 | `regulável` | 34 | 17.0x |  |
+| `shengcun` | 2 | `shengcún` | 35 | 17.5x |  |
+| `simbelmyne` | 2 | `simbelmynë` | 26 | 13.0x |  |
+| `situacoes` | 2 | `situacões` | 20 | 10.0x |  |
+| `subaracnoidea` | 2 | `subaracnóidea` | 27 | 13.5x |  |
+| `subconsciencia` | 2 | `subconsciência` | 33 | 16.5x |  |
+| `super-potencia` | 2 | `super-potência` | 31 | 15.5x |  |
+| `superpolicia` | 2 | `superpolícia` | 21 | 10.5x |  |
+| `tectonicas` | 2 | `tectônicas` | 36 | 18.0x |  |
+| `telecineticas` | 2 | `telecinéticas` | 27 | 13.5x |  |
+| `teofilo` | 2 | `teófilo` | 23 | 11.5x |  |
+| `tipoia` | 2 | `tipóia` | 35 | 17.5x |  |
+| `titeres` | 2 | `títeres` | 33 | 16.5x |  |
+| `tomografica` | 2 | `tomográfica` | 21 | 10.5x |  |
+| `totil` | 2 | `tótil` | 23 | 11.5x |  |
+| `traze-ia` | 2 | `trazê-ia` | 21 | 10.5x |  |
+| `traze-ios` | 2 | `trazê-ios` | 23 | 11.5x |  |
+| `tu-sabes-o-que` | 2 | `tu-sabes-o-quê` | 20 | 10.0x |  |
+| `utima` | 2 | `útima` | 25 | 12.5x |  |
+| `velocipede` | 2 | `velocípede` | 25 | 12.5x |  |
+| `zefiro` | 2 | `zéfiro` | 22 | 11.0x |  |
+| `ºaniversario` | 2 | `ºaniversário` | 32 | 16.0x |  |
+| `abeculas` | 1 | `abéculas` | 17 | 17.0x |  |
+| `acabeca` | 1 | `acabeça` | 13 | 13.0x |  |
+| `acusa-io` | 1 | `acusá-io` | 14 | 14.0x |  |
+| `ademas` | 1 | `además` | 15 | 15.0x |  |
+| `aerofolio` | 1 | `aerofólio` | 16 | 16.0x |  |
+| `aerografo` | 1 | `aerógrafo` | 13 | 13.0x |  |
+| `algue` | 1 | `algué` | 13 | 13.0x |  |
+| `alianigenas` | 1 | `alianígenas` | 12 | 12.0x |  |
+| `alskar` | 1 | `älskar` | 14 | 14.0x |  |
+| `amao` | 1 | `amão` | 16 | 16.0x |  |
+| `amasia` | 1 | `amásia` | 15 | 15.0x |  |
+| `amordacaa` | 1 | `amordaçaa` | 13 | 13.0x |  |
+| `anti-alergico` | 1 | `anti-alérgico` | 18 | 18.0x |  |
+| `anti-semiticos` | 1 | `anti-semíticos` | 15 | 15.0x |  |
+| `anti-suicidio` | 1 | `anti-suicídio` | 13 | 13.0x |  |
+| `arcades` | 1 | `árcades` | 15 | 15.0x |  |
+| `arore` | 1 | `árore` | 12 | 12.0x |  |
+| `asteroidal` | 1 | `asteróidal` | 12 | 12.0x |  |
+| `astronomicas` | 1 | `astronômicas` | 17 | 17.0x |  |
+| `atende-io` | 1 | `atendê-io` | 10 | 10.0x |  |
+| `atiranco` | 1 | `atiranço` | 18 | 18.0x |  |
+| `atonita` | 1 | `atônita` | 18 | 18.0x |  |
+| `atrai-io` | 1 | `atraí-io` | 13 | 13.0x |  |
+| `audio-livro` | 1 | `áudio-livro` | 12 | 12.0x |  |
+| `australasia` | 1 | `australásia` | 13 | 13.0x |  |
+| `autonomas` | 1 | `autônomas` | 11 | 11.0x |  |
+| `autorradio` | 1 | `autorrádio` | 17 | 17.0x |  |
+| `avaliaa` | 1 | `avaliaã` | 10 | 10.0x |  |
+| `avana` | 1 | `avanã` | 18 | 18.0x |  |
+| `aviles` | 1 | `avilés` | 12 | 12.0x |  |
+| `babilonicas` | 1 | `babilônicas` | 14 | 14.0x |  |
+| `bar-mitzva` | 1 | `bar-mitzvá` | 14 | 14.0x |  |
+| `benzoilo` | 1 | `benzoílo` | 11 | 11.0x |  |
+| `bi-localizacao` | 1 | `bi-localização` | 15 | 15.0x |  |
+| `bicepe` | 1 | `bícepe` | 19 | 19.0x |  |
+| `bio-degradavel` | 1 | `bio-degradável` | 12 | 12.0x |  |
+| `biotecnica` | 1 | `biotécnica` | 11 | 11.0x |  |
+| `blacula` | 1 | `blácula` | 14 | 14.0x |  |
+| `bulimicos` | 1 | `bulímicos` | 16 | 16.0x |  |
+| `busca-polos` | 1 | `busca-pólos` | 17 | 17.0x |  |
+| `c'e` | 1 | `c'è` | 12 | 12.0x |  |
+| `cabecas-de-toalha` | 1 | `cabeças-de-toalha` | 10 | 10.0x |  |
+| `cacavamos` | 1 | `caçavamos` | 10 | 10.0x |  |
+| `cafune` | 1 | `cafuné` | 17 | 17.0x |  |
+| `captitao` | 1 | `captitão` | 15 | 15.0x |  |
+| `caquetica` | 1 | `caquética` | 13 | 13.0x |  |
+| `cassara` | 1 | `cassarà` | 18 | 18.0x |  |
+| `cerebro-espinhal` | 1 | `cérebro-espinhal` | 17 | 17.0x |  |
+| `ciemencia` | 1 | `ciemência` | 12 | 12.0x |  |
+| `co-consul` | 1 | `co-cônsul` | 13 | 13.0x |  |
+| `coicidencia` | 1 | `coicidência` | 11 | 11.0x |  |
+| `colasa` | 1 | `colása` | 14 | 14.0x |  |
+| `com'as` | 1 | `com'ás` | 13 | 13.0x |  |
+| `comodas` | 1 | `cômodas` | 16 | 16.0x |  |
+| `complos` | 1 | `complôs` | 15 | 15.0x |  |
+| `concepcao` | 1 | `concepçäo` | 10 | 10.0x |  |
+| `confissionario` | 1 | `confissionário` | 12 | 12.0x |  |
+| `constroia` | 1 | `constróia` | 18 | 18.0x |  |
+| `contacta-ios` | 1 | `contactá-ios` | 18 | 18.0x |  |
+| `contra-interroga` | 1 | `contra-interrogá` | 11 | 11.0x |  |
+| `convence-ia` | 1 | `convencê-ia` | 13 | 13.0x |  |
+| `copan` | 1 | `copán` | 10 | 10.0x |  |
+| `copiapo` | 1 | `copiapó` | 18 | 18.0x |  |
+| `cordobes` | 1 | `cordobés` | 13 | 13.0x |  |
+| `coupes` | 1 | `coupés` | 11 | 11.0x |  |
+| `crepin` | 1 | `crépin` | 11 | 11.0x |  |
+| `criana` | 1 | `crianã` | 15 | 15.0x |  |
+| `cupe` | 1 | `cupê` | 11 | 11.0x |  |
+| `curacau` | 1 | `curaçau` | 15 | 15.0x |  |
+| `d'orleans` | 1 | `d'orléans` | 11 | 11.0x |  |
+| `dadaismo` | 1 | `dadaísmo` | 13 | 13.0x |  |
+| `dar-me-ieis` | 1 | `dar-me-íeis` | 10 | 10.0x |  |
+| `de-ihes` | 1 | `dê-ihes` | 16 | 16.0x |  |
+| `debativel` | 1 | `debatível` | 12 | 12.0x |  |
+| `decio` | 1 | `décio` | 10 | 10.0x |  |
+| `decisa` | 1 | `decisã` | 12 | 12.0x |  |
+| `decors` | 1 | `décors` | 14 | 14.0x |  |
+| `degradavel` | 1 | `degradável` | 12 | 12.0x |  |
+| `deiphobus` | 1 | `deíphobus` | 14 | 14.0x |  |
+| `deita-io` | 1 | `deitá-io` | 18 | 18.0x |  |
+| `delfinios` | 1 | `delfínios` | 15 | 15.0x |  |
+| `denuncia-io` | 1 | `denunciá-io` | 12 | 12.0x |  |
+| `despresivel` | 1 | `despresível` | 10 | 10.0x |  |
+| `destrui-ios` | 1 | `destruí-ios` | 12 | 12.0x |  |
+| `diagonostico` | 1 | `diagonóstico` | 10 | 10.0x |  |
+| `difa` | 1 | `difã` | 16 | 16.0x |  |
+| `difiiceis` | 1 | `difííceis` | 10 | 10.0x |  |
+| `dionis` | 1 | `dionís` | 18 | 18.0x |  |
+| `dipsomaniacos` | 1 | `dipsomaníacos` | 11 | 11.0x |  |
+| `domremy` | 1 | `domrémy` | 10 | 10.0x |  |
+| `dunia` | 1 | `dúnia` | 11 | 11.0x |  |
+| `eata` | 1 | `eatá` | 13 | 13.0x |  |
+| `eboli` | 1 | `éboli` | 16 | 16.0x |  |
+| `egomaniacos` | 1 | `egomaníacos` | 12 | 12.0x |  |
+| `ehorade` | 1 | `éhorade` | 12 | 12.0x |  |
+| `eivro` | 1 | `éivro` | 13 | 13.0x |  |
+| `ejercito` | 1 | `ejército` | 19 | 19.0x |  |
+| `emalamos` | 1 | `emalámos` | 11 | 11.0x |  |
+| `engracia` | 1 | `engrácia` | 15 | 15.0x |  |
+| `enterra-io` | 1 | `enterrá-io` | 19 | 19.0x |  |
+| `entree` | 1 | `entrée` | 16 | 16.0x |  |
+| `entrega-io` | 1 | `entregá-io` | 19 | 19.0x |  |
+| `envia-io` | 1 | `enviá-io` | 17 | 17.0x |  |
+| `eratao` | 1 | `eratão` | 12 | 12.0x |  |
+| `escaneres` | 1 | `escâneres` | 16 | 16.0x |  |
+| `esperiencias` | 1 | `esperiências` | 13 | 13.0x |  |
+| `esquece-io` | 1 | `esquecê-io` | 15 | 15.0x |  |
+| `estadao` | 1 | `estadão` | 16 | 16.0x |  |
+| `estraordinarias` | 1 | `estraordinárias` | 11 | 11.0x |  |
+| `estraordinario` | 1 | `estraordinário` | 13 | 13.0x |  |
+| `estrogeno` | 1 | `estrógeno` | 13 | 13.0x |  |
+| `estropicio` | 1 | `estropício` | 19 | 19.0x |  |
+| `estuda-io` | 1 | `estudá-io` | 11 | 11.0x |  |
+| `eutambem` | 1 | `eutambém` | 19 | 19.0x |  |
+| `evoce` | 1 | `evocê` | 11 | 11.0x |  |
+| `ex-exercito` | 1 | `ex-exército` | 12 | 12.0x |  |
+| `ex-reporter` | 1 | `ex-repórter` | 11 | 11.0x |  |
+| `eyup` | 1 | `eyüp` | 12 | 12.0x |  |
+| `fecho-eclair` | 1 | `fecho-éclair` | 18 | 18.0x |  |
+| `finalissima` | 1 | `finalíssima` | 12 | 12.0x |  |
+| `fiodorovitch` | 1 | `fiódorovitch` | 16 | 16.0x |  |
+| `frappes` | 1 | `frappés` | 15 | 15.0x |  |
+| `gallon` | 1 | `gallón` | 14 | 14.0x |  |
+| `gasta-io` | 1 | `gastá-io` | 15 | 15.0x |  |
+| `gatastrofe` | 1 | `gatástrofe` | 14 | 14.0x |  |
+| `gentilissimo` | 1 | `gentilíssimo` | 11 | 11.0x |  |
+| `germanizacao` | 1 | `germanização` | 13 | 13.0x |  |
+| `gipsofilas` | 1 | `gipsófilas` | 11 | 11.0x |  |
+| `groelandia` | 1 | `groelândia` | 16 | 16.0x |  |
+| `grosnia` | 1 | `grósnia` | 11 | 11.0x |  |
+| `grumio` | 1 | `grúmio` | 11 | 11.0x |  |
+| `guia-io` | 1 | `guiá-io` | 14 | 14.0x |  |
+| `haum` | 1 | `háum` | 10 | 10.0x |  |
+| `hematoencefalica` | 1 | `hematoencefálica` | 18 | 18.0x |  |
+| `herpetica` | 1 | `herpética` | 18 | 18.0x |  |
+| `higienicas` | 1 | `higiênicas` | 13 | 13.0x |  |
+| `hipervigilancia` | 1 | `hipervigilância` | 15 | 15.0x |  |
+| `hipoalergenicos` | 1 | `hipoalergênicos` | 15 | 15.0x |  |
+| `hipocritazinha` | 1 | `hipócritazinha` | 12 | 12.0x |  |
+| `homens-passaros` | 1 | `homens-pássaros` | 10 | 10.0x |  |
+| `humero` | 1 | `húmero` | 14 | 14.0x |  |
+| `i'etang` | 1 | `i'étang` | 10 | 10.0x |  |
+| `ianca-chamas` | 1 | `iança-chamas` | 14 | 14.0x |  |
+| `iancaram` | 1 | `iançaram` | 14 | 14.0x |  |
+| `ileo` | 1 | `íleo` | 16 | 16.0x |  |
+| `impalpavel` | 1 | `impalpável` | 18 | 18.0x |  |
+| `incomestivel` | 1 | `incomestível` | 16 | 16.0x |  |
+| `indifereca` | 1 | `indifereça` | 11 | 11.0x |  |
+| `inlges` | 1 | `inlgês` | 10 | 10.0x |  |
+| `inquebrantavel` | 1 | `inquebrantável` | 17 | 17.0x |  |
+| `insoportavel` | 1 | `insoportável` | 12 | 12.0x |  |
+| `intelectualoides` | 1 | `intelectualóides` | 12 | 12.0x |  |
+| `iriao` | 1 | `irião` | 13 | 13.0x |  |
+| `irrascivel` | 1 | `irrascível` | 16 | 16.0x |  |
+| `irrazoaveis` | 1 | `irrazoáveis` | 16 | 16.0x |  |
+| `irritacaozinha` | 1 | `irritaçãozinha` | 14 | 14.0x |  |
+| `jagers` | 1 | `jägers` | 12 | 12.0x |  |
+| `l'equipe` | 1 | `l'équipe` | 10 | 10.0x |  |
+| `ladao` | 1 | `ladão` | 18 | 18.0x |  |
+| `lanca-fumos` | 1 | `lança-fumos` | 12 | 12.0x |  |
+| `lancoa` | 1 | `lançoa` | 14 | 14.0x |  |
+| `laurencio` | 1 | `laurêncio` | 18 | 18.0x |  |
+| `leva-ia` | 1 | `levá-ia` | 16 | 16.0x |  |
+| `levissimo` | 1 | `levíssimo` | 13 | 13.0x |  |
+| `licia` | 1 | `lícia` | 12 | 12.0x |  |
+| `liebana` | 1 | `liébana` | 11 | 11.0x |  |
+| `livonia` | 1 | `livónia` | 10 | 10.0x |  |
+| `lmpecavel` | 1 | `lmpecável` | 12 | 12.0x |  |
+| `lnutil` | 1 | `lnútil` | 17 | 17.0x |  |
+| `madraco` | 1 | `madraço` | 17 | 17.0x |  |
+| `manda-ios` | 1 | `mandá-ios` | 14 | 14.0x |  |
+| `mandroides` | 1 | `mandróides` | 14 | 14.0x |  |
+| `mante-ia` | 1 | `mantê-ia` | 15 | 15.0x |  |
+| `maranon` | 1 | `marañón` | 14 | 14.0x |  |
+| `merite` | 1 | `mérite` | 15 | 15.0x |  |
+| `merovingio` | 1 | `merovíngio` | 15 | 15.0x |  |
+| `mes-a-mes` | 1 | `mês-a-mês` | 12 | 12.0x |  |
+| `mesopotania` | 1 | `mesopotânia` | 12 | 12.0x |  |
+| `minoica` | 1 | `minóica` | 19 | 19.0x |  |
+| `miocitos` | 1 | `miócitos` | 17 | 17.0x |  |
+| `monio` | 1 | `mónio` | 16 | 16.0x |  |
+| `mosculo` | 1 | `môsculo` | 16 | 16.0x |  |
+| `multimetro` | 1 | `multímetro` | 12 | 12.0x |  |
+| `nakun` | 1 | `nakún` | 10 | 10.0x |  |
+| `nao-militar` | 1 | `não-militar` | 15 | 15.0x |  |
+| `naofoi` | 1 | `nãofoi` | 19 | 19.0x |  |
+| `naopodemos` | 1 | `nãopodemos` | 15 | 15.0x |  |
+| `narcoleptica` | 1 | `narcoléptica` | 16 | 16.0x |  |
+| `nasdarovia` | 1 | `nasdaróvia` | 11 | 11.0x |  |
+| `navio-prisao` | 1 | `navio-prisão` | 15 | 15.0x |  |
+| `nega-io` | 1 | `negá-io` | 10 | 10.0x |  |
+| `neutronico` | 1 | `neutrónico` | 13 | 13.0x |  |
+| `ningue` | 1 | `ningué` | 19 | 19.0x |  |
+| `obersturmbanfuhrer` | 1 | `obersturmbanführer` | 14 | 14.0x |  |
+| `objeccoes` | 1 | `objecçöes` | 10 | 10.0x |  |
+| `obnoxio` | 1 | `obnóxio` | 16 | 16.0x |  |
+| `oces` | 1 | `ocês` | 16 | 16.0x |  |
+| `oihamos` | 1 | `oihámos` | 16 | 16.0x |  |
+| `olai` | 1 | `olái` | 14 | 14.0x |  |
+| `onipotencia` | 1 | `onipotência` | 11 | 11.0x |  |
+| `operatico` | 1 | `operático` | 13 | 13.0x |  |
+| `opinia` | 1 | `opiniã` | 15 | 15.0x |  |
+| `oquai` | 1 | `óquai` | 11 | 11.0x |  |
+| `ostias` | 1 | `óstias` | 12 | 12.0x |  |
+| `ounao` | 1 | `ounão` | 17 | 17.0x |  |
+| `ouricos-cacheiros` | 1 | `ouriços-cacheiros` | 11 | 11.0x |  |
+| `paga-ias` | 1 | `pagá-ias` | 19 | 19.0x |  |
+| `pasca` | 1 | `pascà` | 14 | 14.0x |  |
+| `passa-io` | 1 | `passá-io` | 13 | 13.0x |  |
+| `paupa` | 1 | `paupá` | 12 | 12.0x |  |
+| `pega-ia` | 1 | `pegá-ia` | 14 | 14.0x |  |
+| `peguy` | 1 | `péguy` | 10 | 10.0x |  |
+| `pensaozinha` | 1 | `pensãozinha` | 18 | 18.0x |  |
+| `perde-ia` | 1 | `perdê-ia` | 10 | 10.0x |  |
+| `petrea` | 1 | `pétrea` | 14 | 14.0x |  |
+| `pinoia` | 1 | `pinóia` | 12 | 12.0x |  |
+| `piorja` | 1 | `piorjá` | 18 | 18.0x |  |
+| `pitia` | 1 | `pítia` | 12 | 12.0x |  |
+| `pneumocistica` | 1 | `pneumocística` | 10 | 10.0x |  |
+| `polic` | 1 | `políc` | 18 | 18.0x |  |
+| `posicao-chave` | 1 | `posição-chave` | 15 | 15.0x |  |
+| `positrons` | 1 | `pósitrons` | 19 | 19.0x |  |
+| `potenciometro` | 1 | `potenciómetro` | 16 | 16.0x |  |
+| `pralines` | 1 | `pralinés` | 17 | 17.0x |  |
+| `pre-direito` | 1 | `pré-direito` | 12 | 12.0x |  |
+| `pre-festa` | 1 | `pré-festa` | 11 | 11.0x |  |
+| `pre-requesito` | 1 | `pré-requesito` | 12 | 12.0x |  |
+| `precaucoes` | 1 | `precauçöes` | 11 | 11.0x |  |
+| `pret-a-porter` | 1 | `prêt-à-porter` | 10 | 10.0x |  |
+| `prions` | 1 | `príons` | 10 | 10.0x |  |
+| `processa-io` | 1 | `processá-io` | 15 | 15.0x |  |
+| `procura-ia` | 1 | `procurá-ia` | 18 | 18.0x |  |
+| `procura-ios` | 1 | `procurá-ios` | 14 | 14.0x |  |
+| `proibio` | 1 | `proíbio` | 14 | 14.0x |  |
+| `prorio` | 1 | `prório` | 17 | 17.0x |  |
+| `protege-ios` | 1 | `protegê-ios` | 19 | 19.0x |  |
+| `psico-analise` | 1 | `psico-análise` | 13 | 13.0x |  |
+| `quandoe` | 1 | `quandoé` | 11 | 11.0x |  |
+| `queestas` | 1 | `queestás` | 12 | 12.0x |  |
+| `queroneia` | 1 | `queronéia` | 13 | 13.0x |  |
+| `quinico` | 1 | `quínico` | 10 | 10.0x |  |
+| `reunao` | 1 | `reunão` | 17 | 17.0x |  |
+| `sacrilegos` | 1 | `sacrílegos` | 19 | 19.0x |  |
+| `salomine` | 1 | `salómine` | 17 | 17.0x |  |
+| `senhorja` | 1 | `senhorjá` | 10 | 10.0x |  |
+| `serpentario` | 1 | `serpentário` | 10 | 10.0x |  |
+| `serra-eletrica` | 1 | `serra-elétrica` | 10 | 10.0x |  |
+| `sesamoide` | 1 | `sesamóide` | 10 | 10.0x |  |
+| `so-cra-tes` | 1 | `só-cra-tes` | 16 | 16.0x |  |
+| `sociopaticas` | 1 | `sociopáticas` | 12 | 12.0x |  |
+| `subordinacao` | 1 | `subordinação` | 16 | 16.0x |  |
+| `subxifoide` | 1 | `subxifóide` | 14 | 14.0x |  |
+| `sulfoxido` | 1 | `sulfóxido` | 10 | 10.0x |  |
+| `super-inteligencia` | 1 | `super-inteligência` | 14 | 14.0x |  |
+| `superavel` | 1 | `superável` | 11 | 11.0x |  |
+| `supetao` | 1 | `supetão` | 17 | 17.0x |  |
+| `talamica` | 1 | `talâmica` | 14 | 14.0x |  |
+| `tazon` | 1 | `tazón` | 10 | 10.0x |  |
+| `tchaikovski` | 1 | `tchaïkovski` | 14 | 14.0x |  |
+| `telemetro` | 1 | `telémetro` | 16 | 16.0x |  |
+| `telescopia` | 1 | `telescópia` | 12 | 12.0x | yes |
+| `tercio` | 1 | `tércio` | 10 | 10.0x |  |
+| `terivel` | 1 | `terível` | 11 | 11.0x |  |
+| `tevez` | 1 | `tévez` | 13 | 13.0x |  |
+| `theophile` | 1 | `théophile` | 18 | 18.0x |  |
+| `torques` | 1 | `torquês` | 12 | 12.0x |  |
+| `traduccion` | 1 | `traducción` | 10 | 10.0x |  |
+| `ua-ua` | 1 | `uá-uá` | 15 | 15.0x |  |
+| `ult` | 1 | `últ` | 10 | 10.0x |  |
+| `upalala` | 1 | `upalalá` | 16 | 16.0x |  |
+| `urses` | 1 | `ursês` | 11 | 11.0x |  |
+| `usa-ios` | 1 | `usá-ios` | 18 | 18.0x |  |
+| `utimos` | 1 | `útimos` | 17 | 17.0x |  |
+| `uzes` | 1 | `uzès` | 11 | 11.0x |  |
+| `valere` | 1 | `valére` | 13 | 13.0x |  |
+| `vancover` | 1 | `vancôver` | 10 | 10.0x |  |
+| `vascularizacao` | 1 | `vascularização` | 17 | 17.0x |  |
+| `veloute` | 1 | `velouté` | 10 | 10.0x |  |
+| `venancio` | 1 | `venâncio` | 16 | 16.0x |  |
+| `vence-ios` | 1 | `vencê-ios` | 18 | 18.0x |  |
+| `verginia` | 1 | `vergínia` | 16 | 16.0x |  |
+| `vizinhaca` | 1 | `vizinhaça` | 17 | 17.0x |  |
+| `voltios` | 1 | `vóltios` | 15 | 15.0x |  |
+| `vuneravel` | 1 | `vunerável` | 17 | 17.0x |  |
+| `webisodios` | 1 | `webisódios` | 12 | 12.0x |  |
+| `zubeyde` | 1 | `zübeyde` | 19 | 19.0x |  |
+
+<details><summary>All other folds (30,067)</summary>
 
 | from | count | into | count | kind |
 |---|---:|---|---:|---|
@@ -533,21 +1289,27 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `possivel` | 3,693 | `possível` | 140,689 | unaccented |
 | `entao` | 3,644 | `então` | 1,280,096 | unaccented |
 | `miudo` | 3,507 | `miúdo` | 161,639 | unaccented |
+| `pa` | 3,472 | `pá` | 51,345 | unaccented |
 | `sózinho` | 3,340 | `sozinho` | 213,447 | accent_variant |
 | `â` | 3,138 | `a` | 22,503,312 | accent_variant |
 | `miuda` | 3,081 | `miúda` | 126,718 | unaccented |
+| `video` | 2,905 | `vídeo` | 44,133 | unaccented |
 | `jà` | 2,657 | `já` | 1,853,641 | accent_variant |
 | `gênio` | 2,485 | `génio` | 26,394 | accent_variant |
 | `espirito` | 2,408 | `espírito` | 50,093 | unaccented |
 | `entäo` | 2,370 | `então` | 1,280,096 | accent_variant |
 | `estupido` | 2,308 | `estúpido` | 112,245 | unaccented |
+| `frances` | 2,308 | `francês` | 41,164 | unaccented |
 | `piça` | 2,243 | `pica` | 2,506 | accent_variant |
 | `america` | 2,234 | `américa` | 48,118 | unaccented |
 | `prêmio` | 2,209 | `prémio` | 27,963 | accent_variant |
 | `alí` | 2,208 | `ali` | 289,728 | accent_variant |
+| `obvio` | 2,194 | `óbvio` | 34,283 | unaccented |
 | `qué` | 2,170 | `que` | 22,332,777 | accent_variant |
 | `horrivel` | 2,051 | `horrível` | 63,077 | unaccented |
 | `saír` | 2,044 | `sair` | 822,826 | accent_variant |
+| `california` | 2,038 | `califórnia` | 21,589 | unaccented |
+| `taxi` | 2,027 | `táxi` | 29,949 | unaccented |
 | `là` | 1,987 | `lá` | 1,481,867 | accent_variant |
 | `tres` | 1,977 | `três` | 341,226 | unaccented |
 | `täo` | 1,952 | `tão` | 730,506 | accent_variant |
@@ -555,6 +1317,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `benção` | 1,841 | `bênção` | 8,778 | accent_variant |
 | `terrivel` | 1,794 | `terrível` | 51,617 | unaccented |
 | `cao` | 1,772 | `cão` | 122,006 | unaccented |
+| `politica` | 1,736 | `política` | 31,827 | unaccented |
 | `impossivel` | 1,723 | `impossível` | 62,857 | unaccented |
 | `cha` | 1,704 | `chá` | 39,163 | unaccented |
 | `mäe` | 1,694 | `mãe` | 712,032 | accent_variant |
@@ -607,6 +1370,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `tênis` | 881 | `ténis` | 8,419 | accent_variant |
 | `ão` | 877 | `ao` | 1,697,487 | accent_variant |
 | `páris` | 847 | `paris` | 37,890 | accent_variant |
+| `africa` | 845 | `áfrica` | 16,372 | unaccented |
 | `camara` | 845 | `câmara` | 89,503 | unaccented |
 | `perú` | 838 | `peru` | 9,838 | accent_variant |
 | `peña` | 820 | `pena` | 134,019 | accent_variant |
@@ -643,6 +1407,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `château` | 643 | `chateau` | 826 | accent_variant |
 | `pe` | 642 | `pé` | 148,370 | unaccented |
 | `pôquer` | 637 | `póquer` | 5,084 | accent_variant |
+| `hamburguer` | 633 | `hambúrguer` | 9,222 | unaccented |
 | `bórgia` | 623 | `borgia` | 647 | accent_variant |
 | `capitäo` | 620 | `capitão` | 143,903 | accent_variant |
 | `telemovel` | 618 | `telemóvel` | 69,130 | unaccented |
@@ -758,6 +1523,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `disponivel` | 349 | `disponível` | 19,596 | unaccented |
 | `gigolô` | 349 | `gigolo` | 373 | accent_variant |
 | `díficil` | 347 | `difícil` | 185,378 | accent_variant |
+| `audio` | 344 | `áudio` | 3,700 | unaccented |
 | `exercicio` | 340 | `exercício` | 18,069 | unaccented |
 | `mêdo` | 338 | `medo` | 210,806 | accent_variant |
 | `responsavel` | 338 | `responsável` | 50,628 | unaccented |
@@ -780,12 +1546,15 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `heroina` | 322 | `heroína` | 13,788 | unaccented |
 | `relacão` | 320 | `relação` | 101,548 | accent_variant |
 | `héctor` | 319 | `hector` | 7,907 | accent_variant |
+| `mare` | 319 | `maré` | 5,590 | unaccented |
+| `droide` | 317 | `dróide` | 4,147 | unaccented |
 | `assassinio` | 316 | `assassínio` | 15,835 | unaccented |
 | `bébe` | 315 | `bebé` | 137,840 | accent_variant |
 | `inclusivé` | 313 | `inclusive` | 4,566 | accent_variant |
 | `dôr` | 312 | `dor` | 90,536 | accent_variant |
 | `nitrogênio` | 312 | `nitrogénio` | 1,057 | accent_variant |
 | `coraçao` | 310 | `coração` | 155,243 | accent_variant |
+| `asia` | 309 | `ásia` | 3,340 | unaccented |
 | `chloé` | 308 | `chloe` | 18,450 | accent_variant |
 | `léo` | 306 | `leo` | 17,929 | accent_variant |
 | `gómez` | 305 | `gomez` | 2,046 | accent_variant |
@@ -853,12 +1622,14 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `violencia` | 255 | `violência` | 21,741 | unaccented |
 | `chäo` | 254 | `chão` | 82,945 | accent_variant |
 | `seqüestro` | 252 | `sequestro` | 3,378 | accent_variant |
+| `panama` | 251 | `panamá` | 3,163 | unaccented |
 | `söze` | 251 | `soze` | 665 | accent_variant |
 | `gerónimo` | 250 | `geronimo` | 776 | accent_variant |
 | `éa` | 250 | `ea` | 728 | accent_variant |
 | `naõ` | 249 | `não` | 17,877,211 | accent_variant |
 | `muñez` | 248 | `munez` | 252 | accent_variant |
 | `céline` | 247 | `celine` | 827 | accent_variant |
+| `dracula` | 246 | `drácula` | 3,177 | unaccented |
 | `flôr` | 245 | `flor` | 42,244 | accent_variant |
 | `geneviève` | 243 | `genevieve` | 1,001 | accent_variant |
 | `léa` | 243 | `lea` | 774 | accent_variant |
@@ -885,6 +1656,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `paträo` | 229 | `patrão` | 29,437 | accent_variant |
 | `manicômio` | 228 | `manicómio` | 2,691 | accent_variant |
 | `chéri` | 227 | `cheri` | 389 | accent_variant |
+| `senor` | 227 | `señor` | 3,426 | unaccented |
 | `italia` | 226 | `itália` | 10,328 | unaccented |
 | `saïd` | 224 | `said` | 1,334 | accent_variant |
 | `inutil` | 223 | `inútil` | 25,207 | unaccented |
@@ -936,6 +1708,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `jó` | 200 | `jo` | 6,740 | accent_variant |
 | `pérignon` | 200 | `perignon` | 214 | accent_variant |
 | `cancún` | 199 | `cancun` | 319 | accent_variant |
+| `francois` | 199 | `françois` | 2,358 | unaccented |
 | `gratis` | 199 | `grátis` | 9,217 | unaccented |
 | `vórtex` | 199 | `vortex` | 579 | accent_variant |
 | `joséphine` | 198 | `josephine` | 1,468 | accent_variant |
@@ -983,15 +1756,18 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `quimica` | 180 | `química` | 10,996 | unaccented |
 | `atômico` | 179 | `atómico` | 3,636 | accent_variant |
 | `genio` | 179 | `génio` | 26,394 | unaccented |
+| `iman` | 178 | `íman` | 1,840 | unaccented |
 | `insônia` | 178 | `insónia` | 1,656 | accent_variant |
 | `michéle` | 178 | `michele` | 1,151 | accent_variant |
 | `seguranca` | 178 | `segurança` | 163,291 | unaccented |
 | `criogênico` | 177 | `criogénico` | 436 | accent_variant |
+| `medium` | 177 | `médium` | 2,005 | unaccented |
 | `relatorio` | 177 | `relatório` | 52,228 | unaccented |
 | `brüno` | 176 | `bruno` | 5,503 | accent_variant |
 | `edíficio` | 176 | `edifício` | 46,414 | accent_variant |
 | `délia` | 175 | `delia` | 1,240 | accent_variant |
 | `jerusalem` | 174 | `jerusalém` | 5,273 | unaccented |
+| `capua` | 173 | `cápua` | 1,810 | unaccented |
 | `dolar` | 173 | `dólar` | 161,385 | unaccented |
 | `homícidio` | 173 | `homicídio` | 62,336 | accent_variant |
 | `tipico` | 173 | `típico` | 11,048 | unaccented |
@@ -1018,6 +1794,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `druída` | 167 | `druida` | 1,658 | accent_variant |
 | `michèle` | 167 | `michele` | 1,151 | accent_variant |
 | `panico` | 167 | `pânico` | 22,327 | unaccented |
+| `tita` | 167 | `titã` | 2,430 | unaccented |
 | `polícial` | 166 | `policial` | 17,674 | accent_variant |
 | `ambulancia` | 165 | `ambulância` | 20,469 | unaccented |
 | `colonia` | 165 | `colónia` | 10,395 | unaccented |
@@ -1026,6 +1803,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `oculos` | 164 | `óculos` | 20,229 | unaccented |
 | `ñ` | 164 | `n` | 22,178 | accent_variant |
 | `armazem` | 163 | `armazém` | 19,809 | unaccented |
+| `austria` | 163 | `áustria` | 2,210 | unaccented |
 | `decisao` | 163 | `decisão` | 74,538 | unaccented |
 | `gênesis` | 163 | `génesis` | 980 | accent_variant |
 | `mázinha` | 163 | `mazinha` | 487 | accent_variant |
@@ -1051,6 +1829,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `doenca` | 157 | `doença` | 42,107 | unaccented |
 | `romantico` | 157 | `romântico` | 20,041 | unaccented |
 | `salém` | 157 | `salem` | 1,900 | accent_variant |
+| `cleopatra` | 156 | `cleópatra` | 1,612 | unaccented |
 | `günter` | 155 | `gunter` | 240 | accent_variant |
 | `perola` | 155 | `pérola` | 6,422 | unaccented |
 | `pressao` | 155 | `pressão` | 39,447 | unaccented |
@@ -1065,6 +1844,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `príncipio` | 152 | `princípio` | 28,505 | accent_variant |
 | `realizacão` | 152 | `realização` | 8,121 | accent_variant |
 | `êle` | 152 | `ele` | 5,186,172 | accent_variant |
+| `cancer` | 151 | `câncer` | 1,682 | unaccented |
 | `duzia` | 151 | `dúzia` | 14,842 | unaccented |
 | `hibrido` | 151 | `híbrido` | 4,151 | unaccented |
 | `informacão` | 151 | `informação` | 117,540 | accent_variant |
@@ -1123,6 +1903,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `todavía` | 139 | `todavia` | 2,308 | accent_variant |
 | `andrômeda` | 138 | `andromeda` | 1,105 | accent_variant |
 | `doña` | 138 | `dona` | 10,656 | accent_variant |
+| `exilio` | 138 | `exílio` | 2,216 | unaccented |
 | `furia` | 138 | `fúria` | 7,146 | unaccented |
 | `quilômetro` | 138 | `quilómetro` | 22,061 | accent_variant |
 | `relaçäo` | 138 | `relação` | 101,548 | accent_variant |
@@ -1145,6 +1926,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `vocë` | 134 | `você` | 1,746,755 | accent_variant |
 | `armario` | 133 | `armário` | 21,507 | unaccented |
 | `centimo` | 133 | `cêntimo` | 12,817 | unaccented |
+| `consul` | 133 | `cônsul` | 2,314 | unaccented |
 | `territorio` | 133 | `território` | 18,181 | unaccented |
 | `tranqüilidade` | 133 | `tranquilidade` | 1,759 | accent_variant |
 | `émilien` | 133 | `emilien` | 632 | accent_variant |
@@ -1192,6 +1974,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `estatua` | 125 | `estátua` | 9,151 | unaccented |
 | `mío` | 125 | `mio` | 377 | accent_variant |
 | `póia` | 125 | `poia` | 149 | accent_variant |
+| `ze` | 125 | `zé` | 1,528 | unaccented |
+| `agricola` | 124 | `agrícola` | 1,691 | unaccented |
 | `atencao` | 124 | `atenção` | 107,999 | unaccented |
 | `mimì` | 124 | `mimi` | 2,958 | accent_variant |
 | `pensilvania` | 124 | `pensilvânia` | 3,523 | unaccented |
@@ -1212,10 +1996,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `éi` | 121 | `ei` | 170,334 | accent_variant |
 | `ôptimo` | 121 | `optimo` | 1,726 | accent_variant |
 | `adoravel` | 120 | `adorável` | 20,169 | unaccented |
+| `disneylandia` | 120 | `disneylândia` | 1,277 | unaccented |
 | `hermès` | 120 | `hermes` | 869 | accent_variant |
 | `hérmia` | 120 | `hermia` | 128 | accent_variant |
 | `operaçao` | 120 | `operação` | 63,652 | accent_variant |
 | `transmissao` | 120 | `transmissão` | 14,154 | unaccented |
+| `lixivia` | 119 | `lixívia` | 1,616 | unaccented |
 | `arsênico` | 118 | `arsénico` | 687 | accent_variant |
 | `dêle` | 118 | `dele` | 659,552 | accent_variant |
 | `epoca` | 118 | `época` | 28,291 | unaccented |
@@ -1228,6 +2014,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `fláp` | 115 | `flap` | 154 | accent_variant |
 | `patrimônio` | 115 | `património` | 1,366 | accent_variant |
 | `óstia` | 115 | `ostia` | 189 | accent_variant |
+| `anus` | 114 | `ânus` | 1,144 | unaccented |
 | `batôn` | 114 | `baton` | 1,262 | accent_variant |
 | `investigaçäo` | 114 | `investigação` | 48,034 | accent_variant |
 | `pápá` | 114 | `papá` | 78,885 | accent_variant |
@@ -1237,6 +2024,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `reu` | 113 | `réu` | 4,592 | unaccented |
 | `álex` | 113 | `alex` | 50,501 | accent_variant |
 | `alcoól` | 112 | `álcool` | 18,441 | accent_variant |
+| `noe` | 112 | `noé` | 1,421 | unaccented |
 | `televisao` | 112 | `televisão` | 42,839 | unaccented |
 | `terrívelmente` | 112 | `terrivelmente` | 3,829 | accent_variant |
 | `tônica` | 112 | `tónica` | 692 | accent_variant |
@@ -1278,6 +2066,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `súbitamente` | 107 | `subitamente` | 3,367 | accent_variant |
 | `théo` | 107 | `theo` | 4,652 | accent_variant |
 | `abraco` | 106 | `abraço` | 14,203 | unaccented |
+| `colon` | 106 | `cólon` | 1,273 | unaccented |
 | `cámara` | 106 | `câmara` | 89,503 | accent_variant |
 | `ginasio` | 106 | `ginásio` | 11,131 | unaccented |
 | `günther` | 106 | `gunther` | 1,264 | accent_variant |
@@ -1287,6 +2076,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pã` | 106 | `pá` | 51,345 | accent_variant |
 | `résistance` | 106 | `resistance` | 147 | accent_variant |
 | `tripulaçao` | 106 | `tripulação` | 20,544 | accent_variant |
+| `atraido` | 105 | `atraído` | 1,119 | unaccented |
 | `dónde` | 105 | `donde` | 6,016 | accent_variant |
 | `explosao` | 105 | `explosão` | 28,461 | unaccented |
 | `frequencia` | 105 | `frequência` | 15,708 | unaccented |
@@ -1298,11 +2088,13 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `uáu` | 105 | `uau` | 18,766 | accent_variant |
 | `ésta` | 105 | `estã` | 854 | accent_variant |
 | `cafézinho` | 104 | `cafezinho` | 515 | accent_variant |
+| `possuido` | 104 | `possuído` | 1,779 | unaccented |
 | `sindrome` | 104 | `síndrome` | 4,453 | unaccented |
 | `alêm` | 103 | `além` | 116,045 | accent_variant |
 | `ameaca` | 103 | `ameaça` | 43,315 | unaccented |
 | `cházinho` | 103 | `chazinho` | 270 | accent_variant |
 | `hipoglicémia` | 103 | `hipoglicemia` | 191 | accent_variant |
+| `menage` | 103 | `ménage` | 1,277 | unaccented |
 | `mû` | 103 | `mu` | 1,532 | accent_variant |
 | `andréa` | 102 | `andrea` | 6,347 | accent_variant |
 | `diáriamente` | 102 | `diariamente` | 3,718 | accent_variant |
@@ -1313,6 +2105,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `aparencia` | 101 | `aparência` | 12,510 | unaccented |
 | `cristovão` | 101 | `cristóvão` | 717 | accent_variant |
 | `dé` | 101 | `de` | 15,387,617 | accent_variant |
+| `fenix` | 100 | `fénix` | 1,740 | unaccented |
 | `metrônomo` | 100 | `metrónomo` | 124 | accent_variant |
 | `nuño` | 100 | `nuno` | 189 | accent_variant |
 | `sofía` | 100 | `sofia` | 4,615 | accent_variant |
@@ -1335,6 +2128,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `lí` | 98 | `li` | 33,987 | accent_variant |
 | `mássimo` | 98 | `massimo` | 278 | accent_variant |
 | `plutônio` | 98 | `plutónio` | 1,847 | accent_variant |
+| `porta-avioes` | 98 | `porta-aviões` | 1,515 | unaccented |
 | `predio` | 98 | `prédio` | 26,126 | unaccented |
 | `redireccioná` | 98 | `redirecciona` | 198 | accent_variant |
 | `thérèse` | 98 | `therese` | 387 | accent_variant |
@@ -1348,6 +2142,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `bebézinho` | 96 | `bebezinho` | 977 | accent_variant |
 | `premiére` | 96 | `premiere` | 150 | accent_variant |
 | `pátina` | 96 | `patina` | 157 | accent_variant |
+| `sicilia` | 96 | `sicília` | 1,643 | unaccented |
 | `tó` | 96 | `to` | 17,590 | accent_variant |
 | `víktor` | 96 | `viktor` | 5,040 | accent_variant |
 | `célsius` | 95 | `celsius` | 442 | accent_variant |
@@ -1362,12 +2157,14 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `materia` | 94 | `matéria` | 10,743 | unaccented |
 | `romênia` | 94 | `roménia` | 1,236 | accent_variant |
 | `sofa` | 94 | `sofá` | 18,580 | unaccented |
+| `tunica` | 94 | `túnica` | 1,248 | unaccented |
 | `cartäo` | 93 | `cartão` | 53,450 | accent_variant |
 | `construír` | 93 | `construir` | 77,784 | accent_variant |
 | `decisäo` | 93 | `decisão` | 74,538 | accent_variant |
 | `folego` | 93 | `fôlego` | 5,218 | unaccented |
 | `kilômetros` | 93 | `kilómetros` | 446 | accent_variant |
 | `patrao` | 93 | `patrão` | 29,437 | unaccented |
+| `peninsula` | 93 | `península` | 1,029 | unaccented |
 | `platônico` | 93 | `platónico` | 516 | accent_variant |
 | `vibora` | 93 | `víbora` | 2,530 | unaccented |
 | `autônomo` | 92 | `autónomo` | 911 | accent_variant |
@@ -1419,6 +2216,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `sófia` | 88 | `sofia` | 4,615 | accent_variant |
 | `tristán` | 88 | `tristan` | 1,582 | accent_variant |
 | `fôra` | 87 | `fora` | 396,031 | accent_variant |
+| `galia` | 87 | `gália` | 1,006 | unaccented |
 | `infancia` | 87 | `infância` | 12,994 | unaccented |
 | `letícia` | 87 | `leticia` | 391 | accent_variant |
 | `pégasus` | 87 | `pegasus` | 1,688 | accent_variant |
@@ -1488,6 +2286,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `réquiem` | 80 | `requiem` | 147 | accent_variant |
 | `automáticamente` | 79 | `automaticamente` | 2,475 | accent_variant |
 | `moínho` | 79 | `moinho` | 2,679 | accent_variant |
+| `touche` | 79 | `touché` | 1,142 | unaccented |
 | `aconteçer` | 78 | `acontecer` | 748,137 | accent_variant |
 | `amazônia` | 78 | `amazónia` | 773 | accent_variant |
 | `colón` | 78 | `cólon` | 1,273 | accent_variant |
@@ -1498,10 +2297,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `stá` | 78 | `sta` | 684 | accent_variant |
 | `ë` | 78 | `e` | 10,295,459 | accent_variant |
 | `ódin` | 78 | `odin` | 2,721 | accent_variant |
+| `ambar` | 77 | `âmbar` | 1,328 | unaccented |
 | `cêra` | 77 | `cera` | 4,102 | accent_variant |
 | `direcçao` | 77 | `direccão` | 136 | accent_variant |
 | `doppelgãnger` | 77 | `doppelgänger` | 513 | accent_variant |
 | `hécate` | 77 | `hecate` | 111 | accent_variant |
+| `narnia` | 77 | `nárnia` | 1,101 | unaccented |
 | `operacão` | 77 | `operação` | 63,652 | accent_variant |
 | `recompôr` | 77 | `recompor` | 5,058 | accent_variant |
 | `tranqüilizante` | 77 | `tranquilizante` | 2,730 | accent_variant |
@@ -1541,6 +2342,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `telefônico` | 75 | `telefónico` | 10,648 | accent_variant |
 | `teóricamente` | 75 | `teoricamente` | 2,501 | accent_variant |
 | `visivel` | 75 | `visível` | 4,517 | unaccented |
+| `decadencia` | 74 | `decadência` | 1,226 | unaccented |
 | `desdêmona` | 74 | `desdemona` | 107 | accent_variant |
 | `direccioná` | 74 | `direcciona` | 145 | accent_variant |
 | `discipulo` | 74 | `discípulo` | 2,848 | unaccented |
@@ -1622,6 +2424,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `barbaro` | 68 | `bárbaro` | 4,593 | unaccented |
 | `caraca` | 68 | `caraça` | 26,876 | unaccented |
 | `entào` | 68 | `então` | 1,280,096 | accent_variant |
+| `harmonica` | 68 | `harmónica` | 896 | unaccented |
 | `lórien` | 68 | `lorien` | 113 | accent_variant |
 | `pistáchio` | 68 | `pistachio` | 383 | accent_variant |
 | `reykjavík` | 68 | `reykjavik` | 137 | accent_variant |
@@ -1637,6 +2440,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `émile` | 67 | `emile` | 1,108 | accent_variant |
 | `íon` | 67 | `ion` | 78 | accent_variant |
 | `acçao` | 66 | `accão` | 254 | accent_variant |
+| `bogota` | 66 | `bogotá` | 798 | unaccented |
 | `campeao` | 66 | `campeão` | 24,079 | unaccented |
 | `congênito` | 66 | `congénito` | 574 | accent_variant |
 | `milicia` | 66 | `milícia` | 3,551 | unaccented |
@@ -1709,6 +2513,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `sêde` | 62 | `sede` | 21,644 | accent_variant |
 | `voô` | 62 | `voo` | 46,441 | accent_variant |
 | `capricòrnio` | 61 | `capricórnio` | 764 | accent_variant |
+| `chale` | 61 | `chalé` | 1,151 | unaccented |
 | `cléves` | 61 | `cleves` | 153 | accent_variant |
 | `condiçöes` | 61 | `condicões` | 75 | accent_variant |
 | `cêu` | 61 | `céu` | 103,169 | accent_variant |
@@ -1718,6 +2523,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `forlì` | 61 | `forli` | 148 | accent_variant |
 | `fréon` | 61 | `freon` | 133 | accent_variant |
 | `fémea` | 61 | `fêmea` | 7,294 | accent_variant |
+| `gemeas` | 61 | `gêmeas` | 698 | unaccented |
 | `gerencia` | 61 | `gerência` | 1,767 | unaccented |
 | `glacé` | 61 | `glacê` | 98 | accent_variant |
 | `ideía` | 61 | `ideia` | 341,920 | accent_variant |
@@ -1731,6 +2537,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `allô` | 60 | `allo` | 197 | accent_variant |
 | `astronômico` | 60 | `astronómico` | 690 | accent_variant |
 | `britanico` | 60 | `britânico` | 19,111 | unaccented |
+| `eletrodos` | 60 | `elétrodos` | 600 | unaccented |
 | `esá` | 60 | `esa` | 252 | accent_variant |
 | `eugène` | 60 | `eugene` | 4,987 | accent_variant |
 | `heroí` | 60 | `herói` | 53,337 | accent_variant |
@@ -1750,6 +2557,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `astrônomo` | 59 | `astrónomo` | 989 | accent_variant |
 | `cosmé` | 59 | `cosme` | 200 | accent_variant |
 | `cä` | 59 | `cá` | 419,586 | accent_variant |
+| `energico` | 59 | `enérgico` | 807 | unaccented |
 | `federaçao` | 59 | `federação` | 5,372 | accent_variant |
 | `hipotéticamente` | 59 | `hipoteticamente` | 1,520 | accent_variant |
 | `icônico` | 59 | `icónico` | 251 | accent_variant |
@@ -1758,6 +2566,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `paixäo` | 59 | `paixão` | 15,713 | accent_variant |
 | `quêm` | 59 | `quem` | 1,305,285 | accent_variant |
 | `rigido` | 59 | `rígido` | 7,889 | unaccented |
+| `senorita` | 59 | `señorita` | 827 | unaccented |
 | `seqüestrador` | 59 | `sequestrador` | 2,060 | accent_variant |
 | `súbtil` | 59 | `subtil` | 4,684 | accent_variant |
 | `tecnología` | 59 | `tecnologia` | 28,030 | accent_variant |
@@ -1789,6 +2598,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `jurí` | 57 | `júri` | 15,644 | accent_variant |
 | `maldicão` | 57 | `maldição` | 29,512 | accent_variant |
 | `masé` | 57 | `mase` | 70 | accent_variant |
+| `persia` | 57 | `pérsia` | 858 | unaccented |
 | `previsivel` | 57 | `previsível` | 3,368 | unaccented |
 | `psiquico` | 57 | `psíquico` | 4,082 | unaccented |
 | `relacao` | 57 | `relação` | 101,548 | unaccented |
@@ -1828,6 +2638,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `esôfago` | 55 | `esófago` | 678 | accent_variant |
 | `gra-bretanha` | 55 | `grã-bretanha` | 2,891 | unaccented |
 | `hindú` | 55 | `hindu` | 1,577 | accent_variant |
+| `intercambio` | 55 | `intercâmbio` | 963 | unaccented |
 | `méliés` | 55 | `méliès` | 199 | accent_variant |
 | `olâ` | 55 | `olá` | 703,259 | accent_variant |
 | `pingüim` | 55 | `pinguim` | 6,021 | accent_variant |
@@ -1866,6 +2677,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `tvséries` | 53 | `tvseries` | 53 | accent_variant |
 | `alienigena` | 52 | `alienígena` | 11,389 | unaccented |
 | `autorizaçao` | 52 | `autorização` | 25,280 | accent_variant |
+| `biceps` | 52 | `bíceps` | 601 | unaccented |
 | `botao` | 52 | `botão` | 23,485 | unaccented |
 | `bubônica` | 52 | `bubónica` | 195 | accent_variant |
 | `cinéma` | 52 | `cinema` | 26,264 | accent_variant |
@@ -1898,6 +2710,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `quási` | 51 | `quasi` | 96 | accent_variant |
 | `revoluçao` | 51 | `revolução` | 11,738 | accent_variant |
 | `sangüíneo` | 51 | `sanguíneo` | 7,077 | accent_variant |
+| `saudem` | 51 | `saúdem` | 667 | unaccented |
 | `subcomitê` | 51 | `subcomité` | 281 | accent_variant |
 | `ucrania` | 51 | `ucrânia` | 1,851 | unaccented |
 | `ônus` | 51 | `ónus` | 148 | accent_variant |
@@ -1906,6 +2719,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `concluido` | 50 | `concluído` | 2,661 | unaccented |
 | `créme` | 50 | `creme` | 8,918 | accent_variant |
 | `fa-lo-á` | 50 | `fá-lo-á` | 578 | accent_variant |
+| `fraguas` | 50 | `fráguas` | 650 | unaccented |
 | `gagné` | 50 | `gagne` | 54 | accent_variant |
 | `maìna` | 50 | `maina` | 79 | accent_variant |
 | `ministerio` | 50 | `ministério` | 9,734 | unaccented |
@@ -1916,6 +2730,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `rastafári` | 50 | `rastafari` | 98 | accent_variant |
 | `sureté` | 50 | `sûreté` | 69 | accent_variant |
 | `taoísta` | 50 | `taoista` | 73 | accent_variant |
+| `tropico` | 50 | `trópico` | 653 | unaccented |
 | `tênia` | 50 | `ténia` | 325 | accent_variant |
 | `vigilia` | 50 | `vigília` | 1,276 | unaccented |
 | `violaçäo` | 50 | `violação` | 15,495 | accent_variant |
@@ -1937,6 +2752,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `iônico` | 49 | `iónico` | 133 | accent_variant |
 | `kátia` | 49 | `katia` | 739 | accent_variant |
 | `lancar` | 49 | `lançar` | 63,585 | unaccented |
+| `meretissimo` | 49 | `meretíssimo` | 855 | unaccented |
 | `ouvír` | 49 | `ouvir` | 953,638 | accent_variant |
 | `por-do-sol` | 49 | `pôr-do-sol` | 4,464 | unaccented |
 | `protecçao` | 49 | `protecçäo` | 85 | accent_variant |
@@ -1950,6 +2766,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `vitíma` | 49 | `vítima` | 88,814 | accent_variant |
 | `vádio` | 49 | `vadio` | 4,489 | accent_variant |
 | `ôi` | 49 | `oi` | 28,312 | accent_variant |
+| `acer` | 48 | `ácer` | 548 | unaccented |
 | `acessá` | 48 | `acessa` | 79 | accent_variant |
 | `barnabás` | 48 | `barnabas` | 577 | accent_variant |
 | `chacón` | 48 | `chacon` | 120 | accent_variant |
@@ -2203,6 +3020,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `farmacia` | 40 | `farmácia` | 4,907 | unaccented |
 | `feitiçeiro` | 40 | `feiticeiro` | 12,066 | accent_variant |
 | `freqüente` | 40 | `frequente` | 2,796 | accent_variant |
+| `harem` | 40 | `harém` | 712 | unaccented |
 | `hidropônica` | 40 | `hidropónica` | 91 | accent_variant |
 | `ignorancia` | 40 | `ignorância` | 3,136 | unaccented |
 | `inevitávelmente` | 40 | `inevitavelmente` | 996 | accent_variant |
@@ -2265,6 +3083,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `assistencia` | 38 | `assistência` | 6,956 | unaccented |
 | `automatico` | 38 | `automático` | 9,319 | unaccented |
 | `bebézinha` | 38 | `bebezinha` | 188 | accent_variant |
+| `caligula` | 38 | `calígula` | 523 | unaccented |
 | `comodo` | 38 | `cómodo` | 2,710 | unaccented |
 | `câimbra` | 38 | `cãimbra` | 40 | accent_variant |
 | `direçao` | 38 | `direção` | 58,078 | accent_variant |
@@ -2311,10 +3130,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `distraír` | 37 | `distrair` | 13,981 | accent_variant |
 | `dândi` | 37 | `dandi` | 40 | accent_variant |
 | `déja` | 37 | `déjà` | 1,004 | accent_variant |
+| `esfincter` | 37 | `esfíncter` | 393 | unaccented |
 | `flô` | 37 | `flo` | 813 | accent_variant |
 | `getsémani` | 37 | `getsemani` | 42 | accent_variant |
 | `inocencia` | 37 | `inocência` | 5,284 | unaccented |
 | `lênin` | 37 | `lenin` | 275 | accent_variant |
+| `macedonia` | 37 | `macedónia` | 604 | unaccented |
 | `mecanica` | 37 | `mecânica` | 3,711 | unaccented |
 | `meritissimo` | 37 | `meritíssimo` | 13,872 | unaccented |
 | `motá` | 37 | `mota` | 10,286 | accent_variant |
@@ -2362,6 +3183,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `positrónico` | 36 | `positrônico` | 89 | accent_variant |
 | `pré-estréia` | 36 | `pré-estreia` | 130 | accent_variant |
 | `pétrus` | 36 | `petrus` | 245 | accent_variant |
+| `rimel` | 36 | `rímel` | 473 | unaccented |
 | `roché` | 36 | `roche` | 184 | accent_variant |
 | `réptilianos` | 36 | `reptilianos` | 260 | accent_variant |
 | `saõ` | 36 | `săo` | 95 | accent_variant |
@@ -2379,6 +3201,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `dún` | 35 | `dun` | 297 | accent_variant |
 | `emprestimo` | 35 | `empréstimo` | 11,211 | unaccented |
 | `evacuaçao` | 35 | `evacuação` | 7,349 | accent_variant |
+| `excluido` | 35 | `excluído` | 482 | unaccented |
 | `expressao` | 35 | `expressão` | 14,224 | unaccented |
 | `fantàstico` | 35 | `fantástico` | 96,598 | accent_variant |
 | `febré` | 35 | `febre` | 13,714 | accent_variant |
@@ -2506,12 +3329,14 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `dámocles` | 32 | `dâmocles` | 69 | accent_variant |
 | `elegancia` | 32 | `elegância` | 1,793 | unaccented |
 | `esaú` | 32 | `esau` | 93 | accent_variant |
+| `evoluido` | 32 | `evoluído` | 578 | unaccented |
 | `extâse` | 32 | `êxtase` | 1,895 | accent_variant |
 | `financas` | 32 | `finanças` | 5,535 | unaccented |
 | `geraçao` | 32 | `geração` | 18,094 | accent_variant |
 | `gravaçao` | 32 | `gravação` | 19,598 | accent_variant |
 | `gábor` | 32 | `gabor` | 169 | accent_variant |
 | `helicópter` | 32 | `helicopter` | 37 | accent_variant |
+| `homofobico` | 32 | `homofóbico` | 520 | unaccented |
 | `händel` | 32 | `handel` | 120 | accent_variant |
 | `identificaçäo` | 32 | `identificação` | 21,483 | accent_variant |
 | `instrucões` | 32 | `instruçöes` | 59 | accent_variant |
@@ -2534,6 +3359,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `simultâneamente` | 32 | `simultaneamente` | 1,446 | accent_variant |
 | `sistemáticamente` | 32 | `sistematicamente` | 536 | accent_variant |
 | `siäo` | 32 | `sião` | 624 | accent_variant |
+| `souffle` | 32 | `soufflé` | 511 | unaccented |
 | `sàbado` | 32 | `sábado` | 23,857 | accent_variant |
 | `tahití` | 32 | `tahiti` | 453 | accent_variant |
 | `traiçäo` | 32 | `traição` | 15,582 | accent_variant |
@@ -2566,6 +3392,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ganâncioso` | 31 | `ganancioso` | 4,358 | accent_variant |
 | `germán` | 31 | `german` | 92 | accent_variant |
 | `has-de` | 31 | `hás-de` | 3,727 | unaccented |
+| `hilario` | 31 | `hilário` | 310 | unaccented |
 | `horrivél` | 31 | `horrível` | 63,077 | accent_variant |
 | `húngria` | 31 | `hungria` | 979 | accent_variant |
 | `kálmán` | 31 | `kalman` | 55 | accent_variant |
@@ -2606,6 +3433,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `alcóolatra` | 30 | `alcoólatra` | 651 | accent_variant |
 | `algebra` | 30 | `álgebra` | 1,054 | unaccented |
 | `alésia` | 30 | `alesia` | 51 | accent_variant |
+| `ariete` | 30 | `aríete` | 341 | unaccented |
 | `bigôde` | 30 | `bigode` | 7,228 | accent_variant |
 | `bordúria` | 30 | `borduria` | 30 | accent_variant |
 | `cidadao` | 30 | `cidadão` | 21,891 | unaccented |
@@ -2794,9 +3622,11 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `eärendil` | 27 | `earendil` | 56 | accent_variant |
 | `fê` | 27 | `fé` | 36,508 | accent_variant |
 | `fútebol` | 27 | `futebol` | 26,586 | accent_variant |
+| `hibrida` | 27 | `híbrida` | 301 | unaccented |
 | `hundjäger` | 27 | `hundjager` | 116 | accent_variant |
 | `hélene` | 27 | `helene` | 758 | accent_variant |
 | `imbativel` | 27 | `imbatível` | 1,198 | unaccented |
+| `incognito` | 27 | `incógnito` | 482 | unaccented |
 | `indonesia` | 27 | `indonésia` | 1,123 | unaccented |
 | `instruçäo` | 27 | `instrução` | 17,442 | accent_variant |
 | `insuportavel` | 27 | `insuportável` | 4,027 | unaccented |
@@ -2826,6 +3656,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `sûl` | 27 | `sul` | 55,266 | accent_variant |
 | `talvés` | 27 | `talves` | 385 | accent_variant |
 | `talvéz` | 27 | `talvez` | 708,110 | accent_variant |
+| `tanzania` | 27 | `tanzânia` | 390 | unaccented |
+| `tarantula` | 27 | `tarântula` | 461 | unaccented |
 | `telemovél` | 27 | `telemóvel` | 69,130 | accent_variant |
 | `tëm` | 27 | `tém` | 113 | accent_variant |
 | `vercingétorix` | 27 | `vercingetórix` | 67 | accent_variant |
@@ -2865,6 +3697,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `lamentávelmente` | 26 | `lamentavelmente` | 770 | accent_variant |
 | `leäo` | 26 | `leão` | 15,737 | accent_variant |
 | `lílian` | 26 | `lilian` | 615 | accent_variant |
+| `monolito` | 26 | `monólito` | 392 | unaccented |
 | `moët` | 26 | `moet` | 44 | accent_variant |
 | `natalicio` | 26 | `natalício` | 1,439 | unaccented |
 | `nucleo` | 26 | `núcleo` | 8,274 | unaccented |
@@ -2907,6 +3740,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `bá` | 25 | `ba` | 2,511 | accent_variant |
 | `caffé` | 25 | `caffe` | 26 | accent_variant |
 | `cemiterio` | 25 | `cemitério` | 11,376 | unaccented |
+| `clamidia` | 25 | `clamídia` | 370 | unaccented |
 | `claúdia` | 25 | `claudia` | 5,212 | accent_variant |
 | `convivio` | 25 | `convívio` | 834 | unaccented |
 | `cortéz` | 25 | `cortez` | 1,828 | accent_variant |
@@ -2968,6 +3802,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `bifé` | 24 | `bife` | 11,654 | accent_variant |
 | `brô` | 24 | `bro` | 479 | accent_variant |
 | `calice` | 24 | `cálice` | 2,793 | unaccented |
+| `cardassia` | 24 | `cardássia` | 341 | unaccented |
 | `cidadäos` | 24 | `cidadaos` | 43 | accent_variant |
 | `conclusäo` | 24 | `conclusão` | 12,431 | accent_variant |
 | `conhecêr` | 24 | `conhecer` | 692,742 | accent_variant |
@@ -2995,6 +3830,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `jérémy` | 24 | `jeremy` | 14,025 | accent_variant |
 | `jönsson` | 24 | `jonsson` | 29 | accent_variant |
 | `lepidóptera` | 24 | `lepidoptera` | 29 | accent_variant |
+| `liberia` | 24 | `libéria` | 401 | unaccented |
 | `longinquo` | 24 | `longínquo` | 1,841 | unaccented |
 | `líchias` | 24 | `lichias` | 40 | accent_variant |
 | `marléne` | 24 | `marlene` | 1,626 | accent_variant |
@@ -3046,6 +3882,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ansia` | 23 | `ânsia` | 1,078 | unaccented |
 | `belissimo` | 23 | `belíssimo` | 1,700 | unaccented |
 | `campeäo` | 23 | `campeão` | 24,079 | accent_variant |
+| `canabis` | 23 | `canábis` | 246 | unaccented |
 | `chèrie` | 23 | `cherie` | 733 | accent_variant |
 | `confidêncial` | 23 | `confidencial` | 12,128 | accent_variant |
 | `conheçi` | 23 | `conhecí` | 41 | accent_variant |
@@ -3089,6 +3926,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pôes` | 23 | `pöes` | 33 | accent_variant |
 | `quál` | 23 | `qual` | 466,245 | accent_variant |
 | `renê` | 23 | `rené` | 3,318 | accent_variant |
+| `retrovirus` | 23 | `retrovírus` | 307 | unaccented |
 | `reúnião` | 23 | `reunião` | 71,610 | accent_variant |
 | `rosalía` | 23 | `rosalia` | 125 | accent_variant |
 | `roçeiro` | 23 | `roceiro` | 25 | accent_variant |
@@ -3119,6 +3957,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `atráves` | 22 | `através` | 60,137 | accent_variant |
 | `aträs` | 22 | `atrás` | 257,181 | accent_variant |
 | `bartolomé` | 22 | `bartolome` | 26 | accent_variant |
+| `bide` | 22 | `bidé` | 261 | unaccented |
 | `bisturí` | 22 | `bisturi` | 2,522 | accent_variant |
 | `bulgaria` | 22 | `bulgária` | 668 | unaccented |
 | `cabeçinha` | 22 | `cabecinha` | 1,316 | accent_variant |
@@ -3140,6 +3979,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `estå` | 22 | `estã` | 854 | accent_variant |
 | `etica` | 22 | `ética` | 4,464 | unaccented |
 | `experienciámos` | 22 | `experienciamos` | 38 | accent_variant |
+| `faberge` | 22 | `fabergé` | 221 | unaccented |
 | `farmaceutico` | 22 | `farmacêutico` | 4,195 | unaccented |
 | `funçao` | 22 | `função` | 15,640 | accent_variant |
 | `fâ` | 22 | `fã` | 25,452 | accent_variant |
@@ -3157,6 +3997,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `mainá` | 22 | `maina` | 79 | accent_variant |
 | `maioritáriamente` | 22 | `maioritariamente` | 660 | accent_variant |
 | `maracaíbo` | 22 | `maracaibo` | 83 | accent_variant |
+| `marcio` | 22 | `márcio` | 359 | unaccented |
 | `muniçöes` | 22 | `muniçoes` | 37 | accent_variant |
 | `niagára` | 22 | `niagara` | 496 | accent_variant |
 | `novák` | 22 | `novak` | 1,381 | accent_variant |
@@ -3193,6 +4034,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `anús` | 21 | `ânus` | 1,144 | accent_variant |
 | `apnéia` | 21 | `apneia` | 276 | accent_variant |
 | `apresentaçao` | 21 | `apresentação` | 11,408 | accent_variant |
+| `aserio` | 21 | `asério` | 416 | unaccented |
 | `atlántico` | 21 | `atlântico` | 3,300 | accent_variant |
 | `atrá` | 21 | `atra` | 23 | accent_variant |
 | `balcao` | 21 | `balcão` | 7,016 | unaccented |
@@ -3215,6 +4057,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `cêlula` | 21 | `célula` | 15,472 | accent_variant |
 | `cíbola` | 21 | `cibola` | 61 | accent_variant |
 | `dar-nos-à` | 21 | `dar-nos-á` | 554 | accent_variant |
+| `demetrio` | 21 | `demétrio` | 369 | unaccented |
 | `demostrá` | 21 | `demostra` | 33 | accent_variant |
 | `direcão` | 21 | `direção` | 58,078 | accent_variant |
 | `diñero` | 21 | `dinero` | 164 | accent_variant |
@@ -3234,6 +4077,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `gérson` | 21 | `gerson` | 181 | accent_variant |
 | `harmonía` | 21 | `harmonia` | 3,855 | accent_variant |
 | `higiéne` | 21 | `higiene` | 2,098 | accent_variant |
+| `humus` | 21 | `húmus` | 275 | unaccented |
 | `incomodà` | 21 | `incômoda` | 74 | accent_variant |
 | `ingenua` | 21 | `ingênua` | 442 | unaccented |
 | `invasäo` | 21 | `invasão` | 12,618 | accent_variant |
@@ -3242,6 +4086,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `liçoes` | 21 | `liçöes` | 38 | accent_variant |
 | `localizaçäo` | 21 | `localização` | 23,804 | accent_variant |
 | `maldiçäo` | 21 | `maldição` | 29,512 | accent_variant |
+| `mandragora` | 21 | `mandrágora` | 373 | unaccented |
 | `maquiavél` | 21 | `maquiavel` | 185 | accent_variant |
 | `matemáticamente` | 21 | `matematicamente` | 329 | accent_variant |
 | `matár` | 21 | `matar` | 777,544 | accent_variant |
@@ -3341,6 +4186,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `exibiçao` | 20 | `exibição` | 4,248 | accent_variant |
 | `expedicao` | 20 | `expedição` | 5,570 | unaccented |
 | `fidéle` | 20 | `fidele` | 21 | accent_variant |
+| `fortissimo` | 20 | `fortíssimo` | 298 | unaccented |
 | `fémeas` | 20 | `femeas` | 30 | accent_variant |
 | `genève` | 20 | `geneve` | 50 | accent_variant |
 | `gnárnia` | 20 | `gnarnia` | 141 | accent_variant |
@@ -3396,6 +4242,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `sótero` | 20 | `sotero` | 57 | accent_variant |
 | `teléfone` | 20 | `telefone` | 129,147 | accent_variant |
 | `tenía` | 20 | `ténia` | 325 | accent_variant |
+| `toscania` | 20 | `toscânia` | 261 | unaccented |
 | `tricerátopo` | 20 | `triceratopo` | 24 | accent_variant |
 | `tránsito` | 20 | `trânsito` | 14,138 | accent_variant |
 | `trê` | 20 | `tre` | 596 | accent_variant |
@@ -3463,6 +4310,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `iéti` | 19 | `ieti` | 59 | accent_variant |
 | `jiu-jítsu` | 19 | `jiu-jitsu` | 267 | accent_variant |
 | `limäo` | 19 | `limão` | 6,334 | accent_variant |
+| `lncrivel` | 19 | `lncrível` | 283 | unaccented |
 | `lár` | 19 | `lar` | 28,119 | accent_variant |
 | `magnifíco` | 19 | `magnífico` | 13,935 | accent_variant |
 | `malígno` | 19 | `maligno` | 4,297 | accent_variant |
@@ -3471,6 +4319,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `mãs` | 19 | `mas` | 3,602,828 | accent_variant |
 | `mée` | 19 | `mee` | 402 | accent_variant |
 | `möller` | 19 | `moller` | 36 | accent_variant |
+| `nenem` | 19 | `neném` | 309 | unaccented |
 | `neurônio` | 19 | `neurónio` | 1,079 | accent_variant |
 | `ninguèm` | 19 | `ninguém` | 502,810 | accent_variant |
 | `normândia` | 19 | `normandia` | 1,383 | accent_variant |
@@ -3480,6 +4329,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `parmênion` | 19 | `parmenion` | 21 | accent_variant |
 | `permissäo` | 19 | `permissão` | 18,771 | accent_variant |
 | `pietá` | 19 | `pietà` | 117 | accent_variant |
+| `porques` | 19 | `porquês` | 200 | unaccented |
 | `proibída` | 19 | `proíbida` | 108 | accent_variant |
 | `proibído` | 19 | `proibido` | 6,205 | accent_variant |
 | `pròpria` | 19 | `propria` | 414 | accent_variant |
@@ -3564,6 +4414,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `eficacia` | 18 | `eficácia` | 1,158 | unaccented |
 | `eloïse` | 18 | `eloise` | 990 | accent_variant |
 | `encontrar-se-à` | 18 | `encontrar-se-á` | 126 | accent_variant |
+| `enta` | 18 | `entã` | 223 | unaccented |
 | `epidêmico` | 18 | `epidémico` | 145 | accent_variant |
 | `espíritual` | 18 | `espiritual` | 8,195 | accent_variant |
 | `estào` | 18 | `estáo` | 134 | accent_variant |
@@ -3586,6 +4437,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `gá` | 18 | `ga` | 589 | accent_variant |
 | `heroís` | 18 | `herois` | 206 | accent_variant |
 | `holmström` | 18 | `holmstrom` | 18 | accent_variant |
+| `huseyin` | 18 | `hüseyin` | 189 | unaccented |
 | `identificaçao` | 18 | `identificação` | 21,483 | accent_variant |
 | `inexplicavel` | 18 | `inexplicável` | 2,183 | unaccented |
 | `instruçoes` | 18 | `instruçöes` | 59 | accent_variant |
@@ -3597,6 +4449,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `jámais` | 18 | `jamais` | 23,909 | accent_variant |
 | `jáme` | 18 | `jame` | 131 | accent_variant |
 | `jávi` | 18 | `javi` | 1,510 | accent_variant |
+| `lancado` | 18 | `lançado` | 352 | unaccented |
 | `limao` | 18 | `limão` | 6,334 | unaccented |
 | `lì` | 18 | `li` | 33,987 | accent_variant |
 | `macã` | 18 | `maçã` | 8,475 | accent_variant |
@@ -3712,6 +4565,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `denúnciar` | 17 | `denunciar` | 18,444 | accent_variant |
 | `desgraca` | 17 | `desgraça` | 9,316 | unaccented |
 | `desireé` | 17 | `desiree` | 321 | accent_variant |
+| `dionisio` | 17 | `dionísio` | 284 | unaccented |
 | `dãa` | 17 | `daa` | 30 | accent_variant |
 | `edicão` | 17 | `edição` | 6,908 | accent_variant |
 | `ellésmera` | 17 | `ellesméra` | 17 | accent_variant |
@@ -3766,6 +4620,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `observaçäo` | 17 | `observação` | 8,370 | accent_variant |
 | `oposiçào` | 17 | `oposição` | 3,660 | accent_variant |
 | `ordinario` | 17 | `ordinário` | 3,240 | unaccented |
+| `paladio` | 17 | `paládio` | 283 | unaccented |
 | `papâ` | 17 | `papá` | 78,885 | accent_variant |
 | `paralizá` | 17 | `paraliza` | 30 | accent_variant |
 | `períferia` | 17 | `periferia` | 777 | accent_variant |
@@ -3823,6 +4678,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `apendice` | 16 | `apêndice` | 1,568 | unaccented |
 | `aquario` | 16 | `aquário` | 3,530 | unaccented |
 | `artíficio` | 16 | `artifício` | 2,752 | accent_variant |
+| `atomica` | 16 | `atômica` | 277 | unaccented |
 | `autobiografía` | 16 | `autobiografia` | 772 | accent_variant |
 | `autorizacao` | 16 | `autorização` | 25,280 | unaccented |
 | `aviacão` | 16 | `aviação` | 2,257 | accent_variant |
@@ -3869,6 +4725,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `dôce` | 16 | `doce` | 48,440 | accent_variant |
 | `ecrãns` | 16 | `écrans` | 90 | accent_variant |
 | `edifíicio` | 16 | `edifíício` | 24 | accent_variant |
+| `elfica` | 16 | `élfica` | 310 | unaccented |
 | `embaracado` | 16 | `embaraçado` | 1,364 | unaccented |
 | `estraçalhá` | 16 | `estraçalha` | 24 | accent_variant |
 | `excitaçao` | 16 | `excitação` | 3,696 | accent_variant |
@@ -3952,6 +4809,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `sálva` | 16 | `salvà` | 27 | accent_variant |
 | `sándwich` | 16 | `sandwich` | 425 | accent_variant |
 | `sári` | 16 | `sari` | 453 | accent_variant |
+| `telefonicas` | 16 | `telefônicas` | 165 | unaccented |
 | `trémoille` | 16 | `trémoïlle` | 18 | accent_variant |
 | `trêm` | 16 | `trem` | 5,166 | accent_variant |
 | `trës` | 16 | `três` | 341,226 | accent_variant |
@@ -3980,6 +4838,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `agüentá` | 15 | `agüenta` | 506 | accent_variant |
 | `alagaësia` | 15 | `alagaesia` | 19 | accent_variant |
 | `algún` | 15 | `algun` | 32 | accent_variant |
+| `alinea` | 15 | `alínea` | 252 | unaccented |
 | `alé` | 15 | `ale` | 1,089 | accent_variant |
 | `alías` | 15 | `aliás` | 14,658 | accent_variant |
 | `ambrosía` | 15 | `ambrósia` | 232 | accent_variant |
@@ -4034,6 +4893,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `eficiencia` | 15 | `eficiência` | 1,971 | unaccented |
 | `efrén` | 15 | `efren` | 29 | accent_variant |
 | `eliminatoria` | 15 | `eliminatória` | 773 | unaccented |
+| `emporio` | 15 | `empório` | 154 | unaccented |
 | `enqüanto` | 15 | `enquanto` | 202,707 | accent_variant |
 | `estaçöes` | 15 | `estacões` | 30 | accent_variant |
 | `estaõ` | 15 | `estáo` | 134 | accent_variant |
@@ -4042,6 +4902,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `expediçao` | 15 | `expedição` | 5,570 | accent_variant |
 | `formidàvel` | 15 | `formidável` | 7,822 | accent_variant |
 | `fosgênio` | 15 | `fosgénio` | 23 | accent_variant |
+| `fuca` | 15 | `fuça` | 212 | unaccented |
 | `fémoral` | 15 | `femoral` | 755 | accent_variant |
 | `garcês` | 15 | `garces` | 118 | accent_variant |
 | `getsêmani` | 15 | `getsemani` | 42 | accent_variant |
@@ -4136,7 +4997,9 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `sociavel` | 15 | `sociável` | 1,148 | unaccented |
 | `solidao` | 15 | `solidão` | 5,356 | unaccented |
 | `solsticio` | 15 | `solstício` | 796 | unaccented |
+| `subnivel` | 15 | `subnível` | 171 | unaccented |
 | `sóo` | 15 | `soo` | 754 | accent_variant |
+| `tantrico` | 15 | `tântrico` | 213 | unaccented |
 | `terapêuta` | 15 | `terapeuta` | 6,117 | accent_variant |
 | `teràs` | 15 | `teras` | 66 | accent_variant |
 | `tetra-avó` | 15 | `tetra-avô` | 37 | accent_variant |
@@ -4147,6 +5010,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `tübingen` | 15 | `tubingen` | 20 | accent_variant |
 | `vandalo` | 15 | `vândalo` | 868 | unaccented |
 | `virgília` | 15 | `virgilia` | 243 | accent_variant |
+| `vivencia` | 15 | `vivência` | 199 | unaccented |
 | `vivenciámos` | 15 | `vivenciamos` | 19 | accent_variant |
 | `votaçäo` | 15 | `votação` | 5,803 | accent_variant |
 | `vênia` | 15 | `vénia` | 1,788 | accent_variant |
@@ -4177,6 +5041,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `aprovaçao` | 14 | `aprovação` | 6,535 | accent_variant |
 | `apé` | 14 | `ape` | 621 | accent_variant |
 | `artígo` | 14 | `artigo` | 28,096 | accent_variant |
+| `bagaco` | 14 | `bagaço` | 141 | unaccented |
 | `barao` | 14 | `barão` | 6,864 | unaccented |
 | `barberá` | 14 | `barbera` | 85 | accent_variant |
 | `basílisco` | 14 | `basilisco` | 325 | accent_variant |
@@ -4218,6 +5083,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `decepcionámos` | 14 | `decepcionamos` | 16 | accent_variant |
 | `decompôr` | 14 | `decompor` | 1,321 | accent_variant |
 | `delí` | 14 | `deli` | 1,142 | accent_variant |
+| `descaido` | 14 | `descaído` | 200 | unaccented |
 | `descomplicá` | 14 | `descomplica` | 34 | accent_variant |
 | `destrui-los-á` | 14 | `destruí-los-á` | 30 | accent_variant |
 | `différence` | 14 | `difference` | 30 | accent_variant |
@@ -4295,6 +5161,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `mélies` | 14 | `méliès` | 199 | accent_variant |
 | `míúdo` | 14 | `miúdo` | 161,639 | accent_variant |
 | `músíca` | 14 | `música` | 92,595 | accent_variant |
+| `namibia` | 14 | `namíbia` | 142 | unaccented |
 | `nazare` | 14 | `nazaré` | 1,236 | unaccented |
 | `negociavel` | 14 | `negociável` | 1,450 | unaccented |
 | `née` | 14 | `nee` | 18 | accent_variant |
@@ -4310,6 +5177,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `papái` | 14 | `papai` | 12,539 | accent_variant |
 | `participaçäo` | 14 | `participação` | 3,784 | accent_variant |
 | `pará-quedas` | 14 | `pára-quedas` | 3,999 | accent_variant |
+| `patogeno` | 14 | `patógeno` | 234 | unaccented |
 | `periódicamente` | 14 | `periodicamente` | 288 | accent_variant |
 | `pesames` | 14 | `pêsames` | 2,679 | unaccented |
 | `petrô` | 14 | `petro` | 83 | accent_variant |
@@ -4395,6 +5263,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `barbés` | 13 | `barbès` | 29 | accent_variant |
 | `barracäo` | 13 | `barracão` | 2,123 | accent_variant |
 | `belem` | 13 | `belém` | 893 | unaccented |
+| `beneficiencia` | 13 | `beneficiência` | 139 | unaccented |
 | `biblica` | 13 | `bíblica` | 504 | unaccented |
 | `biliöes` | 13 | `bilioes` | 17 | accent_variant |
 | `blasfemia` | 13 | `blasfémia` | 1,451 | unaccented |
@@ -4425,6 +5294,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `deméter` | 13 | `demeter` | 60 | accent_variant |
 | `depressao` | 13 | `depressão` | 6,455 | unaccented |
 | `desdem` | 13 | `desdém` | 950 | unaccented |
+| `destroia` | 13 | `destróia` | 171 | unaccented |
 | `detonaçao` | 13 | `detonação` | 2,457 | accent_variant |
 | `duplicaçao` | 13 | `duplicação` | 203 | accent_variant |
 | `dóllares` | 13 | `dollares` | 62 | accent_variant |
@@ -4432,6 +5302,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `eleiçöes` | 13 | `eleiçoes` | 15 | accent_variant |
 | `elfico` | 13 | `élfico` | 302 | unaccented |
 | `emocões` | 13 | `emoçöes` | 27 | accent_variant |
+| `enchante` | 13 | `enchanté` | 229 | unaccented |
 | `escoçês` | 13 | `escocês` | 5,106 | accent_variant |
 | `especime` | 13 | `espécime` | 2,596 | unaccented |
 | `estaá` | 13 | `estaa` | 14 | accent_variant |
@@ -4513,8 +5384,10 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `nave-colméia` | 13 | `nave-colmeia` | 23 | accent_variant |
 | `nazí` | 13 | `nazi` | 11,793 | accent_variant |
 | `necrópsia` | 13 | `necropsia` | 25 | accent_variant |
+| `neuronios` | 13 | `neurônios` | 217 | unaccented |
 | `neón` | 13 | `néon` | 527 | accent_variant |
 | `nomada` | 13 | `nómada` | 1,088 | unaccented |
+| `nortumbria` | 13 | `nortúmbria` | 231 | unaccented |
 | `nân` | 13 | `nan` | 1,413 | accent_variant |
 | `nínguém` | 13 | `ninguém` | 502,810 | accent_variant |
 | `nómades` | 13 | `nômades` | 81 | accent_variant |
@@ -4523,6 +5396,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ouvído` | 13 | `ouvido` | 49,458 | accent_variant |
 | `oí` | 13 | `oi` | 28,312 | accent_variant |
 | `p-pára` | 13 | `p-para` | 18 | accent_variant |
+| `para-quedismo` | 13 | `pára-quedismo` | 239 | unaccented |
 | `perdâo` | 13 | `perdão` | 35,449 | accent_variant |
 | `perônio` | 13 | `perónio` | 135 | accent_variant |
 | `phá` | 13 | `pha` | 49 | accent_variant |
@@ -4626,6 +5500,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `autorizacäo` | 12 | `autorização` | 25,280 | accent_variant |
 | `avö` | 12 | `avó` | 52,801 | accent_variant |
 | `açao` | 12 | `ação` | 70,875 | accent_variant |
+| `baritono` | 12 | `barítono` | 203 | unaccented |
 | `belissímo` | 12 | `belíssimo` | 1,700 | accent_variant |
 | `bokú` | 12 | `boku` | 19 | accent_variant |
 | `britãnicos` | 12 | `britanicos` | 83 | accent_variant |
@@ -4684,6 +5559,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `demolicão` | 12 | `demolição` | 2,168 | accent_variant |
 | `demóniozinho` | 12 | `demoniozinho` | 18 | accent_variant |
 | `dirigivel` | 12 | `dirigível` | 881 | unaccented |
+| `dossies` | 12 | `dossiês` | 151 | unaccented |
 | `doçe` | 12 | `doce` | 48,440 | accent_variant |
 | `dramatico` | 12 | `dramático` | 7,046 | unaccented |
 | `désirée` | 12 | `desiree` | 321 | accent_variant |
@@ -4696,6 +5572,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `espertalhao` | 12 | `espertalhão` | 3,506 | unaccented |
 | `esquadräo` | 12 | `esquadrão` | 10,814 | accent_variant |
 | `estáme` | 12 | `estame` | 81 | accent_variant |
+| `eustaquio` | 12 | `eustáquio` | 237 | unaccented |
 | `exercíto` | 12 | `exército` | 75,648 | accent_variant |
 | `explicaçoes` | 12 | `explicaçöes` | 18 | accent_variant |
 | `expulsäo` | 12 | `expulsão` | 1,378 | accent_variant |
@@ -4747,6 +5624,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `lençoís` | 12 | `lencóis` | 38 | accent_variant |
 | `levántate` | 12 | `levantate` | 15 | accent_variant |
 | `ligaçöes` | 12 | `ligacões` | 14 | accent_variant |
+| `linfocito` | 12 | `linfócito` | 153 | unaccented |
 | `lão` | 12 | `lao` | 1,657 | accent_variant |
 | `línguini` | 12 | `linguini` | 570 | accent_variant |
 | `maité` | 12 | `maite` | 44 | accent_variant |
@@ -4761,6 +5639,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `metafáse` | 12 | `metáfase` | 20 | accent_variant |
 | `molécular` | 12 | `molecular` | 2,192 | accent_variant |
 | `monópolos` | 12 | `monopólos` | 14 | accent_variant |
+| `morcao` | 12 | `morcão` | 152 | unaccented |
 | `morreräo` | 12 | `morrerao` | 35 | accent_variant |
 | `mérlin` | 12 | `merlin` | 6,801 | accent_variant |
 | `métnam` | 12 | `metnam` | 14 | accent_variant |
@@ -4860,6 +5739,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ñem` | 12 | `nem` | 677,801 | accent_variant |
 | `órfäos` | 12 | `orfãos` | 305 | accent_variant |
 | `acabàmos` | 11 | `acábamos` | 17 | accent_variant |
+| `academicos` | 11 | `acadêmicos` | 111 | unaccented |
 | `acçoes` | 11 | `acçöes` | 22 | accent_variant |
 | `acêrca` | 11 | `acerca` | 59,576 | accent_variant |
 | `adaptaçao` | 11 | `adaptação` | 13,262 | accent_variant |
@@ -4874,6 +5754,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ananas` | 11 | `ananás` | 1,596 | unaccented |
 | `angéle` | 11 | `angèle` | 23 | accent_variant |
 | `armisticio` | 11 | `armistício` | 408 | unaccented |
+| `arquetipo` | 11 | `arquétipo` | 153 | unaccented |
 | `arsenico` | 11 | `arsénico` | 687 | unaccented |
 | `aréa` | 11 | `área` | 56,518 | accent_variant |
 | `atmosféra` | 11 | `atmosfera` | 8,043 | accent_variant |
@@ -4883,6 +5764,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `aça` | 11 | `aca` | 163 | accent_variant |
 | `aéroporto` | 11 | `aeroporto` | 30,020 | accent_variant |
 | `balção` | 11 | `balcão` | 7,016 | accent_variant |
+| `barbarie` | 11 | `barbárie` | 176 | unaccented |
 | `bartók` | 11 | `bartok` | 411 | accent_variant |
 | `bartô` | 11 | `barto` | 87 | accent_variant |
 | `batôm` | 11 | `batom` | 3,981 | accent_variant |
@@ -4934,7 +5816,9 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `descodificacão` | 11 | `descodificação` | 575 | accent_variant |
 | `designio` | 11 | `desígnio` | 1,420 | unaccented |
 | `desobediencia` | 11 | `desobediência` | 1,103 | unaccented |
+| `despota` | 11 | `déspota` | 219 | unaccented |
 | `deuteronômio` | 11 | `deuteronómio` | 88 | accent_variant |
+| `difiicil` | 11 | `difíicil` | 148 | unaccented |
 | `dir-nos-à` | 11 | `dir-nos-á` | 298 | accent_variant |
 | `doi-doi` | 11 | `dói-dói` | 357 | unaccented |
 | `dominío` | 11 | `domínio` | 7,504 | accent_variant |
@@ -4947,6 +5831,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `educacao` | 11 | `educação` | 15,838 | unaccented |
 | `edífício` | 11 | `edifício` | 46,414 | accent_variant |
 | `egocentrico` | 11 | `egocêntrico` | 1,472 | unaccented |
+| `egomaniaco` | 11 | `egomaníaco` | 145 | unaccented |
 | `eleicões` | 11 | `eleiçoes` | 15 | accent_variant |
 | `estatísticamente` | 11 | `estatisticamente` | 946 | accent_variant |
 | `estimaçao` | 11 | `estimação` | 5,770 | accent_variant |
@@ -4954,6 +5839,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `estévez` | 11 | `estevez` | 149 | accent_variant |
 | `eugéne` | 11 | `eugene` | 4,987 | accent_variant |
 | `excitaçäo` | 11 | `excitação` | 3,696 | accent_variant |
+| `excluida` | 11 | `excluída` | 128 | unaccented |
 | `exploraçäo` | 11 | `exploração` | 3,559 | accent_variant |
 | `exterminio` | 11 | `extermínio` | 1,061 | unaccented |
 | `falcao` | 11 | `falcão` | 5,360 | unaccented |
@@ -5051,6 +5937,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `perjurio` | 11 | `perjúrio` | 1,539 | unaccented |
 | `petróglifos` | 11 | `petroglifos` | 26 | accent_variant |
 | `pinãta` | 11 | `piñata` | 573 | accent_variant |
+| `pireneus` | 11 | `pirenéus` | 169 | unaccented |
 | `plantacão` | 11 | `plantação` | 3,801 | accent_variant |
 | `pontí` | 11 | `ponti` | 55 | accent_variant |
 | `ponéis` | 11 | `pôneis` | 185 | accent_variant |
@@ -5094,6 +5981,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `tarôt` | 11 | `tarot` | 406 | accent_variant |
 | `taé` | 11 | `tae` | 534 | accent_variant |
 | `tentaçäo` | 11 | `tentação` | 4,469 | accent_variant |
+| `tipografico` | 11 | `tipográfico` | 130 | unaccented |
 | `tralalá` | 11 | `tralala` | 24 | accent_variant |
 | `trazêr` | 11 | `trazer` | 383,591 | accent_variant |
 | `träs` | 11 | `trás` | 133,277 | accent_variant |
@@ -5108,6 +5996,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `vàs` | 11 | `vas` | 427 | accent_variant |
 | `vôvô` | 11 | `vovó` | 2,354 | accent_variant |
 | `vęs` | 11 | `vés` | 76 | accent_variant |
+| `zambia` | 11 | `zâmbia` | 159 | unaccented |
+| `ziper` | 11 | `zíper` | 174 | unaccented |
 | `zíp` | 11 | `zip` | 553 | accent_variant |
 | `álcoolico` | 11 | `alcoólico` | 6,858 | accent_variant |
 | `ármario` | 11 | `armário` | 21,507 | accent_variant |
@@ -5149,6 +6039,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `balancê` | 10 | `balance` | 441 | accent_variant |
 | `balazio` | 10 | `balázio` | 944 | unaccented |
 | `baräo` | 10 | `barão` | 6,864 | accent_variant |
+| `bassora` | 10 | `bassorá` | 138 | unaccented |
 | `biblías` | 10 | `biblias` | 16 | accent_variant |
 | `biblíco` | 10 | `bíblico` | 1,408 | accent_variant |
 | `biónicas` | 10 | `biônicas` | 18 | accent_variant |
@@ -5166,12 +6057,14 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `centróide` | 10 | `centroide` | 15 | accent_variant |
 | `chiquê` | 10 | `chique` | 4,291 | accent_variant |
 | `circuíto` | 10 | `circuito` | 9,758 | accent_variant |
+| `cliches` | 10 | `clichês` | 103 | unaccented |
 | `coché` | 10 | `coche` | 673 | accent_variant |
 | `coioté` | 10 | `coiote` | 2,863 | accent_variant |
 | `comestivel` | 10 | `comestível` | 1,293 | unaccented |
 | `comicio` | 10 | `comício` | 1,457 | unaccented |
 | `común` | 10 | `comun` | 40 | accent_variant |
 | `condicao` | 10 | `condição` | 35,928 | unaccented |
+| `cono` | 10 | `coño` | 163 | unaccented |
 | `construcao` | 10 | `construção` | 13,680 | unaccented |
 | `continuaçao` | 10 | `continuação` | 1,359 | accent_variant |
 | `contéudo` | 10 | `conteúdo` | 5,691 | accent_variant |
@@ -5226,6 +6119,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `espía` | 10 | `espia` | 3,291 | accent_variant |
 | `esqueçea` | 10 | `esquecea` | 847 | accent_variant |
 | `esquimo` | 10 | `esquimó` | 1,080 | unaccented |
+| `estagnacao` | 10 | `estagnação` | 143 | unaccented |
 | `estereo` | 10 | `estéreo` | 350 | unaccented |
 | `estimaçäo` | 10 | `estimação` | 5,770 | accent_variant |
 | `estoria` | 10 | `estória` | 998 | unaccented |
@@ -5268,10 +6162,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `heliópolis` | 10 | `heliopolis` | 31 | accent_variant |
 | `hidraulico` | 10 | `hidráulico` | 1,802 | unaccented |
 | `hieroglífos` | 10 | `hieroglifos` | 49 | accent_variant |
+| `hinduismo` | 10 | `hinduísmo` | 127 | unaccented |
 | `hipercalcémia` | 10 | `hipercalcemia` | 47 | accent_variant |
 | `hipnóse` | 10 | `hipnose` | 1,579 | accent_variant |
 | `histéria` | 10 | `histeria` | 1,403 | accent_variant |
 | `hjálmar` | 10 | `hjalmar` | 19 | accent_variant |
+| `honravel` | 10 | `honrável` | 175 | unaccented |
 | `huá` | 10 | `hua` | 401 | accent_variant |
 | `héii` | 10 | `heii` | 26 | accent_variant |
 | `icaro` | 10 | `ícaro` | 459 | unaccented |
@@ -5294,6 +6190,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `inspecçäo` | 10 | `inspeccao` | 11 | accent_variant |
 | `intençöes` | 10 | `intençoes` | 13 | accent_variant |
 | `intuiçäo` | 10 | `intuição` | 3,425 | accent_variant |
+| `ionica` | 10 | `iónica` | 158 | unaccented |
 | `isaias` | 10 | `isaías` | 334 | unaccented |
 | `isômero` | 10 | `isómero` | 33 | accent_variant |
 | `itém` | 10 | `item` | 4,563 | accent_variant |
@@ -5312,6 +6209,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `lavandería` | 10 | `lavanderia` | 488 | accent_variant |
 | `leviné` | 10 | `levine` | 446 | accent_variant |
 | `leïla` | 10 | `leila` | 2,697 | accent_variant |
+| `ligia` | 10 | `lígia` | 187 | unaccented |
 | `liquído` | 10 | `líquido` | 9,854 | accent_variant |
 | `liçença` | 10 | `licença` | 109,900 | accent_variant |
 | `lâmia` | 10 | `lamia` | 235 | accent_variant |
@@ -5342,6 +6240,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `nanotecnología` | 10 | `nanotecnologia` | 477 | accent_variant |
 | `natalié` | 10 | `natalie` | 8,584 | accent_variant |
 | `navegacão` | 10 | `navegação` | 3,704 | accent_variant |
+| `naves-mae` | 10 | `naves-mãe` | 188 | unaccented |
 | `nepia` | 10 | `népia` | 749 | unaccented |
 | `neurocirurgiao` | 10 | `neurocirurgião` | 1,053 | unaccented |
 | `neurogénese` | 10 | `neurogênese` | 16 | accent_variant |
@@ -5374,9 +6273,11 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pornografico` | 10 | `pornográfico` | 2,895 | unaccented |
 | `pourquê` | 10 | `pourque` | 17 | accent_variant |
 | `poês` | 10 | `pöes` | 33 | accent_variant |
+| `priamo` | 10 | `príamo` | 184 | unaccented |
 | `propòsito` | 10 | `propósito` | 47,583 | accent_variant |
 | `protecao` | 10 | `proteção` | 34,014 | unaccented |
 | `proteger-te-à` | 10 | `proteger-te-á` | 133 | accent_variant |
+| `protons` | 10 | `prótons` | 122 | unaccented |
 | `pràtica` | 10 | `prática` | 11,259 | accent_variant |
 | `préviamente` | 10 | `previamente` | 643 | accent_variant |
 | `próximamente` | 10 | `proximamente` | 34 | accent_variant |
@@ -5474,6 +6375,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ù` | 10 | `u` | 13,630 | accent_variant |
 | `ús` | 10 | `us` | 7,681 | accent_variant |
 | `abencoado` | 9 | `abençoado` | 3,102 | unaccented |
+| `academica` | 9 | `acadêmica` | 94 | unaccented |
 | `acrómio` | 9 | `acrômio` | 38 | accent_variant |
 | `acusacao` | 9 | `acusação` | 31,829 | unaccented |
 | `adamântio` | 9 | `adamantio` | 140 | accent_variant |
@@ -5505,6 +6407,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `athénais` | 9 | `athénaïs` | 11 | accent_variant |
 | `atlãntico` | 9 | `atlântico` | 3,300 | accent_variant |
 | `atúm` | 9 | `atum` | 4,235 | accent_variant |
+| `aufidio` | 9 | `aufídio` | 94 | unaccented |
 | `aván` | 9 | `avan` | 29 | accent_variant |
 | `açäo` | 9 | `ação` | 70,875 | accent_variant |
 | `aía` | 9 | `aia` | 534 | accent_variant |
@@ -5538,6 +6441,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `caç` | 9 | `cac` | 66 | accent_variant |
 | `chamámos-ihe` | 9 | `chamamos-ihe` | 51 | accent_variant |
 | `cheföes` | 9 | `chefões` | 334 | accent_variant |
+| `chone` | 9 | `choné` | 149 | unaccented |
 | `chá-chá` | 9 | `cha-cha` | 149 | accent_variant |
 | `chìna` | 9 | `china` | 18,015 | accent_variant |
 | `cibórgue` | 9 | `ciborgue` | 492 | accent_variant |
@@ -5557,6 +6461,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `comunitario` | 9 | `comunitário` | 3,969 | unaccented |
 | `concentracao` | 9 | `concentração` | 7,954 | unaccented |
 | `concessäo` | 9 | `concessão` | 2,125 | accent_variant |
+| `conduites` | 9 | `conduítes` | 94 | unaccented |
 | `conecê` | 9 | `conece` | 17 | accent_variant |
 | `conexao` | 9 | `conexão` | 3,077 | unaccented |
 | `confortavél` | 9 | `confortável` | 20,921 | accent_variant |
@@ -5607,6 +6512,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `dól` | 9 | `dol` | 243 | accent_variant |
 | `ebé` | 9 | `ebe` | 29 | accent_variant |
 | `ecografía` | 9 | `ecografia` | 1,680 | accent_variant |
+| `ecrans` | 9 | `écrans` | 90 | unaccented |
 | `efêndi` | 9 | `efendi` | 43 | accent_variant |
 | `eletrico` | 9 | `elétrico` | 19,910 | unaccented |
 | `emissäo` | 9 | `emissão` | 3,646 | accent_variant |
@@ -5624,10 +6530,13 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `estavaà` | 9 | `estavaa` | 80 | accent_variant |
 | `estefania` | 9 | `estefânia` | 269 | unaccented |
 | `estouà` | 9 | `estoua` | 185 | accent_variant |
+| `estragao` | 9 | `estragão` | 146 | unaccented |
 | `esó` | 9 | `eso` | 316 | accent_variant |
 | `exprimentá` | 9 | `exprimenta` | 32 | accent_variant |
+| `fabricio` | 9 | `fabrício` | 110 | unaccented |
 | `façil` | 9 | `fácil` | 129,963 | accent_variant |
 | `fiîlha` | 9 | `fiilha` | 32 | accent_variant |
+| `flambe` | 9 | `flambé` | 109 | unaccented |
 | `fotogênico` | 9 | `fotogénico` | 356 | accent_variant |
 | `frigido` | 9 | `frígido` | 545 | unaccented |
 | `fundacão` | 9 | `fundação` | 7,540 | accent_variant |
@@ -5658,8 +6567,10 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `gõkten` | 9 | `gökten` | 12 | accent_variant |
 | `hará` | 9 | `hara` | 243 | accent_variant |
 | `helênico` | 9 | `helénico` | 69 | accent_variant |
+| `hematocrito` | 9 | `hematócrito` | 167 | unaccented |
 | `hermés` | 9 | `hermes` | 869 | accent_variant |
 | `heroíco` | 9 | `heroico` | 2,708 | accent_variant |
+| `hidroponica` | 9 | `hidropónica` | 91 | unaccented |
 | `himen` | 9 | `hímen` | 199 | unaccented |
 | `hipersônica` | 9 | `hipersónica` | 11 | accent_variant |
 | `hipópotamo` | 9 | `hipopótamo` | 1,244 | accent_variant |
@@ -5729,6 +6640,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `menênio` | 9 | `menénio` | 28 | accent_variant |
 | `metró` | 9 | `metro` | 63,381 | accent_variant |
 | `micropênis` | 9 | `micropénis` | 12 | accent_variant |
+| `milenios` | 9 | `milênios` | 145 | unaccented |
 | `milionesimo` | 9 | `milionésimo` | 366 | unaccented |
 | `miloševic` | 9 | `milosevic` | 75 | accent_variant |
 | `miú` | 9 | `miu` | 94 | accent_variant |
@@ -5743,6 +6655,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `narcó` | 9 | `narco` | 113 | accent_variant |
 | `natalicío` | 9 | `natalício` | 1,439 | accent_variant |
 | `necessàrio` | 9 | `necessário` | 57,074 | accent_variant |
+| `nepias` | 9 | `népias` | 159 | unaccented |
 | `nicolaï` | 9 | `nicolai` | 594 | accent_variant |
 | `niquel` | 9 | `níquel` | 821 | unaccented |
 | `nupcias` | 9 | `núpcias` | 1,776 | unaccented |
@@ -5762,6 +6675,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pavilhao` | 9 | `pavilhão` | 1,810 | unaccented |
 | `pedaçinho` | 9 | `pedacinho` | 2,374 | accent_variant |
 | `perversäo` | 9 | `perversão` | 1,026 | accent_variant |
+| `pinzon` | 9 | `pinzón` | 96 | unaccented |
 | `pisa-papeis` | 9 | `pisa-papéis` | 263 | unaccented |
 | `pivôt` | 9 | `pivot` | 346 | accent_variant |
 | `plantaçäo` | 9 | `plantação` | 3,801 | accent_variant |
@@ -5777,6 +6691,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pré-estréias` | 9 | `pré-estreias` | 33 | accent_variant |
 | `prístina` | 9 | `pristina` | 49 | accent_variant |
 | `psiquiatría` | 9 | `psiquiatria` | 1,799 | accent_variant |
+| `pulover` | 9 | `pulôver` | 138 | unaccented |
 | `purgatorio` | 9 | `purgatório` | 2,088 | unaccented |
 | `pássarinho` | 9 | `passarinho` | 6,080 | accent_variant |
 | `pîo` | 9 | `pio` | 1,522 | accent_variant |
@@ -5812,6 +6727,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `seccao` | 9 | `secção` | 16,840 | unaccented |
 | `semén` | 9 | `sémen` | 2,177 | accent_variant |
 | `seé` | 9 | `see` | 1,221 | accent_variant |
+| `silverhojd` | 9 | `silverhöjd` | 136 | unaccented |
 | `sincope` | 9 | `síncope` | 276 | unaccented |
 | `sjöström` | 9 | `sjostrom` | 10 | accent_variant |
 | `smörgåsbord` | 9 | `smorgasbord` | 17 | accent_variant |
@@ -5830,6 +6746,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `séro` | 9 | `sero` | 28 | accent_variant |
 | `sêda` | 9 | `seda` | 5,403 | accent_variant |
 | `sótao` | 9 | `sótão` | 5,655 | accent_variant |
+| `t-virus` | 9 | `t-vírus` | 141 | unaccented |
 | `ta-dá` | 9 | `ta-da` | 268 | accent_variant |
 | `tecnologico` | 9 | `tecnológico` | 2,513 | unaccented |
 | `tenías` | 9 | `tênias` | 20 | accent_variant |
@@ -5936,6 +6853,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `aterrissá` | 8 | `aterrissa` | 14 | accent_variant |
 | `atracçao` | 8 | `atracçäo` | 18 | accent_variant |
 | `auditorio` | 8 | `auditório` | 1,207 | unaccented |
+| `austro-hungaro` | 8 | `austro-húngaro` | 108 | unaccented |
 | `automato` | 8 | `autómato` | 539 | unaccented |
 | `avisà` | 8 | `avísa` | 12 | accent_variant |
 | `awaré` | 8 | `aware` | 10 | accent_variant |
@@ -5974,6 +6892,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `camelô` | 8 | `camelo` | 4,170 | accent_variant |
 | `capítão` | 8 | `capitão` | 143,903 | accent_variant |
 | `carissima` | 8 | `caríssima` | 253 | unaccented |
+| `carnica` | 8 | `carniça` | 105 | unaccented |
 | `carôcho` | 8 | `carocho` | 69 | accent_variant |
 | `cascável` | 8 | `cascavel` | 1,082 | accent_variant |
 | `catalán` | 8 | `catalan` | 69 | accent_variant |
@@ -6003,6 +6922,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `consideravél` | 8 | `considerável` | 3,016 | accent_variant |
 | `constipaçao` | 8 | `constipação` | 2,504 | accent_variant |
 | `construíua` | 8 | `construiua` | 172 | accent_variant |
+| `conteiner` | 8 | `contêiner` | 98 | unaccented |
 | `controiá` | 8 | `controia` | 12 | accent_variant |
 | `criançinha` | 8 | `criancinha` | 1,533 | accent_variant |
 | `croacia` | 8 | `croácia` | 421 | unaccented |
@@ -6067,6 +6987,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `escriväo` | 8 | `escrivão` | 594 | accent_variant |
 | `eskimó` | 8 | `eskimo` | 119 | accent_variant |
 | `esofago` | 8 | `esófago` | 678 | unaccented |
+| `espacamento` | 8 | `espaçamento` | 101 | unaccented |
 | `esplêndidamente` | 8 | `esplendidamente` | 120 | accent_variant |
 | `estatistícamente` | 8 | `estatisticamente` | 946 | accent_variant |
 | `estàdio` | 8 | `estádio` | 6,056 | accent_variant |
@@ -6086,6 +7007,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `florenca` | 8 | `florença` | 4,227 | unaccented |
 | `flòrida` | 8 | `florida` | 8,853 | accent_variant |
 | `flório` | 8 | `florio` | 53 | accent_variant |
+| `formico` | 8 | `fórmico` | 83 | unaccented |
 | `formidavél` | 8 | `formidável` | 7,822 | accent_variant |
 | `franzén` | 8 | `franzen` | 53 | accent_variant |
 | `freqüencias` | 8 | `freqüências` | 148 | accent_variant |
@@ -6102,6 +7024,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `fútbol` | 8 | `futbol` | 10 | accent_variant |
 | `füher` | 8 | `fuher` | 13 | accent_variant |
 | `galderia` | 8 | `galdéria` | 2,343 | unaccented |
+| `genia` | 8 | `gênia` | 85 | unaccented |
 | `gerenciá` | 8 | `gerência` | 1,767 | accent_variant |
 | `giria` | 8 | `gíria` | 462 | unaccented |
 | `giárdia` | 8 | `giardia` | 18 | accent_variant |
@@ -6121,6 +7044,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `hipó` | 8 | `hipo` | 182 | accent_variant |
 | `hipógrifo` | 8 | `hipogrifo` | 120 | accent_variant |
 | `hipótse` | 8 | `hipotse` | 8 | accent_variant |
+| `hispania` | 8 | `hispânia` | 143 | unaccented |
 | `holländer` | 8 | `hollander` | 489 | accent_variant |
 | `homicída` | 8 | `homicida` | 1,383 | accent_variant |
 | `homícidiomorteassassínio` | 8 | `homicídiomorteassassínio` | 41 | accent_variant |
@@ -6157,6 +7081,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `kénia` | 8 | `kenia` | 103 | accent_variant |
 | `lacrimogênio` | 8 | `lacrimogénio` | 66 | accent_variant |
 | `legendario` | 8 | `legendário` | 468 | unaccented |
+| `lelia` | 8 | `lélia` | 86 | unaccented |
 | `lendario` | 8 | `lendário` | 4,076 | unaccented |
 | `lesöes` | 8 | `lesôes` | 8 | accent_variant |
 | `libelula` | 8 | `libélula` | 877 | unaccented |
@@ -6173,8 +7098,10 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `lénard` | 8 | `lenard` | 96 | accent_variant |
 | `líderar` | 8 | `liderar` | 18,353 | accent_variant |
 | `macedônio` | 8 | `macedónio` | 221 | accent_variant |
+| `mache` | 8 | `machê` | 80 | unaccented |
 | `macãs` | 8 | `maçäs` | 14 | accent_variant |
 | `maguá` | 8 | `magua` | 378 | accent_variant |
+| `maleficio` | 8 | `malefício` | 80 | unaccented |
 | `manhà` | 8 | `manhã` | 172,553 | accent_variant |
 | `manãna` | 8 | `mañana` | 256 | accent_variant |
 | `marañon` | 8 | `marañón` | 14 | accent_variant |
@@ -6232,6 +7159,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `observacão` | 8 | `observação` | 8,370 | accent_variant |
 | `obstaculo` | 8 | `obstáculo` | 6,568 | unaccented |
 | `oié` | 8 | `oie` | 27 | accent_variant |
+| `oncologico` | 8 | `oncológico` | 133 | unaccented |
 | `opcões` | 8 | `opçoes` | 15 | accent_variant |
 | `oracöes` | 8 | `oraçoes` | 20 | accent_variant |
 | `oué` | 8 | `oue` | 35 | accent_variant |
@@ -6247,12 +7175,14 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `petala` | 8 | `pétala` | 1,381 | unaccented |
 | `peç` | 8 | `pec` | 16 | accent_variant |
 | `picó` | 8 | `pico` | 5,506 | accent_variant |
+| `pieta` | 8 | `pietà` | 117 | unaccented |
 | `pièrre` | 8 | `pierre` | 4,477 | accent_variant |
 | `piêce` | 8 | `pièce` | 100 | accent_variant |
 | `plötzensee` | 8 | `plotzensee` | 22 | accent_variant |
 | `pokemón` | 8 | `pokémon` | 460 | accent_variant |
 | `polás` | 8 | `polas` | 8 | accent_variant |
 | `posiçâo` | 8 | `posição` | 71,815 | accent_variant |
+| `pre-julgamento` | 8 | `pré-julgamento` | 136 | unaccented |
 | `precauçao` | 8 | `precaução` | 7,671 | accent_variant |
 | `precauçäo` | 8 | `precaução` | 7,671 | accent_variant |
 | `precisäo` | 8 | `precisão` | 4,251 | accent_variant |
@@ -6357,6 +7287,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `touchéd` | 8 | `touched` | 41 | accent_variant |
 | `touchê` | 8 | `touché` | 1,142 | accent_variant |
 | `tournee` | 8 | `tournée` | 1,219 | unaccented |
+| `traduvarius` | 8 | `traduvárius` | 140 | unaccented |
 | `traduçâo` | 8 | `tradução` | 58,904 | accent_variant |
 | `traicao` | 8 | `traição` | 15,582 | unaccented |
 | `transparencia` | 8 | `transparência` | 823 | unaccented |
@@ -6441,6 +7372,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `acola` | 7 | `acolá` | 1,794 | unaccented |
 | `acucar` | 7 | `açúcar` | 15,049 | unaccented |
 | `adaptacão` | 7 | `adaptação` | 13,262 | accent_variant |
+| `adelia` | 7 | `adélia` | 70 | unaccented |
 | `adoraçao` | 7 | `adoração` | 1,233 | accent_variant |
 | `afastà` | 7 | `afásta` | 14 | accent_variant |
 | `agradávelmente` | 7 | `agradavelmente` | 302 | accent_variant |
@@ -6496,6 +7428,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `bafómetro` | 7 | `bafômetro` | 18 | accent_variant |
 | `balistico` | 7 | `balístico` | 512 | unaccented |
 | `bavaro` | 7 | `bávaro` | 232 | unaccented |
+| `begonia` | 7 | `begónia` | 76 | unaccented |
 | `benítez` | 7 | `benitez` | 93 | accent_variant |
 | `bergström` | 7 | `bergstrom` | 162 | accent_variant |
 | `bibliotecario` | 7 | `bibliotecário` | 1,885 | unaccented |
@@ -6517,6 +7450,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `cancöes` | 7 | `cançöes` | 28 | accent_variant |
 | `capitolio` | 7 | `capitólio` | 3,265 | unaccented |
 | `capitäes` | 7 | `capitaes` | 11 | accent_variant |
+| `catalitico` | 7 | `catalítico` | 105 | unaccented |
 | `caucaso` | 7 | `cáucaso` | 226 | unaccented |
 | `caíria` | 7 | `cairía` | 9 | accent_variant |
 | `caõzinho` | 7 | `cãozinho` | 4,848 | accent_variant |
@@ -6558,6 +7492,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `corrupcão` | 7 | `corrupção` | 4,897 | accent_variant |
 | `cosmico` | 7 | `cósmico` | 2,842 | unaccented |
 | `coïncidências` | 7 | `coincidencias` | 7 | accent_variant |
+| `criancola` | 7 | `criançola` | 86 | unaccented |
+| `criogenica` | 7 | `criogênica` | 134 | unaccented |
 | `criogenico` | 7 | `criogénico` | 436 | unaccented |
 | `criptozoológos` | 7 | `criptozoólogos` | 11 | accent_variant |
 | `croqué` | 7 | `croque` | 60 | accent_variant |
@@ -6596,6 +7532,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `distraíaa` | 7 | `distraiaa` | 11 | accent_variant |
 | `distribuicão` | 7 | `distribuição` | 4,454 | accent_variant |
 | `distribuiçao` | 7 | `distribuição` | 4,454 | accent_variant |
+| `dize-io` | 7 | `dizê-io` | 99 | unaccented |
 | `donutes` | 7 | `dónutes` | 209 | unaccented |
 | `doré` | 7 | `dore` | 27 | accent_variant |
 | `drãno` | 7 | `drano` | 54 | accent_variant |
@@ -6607,6 +7544,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `dölares` | 7 | `dolares` | 1,646 | accent_variant |
 | `dürer` | 7 | `durer` | 8 | accent_variant |
 | `eclâmpsia` | 7 | `eclampsia` | 60 | accent_variant |
+| `economicos` | 7 | `econômicos` | 71 | unaccented |
 | `econômia` | 7 | `economia` | 10,169 | accent_variant |
 | `eletronica` | 7 | `eletrônica` | 639 | unaccented |
 | `empurrao` | 7 | `empurrão` | 2,839 | unaccented |
@@ -6651,6 +7589,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `flambê` | 7 | `flambé` | 109 | accent_variant |
 | `flatulencia` | 7 | `flatulência` | 267 | unaccented |
 | `flúido` | 7 | `fluido` | 4,636 | accent_variant |
+| `fotons` | 7 | `fótons` | 74 | unaccented |
 | `fragéis` | 7 | `frageis` | 9 | accent_variant |
 | `françes` | 7 | `francês` | 41,164 | accent_variant |
 | `frenéticamente` | 7 | `freneticamente` | 138 | accent_variant |
@@ -6690,6 +7629,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `hipoalergênico` | 7 | `hipoalergénico` | 36 | accent_variant |
 | `hipotalámica` | 7 | `hipotalâmica` | 15 | accent_variant |
 | `histórial` | 7 | `historial` | 4,610 | accent_variant |
+| `hormonio` | 7 | `hormônio` | 93 | unaccented |
 | `hormónios` | 7 | `hormônios` | 440 | accent_variant |
 | `hábitozinhos` | 7 | `habitozinhos` | 7 | accent_variant |
 | `hãn` | 7 | `han` | 5,710 | accent_variant |
@@ -6754,6 +7694,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `macaneta` | 7 | `maçaneta` | 1,722 | unaccented |
 | `macaquês` | 7 | `macaques` | 8 | accent_variant |
 | `mamifero` | 7 | `mamífero` | 2,261 | unaccented |
+| `managua` | 7 | `manágua` | 92 | unaccented |
 | `manutençao` | 7 | `manutenção` | 6,870 | accent_variant |
 | `manä` | 7 | `mana` | 4,753 | accent_variant |
 | `manía` | 7 | `mania` | 3,630 | accent_variant |
@@ -6825,6 +7766,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `patrào` | 7 | `patrão` | 29,437 | accent_variant |
 | `pavía` | 7 | `pavia` | 63 | accent_variant |
 | `paínel` | 7 | `painel` | 7,722 | accent_variant |
+| `peco-ihe` | 7 | `peço-ihe` | 110 | unaccented |
 | `pedír` | 7 | `pedir` | 463,958 | accent_variant |
 | `pekín` | 7 | `pekin` | 23 | accent_variant |
 | `pelucia` | 7 | `pelúcia` | 307 | unaccented |
@@ -6838,6 +7780,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `piné` | 7 | `pine` | 2,411 | accent_variant |
 | `pirocinésia` | 7 | `pirocinesia` | 9 | accent_variant |
 | `piromaniaco` | 7 | `piromaníaco` | 195 | unaccented |
+| `pirulas` | 7 | `pírulas` | 99 | unaccented |
 | `pleíades` | 7 | `pleiades` | 67 | accent_variant |
 | `poché` | 7 | `poche` | 24 | accent_variant |
 | `poetico` | 7 | `poético` | 2,242 | unaccented |
@@ -6964,6 +7907,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `telemetría` | 7 | `telemetria` | 904 | accent_variant |
 | `teletón` | 7 | `teleton` | 57 | accent_variant |
 | `terrí` | 7 | `terri` | 1,481 | accent_variant |
+| `theodred` | 7 | `théodred` | 136 | unaccented |
 | `therèse` | 7 | `therese` | 387 | accent_variant |
 | `tiené` | 7 | `tiene` | 128 | accent_variant |
 | `toracotomía` | 7 | `toracotomia` | 239 | accent_variant |
@@ -6976,6 +7920,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `trébia` | 7 | `trebia` | 9 | accent_variant |
 | `tufao` | 7 | `tufão` | 559 | unaccented |
 | `tunél` | 7 | `túnel` | 23,379 | accent_variant |
+| `turbinio` | 7 | `turbínio` | 73 | unaccented |
 | `turín` | 7 | `turin` | 106 | accent_variant |
 | `táo` | 7 | `tão` | 730,506 | accent_variant |
 | `táss` | 7 | `tass` | 112 | accent_variant |
@@ -7097,6 +8042,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `assutá` | 6 | `assuta` | 11 | accent_variant |
 | `astrologo` | 6 | `astrólogo` | 524 | unaccented |
 | `atençào` | 6 | `atenção` | 107,999 | accent_variant |
+| `atica` | 6 | `ática` | 75 | unaccented |
 | `atravès` | 6 | `através` | 60,137 | accent_variant |
 | `atéà` | 6 | `atéa` | 12 | accent_variant |
 | `atón` | 6 | `aton` | 15 | accent_variant |
@@ -7107,6 +8053,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `aviaçäo` | 6 | `aviação` | 2,257 | accent_variant |
 | `aviâo` | 6 | `avião` | 92,572 | accent_variant |
 | `avíso` | 6 | `aviso` | 32,449 | accent_variant |
+| `azaleas` | 6 | `azáleas` | 102 | unaccented |
 | `aãaaãah` | 6 | `aaaaaah` | 25 | accent_variant |
 | `açula` | 6 | `acula` | 22 | accent_variant |
 | `aíde` | 6 | `aide` | 17 | accent_variant |
@@ -7166,6 +8113,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `caroco` | 6 | `caroço` | 1,013 | unaccented |
 | `cartaginés` | 6 | `cartaginês` | 91 | accent_variant |
 | `caríbe` | 6 | `caribe` | 475 | accent_variant |
+| `castano` | 6 | `castaño` | 109 | unaccented |
+| `cataclismico` | 6 | `cataclísmico` | 89 | unaccented |
 | `cataclismíca` | 6 | `cataclísmica` | 83 | accent_variant |
 | `catastrofico` | 6 | `catastrófico` | 2,001 | unaccented |
 | `categóricamente` | 6 | `categoricamente` | 329 | accent_variant |
@@ -7197,6 +8146,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `colaboracao` | 6 | `colaboração` | 3,557 | unaccented |
 | `coleccionámos` | 6 | `coleccionamos` | 27 | accent_variant |
 | `colisăo` | 6 | `colisão` | 3,471 | accent_variant |
+| `colquida` | 6 | `cólquida` | 66 | unaccented |
 | `comestivéis` | 6 | `comestiveis` | 10 | accent_variant |
 | `começáste` | 6 | `comecaste` | 22 | accent_variant |
 | `começõu` | 6 | `comecou` | 320 | accent_variant |
@@ -7243,6 +8193,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `créssida` | 6 | `cressida` | 70 | accent_variant |
 | `cubico` | 6 | `cúbico` | 845 | unaccented |
 | `cubito` | 6 | `cúbito` | 408 | unaccented |
+| `culpavel` | 6 | `culpável` | 64 | unaccented |
 | `curió` | 6 | `cúrio` | 7 | accent_variant |
 | `custumávamos` | 6 | `custumavamos` | 6 | accent_variant |
 | `cuál` | 6 | `cual` | 19 | accent_variant |
@@ -7266,6 +8217,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `daräo` | 6 | `darao` | 6 | accent_variant |
 | `deberías` | 6 | `deberias` | 12 | accent_variant |
 | `defantê` | 6 | `defante` | 48 | accent_variant |
+| `deixa-ios` | 6 | `deixá-ios` | 103 | unaccented |
 | `deixà-io` | 6 | `deixá-io` | 281 | accent_variant |
 | `deiêm` | 6 | `deiem` | 11 | accent_variant |
 | `dejà` | 6 | `déjà` | 1,004 | accent_variant |
@@ -7326,12 +8278,14 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `entá` | 6 | `entã` | 223 | accent_variant |
 | `enérgicamente` | 6 | `energicamente` | 83 | accent_variant |
 | `epidémia` | 6 | `epidemia` | 3,444 | accent_variant |
+| `epiteto` | 6 | `epíteto` | 112 | unaccented |
 | `equinocio` | 6 | `equinócio` | 196 | unaccented |
 | `erupçäo` | 6 | `erupção` | 3,355 | accent_variant |
 | `esboco` | 6 | `esboço` | 2,981 | unaccented |
 | `escalà` | 6 | `escala` | 10,271 | accent_variant |
 | `escravidao` | 6 | `escravidão` | 1,856 | unaccented |
 | `escrutinio` | 6 | `escrutínio` | 514 | unaccented |
+| `espana` | 6 | `españa` | 62 | unaccented |
 | `especulaçao` | 6 | `especulação` | 2,865 | accent_variant |
 | `espetàculo` | 6 | `espetáculo` | 46,817 | accent_variant |
 | `esplên` | 6 | `esplen` | 83 | accent_variant |
@@ -7361,6 +8315,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `fanàticos` | 6 | `fanaticos` | 14 | accent_variant |
 | `farêmo` | 6 | `faremo` | 10 | accent_variant |
 | `fazé-io` | 6 | `fazê-io` | 11 | accent_variant |
+| `feromonios` | 6 | `feromônios` | 99 | unaccented |
 | `ferroviario` | 6 | `ferroviário` | 1,613 | unaccented |
 | `fiavel` | 6 | `fiável` | 2,108 | unaccented |
 | `figorífico` | 6 | `figorifico` | 16 | accent_variant |
@@ -7440,6 +8395,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ifigénia` | 6 | `ifigenia` | 11 | accent_variant |
 | `iglô` | 6 | `iglo` | 53 | accent_variant |
 | `igniçäo` | 6 | `ignição` | 3,903 | accent_variant |
+| `ignominia` | 6 | `ignomínia` | 67 | unaccented |
 | `iguaçú` | 6 | `iguaçu` | 19 | accent_variant |
 | `imovel` | 6 | `imóvel` | 3,985 | unaccented |
 | `impensavel` | 6 | `impensável` | 1,278 | unaccented |
@@ -7789,6 +8745,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `sütõ` | 6 | `suto` | 35 | accent_variant |
 | `taiyô` | 6 | `taiyo` | 13 | accent_variant |
 | `tampöes` | 6 | `tampoes` | 12 | accent_variant |
+| `tataravo` | 6 | `tataravô` | 107 | unaccented |
 | `te-io` | 6 | `tê-io` | 379 | unaccented |
 | `telémóvel` | 6 | `telemóvel` | 69,130 | accent_variant |
 | `tenue` | 6 | `ténue` | 1,268 | unaccented |
@@ -7948,13 +8905,17 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `alucinógénicas` | 5 | `alucinogénicas` | 21 | accent_variant |
 | `amesterdao` | 5 | `amesterdão` | 2,252 | unaccented |
 | `ampère` | 5 | `ampere` | 295 | accent_variant |
+| `anagua` | 5 | `anágua` | 88 | unaccented |
 | `analgesico` | 5 | `analgésico` | 3,514 | unaccented |
 | `andalé` | 5 | `andale` | 130 | accent_variant |
 | `anfitriä` | 5 | `anfitriã` | 1,539 | accent_variant |
+| `anonimas` | 5 | `anônimas` | 70 | unaccented |
 | `anti-hipocráticos` | 5 | `anti-hipocraticos` | 10 | accent_variant |
+| `antigeno` | 5 | `antígeno` | 53 | unaccented |
 | `antuerpia` | 5 | `antuérpia` | 506 | unaccented |
 | `análgésico` | 5 | `analgésico` | 3,514 | accent_variant |
 | `aníversário` | 5 | `aniversário` | 50,357 | accent_variant |
+| `apia` | 5 | `ápia` | 58 | unaccented |
 | `aplicaçäo` | 5 | `aplicação` | 5,114 | accent_variant |
 | `appéllplatz` | 5 | `appellplatz` | 37 | accent_variant |
 | `apá` | 5 | `apa` | 327 | accent_variant |
@@ -7989,6 +8950,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `balançem` | 5 | `balancem` | 197 | accent_variant |
 | `balô` | 5 | `balo` | 120 | accent_variant |
 | `barracao` | 5 | `barracão` | 2,123 | unaccented |
+| `basilico` | 5 | `basílico` | 56 | unaccented |
 | `bassê` | 5 | `basse` | 18 | accent_variant |
 | `bastián` | 5 | `bastian` | 507 | accent_variant |
 | `batérias` | 5 | `baterías` | 7 | accent_variant |
@@ -8082,6 +9044,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `colónicas` | 5 | `colonicas` | 5 | accent_variant |
 | `colónoscopia` | 5 | `colonoscopia` | 387 | accent_variant |
 | `começás` | 5 | `comecas` | 41 | accent_variant |
+| `comica` | 5 | `cômica` | 90 | unaccented |
 | `comissârio` | 5 | `comissário` | 11,780 | accent_variant |
 | `comparencia` | 5 | `comparência` | 302 | unaccented |
 | `comë` | 5 | `comé` | 55 | accent_variant |
@@ -8092,6 +9055,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `condenaçăo` | 5 | `condenação` | 5,129 | accent_variant |
 | `conduzir-nos-à` | 5 | `conduzir-nos-á` | 60 | accent_variant |
 | `confidêncialidade` | 5 | `confidencialidade` | 2,464 | accent_variant |
+| `congenita` | 5 | `congênita` | 62 | unaccented |
 | `conheçia` | 5 | `conhecía` | 15 | accent_variant |
 | `consangüinidade` | 5 | `consanguinidade` | 100 | accent_variant |
 | `consideracäo` | 5 | `consideração` | 6,817 | accent_variant |
@@ -8158,6 +9122,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `descontraídamente` | 5 | `descontraidamente` | 63 | accent_variant |
 | `desperdiçeia` | 5 | `desperdiceia` | 68 | accent_variant |
 | `despressurizacão` | 5 | `despressurização` | 235 | accent_variant |
+| `destroias` | 5 | `destróias` | 50 | unaccented |
 | `destrás` | 5 | `destras` | 5 | accent_variant |
 | `desçuipa` | 5 | `descuipa` | 35 | accent_variant |
 | `determinacao` | 5 | `determinação` | 3,341 | unaccented |
@@ -8185,6 +9150,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `diçk` | 5 | `dick` | 11,475 | accent_variant |
 | `do-ré-mi` | 5 | `dó-ré-mi` | 57 | accent_variant |
 | `donné` | 5 | `donne` | 113 | accent_variant |
+| `dosimetro` | 5 | `dosímetro` | 64 | unaccented |
 | `dostoévsky` | 5 | `dostoevsky` | 74 | accent_variant |
 | `doçe-ou-travessura` | 5 | `doce-ou-travessura` | 5 | accent_variant |
 | `dragäo` | 5 | `dragão` | 26,433 | accent_variant |
@@ -8208,6 +9174,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `echárpe` | 5 | `echarpe` | 171 | accent_variant |
 | `ecônomica` | 5 | `econômica` | 233 | accent_variant |
 | `egipcíos` | 5 | `egipcios` | 40 | accent_variant |
+| `elae` | 5 | `elaé` | 57 | unaccented |
 | `elastômero` | 5 | `elastómero` | 10 | accent_variant |
 | `eloqüentemente` | 5 | `eloquentemente` | 130 | accent_variant |
 | `elé` | 5 | `ele` | 5,186,172 | accent_variant |
@@ -8235,7 +9202,9 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `esqueçeas` | 5 | `esqueceas` | 70 | accent_variant |
 | `esquisofrênico` | 5 | `esquisofrénico` | 8 | accent_variant |
 | `esquí` | 5 | `esqui` | 2,576 | accent_variant |
+| `esras` | 5 | `esrás` | 85 | unaccented |
 | `essênios` | 5 | `essénios` | 16 | accent_variant |
+| `estatudo` | 5 | `estátudo` | 57 | unaccented |
 | `estavél` | 5 | `estável` | 11,697 | accent_variant |
 | `esteril` | 5 | `estéril` | 2,007 | unaccented |
 | `esternocleidomastóideo` | 5 | `esternocleidomastoideo` | 6 | accent_variant |
@@ -8347,6 +9316,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `hipertônica` | 5 | `hipertónica` | 24 | accent_variant |
 | `hipócrisia` | 5 | `hipocrisia` | 1,361 | accent_variant |
 | `histéricamente` | 5 | `histericamente` | 109 | accent_variant |
+| `homicidio-suicidio` | 5 | `homicídio-suicídio` | 98 | unaccented |
 | `hormonios` | 5 | `hormônios` | 440 | unaccented |
 | `hostia` | 5 | `hóstia` | 258 | unaccented |
 | `hoà` | 5 | `hoa` | 61 | accent_variant |
@@ -8376,6 +9346,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ignorãncia` | 5 | `ignorância` | 3,136 | accent_variant |
 | `iiçença` | 5 | `iicenca` | 23 | accent_variant |
 | `ilegivel` | 5 | `ilegível` | 326 | unaccented |
+| `ilio` | 5 | `ílio` | 73 | unaccented |
 | `imaginavel` | 5 | `imaginável` | 666 | unaccented |
 | `imigraçäo` | 5 | `imigração` | 3,857 | accent_variant |
 | `imitaçao` | 5 | `imitação` | 3,812 | accent_variant |
@@ -8448,6 +9419,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ladraozeco` | 5 | `ladrãozeco` | 356 | unaccented |
 | `lascivia` | 5 | `lascívia` | 138 | unaccented |
 | `lava-loica` | 5 | `lava-loiça` | 389 | unaccented |
+| `lcar` | 5 | `lçar` | 96 | unaccented |
 | `lefèvre` | 5 | `lefevre` | 49 | accent_variant |
 | `legitímo` | 5 | `legítimo` | 11,170 | accent_variant |
 | `leiläo` | 5 | `leilão` | 6,281 | accent_variant |
@@ -8516,6 +9488,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `melôa` | 5 | `meloa` | 204 | accent_variant |
 | `menós` | 5 | `menos` | 330,748 | accent_variant |
 | `metá` | 5 | `meta` | 20,136 | accent_variant |
+| `micronesia` | 5 | `micronésia` | 81 | unaccented |
 | `microscopio` | 5 | `microscópio` | 1,720 | unaccented |
 | `mimico` | 5 | `mímico` | 203 | unaccented |
 | `ministèrio` | 5 | `ministério` | 9,734 | accent_variant |
@@ -8569,6 +9542,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `nickí` | 5 | `nicki` | 1,349 | accent_variant |
 | `niévre` | 5 | `nièvre` | 13 | accent_variant |
 | `nocão` | 5 | `noção` | 12,116 | accent_variant |
+| `nois` | 5 | `nóis` | 75 | unaccented |
+| `nomades` | 5 | `nômades` | 81 | unaccented |
 | `normalissimo` | 5 | `normalíssimo` | 220 | unaccented |
 | `normandía` | 5 | `normandia` | 1,383 | accent_variant |
 | `noruegues` | 5 | `norueguês` | 1,232 | unaccented |
@@ -8602,6 +9577,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `opé` | 5 | `ope` | 908 | accent_variant |
 | `orgao` | 5 | `órgão` | 11,364 | unaccented |
 | `orientacão` | 5 | `orientação` | 6,445 | accent_variant |
+| `ozonio` | 5 | `ozônio` | 81 | unaccented |
 | `oãs` | 5 | `oas` | 104 | accent_variant |
 | `pachá` | 5 | `pacha` | 205 | accent_variant |
 | `paciênte` | 5 | `paciente` | 53,485 | accent_variant |
@@ -8650,6 +9626,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `poisnäo` | 5 | `poisnão` | 38 | accent_variant |
 | `poiícia` | 5 | `poiíçia` | 18 | accent_variant |
 | `políícia` | 5 | `poliicia` | 14 | accent_variant |
+| `pomerania` | 5 | `pomerânia` | 50 | unaccented |
 | `pontao` | 5 | `pontão` | 446 | unaccented |
 | `pontuaçäo` | 5 | `pontuação` | 3,736 | accent_variant |
 | `populacão` | 5 | `população` | 11,039 | accent_variant |
@@ -8662,6 +9639,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `potàvel` | 5 | `potável` | 1,057 | accent_variant |
 | `pouquissimo` | 5 | `pouquíssimo` | 158 | unaccented |
 | `pr'à` | 5 | `pr'a` | 101 | accent_variant |
+| `pre-adolescente` | 5 | `pré-adolescente` | 96 | unaccented |
 | `pre-câmbrica` | 5 | `pre-cámbrica` | 15 | accent_variant |
 | `precauçoes` | 5 | `precauçöes` | 11 | accent_variant |
 | `preparà` | 5 | `prepára` | 23 | accent_variant |
@@ -8669,6 +9647,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `preservacao` | 5 | `preservação` | 1,328 | unaccented |
 | `pressâo` | 5 | `pressão` | 39,447 | accent_variant |
 | `prestaçao` | 5 | `prestação` | 1,859 | accent_variant |
+| `previlegios` | 5 | `previlégios` | 80 | unaccented |
 | `previo` | 5 | `prévio` | 1,931 | unaccented |
 | `primària` | 5 | `primária` | 5,114 | accent_variant |
 | `privatizaçăo` | 5 | `privatização` | 255 | accent_variant |
@@ -8725,6 +9704,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `reflexao` | 5 | `reflexão` | 1,653 | unaccented |
 | `regio` | 5 | `régio` | 227 | unaccented |
 | `relutancia` | 5 | `relutância` | 798 | unaccented |
+| `removivel` | 5 | `removível` | 93 | unaccented |
 | `renúnciar` | 5 | `renunciar` | 6,393 | accent_variant |
 | `representacao` | 5 | `representação` | 4,727 | unaccented |
 | `repugnancia` | 5 | `repugnância` | 310 | unaccented |
@@ -8739,6 +9719,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `reú` | 5 | `réu` | 4,592 | accent_variant |
 | `reús` | 5 | `reus` | 34 | accent_variant |
 | `ru-pá` | 5 | `ru-pa` | 14 | accent_variant |
+| `rugbi` | 5 | `rúgbi` | 94 | unaccented |
 | `ráido` | 5 | `raido` | 6 | accent_variant |
 | `rájá` | 5 | `raja` | 797 | accent_variant |
 | `rável` | 5 | `ravel` | 206 | accent_variant |
@@ -8783,6 +9764,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `señhor` | 5 | `senhor` | 631,285 | accent_variant |
 | `seño` | 5 | `seno` | 96 | accent_variant |
 | `shérif` | 5 | `sherif` | 73 | accent_variant |
+| `sigurbjorn` | 5 | `sigurbjörn` | 96 | unaccented |
 | `sigílio` | 5 | `sigilio` | 5 | accent_variant |
 | `simio` | 5 | `símio` | 993 | unaccented |
 | `simí` | 5 | `simi` | 267 | accent_variant |
@@ -9025,6 +10007,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `adónias` | 4 | `adonias` | 30 | accent_variant |
 | `aeronáuta` | 4 | `aeronauta` | 38 | accent_variant |
 | `afeiçao` | 4 | `afeição` | 1,456 | accent_variant |
+| `afericao` | 4 | `aferição` | 68 | unaccented |
 | `afrodísiaco` | 4 | `afrodisíaco` | 723 | accent_variant |
 | `afônico` | 4 | `afónico` | 32 | accent_variant |
 | `agorá` | 4 | `agora` | 1,524,160 | accent_variant |
@@ -9054,6 +10037,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `alma-máter` | 4 | `alma-mater` | 8 | accent_variant |
 | `almocaste` | 4 | `almoçaste` | 291 | unaccented |
 | `alucinaçoes` | 4 | `alucinaçöes` | 17 | accent_variant |
+| `alucinogenico` | 4 | `alucinogénico` | 60 | unaccented |
 | `alucinogéna` | 4 | `alucinógena` | 9 | accent_variant |
 | `alçacuz` | 4 | `alcaçuz` | 487 | accent_variant |
 | `alén` | 4 | `alen` | 62 | accent_variant |
@@ -9122,6 +10106,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `asnières` | 4 | `asniéres` | 6 | accent_variant |
 | `assaitámos` | 4 | `assaitamos` | 8 | accent_variant |
 | `astrofisico` | 4 | `astrofísico` | 367 | unaccented |
+| `asturias` | 4 | `astúrias` | 41 | unaccented |
 | `ataqueà` | 4 | `ataquea` | 14 | accent_variant |
 | `atendêr` | 4 | `atender` | 53,596 | accent_variant |
 | `atiradico` | 4 | `atiradiço` | 281 | unaccented |
@@ -9177,6 +10162,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `biliăo` | 4 | `bilião` | 8,665 | accent_variant |
 | `birmania` | 4 | `birmânia` | 870 | unaccented |
 | `blásio` | 4 | `blasio` | 18 | accent_variant |
+| `bolsao` | 4 | `bolsão` | 69 | unaccented |
 | `bolsón` | 4 | `bolson` | 5 | accent_variant |
 | `borodinó` | 4 | `borodino` | 41 | accent_variant |
 | `botanico` | 4 | `botânico` | 875 | unaccented |
@@ -9191,6 +10177,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `brüggen` | 4 | `bruggen` | 8 | accent_variant |
 | `bulgària` | 4 | `bulgária` | 668 | accent_variant |
 | `burés` | 4 | `bures` | 4 | accent_variant |
+| `busca-ios` | 4 | `buscá-ios` | 51 | unaccented |
 | `buscâ` | 4 | `busca` | 34,802 | accent_variant |
 | `butterçup` | 4 | `buttercup` | 339 | accent_variant |
 | `buça` | 4 | `buca` | 19 | accent_variant |
@@ -9278,9 +10265,11 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `chú` | 4 | `chu` | 955 | accent_variant |
 | `ciber-cerébro` | 4 | `ciber-cérebro` | 85 | accent_variant |
 | `cidadä` | 4 | `cidadã` | 1,303 | accent_variant |
+| `cimeria` | 4 | `ciméria` | 54 | unaccented |
 | `cinqüentão` | 4 | `cinquentão` | 83 | accent_variant |
 | `cionàmos` | 4 | `cionamos` | 4 | accent_variant |
 | `circulacao` | 4 | `circulação` | 3,021 | unaccented |
+| `citia` | 4 | `cítia` | 73 | unaccented |
 | `ciéncia` | 4 | `ciência` | 28,987 | accent_variant |
 | `classificaçäo` | 4 | `classificação` | 1,886 | accent_variant |
 | `claustrofobico` | 4 | `claustrofóbico` | 815 | unaccented |
@@ -9293,6 +10282,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `cocégas` | 4 | `cócegas` | 4,411 | accent_variant |
 | `coerúleus` | 4 | `coeruleus` | 17 | accent_variant |
 | `coleóptera` | 4 | `coleoptera` | 10 | accent_variant |
+| `colle` | 4 | `collé` | 60 | unaccented |
 | `collège` | 4 | `college` | 996 | accent_variant |
 | `colocavámos` | 4 | `colocavamos` | 4 | accent_variant |
 | `colonizaçäo` | 4 | `colonização` | 507 | accent_variant |
@@ -9348,6 +10338,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `cracká` | 4 | `cracka` | 11 | accent_variant |
 | `creí` | 4 | `crei` | 13 | accent_variant |
 | `cricotiróidea` | 4 | `cricotiroidea` | 5 | accent_variant |
+| `criminalistica` | 4 | `criminalística` | 65 | unaccented |
 | `créche` | 4 | `creche` | 2,270 | accent_variant |
 | `crìanças` | 4 | `criancas` | 726 | accent_variant |
 | `cró` | 4 | `cro` | 25 | accent_variant |
@@ -9781,6 +10772,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `impecavél` | 4 | `impecável` | 4,733 | accent_variant |
 | `impercetivel` | 4 | `impercetível` | 439 | unaccented |
 | `imperdivel` | 4 | `imperdível` | 109 | unaccented |
+| `importacao-exportacao` | 4 | `importação-exportação` | 55 | unaccented |
 | `imprescindivel` | 4 | `imprescindível` | 366 | unaccented |
 | `impressâo` | 4 | `impressão` | 41,443 | accent_variant |
 | `impressíonavel` | 4 | `impressionável` | 512 | accent_variant |
@@ -9791,6 +10783,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `inauguracao` | 4 | `inauguração` | 2,762 | unaccented |
 | `inclinacao` | 4 | `inclinação` | 1,739 | unaccented |
 | `incocebível` | 4 | `incocebivel` | 5 | accent_variant |
+| `incomodos` | 4 | `incômodos` | 41 | unaccented |
 | `incomódo` | 4 | `incómodo` | 5,476 | accent_variant |
 | `incontrolävel` | 4 | `incontrolável` | 1,553 | accent_variant |
 | `incuravél` | 4 | `incurável` | 860 | accent_variant |
@@ -9840,6 +10833,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `irmaõ` | 4 | `irmão` | 263,318 | accent_variant |
 | `irmäozinho` | 4 | `irmãozinho` | 3,507 | accent_variant |
 | `irmăos` | 4 | `irmaos` | 144 | accent_variant |
+| `ironica` | 4 | `irônica` | 75 | unaccented |
 | `irremediavel` | 4 | `irremediável` | 217 | unaccented |
 | `irremediávelmente` | 4 | `irremediavelmente` | 453 | accent_variant |
 | `irônia` | 4 | `ironia` | 4,413 | accent_variant |
@@ -10088,6 +11082,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `negóciozinho` | 4 | `negociozinho` | 37 | accent_variant |
 | `negôcios` | 4 | `négocios` | 26 | accent_variant |
 | `nenêm` | 4 | `neném` | 309 | accent_variant |
+| `neofito` | 4 | `neófito` | 48 | unaccented |
 | `neufchâteau` | 4 | `neufchateau` | 6 | accent_variant |
 | `neurastênico` | 4 | `neurasténico` | 22 | accent_variant |
 | `neurotóxina` | 4 | `neurotoxina` | 412 | accent_variant |
@@ -10117,6 +11112,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `nóes` | 4 | `noes` | 17 | accent_variant |
 | `núme` | 4 | `nume` | 11 | accent_variant |
 | `númerodis` | 4 | `numerodis` | 9 | accent_variant |
+| `oao` | 4 | `oão` | 63 | unaccented |
 | `obrigacao` | 4 | `obrigação` | 10,021 | unaccented |
 | `ocorrencia` | 4 | `ocorrência` | 2,296 | unaccented |
 | `ocupadissimo` | 4 | `ocupadíssimo` | 174 | unaccented |
@@ -10169,6 +11165,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `passâmos` | 4 | `passàmos` | 24 | accent_variant |
 | `pastilhár` | 4 | `pastilhar` | 14 | accent_variant |
 | `pathé` | 4 | `pathe` | 13 | accent_variant |
+| `patogenos` | 4 | `patógenos` | 62 | unaccented |
 | `patognomônico` | 4 | `patognomónico` | 6 | accent_variant |
 | `patriotico` | 4 | `patriótico` | 1,286 | unaccented |
 | `patrôa` | 4 | `patroa` | 3,994 | accent_variant |
@@ -10184,6 +11181,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `penúmbra` | 4 | `penumbra` | 292 | accent_variant |
 | `peraê` | 4 | `perae` | 5 | accent_variant |
 | `percepçäo` | 4 | `percepçao` | 7 | accent_variant |
+| `perdoavel` | 4 | `perdoável` | 71 | unaccented |
 | `perfeicao` | 4 | `perfeição` | 6,714 | unaccented |
 | `perfeicão` | 4 | `perfeição` | 6,714 | accent_variant |
 | `perfuracao` | 4 | `perfuração` | 2,365 | unaccented |
@@ -10447,6 +11445,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `sibêria` | 4 | `sibéria` | 1,842 | accent_variant |
 | `sicíliana` | 4 | `siciliana` | 281 | accent_variant |
 | `sidônio` | 4 | `sidónio` | 8 | accent_variant |
+| `silio` | 4 | `sílio` | 50 | unaccented |
 | `silênciosamente` | 4 | `silenciosamente` | 1,617 | accent_variant |
 | `simulacão` | 4 | `simulação` | 4,661 | accent_variant |
 | `sincronía` | 4 | `sincronia` | 13,738 | accent_variant |
@@ -10751,6 +11750,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `abdü` | 3 | `abdu` | 17 | accent_variant |
 | `abençõa` | 3 | `abencoá` | 10 | accent_variant |
 | `aberracãozinha` | 3 | `aberraçãozinha` | 18 | accent_variant |
+| `abrao` | 3 | `abrão` | 47 | unaccented |
 | `abraäo` | 3 | `abraão` | 1,382 | accent_variant |
 | `abraça-árvores` | 3 | `abraça-arvores` | 12 | accent_variant |
 | `abraçavel` | 3 | `abraçável` | 16 | accent_variant |
@@ -10770,6 +11770,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `acompanha-lo-ão` | 3 | `acompanhá-lo-ão` | 5 | accent_variant |
 | `acompanhà` | 3 | `acompánha` | 9 | accent_variant |
 | `acompanhár` | 3 | `acompanhar` | 47,109 | accent_variant |
+| `activacao` | 3 | `activaçao` | 40 | unaccented |
 | `acumulaçao` | 3 | `acumulação` | 596 | accent_variant |
 | `acç` | 3 | `acc` | 23 | accent_variant |
 | `acçcões` | 3 | `accções` | 12 | accent_variant |
@@ -10817,6 +11818,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `allée` | 3 | `allee` | 22 | accent_variant |
 | `allégro` | 3 | `allegro` | 109 | accent_variant |
 | `alma-gemea` | 3 | `alma-gémea` | 160 | unaccented |
+| `alto-nivel` | 3 | `alto-nível` | 33 | unaccented |
 | `alucinacão` | 3 | `alucinação` | 6,284 | accent_variant |
 | `alucinacöes` | 3 | `alucinaçöes` | 17 | accent_variant |
 | `alucinogênica` | 3 | `alucinogénica` | 35 | accent_variant |
@@ -10846,10 +11848,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `anfitrión` | 3 | `anfitrion` | 44 | accent_variant |
 | `anglo-saxônicas` | 3 | `anglo-saxónicas` | 9 | accent_variant |
 | `anglo-saxônico` | 3 | `anglo-saxónico` | 26 | accent_variant |
+| `angouleme` | 3 | `angoulême` | 36 | unaccented |
 | `angström` | 3 | `angstrom` | 30 | accent_variant |
 | `animacao` | 3 | `animação` | 1,951 | unaccented |
 | `anomalo` | 3 | `anómalo` | 697 | unaccented |
 | `anosé` | 3 | `anose` | 3 | accent_variant |
+| `ansiolitico` | 3 | `ansiolítico` | 51 | unaccented |
 | `antecipaçao` | 3 | `antecipação` | 954 | accent_variant |
 | `antemao` | 3 | `antemão` | 424 | unaccented |
 | `anti-histaminico` | 3 | `anti-histamínico` | 192 | unaccented |
@@ -10863,6 +11867,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `análize` | 3 | `analize` | 10 | accent_variant |
 | `anón` | 3 | `anon` | 24 | accent_variant |
 | `anôs` | 3 | `años` | 143 | accent_variant |
+| `ao-ao` | 3 | `ão-ão` | 30 | unaccented |
 | `apanhástea` | 3 | `apanhastea` | 328 | accent_variant |
 | `apanhâ` | 3 | `apanhà` | 28 | accent_variant |
 | `apanhämos` | 3 | `apanhàmos` | 3 | accent_variant |
@@ -10927,11 +11932,13 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `atualizacao` | 3 | `atualização` | 4,561 | unaccented |
 | `atáca` | 3 | `atacà` | 3 | accent_variant |
 | `audivel` | 3 | `audível` | 196 | unaccented |
+| `aupa` | 3 | `aúpa` | 53 | unaccented |
 | `aurêlio` | 3 | `aurélio` | 540 | accent_variant |
 | `ausęncia` | 3 | `ausência` | 8,394 | accent_variant |
 | `auto-destruíres` | 3 | `auto-destruires` | 5 | accent_variant |
 | `auto-libertação` | 3 | `auto-libertacão` | 4 | accent_variant |
 | `auto-sacrificio` | 3 | `auto-sacrifício` | 102 | unaccented |
+| `autonoma` | 3 | `autônoma` | 32 | unaccented |
 | `autonômico` | 3 | `autonómico` | 23 | accent_variant |
 | `autorizaçâo` | 3 | `autorização` | 25,280 | accent_variant |
 | `auténtica` | 3 | `autêntíca` | 4 | accent_variant |
@@ -10977,6 +11984,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `bençoes` | 3 | `bêncões` | 7 | accent_variant |
 | `bençäo` | 3 | `bênção` | 8,778 | accent_variant |
 | `benôit` | 3 | `benoit` | 308 | accent_variant |
+| `betania` | 3 | `betânia` | 49 | unaccented |
 | `bicentenario` | 3 | `bicentenário` | 115 | unaccented |
 | `bicéps` | 3 | `bíceps` | 601 | accent_variant |
 | `bidäo` | 3 | `bidão` | 583 | accent_variant |
@@ -11040,6 +12048,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `böar` | 3 | `boar` | 61 | accent_variant |
 | `búúú` | 3 | `buuu` | 39 | accent_variant |
 | `c'ést` | 3 | `c'est` | 993 | accent_variant |
+| `cabaco` | 3 | `cabaço` | 34 | unaccented |
 | `cabeca-dura` | 3 | `cabeça-dura` | 194 | unaccented |
 | `cabeça-õca` | 3 | `cabeça-oca` | 36 | accent_variant |
 | `cabraozinho` | 3 | `cabrãozinho` | 578 | unaccented |
@@ -11064,6 +12073,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `caméra` | 3 | `câmera` | 8,293 | accent_variant |
 | `canalizaçäo` | 3 | `canalização` | 2,533 | accent_variant |
 | `canideo` | 3 | `canídeo` | 65 | unaccented |
+| `canideos` | 3 | `canídeos` | 46 | unaccented |
 | `cançôes` | 3 | `cançöes` | 28 | accent_variant |
 | `cançõezinhas` | 3 | `cancõezinhas` | 3 | accent_variant |
 | `caotico` | 3 | `caótico` | 1,721 | unaccented |
@@ -11076,6 +12086,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `carissímo` | 3 | `caríssimo` | 953 | accent_variant |
 | `carmiño` | 3 | `carmino` | 6 | accent_variant |
 | `carnificína` | 3 | `carnificina` | 1,905 | accent_variant |
+| `cartaozinho` | 3 | `cartãozinho` | 45 | unaccented |
 | `cartágo` | 3 | `cartago` | 592 | accent_variant |
 | `cartâo` | 3 | `cartão` | 53,450 | accent_variant |
 | `cartăo` | 3 | `cartão` | 53,450 | accent_variant |
@@ -11093,6 +12104,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `cañaveral` | 3 | `canaveral` | 418 | accent_variant |
 | `caño` | 3 | `cano` | 10,165 | accent_variant |
 | `centímos` | 3 | `centimos` | 306 | accent_variant |
+| `chachacha` | 3 | `chachachá` | 49 | unaccented |
 | `chainé` | 3 | `chaine` | 11 | accent_variant |
 | `chama-io` | 3 | `chamá-io` | 82 | unaccented |
 | `chamâ` | 3 | `chamà` | 17 | accent_variant |
@@ -11161,6 +12173,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `colêgio` | 3 | `colégio` | 7,985 | accent_variant |
 | `colóca` | 3 | `colocà` | 6 | accent_variant |
 | `colónico` | 3 | `colônico` | 5 | accent_variant |
+| `cometario` | 3 | `cometário` | 30 | unaccented |
 | `começãr` | 3 | `começar` | 534,242 | accent_variant |
 | `comissaríado` | 3 | `comissariado` | 138 | accent_variant |
 | `comissöes` | 3 | `comissoes` | 5 | accent_variant |
@@ -11191,6 +12204,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `consolaçäo` | 3 | `consolação` | 1,338 | accent_variant |
 | `constipacao` | 3 | `constipação` | 2,504 | unaccented |
 | `constituiçâo` | 3 | `constituição` | 4,478 | accent_variant |
+| `construistea` | 3 | `construístea` | 36 | unaccented |
 | `contabílisticos` | 3 | `contabilisticos` | 4 | accent_variant |
 | `continuaçäo` | 3 | `continuação` | 1,359 | accent_variant |
 | `continęncia` | 3 | `continência` | 1,111 | accent_variant |
@@ -11310,6 +12324,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `dedê` | 3 | `dede` | 684 | accent_variant |
 | `deficiênte` | 3 | `deficiente` | 4,142 | accent_variant |
 | `degradaçao` | 3 | `degradação` | 873 | accent_variant |
+| `deixa-ia` | 3 | `deixá-ia` | 58 | unaccented |
 | `deixà-ios` | 3 | `deixá-ios` | 103 | accent_variant |
 | `deixá-ias` | 3 | `deixà-ias` | 4 | accent_variant |
 | `deixástea` | 3 | `deixastea` | 1,483 | accent_variant |
@@ -11342,6 +12357,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `designaçäo` | 3 | `designação` | 710 | accent_variant |
 | `desintoxicaçao` | 3 | `desintoxicação` | 1,531 | accent_variant |
 | `desirèe` | 3 | `desiree` | 321 | accent_variant |
+| `destacavel` | 3 | `destacável` | 37 | unaccented |
 | `destroirá` | 3 | `destroira` | 3 | accent_variant |
 | `destroêm` | 3 | `destróem` | 25 | accent_variant |
 | `destroía` | 3 | `destróia` | 171 | accent_variant |
@@ -11392,6 +12408,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `documentaçao` | 3 | `documentação` | 1,862 | accent_variant |
 | `doi-dois` | 3 | `dói-dóis` | 62 | unaccented |
 | `doidao` | 3 | `doidão` | 173 | unaccented |
+| `dola` | 3 | `dóla` | 45 | unaccented |
 | `domesticà` | 3 | `doméstica` | 4,833 | accent_variant |
 | `domésticamente` | 3 | `domesticamente` | 25 | accent_variant |
 | `dormitórium` | 3 | `dormitorium` | 3 | accent_variant |
@@ -11469,6 +12486,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `encarnacäo` | 3 | `encarnação` | 771 | accent_variant |
 | `enchantee` | 3 | `enchantée` | 68 | unaccented |
 | `enchantê` | 3 | `enchanté` | 229 | accent_variant |
+| `encontra-ia` | 3 | `encontrá-ia` | 52 | unaccented |
 | `encontra-io` | 3 | `encontrá-io` | 216 | unaccented |
 | `encontra-la-ás` | 3 | `encontrá-la-ás` | 19 | accent_variant |
 | `encontra-la-ão` | 3 | `encontrá-la-ão` | 14 | accent_variant |
@@ -11524,6 +12542,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `espíríto` | 3 | `espírito` | 50,093 | accent_variant |
 | `esqueçido` | 3 | `esquecido` | 764 | accent_variant |
 | `esquizofrenico` | 3 | `esquizofrénico` | 1,140 | unaccented |
+| `esquizofrenicos` | 3 | `esquizofrênicos` | 50 | unaccented |
 | `estadía` | 3 | `estadia` | 4,169 | accent_variant |
 | `estarä` | 3 | `estarà` | 18 | accent_variant |
 | `estelí` | 3 | `esteli` | 3 | accent_variant |
@@ -11546,9 +12565,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `eufônio` | 3 | `eufónio` | 15 | accent_variant |
 | `euja` | 3 | `eujá` | 193 | unaccented |
 | `eurasíatico` | 3 | `eurasiático` | 23 | accent_variant |
+| `euripedes` | 3 | `eurípedes` | 32 | unaccented |
+| `euripides` | 3 | `eurípides` | 49 | unaccented |
 | `evolucäo` | 3 | `evolução` | 6,017 | accent_variant |
 | `evá` | 3 | `eva` | 13,596 | accent_variant |
 | `ex-bóinas` | 3 | `ex-boinas` | 12 | accent_variant |
+| `ex-mercenario` | 3 | `ex-mercenário` | 54 | unaccented |
 | `exaustao` | 3 | `exaustão` | 1,197 | unaccented |
 | `exceléncia` | 3 | `excelência` | 11,009 | accent_variant |
 | `exceçäo` | 3 | `exceção` | 11,342 | accent_variant |
@@ -11572,6 +12594,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `exércitozinho` | 3 | `exercitozinho` | 3 | accent_variant |
 | `eàs` | 3 | `eas` | 14 | accent_variant |
 | `eçe` | 3 | `ece` | 94 | accent_variant |
+| `fa-io-ei` | 3 | `fá-io-ei` | 47 | unaccented |
 | `facié` | 3 | `facie` | 13 | accent_variant |
 | `facsímile` | 3 | `facsimile` | 3 | accent_variant |
 | `fadó` | 3 | `fado` | 437 | accent_variant |
@@ -11611,6 +12634,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `fluor` | 3 | `flúor` | 200 | unaccented |
 | `fléxiveis` | 3 | `flexiveis` | 12 | accent_variant |
 | `flôrzinha` | 3 | `florzinha` | 724 | accent_variant |
+| `fortimbras` | 3 | `fortimbrás` | 48 | unaccented |
 | `forçár` | 3 | `forçar` | 30,205 | accent_variant |
 | `fotográfia` | 3 | `fotografia` | 67,777 | accent_variant |
 | `fotonico` | 3 | `fotônico` | 89 | unaccented |
@@ -11637,6 +12661,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `furgao` | 3 | `furgão` | 661 | unaccented |
 | `furugård` | 3 | `furugard` | 8 | accent_variant |
 | `furô` | 3 | `furo` | 3,489 | accent_variant |
+| `futuristico` | 3 | `futurístico` | 35 | unaccented |
 | `futéis` | 3 | `futeis` | 11 | accent_variant |
 | `fà-io-à` | 3 | `fá-io-á` | 16 | accent_variant |
 | `fàia` | 3 | `faia` | 248 | accent_variant |
@@ -11761,10 +12786,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `hibernaçao` | 3 | `hibernação` | 1,168 | accent_variant |
 | `hidroponía` | 3 | `hidroponia` | 36 | accent_variant |
 | `hidrómetro` | 3 | `hidrômetro` | 5 | accent_variant |
+| `hieroglifico` | 3 | `hieroglífico` | 59 | unaccented |
 | `hincapié` | 3 | `hincapie` | 13 | accent_variant |
 | `hipoglicêmica` | 3 | `hipoglicémica` | 36 | accent_variant |
 | `hipotetico` | 3 | `hipotético` | 1,267 | unaccented |
 | `hipotése` | 3 | `hipótese` | 89,260 | accent_variant |
+| `hipoxico` | 3 | `hipóxico` | 31 | unaccented |
 | `hiên` | 3 | `hien` | 9 | accent_variant |
 | `homicidio-suicídio` | 3 | `homicídio-suicídio` | 98 | accent_variant |
 | `homicìdio` | 3 | `homicídio` | 62,336 | accent_variant |
@@ -11819,6 +12846,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `impenetravél` | 3 | `impenetrável` | 1,829 | accent_variant |
 | `imperdoavél` | 3 | `imperdoável` | 1,902 | accent_variant |
 | `implicaçäo` | 3 | `implicação` | 1,555 | accent_variant |
+| `imponencia` | 3 | `imponência` | 44 | unaccented |
 | `impériale` | 3 | `imperiale` | 4 | accent_variant |
 | `impöe` | 3 | `impoe` | 5 | accent_variant |
 | `impúdico` | 3 | `impudico` | 24 | accent_variant |
@@ -11848,6 +12876,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `indestructíveis` | 3 | `indestructiveis` | 3 | accent_variant |
 | `indigestao` | 3 | `indigestão` | 690 | unaccented |
 | `indignaçäo` | 3 | `indignação` | 816 | accent_variant |
+| `indiscritivel` | 3 | `indiscritível` | 47 | unaccented |
 | `indiscriçäo` | 3 | `indiscrição` | 973 | accent_variant |
 | `indubidávelmente` | 3 | `indubidavelmente` | 3 | accent_variant |
 | `indíce` | 3 | `índice` | 1,978 | accent_variant |
@@ -11888,6 +12917,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `insurreiçao` | 3 | `insurreição` | 693 | accent_variant |
 | `intencões` | 3 | `intençoes` | 13 | accent_variant |
 | `intençőes` | 3 | `intençoes` | 13 | accent_variant |
+| `intergalacticas` | 3 | `intergalácticas` | 44 | unaccented |
 | `interpretaçäo` | 3 | `interpretação` | 3,174 | accent_variant |
 | `interrogacao` | 3 | `interrogação` | 1,384 | unaccented |
 | `interrogatôrios` | 3 | `interrogatorios` | 11 | accent_variant |
@@ -12030,6 +13060,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `lnclinaçao` | 3 | `lnclinação` | 6 | accent_variant |
 | `lnvestlgacão` | 3 | `lnvestlgação` | 7 | accent_variant |
 | `lomé` | 3 | `lome` | 4 | accent_variant |
+| `lrao` | 3 | `lrão` | 56 | unaccented |
 | `lrmä` | 3 | `lrmã` | 74 | accent_variant |
 | `luchì` | 3 | `luchi` | 5 | accent_variant |
 | `lusitánia` | 3 | `lusitânia` | 66 | accent_variant |
@@ -12078,10 +13109,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `mandà-io` | 3 | `mandá-io` | 73 | accent_variant |
 | `mandäo` | 3 | `mandão` | 1,430 | accent_variant |
 | `manganés` | 3 | `manganês` | 103 | accent_variant |
+| `manicomios` | 3 | `manicômios` | 35 | unaccented |
 | `manipulacao` | 3 | `manipulação` | 2,414 | unaccented |
 | `manipulavel` | 3 | `manipulável` | 133 | unaccented |
 | `maniáco` | 3 | `maníaco` | 4,481 | accent_variant |
 | `mansâo` | 3 | `mansão` | 8,160 | accent_variant |
+| `mante-io` | 3 | `mantê-io` | 58 | unaccented |
 | `manter-te-à` | 3 | `manter-te-á` | 50 | accent_variant |
 | `manteêm` | 3 | `mantêem` | 24 | accent_variant |
 | `mantéem` | 3 | `mantêem` | 24 | accent_variant |
@@ -12093,6 +13126,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `martír` | 3 | `mártir` | 3,508 | accent_variant |
 | `mará` | 3 | `mara` | 1,818 | accent_variant |
 | `masja` | 3 | `masjá` | 65 | unaccented |
+| `masnao` | 3 | `masnão` | 37 | unaccented |
 | `masséter` | 3 | `masseter` | 7 | accent_variant |
 | `massó` | 3 | `masso` | 3 | accent_variant |
 | `masturbaçäo` | 3 | `masturbação` | 1,544 | accent_variant |
@@ -12112,6 +13146,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `mediterráneo` | 3 | `mediterrâneo` | 1,419 | accent_variant |
 | `medída` | 3 | `medida` | 9,700 | accent_variant |
 | `megalomaniaco` | 3 | `megalomaníaco` | 153 | unaccented |
+| `megapixeis` | 3 | `megapixéis` | 36 | unaccented |
 | `meia-irmä` | 3 | `meia-irmã` | 938 | accent_variant |
 | `mejías` | 3 | `mejias` | 3 | accent_variant |
 | `mencäo` | 3 | `menção` | 1,478 | accent_variant |
@@ -12215,6 +13250,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `nano-tecnología` | 3 | `nano-tecnologia` | 68 | accent_variant |
 | `nanômetro` | 3 | `nanómetro` | 3 | accent_variant |
 | `naoooo` | 3 | `nãoooo` | 157 | unaccented |
+| `naoposso` | 3 | `nãoposso` | 45 | unaccented |
 | `naosei` | 3 | `nãosei` | 93 | unaccented |
 | `narraçäo` | 3 | `narração` | 312 | accent_variant |
 | `narças` | 3 | `narcas` | 3 | accent_variant |
@@ -12231,6 +13267,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `nenufar` | 3 | `nenúfar` | 150 | unaccented |
 | `nescafe` | 3 | `nescafé` | 74 | unaccented |
 | `nestás` | 3 | `nestas` | 14,924 | accent_variant |
+| `neurociencias` | 3 | `neurociências` | 32 | unaccented |
 | `neurológicamente` | 3 | `neurologicamente` | 75 | accent_variant |
 | `ninô` | 3 | `nino` | 1,345 | accent_variant |
 | `nitrógénio` | 3 | `nitrogénio` | 1,057 | accent_variant |
@@ -12266,6 +13303,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `nôno` | 3 | `nono` | 3,703 | accent_variant |
 | `númerozinho` | 3 | `numerozinho` | 15 | accent_variant |
 | `nûmero` | 3 | `número` | 180,051 | accent_variant |
+| `obersturmbannfuhrer` | 3 | `obersturmbannführer` | 44 | unaccented |
 | `obrigacöes` | 3 | `obrigaçoes` | 9 | accent_variant |
 | `obrigaçöes` | 3 | `obrigaçoes` | 9 | accent_variant |
 | `observacäo` | 3 | `observação` | 8,370 | accent_variant |
@@ -12290,10 +13328,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `operaçóes` | 3 | `operaçöes` | 29 | accent_variant |
 | `opiniáo` | 3 | `opinião` | 44,787 | accent_variant |
 | `opiniâo` | 3 | `opinião` | 44,787 | accent_variant |
+| `opioides` | 3 | `opióides` | 43 | unaccented |
 | `oposicão` | 3 | `oposição` | 3,660 | accent_variant |
 | `optrônicos` | 3 | `optrónicos` | 7 | accent_variant |
 | `optímo` | 3 | `optimo` | 1,726 | accent_variant |
 | `oracäo` | 3 | `oração` | 10,926 | accent_variant |
+| `oregano` | 3 | `orégano` | 36 | unaccented |
 | `orfaos` | 3 | `orfãos` | 305 | unaccented |
 | `organizaçöes` | 3 | `organizacoes` | 3 | accent_variant |
 | `orgäos` | 3 | `orgãos` | 614 | accent_variant |
@@ -12321,6 +13361,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `painés` | 3 | `paines` | 9 | accent_variant |
 | `paladíno` | 3 | `paladino` | 505 | accent_variant |
 | `palicada` | 3 | `paliçada` | 132 | unaccented |
+| `pancuronio` | 3 | `pancurónio` | 41 | unaccented |
 | `panásca` | 3 | `panasca` | 967 | accent_variant |
 | `papagaiô` | 3 | `papagaio` | 4,264 | accent_variant |
 | `pappá` | 3 | `pappa` | 76 | accent_variant |
@@ -12366,6 +13407,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `penís` | 3 | `pénis` | 13,064 | accent_variant |
 | `pepè` | 3 | `pepe` | 1,552 | accent_variant |
 | `pequenos-almocos` | 3 | `pequenos-almoços` | 359 | unaccented |
+| `perde-io` | 3 | `perdê-io` | 42 | unaccented |
 | `perder-se-à` | 3 | `perder-se-á` | 87 | accent_variant |
 | `perder-se-äo` | 3 | `perder-se-ão` | 61 | accent_variant |
 | `perdôoa` | 3 | `perdooa` | 105 | accent_variant |
@@ -12408,6 +13450,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `poliícia` | 3 | `poliicia` | 14 | accent_variant |
 | `poláco` | 3 | `polaco` | 4,773 | accent_variant |
 | `polés` | 3 | `poles` | 16 | accent_variant |
+| `pontificio` | 3 | `pontifício` | 45 | unaccented |
 | `pontäo` | 3 | `pontão` | 446 | accent_variant |
 | `porcalhäozinho` | 3 | `porcalhãozinho` | 5 | accent_variant |
 | `porèm` | 3 | `porém` | 14,301 | accent_variant |
@@ -12421,6 +13464,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `poçoes` | 3 | `pocões` | 9 | accent_variant |
 | `pr'àquela` | 3 | `pr'aquela` | 6 | accent_variant |
 | `pr'áqui` | 3 | `pr'aqui` | 33 | accent_variant |
+| `pre-aprovado` | 3 | `pré-aprovado` | 52 | unaccented |
 | `pre-histórico` | 3 | `pré-histórico` | 486 | accent_variant |
 | `preferivél` | 3 | `preferível` | 1,456 | accent_variant |
 | `pressaõ` | 3 | `pressão` | 39,447 | accent_variant |
@@ -12436,6 +13480,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `prisión` | 3 | `prision` | 5 | accent_variant |
 | `prisáo` | 3 | `prisão` | 105,392 | accent_variant |
 | `prisăo` | 3 | `prisão` | 105,392 | accent_variant |
+| `pro-armas` | 3 | `pró-armas` | 33 | unaccented |
+| `proboscide` | 3 | `probóscide` | 39 | unaccented |
 | `probávelmente` | 3 | `probavelmente` | 11 | accent_variant |
 | `procriaçäo` | 3 | `procriação` | 638 | accent_variant |
 | `proctólogista` | 3 | `proctologista` | 140 | accent_variant |
@@ -12536,6 +13582,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pőe` | 3 | `poe` | 2,832 | accent_variant |
 | `pőem` | 3 | `poem` | 174 | accent_variant |
 | `qu'e` | 3 | `qu'é` | 212 | unaccented |
+| `quadrilatero` | 3 | `quadrilátero` | 38 | unaccented |
 | `quadrúplo` | 3 | `quádruplo` | 434 | accent_variant |
 | `quarta-féira` | 3 | `quarta-feira` | 6,315 | accent_variant |
 | `quebrár` | 3 | `quebrar` | 35,696 | accent_variant |
@@ -12543,6 +13590,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `questőes` | 3 | `questöes` | 39 | accent_variant |
 | `queê` | 3 | `queé` | 104 | accent_variant |
 | `quintuplo` | 3 | `quíntuplo` | 100 | unaccented |
+| `quipa` | 3 | `quipá` | 52 | unaccented |
 | `quizàs` | 3 | `quizás` | 15 | accent_variant |
 | `quizérmos` | 3 | `quizermos` | 45 | accent_variant |
 | `quiénes` | 3 | `quienes` | 4 | accent_variant |
@@ -12659,6 +13707,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `sanscrito` | 3 | `sânscrito` | 296 | unaccented |
 | `satanico` | 3 | `satânico` | 1,407 | unaccented |
 | `satiro` | 3 | `sátiro` | 296 | unaccented |
+| `saturnalia` | 3 | `saturnália` | 40 | unaccented |
 | `satánas` | 3 | `satanás` | 4,755 | accent_variant |
 | `satâ` | 3 | `satã` | 1,022 | accent_variant |
 | `satä` | 3 | `satã` | 1,022 | accent_variant |
@@ -12704,6 +13753,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `señior` | 3 | `sénior` | 3,464 | accent_variant |
 | `shalalá` | 3 | `shalala` | 6 | accent_variant |
 | `shiítas` | 3 | `shiitas` | 13 | accent_variant |
+| `shonte` | 3 | `shonté` | 39 | unaccented |
 | `shégets` | 3 | `shegets` | 3 | accent_variant |
 | `signifiîca` | 3 | `signifiica` | 27 | accent_variant |
 | `siiênçio` | 3 | `siiencio` | 3 | accent_variant |
@@ -12730,6 +13780,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `sociopáta` | 3 | `sociopata` | 2,403 | accent_variant |
 | `sofa-cama` | 3 | `sofá-cama` | 375 | unaccented |
 | `soireé` | 3 | `soirée` | 167 | accent_variant |
+| `solideu` | 3 | `solidéu` | 58 | unaccented |
 | `solitàrio` | 3 | `solitário` | 11,175 | accent_variant |
 | `solucionar-se-á` | 3 | `solucionar-se-à` | 4 | accent_variant |
 | `solé` | 3 | `sole` | 274 | accent_variant |
@@ -12756,6 +13807,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `suicìda` | 3 | `suicida` | 422 | accent_variant |
 | `sumeria` | 3 | `suméria` | 198 | unaccented |
 | `sumé` | 3 | `sume` | 5 | accent_variant |
+| `super-heroinas` | 3 | `super-heroínas` | 34 | unaccented |
+| `super-virus` | 3 | `super-vírus` | 42 | unaccented |
 | `superfiície` | 3 | `superfíície` | 14 | accent_variant |
 | `superfluo` | 3 | `supérfluo` | 580 | unaccented |
 | `superfícial` | 3 | `superficial` | 4,126 | accent_variant |
@@ -12807,10 +13860,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `talisma` | 3 | `talismã` | 1,471 | unaccented |
 | `tambëm` | 3 | `também` | 796,892 | accent_variant |
 | `tamás` | 3 | `tamas` | 26 | accent_variant |
+| `taquicardico` | 3 | `taquicárdico` | 37 | unaccented |
 | `taquión` | 3 | `táquion` | 55 | accent_variant |
 | `taró` | 3 | `taro` | 336 | accent_variant |
 | `taxí` | 3 | `táxi` | 29,949 | accent_variant |
 | `tazê` | 3 | `taze` | 7 | accent_variant |
+| `tchecoslovaquia` | 3 | `tchecoslováquia` | 47 | unaccented |
 | `tchá` | 3 | `tcha` | 46 | accent_variant |
 | `tchétchénia` | 3 | `tchetchénia` | 84 | accent_variant |
 | `te-la-íamos` | 3 | `tê-la-íamos` | 44 | accent_variant |
@@ -12832,6 +13887,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `terminó` | 3 | `término` | 427 | accent_variant |
 | `terraqueo` | 3 | `terráqueo` | 1,021 | unaccented |
 | `tetano` | 3 | `tétano` | 697 | unaccented |
+| `tete-a-tete` | 3 | `tête-à-tête` | 49 | unaccented |
 | `teutônica` | 3 | `teutónica` | 45 | accent_variant |
 | `teutônico` | 3 | `teutónico` | 28 | accent_variant |
 | `teutônicos` | 3 | `teutónicos` | 37 | accent_variant |
@@ -12932,6 +13988,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `túmulto` | 3 | `tumulto` | 2,137 | accent_variant |
 | `túristicos` | 3 | `turisticos` | 25 | accent_variant |
 | `türk` | 3 | `turk` | 2,781 | accent_variant |
+| `uberes` | 3 | `úberes` | 38 | unaccented |
 | `ucránia` | 3 | `ucrânia` | 1,851 | accent_variant |
 | `ukrânia` | 3 | `ukrania` | 13 | accent_variant |
 | `ultra-sônico` | 3 | `ultra-sónico` | 64 | accent_variant |
@@ -12969,6 +14026,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `veí` | 3 | `vei` | 60 | accent_variant |
 | `veícular` | 3 | `veicular` | 125 | accent_variant |
 | `viajár` | 3 | `viajar` | 48,983 | accent_variant |
+| `vice-lider` | 3 | `vice-líder` | 33 | unaccented |
 | `vicíada` | 3 | `viciada` | 132 | accent_variant |
 | `vicíado` | 3 | `viciado` | 10,321 | accent_variant |
 | `video-póquer` | 3 | `vídeo-póquer` | 12 | accent_variant |
@@ -13015,6 +14073,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `wäre` | 3 | `ware` | 184 | accent_variant |
 | `wç` | 3 | `wc` | 2,889 | accent_variant |
 | `xelá` | 3 | `xela` | 3 | accent_variant |
+| `xiongdi` | 3 | `xiongdì` | 34 | unaccented |
 | `xião` | 3 | `xiao` | 502 | accent_variant |
 | `xã` | 3 | `xá` | 902 | accent_variant |
 | `xós` | 3 | `xos` | 4 | accent_variant |
@@ -13251,6 +14310,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `adaptavel` | 2 | `adaptável` | 408 | unaccented |
 | `adaptaçäo` | 2 | `adaptação` | 13,262 | accent_variant |
 | `adaõ` | 2 | `adão` | 2,016 | accent_variant |
+| `adenoides` | 2 | `adenóides` | 39 | unaccented |
 | `administraçăo` | 2 | `administração` | 11,729 | accent_variant |
 | `admiraçao` | 2 | `admiração` | 2,242 | accent_variant |
 | `admirâ` | 2 | `admirà` | 4 | accent_variant |
@@ -13309,6 +14369,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ajudà-ios` | 2 | `ajudá-ios` | 70 | accent_variant |
 | `ajudä-io` | 2 | `ajudà-io` | 17 | accent_variant |
 | `ajudé` | 2 | `ajudê` | 3 | accent_variant |
+| `aksinia` | 2 | `aksínia` | 28 | unaccented |
 | `albión` | 2 | `albion` | 212 | accent_variant |
 | `alcançâ` | 2 | `alcancá` | 10 | accent_variant |
 | `alcaträo` | 2 | `alcatrão` | 1,151 | accent_variant |
@@ -13344,6 +14405,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `alucinógéneo` | 2 | `alucinogéneo` | 30 | accent_variant |
 | `alucinógénio` | 2 | `alucinogénio` | 475 | accent_variant |
 | `alugämos` | 2 | `alugàmos` | 3 | accent_variant |
+| `alumen` | 2 | `alúmen` | 31 | unaccented |
 | `aluminío` | 2 | `alumínio` | 2,540 | accent_variant |
 | `alvéolar` | 2 | `alveolar` | 29 | accent_variant |
 | `alà` | 2 | `ala` | 12,305 | accent_variant |
@@ -13394,6 +14456,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `anfitria` | 2 | `anfitriã` | 1,539 | unaccented |
 | `angariacao` | 2 | `angariação` | 2,664 | unaccented |
 | `angariaçäo` | 2 | `angariação` | 2,664 | accent_variant |
+| `angele` | 2 | `angèle` | 23 | unaccented |
 | `angiocatéter` | 2 | `angiocateter` | 3 | accent_variant |
 | `anglosaxônica` | 2 | `anglosaxónica` | 2 | accent_variant |
 | `angêla` | 2 | `angela` | 11,324 | accent_variant |
@@ -13532,6 +14595,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `asós` | 2 | `asos` | 11 | accent_variant |
 | `atacaräo` | 2 | `atacarao` | 7 | accent_variant |
 | `atacár` | 2 | `atacar` | 107,481 | accent_variant |
+| `atalo` | 2 | `átalo` | 27 | unaccented |
 | `atencöes` | 2 | `atençöes` | 13 | accent_variant |
 | `atená` | 2 | `atena` | 579 | accent_variant |
 | `athenaïs` | 2 | `athénaïs` | 11 | accent_variant |
@@ -13668,6 +14732,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `bercario` | 2 | `berçário` | 684 | unaccented |
 | `bercário` | 2 | `berçário` | 684 | accent_variant |
 | `bergére` | 2 | `bergère` | 53 | accent_variant |
+| `berinio` | 2 | `berínio` | 23 | unaccented |
 | `bernabeu` | 2 | `bernabéu` | 62 | unaccented |
 | `berseba` | 2 | `bersebá` | 61 | unaccented |
 | `bertá` | 2 | `berta` | 849 | accent_variant |
@@ -13676,6 +14741,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `biberao` | 2 | `biberão` | 945 | unaccented |
 | `bibliotéca` | 2 | `biblioteca` | 17,445 | accent_variant |
 | `bibá` | 2 | `biba` | 32 | accent_variant |
+| `bientot` | 2 | `bientôt` | 30 | unaccented |
 | `biestáveis` | 2 | `biestaveis` | 2 | accent_variant |
 | `bifurcacão` | 2 | `bifurcação` | 515 | accent_variant |
 | `bifê` | 2 | `bife` | 11,654 | accent_variant |
@@ -13685,6 +14751,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `binario` | 2 | `binário` | 1,154 | unaccented |
 | `binôculos` | 2 | `binoculos` | 50 | accent_variant |
 | `bio-molécular` | 2 | `bio-molecular` | 6 | accent_variant |
+| `biofisico` | 2 | `biofísico` | 26 | unaccented |
 | `bioló` | 2 | `biolo` | 2 | accent_variant |
 | `biolôgico` | 2 | `biológico` | 9,096 | accent_variant |
 | `biomecánico` | 2 | `biomecânico` | 78 | accent_variant |
@@ -13709,6 +14776,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `bolide` | 2 | `bólide` | 170 | unaccented |
 | `bolór` | 2 | `bolor` | 1,023 | accent_variant |
 | `bomba-relôgio` | 2 | `bomba-relógio` | 536 | accent_variant |
+| `bonacheirao` | 2 | `bonacheirão` | 25 | unaccented |
 | `boníta` | 2 | `bônita` | 9 | accent_variant |
 | `boquê` | 2 | `boque` | 24 | accent_variant |
 | `boricuás` | 2 | `boricuas` | 25 | accent_variant |
@@ -13872,6 +14940,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `cardiáco` | 2 | `cardíaco` | 21,660 | accent_variant |
 | `cardíocirurgião` | 2 | `cardiocirurgião` | 5 | accent_variant |
 | `carismatico` | 2 | `carismático` | 755 | unaccented |
+| `carlen` | 2 | `carlén` | 23 | unaccented |
 | `carmá` | 2 | `carma` | 615 | accent_variant |
 | `carmín` | 2 | `carmin` | 3 | accent_variant |
 | `carnicería` | 2 | `carniceria` | 2 | accent_variant |
@@ -13910,6 +14979,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `centimêtros` | 2 | `centimetros` | 173 | accent_variant |
 | `centrífugar` | 2 | `centrifugar` | 79 | accent_variant |
 | `cerbére` | 2 | `cerbere` | 2 | accent_variant |
+| `cerefolio` | 2 | `cerefólio` | 24 | unaccented |
 | `cerimònia` | 2 | `cerimónia` | 13,099 | accent_variant |
 | `cerimónial` | 2 | `cerimonial` | 775 | accent_variant |
 | `cerrí` | 2 | `cerri` | 26 | accent_variant |
@@ -13918,6 +14988,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `certissímo` | 2 | `certíssimo` | 833 | accent_variant |
 | `cetin` | 2 | `çetin` | 80 | unaccented |
 | `chalá` | 2 | `chala` | 14 | accent_variant |
+| `champs-elysees` | 2 | `champs-elysées` | 24 | unaccented |
 | `champs-élysees` | 2 | `champs-elysées` | 24 | accent_variant |
 | `champó` | 2 | `champô` | 1,846 | accent_variant |
 | `champóo` | 2 | `champôo` | 45 | accent_variant |
@@ -13961,6 +15032,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `chófer` | 2 | `chofer` | 316 | accent_variant |
 | `chólera` | 2 | `cholera` | 5 | accent_variant |
 | `chôro` | 2 | `choro` | 4,693 | accent_variant |
+| `cianidrico` | 2 | `cianídrico` | 29 | unaccented |
 | `ciatica` | 2 | `ciática` | 289 | unaccented |
 | `cibernéticamente` | 2 | `ciberneticamente` | 22 | accent_variant |
 | `cibé` | 2 | `cibe` | 3 | accent_variant |
@@ -13982,6 +15054,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `circunstäncias` | 2 | `circunstãncias` | 11 | accent_variant |
 | `circustancias` | 2 | `circustâncias` | 41 | unaccented |
 | `cirilico` | 2 | `cirílico` | 260 | unaccented |
+| `cirio` | 2 | `círio` | 28 | unaccented |
 | `citaçao` | 2 | `citação` | 3,792 | accent_variant |
 | `citaçöes` | 2 | `citacões` | 2 | accent_variant |
 | `citröen` | 2 | `citroen` | 71 | accent_variant |
@@ -14046,6 +15119,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `começerá` | 2 | `comecerá` | 2 | accent_variant |
 | `começásse` | 2 | `comecasse` | 2 | accent_variant |
 | `começässemos` | 2 | `começassemos` | 14 | accent_variant |
+| `comfortavel` | 2 | `comfortável` | 33 | unaccented |
 | `comfortavél` | 2 | `comfortável` | 33 | accent_variant |
 | `comissãrio` | 2 | `comissário` | 11,780 | accent_variant |
 | `comocäo` | 2 | `comoção` | 437 | accent_variant |
@@ -14087,8 +15161,10 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `condecoracöes` | 2 | `condecoraçöes` | 7 | accent_variant |
 | `condenacões` | 2 | `condenaçöes` | 3 | accent_variant |
 | `condescendencia` | 2 | `condescendência` | 258 | unaccented |
+| `condilo` | 2 | `côndilo` | 21 | unaccented |
 | `condromalácia` | 2 | `condromalacia` | 2 | accent_variant |
 | `conducão` | 2 | `condução` | 10,224 | accent_variant |
+| `coneco` | 2 | `coneço` | 33 | unaccented |
 | `confecçäo` | 2 | `confeccao` | 2 | accent_variant |
 | `confederaçao` | 2 | `confederação` | 987 | accent_variant |
 | `conferênciar` | 2 | `conferenciar` | 449 | accent_variant |
@@ -14149,10 +15225,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `contar-me-às` | 2 | `contar-me-ás` | 12 | accent_variant |
 | `contemplà-io` | 2 | `contemplá-io` | 4 | accent_variant |
 | `contencao` | 2 | `contenção` | 3,232 | unaccented |
+| `contigencia` | 2 | `contigência` | 32 | unaccented |
 | `contigüo` | 2 | `contíguo` | 240 | accent_variant |
 | `continuacão` | 2 | `continuação` | 1,359 | accent_variant |
 | `continuámosa` | 2 | `continuamosa` | 3 | accent_variant |
 | `contra-análise` | 2 | `contra-analise` | 3 | accent_variant |
+| `contra-feitico` | 2 | `contra-feitiço` | 28 | unaccented |
 | `contraditorio` | 2 | `contraditório` | 1,091 | unaccented |
 | `contradiçöes` | 2 | `contradicões` | 2 | accent_variant |
 | `contratacäo` | 2 | `contratação` | 874 | accent_variant |
@@ -14236,6 +15314,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `criptozoología` | 2 | `criptozoologia` | 37 | accent_variant |
 | `crisalida` | 2 | `crisálida` | 407 | unaccented |
 | `cristalocámos` | 2 | `cristalocamos` | 2 | accent_variant |
+| `cristaos` | 2 | `cristäos` | 27 | unaccented |
 | `cristál` | 2 | `cristal` | 10,556 | accent_variant |
 | `cristâo` | 2 | `cristão` | 9,440 | accent_variant |
 | `cristâos` | 2 | `cristäos` | 27 | accent_variant |
@@ -14353,6 +15432,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `daçar` | 2 | `dacar` | 2 | accent_variant |
 | `de-lho` | 2 | `dê-lho` | 126 | unaccented |
 | `de-ma` | 2 | `dê-ma` | 583 | unaccented |
+| `debiloide` | 2 | `debilóide` | 33 | unaccented |
 | `decapitaçäo` | 2 | `decapitação` | 938 | accent_variant |
 | `decidió` | 2 | `decidio` | 8 | accent_variant |
 | `decifracäo` | 2 | `decifração` | 91 | accent_variant |
@@ -14406,6 +15486,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `democracía` | 2 | `democracia` | 6,106 | accent_variant |
 | `democrätico` | 2 | `democrático` | 2,065 | accent_variant |
 | `demolídor` | 2 | `demolidor` | 638 | accent_variant |
+| `demonia` | 2 | `demônia` | 39 | unaccented |
 | `demoniáca` | 2 | `demoniaca` | 57 | accent_variant |
 | `demoníacamente` | 2 | `demoniacamente` | 20 | accent_variant |
 | `demostracao` | 2 | `demostração` | 81 | unaccented |
@@ -14505,6 +15586,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `dinãmica` | 2 | `dinâmica` | 2,012 | accent_variant |
 | `dir-lhes-à` | 2 | `dir-lhes-á` | 33 | accent_variant |
 | `direccionámos` | 2 | `direccionamos` | 13 | accent_variant |
+| `directorio-k` | 2 | `directório-k` | 39 | unaccented |
 | `dirà` | 2 | `dira` | 55 | accent_variant |
 | `dirä` | 2 | `dira` | 55 | accent_variant |
 | `discricão` | 2 | `discrição` | 3,478 | accent_variant |
@@ -14548,6 +15630,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `doaçao` | 2 | `doação` | 4,230 | accent_variant |
 | `doi-dói` | 2 | `dói-dói` | 357 | accent_variant |
 | `doidói` | 2 | `dóidói` | 9 | accent_variant |
+| `dolmen` | 2 | `dólmen` | 20 | unaccented |
 | `dominacao` | 2 | `dominação` | 469 | unaccented |
 | `domíngo` | 2 | `domingo` | 23,542 | accent_variant |
 | `doênças` | 2 | `doencas` | 31 | accent_variant |
@@ -14560,10 +15643,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `drône` | 2 | `drone` | 7,160 | accent_variant |
 | `dubchék` | 2 | `dubchek` | 15 | accent_variant |
 | `dubio` | 2 | `dúbio` | 345 | unaccented |
+| `dubles` | 2 | `dublês` | 29 | unaccented |
 | `duché` | 2 | `duche` | 12,122 | accent_variant |
 | `dumô` | 2 | `dumo` | 10 | accent_variant |
 | `duotrónicos` | 2 | `duotrônicos` | 3 | accent_variant |
 | `dupreé` | 2 | `dupree` | 929 | accent_variant |
+| `duranio` | 2 | `durânio` | 32 | unaccented |
 | `duraçao` | 2 | `duração` | 2,262 | accent_variant |
 | `duró` | 2 | `duro` | 66,121 | accent_variant |
 | `duvídas` | 2 | `düvidas` | 5 | accent_variant |
@@ -14658,6 +15743,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `egoísticamente` | 2 | `egoisticamente` | 76 | accent_variant |
 | `egüinha` | 2 | `eguinha` | 10 | accent_variant |
 | `elecrólitos` | 2 | `elecrolitos` | 2 | accent_variant |
+| `electroquimicos` | 2 | `electroquímicos` | 21 | unaccented |
 | `electríca` | 2 | `electrica` | 123 | accent_variant |
 | `elegáncia` | 2 | `elegância` | 1,793 | accent_variant |
 | `elegãncia` | 2 | `elegância` | 1,793 | accent_variant |
@@ -14670,8 +15756,10 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `elevacao` | 2 | `elevação` | 1,597 | unaccented |
 | `elevaçao` | 2 | `elevação` | 1,597 | accent_variant |
 | `elimínaa` | 2 | `eliminaa` | 62 | accent_variant |
+| `elitaire` | 2 | `élitaire` | 36 | unaccented |
 | `elixír` | 2 | `elixir` | 1,597 | accent_variant |
 | `elleguá` | 2 | `ellegua` | 8 | accent_variant |
+| `elysee` | 2 | `elysée` | 34 | unaccented |
 | `elájá` | 2 | `elajá` | 75 | accent_variant |
 | `eléanore` | 2 | `eleanore` | 42 | accent_variant |
 | `eléctrodomésticos` | 2 | `electrodomesticos` | 2 | accent_variant |
@@ -14700,6 +15788,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `encantó` | 2 | `encanto` | 5,341 | accent_variant |
 | `encenaçao` | 2 | `encenação` | 1,918 | accent_variant |
 | `encontará` | 2 | `encontara` | 5 | accent_variant |
+| `encontra-ios` | 2 | `encontrá-ios` | 36 | unaccented |
 | `encontrar-nos-à` | 2 | `encontrar-nos-á` | 32 | accent_variant |
 | `encontrár-mos` | 2 | `encontrar-mos` | 525 | accent_variant |
 | `encontrástea` | 2 | `encontrastea` | 1,132 | accent_variant |
@@ -14729,6 +15818,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `envià` | 2 | `envía` | 35 | accent_variant |
 | `enérgi` | 2 | `energi` | 2 | accent_variant |
 | `enígma` | 2 | `enigma` | 5,464 | accent_variant |
+| `eomund` | 2 | `éomund` | 33 | unaccented |
 | `epifánio` | 2 | `epifanio` | 288 | accent_variant |
 | `epilêtico` | 2 | `epilético` | 564 | accent_variant |
 | `episòdio` | 2 | `episódio` | 21,362 | accent_variant |
@@ -14791,6 +15881,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `espiãzinha` | 2 | `espiazinha` | 9 | accent_variant |
 | `esplênio` | 2 | `esplénio` | 2 | accent_variant |
 | `espontâniedade` | 2 | `espontaniedade` | 4 | accent_variant |
+| `esposa-trofeu` | 2 | `esposa-troféu` | 20 | unaccented |
 | `esposiçao` | 2 | `esposição` | 6 | accent_variant |
 | `espáda` | 2 | `espada` | 44,178 | accent_variant |
 | `espáço` | 2 | `espaço` | 69,707 | accent_variant |
@@ -14868,10 +15959,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `etiópía` | 2 | `etiópia` | 880 | accent_variant |
 | `etouffé` | 2 | `etouffe` | 4 | accent_variant |
 | `etár` | 2 | `etar` | 54 | accent_variant |
+| `eua-mexico` | 2 | `eua-méxico` | 24 | unaccented |
 | `eugenía` | 2 | `eugenia` | 358 | accent_variant |
 | `eugênicos` | 2 | `eugenicos` | 10 | accent_variant |
 | `eué` | 2 | `eue` | 29 | accent_variant |
 | `ex-demônio` | 2 | `ex-demónio` | 17 | accent_variant |
+| `ex-lider` | 2 | `ex-líder` | 26 | unaccented |
 | `ex-polícial` | 2 | `ex-policial` | 39 | accent_variant |
 | `exactófacto` | 2 | `exactofacto` | 2 | accent_variant |
 | `excecão` | 2 | `exceção` | 11,342 | accent_variant |
@@ -14880,6 +15973,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `excitadissímo` | 2 | `excitadissimo` | 7 | accent_variant |
 | `excomunhäo` | 2 | `excomunhão` | 173 | accent_variant |
 | `excêlencia` | 2 | `excelência` | 11,009 | accent_variant |
+| `execito` | 2 | `exécito` | 30 | unaccented |
 | `exibicäo` | 2 | `exibição` | 4,248 | accent_variant |
 | `experiençia` | 2 | `experiência` | 59,124 | accent_variant |
 | `experiëncia` | 2 | `experiência` | 59,124 | accent_variant |
@@ -14953,6 +16047,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `femêas` | 2 | `femeas` | 30 | accent_variant |
 | `femínino` | 2 | `feminino` | 14,103 | accent_variant |
 | `fenicio` | 2 | `fenício` | 181 | unaccented |
+| `fenolftaleina` | 2 | `fenolftaleína` | 38 | unaccented |
 | `fenotoína` | 2 | `fenotoina` | 4 | accent_variant |
 | `feriä` | 2 | `féria` | 10 | accent_variant |
 | `fermentacão` | 2 | `fermentação` | 293 | accent_variant |
@@ -15026,6 +16121,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `fraçäo` | 2 | `fração` | 2,322 | accent_variant |
 | `frequêntes` | 2 | `freqüentes` | 27 | accent_variant |
 | `freón` | 2 | `freon` | 133 | accent_variant |
+| `frisios` | 2 | `frísios` | 36 | unaccented |
 | `fritá-io` | 2 | `frita-io` | 2 | accent_variant |
 | `fritár` | 2 | `fritar` | 4,160 | accent_variant |
 | `frivolo` | 2 | `frívolo` | 663 | unaccented |
@@ -15104,6 +16200,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `fýrbendum` | 2 | `fyrbendum` | 6 | accent_variant |
 | `g-virus` | 2 | `g-vírus` | 54 | unaccented |
 | `gagà` | 2 | `gaga` | 686 | accent_variant |
+| `galoes` | 2 | `galöes` | 23 | unaccented |
 | `galàpagos` | 2 | `galápagos` | 596 | accent_variant |
 | `galàxia` | 2 | `galáxia` | 9,302 | accent_variant |
 | `galâctica` | 2 | `galactica` | 3,017 | accent_variant |
@@ -15124,6 +16221,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `geméas` | 2 | `gêmeas` | 698 | accent_variant |
 | `gemêo` | 2 | `gémeo` | 17,739 | accent_variant |
 | `geneviêve` | 2 | `genevieve` | 1,001 | accent_variant |
+| `genitalias` | 2 | `genitálias` | 23 | unaccented |
 | `genomica` | 2 | `genómica` | 63 | unaccented |
 | `genéva` | 2 | `geneva` | 358 | accent_variant |
 | `genó` | 2 | `geno` | 55 | accent_variant |
@@ -15164,6 +16262,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `gravídade` | 2 | `gravidade` | 11,102 | accent_variant |
 | `graçias` | 2 | `gracias` | 1,690 | accent_variant |
 | `gregòrio` | 2 | `gregório` | 370 | accent_variant |
+| `gres` | 2 | `grés` | 20 | unaccented |
 | `grigó` | 2 | `grigo` | 3 | accent_variant |
 | `gronelãndia` | 2 | `gronelândia` | 466 | accent_variant |
 | `grosseirao` | 2 | `grosseirão` | 70 | unaccented |
@@ -15302,6 +16401,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `hjõrtur` | 2 | `hjörtur` | 110 | accent_variant |
 | `hobé` | 2 | `hobe` | 2 | accent_variant |
 | `hodés` | 2 | `hodes` | 328 | accent_variant |
+| `holguin` | 2 | `holguín` | 39 | unaccented |
 | `holistico` | 2 | `holístico` | 277 | unaccented |
 | `holo-vírus` | 2 | `holo-virus` | 3 | accent_variant |
 | `hologràfica` | 2 | `holografica` | 4 | accent_variant |
@@ -15368,6 +16468,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `identifiîcaçao` | 2 | `identifiicação` | 12 | accent_variant |
 | `identifícacão` | 2 | `identificação` | 21,483 | accent_variant |
 | `idiche` | 2 | `ídiche` | 41 | unaccented |
+| `idiotes` | 2 | `idiotês` | 21 | unaccented |
 | `idió` | 2 | `idio` | 26 | accent_variant |
 | `idéas` | 2 | `ideas` | 37 | accent_variant |
 | `idéiazinha` | 2 | `ideiazinha` | 15 | accent_variant |
@@ -15383,6 +16484,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ihá` | 2 | `iha` | 59 | accent_variant |
 | `iigações` | 2 | `iigaçóes` | 3 | accent_variant |
 | `iiçäo` | 2 | `iicão` | 10 | accent_variant |
+| `ija` | 2 | `ijá` | 20 | unaccented |
 | `iliáda` | 2 | `ilíada` | 95 | accent_variant |
 | `ilusionária` | 2 | `ilusionaria` | 13 | accent_variant |
 | `ilusóriamente` | 2 | `ilusoriamente` | 23 | accent_variant |
@@ -15506,6 +16608,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `inquiétante` | 2 | `inquietante` | 1,015 | accent_variant |
 | `inscricöes` | 2 | `inscricões` | 4 | accent_variant |
 | `inscriçoes` | 2 | `inscricões` | 4 | accent_variant |
+| `insectoide` | 2 | `insectóide` | 26 | unaccented |
+| `insectoides` | 2 | `insectóides` | 38 | unaccented |
 | `insinuacao` | 2 | `insinuação` | 1,294 | unaccented |
 | `insinuacäo` | 2 | `insinuação` | 1,294 | accent_variant |
 | `inspecçiona` | 2 | `inspecciona` | 139 | accent_variant |
@@ -15551,6 +16655,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `intérfase` | 2 | `interfase` | 20 | accent_variant |
 | `invadió` | 2 | `invadio` | 2 | accent_variant |
 | `invadí` | 2 | `invádi` | 3 | accent_variant |
+| `inventorio` | 2 | `inventório` | 20 | unaccented |
 | `inventástea` | 2 | `inventastea` | 78 | accent_variant |
 | `inversao` | 2 | `inversão` | 1,402 | unaccented |
 | `investigaçaõ` | 2 | `investigação` | 48,034 | accent_variant |
@@ -15589,10 +16694,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `islãndia` | 2 | `islândia` | 1,831 | accent_variant |
 | `isläo` | 2 | `islão` | 1,260 | accent_variant |
 | `ismaël` | 2 | `ismael` | 283 | accent_variant |
+| `isopropilico` | 2 | `isopropílico` | 26 | unaccented |
 | `isotopo` | 2 | `isótopo` | 940 | unaccented |
 | `isquêmicas` | 2 | `isquémicas` | 4 | accent_variant |
 | `israël` | 2 | `israel` | 7,124 | accent_variant |
 | `isótons` | 2 | `isotons` | 7 | accent_variant |
+| `itenerario` | 2 | `itenerário` | 28 | unaccented |
 | `itár` | 2 | `itar` | 10 | accent_variant |
 | `itâlia` | 2 | `itália` | 10,328 | accent_variant |
 | `itälia` | 2 | `itália` | 10,328 | accent_variant |
@@ -15608,6 +16715,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `jalá` | 2 | `jala` | 20 | accent_variant |
 | `jantár` | 2 | `jantar` | 124,678 | accent_variant |
 | `japào` | 2 | `japão` | 11,242 | accent_variant |
+| `jaures` | 2 | `jaurès` | 23 | unaccented |
 | `jeannìe` | 2 | `jeannie` | 1,942 | accent_variant |
 | `jenö` | 2 | `jeno` | 4 | accent_variant |
 | `jerusalêm` | 2 | `jerusalém` | 5,273 | accent_variant |
@@ -15870,6 +16978,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `manhă` | 2 | `manhã` | 172,553 | accent_variant |
 | `maniaco-depressivo` | 2 | `maníaco-depressivo` | 137 | unaccented |
 | `manifestaçao` | 2 | `manifestação` | 3,805 | accent_variant |
+| `mante-ios` | 2 | `mantê-ios` | 21 | unaccented |
 | `manter-se-à` | 2 | `manter-se-á` | 154 | accent_variant |
 | `manté` | 2 | `mante` | 19 | accent_variant |
 | `mantém-mo` | 2 | `mantem-mo` | 3 | accent_variant |
@@ -15955,6 +17064,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `mereçea` | 2 | `merecea` | 43 | accent_variant |
 | `meritorio` | 2 | `meritório` | 246 | unaccented |
 | `merçedores` | 2 | `mercedores` | 3 | accent_variant |
+| `mesias` | 2 | `mesías` | 26 | unaccented |
 | `mesopotámico` | 2 | `mesopotâmico` | 43 | accent_variant |
 | `mesopotánia` | 2 | `mesopotânia` | 12 | accent_variant |
 | `mestico` | 2 | `mestiço` | 1,957 | unaccented |
@@ -16036,8 +17146,10 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `mulheré` | 2 | `mulhere` | 16 | accent_variant |
 | `multi-orgásmica` | 2 | `multi-orgasmica` | 8 | accent_variant |
 | `multipédes` | 2 | `multípedes` | 3 | accent_variant |
+| `multivitaminico` | 2 | `multivitamínico` | 22 | unaccented |
 | `munícípal` | 2 | `municipal` | 6,271 | accent_variant |
 | `murciélago` | 2 | `murcielago` | 30 | accent_variant |
+| `murio` | 2 | `murió` | 21 | unaccented |
 | `musculacäo` | 2 | `musculação` | 366 | accent_variant |
 | `muscúlo` | 2 | `músculo` | 10,983 | accent_variant |
 | `muséu` | 2 | `museu` | 16,764 | accent_variant |
@@ -16187,6 +17299,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `negà` | 2 | `negã` | 7 | accent_variant |
 | `negòcios` | 2 | `négocios` | 26 | accent_variant |
 | `negóc` | 2 | `negoc` | 5 | accent_variant |
+| `nematodes` | 2 | `nemátodes` | 24 | unaccented |
 | `neonicotinóides` | 2 | `neonicotinoides` | 4 | accent_variant |
 | `netário` | 2 | `netario` | 2 | accent_variant |
 | `neurocientífica` | 2 | `neurocientifica` | 2 | accent_variant |
@@ -16209,6 +17322,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `njå` | 2 | `njá` | 3 | accent_variant |
 | `nobélium` | 2 | `nobelium` | 7 | accent_variant |
 | `nocoração` | 2 | `nocoraçâo` | 4 | accent_variant |
+| `nomade` | 2 | `nômade` | 33 | unaccented |
 | `nomeacao` | 2 | `nomeação` | 2,491 | unaccented |
 | `normál` | 2 | `normal` | 88,168 | accent_variant |
 | `norá` | 2 | `nora` | 8,347 | accent_variant |
@@ -16317,6 +17431,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `olméques` | 2 | `olmèques` | 214 | accent_variant |
 | `olááááaáá` | 2 | `olááááááá` | 4 | accent_variant |
 | `omnípotens` | 2 | `omnipotens` | 14 | accent_variant |
+| `ondee` | 2 | `ondeé` | 28 | unaccented |
 | `ondulaçao` | 2 | `ondulação` | 616 | accent_variant |
 | `onár` | 2 | `onar` | 9 | accent_variant |
 | `operandì` | 2 | `operandi` | 936 | accent_variant |
@@ -16325,11 +17440,14 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `operaçőes` | 2 | `operaçöes` | 29 | accent_variant |
 | `operà` | 2 | `ópera` | 6,598 | accent_variant |
 | `opiniào` | 2 | `opinião` | 44,787 | accent_variant |
+| `opioide` | 2 | `opióide` | 21 | unaccented |
 | `opniao` | 2 | `opnião` | 60 | unaccented |
 | `oposicao` | 2 | `oposição` | 3,660 | unaccented |
+| `optogenetica` | 2 | `optogenética` | 27 | unaccented |
 | `opçőes` | 2 | `opçoes` | 15 | accent_variant |
 | `opínião` | 2 | `opinião` | 44,787 | accent_variant |
 | `opôem` | 2 | `opoem` | 7 | accent_variant |
+| `oracoes` | 2 | `oraçoes` | 20 | unaccented |
 | `oracões` | 2 | `oraçoes` | 20 | accent_variant |
 | `oratoria` | 2 | `oratória` | 209 | unaccented |
 | `ordenanca` | 2 | `ordenança` | 232 | unaccented |
@@ -16359,6 +17477,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `oxalä` | 2 | `oxalá` | 8,932 | accent_variant |
 | `oxigénio-nitrogenio` | 2 | `oxigénio-nitrogénio` | 10 | accent_variant |
 | `oxigênio-nitrogênio` | 2 | `oxigénio-nitrogénio` | 10 | accent_variant |
+| `oximetro` | 2 | `oxímetro` | 30 | unaccented |
 | `oço` | 2 | `oco` | 1,497 | accent_variant |
 | `p'ràs` | 2 | `p'rás` | 46 | accent_variant |
 | `p'rò` | 2 | `p'ró` | 290 | accent_variant |
@@ -16396,6 +17515,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `paraìso` | 2 | `paraíso` | 15,302 | accent_variant |
 | `parecer-te-à` | 2 | `parecer-te-á` | 15 | accent_variant |
 | `paredao` | 2 | `paredão` | 246 | unaccented |
+| `pareos` | 2 | `páreos` | 30 | unaccented |
 | `pareçer` | 2 | `parecer` | 906,176 | accent_variant |
 | `parrá` | 2 | `parra` | 198 | accent_variant |
 | `participacao` | 2 | `participação` | 3,784 | unaccented |
@@ -16429,6 +17549,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `paára` | 2 | `paara` | 4 | accent_variant |
 | `pañuelo` | 2 | `panuelo` | 2 | accent_variant |
 | `peccátis` | 2 | `peccatis` | 18 | accent_variant |
+| `peco-to` | 2 | `peço-to` | 39 | unaccented |
 | `pecoa` | 2 | `peçoa` | 77 | unaccented |
 | `pecâs` | 2 | `pecãs` | 64 | accent_variant |
 | `pederástia` | 2 | `pederastia` | 7 | accent_variant |
@@ -16506,6 +17627,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pirosônico` | 2 | `pirosónico` | 10 | accent_variant |
 | `piroxênio` | 2 | `piroxénio` | 6 | accent_variant |
 | `pirômano` | 2 | `pirómano` | 192 | accent_variant |
+| `pisao` | 2 | `pisão` | 21 | unaccented |
 | `pistoläo` | 2 | `pistolão` | 47 | accent_variant |
 | `pistóla` | 2 | `pistola` | 19,139 | accent_variant |
 | `piça-mole` | 2 | `pica-mole` | 2 | accent_variant |
@@ -16572,6 +17694,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pr'aquí` | 2 | `pr'aqui` | 33 | accent_variant |
 | `pragmatico` | 2 | `pragmático` | 713 | unaccented |
 | `praxá` | 2 | `praxa` | 5 | accent_variant |
+| `pre-aquecer` | 2 | `pré-aquecer` | 36 | unaccented |
 | `pre-aqueça` | 2 | `pré-aqueça` | 10 | accent_variant |
 | `pre-eclampsia` | 2 | `pré-eclampsia` | 87 | unaccented |
 | `pre-frontal` | 2 | `pré-frontal` | 216 | unaccented |
@@ -16579,6 +17702,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pre-jogo` | 2 | `pré-jogo` | 49 | unaccented |
 | `pre-natais` | 2 | `pré-natais` | 237 | unaccented |
 | `pre-requisito` | 2 | `pré-requisito` | 176 | unaccented |
+| `pre-seleccionados` | 2 | `pré-seleccionados` | 21 | unaccented |
+| `pre-visualizacao` | 2 | `pré-visualização` | 24 | unaccented |
 | `precaucao` | 2 | `precaução` | 7,671 | unaccented |
 | `precisariámos` | 2 | `precisariamos` | 40 | accent_variant |
 | `precisaçemos` | 2 | `precisacemos` | 2 | accent_variant |
@@ -16646,9 +17771,11 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `prostétnic` | 2 | `prostetnic` | 3 | accent_variant |
 | `protegę` | 2 | `protégé` | 38 | accent_variant |
 | `protocólo` | 2 | `protocolo` | 15,696 | accent_variant |
+| `protoplasmica` | 2 | `protoplásmica` | 30 | unaccented |
 | `protége` | 2 | `protégé` | 38 | accent_variant |
 | `protócolo` | 2 | `protocolo` | 15,696 | accent_variant |
 | `protônico` | 2 | `protónico` | 7 | accent_variant |
+| `prova-io` | 2 | `prová-io` | 38 | unaccented |
 | `provenca` | 2 | `provença` | 147 | unaccented |
 | `providéncia` | 2 | `providência` | 2,183 | accent_variant |
 | `provisäo` | 2 | `provisão` | 3,880 | accent_variant |
@@ -16709,12 +17836,14 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pucara` | 2 | `púcara` | 94 | unaccented |
 | `pudessémos` | 2 | `pudessemos` | 839 | accent_variant |
 | `pudessêmos` | 2 | `pudessemos` | 839 | accent_variant |
+| `pugilistica` | 2 | `pugilística` | 20 | unaccented |
 | `pulmonía` | 2 | `pulmonia` | 4 | accent_variant |
 | `pulpito` | 2 | `púlpito` | 464 | unaccented |
 | `pulverizaçao` | 2 | `pulverização` | 232 | accent_variant |
 | `pulóver` | 2 | `pulôver` | 138 | accent_variant |
 | `punído` | 2 | `punido` | 1,003 | accent_variant |
 | `puoço` | 2 | `puoco` | 5 | accent_variant |
+| `puplica` | 2 | `púplica` | 34 | unaccented |
 | `purificaçăo` | 2 | `purificação` | 948 | accent_variant |
 | `purpúra` | 2 | `púrpura` | 1,771 | accent_variant |
 | `pustula` | 2 | `pústula` | 92 | unaccented |
@@ -16849,6 +17978,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `qõ` | 2 | `qo` | 28 | accent_variant |
 | `qùê` | 2 | `que` | 22,332,777 | accent_variant |
 | `qúe` | 2 | `que` | 22,332,777 | accent_variant |
+| `rabanos` | 2 | `rábanos` | 31 | unaccented |
 | `rabdomiolise` | 2 | `rabdomiólise` | 178 | unaccented |
 | `racões` | 2 | `racöes` | 6 | accent_variant |
 | `radiodifusao` | 2 | `radiodifusão` | 104 | unaccented |
@@ -16919,6 +18049,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `reformatôrio` | 2 | `reformatório` | 1,979 | accent_variant |
 | `refrao` | 2 | `refrão` | 784 | unaccented |
 | `regeneraçao` | 2 | `regeneração` | 1,073 | accent_variant |
+| `regulavel` | 2 | `regulável` | 34 | unaccented |
 | `regöczy` | 2 | `regoczy` | 4 | accent_variant |
 | `reiacões` | 2 | `reiaçóes` | 6 | accent_variant |
 | `reiaçáo` | 2 | `reiacão` | 8 | accent_variant |
@@ -17202,6 +18333,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `shampõo` | 2 | `shampoo` | 404 | accent_variant |
 | `shavásana` | 2 | `shavasana` | 10 | accent_variant |
 | `shelkóvo` | 2 | `shelkovo` | 2 | accent_variant |
+| `shengcun` | 2 | `shengcún` | 35 | unaccented |
 | `shité` | 2 | `shite` | 2 | accent_variant |
 | `shivà` | 2 | `shiva` | 750 | accent_variant |
 | `shivás` | 2 | `shivas` | 9 | accent_variant |
@@ -17217,6 +18349,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `signifícado` | 2 | `significado` | 15,369 | accent_variant |
 | `silex` | 2 | `sílex` | 73 | unaccented |
 | `silênciar` | 2 | `silenciar` | 3,618 | accent_variant |
+| `simbelmyne` | 2 | `simbelmynë` | 26 | unaccented |
 | `simbología` | 2 | `simbologia` | 128 | accent_variant |
 | `simplorio` | 2 | `simplório` | 995 | unaccented |
 | `simultaneo` | 2 | `simultâneo` | 1,407 | unaccented |
@@ -17232,6 +18365,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `sistemätica` | 2 | `sistemática` | 384 | accent_variant |
 | `sistemätico` | 2 | `sistemático` | 295 | accent_variant |
 | `situaciôn` | 2 | `situación` | 8 | accent_variant |
+| `situacoes` | 2 | `situacões` | 20 | unaccented |
 | `situaçào` | 2 | `situação` | 96,611 | accent_variant |
 | `skagafjörður` | 2 | `skagafjõrður` | 12 | accent_variant |
 | `skål` | 2 | `skal` | 16 | accent_variant |
@@ -17277,9 +18411,11 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `stén` | 2 | `sten` | 144 | accent_variant |
 | `stöcker` | 2 | `stocker` | 54 | accent_variant |
 | `stúdio` | 2 | `studio` | 663 | accent_variant |
+| `subaracnoidea` | 2 | `subaracnóidea` | 27 | unaccented |
 | `subaracnóideu` | 2 | `subaracnoideu` | 4 | accent_variant |
 | `subatomico` | 2 | `subatómico` | 415 | unaccented |
 | `subcomite` | 2 | `subcomité` | 281 | unaccented |
+| `subconsciencia` | 2 | `subconsciência` | 33 | unaccented |
 | `subdivisäo` | 2 | `subdivisão` | 152 | accent_variant |
 | `subestimá-io` | 2 | `subestima-io` | 2 | accent_variant |
 | `sublimacão` | 2 | `sublimação` | 86 | accent_variant |
@@ -17313,10 +18449,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `super-herôis` | 2 | `super-herois` | 10 | accent_variant |
 | `super-hétero` | 2 | `super-hetero` | 5 | accent_variant |
 | `super-policias` | 2 | `super-polícias` | 48 | unaccented |
+| `super-potencia` | 2 | `super-potência` | 31 | unaccented |
 | `super-tótó` | 2 | `super-totó` | 2 | accent_variant |
 | `superaçao` | 2 | `superação` | 130 | accent_variant |
 | `superfíicie` | 2 | `superfíície` | 14 | accent_variant |
 | `superheroís` | 2 | `superheróis` | 57 | accent_variant |
+| `superpolicia` | 2 | `superpolícia` | 21 | unaccented |
 | `superpotencias` | 2 | `superpotências` | 160 | unaccented |
 | `superstiçäo` | 2 | `superstição` | 2,380 | accent_variant |
 | `superstícioso` | 2 | `supersticioso` | 1,660 | accent_variant |
@@ -17441,7 +18579,9 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `tebaída` | 2 | `tebaida` | 7 | accent_variant |
 | `tecnológia` | 2 | `tecnologia` | 28,030 | accent_variant |
 | `tecnólogia` | 2 | `tecnologia` | 28,030 | accent_variant |
+| `tectonicas` | 2 | `tectônicas` | 36 | unaccented |
 | `telecinetica` | 2 | `telecinética` | 149 | unaccented |
+| `telecineticas` | 2 | `telecinéticas` | 27 | unaccented |
 | `telefönica` | 2 | `telefônica` | 458 | accent_variant |
 | `teletransportámos` | 2 | `teletransportamos` | 9 | accent_variant |
 | `teléporte` | 2 | `teleporte` | 223 | accent_variant |
@@ -17452,6 +18592,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `tenáz` | 2 | `tenaz` | 535 | accent_variant |
 | `tenés` | 2 | `tenes` | 3 | accent_variant |
 | `tenís` | 2 | `ténis` | 8,419 | accent_variant |
+| `teofilo` | 2 | `teófilo` | 23 | unaccented |
 | `terceíro` | 2 | `terceiro` | 50,133 | accent_variant |
 | `terencio` | 2 | `terêncio` | 51 | unaccented |
 | `termico` | 2 | `térmico` | 3,718 | unaccented |
@@ -17483,11 +18624,13 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `tigre-fêmea` | 2 | `tigre-femea` | 2 | accent_variant |
 | `timpânos` | 2 | `timpanos` | 9 | accent_variant |
 | `timón` | 2 | `timon` | 614 | accent_variant |
+| `tipoia` | 2 | `tipóia` | 35 | unaccented |
 | `tiranico` | 2 | `tirânico` | 192 | unaccented |
 | `tirotoxicósis` | 2 | `tirotoxicosis` | 2 | accent_variant |
 | `tirà-io` | 2 | `tirá-io` | 102 | accent_variant |
 | `tirámos-ihe` | 2 | `tiramos-ihe` | 8 | accent_variant |
 | `tirée` | 2 | `tiree` | 34 | accent_variant |
+| `titeres` | 2 | `títeres` | 33 | unaccented |
 | `titá` | 2 | `titã` | 2,430 | accent_variant |
 | `titánia` | 2 | `titânia` | 38 | accent_variant |
 | `tivessémos` | 2 | `tívessemos` | 28 | accent_variant |
@@ -17499,6 +18642,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `tolêrancia` | 2 | `tolerância` | 2,290 | accent_variant |
 | `tolú` | 2 | `tolu` | 15 | accent_variant |
 | `tomatás` | 2 | `tomatas` | 9 | accent_variant |
+| `tomografica` | 2 | `tomográfica` | 21 | unaccented |
 | `tonterías` | 2 | `tonterias` | 19 | accent_variant |
 | `tornar-te-às` | 2 | `tornar-te-ás` | 230 | accent_variant |
 | `torneé` | 2 | `tornée` | 14 | accent_variant |
@@ -17507,6 +18651,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `torréon` | 2 | `torreón` | 7 | accent_variant |
 | `toró` | 2 | `toro` | 1,366 | accent_variant |
 | `tosçana` | 2 | `toscana` | 377 | accent_variant |
+| `totil` | 2 | `tótil` | 23 | unaccented |
 | `totém` | 2 | `totem` | 1,034 | accent_variant |
 | `totêmico` | 2 | `totémico` | 8 | accent_variant |
 | `toucheé` | 2 | `touchée` | 13 | accent_variant |
@@ -17548,7 +18693,9 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `traumatología` | 2 | `traumatologia` | 407 | accent_variant |
 | `traversí` | 2 | `traversi` | 3 | accent_variant |
 | `travéstis` | 2 | `travestís` | 4 | accent_variant |
+| `traze-ia` | 2 | `trazê-ia` | 21 | unaccented |
 | `traze-io` | 2 | `trazê-io` | 91 | unaccented |
+| `traze-ios` | 2 | `trazê-ios` | 23 | unaccented |
 | `trazer-lhe-à` | 2 | `trazer-lhe-á` | 7 | accent_variant |
 | `traín` | 2 | `train` | 651 | accent_variant |
 | `tremoçeiros` | 2 | `tremoceiros` | 5 | accent_variant |
@@ -17579,6 +18726,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `trívial` | 2 | `trivial` | 1,481 | accent_variant |
 | `trópelio` | 2 | `tropelio` | 7 | accent_variant |
 | `tsê-tung` | 2 | `tse-tung` | 83 | accent_variant |
+| `tu-sabes-o-que` | 2 | `tu-sabes-o-quê` | 20 | unaccented |
 | `tubaros` | 2 | `túbaros` | 44 | unaccented |
 | `tubaría` | 2 | `tubária` | 10 | accent_variant |
 | `tuberculo` | 2 | `tubérculo` | 118 | unaccented |
@@ -17648,6 +18796,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `usá-lo-ás` | 2 | `usa-lo-ás` | 2 | accent_variant |
 | `uteís` | 2 | `uteis` | 62 | accent_variant |
 | `utilizaräo` | 2 | `utilizarao` | 3 | accent_variant |
+| `utima` | 2 | `útima` | 25 | unaccented |
 | `utópia` | 2 | `utopia` | 961 | accent_variant |
 | `uzbequistäo` | 2 | `uzbequistão` | 351 | accent_variant |
 | `uós` | 2 | `uos` | 2 | accent_variant |
@@ -17678,6 +18827,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `vedação-a-prova-de-coelhos` | 2 | `vedação-à-prova-de-coelhos` | 6 | accent_variant |
 | `vegetaçăo` | 2 | `vegetação` | 1,183 | accent_variant |
 | `velocimetro` | 2 | `velocímetro` | 106 | unaccented |
+| `velocipede` | 2 | `velocípede` | 25 | unaccented |
 | `velodrôme` | 2 | `vélodrome` | 7 | accent_variant |
 | `velàsquez` | 2 | `velásquez` | 93 | accent_variant |
 | `vencę` | 2 | `vençe` | 4 | accent_variant |
@@ -17826,6 +18976,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `yôichi` | 2 | `yoichi` | 113 | accent_variant |
 | `yöu` | 2 | `you` | 14,437 | accent_variant |
 | `zanzíbar` | 2 | `zanzibar` | 156 | accent_variant |
+| `zefiro` | 2 | `zéfiro` | 22 | unaccented |
 | `ziliao` | 2 | `zilião` | 93 | unaccented |
 | `zlótis` | 2 | `zlotis` | 113 | accent_variant |
 | `zoológíco` | 2 | `zoológico` | 4,451 | accent_variant |
@@ -17834,6 +18985,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `zélie` | 2 | `zelie` | 25 | accent_variant |
 | `zêlo` | 2 | `zelo` | 573 | accent_variant |
 | `zômbis` | 2 | `zombis` | 187 | accent_variant |
+| `ºaniversario` | 2 | `ºaniversário` | 32 | unaccented |
 | `àaa` | 2 | `aaa` | 401 | accent_variant |
 | `àdem` | 2 | `adem` | 210 | accent_variant |
 | `àe` | 2 | `ae` | 411 | accent_variant |
@@ -18145,6 +19297,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `abandonó` | 1 | `abandono` | 2,247 | accent_variant |
 | `abarçar` | 1 | `abarcar` | 216 | accent_variant |
 | `abebias` | 1 | `abébias` | 80 | unaccented |
+| `abeculas` | 1 | `abéculas` | 17 | unaccented |
 | `abelha-raínha` | 1 | `abelha-rainha` | 36 | accent_variant |
 | `abelhäo` | 1 | `abelhão` | 160 | accent_variant |
 | `abencoaa` | 1 | `abençoaa` | 25 | unaccented |
@@ -18184,6 +19337,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `abóbrinhas` | 1 | `abobrinhas` | 22 | accent_variant |
 | `abôrto` | 1 | `aborto` | 5,270 | accent_variant |
 | `acabarâs` | 1 | `acabaràs` | 2 | accent_variant |
+| `acabeca` | 1 | `acabeça` | 13 | unaccented |
 | `acabà` | 1 | `acába` | 3 | accent_variant |
 | `acabá-ia` | 1 | `acaba-ia` | 1 | accent_variant |
 | `acabámosdereceberuma` | 1 | `acabamosdereceberuma` | 1 | accent_variant |
@@ -18258,6 +19412,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `aculpanäofoi` | 1 | `aculpanãofoi` | 6 | accent_variant |
 | `aculá` | 1 | `acula` | 22 | accent_variant |
 | `acupressao` | 1 | `acupressão` | 57 | unaccented |
+| `acusa-io` | 1 | `acusá-io` | 14 | unaccented |
 | `acusar-te-äo` | 1 | `acusar-te-ão` | 3 | accent_variant |
 | `acusaçăo` | 1 | `acusação` | 31,829 | accent_variant |
 | `acustico` | 1 | `acústico` | 1,041 | unaccented |
@@ -18277,6 +19432,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `adamí` | 1 | `adami` | 31 | accent_variant |
 | `adança` | 1 | `adanca` | 2 | accent_variant |
 | `adaptaçăo` | 1 | `adaptação` | 13,262 | accent_variant |
+| `ademas` | 1 | `además` | 15 | unaccented |
 | `adenovirus` | 1 | `adenovírus` | 27 | unaccented |
 | `aderéços` | 1 | `aderecos` | 4 | accent_variant |
 | `adesao` | 1 | `adesão` | 295 | unaccented |
@@ -18322,6 +19478,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `adóravel` | 1 | `adorável` | 20,169 | accent_variant |
 | `adôrar` | 1 | `adorar` | 247,564 | accent_variant |
 | `adôrmeci` | 1 | `adormeçi` | 2 | accent_variant |
+| `aerofolio` | 1 | `aerofólio` | 16 | unaccented |
+| `aerografo` | 1 | `aerógrafo` | 13 | unaccented |
 | `aeromoca` | 1 | `aeromoça` | 105 | unaccented |
 | `aeronautico` | 1 | `aeronáutico` | 534 | unaccented |
 | `aeronáutíco` | 1 | `aeronáutico` | 534 | accent_variant |
@@ -18485,6 +19643,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `algonquín` | 1 | `algonquin` | 74 | accent_variant |
 | `algorítomo` | 1 | `algoritomo` | 8 | accent_variant |
 | `algua` | 1 | `alguã` | 64 | unaccented |
+| `algue` | 1 | `algué` | 13 | unaccented |
 | `alguién` | 1 | `alguien` | 68 | accent_variant |
 | `alguél` | 1 | `alguel` | 1 | accent_variant |
 | `alguémpôde` | 1 | `alguémpode` | 2 | accent_variant |
@@ -18495,6 +19654,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `algúmas` | 1 | `algumăs` | 1 | accent_variant |
 | `alho-pôrro` | 1 | `alho-porro` | 130 | accent_variant |
 | `ali-babá` | 1 | `ali-baba` | 4 | accent_variant |
+| `alianigenas` | 1 | `alianígenas` | 12 | unaccented |
 | `alienacao` | 1 | `alienação` | 244 | unaccented |
 | `alienaçao` | 1 | `alienação` | 244 | accent_variant |
 | `alienigênas` | 1 | `alienigenas` | 69 | accent_variant |
@@ -18514,6 +19674,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `alquimico` | 1 | `alquímico` | 40 | unaccented |
 | `alquinín` | 1 | `alquinin` | 4 | accent_variant |
 | `alsacia-lorena` | 1 | `alsácia-lorena` | 20 | unaccented |
+| `alskar` | 1 | `älskar` | 14 | unaccented |
 | `alta-vóz` | 1 | `alta-voz` | 1,011 | accent_variant |
 | `alteracäo` | 1 | `alteração` | 8,466 | accent_variant |
 | `alteraçôes` | 1 | `alteraçöes` | 13 | accent_variant |
@@ -18552,10 +19713,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `amablé` | 1 | `amable` | 13 | accent_variant |
 | `amalgáma` | 1 | `amálgama` | 228 | accent_variant |
 | `amanteigá` | 1 | `amanteiga` | 1 | accent_variant |
+| `amao` | 1 | `amão` | 16 | unaccented |
 | `amar-me-às` | 1 | `amar-me-ás` | 45 | accent_variant |
 | `amar-vos-à` | 1 | `amar-vos-á` | 10 | accent_variant |
 | `amaricà` | 1 | `amárica` | 4 | accent_variant |
 | `amarrà-io` | 1 | `amarra-io` | 4 | accent_variant |
+| `amasia` | 1 | `amásia` | 15 | unaccented |
 | `amatá` | 1 | `amata` | 6 | accent_variant |
 | `ambiguídade` | 1 | `ambiguidade` | 292 | accent_variant |
 | `ambulã` | 1 | `ambulâ` | 1 | accent_variant |
@@ -18579,6 +19742,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `amnistía` | 1 | `amnistia` | 1,288 | accent_variant |
 | `amnístia` | 1 | `amnistia` | 1,288 | accent_variant |
 | `amolaçäo` | 1 | `amolação` | 14 | accent_variant |
+| `amordacaa` | 1 | `amordaçaa` | 13 | unaccented |
 | `amordacar` | 1 | `amordaçar` | 1,047 | unaccented |
 | `amordacá` | 1 | `amordáça` | 2 | accent_variant |
 | `amordaçá-io` | 1 | `amordaçà-io` | 1 | accent_variant |
@@ -18682,6 +19846,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `antecipaçäo` | 1 | `antecipação` | 954 | accent_variant |
 | `antecípado` | 1 | `antecipado` | 548 | accent_variant |
 | `anteríormente` | 1 | `anteriormente` | 24,525 | accent_variant |
+| `anti-alergico` | 1 | `anti-alérgico` | 18 | unaccented |
 | `anti-angiogénica` | 1 | `anti-angiogênica` | 2 | accent_variant |
 | `anti-difamacão` | 1 | `anti-difamação` | 18 | accent_variant |
 | `anti-educaçäo` | 1 | `anti-educação` | 8 | accent_variant |
@@ -18696,8 +19861,10 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `anti-pornografía` | 1 | `anti-pornografia` | 2 | accent_variant |
 | `anti-psicotico` | 1 | `anti-psicótico` | 73 | unaccented |
 | `anti-radiaçao` | 1 | `anti-radiação` | 133 | accent_variant |
+| `anti-semiticos` | 1 | `anti-semíticos` | 15 | unaccented |
 | `anti-semíta` | 1 | `anti-semita` | 279 | accent_variant |
 | `anti-seqüestro` | 1 | `anti-sequestro` | 11 | accent_variant |
+| `anti-suicidio` | 1 | `anti-suicídio` | 13 | unaccented |
 | `anti-taquiônico` | 1 | `anti-taquiónico` | 1 | accent_variant |
 | `anti-vampírico` | 1 | `anti-vampiríco` | 1 | accent_variant |
 | `anti-áereas` | 1 | `anti-aereas` | 1 | accent_variant |
@@ -18868,6 +20035,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `araçnofobia` | 1 | `aracnofobia` | 46 | accent_variant |
 | `arbitrario` | 1 | `arbitrário` | 667 | unaccented |
 | `arca-íris` | 1 | `arca-iris` | 1 | accent_variant |
+| `arcades` | 1 | `árcades` | 15 | unaccented |
 | `arcaíca` | 1 | `arcáica` | 8 | accent_variant |
 | `arcebíspo` | 1 | `arcebispo` | 2,018 | accent_variant |
 | `arcos-iris` | 1 | `arcos-íris` | 82 | unaccented |
@@ -18892,6 +20060,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `arnés` | 1 | `arnês` | 436 | accent_variant |
 | `arnêses` | 1 | `arneses` | 68 | accent_variant |
 | `aromàtico` | 1 | `aromático` | 414 | accent_variant |
+| `arore` | 1 | `árore` | 12 | unaccented |
 | `arpégios` | 1 | `arpegios` | 2 | accent_variant |
 | `arpăo` | 1 | `arpão` | 1,195 | accent_variant |
 | `arqueologico` | 1 | `arqueológico` | 944 | unaccented |
@@ -18992,6 +20161,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `assínar` | 1 | `assinar` | 61,267 | accent_variant |
 | `assóro` | 1 | `assoro` | 1 | accent_variant |
 | `assù` | 1 | `assu` | 5 | accent_variant |
+| `asteroidal` | 1 | `asteróidal` | 12 | unaccented |
 | `asterísco` | 1 | `asterisco` | 276 | accent_variant |
 | `asteríxis` | 1 | `asterixis` | 5 | accent_variant |
 | `astrofenômenos` | 1 | `astrofenómenos` | 7 | accent_variant |
@@ -19000,6 +20170,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `astrológicamente` | 1 | `astrologicamente` | 23 | accent_variant |
 | `astrológo` | 1 | `astrólogo` | 524 | accent_variant |
 | `astronoma` | 1 | `astrônoma` | 45 | unaccented |
+| `astronomicas` | 1 | `astronômicas` | 17 | unaccented |
 | `astronomico` | 1 | `astronómico` | 690 | unaccented |
 | `astronomicos` | 1 | `astronômicos` | 40 | unaccented |
 | `astronómo` | 1 | `astrónomo` | 989 | accent_variant |
@@ -19023,6 +20194,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `atejá` | 1 | `atéjá` | 10 | accent_variant |
 | `atelevisão` | 1 | `àtelevisão` | 2 | accent_variant |
 | `atenciòn` | 1 | `atención` | 16 | accent_variant |
+| `atende-io` | 1 | `atendê-io` | 10 | unaccented |
 | `aterrizá` | 1 | `aterriza` | 4 | accent_variant |
 | `aterrizár` | 1 | `aterrizar` | 100 | accent_variant |
 | `aterrizé` | 1 | `aterrize` | 4 | accent_variant |
@@ -19031,6 +20203,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `atingír` | 1 | `atingir` | 66,472 | accent_variant |
 | `atipico` | 1 | `atípico` | 354 | unaccented |
 | `atira-io` | 1 | `atirá-io` | 28 | unaccented |
+| `atiranco` | 1 | `atiranço` | 18 | unaccented |
 | `atiraräo` | 1 | `atirarao` | 2 | accent_variant |
 | `atirávaa` | 1 | `atiravaa` | 55 | accent_variant |
 | `atirã` | 1 | `atirà` | 3 | accent_variant |
@@ -19045,12 +20218,14 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `atmosferico` | 1 | `atmosférico` | 1,398 | unaccented |
 | `atomico` | 1 | `atómico` | 3,636 | unaccented |
 | `atomicos` | 1 | `atômicos` | 97 | unaccented |
+| `atonita` | 1 | `atônita` | 18 | unaccented |
 | `atonito` | 1 | `atónito` | 148 | unaccented |
 | `atorá` | 1 | `atora` | 2 | accent_variant |
 | `atoró` | 1 | `atoro` | 1 | accent_variant |
 | `atracao` | 1 | `atração` | 5,976 | unaccented |
 | `atraccâo` | 1 | `atracçäo` | 18 | accent_variant |
 | `atracçăo` | 1 | `atracçäo` | 18 | accent_variant |
+| `atrai-io` | 1 | `atraí-io` | 13 | unaccented |
 | `atrairàs` | 1 | `atrairas` | 2 | accent_variant |
 | `atrairía` | 1 | `atraíria` | 8 | accent_variant |
 | `atraiçoáste` | 1 | `atraicoaste` | 3 | accent_variant |
@@ -19090,10 +20265,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `atúa` | 1 | `ãtua` | 13 | accent_variant |
 | `audicäo` | 1 | `audição` | 11,166 | accent_variant |
 | `audicões` | 1 | `audiçöes` | 5 | accent_variant |
+| `audio-livro` | 1 | `áudio-livro` | 12 | unaccented |
 | `audiçòes` | 1 | `audiçöes` | 5 | accent_variant |
 | `audàcia` | 1 | `audácia` | 1,260 | accent_variant |
 | `auréa` | 1 | `aurea` | 15 | accent_variant |
 | `aurícular` | 1 | `auricular` | 1,176 | accent_variant |
+| `australasia` | 1 | `australásia` | 13 | unaccented |
 | `austro-suiça` | 1 | `austro-suíça` | 2 | accent_variant |
 | `austrálla` | 1 | `austràlla` | 1 | accent_variant |
 | `austrâlia` | 1 | `austrália` | 5,743 | accent_variant |
@@ -19134,8 +20311,10 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `automã` | 1 | `automá` | 7 | accent_variant |
 | `automòvel` | 1 | `automóvel` | 8,322 | accent_variant |
 | `automôveis` | 1 | `automoveis` | 33 | accent_variant |
+| `autonomas` | 1 | `autônomas` | 11 | unaccented |
 | `autoperpetuá` | 1 | `autoperpetua` | 2 | accent_variant |
 | `autoritario` | 1 | `autoritário` | 694 | unaccented |
+| `autorradio` | 1 | `autorrádio` | 17 | unaccented |
 | `autorídade` | 1 | `autoridade` | 31,205 | accent_variant |
 | `autênticamente` | 1 | `autenticamente` | 39 | accent_variant |
 | `autênticação` | 1 | `autenticação` | 508 | accent_variant |
@@ -19145,10 +20324,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `autóps` | 1 | `autops` | 2 | accent_variant |
 | `auxilío` | 1 | `auxílio` | 2,542 | accent_variant |
 | `avaiiàmos` | 1 | `avaiiámos` | 2 | accent_variant |
+| `avaliaa` | 1 | `avaliaã` | 10 | unaccented |
 | `avaliacäo` | 1 | `avaliação` | 9,532 | accent_variant |
 | `avaliaçoes` | 1 | `avaliacoes` | 1 | accent_variant |
 | `avaliaçöes` | 1 | `avaliacoes` | 1 | accent_variant |
 | `avaliár` | 1 | `avaliar` | 11,561 | accent_variant |
+| `avana` | 1 | `avanã` | 18 | unaccented |
 | `avançavámos` | 1 | `avançavamos` | 1 | accent_variant |
 | `avariádo` | 1 | `avariado` | 5,303 | accent_variant |
 | `avaría` | 1 | `avaria` | 3,541 | accent_variant |
@@ -19161,6 +20342,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `aviaozinho` | 1 | `aviãozinho` | 124 | unaccented |
 | `aviario` | 1 | `aviário` | 544 | unaccented |
 | `aviaçăo` | 1 | `aviação` | 2,257 | accent_variant |
+| `aviles` | 1 | `avilés` | 12 | unaccented |
 | `avisa-io` | 1 | `avisá-io` | 45 | unaccented |
 | `avisà-io` | 1 | `avisá-io` | 45 | accent_variant |
 | `aviáo` | 1 | `avião` | 92,572 | accent_variant |
@@ -19219,6 +20401,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `b-é` | 1 | `b-e` | 9 | accent_variant |
 | `baarova` | 1 | `baarová` | 38 | unaccented |
 | `babação` | 1 | `babacão` | 27 | accent_variant |
+| `babilonicas` | 1 | `babilônicas` | 14 | unaccented |
 | `babilonio` | 1 | `babilónio` | 142 | unaccented |
 | `babilõnia` | 1 | `babilónia` | 1,249 | accent_variant |
 | `babybjörn` | 1 | `babybjorn` | 4 | accent_variant |
@@ -19260,6 +20443,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `bantú` | 1 | `bantu` | 74 | accent_variant |
 | `banço` | 1 | `banco` | 73,622 | accent_variant |
 | `baptisá` | 1 | `baptisa` | 1 | accent_variant |
+| `bar-mitzva` | 1 | `bar-mitzvá` | 14 | unaccented |
 | `barbésula` | 1 | `barbesula` | 1 | accent_variant |
 | `bardón` | 1 | `bardon` | 100 | accent_variant |
 | `bariônica` | 1 | `bariónica` | 2 | accent_variant |
@@ -19332,6 +20516,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `benevolo` | 1 | `benévolo` | 138 | unaccented |
 | `benicássim` | 1 | `benicassim` | 4 | accent_variant |
 | `bentónica` | 1 | `bentônica` | 2 | accent_variant |
+| `benzoilo` | 1 | `benzoílo` | 11 | unaccented |
 | `bençâos` | 1 | `bencaos` | 12 | accent_variant |
 | `bençăo` | 1 | `bênção` | 8,778 | accent_variant |
 | `benê` | 1 | `bene` | 590 | accent_variant |
@@ -19345,10 +20530,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `beía` | 1 | `beiã` | 1 | accent_variant |
 | `beíjo` | 1 | `beijo` | 34,940 | accent_variant |
 | `beócia` | 1 | `beocia` | 14 | accent_variant |
+| `bi-localizacao` | 1 | `bi-localização` | 15 | unaccented |
 | `bibiioteça` | 1 | `bibiioteca` | 1 | accent_variant |
 | `biblíazinha` | 1 | `bibliazinha` | 1 | accent_variant |
 | `biblícas` | 1 | `biblicas` | 13 | accent_variant |
 | `biblícos` | 1 | `biblicos` | 6 | accent_variant |
+| `bicepe` | 1 | `bícepe` | 19 | unaccented |
 | `bicho-papao` | 1 | `bicho-papão` | 393 | unaccented |
 | `bicícleta` | 1 | `bicicleta` | 17,153 | accent_variant |
 | `bidóes` | 1 | `bidoes` | 3 | accent_variant |
@@ -19362,6 +20549,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `bilíngües` | 1 | `bilíngues` | 15 | accent_variant |
 | `binóçuios` | 1 | `binòcuios` | 2 | accent_variant |
 | `binômio` | 1 | `binómio` | 15 | accent_variant |
+| `bio-degradavel` | 1 | `bio-degradável` | 12 | unaccented |
 | `bio-genética` | 1 | `bio-genetica` | 2 | accent_variant |
 | `biodegradaveis` | 1 | `biodegradáveis` | 55 | unaccented |
 | `biodegradavel` | 1 | `biodegradável` | 102 | unaccented |
@@ -19378,6 +20566,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `bionicos` | 1 | `biónicos` | 46 | unaccented |
 | `bioquãntica` | 1 | `bioquântica` | 14 | accent_variant |
 | `bioquímicamente` | 1 | `bioquimicamente` | 9 | accent_variant |
+| `biotecnica` | 1 | `biotécnica` | 11 | unaccented |
 | `biotecnologico` | 1 | `biotecnológico` | 35 | unaccented |
 | `bioélectrico` | 1 | `bioeléctrico` | 25 | accent_variant |
 | `bistrôt` | 1 | `bistrot` | 11 | accent_variant |
@@ -19391,6 +20580,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `bióritmo` | 1 | `bioritmo` | 5 | accent_variant |
 | `björgvin` | 1 | `bjorgvin` | 1 | accent_variant |
 | `blabla` | 1 | `blablá` | 20 | unaccented |
+| `blacula` | 1 | `blácula` | 14 | unaccented |
 | `blasfemias` | 1 | `blasfêmias` | 41 | unaccented |
 | `blasfèmico` | 1 | `blasfémico` | 11 | accent_variant |
 | `blasfèmicos` | 1 | `blasfémicos` | 2 | accent_variant |
@@ -19496,6 +20686,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `buiçöes` | 1 | `buições` | 2 | accent_variant |
 | `buldôzer` | 1 | `buldózer` | 30 | accent_variant |
 | `bulgákov` | 1 | `bulgakov` | 56 | accent_variant |
+| `bulimicos` | 1 | `bulímicos` | 16 | unaccented |
 | `bulimíca` | 1 | `bulímica` | 162 | accent_variant |
 | `bundônas` | 1 | `bundonas` | 2 | accent_variant |
 | `bungalô` | 1 | `bungalo` | 2 | accent_variant |
@@ -19510,6 +20701,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `buró` | 1 | `buro` | 6 | accent_variant |
 | `burócrata` | 1 | `burocrata` | 1,685 | accent_variant |
 | `busca-lá` | 1 | `buscá-lá` | 3 | accent_variant |
+| `busca-polos` | 1 | `busca-pólos` | 17 | unaccented |
 | `buscà-ia` | 1 | `buscá-ia` | 66 | accent_variant |
 | `buscá-ío` | 1 | `buscá-io` | 265 | accent_variant |
 | `buscáa` | 1 | `buscaa` | 3 | accent_variant |
@@ -19604,11 +20796,13 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `bă` | 1 | `ba` | 2,511 | accent_variant |
 | `bănh` | 1 | `banh` | 59 | accent_variant |
 | `břežany` | 1 | `brezany` | 2 | accent_variant |
+| `c'e` | 1 | `c'è` | 12 | unaccented |
 | `cabarê` | 1 | `cabaré` | 537 | accent_variant |
 | `cabarêts` | 1 | `cabarets` | 31 | accent_variant |
 | `cabeca-de-vento` | 1 | `cabeça-de-vento` | 31 | unaccented |
 | `cabeca-oca` | 1 | `cabeça-oca` | 36 | unaccented |
 | `cabecalho` | 1 | `cabeçalho` | 1,088 | unaccented |
+| `cabecas-de-toalha` | 1 | `cabeças-de-toalha` | 10 | unaccented |
 | `cabecorra` | 1 | `cabeçorra` | 150 | unaccented |
 | `cabecão` | 1 | `cabeção` | 164 | accent_variant |
 | `caber-me-á` | 1 | `caber-me-à` | 1 | accent_variant |
@@ -19623,6 +20817,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `cabrăo` | 1 | `cabrão` | 53,311 | accent_variant |
 | `cabála` | 1 | `cabala` | 469 | accent_variant |
 | `caca-níqueis` | 1 | `caça-níqueis` | 66 | accent_variant |
+| `cacavamos` | 1 | `caçavamos` | 10 | unaccented |
 | `cacetéte` | 1 | `cacetete` | 52 | accent_variant |
 | `cachepó` | 1 | `cachepô` | 3 | accent_variant |
 | `cachimônia` | 1 | `cachimónia` | 31 | accent_variant |
@@ -19633,6 +20828,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `cafetâo` | 1 | `cafetão` | 225 | accent_variant |
 | `cafetãomóvel` | 1 | `cafetãomovel` | 2 | accent_variant |
 | `cafeínada` | 1 | `cafeinada` | 8 | accent_variant |
+| `cafune` | 1 | `cafuné` | 17 | unaccented |
 | `cagalhao` | 1 | `cagalhão` | 543 | unaccented |
 | `cagarräo` | 1 | `cagarrão` | 14 | accent_variant |
 | `cagoes` | 1 | `cagões` | 47 | unaccented |
@@ -19733,6 +20929,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `capitól` | 1 | `capitol` | 577 | accent_variant |
 | `capitôlio` | 1 | `capitólio` | 3,265 | accent_variant |
 | `captao` | 1 | `captão` | 78 | unaccented |
+| `captitao` | 1 | `captitão` | 15 | unaccented |
 | `capturà` | 1 | `captura` | 6,226 | accent_variant |
 | `capturà-io` | 1 | `capturá-io` | 16 | accent_variant |
 | `capturár` | 1 | `capturar` | 25,166 | accent_variant |
@@ -19740,6 +20937,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `capìtao` | 1 | `capitão` | 143,903 | accent_variant |
 | `capívara` | 1 | `capivara` | 34 | accent_variant |
 | `capôn` | 1 | `capon` | 8 | accent_variant |
+| `caquetica` | 1 | `caquética` | 13 | unaccented |
 | `cara-de-bebê` | 1 | `cara-de-bebé` | 10 | accent_variant |
 | `cara-de-cocô` | 1 | `cara-de-cocó` | 7 | accent_variant |
 | `caracteristíco` | 1 | `característico` | 516 | accent_variant |
@@ -19788,6 +20986,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `casar-te-às` | 1 | `casar-te-ás` | 18 | accent_variant |
 | `casaräo` | 1 | `casarão` | 665 | accent_variant |
 | `casasó` | 1 | `casaso` | 3 | accent_variant |
+| `cassara` | 1 | `cassarà` | 18 | unaccented |
 | `castical` | 1 | `castiçal` | 392 | unaccented |
 | `castracão` | 1 | `castração` | 408 | accent_variant |
 | `castracäo` | 1 | `castração` | 408 | accent_variant |
@@ -19847,6 +21046,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `cepcäo` | 1 | `cepção` | 2 | accent_variant |
 | `cepçäo` | 1 | `cepção` | 2 | accent_variant |
 | `cerbère` | 1 | `cerbere` | 2 | accent_variant |
+| `cerebro-espinhal` | 1 | `cérebro-espinhal` | 17 | unaccented |
 | `cerimônica` | 1 | `cerimónica` | 2 | accent_variant |
 | `cerimönia` | 1 | `cerimónia` | 13,099 | accent_variant |
 | `certificár` | 1 | `certificar` | 31,597 | accent_variant |
@@ -19968,6 +21168,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `cidadâo` | 1 | `cidadão` | 21,891 | accent_variant |
 | `cidadāos` | 1 | `cidadaos` | 43 | accent_variant |
 | `cidadăo` | 1 | `cidadão` | 21,891 | accent_variant |
+| `ciemencia` | 1 | `ciemência` | 12 | unaccented |
 | `ciencias-políticas` | 1 | `ciências-políticas` | 2 | accent_variant |
 | `cienciología` | 1 | `cienciologia` | 2 | accent_variant |
 | `ciencîas` | 1 | `ciencias` | 38 | accent_variant |
@@ -20043,6 +21244,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `co-anfitriäo` | 1 | `co-anfitrião` | 23 | accent_variant |
 | `co-capitào` | 1 | `co-capitão` | 96 | accent_variant |
 | `co-co-ro-co-có` | 1 | `có-có-ró-có-có` | 8 | accent_variant |
+| `co-consul` | 1 | `co-cônsul` | 13 | unaccented |
 | `co-cô` | 1 | `có-có` | 28 | accent_variant |
 | `co-depêndencia` | 1 | `co-dependência` | 64 | accent_variant |
 | `co-locatária` | 1 | `co-locataria` | 2 | accent_variant |
@@ -20070,6 +21272,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `coesäo` | 1 | `coesão` | 283 | accent_variant |
 | `cogitacao` | 1 | `cogitação` | 120 | unaccented |
 | `cogí` | 1 | `cogi` | 5 | accent_variant |
+| `coicidencia` | 1 | `coicidência` | 11 | unaccented |
 | `coiecçao` | 1 | `coieccão` | 4 | accent_variant |
 | `coieççionador` | 1 | `coieccionador` | 3 | accent_variant |
 | `coincidęncia` | 1 | `coincidência` | 18,490 | accent_variant |
@@ -20084,6 +21287,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `colagéno` | 1 | `colágeno` | 59 | accent_variant |
 | `colagênio` | 1 | `colagénio` | 159 | accent_variant |
 | `colapsaría` | 1 | `colapsaria` | 10 | accent_variant |
+| `colasa` | 1 | `colása` | 14 | unaccented |
 | `coleccionà` | 1 | `colecciona` | 645 | accent_variant |
 | `colecistectomías` | 1 | `colecistectomias` | 8 | accent_variant |
 | `colecçionador` | 1 | `coleccionador` | 2,153 | accent_variant |
@@ -20115,6 +21319,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `coléra` | 1 | `cólera` | 1,775 | accent_variant |
 | `colêtania` | 1 | `coletânia` | 1 | accent_variant |
 | `colócaa` | 1 | `colocaa` | 1,514 | accent_variant |
+| `com'as` | 1 | `com'ás` | 13 | unaccented |
 | `com'e` | 1 | `com'é` | 95 | unaccented |
 | `comamãe` | 1 | `comamae` | 1 | accent_variant |
 | `combatë` | 1 | `combate` | 39,433 | accent_variant |
@@ -20157,6 +21362,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `comlssâo` | 1 | `çomlssão` | 2 | accent_variant |
 | `comlssârlo` | 1 | `comlssàrlo` | 1 | accent_variant |
 | `commencé` | 1 | `commence` | 27 | accent_variant |
+| `comodas` | 1 | `cômodas` | 16 | unaccented |
 | `compaixăo` | 1 | `compaixão` | 7,473 | accent_variant |
 | `companero` | 1 | `compañero` | 48 | unaccented |
 | `companía` | 1 | `compania` | 155 | accent_variant |
@@ -20177,6 +21383,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `complicacöes` | 1 | `complicaçöes` | 16 | accent_variant |
 | `complicaçäo` | 1 | `complicação` | 5,346 | accent_variant |
 | `complicaçőes` | 1 | `complicaçöes` | 16 | accent_variant |
+| `complos` | 1 | `complôs` | 15 | unaccented |
 | `complêtement` | 1 | `complètement` | 4 | accent_variant |
 | `composito` | 1 | `compósito` | 97 | unaccented |
 | `composíção` | 1 | `composição` | 3,347 | accent_variant |
@@ -20215,6 +21422,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `conbustivél` | 1 | `conbustível` | 4 | accent_variant |
 | `conceder-nos-à` | 1 | `conceder-nos-á` | 4 | accent_variant |
 | `conceiçâo` | 1 | `conceição` | 91 | accent_variant |
+| `concepcao` | 1 | `concepçäo` | 10 | unaccented |
 | `concetração` | 1 | `concetraçao` | 1 | accent_variant |
 | `conciliaçäo` | 1 | `conciliação` | 157 | accent_variant |
 | `concièrge` | 1 | `concierge` | 248 | accent_variant |
@@ -20251,6 +21459,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `confirmacöes` | 1 | `confirmacões` | 1 | accent_variant |
 | `confirmaçöes` | 1 | `confirmacões` | 1 | accent_variant |
 | `confiscaçäo` | 1 | `confiscação` | 262 | accent_variant |
+| `confissionario` | 1 | `confissionário` | 12 | unaccented |
 | `confiàmos` | 1 | `confíamos` | 2 | accent_variant |
 | `confiár` | 1 | `confiar` | 168,396 | accent_variant |
 | `confiêm` | 1 | `confíem` | 7 | accent_variant |
@@ -20337,6 +21546,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `constantinópolis` | 1 | `constantinopolis` | 1 | accent_variant |
 | `constituiçào` | 1 | `constituição` | 4,478 | accent_variant |
 | `constopoioçoius` | 1 | `constopoiocoius` | 3 | accent_variant |
+| `constroia` | 1 | `constróia` | 18 | unaccented |
 | `constroí` | 1 | `constroi` | 109 | accent_variant |
 | `constroí-um-urso` | 1 | `constrói-um-urso` | 4 | accent_variant |
 | `construiría` | 1 | `construíria` | 3 | accent_variant |
@@ -20355,6 +21565,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `consúl` | 1 | `cônsul` | 2,314 | accent_variant |
 | `contabil` | 1 | `contábil` | 24 | unaccented |
 | `contacta-io` | 1 | `contactá-io` | 25 | unaccented |
+| `contacta-ios` | 1 | `contactá-ios` | 18 | unaccented |
 | `contactàei` | 1 | `contactaei` | 1 | accent_variant |
 | `contactàvamos` | 1 | `contactavamos` | 2 | accent_variant |
 | `contactár` | 1 | `contactar` | 40,815 | accent_variant |
@@ -20369,6 +21580,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `continúem` | 1 | `çontinuem` | 3 | accent_variant |
 | `continúen` | 1 | `continuen` | 1 | accent_variant |
 | `contra-atacaräo` | 1 | `contra-atacarão` | 2 | accent_variant |
+| `contra-interroga` | 1 | `contra-interrogá` | 11 | unaccented |
 | `contra-interrogatôrio` | 1 | `contra-interrogatório` | 143 | accent_variant |
 | `contra-investigaçao` | 1 | `contra-investigação` | 5 | accent_variant |
 | `contra-relógío` | 1 | `contra-relógio` | 150 | accent_variant |
@@ -20402,6 +21614,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `contìnue` | 1 | `continúe` | 23 | accent_variant |
 | `contínuamos` | 1 | `continuàmos` | 2 | accent_variant |
 | `contô` | 1 | `contó` | 2 | accent_variant |
+| `convence-ia` | 1 | `convencê-ia` | 13 | unaccented |
 | `convencè` | 1 | `convençe` | 14 | accent_variant |
 | `convencê-los-á` | 1 | `convencê-los-à` | 1 | accent_variant |
 | `convenio` | 1 | `convénio` | 434 | unaccented |
@@ -20428,7 +21641,9 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `coolíes` | 1 | `coolies` | 2 | accent_variant |
 | `cooperacao` | 1 | `cooperação` | 4,517 | unaccented |
 | `coordenacao` | 1 | `coordenação` | 1,202 | unaccented |
+| `copan` | 1 | `copán` | 10 | unaccented |
 | `copianco` | 1 | `copianço` | 58 | unaccented |
+| `copiapo` | 1 | `copiapó` | 18 | unaccented |
 | `copió` | 1 | `copio` | 147 | accent_variant |
 | `copo-d'agua` | 1 | `copo-d'água` | 169 | unaccented |
 | `coppélia` | 1 | `coppelia` | 9 | accent_variant |
@@ -20438,6 +21653,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `coraçoezinhos` | 1 | `coracõezinhos` | 6 | accent_variant |
 | `corca` | 1 | `corça` | 334 | unaccented |
 | `corco` | 1 | `corço` | 84 | unaccented |
+| `cordobes` | 1 | `cordobés` | 13 | unaccented |
 | `cordäo` | 1 | `cordão` | 3,113 | accent_variant |
 | `cordêis` | 1 | `cordeís` | 1 | accent_variant |
 | `coreó` | 1 | `coreo` | 7 | accent_variant |
@@ -20482,6 +21698,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `cotonóides` | 1 | `cotonoides` | 5 | accent_variant |
 | `coubói` | 1 | `couboi` | 1 | accent_variant |
 | `coulée` | 1 | `coulee` | 19 | accent_variant |
+| `coupes` | 1 | `coupés` | 11 | unaccented |
 | `courrege` | 1 | `courrège` | 40 | unaccented |
 | `covê` | 1 | `cove` | 931 | accent_variant |
 | `covês` | 1 | `coves` | 7 | accent_variant |
@@ -20510,8 +21727,10 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `cremacao` | 1 | `cremação` | 532 | unaccented |
 | `cremaçäo` | 1 | `cremação` | 532 | accent_variant |
 | `crenca` | 1 | `crença` | 7,338 | unaccented |
+| `crepin` | 1 | `crépin` | 11 | unaccented |
 | `creó` | 1 | `creò` | 1 | accent_variant |
 | `creăo` | 1 | `creão` | 2 | accent_variant |
+| `criana` | 1 | `crianã` | 15 | unaccented |
 | `criancas-soldado` | 1 | `crianças-soldado` | 56 | unaccented |
 | `criaräo` | 1 | `criarao` | 1 | accent_variant |
 | `cricotiróide` | 1 | `cricotiroide` | 1 | accent_variant |
@@ -20598,9 +21817,11 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `cumprimentâ` | 1 | `cumprimentà` | 4 | accent_variant |
 | `cumprimentä` | 1 | `cumprimentà` | 4 | accent_variant |
 | `cumúlo` | 1 | `cúmulo` | 437 | accent_variant |
+| `cupe` | 1 | `cupê` | 11 | unaccented |
 | `cupäo` | 1 | `cupão` | 1,789 | accent_variant |
 | `cupês` | 1 | `cupes` | 2 | accent_variant |
 | `cupôm` | 1 | `cupom` | 100 | accent_variant |
+| `curacau` | 1 | `curaçau` | 15 | unaccented |
 | `curar-nos-à` | 1 | `curar-nos-á` | 5 | accent_variant |
 | `curavel` | 1 | `curável` | 203 | unaccented |
 | `curtiçäo` | 1 | `curtição` | 307 | accent_variant |
@@ -20790,6 +22011,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `căozinho` | 1 | `cãozinho` | 4,848 | accent_variant |
 | `d'angoulême` | 1 | `d'angouleme` | 1 | accent_variant |
 | `d'lsère` | 1 | `d'lsere` | 8 | accent_variant |
+| `d'orleans` | 1 | `d'orléans` | 11 | unaccented |
 | `d'où` | 1 | `d'ou` | 1 | accent_variant |
 | `d'ésta` | 1 | `d'esta` | 9 | accent_variant |
 | `d-dímer` | 1 | `d-dimer` | 2 | accent_variant |
@@ -20800,6 +22022,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `dactilografía` | 1 | `dactilografia` | 217 | accent_variant |
 | `dactilográfo` | 1 | `dactilógrafo` | 102 | accent_variant |
 | `dactilôgrafo` | 1 | `dactilógrafo` | 102 | accent_variant |
+| `dadaismo` | 1 | `dadaísmo` | 13 | unaccented |
 | `dadé` | 1 | `dade` | 901 | accent_variant |
 | `dagrão` | 1 | `dagrao` | 4 | accent_variant |
 | `daimiô` | 1 | `daimio` | 2 | accent_variant |
@@ -20816,6 +22039,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `daquií` | 1 | `daquii` | 2 | accent_variant |
 | `dar-lhe-às` | 1 | `dar-lhe-ás` | 30 | accent_variant |
 | `dar-lhe-ã` | 1 | `dar-lhe-á` | 533 | accent_variant |
+| `dar-me-ieis` | 1 | `dar-me-íeis` | 10 | unaccented |
 | `dar-me-âo` | 1 | `dar-me-ão` | 101 | accent_variant |
 | `dar-vos-à` | 1 | `dar-vos-á` | 229 | accent_variant |
 | `darjá` | 1 | `darja` | 2 | accent_variant |
@@ -20836,9 +22060,11 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `dañar` | 1 | `danar` | 1,899 | accent_variant |
 | `daõ` | 1 | `däo` | 123 | accent_variant |
 | `de-ihe` | 1 | `dê-ihe` | 123 | unaccented |
+| `de-ihes` | 1 | `dê-ihes` | 16 | unaccented |
 | `de-lha` | 1 | `dê-lha` | 77 | unaccented |
 | `de-mas` | 1 | `dê-mas` | 99 | unaccented |
 | `de-tóxico` | 1 | `de-toxico` | 2 | accent_variant |
+| `debativel` | 1 | `debatível` | 12 | unaccented |
 | `deberían` | 1 | `deberian` | 2 | accent_variant |
 | `debilitaçao` | 1 | `debilitação` | 23 | accent_variant |
 | `deburré` | 1 | `deburre` | 1 | accent_variant |
@@ -20854,6 +22080,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `deciaraçao` | 1 | `deciaracão` | 8 | accent_variant |
 | `deciaraçoes` | 1 | `deciaracões` | 1 | accent_variant |
 | `deciaraçâo` | 1 | `deciaracão` | 8 | accent_variant |
+| `decio` | 1 | `décio` | 10 | unaccented |
+| `decisa` | 1 | `decisã` | 12 | unaccented |
 | `decisaõ` | 1 | `decisão` | 74,538 | accent_variant |
 | `decisőes` | 1 | `decisöes` | 32 | accent_variant |
 | `declaraçâo` | 1 | `declaração` | 19,457 | accent_variant |
@@ -20866,6 +22094,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `decoracao` | 1 | `decoração` | 4,620 | unaccented |
 | `decoracäo` | 1 | `decoração` | 4,620 | accent_variant |
 | `decoraçâo` | 1 | `decoração` | 4,620 | accent_variant |
+| `decors` | 1 | `décors` | 14 | unaccented |
 | `decátlo` | 1 | `decatlo` | 289 | accent_variant |
 | `decérto` | 1 | `decerto` | 7,743 | accent_variant |
 | `dedicar-se-à` | 1 | `dedicar-se-á` | 10 | accent_variant |
@@ -20890,9 +22119,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `degeneracao` | 1 | `degeneração` | 464 | unaccented |
 | `degeneraçao` | 1 | `degeneração` | 464 | accent_variant |
 | `degeneraçáo` | 1 | `degeneração` | 464 | accent_variant |
+| `degradavel` | 1 | `degradável` | 12 | unaccented |
 | `degustacao` | 1 | `degustação` | 377 | unaccented |
 | `degüello` | 1 | `deguello` | 14 | accent_variant |
+| `deiphobus` | 1 | `deíphobus` | 14 | unaccented |
 | `deirá` | 1 | `deira` | 53 | accent_variant |
+| `deita-io` | 1 | `deitá-io` | 18 | unaccented |
 | `deixa-lo-á` | 1 | `deixá-lo-á` | 55 | accent_variant |
 | `deixa-los-á` | 1 | `deixá-los-á` | 6 | accent_variant |
 | `deixar-lhe-à` | 1 | `deixar-lhe-á` | 4 | accent_variant |
@@ -20906,6 +22138,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `dejávu` | 1 | `dejavú` | 28 | accent_variant |
 | `delegaçőes` | 1 | `delegacões` | 2 | accent_variant |
 | `deleitavél` | 1 | `deleitável` | 30 | accent_variant |
+| `delfinios` | 1 | `delfínios` | 15 | unaccented |
 | `deliberacao` | 1 | `deliberação` | 554 | unaccented |
 | `delicatéssens` | 1 | `delicatessens` | 5 | accent_variant |
 | `delinqüênciajuvenil` | 1 | `delinquênciajuvenil` | 1 | accent_variant |
@@ -20938,6 +22171,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `dentifríca` | 1 | `dentifrica` | 5 | accent_variant |
 | `dentuca` | 1 | `dentuça` | 408 | unaccented |
 | `dentífica` | 1 | `dentifica` | 3 | accent_variant |
+| `denuncia-io` | 1 | `denunciá-io` | 12 | unaccented |
 | `denuncía` | 1 | `denúncia` | 2,492 | accent_variant |
 | `denúncie` | 1 | `denuncíe` | 1 | accent_variant |
 | `denúncioa` | 1 | `denuncioa` | 9 | accent_variant |
@@ -21057,6 +22291,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `despigmentaçao` | 1 | `despigmentação` | 17 | accent_variant |
 | `despojá-la-äo` | 1 | `despojá-la-ão` | 4 | accent_variant |
 | `despreocupaçäo` | 1 | `despreocupação` | 84 | accent_variant |
+| `despresivel` | 1 | `despresível` | 10 | unaccented |
 | `desprezívelmente` | 1 | `desprezivelmente` | 5 | accent_variant |
 | `despromoçäo` | 1 | `despromoção` | 193 | accent_variant |
 | `despácha` | 1 | `despachà` | 1 | accent_variant |
@@ -21070,6 +22305,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `destribuí` | 1 | `destribui` | 1 | accent_variant |
 | `destribuímos` | 1 | `destribuimos` | 7 | accent_variant |
 | `destroco` | 1 | `destroço` | 4,137 | unaccented |
+| `destrui-ios` | 1 | `destruí-ios` | 12 | unaccented |
 | `destruir-nos-à` | 1 | `destruir-nos-á` | 68 | accent_variant |
 | `destruiràs` | 1 | `destruiras` | 4 | accent_variant |
 | `destrutivel` | 1 | `destrutível` | 33 | unaccented |
@@ -21140,11 +22376,13 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `di-lo-às` | 1 | `di-lo-ás` | 2 | accent_variant |
 | `dia-á-dia` | 1 | `dia-a-dia` | 1,370 | accent_variant |
 | `diabolô` | 1 | `diábolo` | 3 | accent_variant |
+| `diagonostico` | 1 | `diagonóstico` | 10 | unaccented |
 | `dialíse` | 1 | `diálise` | 940 | accent_variant |
 | `diamânte` | 1 | `diamante` | 22,691 | accent_variant |
 | `diao` | 1 | `dião` | 146 | unaccented |
 | `diaspora` | 1 | `diáspora` | 50 | unaccented |
 | `dicçäo` | 1 | `dicção` | 276 | accent_variant |
+| `difa` | 1 | `difã` | 16 | unaccented |
 | `difamaçao` | 1 | `difamação` | 1,038 | accent_variant |
 | `difcíl` | 1 | `difcil` | 40 | accent_variant |
 | `diferênca` | 1 | `diferença` | 52,510 | accent_variant |
@@ -21152,6 +22390,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `différent` | 1 | `different` | 80 | accent_variant |
 | `dificiéis` | 1 | `difícieis` | 22 | accent_variant |
 | `dificíi` | 1 | `dífícíi` | 4 | accent_variant |
+| `difiiceis` | 1 | `difííceis` | 10 | unaccented |
 | `difiçéis` | 1 | `dificeis` | 625 | accent_variant |
 | `difiîcil` | 1 | `difíicil` | 148 | accent_variant |
 | `difractômetro` | 1 | `difractómetro` | 4 | accent_variant |
@@ -21172,6 +22411,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `dinamico` | 1 | `dinâmico` | 840 | unaccented |
 | `dinosáurio` | 1 | `dinosaurio` | 1 | accent_variant |
 | `dinâmicamente` | 1 | `dinamicamente` | 10 | accent_variant |
+| `dionis` | 1 | `dionís` | 18 | unaccented |
+| `dipsomaniacos` | 1 | `dipsomaníacos` | 11 | unaccented |
 | `dir-nos-áo` | 1 | `dir-nos-ão` | 44 | accent_variant |
 | `dir-te-â` | 1 | `dir-te-á` | 247 | accent_variant |
 | `dir-vos-à` | 1 | `dir-vos-á` | 93 | accent_variant |
@@ -21295,6 +22536,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `dominà-io` | 1 | `dominá-io` | 7 | accent_variant |
 | `dominé` | 1 | `dómine` | 4 | accent_variant |
 | `dominíos` | 1 | `dominios` | 18 | accent_variant |
+| `domremy` | 1 | `domrémy` | 10 | unaccented |
 | `domésticar` | 1 | `domesticar` | 1,238 | accent_variant |
 | `domína` | 1 | `dómina` | 4 | accent_variant |
 | `domínar` | 1 | `dominar` | 18,717 | accent_variant |
@@ -21325,6 +22567,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `dră` | 1 | `dra` | 42,874 | accent_variant |
 | `dtc-soluçoes` | 1 | `dtc-soluções` | 3 | accent_variant |
 | `du-bi-du-bi-dú` | 1 | `du-bi-du-bi-du` | 1 | accent_variant |
+| `dunia` | 1 | `dúnia` | 11 | unaccented |
 | `duniére` | 1 | `duniere` | 3 | accent_variant |
 | `duotrônica` | 1 | `duotrónica` | 4 | accent_variant |
 | `duprées` | 1 | `duprees` | 6 | accent_variant |
@@ -21497,8 +22740,10 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `e-é` | 1 | `é-é` | 115 | accent_variant |
 | `eado` | 1 | `éado` | 21 | unaccented |
 | `eassimcasámos` | 1 | `eassimcasamos` | 2 | accent_variant |
+| `eata` | 1 | `eatá` | 13 | unaccented |
 | `eaço` | 1 | `eaco` | 1 | accent_variant |
 | `eaíreinoucom` | 1 | `eaireinoucom` | 4 | accent_variant |
+| `eboli` | 1 | `éboli` | 16 | unaccented |
 | `echinácea` | 1 | `echinacea` | 33 | accent_variant |
 | `echá` | 1 | `echa` | 10 | accent_variant |
 | `eclesiastico` | 1 | `eclesiástico` | 227 | unaccented |
@@ -21543,15 +22788,19 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `egocentrísmo` | 1 | `egocentrismo` | 145 | accent_variant |
 | `egocéntrica` | 1 | `egocentrica` | 3 | accent_variant |
 | `egocéntrico` | 1 | `egocêntrico` | 1,472 | accent_variant |
+| `egomaniacos` | 1 | `egomaníacos` | 12 | unaccented |
 | `egoïsta` | 1 | `egoísta` | 12,908 | accent_variant |
 | `egípicios` | 1 | `egipicios` | 1 | accent_variant |
 | `egócios` | 1 | `egocios` | 1 | accent_variant |
 | `egórov` | 1 | `egorov` | 57 | accent_variant |
+| `ehorade` | 1 | `éhorade` | 12 | unaccented |
 | `eideres` | 1 | `êideres` | 27 | unaccented |
 | `eidetica` | 1 | `eidética` | 75 | unaccented |
 | `eifél` | 1 | `eifel` | 8 | accent_variant |
+| `eivro` | 1 | `éivro` | 13 | unaccented |
 | `eiá` | 1 | `eia` | 592 | accent_variant |
 | `ejaculacão` | 1 | `ejaculação` | 527 | accent_variant |
+| `ejercito` | 1 | `ejército` | 19 | unaccented |
 | `ejusto` | 1 | `éjusto` | 35 | unaccented |
 | `elasestão` | 1 | `elasestâo` | 1 | accent_variant |
 | `elasnão` | 1 | `elasnâo` | 1 | accent_variant |
@@ -21605,6 +22854,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `elétricidade` | 1 | `eletricidade` | 11,422 | accent_variant |
 | `elétro-químicos` | 1 | `eletro-químicos` | 3 | accent_variant |
 | `elógio` | 1 | `elogio` | 9,603 | accent_variant |
+| `emalamos` | 1 | `emalámos` | 11 | unaccented |
 | `embalsamaçäo` | 1 | `embalsamação` | 19 | accent_variant |
 | `embarcacao` | 1 | `embarcação` | 1,946 | unaccented |
 | `embaínhá` | 1 | `embaínha` | 10 | accent_variant |
@@ -21715,6 +22965,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `engañaste` | 1 | `enganáste` | 21 | accent_variant |
 | `engaño` | 1 | `engano` | 16,106 | accent_variant |
 | `engenheíro` | 1 | `engenheiro` | 10,212 | accent_variant |
+| `engracia` | 1 | `engrácia` | 15 | unaccented |
 | `engraçãdo` | 1 | `engraçado` | 73,014 | accent_variant |
 | `engreído` | 1 | `engreido` | 4 | accent_variant |
 | `enlouqueçer` | 1 | `enlouquecer` | 17,950 | accent_variant |
@@ -21735,6 +22986,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ensinár` | 1 | `ensinar` | 92,725 | accent_variant |
 | `entenderàn` | 1 | `entenderan` | 1 | accent_variant |
 | `enterná` | 1 | `enterna` | 1 | accent_variant |
+| `enterra-io` | 1 | `enterrá-io` | 19 | unaccented |
 | `enterrarà` | 1 | `enterrára` | 3 | accent_variant |
 | `enterrà-io` | 1 | `enterrá-io` | 19 | accent_variant |
 | `enterràmo-ios` | 1 | `enterrámo-ios` | 6 | accent_variant |
@@ -21744,6 +22996,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `entitulá` | 1 | `entitula` | 14 | accent_variant |
 | `entomología` | 1 | `entomologia` | 111 | accent_variant |
 | `entonacao` | 1 | `entonação` | 28 | unaccented |
+| `entree` | 1 | `entrée` | 16 | unaccented |
+| `entrega-io` | 1 | `entregá-io` | 19 | unaccented |
 | `entregar-lhe-à` | 1 | `entregar-lhe-á` | 22 | accent_variant |
 | `entregar-me-à` | 1 | `entregar-me-á` | 13 | accent_variant |
 | `entregàei` | 1 | `entregaei` | 1 | accent_variant |
@@ -21770,6 +23024,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `enumeraçao` | 1 | `enumeração` | 14 | accent_variant |
 | `envelheceràs` | 1 | `envelheceräs` | 2 | accent_variant |
 | `envenenár` | 1 | `envenenar` | 13,994 | accent_variant |
+| `envia-io` | 1 | `enviá-io` | 17 | unaccented |
 | `envia-lo-á` | 1 | `enviá-lo-á` | 7 | accent_variant |
 | `envia-los-á` | 1 | `enviá-los-á` | 2 | accent_variant |
 | `enviar-me-à` | 1 | `enviar-me-á` | 8 | accent_variant |
@@ -21824,6 +23079,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `eqüitação` | 1 | `equitação` | 431 | accent_variant |
 | `eqüivocada` | 1 | `equívocada` | 2 | accent_variant |
 | `eraassimtãoerrado` | 1 | `eraassimtäoerrado` | 3 | accent_variant |
+| `eratao` | 1 | `eratão` | 12 | unaccented |
 | `ereccäo` | 1 | `erecçäo` | 9 | accent_variant |
 | `ereccões` | 1 | `erecções` | 325 | accent_variant |
 | `ergonomico` | 1 | `ergonómico` | 114 | unaccented |
@@ -21852,6 +23108,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `escaläo` | 1 | `escalão` | 933 | accent_variant |
 | `escalöes` | 1 | `escaloes` | 1 | accent_variant |
 | `escandinàvia` | 1 | `escandinávia` | 233 | accent_variant |
+| `escaneres` | 1 | `escâneres` | 16 | unaccented |
 | `escaneã` | 1 | `escaneá` | 5 | accent_variant |
 | `escapê` | 1 | `escape` | 3,218 | accent_variant |
 | `escaramuca` | 1 | `escaramuça` | 492 | unaccented |
@@ -21929,6 +23186,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `esperaaí` | 1 | `esperaai` | 1 | accent_variant |
 | `esperancosamente` | 1 | `esperançosamente` | 283 | unaccented |
 | `esperandó` | 1 | `esperándo` | 2 | accent_variant |
+| `esperiencias` | 1 | `esperiências` | 13 | unaccented |
 | `esperiênçias` | 1 | `esperiências` | 13 | accent_variant |
 | `espertalhâo` | 1 | `espertalhão` | 3,506 | accent_variant |
 | `espertalhăo` | 1 | `espertalhão` | 3,506 | accent_variant |
@@ -21960,6 +23218,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `espú` | 1 | `espu` | 2 | accent_variant |
 | `esquartejà-mo-ios` | 1 | `esquartejá-mo-ios` | 9 | accent_variant |
 | `esqucê` | 1 | `esquce` | 2 | accent_variant |
+| `esquece-io` | 1 | `esquecê-io` | 15 | unaccented |
 | `esquecer-te-às` | 1 | `esquecer-te-ás` | 12 | accent_variant |
 | `esquecémo` | 1 | `esquecêmo` | 4 | accent_variant |
 | `esquecê-ia` | 1 | `esquece-ia` | 3 | accent_variant |
@@ -21989,6 +23248,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `estacâo` | 1 | `estação` | 44,867 | accent_variant |
 | `estacão-mistério` | 1 | `estação-mistério` | 8 | accent_variant |
 | `estacöes` | 1 | `estacões` | 30 | accent_variant |
+| `estadao` | 1 | `estadão` | 16 | unaccented |
 | `estado-tampào` | 1 | `estado-tampão` | 6 | accent_variant |
 | `estadío` | 1 | `estádio` | 6,056 | accent_variant |
 | `estagiàrios` | 1 | `estagiarios` | 4 | accent_variant |
@@ -22028,17 +23288,22 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `estracalhado` | 1 | `estraçalhado` | 55 | unaccented |
 | `estrafegá` | 1 | `estrafega` | 6 | accent_variant |
 | `estragàmos` | 1 | `estrágamos` | 2 | accent_variant |
+| `estraordinarias` | 1 | `estraordinárias` | 11 | unaccented |
+| `estraordinario` | 1 | `estraordinário` | 13 | unaccented |
 | `estratégista` | 1 | `estrategista` | 162 | accent_variant |
 | `estratégíco` | 1 | `estratégico` | 1,463 | accent_variant |
 | `estraída` | 1 | `estraida` | 3 | accent_variant |
 | `estregá` | 1 | `estrega` | 2 | accent_variant |
 | `estriaçöes` | 1 | `estriações` | 44 | accent_variant |
 | `estrogenio` | 1 | `estrogénio` | 473 | unaccented |
+| `estrogeno` | 1 | `estrógeno` | 13 | unaccented |
 | `estrogênios` | 1 | `estrogénios` | 34 | accent_variant |
+| `estropicio` | 1 | `estropício` | 19 | unaccented |
 | `estrová` | 1 | `estrova` | 1 | accent_variant |
 | `estrupá` | 1 | `estrupa` | 1 | accent_variant |
 | `estrátegia` | 1 | `estratégia` | 12,421 | accent_variant |
 | `estrógeneo` | 1 | `estrogéneo` | 22 | accent_variant |
+| `estuda-io` | 1 | `estudá-io` | 11 | unaccented |
 | `estudà-ios` | 1 | `estudá-ios` | 3 | accent_variant |
 | `estudâmos` | 1 | `estudàmos` | 1 | accent_variant |
 | `estudä` | 1 | `estudà` | 5 | accent_variant |
@@ -22129,6 +23394,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `europeàn` | 1 | `european` | 153 | accent_variant |
 | `eurovisâo` | 1 | `eurovisão` | 28 | accent_variant |
 | `eurásianos` | 1 | `eurasianos` | 5 | accent_variant |
+| `eutambem` | 1 | `eutambém` | 19 | unaccented |
 | `eutanasia` | 1 | `eutanásia` | 531 | unaccented |
 | `eutanasiá` | 1 | `eutanásia` | 531 | accent_variant |
 | `evacuádo` | 1 | `evacuado` | 167 | accent_variant |
@@ -22136,6 +23402,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `evasé` | 1 | `évasé` | 2 | accent_variant |
 | `evidęncia` | 1 | `evidência` | 8,491 | accent_variant |
 | `evistá` | 1 | `evista` | 1 | accent_variant |
+| `evoce` | 1 | `evocê` | 11 | unaccented |
 | `evoiucão` | 1 | `evoiucâo` | 4 | accent_variant |
 | `evolucao` | 1 | `evolução` | 6,017 | unaccented |
 | `evolucionàrio` | 1 | `evolucionário` | 337 | accent_variant |
@@ -22146,6 +23413,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ex-espiöes` | 1 | `ex-espiões` | 26 | accent_variant |
 | `ex-espírito` | 1 | `ex-espirito` | 5 | accent_variant |
 | `ex-espíritos` | 1 | `ex-espiritos` | 5 | accent_variant |
+| `ex-exercito` | 1 | `ex-exército` | 12 | unaccented |
 | `ex-ladróes` | 1 | `ex-ladrões` | 22 | accent_variant |
 | `ex-legíonário` | 1 | `ex-legionário` | 8 | accent_variant |
 | `ex-músico` | 1 | `ex-musico` | 1 | accent_variant |
@@ -22153,6 +23421,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ex-policías` | 1 | `ex-polícias` | 86 | accent_variant |
 | `ex-presidiàrio` | 1 | `ex-presidiário` | 579 | accent_variant |
 | `ex-presídiario` | 1 | `ex-presidiário` | 579 | accent_variant |
+| `ex-reporter` | 1 | `ex-repórter` | 11 | unaccented |
 | `ex-reportér` | 1 | `ex-repórter` | 11 | accent_variant |
 | `ex-reçluso` | 1 | `ex-recluso` | 203 | accent_variant |
 | `exactidăo` | 1 | `exactidao` | 2 | accent_variant |
@@ -22251,6 +23520,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `exêrc` | 1 | `exerc` | 7 | accent_variant |
 | `exílar` | 1 | `exilar` | 2,021 | accent_variant |
 | `exógamia` | 1 | `exogamia` | 2 | accent_variant |
+| `eyup` | 1 | `eyüp` | 12 | unaccented |
 | `eía` | 1 | `eia` | 592 | accent_variant |
 | `eídolon` | 1 | `eidolon` | 22 | accent_variant |
 | `eín` | 1 | `ein` | 405 | accent_variant |
@@ -22346,6 +23616,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `faíts` | 1 | `faits` | 16 | accent_variant |
 | `fcámos` | 1 | `fcamos` | 3 | accent_variant |
 | `febém` | 1 | `febem` | 4 | accent_variant |
+| `fecho-eclair` | 1 | `fecho-éclair` | 18 | unaccented |
 | `fechá-ia` | 1 | `fechà-ia` | 1 | accent_variant |
 | `fechâ` | 1 | `fechà` | 6 | accent_variant |
 | `federaçäo` | 1 | `federação` | 5,372 | accent_variant |
@@ -22412,9 +23683,11 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `filémon` | 1 | `filemon` | 17 | accent_variant |
 | `filét` | 1 | `filet` | 237 | accent_variant |
 | `filéte` | 1 | `filete` | 620 | accent_variant |
+| `finalissima` | 1 | `finalíssima` | 12 | unaccented |
 | `finlândes` | 1 | `finlandês` | 777 | accent_variant |
 | `finorio` | 1 | `finório` | 775 | unaccented |
 | `finânças` | 1 | `finanças` | 5,535 | accent_variant |
+| `fiodorovitch` | 1 | `fiódorovitch` | 16 | unaccented |
 | `fiscalizaçâo` | 1 | `fiscalização` | 442 | accent_variant |
 | `fiscália` | 1 | `fiscalía` | 5 | accent_variant |
 | `fisico-química` | 1 | `físico-química` | 5 | accent_variant |
@@ -22526,6 +23799,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `françiu` | 1 | `franciú` | 250 | accent_variant |
 | `françius` | 1 | `franciús` | 116 | accent_variant |
 | `françêses` | 1 | `francêses` | 12 | accent_variant |
+| `frappes` | 1 | `frappés` | 15 | unaccented |
 | `frapé` | 1 | `frapê` | 8 | accent_variant |
 | `frasé` | 1 | `frase` | 15,691 | accent_variant |
 | `fraúde` | 1 | `fraude` | 12,115 | accent_variant |
@@ -22710,6 +23984,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `galao` | 1 | `galão` | 2,100 | unaccented |
 | `galeäo` | 1 | `galeão` | 600 | accent_variant |
 | `galicia` | 1 | `galícia` | 31 | unaccented |
+| `gallon` | 1 | `gallón` | 14 | unaccented |
 | `gallípoli` | 1 | `gallipoli` | 176 | accent_variant |
 | `gallúzzo` | 1 | `galluzzo` | 118 | accent_variant |
 | `galpao` | 1 | `galpão` | 191 | unaccented |
@@ -22742,11 +24017,13 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `garçón` | 1 | `garçon` | 568 | accent_variant |
 | `gas-pimenta` | 1 | `gás-pimenta` | 92 | unaccented |
 | `gascöes` | 1 | `gascões` | 19 | accent_variant |
+| `gasta-io` | 1 | `gastá-io` | 15 | unaccented |
 | `gastroesofagico` | 1 | `gastroesofágico` | 31 | unaccented |
 | `gastronomía` | 1 | `gastronomia` | 199 | accent_variant |
 | `gastronômia` | 1 | `gastronomia` | 199 | accent_variant |
 | `gastrônomo` | 1 | `gastrónomo` | 47 | accent_variant |
 | `gastà` | 1 | `gästa` | 2 | accent_variant |
+| `gatastrofe` | 1 | `gatástrofe` | 14 | unaccented |
 | `gatãstrofe` | 1 | `gatástrofe` | 14 | accent_variant |
 | `gaullísta` | 1 | `gaullista` | 22 | accent_variant |
 | `gaverá` | 1 | `gavera` | 4 | accent_variant |
@@ -22757,6 +24034,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `generál` | 1 | `general` | 71,374 | accent_variant |
 | `gengíbre` | 1 | `gengibre` | 1,366 | accent_variant |
 | `geniça` | 1 | `genica` | 491 | accent_variant |
+| `gentilissimo` | 1 | `gentilíssimo` | 11 | unaccented |
 | `genéricamente` | 1 | `genericamente` | 40 | accent_variant |
 | `genésis` | 1 | `génesis` | 980 | accent_variant |
 | `genéticamente-manuseado` | 1 | `geneticamente-manuseado` | 6 | accent_variant |
@@ -22770,6 +24048,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `geradôr` | 1 | `gerador` | 9,135 | accent_variant |
 | `geriatrico` | 1 | `geriátrico` | 134 | unaccented |
 | `geriàtrico` | 1 | `geriátrico` | 134 | accent_variant |
+| `germanizacao` | 1 | `germanização` | 13 | unaccented |
 | `germanôfilo` | 1 | `germanófilo` | 4 | accent_variant |
 | `germánico` | 1 | `germânico` | 770 | accent_variant |
 | `germân` | 1 | `german` | 92 | accent_variant |
@@ -22793,6 +24072,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ginàstica` | 1 | `ginástica` | 3,292 | accent_variant |
 | `ginécologista` | 1 | `ginecologista` | 1,141 | accent_variant |
 | `giovà` | 1 | `giova` | 1 | accent_variant |
+| `gipsofilas` | 1 | `gipsófilas` | 11 | unaccented |
 | `girissímo` | 1 | `giríssimo` | 234 | accent_variant |
 | `giráça` | 1 | `giraça` | 319 | accent_variant |
 | `girô` | 1 | `giro` | 43,771 | accent_variant |
@@ -22849,7 +24129,10 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `greška` | 1 | `greska` | 3 | accent_variant |
 | `grigóriev` | 1 | `grigoriev` | 39 | accent_variant |
 | `gritó` | 1 | `grito` | 15,477 | accent_variant |
+| `groelandia` | 1 | `groelândia` | 16 | unaccented |
+| `grosnia` | 1 | `grósnia` | 11 | unaccented |
 | `grosseiräo` | 1 | `grosseirão` | 70 | accent_variant |
+| `grumio` | 1 | `grúmio` | 11 | unaccented |
 | `gruñía` | 1 | `grunia` | 1 | accent_variant |
 | `grà` | 1 | `grã` | 214 | accent_variant |
 | `gràcia` | 1 | `gracia` | 84 | accent_variant |
@@ -22885,6 +24168,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `guarniçăo` | 1 | `guarnição` | 1,841 | accent_variant |
 | `guedé` | 1 | `guede` | 27 | accent_variant |
 | `guerreíro` | 1 | `guerreiro` | 23,605 | accent_variant |
+| `guia-io` | 1 | `guiá-io` | 14 | unaccented |
 | `guia-los-á` | 1 | `guiá-los-á` | 11 | accent_variant |
 | `guia-los-ão` | 1 | `guiá-los-ão` | 2 | accent_variant |
 | `guiar-me-à` | 1 | `guiar-me-á` | 17 | accent_variant |
@@ -23011,6 +24295,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `harán` | 1 | `haran` | 10 | accent_variant |
 | `hashaná` | 1 | `hashana` | 2 | accent_variant |
 | `hatçe` | 1 | `hatce` | 1 | accent_variant |
+| `haum` | 1 | `háum` | 10 | unaccented |
 | `haveiá` | 1 | `haveia` | 1 | accent_variant |
 | `haverä` | 1 | `havera` | 84 | accent_variant |
 | `havái` | 1 | `havai` | 3,926 | accent_variant |
@@ -23037,6 +24322,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `helvêtica` | 1 | `helvetica` | 78 | accent_variant |
 | `helícópteros` | 1 | `helicopteros` | 108 | accent_variant |
 | `helîcóptero` | 1 | `helicóptero` | 26,270 | accent_variant |
+| `hematoencefalica` | 1 | `hematoencefálica` | 18 | unaccented |
 | `hemerróida` | 1 | `hemerroida` | 1 | accent_variant |
 | `hemicolectomía` | 1 | `hemicolectomia` | 10 | accent_variant |
 | `hemisfèrio` | 1 | `hemisfério` | 1,633 | accent_variant |
@@ -23057,6 +24343,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `heroinômano` | 1 | `heroinómano` | 35 | accent_variant |
 | `heroícamente` | 1 | `heroicamente` | 293 | accent_variant |
 | `heroínomano` | 1 | `heroinómano` | 35 | accent_variant |
+| `herpetica` | 1 | `herpética` | 18 | unaccented |
 | `hervíboros` | 1 | `herviboros` | 1 | accent_variant |
 | `heráclio` | 1 | `heraclio` | 18 | accent_variant |
 | `herñadez` | 1 | `hernadez` | 3 | accent_variant |
@@ -23085,6 +24372,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `hierarquico` | 1 | `hierárquico` | 338 | unaccented |
 | `hierápolis` | 1 | `hierapolis` | 4 | accent_variant |
 | `hierárquicamente` | 1 | `hierarquicamente` | 13 | accent_variant |
+| `higienicas` | 1 | `higiênicas` | 13 | unaccented |
 | `higiêne` | 1 | `higiene` | 2,098 | accent_variant |
 | `higiênista` | 1 | `higienista` | 238 | accent_variant |
 | `higíene` | 1 | `higiene` | 2,098 | accent_variant |
@@ -23099,6 +24387,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `hipertensäo` | 1 | `hipertensão` | 538 | accent_variant |
 | `hipertrofica` | 1 | `hipertrófica` | 62 | unaccented |
 | `hiperventilacao` | 1 | `hiperventilação` | 100 | unaccented |
+| `hipervigilancia` | 1 | `hipervigilância` | 15 | unaccented |
 | `hipnogenése` | 1 | `hipnogénese` | 3 | accent_variant |
 | `hipnotico` | 1 | `hipnótico` | 537 | unaccented |
 | `hipnóticamente` | 1 | `hipnoticamente` | 8 | accent_variant |
@@ -23106,9 +24395,11 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `hipo-alergênicos` | 1 | `hipo-alergénicos` | 1 | accent_variant |
 | `hipoalergenicas` | 1 | `hipoalergénicas` | 20 | unaccented |
 | `hipoalergenico` | 1 | `hipoalergénico` | 36 | unaccented |
+| `hipoalergenicos` | 1 | `hipoalergênicos` | 15 | unaccented |
 | `hipoalergênica` | 1 | `hipoalergénica` | 12 | accent_variant |
 | `hipocaliémia` | 1 | `hipocaliemia` | 5 | accent_variant |
 | `hipocrisía` | 1 | `hipocrisia` | 1,361 | accent_variant |
+| `hipocritazinha` | 1 | `hipócritazinha` | 12 | unaccented |
 | `hipocrátes` | 1 | `hipócrates` | 286 | accent_variant |
 | `hipoglicemica` | 1 | `hipoglicémica` | 36 | unaccented |
 | `hipoglicêmia` | 1 | `hipoglicemia` | 191 | accent_variant |
@@ -23141,6 +24432,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `homem-açoite` | 1 | `homem-acoite` | 1 | accent_variant |
 | `homem-passaro` | 1 | `homem-pássaro` | 138 | unaccented |
 | `homens-passaro` | 1 | `homens-pássaro` | 21 | unaccented |
+| `homens-passaros` | 1 | `homens-pássaros` | 10 | unaccented |
 | `homenágem` | 1 | `homenagem` | 4,661 | accent_variant |
 | `homeopatía` | 1 | `homeopatia` | 62 | accent_variant |
 | `homeról` | 1 | `homerol` | 1 | accent_variant |
@@ -23184,6 +24476,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `hubiéramos` | 1 | `hubieramos` | 2 | accent_variant |
 | `huelé` | 1 | `huele` | 2 | accent_variant |
 | `humanoídes` | 1 | `humanóides` | 372 | accent_variant |
+| `humero` | 1 | `húmero` | 14 | unaccented |
 | `humilaçao` | 1 | `humilação` | 6 | accent_variant |
 | `humilhaçăo` | 1 | `humilhação` | 3,851 | accent_variant |
 | `humilhãçao` | 1 | `humilhação` | 3,851 | accent_variant |
@@ -23272,9 +24565,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `hăs` | 1 | `häs` | 2 | accent_variant |
 | `hăste` | 1 | `haste` | 953 | accent_variant |
 | `hăş` | 1 | `häs` | 2 | accent_variant |
+| `i'etang` | 1 | `i'étang` | 10 | unaccented |
 | `i'échelle` | 1 | `i'echelle` | 2 | accent_variant |
 | `iaborátorio` | 1 | `iaboratòrio` | 1 | accent_variant |
 | `iadrâo` | 1 | `iadráo` | 10 | accent_variant |
+| `ianca-chamas` | 1 | `iança-chamas` | 14 | unaccented |
+| `iancaram` | 1 | `iançaram` | 14 | unaccented |
 | `iancarão` | 1 | `iançarão` | 3 | accent_variant |
 | `iancas` | 1 | `ianças` | 29 | unaccented |
 | `iança-çhamas` | 1 | `iança-chamas` | 14 | accent_variant |
@@ -23322,6 +24618,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `iiá` | 1 | `iia` | 5 | accent_variant |
 | `iié` | 1 | `iie` | 19 | accent_variant |
 | `ilaçäo` | 1 | `ilação` | 81 | accent_variant |
+| `ileo` | 1 | `íleo` | 16 | unaccented |
 | `iliaca` | 1 | `ilíaca` | 144 | unaccented |
 | `ilicítos` | 1 | `ilicitos` | 5 | accent_variant |
 | `iligítima` | 1 | `iligitima` | 2 | accent_variant |
@@ -23368,6 +24665,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `imobíliarios` | 1 | `imobiliarios` | 4 | accent_variant |
 | `imovéis` | 1 | `imoveis` | 19 | accent_variant |
 | `imovél` | 1 | `imóvel` | 3,985 | accent_variant |
+| `impalpavel` | 1 | `impalpável` | 18 | unaccented |
 | `imparavél` | 1 | `imparável` | 1,766 | accent_variant |
 | `impaçiencia` | 1 | `impaciência` | 591 | accent_variant |
 | `impenetràveis` | 1 | `impenetraveis` | 2 | accent_variant |
@@ -23461,6 +24759,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `incluíriamos` | 1 | `incluiriamos` | 4 | accent_variant |
 | `incluíua` | 1 | `incluiua` | 13 | accent_variant |
 | `inclúi` | 1 | `ínclui` | 2 | accent_variant |
+| `incomestivel` | 1 | `incomestível` | 16 | unaccented |
 | `incomodar-me-á` | 1 | `incomodar-me-à` | 1 | accent_variant |
 | `incomodà-io` | 1 | `incomodá-io` | 51 | accent_variant |
 | `incomodár` | 1 | `incomodar` | 56,350 | accent_variant |
@@ -23513,6 +24812,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `indeteçtávei` | 1 | `indetectávei` | 3 | accent_variant |
 | `indicaçőes` | 1 | `indicaçöes` | 10 | accent_variant |
 | `indicía` | 1 | `indicià` | 1 | accent_variant |
+| `indifereca` | 1 | `indifereça` | 11 | unaccented |
 | `indigencia` | 1 | `indigência` | 25 | unaccented |
 | `indireitá` | 1 | `indireita` | 2 | accent_variant |
 | `indiscriçoes` | 1 | `indiscricões` | 5 | accent_variant |
@@ -23603,12 +24903,14 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `injeçoes` | 1 | `injeçöes` | 3 | accent_variant |
 | `injétar` | 1 | `injetar` | 9,084 | accent_variant |
 | `injênua` | 1 | `injenua` | 1 | accent_variant |
+| `inlges` | 1 | `inlgês` | 10 | unaccented |
 | `inocênte` | 1 | `inocente` | 49,238 | accent_variant |
 | `inofênsivo` | 1 | `inofensivo` | 5,827 | accent_variant |
 | `inoperavel` | 1 | `inoperável` | 380 | unaccented |
 | `inovacao` | 1 | `inovação` | 1,333 | unaccented |
 | `inovaçäo` | 1 | `inovação` | 1,333 | accent_variant |
 | `inoxidavel` | 1 | `inoxidável` | 428 | unaccented |
+| `inquebrantavel` | 1 | `inquebrantável` | 17 | unaccented |
 | `inquebravel` | 1 | `inquebrável` | 806 | unaccented |
 | `inquietacao` | 1 | `inquietação` | 631 | unaccented |
 | `inquisicao` | 1 | `inquisição` | 1,230 | unaccented |
@@ -23626,6 +24928,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `insinuaçoes` | 1 | `insinuaçöes` | 6 | accent_variant |
 | `insolvencia` | 1 | `insolvência` | 118 | unaccented |
 | `insolênte` | 1 | `insolente` | 2,196 | accent_variant |
+| `insoportavel` | 1 | `insoportável` | 12 | unaccented |
 | `inspeccionà` | 1 | `inspecciona` | 139 | accent_variant |
 | `inspectôr` | 1 | `ínspector` | 3 | accent_variant |
 | `inspecçionar` | 1 | `inspeccionar` | 1,865 | accent_variant |
@@ -23667,6 +24970,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `integrar-se-à` | 1 | `integrar-se-á` | 2 | accent_variant |
 | `integraçao` | 1 | `integração` | 1,113 | accent_variant |
 | `integrò` | 1 | `íntegro` | 735 | accent_variant |
+| `intelectualoides` | 1 | `intelectualóides` | 12 | unaccented |
 | `inteligêntes` | 1 | `íntelígentes` | 2 | accent_variant |
 | `intemperie` | 1 | `intempérie` | 102 | unaccented |
 | `intencionávamos` | 1 | `intencionavamos` | 2 | accent_variant |
@@ -23773,6 +25077,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ipótese` | 1 | `ipotese` | 10 | accent_variant |
 | `ir-me-ás` | 1 | `ir-me-às` | 1 | accent_variant |
 | `irastreavél` | 1 | `irastreável` | 2 | accent_variant |
+| `iriao` | 1 | `irião` | 13 | unaccented |
 | `irimias` | 1 | `irimiás` | 48 | unaccented |
 | `irja` | 1 | `irjá` | 31 | unaccented |
 | `irlandêses` | 1 | `irlandesês` | 1 | accent_variant |
@@ -23782,7 +25087,9 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `irmâozinho` | 1 | `irmãozinho` | 3,507 | accent_variant |
 | `irmõs` | 1 | `írmos` | 4 | accent_variant |
 | `irmăzinha` | 1 | `irmãzinha` | 2,381 | accent_variant |
+| `irrascivel` | 1 | `irrascível` | 16 | unaccented |
 | `irrastreavel` | 1 | `irrastreável` | 106 | unaccented |
+| `irrazoaveis` | 1 | `irrazoáveis` | 16 | unaccented |
 | `irrazoavel` | 1 | `irrazoável` | 52 | unaccented |
 | `irrazoavéis` | 1 | `irrazoáveis` | 16 | accent_variant |
 | `irrecuperavel` | 1 | `irrecuperável` | 215 | unaccented |
@@ -23795,6 +25102,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `irresponsavéis` | 1 | `irresponsaveis` | 7 | accent_variant |
 | `irrevocávelmente` | 1 | `irrevocavelmente` | 6 | accent_variant |
 | `irrigaçäo` | 1 | `irrigação` | 851 | accent_variant |
+| `irritacaozinha` | 1 | `irritaçãozinha` | 14 | unaccented |
 | `irritacão` | 1 | `irritação` | 1,601 | accent_variant |
 | `irritadico` | 1 | `irritadiço` | 533 | unaccented |
 | `irritâvel` | 1 | `irritável` | 454 | accent_variant |
@@ -23861,6 +25169,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `išta` | 1 | `ista` | 133 | accent_variant |
 | `jacké` | 1 | `jacke` | 33 | accent_variant |
 | `jacób` | 1 | `jacob` | 14,437 | accent_variant |
+| `jagers` | 1 | `jägers` | 12 | unaccented |
 | `jalitzá` | 1 | `jalitza` | 3 | accent_variant |
 | `jamaíca` | 1 | `jamaica` | 2,047 | accent_variant |
 | `jambês` | 1 | `jambes` | 3 | accent_variant |
@@ -24014,6 +25323,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `köthen` | 1 | `kothen` | 2 | accent_variant |
 | `küche` | 1 | `kuche` | 1 | accent_variant |
 | `l'armée` | 1 | `l'armee` | 1 | accent_variant |
+| `l'equipe` | 1 | `l'équipe` | 10 | unaccented |
 | `l'âge` | 1 | `l'age` | 3 | accent_variant |
 | `l'étoile` | 1 | `l'etoile` | 33 | accent_variant |
 | `la-di-dás` | 1 | `la-di-das` | 6 | accent_variant |
@@ -24026,6 +25336,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `lactéa` | 1 | `láctea` | 870 | accent_variant |
 | `lacuña` | 1 | `lacuna` | 1,452 | accent_variant |
 | `lacónia` | 1 | `laconia` | 9 | accent_variant |
+| `ladao` | 1 | `ladão` | 18 | unaccented |
 | `ladraozinho` | 1 | `ladrãozinho` | 255 | unaccented |
 | `ladraõzinho` | 1 | `ladrãozinho` | 255 | accent_variant |
 | `ladrào` | 1 | `ladrão` | 35,039 | accent_variant |
@@ -24041,11 +25352,13 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `lampiao` | 1 | `lampião` | 251 | unaccented |
 | `lamína` | 1 | `lâmina` | 11,102 | accent_variant |
 | `lanca-chamas` | 1 | `lança-chamas` | 922 | unaccented |
+| `lanca-fumos` | 1 | `lança-fumos` | 12 | unaccented |
 | `lanca-granadas` | 1 | `lança-granadas` | 495 | unaccented |
 | `lanca-mísseis` | 1 | `lança-mísseis` | 232 | accent_variant |
 | `lanca-rockets` | 1 | `lança-rockets` | 125 | unaccented |
 | `lancaas` | 1 | `lançaas` | 32 | unaccented |
 | `lancador` | 1 | `lançador` | 2,421 | unaccented |
+| `lancoa` | 1 | `lançoa` | 14 | unaccented |
 | `lança-çhamas` | 1 | `lança-chamas` | 922 | accent_variant |
 | `lançarào` | 1 | `lançarao` | 1 | accent_variant |
 | `lançemos` | 1 | `lancêmos` | 1 | accent_variant |
@@ -24063,6 +25376,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `lathspell` | 1 | `láthspell` | 24 | unaccented |
 | `latifúndiário` | 1 | `latifundiário` | 117 | accent_variant |
 | `latrogênica` | 1 | `latrogénica` | 1 | accent_variant |
+| `laurencio` | 1 | `laurêncio` | 18 | unaccented |
 | `laurásia` | 1 | `laurasia` | 1 | accent_variant |
 | `lava-à-jato` | 1 | `lava-a-jato` | 1 | accent_variant |
 | `lavagem-automatica` | 1 | `lavagem-automática` | 23 | unaccented |
@@ -24100,6 +25414,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `lesbiáça` | 1 | `lesbiáca` | 3 | accent_variant |
 | `lesbiónica` | 1 | `lesbionica` | 6 | accent_variant |
 | `letargico` | 1 | `letárgico` | 197 | unaccented |
+| `leva-ia` | 1 | `levá-ia` | 16 | unaccented |
 | `leva-la-à` | 1 | `levá-la-á` | 70 | accent_variant |
 | `leva-lo-ão` | 1 | `levá-lo-ão` | 48 | accent_variant |
 | `leva-los-ás` | 1 | `levá-los-ás` | 9 | accent_variant |
@@ -24111,6 +25426,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `levar-vos-à` | 1 | `levar-vos-á` | 82 | accent_variant |
 | `levaräo` | 1 | `levarao` | 6 | accent_variant |
 | `levaà` | 1 | `levaa` | 7,313 | accent_variant |
+| `levissimo` | 1 | `levíssimo` | 13 | unaccented |
 | `levà-ia` | 1 | `levá-ia` | 16 | accent_variant |
 | `levà-io` | 1 | `levá-io` | 224 | accent_variant |
 | `levà-ios` | 1 | `levá-ios` | 56 | accent_variant |
@@ -24143,6 +25459,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `libertar-te-à` | 1 | `libertar-te-á` | 93 | accent_variant |
 | `licantrôpo` | 1 | `licantropo` | 223 | accent_variant |
 | `licençás` | 1 | `licencas` | 3 | accent_variant |
+| `licia` | 1 | `lícia` | 12 | unaccented |
 | `licântropo` | 1 | `licantropo` | 223 | accent_variant |
 | `licântropos` | 1 | `licantropos` | 281 | accent_variant |
 | `licênças` | 1 | `licencas` | 3 | accent_variant |
@@ -24151,6 +25468,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `licíto` | 1 | `lícito` | 112 | accent_variant |
 | `licõr` | 1 | `licor` | 2,274 | accent_variant |
 | `lidér` | 1 | `líder` | 44,680 | accent_variant |
+| `liebana` | 1 | `liébana` | 11 | unaccented |
 | `ligar-se-à` | 1 | `ligar-se-á` | 3 | accent_variant |
 | `ligaçãoao` | 1 | `ligaçãoão` | 14 | accent_variant |
 | `ligaçôes` | 1 | `ligacões` | 14 | accent_variant |
@@ -24185,6 +25503,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `liríos` | 1 | `lirios` | 16 | accent_variant |
 | `literáriamente` | 1 | `literariamente` | 3 | accent_variant |
 | `litío` | 1 | `lítio` | 864 | accent_variant |
+| `livonia` | 1 | `livónia` | 10 | unaccented |
 | `livrarìamos` | 1 | `livrariamos` | 2 | accent_variant |
 | `livro-razao` | 1 | `livro-razão` | 55 | unaccented |
 | `livrâmo` | 1 | `lívrámo` | 2 | accent_variant |
@@ -24215,6 +25534,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `lmigraçâo` | 1 | `lmigração` | 60 | accent_variant |
 | `lmltaçao` | 1 | `lmltação` | 5 | accent_variant |
 | `lmobiliària` | 1 | `lmobiliária` | 6 | accent_variant |
+| `lmpecavel` | 1 | `lmpecável` | 12 | unaccented |
 | `lmperio` | 1 | `lmpério` | 215 | unaccented |
 | `lmplorámos` | 1 | `lmploramos` | 1 | accent_variant |
 | `lmpossìvel` | 1 | `lmpossível` | 273 | accent_variant |
@@ -24236,6 +25556,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `lnsultá` | 1 | `lnsulta` | 3 | accent_variant |
 | `lnterceptàmos` | 1 | `lnterceptámos` | 9 | accent_variant |
 | `lnterrogatòrio` | 1 | `lnterrogatório` | 2 | accent_variant |
+| `lnutil` | 1 | `lnútil` | 17 | unaccented |
 | `lnvasâo` | 1 | `lnvasão` | 30 | accent_variant |
 | `lnvencivél` | 1 | `lnvencível` | 7 | accent_variant |
 | `lnvençäo` | 1 | `lnvenção` | 2 | accent_variant |
@@ -24438,6 +25759,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `macuá` | 1 | `macua` | 2 | accent_variant |
 | `macónicos` | 1 | `maçônicos` | 18 | accent_variant |
 | `madié` | 1 | `madie` | 4 | accent_variant |
+| `madraco` | 1 | `madraço` | 17 | unaccented |
 | `madrás` | 1 | `madras` | 200 | accent_variant |
 | `madãme` | 1 | `madame` | 17,529 | accent_variant |
 | `madíbula` | 1 | `madibula` | 4 | accent_variant |
@@ -24484,7 +25806,9 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `mamă` | 1 | `mamã` | 69,988 | accent_variant |
 | `manamê` | 1 | `maname` | 4 | accent_variant |
 | `manda-io` | 1 | `mandá-io` | 73 | unaccented |
+| `manda-ios` | 1 | `mandá-ios` | 14 | unaccented |
 | `mandarìm` | 1 | `mandarim` | 1,151 | accent_variant |
+| `mandroides` | 1 | `mandróides` | 14 | unaccented |
 | `mandràgona` | 1 | `mandrágona` | 5 | accent_variant |
 | `mandámo-ia` | 1 | `mandamo-ia` | 1 | accent_variant |
 | `mandár-to` | 1 | `mandar-to` | 33 | accent_variant |
@@ -24508,6 +25832,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `manjericao` | 1 | `manjericão` | 334 | unaccented |
 | `manobravel` | 1 | `manobrável` | 107 | unaccented |
 | `manobrábilidade` | 1 | `manobrabilidade` | 40 | accent_variant |
+| `mante-ia` | 1 | `mantê-ia` | 15 | unaccented |
 | `manter-se-ã` | 1 | `manter-se-á` | 154 | accent_variant |
 | `manter-te-às` | 1 | `manter-te-ás` | 18 | accent_variant |
 | `manterà` | 1 | `mantera` | 14 | accent_variant |
@@ -24536,6 +25861,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `maquìnaria` | 1 | `maquinaria` | 1,062 | accent_variant |
 | `marabús` | 1 | `marabus` | 4 | accent_variant |
 | `maracaná` | 1 | `maracanã` | 15 | accent_variant |
+| `maranon` | 1 | `marañón` | 14 | unaccented |
 | `marasà` | 1 | `marasa` | 1 | accent_variant |
 | `maravedís` | 1 | `maravedis` | 11 | accent_variant |
 | `marcacao` | 1 | `marcação` | 5,103 | unaccented |
@@ -24693,19 +26019,23 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `meretrícia` | 1 | `meretricia` | 4 | accent_variant |
 | `mereçia` | 1 | `merecía` | 12 | accent_variant |
 | `meridia` | 1 | `merídia` | 20 | unaccented |
+| `merite` | 1 | `mérite` | 15 | unaccented |
 | `meritissímo` | 1 | `meritíssimo` | 13,872 | accent_variant |
 | `merkiné` | 1 | `merkine` | 3 | accent_variant |
+| `merovingio` | 1 | `merovíngio` | 15 | unaccented |
 | `merovingios` | 1 | `merovíngios` | 22 | unaccented |
 | `merçado` | 1 | `mercado` | 29,913 | accent_variant |
 | `merçado-negro` | 1 | `mercado-negro` | 29 | accent_variant |
 | `meréces` | 1 | `mereçes` | 20 | accent_variant |
 | `merítissima` | 1 | `meritissíma` | 2 | accent_variant |
 | `meríto` | 1 | `mérito` | 4,765 | accent_variant |
+| `mes-a-mes` | 1 | `mês-a-mês` | 12 | unaccented |
 | `meshuggéh` | 1 | `meshuggeh` | 1 | accent_variant |
 | `mesmerizá` | 1 | `mesmeriza` | 1 | accent_variant |
 | `mesmoà` | 1 | `mesmoa` | 14 | accent_variant |
 | `mesmoí` | 1 | `mesmoi` | 6 | accent_variant |
 | `mesoamerica` | 1 | `mesoamérica` | 20 | unaccented |
+| `mesopotania` | 1 | `mesopotânia` | 12 | unaccented |
 | `metafôrico` | 1 | `metafórico` | 480 | accent_variant |
 | `metalurgico` | 1 | `metalúrgico` | 396 | unaccented |
 | `metamorfóse` | 1 | `metamorfose` | 728 | accent_variant |
@@ -24777,6 +26107,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `mini-sáia` | 1 | `mini-saia` | 258 | accent_variant |
 | `minicupúla` | 1 | `minicúpula` | 5 | accent_variant |
 | `minimizaçäo` | 1 | `minimização` | 37 | accent_variant |
+| `minoica` | 1 | `minóica` | 19 | unaccented |
 | `minoría` | 1 | `minoria` | 2,409 | accent_variant |
 | `minotaúro` | 1 | `minotauro` | 730 | accent_variant |
 | `minuscúlo` | 1 | `minúsculo` | 5,663 | accent_variant |
@@ -24784,6 +26115,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `minímamente` | 1 | `minimamente` | 1,379 | accent_variant |
 | `miníno` | 1 | `minino` | 10 | accent_variant |
 | `minúto` | 1 | `minuto` | 307,476 | accent_variant |
+| `miocitos` | 1 | `miócitos` | 17 | unaccented |
 | `miope` | 1 | `míope` | 415 | unaccented |
 | `misantrôpo` | 1 | `misantropo` | 140 | accent_variant |
 | `miscigenaçäo` | 1 | `miscigenação` | 36 | accent_variant |
@@ -24843,6 +26175,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `monetario` | 1 | `monetário` | 1,448 | unaccented |
 | `mongòlia` | 1 | `mongólia` | 660 | accent_variant |
 | `mongóloides` | 1 | `mongolóides` | 67 | accent_variant |
+| `monio` | 1 | `mónio` | 16 | unaccented |
 | `monitorará` | 1 | `monitorara` | 1 | accent_variant |
 | `monitorizaçao` | 1 | `monitorização` | 794 | accent_variant |
 | `monopòlio` | 1 | `monopólio` | 1,657 | accent_variant |
@@ -24877,6 +26210,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `mortuórum` | 1 | `mortuorum` | 1 | accent_variant |
 | `morça` | 1 | `morca` | 32 | accent_variant |
 | `morí` | 1 | `mori` | 446 | accent_variant |
+| `mosculo` | 1 | `môsculo` | 16 | unaccented |
 | `moscóvo` | 1 | `moscovo` | 8,925 | accent_variant |
 | `mosquetao` | 1 | `mosquetão` | 78 | unaccented |
 | `mostra-lo-ão` | 1 | `mostrá-lo-ão` | 19 | accent_variant |
@@ -24915,6 +26249,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `multibilionario` | 1 | `multibilionário` | 42 | unaccented |
 | `multidăo` | 1 | `multidão` | 14,839 | accent_variant |
 | `multidőes` | 1 | `multidoes` | 3 | accent_variant |
+| `multimetro` | 1 | `multímetro` | 12 | unaccented |
 | `multimilionària` | 1 | `multimilionaria` | 1 | accent_variant |
 | `multimilionàrio` | 1 | `multimilionário` | 1,310 | accent_variant |
 | `multiorgásmica` | 1 | `multiorgasmica` | 1 | accent_variant |
@@ -25124,6 +26459,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `nagasaqui` | 1 | `nagasáqui` | 48 | unaccented |
 | `naiade` | 1 | `náiade` | 41 | unaccented |
 | `naifá` | 1 | `naifa` | 189 | accent_variant |
+| `nakun` | 1 | `nakún` | 10 | unaccented |
 | `nakùm` | 1 | `nakúm` | 148 | accent_variant |
 | `nalgúm` | 1 | `nalgum` | 12,638 | accent_variant |
 | `namorô` | 1 | `namoro` | 3,974 | accent_variant |
@@ -25136,20 +26472,25 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `nao-divulgaçao` | 1 | `não-divulgação` | 27 | accent_variant |
 | `nao-humanos` | 1 | `não-humanos` | 756 | unaccented |
 | `nao-identificados` | 1 | `não-identificados` | 31 | unaccented |
+| `nao-militar` | 1 | `não-militar` | 15 | unaccented |
 | `nao-militares` | 1 | `não-militares` | 23 | unaccented |
 | `nao-sei-quantos` | 1 | `não-sei-quantos` | 317 | unaccented |
+| `naofoi` | 1 | `nãofoi` | 19 | unaccented |
 | `naoha` | 1 | `nãohá` | 27 | unaccented |
 | `naomí` | 1 | `naomi` | 6,831 | accent_variant |
+| `naopodemos` | 1 | `nãopodemos` | 15 | unaccented |
 | `naoterá` | 1 | `nãoterá` | 4 | accent_variant |
 | `naoé` | 1 | `nãoé` | 173 | accent_variant |
 | `napoieâo` | 1 | `napoieão` | 5 | accent_variant |
 | `napoleáo` | 1 | `napoleão` | 2,750 | accent_variant |
 | `napoléão` | 1 | `napoleão` | 2,750 | accent_variant |
 | `napóle` | 1 | `napole` | 5 | accent_variant |
+| `narcoleptica` | 1 | `narcoléptica` | 16 | unaccented |
 | `narcís` | 1 | `narcis` | 11 | accent_variant |
 | `nardò` | 1 | `nardo` | 240 | accent_variant |
 | `narigao` | 1 | `narigão` | 48 | unaccented |
 | `nascì` | 1 | `nascí` | 13 | accent_variant |
+| `nasdarovia` | 1 | `nasdaróvia` | 11 | unaccented |
 | `nassíria` | 1 | `nassiria` | 1 | accent_variant |
 | `nataljâ` | 1 | `natalja` | 3 | accent_variant |
 | `natorá` | 1 | `natora` | 4 | accent_variant |
@@ -25166,6 +26507,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `nave-colônia` | 1 | `nave-colonia` | 3 | accent_variant |
 | `navegavel` | 1 | `navegável` | 100 | unaccented |
 | `naves-mâe` | 1 | `naves-mãe` | 188 | accent_variant |
+| `navio-prisao` | 1 | `navio-prisão` | 15 | unaccented |
 | `navío` | 1 | `navio` | 46,064 | accent_variant |
 | `nazgúl` | 1 | `nazgul` | 161 | accent_variant |
 | `naça` | 1 | `naca` | 6 | accent_variant |
@@ -25187,6 +26529,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `necroplásmico` | 1 | `necroplasmico` | 1 | accent_variant |
 | `necrófilia` | 1 | `necrofilia` | 179 | accent_variant |
 | `nefrectomía` | 1 | `nefrectomia` | 20 | accent_variant |
+| `nega-io` | 1 | `negá-io` | 10 | unaccented |
 | `negacao` | 1 | `negação` | 3,434 | unaccented |
 | `negao` | 1 | `negão` | 132 | unaccented |
 | `neglegênciei` | 1 | `neglegenciei` | 1 | accent_variant |
@@ -25226,6 +26569,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `neurôtica` | 1 | `neurotica` | 1 | accent_variant |
 | `neutraiizá` | 1 | `neutraiiza` | 1 | accent_variant |
 | `neutralizaçao` | 1 | `neutralização` | 161 | accent_variant |
+| `neutronico` | 1 | `neutrónico` | 13 | unaccented |
 | `neutrônio` | 1 | `neutrónio` | 19 | accent_variant |
 | `neutrônios` | 1 | `neutrónios` | 1 | accent_variant |
 | `neutrôns` | 1 | `nêutrons` | 42 | accent_variant |
@@ -25247,6 +26591,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `nikô` | 1 | `niko` | 982 | accent_variant |
 | `nillë` | 1 | `nille` | 4 | accent_variant |
 | `ninfômana` | 1 | `ninfómana` | 5 | accent_variant |
+| `ningue` | 1 | `ningué` | 19 | unaccented |
 | `ninhúm` | 1 | `ninhum` | 31 | accent_variant |
 | `ninõ` | 1 | `nino` | 1,345 | accent_variant |
 | `nitrógeneo` | 1 | `nitrogêneo` | 1 | accent_variant |
@@ -25446,13 +26791,16 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `obedecer-me-à` | 1 | `obedecer-me-á` | 5 | accent_variant |
 | `obedecêr-ihe` | 1 | `obedecer-ihe` | 4 | accent_variant |
 | `obedeçer` | 1 | `obedecer` | 15,912 | accent_variant |
+| `obersturmbanfuhrer` | 1 | `obersturmbanführer` | 14 | unaccented |
 | `oberstürmbanführer` | 1 | `obersturmbanführer` | 14 | accent_variant |
 | `oberstürmführer` | 1 | `obersturmführer` | 18 | accent_variant |
 | `objeccao` | 1 | `objecçäo` | 28 | unaccented |
+| `objeccoes` | 1 | `objecçöes` | 10 | unaccented |
 | `objeçaõ` | 1 | `objeção` | 5,470 | accent_variant |
 | `objeçäo` | 1 | `objeção` | 5,470 | accent_variant |
 | `objeçção` | 1 | `objecçäo` | 28 | accent_variant |
 | `oblícuos` | 1 | `oblicuos` | 1 | accent_variant |
+| `obnoxio` | 1 | `obnóxio` | 16 | unaccented |
 | `oboista` | 1 | `oboísta` | 27 | unaccented |
 | `obolo` | 1 | `óbolo` | 44 | unaccented |
 | `obriga-io` | 1 | `obrigá-io` | 20 | unaccented |
@@ -25479,6 +26827,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `occipítal` | 1 | `occipital` | 545 | accent_variant |
 | `oceanico` | 1 | `oceânico` | 595 | unaccented |
 | `oceanía` | 1 | `oceania` | 91 | accent_variant |
+| `oces` | 1 | `ocês` | 16 | unaccented |
 | `octogenario` | 1 | `octogenário` | 79 | unaccented |
 | `octàvio` | 1 | `octávio` | 620 | accent_variant |
 | `oculo` | 1 | `óculo` | 190 | unaccented |
@@ -25507,6 +26856,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ofíicio` | 1 | `ofiicio` | 8 | accent_variant |
 | `ohá` | 1 | `oha` | 24 | accent_variant |
 | `ohé` | 1 | `ohe` | 7 | accent_variant |
+| `oihamos` | 1 | `oihámos` | 16 | unaccented |
 | `oiharà` | 1 | `oihará` | 4 | accent_variant |
 | `oihá-ios` | 1 | `oihà-ios` | 1 | accent_variant |
 | `oitávo` | 1 | `oitavo` | 4,185 | accent_variant |
@@ -25521,6 +26871,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `olaaa` | 1 | `olááá` | 45 | unaccented |
 | `olaaaa` | 1 | `oláááá` | 41 | unaccented |
 | `olaaaaaá` | 1 | `oláááááá` | 7 | accent_variant |
+| `olai` | 1 | `olái` | 14 | unaccented |
 | `oleadútos` | 1 | `oleadutos` | 1 | accent_variant |
 | `olhar-me-à` | 1 | `olhar-me-á` | 3 | accent_variant |
 | `olhos-do-cú` | 1 | `olhos-do-cu` | 2 | accent_variant |
@@ -25558,6 +26909,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ondenós` | 1 | `ondenos` | 1 | accent_variant |
 | `ondeà` | 1 | `ondea` | 11 | accent_variant |
 | `ondulacão` | 1 | `ondulação` | 616 | accent_variant |
+| `onipotencia` | 1 | `onipotência` | 11 | unaccented |
 | `ontemánoite` | 1 | `ontemànoite` | 4 | accent_variant |
 | `ontemã` | 1 | `ontemà` | 8 | accent_variant |
 | `ontàrio` | 1 | `ontário` | 428 | accent_variant |
@@ -25567,10 +26919,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `onívelde` | 1 | `onivelde` | 1 | accent_variant |
 | `ooô` | 1 | `ooo` | 361 | accent_variant |
 | `operaciòn` | 1 | `operación` | 2 | accent_variant |
+| `operatico` | 1 | `operático` | 13 | unaccented |
 | `operavel` | 1 | `operável` | 146 | unaccented |
 | `operaçaozinha` | 1 | `operaçãozinha` | 22 | accent_variant |
 | `operà-io` | 1 | `operá-io` | 7 | accent_variant |
 | `operão` | 1 | `operao` | 2 | accent_variant |
+| `opinia` | 1 | `opiniã` | 15 | unaccented |
 | `opiniãoo` | 1 | `opiniäoo` | 2 | accent_variant |
 | `opiniãó` | 1 | `opinião` | 44,787 | accent_variant |
 | `opiniôes` | 1 | `opiniöes` | 21 | accent_variant |
@@ -25588,6 +26942,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `opôra` | 1 | `opora` | 1 | accent_variant |
 | `opöem` | 1 | `opoem` | 7 | accent_variant |
 | `opús` | 1 | `opus` | 564 | accent_variant |
+| `oquai` | 1 | `óquai` | 11 | unaccented |
 | `oquevocêvai` | 1 | `oquevocevai` | 1 | accent_variant |
 | `oracúlo` | 1 | `oráculo` | 2,866 | accent_variant |
 | `oralé` | 1 | `orale` | 88 | accent_variant |
@@ -25620,6 +26975,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `osemgraça` | 1 | `osemgraca` | 2 | accent_variant |
 | `ossêa` | 1 | `ossea` | 11 | accent_variant |
 | `osteogênicas` | 1 | `osteogénicas` | 1 | accent_variant |
+| `ostias` | 1 | `óstias` | 12 | unaccented |
 | `ostá` | 1 | `osta` | 10 | accent_variant |
 | `otimísmo` | 1 | `otimismo` | 1,573 | accent_variant |
 | `otoño` | 1 | `ötoñö` | 2 | accent_variant |
@@ -25627,7 +26983,9 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `otíma` | 1 | `otima` | 73 | accent_variant |
 | `oublíette` | 1 | `oubliette` | 16 | accent_variant |
 | `oucoas` | 1 | `ouçoas` | 69 | unaccented |
+| `ounao` | 1 | `ounão` | 17 | unaccented |
 | `ouquê` | 1 | `ouque` | 1 | accent_variant |
+| `ouricos-cacheiros` | 1 | `ouriços-cacheiros` | 11 | unaccented |
 | `ouvi-lo-à` | 1 | `ouvi-lo-á` | 22 | accent_variant |
 | `ouvir-me-à` | 1 | `ouvir-me-á` | 27 | accent_variant |
 | `ouvir-nos-à` | 1 | `ouvir-nos-á` | 16 | accent_variant |
@@ -25672,6 +27030,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `padròes` | 1 | `padröes` | 10 | accent_variant |
 | `padrónia` | 1 | `padronia` | 2 | accent_variant |
 | `padrôes` | 1 | `padröes` | 10 | accent_variant |
+| `paga-ias` | 1 | `pagá-ias` | 19 | unaccented |
 | `pagao` | 1 | `pagão` | 2,800 | unaccented |
 | `pagar-lhes-à` | 1 | `pagar-lhes-á` | 3 | accent_variant |
 | `pagar-nos-à` | 1 | `pagar-nos-á` | 4 | accent_variant |
@@ -25770,9 +27129,11 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `parí` | 1 | `pari` | 199 | accent_variant |
 | `paróco` | 1 | `pároco` | 309 | accent_variant |
 | `parólo` | 1 | `parolo` | 1,008 | accent_variant |
+| `pasca` | 1 | `pascà` | 14 | unaccented |
 | `paspalhäo` | 1 | `paspalhão` | 204 | accent_variant |
 | `pasquali` | 1 | `pasqualì` | 30 | unaccented |
 | `pasquá` | 1 | `pasqua` | 29 | accent_variant |
+| `passa-io` | 1 | `passá-io` | 13 | unaccented |
 | `passar-lhe-à` | 1 | `passar-lhe-á` | 16 | accent_variant |
 | `passarâo` | 1 | `passarao` | 9 | accent_variant |
 | `passarês` | 1 | `passáres` | 4 | accent_variant |
@@ -25790,6 +27151,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `patuà` | 1 | `patuá` | 18 | accent_variant |
 | `patêtica` | 1 | `patetica` | 13 | accent_variant |
 | `patógénico` | 1 | `patogénico` | 763 | accent_variant |
+| `paupa` | 1 | `paupá` | 12 | unaccented |
 | `pausanias` | 1 | `pausânias` | 45 | unaccented |
 | `pavlovianà` | 1 | `pavloviana` | 24 | accent_variant |
 | `pavê` | 1 | `pave` | 15 | accent_variant |
@@ -25813,7 +27175,9 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pedrín` | 1 | `pedrin` | 4 | accent_variant |
 | `pedão` | 1 | `pedao` | 2 | accent_variant |
 | `pedído` | 1 | `pedido` | 48,952 | accent_variant |
+| `pega-ia` | 1 | `pegá-ia` | 14 | unaccented |
 | `pegaräo` | 1 | `pegarao` | 1 | accent_variant |
+| `peguy` | 1 | `péguy` | 10 | unaccented |
 | `pegáso` | 1 | `pégaso` | 370 | accent_variant |
 | `pegã` | 1 | `pegâ` | 4 | accent_variant |
 | `pegé` | 1 | `pege` | 7 | accent_variant |
@@ -25829,6 +27193,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `penitenciáría` | 1 | `penitenciária` | 2,424 | accent_variant |
 | `penitenciâria` | 1 | `penitenciária` | 2,424 | accent_variant |
 | `pennsylvânia` | 1 | `pennsylvania` | 721 | accent_variant |
+| `pensaozinha` | 1 | `pensãozinha` | 18 | unaccented |
 | `pensarào` | 1 | `pensaräo` | 4 | accent_variant |
 | `pensarán` | 1 | `pensaràn` | 1 | accent_variant |
 | `pensaráo` | 1 | `pensaräo` | 4 | accent_variant |
@@ -25852,6 +27217,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `perchè` | 1 | `perche` | 43 | accent_variant |
 | `percibió` | 1 | `percibiò` | 1 | accent_variant |
 | `percé` | 1 | `perce` | 294 | accent_variant |
+| `perde-ia` | 1 | `perdê-ia` | 10 | unaccented |
 | `perderiámos` | 1 | `perderiamos` | 19 | accent_variant |
 | `perdicao` | 1 | `perdição` | 1,106 | unaccented |
 | `perdicão` | 1 | `perdição` | 1,106 | accent_variant |
@@ -25932,6 +27298,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pestilencia` | 1 | `pestilência` | 400 | unaccented |
 | `pestá` | 1 | `pesta` | 3 | accent_variant |
 | `pesâme` | 1 | `pésame` | 3 | accent_variant |
+| `petrea` | 1 | `pétrea` | 14 | unaccented |
 | `petro-doláres` | 1 | `petro-dólares` | 7 | accent_variant |
 | `petroléo` | 1 | `petróleo` | 11,125 | accent_variant |
 | `petròleo` | 1 | `petróleo` | 11,125 | accent_variant |
@@ -25954,6 +27321,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pincípe` | 1 | `píncipe` | 2 | accent_variant |
 | `pinderica` | 1 | `pindérica` | 22 | unaccented |
 | `pingúim` | 1 | `pinguim` | 6,021 | accent_variant |
+| `pinoia` | 1 | `pinóia` | 12 | unaccented |
 | `pintaróla` | 1 | `pintarola` | 22 | accent_variant |
 | `pintaínhas` | 1 | `pintainhas` | 1 | accent_variant |
 | `pintó` | 1 | `pinto` | 2,706 | accent_variant |
@@ -25961,6 +27329,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pinè` | 1 | `pine` | 2,411 | accent_variant |
 | `pinòquio` | 1 | `pinóquio` | 1,284 | accent_variant |
 | `piolín` | 1 | `piolin` | 3 | accent_variant |
+| `piorja` | 1 | `piorjá` | 18 | unaccented |
 | `pipì` | 1 | `pipi` | 777 | accent_variant |
 | `pipóca` | 1 | `pipoca` | 5,632 | accent_variant |
 | `piratês` | 1 | `pirates` | 224 | accent_variant |
@@ -25977,6 +27346,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pistàcios` | 1 | `pistacios` | 3 | accent_variant |
 | `pisà` | 1 | `pisa` | 2,638 | accent_variant |
 | `pisô` | 1 | `piso` | 11,626 | accent_variant |
+| `pitia` | 1 | `pítia` | 12 | unaccented |
 | `pitàgoras` | 1 | `pitágoras` | 523 | accent_variant |
 | `pitéuzinho` | 1 | `piteuzinho` | 1 | accent_variant |
 | `pití` | 1 | `piti` | 11 | accent_variant |
@@ -26012,6 +27382,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `plàstico` | 1 | `plástico` | 16,051 | accent_variant |
 | `plânton` | 1 | `planton` | 2 | accent_variant |
 | `plíny` | 1 | `pliny` | 8 | accent_variant |
+| `pneumocistica` | 1 | `pneumocística` | 10 | unaccented |
 | `pocílga` | 1 | `pocilga` | 1,775 | accent_variant |
 | `poder-nos-à` | 1 | `poder-nos-á` | 10 | accent_variant |
 | `poder-te-à` | 1 | `poder-te-á` | 12 | accent_variant |
@@ -26042,6 +27413,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pokédex` | 1 | `pokedex` | 2 | accent_variant |
 | `polaína` | 1 | `polaina` | 123 | accent_variant |
 | `polemico` | 1 | `polémico` | 179 | unaccented |
+| `polic` | 1 | `políc` | 18 | unaccented |
 | `policia-robô` | 1 | `polícia-robô` | 3 | accent_variant |
 | `policiaís` | 1 | `políciais` | 86 | accent_variant |
 | `policíais` | 1 | `políciais` | 86 | accent_variant |
@@ -26128,8 +27500,10 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pos-natal` | 1 | `pós-natal` | 34 | unaccented |
 | `pos-operatorio` | 1 | `pós-operatório` | 453 | unaccented |
 | `poseídos` | 1 | `poseidos` | 3 | accent_variant |
+| `posicao-chave` | 1 | `posição-chave` | 15 | unaccented |
 | `posiciòn` | 1 | `posición` | 7 | accent_variant |
 | `posicöes` | 1 | `posiçöes` | 30 | accent_variant |
+| `positrons` | 1 | `pósitrons` | 19 | unaccented |
 | `possiçao` | 1 | `possição` | 6 | accent_variant |
 | `possuí-io` | 1 | `possui-io` | 1 | accent_variant |
 | `possuíido` | 1 | `possuiido` | 2 | accent_variant |
@@ -26141,6 +27515,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `possúida` | 1 | `possuida` | 79 | accent_variant |
 | `postumo` | 1 | `póstumo` | 377 | unaccented |
 | `posturopédico` | 1 | `posturopedico` | 1 | accent_variant |
+| `potenciometro` | 1 | `potenciómetro` | 16 | unaccented |
 | `potencíal` | 1 | `potencial` | 14,733 | accent_variant |
 | `potpourrí` | 1 | `potpourri` | 81 | accent_variant |
 | `potpurrí` | 1 | `potpurri` | 1 | accent_variant |
@@ -26161,6 +27536,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `poíbe` | 1 | `poibe` | 4 | accent_variant |
 | `poôde` | 1 | `poode` | 1 | accent_variant |
 | `pr'ài` | 1 | `pr'aí` | 26 | accent_variant |
+| `pralines` | 1 | `pralinés` | 17 | unaccented |
 | `pralinês` | 1 | `pralinés` | 17 | accent_variant |
 | `pralá` | 1 | `prala` | 5 | accent_variant |
 | `prapará` | 1 | `prapara` | 10 | accent_variant |
@@ -26174,8 +27550,10 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pre-cognitivos` | 1 | `pré-cognitivos` | 46 | unaccented |
 | `pre-dinástico` | 1 | `pré-dinástico` | 4 | accent_variant |
 | `pre-dinásticos` | 1 | `pré-dinásticos` | 7 | accent_variant |
+| `pre-direito` | 1 | `pré-direito` | 12 | unaccented |
 | `pre-estreia` | 1 | `pré-estreia` | 130 | unaccented |
 | `pre-explosão` | 1 | `pré-explosão` | 4 | accent_variant |
+| `pre-festa` | 1 | `pré-festa` | 11 | unaccented |
 | `pre-historia` | 1 | `pré-história` | 196 | unaccented |
 | `pre-historico` | 1 | `pré-histórico` | 486 | unaccented |
 | `pre-história` | 1 | `pré-história` | 196 | accent_variant |
@@ -26187,10 +27565,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pre-operatorio` | 1 | `pré-operatório` | 222 | unaccented |
 | `pre-operatória` | 1 | `pré-operatória` | 32 | accent_variant |
 | `pre-pagamento` | 1 | `pré-pagamento` | 77 | unaccented |
+| `pre-requesito` | 1 | `pré-requesito` | 12 | unaccented |
 | `pre-requisitos` | 1 | `pré-requisitos` | 68 | unaccented |
 | `pre-voo` | 1 | `pré-voo` | 126 | unaccented |
 | `pre-álgebra` | 1 | `pré-álgebra` | 10 | accent_variant |
 | `precario` | 1 | `precário` | 810 | unaccented |
+| `precaucoes` | 1 | `precauçöes` | 11 | unaccented |
 | `precaucão` | 1 | `precaução` | 7,671 | accent_variant |
 | `precisävamos` | 1 | `precisavámos` | 1 | accent_variant |
 | `precisô` | 1 | `preçiso` | 9 | accent_variant |
@@ -26260,6 +27640,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `prestididigitacão` | 1 | `prestididigitação` | 4 | accent_variant |
 | `prestidigitaçäo` | 1 | `prestidigitação` | 117 | accent_variant |
 | `prestí` | 1 | `presti` | 6 | accent_variant |
+| `pret-a-porter` | 1 | `prêt-à-porter` | 10 | unaccented |
 | `pret-â-porter` | 1 | `prêt-à-porter` | 10 | accent_variant |
 | `pretensao` | 1 | `pretensão` | 1,377 | unaccented |
 | `prevaricaçäo` | 1 | `prevaricação` | 73 | accent_variant |
@@ -26282,6 +27663,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `princípío` | 1 | `princípio` | 28,505 | accent_variant |
 | `prindê` | 1 | `prinde` | 4 | accent_variant |
 | `prinçesa` | 1 | `princesa` | 34,957 | accent_variant |
+| `prions` | 1 | `príons` | 10 | unaccented |
 | `prioritáriamente` | 1 | `prioritariamente` | 11 | accent_variant |
 | `privaçao` | 1 | `privação` | 1,123 | accent_variant |
 | `priçipal` | 1 | `pricipal` | 18 | accent_variant |
@@ -26291,11 +27673,14 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pro-inflamatórias` | 1 | `pró-inflamatórias` | 2 | accent_variant |
 | `pro-união` | 1 | `pró-união` | 2 | accent_variant |
 | `problemá` | 1 | `problema` | 476,442 | accent_variant |
+| `processa-io` | 1 | `processá-io` | 15 | unaccented |
 | `processár` | 1 | `processar` | 21,040 | accent_variant |
 | `procissao` | 1 | `procissão` | 662 | unaccented |
 | `proclamaçâo` | 1 | `proclamação` | 582 | accent_variant |
 | `proconsul` | 1 | `procônsul` | 103 | unaccented |
 | `proctoscópio` | 1 | `proctoscopio` | 1 | accent_variant |
+| `procura-ia` | 1 | `procurá-ia` | 18 | unaccented |
+| `procura-ios` | 1 | `procurá-ios` | 14 | unaccented |
 | `procuraçäo` | 1 | `procuração` | 695 | accent_variant |
 | `procurár` | 1 | `procurar` | 226,031 | accent_variant |
 | `procurä` | 1 | `procura` | 162,706 | accent_variant |
@@ -26314,6 +27699,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `profissâo` | 1 | `profissão` | 10,042 | accent_variant |
 | `profíssão` | 1 | `profissão` | 10,042 | accent_variant |
 | `progénie` | 1 | `progênie` | 16 | accent_variant |
+| `proibio` | 1 | `proíbio` | 14 | unaccented |
 | `proibiçaõ` | 1 | `proibição` | 1,262 | accent_variant |
 | `proibiçâo` | 1 | `proibição` | 1,262 | accent_variant |
 | `proibiçăo` | 1 | `proibição` | 1,262 | accent_variant |
@@ -26352,6 +27738,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `propösito` | 1 | `propósito` | 47,583 | accent_variant |
 | `propösitos` | 1 | `propositos` | 8 | accent_variant |
 | `propûs` | 1 | `propús` | 2 | accent_variant |
+| `prorio` | 1 | `prório` | 17 | unaccented |
 | `prorpio` | 1 | `prórpio` | 56 | unaccented |
 | `prorrogacao` | 1 | `prorrogação` | 247 | unaccented |
 | `prorrogaçäo` | 1 | `prorrogação` | 247 | accent_variant |
@@ -26364,6 +27751,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `prostítuta` | 1 | `prostituta` | 22,651 | accent_variant |
 | `protagonísmo` | 1 | `protagonismo` | 194 | accent_variant |
 | `protege-io` | 1 | `protegê-io` | 51 | unaccented |
+| `protege-ios` | 1 | `protegê-ios` | 19 | unaccented |
 | `protege-lo-à` | 1 | `protegê-lo-á` | 50 | accent_variant |
 | `protege-lo-á` | 1 | `protegê-lo-á` | 50 | accent_variant |
 | `protege-los-á` | 1 | `protegê-los-á` | 4 | accent_variant |
@@ -26507,6 +27895,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `pseudociése` | 1 | `pseudociese` | 7 | accent_variant |
 | `pseudómonas` | 1 | `pseudomonas` | 63 | accent_variant |
 | `pseudômonas` | 1 | `pseudomonas` | 63 | accent_variant |
+| `psico-analise` | 1 | `psico-análise` | 13 | unaccented |
 | `psicoanálises` | 1 | `psicoanalises` | 1 | accent_variant |
 | `psicofonía` | 1 | `psicofonia` | 2 | accent_variant |
 | `psicològicas` | 1 | `psícologicas` | 3 | accent_variant |
@@ -26756,6 +28145,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `quadrigemeos` | 1 | `quadrigêmeos` | 27 | unaccented |
 | `qualificaçoes` | 1 | `qualificaçöes` | 5 | accent_variant |
 | `qualqué` | 1 | `qualque` | 73 | accent_variant |
+| `quandoe` | 1 | `quandoé` | 11 | unaccented |
 | `quantríll` | 1 | `quantrill` | 191 | accent_variant |
 | `quantía` | 1 | `quantia` | 6,875 | accent_variant |
 | `quarteirào` | 1 | `quarteirão` | 15,217 | accent_variant |
@@ -26767,6 +28157,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `quañto` | 1 | `quanto` | 472,801 | accent_variant |
 | `quebrà` | 1 | `quebra` | 5,104 | accent_variant |
 | `quebéc` | 1 | `quebec` | 440 | accent_variant |
+| `queestas` | 1 | `queestás` | 12 | unaccented |
 | `queficasbemaíemcima` | 1 | `queficasbemaiemcima` | 1 | accent_variant |
 | `queijo-suiço` | 1 | `queijo-suíço` | 4 | accent_variant |
 | `queimar-nos-á` | 1 | `queimar-nos-à` | 3 | accent_variant |
@@ -26778,6 +28169,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `quemó` | 1 | `quemo` | 4 | accent_variant |
 | `quererå` | 1 | `querera` | 10 | accent_variant |
 | `queridissíma` | 1 | `queridissima` | 4 | accent_variant |
+| `queroneia` | 1 | `queronéia` | 13 | unaccented |
 | `queroé` | 1 | `queroe` | 2 | accent_variant |
 | `querrías` | 1 | `querrias` | 3 | accent_variant |
 | `querê-ia` | 1 | `quere-ia` | 3 | accent_variant |
@@ -26793,6 +28185,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `quilõmetros` | 1 | `quilômetros` | 1,355 | accent_variant |
 | `quimbembé` | 1 | `quimbembe` | 1 | accent_variant |
 | `quimá` | 1 | `quima` | 2 | accent_variant |
+| `quinico` | 1 | `quínico` | 10 | unaccented |
 | `quintessencia` | 1 | `quintessência` | 75 | unaccented |
 | `quintúplo` | 1 | `quíntuplo` | 100 | accent_variant |
 | `quiropraticos` | 1 | `quiropráticos` | 23 | unaccented |
@@ -27171,6 +28564,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `retêr` | 1 | `reter` | 6,638 | accent_variant |
 | `reumatico` | 1 | `reumático` | 168 | unaccented |
 | `reumátismo` | 1 | `reumatismo` | 307 | accent_variant |
+| `reunao` | 1 | `reunão` | 17 | unaccented |
 | `reunificacão` | 1 | `reunificação` | 156 | accent_variant |
 | `reuniào` | 1 | `reunião` | 71,610 | accent_variant |
 | `reunió` | 1 | `reunio` | 5 | accent_variant |
@@ -27390,6 +28784,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `sacrifícas` | 1 | `sacrificás` | 1 | accent_variant |
 | `sacrifícíos` | 1 | `sacrificios` | 227 | accent_variant |
 | `sacrilego` | 1 | `sacrílego` | 41 | unaccented |
+| `sacrilegos` | 1 | `sacrílegos` | 19 | unaccented |
 | `sacrífício` | 1 | `sacrifício` | 17,128 | accent_variant |
 | `sacäo` | 1 | `sacão` | 40 | accent_variant |
 | `sacóde` | 1 | `sacode` | 639 | accent_variant |
@@ -27413,6 +28808,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `salamón` | 1 | `salamon` | 10 | accent_variant |
 | `saldrà` | 1 | `saldrá` | 6 | accent_variant |
 | `saliênciá` | 1 | `saliência` | 529 | accent_variant |
+| `salomine` | 1 | `salómine` | 17 | unaccented |
 | `salomê` | 1 | `salomé` | 295 | accent_variant |
 | `salpição` | 1 | `salpicão` | 351 | accent_variant |
 | `saltitäo` | 1 | `saltitão` | 292 | accent_variant |
@@ -27542,6 +28938,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `semi-automãtica` | 1 | `semi-automática` | 363 | accent_variant |
 | `semiautomatico` | 1 | `semiautomático` | 187 | unaccented |
 | `semãntica` | 1 | `semântica` | 631 | accent_variant |
+| `senhorja` | 1 | `senhorjá` | 10 | unaccented |
 | `senhortá` | 1 | `senhorta` | 3 | accent_variant |
 | `senhorés` | 1 | `señhores` | 4 | accent_variant |
 | `senhô` | 1 | `senho` | 63 | accent_variant |
@@ -27595,6 +28992,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `ser-te-äo` | 1 | `ser-te-ão` | 81 | accent_variant |
 | `serafín` | 1 | `serafin` | 7 | accent_variant |
 | `sergurá` | 1 | `sergura` | 2 | accent_variant |
+| `serpentario` | 1 | `serpentário` | 10 | unaccented |
+| `serra-eletrica` | 1 | `serra-elétrica` | 10 | unaccented |
 | `serraçao` | 1 | `serração` | 919 | accent_variant |
 | `serrà` | 1 | `serra` | 5,400 | accent_variant |
 | `servidäo` | 1 | `servidão` | 621 | accent_variant |
@@ -27608,6 +29007,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `serå` | 1 | `serã` | 55 | accent_variant |
 | `serés` | 1 | `sêres` | 2 | accent_variant |
 | `serío` | 1 | `sério` | 394,125 | accent_variant |
+| `sesamoide` | 1 | `sesamóide` | 10 | unaccented |
 | `sessión` | 1 | `session` | 16 | accent_variant |
 | `sessâo` | 1 | `sessão` | 18,520 | accent_variant |
 | `sessăo` | 1 | `sessão` | 18,520 | accent_variant |
@@ -27711,6 +29111,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `sköl` | 1 | `skol` | 116 | accent_variant |
 | `släo` | 1 | `slão` | 1 | accent_variant |
 | `sméag` | 1 | `smeag` | 1 | accent_variant |
+| `so-cra-tes` | 1 | `só-cra-tes` | 16 | unaccented |
 | `sobrealimentaçäo` | 1 | `sobrealimentação` | 26 | accent_variant |
 | `sobrepoêm` | 1 | `sobrepoem` | 1 | accent_variant |
 | `sobrepòe` | 1 | `sobrepoe` | 3 | accent_variant |
@@ -27729,6 +29130,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `socio-econòmico` | 1 | `socio-económico` | 27 | accent_variant |
 | `socio-econômicas` | 1 | `socio-económicas` | 1 | accent_variant |
 | `socio-político` | 1 | `socio-politico` | 2 | accent_variant |
+| `sociopaticas` | 1 | `sociopáticas` | 12 | unaccented |
 | `socíalismo` | 1 | `socialismo` | 605 | accent_variant |
 | `sofikô` | 1 | `sofiko` | 1 | accent_variant |
 | `sofisticaçao` | 1 | `sofisticação` | 595 | accent_variant |
@@ -27828,6 +29230,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `subjunçâo` | 1 | `subjunção` | 7 | accent_variant |
 | `submersâo` | 1 | `submersão` | 291 | accent_variant |
 | `submissäo` | 1 | `submissão` | 1,222 | accent_variant |
+| `subordinacao` | 1 | `subordinação` | 16 | unaccented |
 | `subordinaçäo` | 1 | `subordinação` | 16 | accent_variant |
 | `subreptíciamente` | 1 | `subrepticiamente` | 7 | accent_variant |
 | `subsecçao` | 1 | `subsecção` | 192 | accent_variant |
@@ -27847,6 +29250,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `subtituídas` | 1 | `subtituidas` | 1 | accent_variant |
 | `subtrônicos` | 1 | `subtrónicos` | 1 | accent_variant |
 | `suburbíos` | 1 | `suburbios` | 44 | accent_variant |
+| `subxifoide` | 1 | `subxifóide` | 14 | unaccented |
 | `subôrno` | 1 | `suborno` | 5,584 | accent_variant |
 | `sucçäo` | 1 | `sucção` | 1,725 | accent_variant |
 | `sudao` | 1 | `sudão` | 1,385 | unaccented |
@@ -27862,6 +29266,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `suicìdio` | 1 | `suicídio` | 19,980 | accent_variant |
 | `suiço-alemão` | 1 | `suíço-alemão` | 3 | accent_variant |
 | `sujeîto` | 1 | `sujeito` | 13,789 | accent_variant |
+| `sulfoxido` | 1 | `sulfóxido` | 10 | unaccented |
 | `sulfúreto` | 1 | `sulfureto` | 143 | accent_variant |
 | `sulfúrio` | 1 | `sulfurio` | 2 | accent_variant |
 | `sultäo` | 1 | `sultão` | 2,581 | accent_variant |
@@ -27873,7 +29278,9 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `super-gêmeos` | 1 | `super-gémeos` | 3 | accent_variant |
 | `super-heroís` | 1 | `super-herois` | 10 | accent_variant |
 | `super-idênticos` | 1 | `super-idénticos` | 1 | accent_variant |
+| `super-inteligencia` | 1 | `super-inteligência` | 14 | unaccented |
 | `super-viloes` | 1 | `super-vilões` | 110 | unaccented |
+| `superavel` | 1 | `superável` | 11 | unaccented |
 | `supercalifragilística` | 1 | `supercalifragilistica` | 2 | accent_variant |
 | `supercompensaçäo` | 1 | `supercompensação` | 4 | accent_variant |
 | `superdemônio` | 1 | `superdemónio` | 17 | accent_variant |
@@ -27891,6 +29298,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `superáste` | 1 | `superaste` | 641 | accent_variant |
 | `superície` | 1 | `supericie` | 1 | accent_variant |
 | `superíor` | 1 | `superior` | 27,958 | accent_variant |
+| `supetao` | 1 | `supetão` | 17 | unaccented |
 | `supiiço` | 1 | `supiico` | 17 | accent_variant |
 | `suportár` | 1 | `suportar` | 25,054 | accent_variant |
 | `suposicao` | 1 | `suposição` | 3,233 | unaccented |
@@ -28080,6 +29488,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `tajikistán` | 1 | `tajikistan` | 1 | accent_variant |
 | `tajiquistáo` | 1 | `tajiquistão` | 88 | accent_variant |
 | `tajín` | 1 | `tajin` | 8 | accent_variant |
+| `talamica` | 1 | `talâmica` | 14 | unaccented |
 | `taliba` | 1 | `talibã` | 869 | unaccented |
 | `talibas` | 1 | `talibãs` | 1,276 | unaccented |
 | `talibán` | 1 | `taliban` | 280 | accent_variant |
@@ -28104,10 +29513,12 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `tartáro` | 1 | `tártaro` | 1,396 | accent_variant |
 | `tataravôs` | 1 | `tataravós` | 8 | accent_variant |
 | `taté` | 1 | `tate` | 3,356 | accent_variant |
+| `tazon` | 1 | `tazón` | 10 | unaccented |
 | `taçou` | 1 | `tacou` | 6 | accent_variant |
 | `taítiana` | 1 | `taitiana` | 60 | accent_variant |
 | `taítiano` | 1 | `taitiano` | 54 | accent_variant |
 | `taï` | 1 | `tai` | 1,885 | accent_variant |
+| `tchaikovski` | 1 | `tchaïkovski` | 14 | unaccented |
 | `tcharãn` | 1 | `tcharan` | 12 | accent_variant |
 | `tché` | 1 | `tche` | 15 | accent_variant |
 | `tchéchenios` | 1 | `tchechénios` | 4 | accent_variant |
@@ -28127,6 +29538,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `telefôníca` | 1 | `telefônica` | 458 | accent_variant |
 | `telegrafía` | 1 | `telegrafia` | 16 | accent_variant |
 | `telegênico` | 1 | `telegénico` | 16 | accent_variant |
+| `telemetro` | 1 | `telémetro` | 16 | unaccented |
 | `telemovéis` | 1 | `telemoveis` | 153 | accent_variant |
 | `telepatía` | 1 | `telepatia` | 987 | accent_variant |
 | `teleportámo` | 1 | `teleportamo` | 1 | accent_variant |
@@ -28184,6 +29596,8 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `terabítianos` | 1 | `terabitianos` | 17 | accent_variant |
 | `terapęuticas` | 1 | `terapeuticas` | 1 | accent_variant |
 | `terciario` | 1 | `terciário` | 147 | unaccented |
+| `tercio` | 1 | `tércio` | 10 | unaccented |
+| `terivel` | 1 | `terível` | 11 | unaccented |
 | `terminacao` | 1 | `terminação` | 271 | unaccented |
 | `terminão` | 1 | `terminao` | 1 | accent_variant |
 | `terminämos` | 1 | `terminàmos` | 4 | accent_variant |
@@ -28220,11 +29634,13 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `tetis` | 1 | `tétis` | 49 | unaccented |
 | `tetra-tetra-tetravô` | 1 | `tetra-tetra-tetravó` | 1 | accent_variant |
 | `tetônica` | 1 | `tetónica` | 1 | accent_variant |
+| `tevez` | 1 | `tévez` | 13 | unaccented |
 | `teçniçamente` | 1 | `tecnicamente` | 11,853 | accent_variant |
 | `teém` | 1 | `teêm` | 100 | accent_variant |
 | `teê` | 1 | `tee` | 680 | accent_variant |
 | `thanià` | 1 | `thania` | 8 | accent_variant |
 | `thaí` | 1 | `thai` | 488 | accent_variant |
+| `theophile` | 1 | `théophile` | 18 | unaccented |
 | `thomás` | 1 | `thomas` | 26,498 | accent_variant |
 | `thriller-acçao-policial` | 1 | `thriller-acção-policial` | 3 | accent_variant |
 | `thão` | 1 | `thao` | 682 | accent_variant |
@@ -28309,6 +29725,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `tornálo` | 1 | `tornalo` | 1 | accent_variant |
 | `tornâ` | 1 | `tornà` | 3 | accent_variant |
 | `tororó` | 1 | `tororo` | 8 | accent_variant |
+| `torques` | 1 | `torquês` | 12 | unaccented |
 | `torreäo` | 1 | `torreão` | 80 | accent_variant |
 | `torrêncialmente` | 1 | `torrencialmente` | 99 | accent_variant |
 | `tortellí` | 1 | `tortelli` | 25 | accent_variant |
@@ -28341,6 +29758,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `tracçäo` | 1 | `traccão` | 5 | accent_variant |
 | `tracée` | 1 | `tracee` | 27 | accent_variant |
 | `tradiçôes` | 1 | `tradiçöes` | 11 | accent_variant |
+| `traduccion` | 1 | `traducción` | 10 | unaccented |
 | `traduça` | 1 | `traduçã` | 3 | accent_variant |
 | `traduçáo` | 1 | `tradução` | 58,904 | accent_variant |
 | `traduçăo` | 1 | `tradução` | 58,904 | accent_variant |
@@ -28640,11 +30058,13 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `tćc` | 1 | `tcc` | 26 | accent_variant |
 | `těm` | 1 | `tém` | 113 | accent_variant |
 | `tẽm` | 1 | `tém` | 113 | accent_variant |
+| `ua-ua` | 1 | `uá-uá` | 15 | unaccented |
 | `ucraniânos` | 1 | `ucrânianos` | 6 | accent_variant |
 | `ucrânía` | 1 | `ucrânia` | 1,851 | accent_variant |
 | `ucé` | 1 | `uce` | 44 | accent_variant |
 | `uh-lálá` | 1 | `uh-lala` | 2 | accent_variant |
 | `ujá` | 1 | `uja` | 2 | accent_variant |
+| `ult` | 1 | `últ` | 10 | unaccented |
 | `ultra-sonica` | 1 | `ultra-sónica` | 45 | unaccented |
 | `ultra-sonicos` | 1 | `ultra-sónicos` | 27 | unaccented |
 | `ultra-sônicas` | 1 | `ultra-sónicas` | 12 | accent_variant |
@@ -28680,6 +30100,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `uníforme` | 1 | `uniforme` | 15,353 | accent_variant |
 | `uníversídade` | 1 | `universidade` | 38,152 | accent_variant |
 | `upa-la-lá` | 1 | `upa-lá-lá` | 8 | accent_variant |
+| `upalala` | 1 | `upalalá` | 16 | unaccented |
 | `uraís` | 1 | `urais` | 168 | accent_variant |
 | `urbanistico` | 1 | `urbanístico` | 78 | unaccented |
 | `urbanizaçäo` | 1 | `urbanização` | 201 | accent_variant |
@@ -28688,9 +30109,11 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `urgęncia` | 1 | `urgência` | 12,357 | accent_variant |
 | `urgęncias` | 1 | `urgencias` | 38 | accent_variant |
 | `urinario` | 1 | `urinário` | 586 | unaccented |
+| `urses` | 1 | `ursês` | 11 | unaccented |
 | `urânia` | 1 | `urania` | 5 | accent_variant |
 | `urânío` | 1 | `urânio` | 2,460 | accent_variant |
 | `urétra` | 1 | `uretra` | 278 | accent_variant |
+| `usa-ios` | 1 | `usá-ios` | 18 | unaccented |
 | `usavámos` | 1 | `usavamos` | 46 | accent_variant |
 | `usucapiäo` | 1 | `usucapião` | 15 | accent_variant |
 | `usà-io` | 1 | `usa-io` | 1 | accent_variant |
@@ -28712,9 +30135,11 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `utilizaçâo` | 1 | `utilização` | 1,710 | accent_variant |
 | `utilizaçäo` | 1 | `utilização` | 1,710 | accent_variant |
 | `utilizávél` | 1 | `utilizável` | 256 | accent_variant |
+| `utimos` | 1 | `útimos` | 17 | unaccented |
 | `utêncilios` | 1 | `utencilios` | 1 | accent_variant |
 | `utílízador` | 1 | `utilizador` | 3,442 | accent_variant |
 | `uvula` | 1 | `úvula` | 63 | unaccented |
+| `uzes` | 1 | `uzès` | 11 | unaccented |
 | `uä` | 1 | `ua` | 199 | accent_variant |
 | `uäs` | 1 | `uas` | 8 | accent_variant |
 | `uém` | 1 | `uem` | 17 | accent_variant |
@@ -28735,6 +30160,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `valdéz` | 1 | `valdez` | 465 | accent_variant |
 | `valdês` | 1 | `valdes` | 287 | accent_variant |
 | `valencía` | 1 | `valência` | 422 | accent_variant |
+| `valere` | 1 | `valére` | 13 | unaccented |
 | `valerà` | 1 | `valera` | 378 | accent_variant |
 | `valerón` | 1 | `valeron` | 24 | accent_variant |
 | `validaçao` | 1 | `validação` | 235 | accent_variant |
@@ -28749,6 +30175,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `vampiríca` | 1 | `vampírica` | 191 | accent_variant |
 | `vampíro` | 1 | `vampiro` | 32,158 | accent_variant |
 | `vamá` | 1 | `vama` | 9 | accent_variant |
+| `vancover` | 1 | `vancôver` | 10 | unaccented |
 | `vancê` | 1 | `vance` | 2,077 | accent_variant |
 | `vandâlo` | 1 | `vândalo` | 868 | accent_variant |
 | `varao` | 1 | `varão` | 1,296 | unaccented |
@@ -28758,6 +30185,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `varás` | 1 | `váras` | 2 | accent_variant |
 | `varíável` | 1 | `variável` | 2,357 | accent_variant |
 | `varón` | 1 | `varon` | 22 | accent_variant |
+| `vascularizacao` | 1 | `vascularização` | 17 | unaccented |
 | `vasectomía` | 1 | `vasectomia` | 777 | accent_variant |
 | `vassíliev` | 1 | `vassiliev` | 2 | accent_variant |
 | `vassílievna` | 1 | `vassilievna` | 2 | accent_variant |
@@ -28774,8 +30202,11 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `vecês` | 1 | `veces` | 32 | accent_variant |
 | `vedaçóes` | 1 | `vedaçoes` | 1 | accent_variant |
 | `vejão` | 1 | `vejao` | 2 | accent_variant |
+| `veloute` | 1 | `velouté` | 10 | unaccented |
 | `veló` | 1 | `velo` | 225 | accent_variant |
 | `vemaí` | 1 | `vemai` | 1 | accent_variant |
+| `venancio` | 1 | `venâncio` | 16 | unaccented |
+| `vence-ios` | 1 | `vencê-ios` | 18 | unaccented |
 | `vendavel` | 1 | `vendável` | 74 | unaccented |
 | `vendaváis` | 1 | `vendavaís` | 1 | accent_variant |
 | `vendelá` | 1 | `vendela` | 11 | accent_variant |
@@ -28795,6 +30226,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `venías` | 1 | `vênias` | 3 | accent_variant |
 | `ver-te-äo` | 1 | `ver-te-ão` | 21 | accent_variant |
 | `verdecerá` | 1 | `verdecera` | 1 | accent_variant |
+| `verginia` | 1 | `vergínia` | 16 | unaccented |
 | `vergê` | 1 | `verge` | 23 | accent_variant |
 | `verifiîcar` | 1 | `verifiicar` | 4 | accent_variant |
 | `verifícamos` | 1 | `verificàmos` | 4 | accent_variant |
@@ -28878,6 +30310,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `vivê-ia` | 1 | `vive-ia` | 1 | accent_variant |
 | `vivę` | 1 | `víve` | 2 | accent_variant |
 | `vivęssemos` | 1 | `vivessemos` | 52 | accent_variant |
+| `vizinhaca` | 1 | `vizinhaça` | 17 | unaccented |
 | `viágra` | 1 | `viagra` | 1,661 | accent_variant |
 | `viçki` | 1 | `vicki` | 2,326 | accent_variant |
 | `vièmos` | 1 | `víemos` | 2 | accent_variant |
@@ -28914,6 +30347,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `volière` | 1 | `voliére` | 5 | accent_variant |
 | `voltarăo` | 1 | `voltaräo` | 19 | accent_variant |
 | `voltejá` | 1 | `volteja` | 10 | accent_variant |
+| `voltios` | 1 | `vóltios` | 15 | unaccented |
 | `voltár` | 1 | `voltar` | 1,093,197 | accent_variant |
 | `voltãmos` | 1 | `voltàmos` | 7 | accent_variant |
 | `voluntariáste` | 1 | `voluntariaste` | 157 | accent_variant |
@@ -28941,6 +30375,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `vulneravéis` | 1 | `vulneraveis` | 14 | accent_variant |
 | `vulnávia` | 1 | `vulnavia` | 20 | accent_variant |
 | `vulnérable` | 1 | `vulnerable` | 5 | accent_variant |
+| `vuneravel` | 1 | `vunerável` | 17 | unaccented |
 | `vvoçê` | 1 | `vvocê` | 1 | accent_variant |
 | `vàyase` | 1 | `váyase` | 3 | accent_variant |
 | `váem` | 1 | `vaem` | 1 | accent_variant |
@@ -29051,6 +30486,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `wallaçe` | 1 | `wallace` | 8,826 | accent_variant |
 | `warré` | 1 | `warre` | 7 | accent_variant |
 | `wdă` | 1 | `wda` | 3 | accent_variant |
+| `webisodios` | 1 | `webisódios` | 12 | unaccented |
 | `weingärtner` | 1 | `weingartner` | 12 | accent_variant |
 | `whísque` | 1 | `whisque` | 6 | accent_variant |
 | `wisçonsin` | 1 | `wisconsin` | 2,489 | accent_variant |
@@ -29111,6 +30547,7 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `zoologo` | 1 | `zoólogo` | 148 | unaccented |
 | `zoología` | 1 | `zoologia` | 168 | accent_variant |
 | `zoológo` | 1 | `zoólogo` | 148 | accent_variant |
+| `zubeyde` | 1 | `zübeyde` | 19 | unaccented |
 | `zubiôn` | 1 | `zubion` | 4 | accent_variant |
 | `zurïch` | 1 | `zurich` | 216 | accent_variant |
 | `zá` | 1 | `za` | 235 | accent_variant |

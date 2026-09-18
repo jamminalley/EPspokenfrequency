@@ -1,6 +1,6 @@
 # Lemmas filtered out by the proper-noun/OOV heuristic.
 # Sorted desc by raw count -- review to rescue any false positives.
-# Truncated to entries with >= 100 occurrences: 18,749 of 251,898. The full list is written next to
+# Truncated to entries with >= 100 occurrences: 18,555 of 251,346. The full list is written next to
 # this file as *_full.txt and is not committed.
 # count	lemma	cap_ratio	reason
 743244	deus	0.961	cap_ratio=0.96
@@ -10,7 +10,6 @@
 132024	jack	0.997	cap_ratio=1.00
 129022	sra	0.960	cap_ratio=0.96
 97312	sam	0.998	cap_ratio=1.00
-95934	mr	0.985	cap_ratio=0.99, oov
 84241	michael	0.994	cap_ratio=0.99
 80763	natal	0.895	cap_ratio=0.90
 78342	frank	0.999	cap_ratio=1.00
@@ -32,11 +31,8 @@
 48472	max	0.998	cap_ratio=1.00
 48176	nick	0.990	cap_ratio=0.99
 47926	jimmy	0.998	cap_ratio=1.00, oov
-47633	c	0.946	cap_ratio=0.95, oov
 47573	paul	0.994	cap_ratio=0.99
-45595	d	0.926	cap_ratio=0.93, oov
 45424	bill	0.993	cap_ratio=0.99
-45234	b	0.960	cap_ratio=0.96, oov
 45044	danny	0.999	cap_ratio=1.00, oov
 44949	mary	0.998	cap_ratio=1.00
 44399	sarah	0.999	cap_ratio=1.00
@@ -44,7 +40,6 @@
 43611	bob	0.998	cap_ratio=1.00, oov
 43309	jim	0.999	cap_ratio=1.00, oov
 43142	jake	0.998	cap_ratio=1.00, oov
-42927	i	0.896	cap_ratio=0.90, oov
 42878	dra	0.987	cap_ratio=0.99, oov
 42628	ray	0.999	cap_ratio=1.00, oov
 40159	tony	0.998	cap_ratio=1.00
@@ -74,7 +69,6 @@
 31040	charles	0.994	cap_ratio=0.99
 30786	tv	0.950	cap_ratio=0.95
 29901	chuck	0.998	cap_ratio=1.00, oov
-29832	j	0.987	cap_ratio=0.99, oov
 29582	lee	0.997	cap_ratio=1.00, oov
 29562	eua	0.999	cap_ratio=1.00
 29503	kevin	0.999	cap_ratio=1.00, oov
@@ -88,9 +82,7 @@
 28073	martin	0.998	cap_ratio=1.00
 27980	jason	0.999	cap_ratio=1.00, oov
 27569	matt	0.999	cap_ratio=1.00, oov
-27502	l	0.898	cap_ratio=0.90, oov
 27300	lisa	0.946	cap_ratio=0.95
-27201	t	0.929	cap_ratio=0.93, oov
 27135	inglaterra	0.990	cap_ratio=0.99
 26539	dan	0.993	cap_ratio=0.99
 26499	thomas	1.000	cap_ratio=1.00
@@ -109,9 +101,9 @@
 24969	pete	0.999	cap_ratio=1.00, oov
 24889	andy	0.998	cap_ratio=1.00
 24603	vega	1.000	cap_ratio=1.00, oov
-24192	r	0.879	cap_ratio=0.88, oov
 23984	new	0.985	cap_ratio=0.98, oov
 23900	emma	0.999	cap_ratio=1.00, oov
+23661	califórnia	0.995	cap_ratio=0.99
 23464	méxico	0.997	cap_ratio=1.00
 23430	adn	1.000	cap_ratio=1.00
 23352	carter	0.998	cap_ratio=1.00, oov
@@ -123,14 +115,11 @@
 22897	sean	0.999	cap_ratio=1.00, oov
 22590	lorde	0.912	cap_ratio=0.91
 22502	alice	0.997	cap_ratio=1.00
-22466	ed	0.920	cap_ratio=0.92, oov
 22270	kyle	0.994	cap_ratio=0.99, oov
 22196	morgan	1.000	cap_ratio=1.00
 22130	red	0.988	cap_ratio=0.99, oov
 21873	sara	0.981	cap_ratio=0.98
 21726	lily	0.996	cap_ratio=1.00, oov
-21684	al	0.913	cap_ratio=0.91, oov
-21623	califórnia	0.995	cap_ratio=0.99
 21582	lucy	0.999	cap_ratio=1.00, oov
 21556	carlo	0.998	cap_ratio=1.00, oov
 21397	york	0.997	cap_ratio=1.00
@@ -170,14 +159,12 @@
 18146	marcus	1.000	cap_ratio=1.00
 18027	china	0.981	cap_ratio=0.98
 18013	smith	0.997	cap_ratio=1.00
-17986	st	0.977	cap_ratio=0.98, oov
-17753	g	0.934	cap_ratio=0.93, oov
 17744	kim	0.998	cap_ratio=1.00, oov
 17615	bruce	0.998	cap_ratio=1.00
 17575	tyler	0.992	cap_ratio=0.99, oov
+17457	áfrica	0.999	cap_ratio=1.00
 17403	elizabeth	0.995	cap_ratio=0.99, oov
 17342	abby	1.000	cap_ratio=1.00, oov
-17307	f	0.878	cap_ratio=0.88, oov
 17258	amanda	0.999	cap_ratio=1.00, oov
 17230	patrick	0.997	cap_ratio=1.00
 17210	lady	0.955	cap_ratio=0.95, oov
@@ -189,7 +176,6 @@
 16918	ethan	1.000	cap_ratio=1.00, oov
 16881	wayne	0.999	cap_ratio=1.00, oov
 16666	marshall	0.983	cap_ratio=0.98
-16612	áfrica	0.999	cap_ratio=1.00
 16545	gary	0.999	cap_ratio=1.00, oov
 16318	elena	0.997	cap_ratio=1.00, oov
 16277	tim	0.996	cap_ratio=1.00
@@ -209,7 +195,6 @@
 15712	julia	0.995	cap_ratio=1.00, oov
 15536	king	0.989	cap_ratio=0.99
 15509	parker	0.999	cap_ratio=1.00, oov
-15470	k	0.881	cap_ratio=0.88, oov
 15466	olivia	0.998	cap_ratio=1.00, oov
 15421	miller	0.994	cap_ratio=0.99
 15399	leonard	1.000	cap_ratio=1.00
@@ -230,7 +215,6 @@
 14892	greg	0.999	cap_ratio=1.00, oov
 14866	katie	0.997	cap_ratio=1.00, oov
 14810	doug	0.999	cap_ratio=1.00, oov
-14757	el	0.873	cap_ratio=0.87, oov
 14704	alemanha	0.991	cap_ratio=0.99
 14643	matthew	0.999	cap_ratio=1.00, oov
 14558	hitler	0.996	cap_ratio=1.00
@@ -243,7 +227,6 @@
 14225	bond	0.998	cap_ratio=1.00, oov
 14176	boston	0.998	cap_ratio=1.00
 14053	jeremy	1.000	cap_ratio=1.00, oov
-13969	u	0.923	cap_ratio=0.92, oov
 13947	rússia	0.999	cap_ratio=1.00
 13929	jamie	0.999	cap_ratio=1.00, oov
 13893	walker	0.995	cap_ratio=1.00, oov
@@ -432,6 +415,7 @@
 8780	neil	0.991	cap_ratio=0.99
 8769	liz	0.998	cap_ratio=1.00, oov
 8768	carson	0.999	cap_ratio=1.00, oov
+8761	canadá	0.998	cap_ratio=1.00
 8736	meg	0.998	cap_ratio=1.00, oov
 8699	island	0.989	cap_ratio=0.99, oov
 8689	barbara	0.998	cap_ratio=1.00
@@ -474,7 +458,6 @@
 8273	samantha	0.999	cap_ratio=1.00, oov
 8271	scully	1.000	cap_ratio=1.00, oov
 8264	brennan	1.000	cap_ratio=1.00, oov
-8257	canadá	0.998	cap_ratio=1.00
 8256	reed	0.999	cap_ratio=1.00, oov
 8235	keith	0.997	cap_ratio=1.00, oov
 8234	rob	0.995	cap_ratio=1.00, oov
@@ -504,7 +487,6 @@
 7910	spartacus	1.000	cap_ratio=1.00, oov
 7886	miranda	1.000	cap_ratio=1.00
 7879	randall	1.000	cap_ratio=1.00, oov
-7871	bo	0.966	cap_ratio=0.97, oov
 7865	ralph	0.998	cap_ratio=1.00, oov
 7857	finn	1.000	cap_ratio=1.00, oov
 7849	leon	0.998	cap_ratio=1.00, oov
@@ -525,7 +507,6 @@
 7703	marge	1.000	cap_ratio=1.00, oov
 7700	pablo	0.997	cap_ratio=1.00, oov
 7699	benny	1.000	cap_ratio=1.00, oov
-7691	us	0.879	cap_ratio=0.88, oov
 7662	cody	1.000	cap_ratio=1.00, oov
 7647	vic	0.998	cap_ratio=1.00, oov
 7646	brody	1.000	cap_ratio=1.00, oov
@@ -541,9 +522,7 @@
 7414	mick	0.998	cap_ratio=1.00, oov
 7412	frodo	1.000	cap_ratio=1.00, oov
 7373	craig	0.998	cap_ratio=1.00, oov
-7371	iá	0.979	cap_ratio=0.98, oov
 7346	cylon	0.970	cap_ratio=0.97, oov
-7320	w	0.950	cap_ratio=0.95, oov
 7317	rocky	0.994	cap_ratio=0.99, oov
 7291	christian	1.000	cap_ratio=1.00
 7291	cindy	0.998	cap_ratio=1.00, oov
@@ -574,7 +553,6 @@
 6986	violet	0.995	cap_ratio=0.99, oov
 6978	sherlock	0.998	cap_ratio=1.00, oov
 6977	isabel	0.999	cap_ratio=1.00
-6965	jo	0.990	cap_ratio=0.99, oov
 6950	porter	0.992	cap_ratio=0.99, oov
 6948	kane	0.996	cap_ratio=1.00, oov
 6944	enterprise	0.999	cap_ratio=1.00, oov
@@ -667,7 +645,6 @@
 6080	gray	0.996	cap_ratio=1.00, oov
 6078	marvin	1.000	cap_ratio=1.00, oov
 6069	sms	0.905	cap_ratio=0.90
-6069	z	0.947	cap_ratio=0.95, oov
 6065	lauren	0.995	cap_ratio=1.00, oov
 6038	robbie	1.000	cap_ratio=1.00, oov
 6020	wyatt	1.000	cap_ratio=1.00, oov
@@ -735,7 +712,6 @@
 5589	joy	0.980	cap_ratio=0.98, oov
 5585	haley	1.000	cap_ratio=1.00, oov
 5562	jax	1.000	cap_ratio=1.00, oov
-5561	dj	0.994	cap_ratio=0.99, oov
 5561	laurel	0.998	cap_ratio=1.00, oov
 5550	yang	0.933	cap_ratio=0.93
 5526	grayson	1.000	cap_ratio=1.00, oov
@@ -770,7 +746,6 @@
 5286	paula	0.991	cap_ratio=0.99
 5272	drew	0.998	cap_ratio=1.00, oov
 5272	rudy	1.000	cap_ratio=1.00, oov
-5262	jr	0.996	cap_ratio=1.00, oov
 5253	dixon	1.000	cap_ratio=1.00, oov
 5252	atlanta	0.989	cap_ratio=0.99
 5243	silver	0.984	cap_ratio=0.98, oov
@@ -779,7 +754,6 @@
 5223	pope	0.993	cap_ratio=0.99, oov
 5222	boyd	1.000	cap_ratio=1.00, oov
 5205	jasper	0.998	cap_ratio=1.00, oov
-5181	oz	0.994	cap_ratio=0.99, oov
 5174	vaughn	1.000	cap_ratio=1.00, oov
 5164	nolan	0.999	cap_ratio=1.00, oov
 5158	elvis	0.993	cap_ratio=0.99, oov
@@ -868,7 +842,6 @@
 4679	ernie	0.998	cap_ratio=1.00, oov
 4677	drake	1.000	cap_ratio=1.00
 4664	grécia	0.999	cap_ratio=1.00
-4657	po	0.859	cap_ratio=0.86, oov
 4638	moisés	0.999	cap_ratio=1.00
 4634	chen	0.994	cap_ratio=0.99
 4630	zeus	0.999	cap_ratio=1.00
@@ -889,7 +862,6 @@
 4575	dea	0.996	cap_ratio=1.00, oov
 4575	langley	0.998	cap_ratio=1.00, oov
 4574	otto	0.995	cap_ratio=0.99, oov
-4572	dc	0.984	cap_ratio=0.98, oov
 4572	schmidt	1.000	cap_ratio=1.00, oov
 4567	art	0.960	cap_ratio=0.96, oov
 4557	brasil	0.988	cap_ratio=0.99
@@ -912,7 +884,6 @@
 4445	ash	0.997	cap_ratio=1.00, oov
 4440	monk	0.999	cap_ratio=1.00, oov
 4436	carolina	0.983	cap_ratio=0.98
-4435	ss	0.983	cap_ratio=0.98, oov
 4434	cross	0.971	cap_ratio=0.97, oov
 4423	mack	0.998	cap_ratio=1.00, oov
 4406	starbuck	0.999	cap_ratio=1.00, oov
@@ -951,7 +922,6 @@
 4237	florença	0.999	cap_ratio=1.00
 4235	doris	1.000	cap_ratio=1.00
 4231	marilyn	0.997	cap_ratio=1.00
-4231	ms	0.975	cap_ratio=0.97, oov
 4217	yuri	0.998	cap_ratio=1.00, oov
 4212	debra	0.999	cap_ratio=1.00, oov
 4201	gilbert	1.000	cap_ratio=1.00, oov
@@ -1001,7 +971,6 @@
 4020	cynthia	0.999	cap_ratio=1.00, oov
 4016	abel	0.999	cap_ratio=1.00
 4013	denver	0.999	cap_ratio=1.00, oov
-4012	wu	0.993	cap_ratio=0.99, oov
 4010	roland	0.985	cap_ratio=0.98, oov
 3999	dog	0.920	cap_ratio=0.92, oov
 3999	gavin	1.000	cap_ratio=1.00, oov
@@ -1083,6 +1052,7 @@
 3704	beck	0.998	cap_ratio=1.00, oov
 3702	abu	0.999	cap_ratio=1.00
 3699	harbor	0.996	cap_ratio=1.00, oov
+3695	ásia	0.998	cap_ratio=1.00
 3694	avenue	0.999	cap_ratio=1.00, oov
 3693	ollie	0.993	cap_ratio=0.99, oov
 3682	dumbledore	0.998	cap_ratio=1.00, oov
@@ -1148,6 +1118,7 @@
 3473	júpiter	0.992	cap_ratio=0.99
 3471	murdock	1.000	cap_ratio=1.00
 3469	ragnar	1.000	cap_ratio=1.00, oov
+3464	panamá	0.993	cap_ratio=0.99
 3462	sadie	0.999	cap_ratio=1.00, oov
 3461	lopez	0.998	cap_ratio=1.00
 3460	canyon	0.934	cap_ratio=0.93, oov
@@ -1159,6 +1130,7 @@
 3441	armstrong	0.999	cap_ratio=1.00, oov
 3441	belle	0.973	cap_ratio=0.97, oov
 3434	uat	1.000	cap_ratio=1.00, oov
+3430	drácula	0.991	cap_ratio=0.99, oov
 3428	gracie	0.998	cap_ratio=1.00, oov
 3424	gerry	1.000	cap_ratio=1.00, oov
 3421	ivy	0.999	cap_ratio=1.00, oov
@@ -1171,7 +1143,6 @@
 3391	cap	0.925	cap_ratio=0.93
 3390	lindsey	0.999	cap_ratio=1.00, oov
 3386	polónia	0.991	cap_ratio=0.99
-3386	ásia	0.998	cap_ratio=1.00
 3383	chester	0.998	cap_ratio=1.00, oov
 3383	sutton	1.000	cap_ratio=1.00, oov
 3376	golfo	0.872	cap_ratio=0.87
@@ -1183,7 +1154,6 @@
 3357	dutch	0.998	cap_ratio=1.00, oov
 3357	tate	0.999	cap_ratio=1.00, oov
 3356	atlântico	0.969	cap_ratio=0.97
-3355	ty	0.992	cap_ratio=0.99, oov
 3353	royal	0.950	cap_ratio=0.95
 3351	esteban	0.999	cap_ratio=1.00, oov
 3349	rené	0.999	cap_ratio=1.00, oov
@@ -1236,7 +1206,6 @@
 3223	chelsea	0.996	cap_ratio=1.00, oov
 3219	maureen	1.000	cap_ratio=1.00, oov
 3214	alasca	0.996	cap_ratio=1.00
-3213	panamá	0.993	cap_ratio=0.99
 3211	bennet	1.000	cap_ratio=1.00, oov
 3210	empire	0.981	cap_ratio=0.98, oov
 3210	holden	0.988	cap_ratio=0.99, oov
@@ -1248,7 +1217,6 @@
 3189	tac	0.854	cap_ratio=0.85, oov
 3188	columbia	0.996	cap_ratio=1.00, oov
 3188	oxford	0.993	cap_ratio=0.99
-3184	drácula	0.991	cap_ratio=0.99, oov
 3184	state	0.984	cap_ratio=0.98, oov
 3182	side	0.933	cap_ratio=0.93, oov
 3181	cuddy	1.000	cap_ratio=1.00, oov
@@ -1515,6 +1483,7 @@
 2562	jensen	0.999	cap_ratio=1.00, oov
 2560	gabrielle	1.000	cap_ratio=1.00, oov
 2558	iv	0.996	cap_ratio=1.00
+2557	françois	0.994	cap_ratio=0.99
 2555	graal	0.973	cap_ratio=0.97
 2555	grove	0.991	cap_ratio=0.99, oov
 2555	haven	0.999	cap_ratio=1.00, oov
@@ -1523,7 +1492,6 @@
 2548	natasha	1.000	cap_ratio=1.00, oov
 2544	caffrey	1.000	cap_ratio=1.00, oov
 2544	hogwarts	1.000	cap_ratio=1.00, oov
-2543	jj	0.997	cap_ratio=1.00, oov
 2541	boss	0.936	cap_ratio=0.94, oov
 2541	stannis	1.000	cap_ratio=1.00, oov
 2539	benji	1.000	cap_ratio=1.00, oov
@@ -1587,7 +1555,6 @@
 2431	sybil	0.998	cap_ratio=1.00, oov
 2430	cinderela	0.957	cap_ratio=0.96
 2430	jericho	0.998	cap_ratio=1.00, oov
-2430	sd	0.998	cap_ratio=1.00, oov
 2426	clive	0.997	cap_ratio=1.00
 2424	herman	0.999	cap_ratio=1.00
 2423	darby	1.000	cap_ratio=1.00, oov
@@ -1597,6 +1564,7 @@
 2418	michel	0.999	cap_ratio=1.00, oov
 2415	sheppard	0.999	cap_ratio=1.00, oov
 2412	voyager	0.970	cap_ratio=0.97, oov
+2407	áustria	0.999	cap_ratio=1.00
 2405	golden	0.939	cap_ratio=0.94, oov
 2403	fury	1.000	cap_ratio=1.00, oov
 2403	gaby	1.000	cap_ratio=1.00, oov
@@ -1635,7 +1603,6 @@
 2361	key	0.939	cap_ratio=0.94, oov
 2360	elle	0.962	cap_ratio=0.96, oov
 2359	cullen	0.999	cap_ratio=1.00, oov
-2358	françois	0.994	cap_ratio=0.99
 2358	gomez	0.999	cap_ratio=1.00
 2358	gossip	0.997	cap_ratio=1.00, oov
 2357	chapman	0.998	cap_ratio=1.00, oov
@@ -1699,7 +1666,6 @@
 2281	met	0.865	cap_ratio=0.86, oov
 2275	reyes	0.997	cap_ratio=1.00, oov
 2273	hoyt	1.000	cap_ratio=1.00, oov
-2273	yu	0.990	cap_ratio=0.99, oov
 2272	julio	0.990	cap_ratio=0.99, oov
 2272	porsche	0.987	cap_ratio=0.99, oov
 2270	bender	0.998	cap_ratio=1.00, oov
@@ -1720,10 +1686,8 @@
 2247	warner	0.999	cap_ratio=1.00, oov
 2246	lion	0.968	cap_ratio=0.97, oov
 2244	rambo	0.990	cap_ratio=0.99, oov
-2244	áustria	0.999	cap_ratio=1.00
 2241	irina	0.999	cap_ratio=1.00, oov
 2240	diamond	0.975	cap_ratio=0.97, oov
-2239	aa	0.931	cap_ratio=0.93, oov
 2239	allie	0.999	cap_ratio=1.00, oov
 2239	portugal	0.969	cap_ratio=0.97
 2238	hillary	0.995	cap_ratio=0.99, oov
@@ -1741,7 +1705,6 @@
 2216	antoine	1.000	cap_ratio=1.00
 2213	carolyn	1.000	cap_ratio=1.00, oov
 2211	barton	1.000	cap_ratio=1.00, oov
-2211	qi	0.992	cap_ratio=0.99, oov
 2210	bélgica	0.979	cap_ratio=0.98
 2209	feng	0.855	cap_ratio=0.86, oov
 2206	micah	1.000	cap_ratio=1.00, oov
@@ -1850,7 +1813,6 @@
 2057	jeanne	1.000	cap_ratio=1.00, oov
 2055	joker	0.949	cap_ratio=0.95, oov
 2052	dobbs	1.000	cap_ratio=1.00, oov
-2052	sg	1.000	cap_ratio=1.00, oov
 2049	assad	1.000	cap_ratio=1.00, oov
 2048	jamaica	0.996	cap_ratio=1.00
 2048	ramsey	1.000	cap_ratio=1.00, oov
@@ -1865,7 +1827,6 @@
 2042	slade	1.000	cap_ratio=1.00, oov
 2040	connors	1.000	cap_ratio=1.00, oov
 2039	havana	0.997	cap_ratio=1.00
-2038	california	0.986	cap_ratio=0.99, oov
 2036	carlton	0.999	cap_ratio=1.00, oov
 2035	janey	0.998	cap_ratio=1.00, oov
 2034	weston	1.000	cap_ratio=1.00, oov
@@ -1905,6 +1866,7 @@
 1986	adama	0.999	cap_ratio=1.00, oov
 1986	christie	0.996	cap_ratio=1.00, oov
 1984	mississippi	0.998	cap_ratio=1.00, oov
+1983	cápua	1.000	cap_ratio=1.00, oov
 1981	terrence	0.999	cap_ratio=1.00, oov
 1979	marjorie	0.999	cap_ratio=1.00, oov
 1978	xx	0.998	cap_ratio=1.00
@@ -1918,7 +1880,6 @@
 1971	perez	0.999	cap_ratio=1.00
 1971	valentim	0.992	cap_ratio=0.99
 1969	roth	0.997	cap_ratio=1.00, oov
-1969	tc	0.988	cap_ratio=0.99, oov
 1967	bolt	0.999	cap_ratio=1.00, oov
 1966	boulevard	0.966	cap_ratio=0.97
 1965	hollow	0.991	cap_ratio=0.99, oov
@@ -1966,7 +1927,6 @@
 1931	janine	1.000	cap_ratio=1.00, oov
 1930	cotton	0.997	cap_ratio=1.00, oov
 1930	esparta	0.999	cap_ratio=1.00
-1929	av	0.951	cap_ratio=0.95, oov
 1929	bowl	0.973	cap_ratio=0.97, oov
 1928	cyril	0.999	cap_ratio=1.00, oov
 1928	main	0.981	cap_ratio=0.98, oov
@@ -1977,7 +1937,6 @@
 1921	cnn	0.999	cap_ratio=1.00
 1920	atenas	1.000	cap_ratio=1.00
 1920	iron	0.973	cap_ratio=0.97, oov
-1918	aj	0.977	cap_ratio=0.98, oov
 1916	gredenko	1.000	cap_ratio=1.00, oov
 1916	harlan	1.000	cap_ratio=1.00, oov
 1916	montreal	0.991	cap_ratio=0.99
@@ -2016,7 +1975,6 @@
 1880	enzo	0.997	cap_ratio=1.00, oov
 1879	lina	0.986	cap_ratio=0.99, oov
 1878	becker	1.000	cap_ratio=1.00, oov
-1878	lu	0.950	cap_ratio=0.95, oov
 1877	cary	0.998	cap_ratio=1.00, oov
 1877	colombo	0.996	cap_ratio=1.00
 1876	season	0.921	cap_ratio=0.92, oov
@@ -2078,9 +2036,7 @@
 1812	death	0.912	cap_ratio=0.91, oov
 1812	orion	0.991	cap_ratio=0.99, oov
 1812	wendell	0.999	cap_ratio=1.00, oov
-1811	ko	0.945	cap_ratio=0.95, oov
 1810	brutus	1.000	cap_ratio=1.00
-1810	cápua	1.000	cap_ratio=1.00, oov
 1810	keaton	0.999	cap_ratio=1.00
 1808	kaplan	0.988	cap_ratio=0.99, oov
 1808	romeo	0.996	cap_ratio=1.00, oov
@@ -2104,6 +2060,7 @@
 1793	gen	0.898	cap_ratio=0.90, oov
 1792	shepard	1.000	cap_ratio=1.00, oov
 1787	ventura	0.880	cap_ratio=0.88
+1786	cleópatra	0.996	cap_ratio=1.00
 1782	gannicus	1.000	cap_ratio=1.00, oov
 1781	dolly	0.929	cap_ratio=0.93, oov
 1780	charlene	1.000	cap_ratio=1.00, oov
@@ -2136,14 +2093,12 @@
 1759	cash	0.956	cap_ratio=0.96, oov
 1758	foley	0.994	cap_ratio=0.99, oov
 1758	spider	0.996	cap_ratio=1.00, oov
-1757	ak	0.990	cap_ratio=0.99, oov
 1756	caprica	1.000	cap_ratio=1.00, oov
 1756	mace	0.883	cap_ratio=0.88
 1755	bean	0.988	cap_ratio=0.99, oov
 1755	seal	0.988	cap_ratio=0.99, oov
 1754	doctor	0.874	cap_ratio=0.87, oov
 1754	ramona	0.980	cap_ratio=0.98, oov
-1754	tj	0.998	cap_ratio=1.00, oov
 1752	titanic	0.996	cap_ratio=1.00
 1751	julien	0.997	cap_ratio=1.00, oov
 1751	stackhouse	0.999	cap_ratio=1.00, oov
@@ -2159,6 +2114,7 @@
 1745	burger	0.965	cap_ratio=0.96, oov
 1744	jonesy	0.987	cap_ratio=0.99, oov
 1743	rocco	1.000	cap_ratio=1.00, oov
+1742	sicília	0.999	cap_ratio=1.00
 1742	willard	0.999	cap_ratio=1.00, oov
 1741	lambert	0.999	cap_ratio=1.00
 1740	eddy	0.989	cap_ratio=0.99, oov
@@ -2192,7 +2148,6 @@
 1717	krypton	0.993	cap_ratio=0.99, oov
 1716	amir	0.998	cap_ratio=1.00, oov
 1716	bubba	0.977	cap_ratio=0.98, oov
-1716	mc	0.939	cap_ratio=0.94, oov
 1716	payne	0.999	cap_ratio=1.00, oov
 1715	mad	0.969	cap_ratio=0.97, oov
 1715	nameless	0.977	cap_ratio=0.98, oov
@@ -2209,8 +2164,6 @@
 1705	hilary	0.977	cap_ratio=0.98, oov
 1705	nino	0.986	cap_ratio=0.99
 1704	zelândia	1.000	cap_ratio=1.00
-1703	jt	0.983	cap_ratio=0.98, oov
-1703	ny	0.993	cap_ratio=0.99, oov
 1702	ursula	1.000	cap_ratio=1.00, oov
 1701	storm	0.980	cap_ratio=0.98, oov
 1700	bette	0.998	cap_ratio=1.00, oov
@@ -2235,7 +2188,6 @@
 1687	lennox	0.999	cap_ratio=1.00, oov
 1687	madeleine	0.996	cap_ratio=1.00
 1687	srs	0.890	cap_ratio=0.89, oov
-1686	ep	0.993	cap_ratio=0.99, oov
 1686	hook	0.976	cap_ratio=0.98, oov
 1683	montecito	1.000	cap_ratio=1.00, oov
 1683	wilkes	0.999	cap_ratio=1.00, oov
@@ -2265,7 +2217,6 @@
 1660	alberto	0.998	cap_ratio=1.00
 1660	singer	0.981	cap_ratio=0.98, oov
 1659	joana	0.998	cap_ratio=1.00
-1654	dl	0.896	cap_ratio=0.90, oov
 1653	gustav	0.974	cap_ratio=0.97, oov
 1651	proctor	0.998	cap_ratio=1.00, oov
 1650	amgod	1.000	cap_ratio=1.00, oov
@@ -2274,7 +2225,6 @@
 1650	trek	0.996	cap_ratio=1.00, oov
 1649	beirute	0.999	cap_ratio=1.00
 1648	anubis	0.997	cap_ratio=1.00, oov
-1646	sicília	0.999	cap_ratio=1.00
 1646	tobin	1.000	cap_ratio=1.00, oov
 1644	keating	0.999	cap_ratio=1.00, oov
 1644	prescott	0.999	cap_ratio=1.00, oov
@@ -2286,7 +2236,6 @@
 1637	tech	0.966	cap_ratio=0.97, oov
 1634	samson	1.000	cap_ratio=1.00, oov
 1632	ocean	0.968	cap_ratio=0.97, oov
-1630	cleópatra	0.996	cap_ratio=1.00
 1629	kendra	1.000	cap_ratio=1.00, oov
 1629	rigsby	1.000	cap_ratio=1.00, oov
 1628	cedric	1.000	cap_ratio=1.00, oov
@@ -2362,7 +2311,6 @@
 1569	blanche	0.980	cap_ratio=0.98, oov
 1569	giovanni	0.998	cap_ratio=1.00
 1567	cromwell	1.000	cap_ratio=1.00
-1566	hr	0.971	cap_ratio=0.97, oov
 1566	olaf	1.000	cap_ratio=1.00, oov
 1566	tree	0.947	cap_ratio=0.95, oov
 1565	trixie	1.000	cap_ratio=1.00, oov
@@ -2410,6 +2358,7 @@
 1539	damian	1.000	cap_ratio=1.00, oov
 1537	lucinda	1.000	cap_ratio=1.00
 1535	kang	0.994	cap_ratio=0.99, oov
+1534	noé	0.997	cap_ratio=1.00
 1533	thorin	1.000	cap_ratio=1.00, oov
 1531	arrow	0.996	cap_ratio=1.00, oov
 1531	dep	0.933	cap_ratio=0.93, oov
@@ -2562,7 +2511,6 @@
 1424	athos	1.000	cap_ratio=1.00, oov
 1424	lew	1.000	cap_ratio=1.00, oov
 1422	fine	0.877	cap_ratio=0.88
-1422	noé	0.997	cap_ratio=1.00
 1419	driscoll	1.000	cap_ratio=1.00, oov
 1417	varsóvia	0.998	cap_ratio=1.00
 1416	ziggy	0.999	cap_ratio=1.00, oov
@@ -2583,7 +2531,6 @@
 1407	chanel	0.996	cap_ratio=1.00, oov
 1407	mme	0.881	cap_ratio=0.88, oov
 1407	muhammad	0.998	cap_ratio=1.00, oov
-1407	rj	1.000	cap_ratio=1.00, oov
 1407	saturno	0.981	cap_ratio=0.98
 1406	apolo	0.996	cap_ratio=1.00
 1406	lamar	0.999	cap_ratio=1.00, oov
@@ -2594,6 +2541,7 @@
 1405	pretty	0.870	cap_ratio=0.87, oov
 1405	ronny	0.991	cap_ratio=0.99, oov
 1403	novak	1.000	cap_ratio=1.00, oov
+1401	disneylândia	0.989	cap_ratio=0.99, oov
 1401	wolverine	0.975	cap_ratio=0.98, oov
 1400	sven	1.000	cap_ratio=1.00, oov
 1399	mueller	1.000	cap_ratio=1.00, oov
@@ -2780,7 +2728,6 @@
 1301	marv	0.998	cap_ratio=1.00, oov
 1301	priya	1.000	cap_ratio=1.00, oov
 1299	errol	1.000	cap_ratio=1.00, oov
-1298	jd	0.996	cap_ratio=1.00, oov
 1298	margie	1.000	cap_ratio=1.00, oov
 1298	nicolas	0.999	cap_ratio=1.00
 1298	weather	0.985	cap_ratio=0.99, oov
@@ -2807,7 +2754,6 @@
 1283	penn	0.993	cap_ratio=0.99, oov
 1282	patton	1.000	cap_ratio=1.00, oov
 1282	rivera	0.998	cap_ratio=1.00
-1281	disneylândia	0.989	cap_ratio=0.99, oov
 1280	patmore	1.000	cap_ratio=1.00, oov
 1279	brittany	1.000	cap_ratio=1.00, oov
 1279	gage	0.999	cap_ratio=1.00, oov
@@ -2959,7 +2905,6 @@
 1199	columbus	0.995	cap_ratio=1.00, oov
 1199	molesley	1.000	cap_ratio=1.00, oov
 1199	zhao	1.000	cap_ratio=1.00, oov
-1198	oj	0.996	cap_ratio=1.00, oov
 1197	axe	0.995	cap_ratio=1.00, oov
 1197	jojo	0.999	cap_ratio=1.00, oov
 1197	trade	0.982	cap_ratio=0.98, oov
@@ -2993,12 +2938,10 @@
 1186	mcgill	0.999	cap_ratio=1.00, oov
 1186	sucre	0.982	cap_ratio=0.98, oov
 1185	bombaim	1.000	cap_ratio=1.00
-1185	rm	0.960	cap_ratio=0.96, oov
 1184	dougie	0.997	cap_ratio=1.00, oov
 1184	rat	0.968	cap_ratio=0.97, oov
 1184	sook	1.000	cap_ratio=1.00, oov
 1183	kali	0.974	cap_ratio=0.97
-1183	ox	0.989	cap_ratio=0.99, oov
 1181	chavez	0.998	cap_ratio=1.00, oov
 1181	cláudia	0.997	cap_ratio=1.00
 1181	six	0.937	cap_ratio=0.94, oov
@@ -3007,6 +2950,7 @@
 1179	gaston	1.000	cap_ratio=1.00, oov
 1179	hoss	0.972	cap_ratio=0.97, oov
 1179	rolex	0.951	cap_ratio=0.95, oov
+1178	nárnia	1.000	cap_ratio=1.00, oov
 1178	petrov	1.000	cap_ratio=1.00, oov
 1178	quantico	0.994	cap_ratio=0.99, oov
 1177	barnett	1.000	cap_ratio=1.00, oov
@@ -3025,7 +2969,6 @@
 1171	bertha	0.999	cap_ratio=1.00, oov
 1171	bósnia	0.965	cap_ratio=0.97
 1171	croft	0.999	cap_ratio=1.00, oov
-1170	ac	0.876	cap_ratio=0.88, oov
 1170	pasadena	1.000	cap_ratio=1.00, oov
 1170	stockton	0.998	cap_ratio=1.00, oov
 1169	cavanaugh	0.996	cap_ratio=1.00, oov
@@ -3103,7 +3046,6 @@
 1133	lennon	0.998	cap_ratio=1.00, oov
 1133	master	0.891	cap_ratio=0.89, oov
 1133	tru	0.994	cap_ratio=0.99, oov
-1133	yi	0.975	cap_ratio=0.97, oov
 1132	browning	0.996	cap_ratio=1.00, oov
 1132	hilda	0.987	cap_ratio=0.99, oov
 1132	ihes	1.000	cap_ratio=1.00, oov
@@ -3129,7 +3071,6 @@
 1126	talia	0.999	cap_ratio=1.00, oov
 1125	annette	1.000	cap_ratio=1.00, oov
 1125	sutter	1.000	cap_ratio=1.00, oov
-1124	mj	1.000	cap_ratio=1.00, oov
 1123	aramis	1.000	cap_ratio=1.00, oov
 1123	custer	1.000	cap_ratio=1.00, oov
 1123	edimburgo	1.000	cap_ratio=1.00
@@ -3150,7 +3091,6 @@
 1117	kathleen	0.999	cap_ratio=1.00, oov
 1117	mississípi	1.000	cap_ratio=1.00, oov
 1116	bretanha	0.998	cap_ratio=1.00
-1116	cj	1.000	cap_ratio=1.00, oov
 1116	gatsby	1.000	cap_ratio=1.00, oov
 1116	o'connor	1.000	cap_ratio=1.00, oov
 1115	hardman	1.000	cap_ratio=1.00, oov
@@ -3185,12 +3125,10 @@
 1103	tang	0.950	cap_ratio=0.95, oov
 1102	carr	0.990	cap_ratio=0.99, oov
 1101	english	0.983	cap_ratio=0.98, oov
-1101	nárnia	1.000	cap_ratio=1.00, oov
 1100	jung	0.996	cap_ratio=1.00
 1099	inc	0.974	cap_ratio=0.97, oov
 1098	jeb	1.000	cap_ratio=1.00, oov
 1097	pelant	1.000	cap_ratio=1.00, oov
-1097	sy	0.999	cap_ratio=1.00, oov
 1096	luigi	0.997	cap_ratio=1.00
 1096	pancho	0.990	cap_ratio=0.99, oov
 1095	jessi	1.000	cap_ratio=1.00, oov
@@ -3199,6 +3137,7 @@
 1094	bjorn	0.987	cap_ratio=0.99, oov
 1094	magneto	0.930	cap_ratio=0.93
 1093	dottie	1.000	cap_ratio=1.00, oov
+1093	gália	0.996	cap_ratio=1.00
 1092	ducky	0.999	cap_ratio=1.00, oov
 1092	elton	1.000	cap_ratio=1.00, oov
 1092	patrice	1.000	cap_ratio=1.00, oov
@@ -3420,7 +3359,6 @@
 1008	steiner	1.000	cap_ratio=1.00, oov
 1007	quixote	1.000	cap_ratio=1.00
 1007	water	0.854	cap_ratio=0.85, oov
-1006	gália	0.996	cap_ratio=1.00
 1006	ilsa	1.000	cap_ratio=1.00, oov
 1005	elisa	0.992	cap_ratio=0.99
 1005	henrietta	1.000	cap_ratio=1.00, oov
@@ -3501,18 +3439,15 @@
 977	pooh	0.968	cap_ratio=0.97, oov
 976	annabel	1.000	cap_ratio=1.00, oov
 976	cid	0.976	cap_ratio=0.98
-976	lj	0.980	cap_ratio=0.98, oov
 976	quill	0.999	cap_ratio=1.00, oov
 976	raquel	0.992	cap_ratio=0.99
 975	berman	1.000	cap_ratio=1.00, oov
 975	creasy	1.000	cap_ratio=1.00, oov
 975	guillermo	0.999	cap_ratio=1.00, oov
-975	hd	0.991	cap_ratio=0.99, oov
 975	rider	0.949	cap_ratio=0.95, oov
 974	teerão	1.000	cap_ratio=1.00
 973	anastasia	0.998	cap_ratio=1.00, oov
 973	colette	0.997	cap_ratio=1.00, oov
-973	cy	0.995	cap_ratio=0.99, oov
 972	atwood	1.000	cap_ratio=1.00, oov
 972	margaux	1.000	cap_ratio=1.00, oov
 972	maroni	1.000	cap_ratio=1.00, oov
@@ -3664,6 +3599,7 @@
 918	rochester	1.000	cap_ratio=1.00, oov
 918	scarface	0.991	cap_ratio=0.99, oov
 916	fong	0.983	cap_ratio=0.98, oov
+916	pérsia	0.999	cap_ratio=1.00
 916	soze	1.000	cap_ratio=1.00, oov
 915	chon	0.993	cap_ratio=0.99, oov
 915	doom	0.968	cap_ratio=0.97, oov
@@ -3704,6 +3640,7 @@
 907	gretel	1.000	cap_ratio=1.00, oov
 907	i'll	0.973	cap_ratio=0.97, oov
 907	lab	0.899	cap_ratio=0.90, oov
+907	meretíssimo	0.904	cap_ratio=0.90, oov
 907	rapunzel	0.984	cap_ratio=0.98, oov
 906	argélia	0.988	cap_ratio=0.99
 906	cade	0.961	cap_ratio=0.96, oov
@@ -3791,7 +3728,6 @@
 887	torrance	1.000	cap_ratio=1.00, oov
 887	visiontext	1.000	cap_ratio=1.00, oov
 887	zelda	1.000	cap_ratio=1.00, oov
-886	ab	0.902	cap_ratio=0.90, oov
 886	malia	1.000	cap_ratio=1.00, oov
 886	rmds	1.000	cap_ratio=1.00, oov
 886	xiii	0.996	cap_ratio=1.00
@@ -3849,7 +3785,6 @@
 870	t'pol	1.000	cap_ratio=1.00, oov
 869	parkinson	0.996	cap_ratio=1.00
 868	caspere	1.000	cap_ratio=1.00, oov
-868	jb	1.000	cap_ratio=1.00, oov
 868	shaggy	0.994	cap_ratio=0.99, oov
 868	soho	1.000	cap_ratio=1.00, oov
 867	maple	0.942	cap_ratio=0.94, oov
@@ -3862,6 +3797,7 @@
 866	terence	0.997	cap_ratio=1.00, oov
 865	mavis	1.000	cap_ratio=1.00, oov
 864	boggs	1.000	cap_ratio=1.00, oov
+864	bogotá	0.997	cap_ratio=1.00
 864	buick	0.977	cap_ratio=0.98, oov
 864	carey	0.997	cap_ratio=1.00, oov
 864	ciro	1.000	cap_ratio=1.00, oov
@@ -3875,10 +3811,8 @@
 860	view	0.938	cap_ratio=0.94, oov
 859	avon	1.000	cap_ratio=1.00, oov
 859	etienne	1.000	cap_ratio=1.00, oov
-859	pérsia	0.999	cap_ratio=1.00
 859	wash	0.967	cap_ratio=0.97, oov
 858	caputo	0.999	cap_ratio=1.00, oov
-858	meretíssimo	0.904	cap_ratio=0.90, oov
 858	vijay	1.000	cap_ratio=1.00, oov
 857	clooney	0.998	cap_ratio=1.00, oov
 857	dix	0.979	cap_ratio=0.98, oov
@@ -3927,7 +3861,6 @@
 846	herc	1.000	cap_ratio=1.00, oov
 846	kobe	0.982	cap_ratio=0.98, oov
 846	seward	0.992	cap_ratio=0.99, oov
-845	africa	0.970	cap_ratio=0.97, oov
 845	bristol	0.992	cap_ratio=0.99
 845	bunch	0.985	cap_ratio=0.99, oov
 845	galavan	1.000	cap_ratio=1.00, oov
@@ -4114,7 +4047,6 @@
 799	loxley	0.994	cap_ratio=0.99, oov
 799	norbit	1.000	cap_ratio=1.00, oov
 798	beacon	0.981	cap_ratio=0.98, oov
-798	bogotá	0.997	cap_ratio=1.00
 798	heisenberg	1.000	cap_ratio=1.00
 798	milan	0.998	cap_ratio=1.00, oov
 798	sisko	0.997	cap_ratio=1.00, oov
@@ -4320,7 +4252,6 @@
 752	paddington	1.000	cap_ratio=1.00, oov
 752	took	0.870	cap_ratio=0.87, oov
 751	baja	0.977	cap_ratio=0.98, oov
-751	bb	0.997	cap_ratio=1.00, oov
 751	blackadder	1.000	cap_ratio=1.00, oov
 751	keeler	1.000	cap_ratio=1.00, oov
 751	march	0.991	cap_ratio=0.99, oov
@@ -4400,7 +4331,6 @@
 732	bumpy	0.998	cap_ratio=1.00, oov
 732	effie	1.000	cap_ratio=1.00, oov
 732	frye	1.000	cap_ratio=1.00, oov
-732	jc	1.000	cap_ratio=1.00, oov
 732	ludlow	0.998	cap_ratio=1.00, oov
 732	prozac	0.971	cap_ratio=0.97, oov
 732	waverly	1.000	cap_ratio=1.00, oov
@@ -4482,7 +4412,6 @@
 717	duval	1.000	cap_ratio=1.00, oov
 717	eben	1.000	cap_ratio=1.00, oov
 717	fenton	1.000	cap_ratio=1.00, oov
-717	ig	0.994	cap_ratio=0.99, oov
 717	nietzsche	1.000	cap_ratio=1.00
 716	brook	0.988	cap_ratio=0.99, oov
 716	christmas	0.996	cap_ratio=1.00, oov
@@ -4564,6 +4493,7 @@
 701	teen	0.983	cap_ratio=0.98, oov
 701	toledo	0.995	cap_ratio=1.00
 700	culpepper	0.997	cap_ratio=1.00, oov
+700	fráguas	0.995	cap_ratio=1.00, oov
 700	joanesburgo	1.000	cap_ratio=1.00
 699	akira	0.996	cap_ratio=1.00, oov
 699	blye	1.000	cap_ratio=1.00, oov
@@ -4595,13 +4525,11 @@
 694	bethesda	0.998	cap_ratio=1.00, oov
 694	bulgária	0.997	cap_ratio=1.00
 694	darrell	1.000	cap_ratio=1.00, oov
-694	ev	0.926	cap_ratio=0.93, oov
 694	everdeen	1.000	cap_ratio=1.00, oov
 694	grendel	1.000	cap_ratio=1.00, oov
 694	kurtz	1.000	cap_ratio=1.00, oov
 694	laroche	1.000	cap_ratio=1.00, oov
 694	mariko	1.000	cap_ratio=1.00, oov
-694	rh	0.992	cap_ratio=0.99, oov
 693	abbs	1.000	cap_ratio=1.00, oov
 693	howl	0.959	cap_ratio=0.96, oov
 693	ponyo	1.000	cap_ratio=1.00, oov
@@ -4624,7 +4552,6 @@
 689	cod	0.989	cap_ratio=0.99, oov
 689	einar	1.000	cap_ratio=1.00, oov
 689	hilly	0.998	cap_ratio=1.00, oov
-689	jp	0.980	cap_ratio=0.98, oov
 689	plymouth	1.000	cap_ratio=1.00, oov
 689	simão	1.000	cap_ratio=1.00
 688	alexi	0.996	cap_ratio=1.00, oov
@@ -4686,6 +4613,7 @@
 676	chuckie	0.996	cap_ratio=1.00, oov
 676	delfino	1.000	cap_ratio=1.00, oov
 676	hasan	1.000	cap_ratio=1.00, oov
+676	macedónia	0.904	cap_ratio=0.90
 676	munro	1.000	cap_ratio=1.00, oov
 676	nellie	1.000	cap_ratio=1.00
 675	baines	1.000	cap_ratio=1.00, oov
@@ -4730,7 +4658,6 @@
 667	muriel	1.000	cap_ratio=1.00, oov
 667	raccoon	0.988	cap_ratio=0.99, oov
 667	zak	0.981	cap_ratio=0.98, oov
-666	ap	0.853	cap_ratio=0.85, oov
 666	jean-luc	1.000	cap_ratio=1.00, oov
 666	mckenzie	1.000	cap_ratio=1.00, oov
 666	mumm-ra	1.000	cap_ratio=1.00, oov
@@ -4786,7 +4713,6 @@
 658	colson	1.000	cap_ratio=1.00, oov
 658	corbin	0.998	cap_ratio=1.00, oov
 658	legolas	1.000	cap_ratio=1.00, oov
-658	qg	1.000	cap_ratio=1.00, oov
 658	sião	0.995	cap_ratio=0.99
 658	zeppelin	0.932	cap_ratio=0.93, oov
 657	adm	0.994	cap_ratio=0.99, oov
@@ -4799,7 +4725,6 @@
 656	amsterdão	1.000	cap_ratio=1.00, oov
 656	captain	0.922	cap_ratio=0.92, oov
 656	renata	1.000	cap_ratio=1.00, oov
-656	rp	0.997	cap_ratio=1.00, oov
 656	sevilha	0.994	cap_ratio=0.99
 656	tamisa	1.000	cap_ratio=1.00
 656	tel	0.902	cap_ratio=0.90, oov
@@ -4836,7 +4761,6 @@
 650	acapulco	0.994	cap_ratio=0.99, oov
 650	bureau	0.935	cap_ratio=0.93, oov
 650	chernobyl	0.991	cap_ratio=0.99, oov
-650	fráguas	0.995	cap_ratio=1.00, oov
 650	rev	0.916	cap_ratio=0.92, oov
 650	runner	0.968	cap_ratio=0.97, oov
 650	vadim	1.000	cap_ratio=1.00, oov
@@ -4861,7 +4785,6 @@
 646	argo	0.997	cap_ratio=1.00, oov
 646	claud	1.000	cap_ratio=1.00, oov
 646	clear	0.864	cap_ratio=0.86, oov
-646	fm	0.958	cap_ratio=0.96, oov
 646	leekie	1.000	cap_ratio=1.00, oov
 646	stinger	0.965	cap_ratio=0.96, oov
 646	xiv	0.979	cap_ratio=0.98
@@ -4897,7 +4820,6 @@
 639	excelsior	0.989	cap_ratio=0.99, oov
 639	gilda	1.000	cap_ratio=1.00
 639	lai	0.974	cap_ratio=0.97, oov
-639	macedónia	0.904	cap_ratio=0.90
 639	o'conner	1.000	cap_ratio=1.00, oov
 639	prada	0.993	cap_ratio=0.99, oov
 639	roxton	1.000	cap_ratio=1.00, oov
@@ -4923,7 +4845,6 @@
 634	chibs	1.000	cap_ratio=1.00, oov
 634	jordão	0.993	cap_ratio=0.99
 634	kobayashi	1.000	cap_ratio=1.00, oov
-634	ku	0.993	cap_ratio=0.99, oov
 634	lazlo	1.000	cap_ratio=1.00, oov
 634	remi	1.000	cap_ratio=1.00
 634	rigg	1.000	cap_ratio=1.00, oov
@@ -5070,7 +4991,6 @@
 611	snotlout	1.000	cap_ratio=1.00, oov
 611	soleil	0.991	cap_ratio=0.99, oov
 610	aya	1.000	cap_ratio=1.00, oov
-610	gu	0.928	cap_ratio=0.93, oov
 610	hogarth	1.000	cap_ratio=1.00, oov
 610	illuminati	0.976	cap_ratio=0.98, oov
 610	janelle	0.996	cap_ratio=1.00, oov
@@ -5121,7 +5041,6 @@
 602	army	0.987	cap_ratio=0.99, oov
 602	bannister	1.000	cap_ratio=1.00, oov
 602	beast	0.992	cap_ratio=0.99, oov
-602	ds	0.855	cap_ratio=0.85, oov
 602	flanagan	1.000	cap_ratio=1.00, oov
 602	lúcia	1.000	cap_ratio=1.00
 602	mcallister	1.000	cap_ratio=1.00, oov
@@ -5297,7 +5216,6 @@
 577	fairbanks	1.000	cap_ratio=1.00, oov
 577	nostradamus	1.000	cap_ratio=1.00, oov
 577	shanghai	0.992	cap_ratio=0.99, oov
-577	uv	0.997	cap_ratio=1.00, oov
 576	cohaagen	1.000	cap_ratio=1.00, oov
 576	cohn	1.000	cap_ratio=1.00, oov
 576	delacroix	0.996	cap_ratio=1.00, oov
@@ -5306,7 +5224,6 @@
 576	photoshop	0.909	cap_ratio=0.91, oov
 575	aic	1.000	cap_ratio=1.00, oov
 575	athelstan	1.000	cap_ratio=1.00, oov
-575	bj	0.993	cap_ratio=0.99, oov
 575	grodd	1.000	cap_ratio=1.00, oov
 575	hearst	1.000	cap_ratio=1.00, oov
 575	holliday	0.998	cap_ratio=1.00, oov
@@ -5398,6 +5315,7 @@
 562	louisville	1.000	cap_ratio=1.00, oov
 562	mission	0.960	cap_ratio=0.96, oov
 561	andrómeda	1.000	cap_ratio=1.00
+561	calígula	1.000	cap_ratio=1.00
 561	ezequiel	1.000	cap_ratio=1.00
 561	franck	1.000	cap_ratio=1.00, oov
 561	juana	1.000	cap_ratio=1.00, oov
@@ -5638,7 +5556,6 @@
 530	purple	0.939	cap_ratio=0.94, oov
 530	rajesh	1.000	cap_ratio=1.00, oov
 529	gromit	1.000	cap_ratio=1.00, oov
-529	iz	0.901	cap_ratio=0.90, oov
 529	jang	1.000	cap_ratio=1.00, oov
 529	katz	1.000	cap_ratio=1.00, oov
 529	litt	1.000	cap_ratio=1.00, oov
@@ -5679,7 +5596,6 @@
 525	mnu	1.000	cap_ratio=1.00, oov
 525	osaka	1.000	cap_ratio=1.00
 525	riggins	1.000	cap_ratio=1.00, oov
-525	vp	0.998	cap_ratio=1.00, oov
 524	alamut	1.000	cap_ratio=1.00, oov
 524	andersen	0.998	cap_ratio=1.00
 524	charly	1.000	cap_ratio=1.00, oov
@@ -5689,7 +5605,6 @@
 524	pitágoras	0.982	cap_ratio=0.98
 524	sameer	1.000	cap_ratio=1.00, oov
 524	stefano	1.000	cap_ratio=1.00
-523	calígula	1.000	cap_ratio=1.00
 523	coach	0.921	cap_ratio=0.92, oov
 523	cup	0.954	cap_ratio=0.95, oov
 523	donahue	0.996	cap_ratio=1.00, oov
@@ -5731,7 +5646,6 @@
 519	hofstadter	1.000	cap_ratio=1.00, oov
 519	konali	1.000	cap_ratio=1.00, oov
 519	mgm	1.000	cap_ratio=1.00, oov
-519	pd	0.996	cap_ratio=1.00, oov
 519	stretch	0.973	cap_ratio=0.97, oov
 519	susannah	1.000	cap_ratio=1.00, oov
 518	bollinger	1.000	cap_ratio=1.00, oov
@@ -5866,7 +5780,6 @@
 505	zoila	1.000	cap_ratio=1.00, oov
 504	amazon	0.987	cap_ratio=0.99, oov
 504	axelrod	1.000	cap_ratio=1.00, oov
-504	canada	0.987	cap_ratio=0.99
 504	cooter	0.997	cap_ratio=1.00, oov
 504	davian	1.000	cap_ratio=1.00, oov
 504	galloway	1.000	cap_ratio=1.00, oov
@@ -5884,7 +5797,6 @@
 503	lear	1.000	cap_ratio=1.00, oov
 503	mcmurphy	1.000	cap_ratio=1.00, oov
 503	megumi	1.000	cap_ratio=1.00, oov
-503	sj	1.000	cap_ratio=1.00, oov
 503	tilly	1.000	cap_ratio=1.00, oov
 503	trácia	0.875	cap_ratio=0.88, oov
 502	carruthers	0.998	cap_ratio=1.00, oov
@@ -5922,7 +5834,6 @@
 499	coughlin	1.000	cap_ratio=1.00, oov
 499	creel	0.998	cap_ratio=1.00, oov
 499	dartmouth	1.000	cap_ratio=1.00, oov
-499	gs	0.993	cap_ratio=0.99, oov
 499	harlow	1.000	cap_ratio=1.00, oov
 499	mantle	1.000	cap_ratio=1.00, oov
 499	pokémon	0.927	cap_ratio=0.93, oov
@@ -6005,7 +5916,6 @@
 489	klux	0.980	cap_ratio=0.98, oov
 489	leda	0.998	cap_ratio=1.00, oov
 489	marple	0.973	cap_ratio=0.97, oov
-489	mk	0.992	cap_ratio=0.99, oov
 489	modern	0.949	cap_ratio=0.95, oov
 489	oversight	1.000	cap_ratio=1.00, oov
 488	degas	0.998	cap_ratio=1.00, oov
@@ -6069,7 +5979,6 @@
 482	chadwick	1.000	cap_ratio=1.00, oov
 482	colbert	0.991	cap_ratio=0.99, oov
 482	gittes	1.000	cap_ratio=1.00, oov
-482	gt	0.901	cap_ratio=0.90, oov
 482	japp	1.000	cap_ratio=1.00, oov
 482	jedikiah	1.000	cap_ratio=1.00, oov
 482	jenner	1.000	cap_ratio=1.00, oov
@@ -6340,6 +6249,7 @@
 458	ramone	1.000	cap_ratio=1.00, oov
 457	aggie	0.990	cap_ratio=0.99, oov
 457	arwen	1.000	cap_ratio=1.00, oov
+457	jericó	1.000	cap_ratio=1.00
 457	milf	0.977	cap_ratio=0.98, oov
 457	panzer	0.894	cap_ratio=0.89, oov
 457	paper	0.913	cap_ratio=0.91, oov
@@ -6455,7 +6365,6 @@
 445	kidd	1.000	cap_ratio=1.00, oov
 445	martina	0.984	cap_ratio=0.98, oov
 445	nomad	0.990	cap_ratio=0.99, oov
-445	rv	0.993	cap_ratio=0.99, oov
 445	winthrop	1.000	cap_ratio=1.00, oov
 445	zidler	1.000	cap_ratio=1.00, oov
 444	bec	0.996	cap_ratio=1.00, oov
@@ -6547,7 +6456,6 @@
 436	salle	0.954	cap_ratio=0.95, oov
 435	addams	1.000	cap_ratio=1.00, oov
 435	evo	0.994	cap_ratio=0.99, oov
-435	ge	0.865	cap_ratio=0.86, oov
 435	gul'dan	1.000	cap_ratio=1.00, oov
 435	kallie	1.000	cap_ratio=1.00, oov
 435	lagertha	1.000	cap_ratio=1.00, oov
@@ -6660,6 +6568,7 @@
 425	kripke	1.000	cap_ratio=1.00, oov
 425	kubrick	0.992	cap_ratio=0.99, oov
 425	latham	0.997	cap_ratio=1.00, oov
+425	libéria	1.000	cap_ratio=1.00
 425	lovett	1.000	cap_ratio=1.00, oov
 425	muntz	1.000	cap_ratio=1.00, oov
 425	mércia	1.000	cap_ratio=1.00, oov
@@ -6687,6 +6596,7 @@
 423	piero	0.985	cap_ratio=0.99, oov
 423	quintana	1.000	cap_ratio=1.00, oov
 423	randal	1.000	cap_ratio=1.00, oov
+423	tanzânia	1.000	cap_ratio=1.00
 423	valência	0.946	cap_ratio=0.95
 422	derevko	1.000	cap_ratio=1.00, oov
 422	edgington	1.000	cap_ratio=1.00, oov
@@ -6707,7 +6617,6 @@
 421	craigslist	0.990	cap_ratio=0.99, oov
 421	flower	0.929	cap_ratio=0.93, oov
 421	huggins	1.000	cap_ratio=1.00, oov
-421	jericó	1.000	cap_ratio=1.00
 421	kendal	1.000	cap_ratio=1.00, oov
 421	kizzy	1.000	cap_ratio=1.00, oov
 421	omura	1.000	cap_ratio=1.00, oov
@@ -6811,7 +6720,6 @@
 412	sakura	0.966	cap_ratio=0.97, oov
 412	topeka	1.000	cap_ratio=1.00, oov
 412	yardley	1.000	cap_ratio=1.00, oov
-411	ag	0.889	cap_ratio=0.89, oov
 411	ashland	0.995	cap_ratio=0.99, oov
 411	bachman	1.000	cap_ratio=1.00, oov
 411	bryn	1.000	cap_ratio=1.00, oov
@@ -6940,7 +6848,6 @@
 402	odile	1.000	cap_ratio=1.00, oov
 402	oli	0.918	cap_ratio=0.92, oov
 402	schumann	0.997	cap_ratio=1.00
-402	tk	0.969	cap_ratio=0.97, oov
 402	volturi	0.998	cap_ratio=1.00, oov
 402	zao	0.982	cap_ratio=0.98, oov
 402	zaya	1.000	cap_ratio=1.00, oov
@@ -6952,7 +6859,6 @@
 401	emerald	0.994	cap_ratio=0.99, oov
 401	humvee	0.951	cap_ratio=0.95, oov
 401	kltt	1.000	cap_ratio=1.00, oov
-401	libéria	1.000	cap_ratio=1.00
 401	miguelmendz	0.880	cap_ratio=0.88, oov
 401	navarra	0.997	cap_ratio=1.00
 401	secretary	1.000	cap_ratio=1.00, oov
@@ -7008,10 +6914,8 @@
 396	keegan	0.995	cap_ratio=0.99, oov
 396	mcgraw	1.000	cap_ratio=1.00, oov
 396	shaq	0.987	cap_ratio=0.99, oov
-396	tanzânia	1.000	cap_ratio=1.00
 396	tourette	0.992	cap_ratio=0.99, oov
 396	tug	1.000	cap_ratio=1.00, oov
-396	zi	0.939	cap_ratio=0.94, oov
 395	childers	1.000	cap_ratio=1.00, oov
 395	creta	1.000	cap_ratio=1.00
 395	eboshi	1.000	cap_ratio=1.00, oov
@@ -7089,6 +6993,7 @@
 390	bliss	0.983	cap_ratio=0.98, oov
 390	burnham	1.000	cap_ratio=1.00, oov
 390	chapelle	1.000	cap_ratio=1.00, oov
+390	demétrio	1.000	cap_ratio=1.00
 390	krauss	1.000	cap_ratio=1.00, oov
 390	manchúria	1.000	cap_ratio=1.00
 390	nation	0.971	cap_ratio=0.97, oov
@@ -7108,7 +7013,6 @@
 388	fiddler	1.000	cap_ratio=1.00, oov
 388	gatorade	0.948	cap_ratio=0.95, oov
 388	hamlin	1.000	cap_ratio=1.00, oov
-388	kc	1.000	cap_ratio=1.00, oov
 388	longfellow	1.000	cap_ratio=1.00, oov
 388	luciana	0.997	cap_ratio=1.00
 388	mya	0.995	cap_ratio=1.00, oov
@@ -7223,6 +7127,7 @@
 381	homero	1.000	cap_ratio=1.00
 381	isi	1.000	cap_ratio=1.00, oov
 381	mcconnell	1.000	cap_ratio=1.00, oov
+381	márcio	1.000	cap_ratio=1.00
 381	scratchy	1.000	cap_ratio=1.00, oov
 381	serpico	1.000	cap_ratio=1.00, oov
 380	jaden	1.000	cap_ratio=1.00, oov
@@ -7250,7 +7155,6 @@
 379	medford	1.000	cap_ratio=1.00, oov
 379	orden	0.946	cap_ratio=0.95, oov
 379	poughkeepsie	1.000	cap_ratio=1.00, oov
-379	rc	0.926	cap_ratio=0.93, oov
 379	redfern	1.000	cap_ratio=1.00, oov
 379	rodrigues	0.994	cap_ratio=0.99
 379	sat	0.887	cap_ratio=0.89, oov
@@ -7348,7 +7252,6 @@
 372	yasmin	1.000	cap_ratio=1.00, oov
 371	act	0.871	cap_ratio=0.87, oov
 371	babu	0.989	cap_ratio=0.99, oov
-371	db	0.959	cap_ratio=0.96, oov
 371	fawn	0.996	cap_ratio=1.00, oov
 371	figueroa	1.000	cap_ratio=1.00, oov
 371	helm	0.997	cap_ratio=1.00, oov
@@ -7379,7 +7282,6 @@
 369	cecília	0.993	cap_ratio=0.99
 369	cyberdyne	0.975	cap_ratio=0.97, oov
 369	delano	1.000	cap_ratio=1.00, oov
-369	demétrio	1.000	cap_ratio=1.00
 369	desiree	0.987	cap_ratio=0.99, oov
 369	eminem	1.000	cap_ratio=1.00, oov
 369	freeze	0.941	cap_ratio=0.94, oov
@@ -7432,11 +7334,11 @@
 366	sonmanto	1.000	cap_ratio=1.00, oov
 366	stoddard	1.000	cap_ratio=1.00, oov
 366	sura	0.956	cap_ratio=0.96, oov
-366	ts	0.896	cap_ratio=0.90, oov
 366	vanderbilt	1.000	cap_ratio=1.00, oov
 366	villefort	1.000	cap_ratio=1.00, oov
 365	beene	1.000	cap_ratio=1.00, oov
 365	caprice	0.988	cap_ratio=0.99, oov
+365	cardássia	1.000	cap_ratio=1.00, oov
 365	dread	0.855	cap_ratio=0.85, oov
 365	greenville	1.000	cap_ratio=1.00, oov
 365	jareau	0.983	cap_ratio=0.98, oov
@@ -7471,7 +7373,6 @@
 364	soph	0.986	cap_ratio=0.99, oov
 364	torch	0.991	cap_ratio=0.99, oov
 364	totoro	0.988	cap_ratio=0.99, oov
-364	vx	0.991	cap_ratio=0.99, oov
 364	zo'or	1.000	cap_ratio=1.00, oov
 363	al-fayeed	1.000	cap_ratio=1.00, oov
 363	barret	1.000	cap_ratio=1.00, oov
@@ -7543,7 +7444,6 @@
 359	lycan	0.919	cap_ratio=0.92, oov
 359	mansfield	1.000	cap_ratio=1.00, oov
 359	marilla	1.000	cap_ratio=1.00, oov
-359	márcio	1.000	cap_ratio=1.00
 359	newsweek	1.000	cap_ratio=1.00, oov
 359	pyramid	0.972	cap_ratio=0.97, oov
 359	rodríguez	1.000	cap_ratio=1.00
@@ -7607,7 +7507,6 @@
 355	puffy	0.991	cap_ratio=0.99, oov
 355	sabá	0.976	cap_ratio=0.98
 355	science	0.956	cap_ratio=0.96, oov
-355	xu	0.949	cap_ratio=0.95, oov
 354	alessandro	0.992	cap_ratio=0.99, oov
 354	archy	1.000	cap_ratio=1.00, oov
 354	bilal	1.000	cap_ratio=1.00, oov
@@ -7820,12 +7719,9 @@
 342	zootrópolis	1.000	cap_ratio=1.00, oov
 341	alvy	1.000	cap_ratio=1.00, oov
 341	asano	1.000	cap_ratio=1.00, oov
-341	cardássia	1.000	cap_ratio=1.00, oov
-341	cq	1.000	cap_ratio=1.00, oov
 341	crais	0.995	cap_ratio=1.00, oov
 341	depot	0.991	cap_ratio=0.99, oov
 341	frigo	0.917	cap_ratio=0.92, oov
-341	md	0.990	cap_ratio=0.99, oov
 341	ponton	1.000	cap_ratio=1.00, oov
 341	portsmouth	1.000	cap_ratio=1.00, oov
 341	rhyme	0.906	cap_ratio=0.91, oov
@@ -7952,7 +7848,6 @@
 334	quem-nós-sabemos	0.975	cap_ratio=0.97, oov
 334	shayla	0.995	cap_ratio=1.00, oov
 334	sobotka	1.000	cap_ratio=1.00, oov
-334	sp	0.943	cap_ratio=0.94, oov
 334	spy	0.942	cap_ratio=0.94, oov
 334	toranaga	1.000	cap_ratio=1.00, oov
 333	connery	1.000	cap_ratio=1.00, oov
@@ -8098,7 +7993,6 @@
 326	pumpkin	0.972	cap_ratio=0.97, oov
 326	risa	0.943	cap_ratio=0.94, oov
 326	rojo	0.904	cap_ratio=0.90, oov
-326	sm	0.933	cap_ratio=0.93, oov
 326	subspedia	0.934	cap_ratio=0.93, oov
 326	woodman	0.993	cap_ratio=0.99, oov
 326	yukon	0.981	cap_ratio=0.98, oov
@@ -8106,7 +8000,6 @@
 325	chernov	0.982	cap_ratio=0.98, oov
 325	coakley	1.000	cap_ratio=1.00, oov
 325	cosmopolitan	0.871	cap_ratio=0.87, oov
-325	cs	0.924	cap_ratio=0.92, oov
 325	célia	0.996	cap_ratio=1.00
 325	fawcett	0.997	cap_ratio=1.00, oov
 325	grim	0.973	cap_ratio=0.97, oov
@@ -8151,7 +8044,6 @@
 323	haig	1.000	cap_ratio=1.00, oov
 323	kamehameha	1.000	cap_ratio=1.00, oov
 323	konstantin	1.000	cap_ratio=1.00, oov
-323	kw	0.926	cap_ratio=0.93, oov
 323	marika	1.000	cap_ratio=1.00, oov
 323	mullet	0.892	cap_ratio=0.89, oov
 323	novick	1.000	cap_ratio=1.00, oov
@@ -8239,7 +8131,6 @@
 319	doback	1.000	cap_ratio=1.00, oov
 319	dollhouse	1.000	cap_ratio=1.00, oov
 319	gellhorn	1.000	cap_ratio=1.00, oov
-319	mare	0.859	cap_ratio=0.86, oov
 319	northwest	0.992	cap_ratio=0.99, oov
 319	peter-petrelli	1.000	cap_ratio=1.00, oov
 319	prospect	0.985	cap_ratio=0.99, oov
@@ -8291,7 +8182,6 @@
 316	bullwinkle	1.000	cap_ratio=1.00, oov
 316	charlton	0.996	cap_ratio=1.00, oov
 316	clubber	0.975	cap_ratio=0.98, oov
-316	ct	0.984	cap_ratio=0.98, oov
 316	guitar	0.919	cap_ratio=0.92, oov
 316	heston	0.986	cap_ratio=0.99, oov
 316	imogene	1.000	cap_ratio=1.00, oov
@@ -8430,7 +8320,6 @@
 310	rowdy	0.993	cap_ratio=0.99, oov
 310	rudd	1.000	cap_ratio=1.00, oov
 310	standish	1.000	cap_ratio=1.00, oov
-309	asia	0.972	cap_ratio=0.97, oov
 309	boardwalk	0.967	cap_ratio=0.97, oov
 309	boylan	1.000	cap_ratio=1.00, oov
 309	bremen	1.000	cap_ratio=1.00
@@ -8593,6 +8482,7 @@
 301	christi	0.982	cap_ratio=0.98, oov
 301	coke	0.946	cap_ratio=0.95, oov
 301	danson	1.000	cap_ratio=1.00, oov
+301	dionísio	1.000	cap_ratio=1.00
 301	dorsey	1.000	cap_ratio=1.00, oov
 301	dunning	1.000	cap_ratio=1.00, oov
 301	fil	0.877	cap_ratio=0.88
@@ -8703,7 +8593,6 @@
 296	salomé	1.000	cap_ratio=1.00
 296	tripplehorn	1.000	cap_ratio=1.00, oov
 296	tuan	1.000	cap_ratio=1.00, oov
-296	uu	0.890	cap_ratio=0.89, oov
 295	ahmet	1.000	cap_ratio=1.00, oov
 295	al-harazi	1.000	cap_ratio=1.00, oov
 295	battery	0.989	cap_ratio=0.99, oov
@@ -8784,7 +8673,6 @@
 292	fee	0.891	cap_ratio=0.89, oov
 292	hernan	1.000	cap_ratio=1.00, oov
 292	iago	1.000	cap_ratio=1.00, oov
-292	ib	0.930	cap_ratio=0.93, oov
 292	ingalls	1.000	cap_ratio=1.00, oov
 292	laertes	1.000	cap_ratio=1.00, oov
 292	lund	0.993	cap_ratio=0.99, oov
@@ -8812,6 +8700,7 @@
 291	quinjet	0.947	cap_ratio=0.95, oov
 291	rucker	1.000	cap_ratio=1.00, oov
 291	southjet	1.000	cap_ratio=1.00, oov
+291	toscânia	0.996	cap_ratio=1.00, oov
 291	valda	1.000	cap_ratio=1.00, oov
 291	valek	0.989	cap_ratio=0.99, oov
 291	yemi	1.000	cap_ratio=1.00, oov
@@ -8861,7 +8750,6 @@
 288	kenner	1.000	cap_ratio=1.00, oov
 288	koskov	1.000	cap_ratio=1.00, oov
 288	medellin	0.996	cap_ratio=1.00, oov
-288	mx	0.923	cap_ratio=0.92, oov
 288	naga	0.950	cap_ratio=0.95, oov
 288	nebuchadnezzar	1.000	cap_ratio=1.00, oov
 288	nikos	1.000	cap_ratio=1.00, oov
@@ -8884,7 +8772,6 @@
 287	croix	0.994	cap_ratio=0.99, oov
 287	dagur	1.000	cap_ratio=1.00, oov
 287	dessler	1.000	cap_ratio=1.00, oov
-287	dp	0.925	cap_ratio=0.93, oov
 287	garsiv	1.000	cap_ratio=1.00, oov
 287	hatton	1.000	cap_ratio=1.00, oov
 287	hiller	1.000	cap_ratio=1.00, oov
@@ -8945,7 +8832,6 @@
 284	bizzy	1.000	cap_ratio=1.00, oov
 284	blockbuster	0.857	cap_ratio=0.86, oov
 284	bolonha	0.938	cap_ratio=0.94
-284	dionísio	1.000	cap_ratio=1.00
 284	gennero	1.000	cap_ratio=1.00, oov
 284	hasegawa	1.000	cap_ratio=1.00, oov
 284	henrickson	1.000	cap_ratio=1.00, oov
@@ -9025,7 +8911,6 @@
 281	franklyn	0.989	cap_ratio=0.99, oov
 281	fronsac	1.000	cap_ratio=1.00, oov
 281	gedda	1.000	cap_ratio=1.00, oov
-281	gm	0.978	cap_ratio=0.98, oov
 281	graff	1.000	cap_ratio=1.00, oov
 281	hatsumomo	1.000	cap_ratio=1.00, oov
 281	kingsman	1.000	cap_ratio=1.00, oov
@@ -9264,7 +9149,6 @@
 271	slaughter	0.995	cap_ratio=1.00, oov
 271	teenage	0.986	cap_ratio=0.99, oov
 271	tolstoy	1.000	cap_ratio=1.00, oov
-271	toscânia	0.996	cap_ratio=1.00, oov
 271	tulip	1.000	cap_ratio=1.00, oov
 271	wiggins	1.000	cap_ratio=1.00, oov
 270	caillaux	1.000	cap_ratio=1.00, oov
@@ -9303,7 +9187,6 @@
 269	sulley	1.000	cap_ratio=1.00, oov
 269	trimble	1.000	cap_ratio=1.00, oov
 269	waternoose	0.952	cap_ratio=0.95, oov
-269	xy	0.986	cap_ratio=0.99, oov
 268	agamémnon	1.000	cap_ratio=1.00, oov
 268	bandit	0.983	cap_ratio=0.98, oov
 268	bastogne	1.000	cap_ratio=1.00, oov
@@ -9604,7 +9487,6 @@
 256	killing	0.862	cap_ratio=0.86, oov
 256	lien	1.000	cap_ratio=1.00, oov
 256	munder	1.000	cap_ratio=1.00, oov
-256	ng	0.884	cap_ratio=0.88, oov
 256	numerius	1.000	cap_ratio=1.00, oov
 256	quioto	1.000	cap_ratio=1.00
 256	ruskin	1.000	cap_ratio=1.00, oov
@@ -9621,7 +9503,6 @@
 255	cessna	0.954	cap_ratio=0.95, oov
 255	conchita	0.975	cap_ratio=0.98, oov
 255	crips	0.929	cap_ratio=0.93, oov
-255	fp	0.970	cap_ratio=0.97, oov
 255	gab	0.911	cap_ratio=0.91, oov
 255	kaleb	0.968	cap_ratio=0.97, oov
 255	kellog	1.000	cap_ratio=1.00, oov
@@ -9686,7 +9567,6 @@
 253	stepford	0.996	cap_ratio=1.00, oov
 253	togar	1.000	cap_ratio=1.00
 253	vitale	0.991	cap_ratio=0.99, oov
-253	xl	1.000	cap_ratio=1.00, oov
 252	anatomy	0.980	cap_ratio=0.98, oov
 252	andrónico	1.000	cap_ratio=1.00, oov
 252	bielski	1.000	cap_ratio=1.00, oov
@@ -9728,6 +9608,7 @@
 251	camry	1.000	cap_ratio=1.00, oov
 251	delbert	1.000	cap_ratio=1.00, oov
 251	duas-caras	0.934	cap_ratio=0.93, oov
+251	fabergé	0.990	cap_ratio=0.99, oov
 251	fog	0.890	cap_ratio=0.89, oov
 251	fork	0.952	cap_ratio=0.95, oov
 251	genovese	1.000	cap_ratio=1.00, oov
@@ -9743,7 +9624,6 @@
 251	moncada	1.000	cap_ratio=1.00, oov
 251	mpz	1.000	cap_ratio=1.00, oov
 251	nuria	1.000	cap_ratio=1.00, oov
-251	panama	0.950	cap_ratio=0.95, oov
 251	pentangeli	1.000	cap_ratio=1.00, oov
 251	reiben	1.000	cap_ratio=1.00, oov
 251	snowman	0.926	cap_ratio=0.93, oov
@@ -9795,6 +9675,7 @@
 249	delancy	1.000	cap_ratio=1.00, oov
 249	dmv	1.000	cap_ratio=1.00, oov
 249	eleven	0.983	cap_ratio=0.98, oov
+249	eustáquio	0.993	cap_ratio=0.99, oov
 249	gazette	1.000	cap_ratio=1.00, oov
 249	gottlieb	1.000	cap_ratio=1.00, oov
 249	haze	0.995	cap_ratio=1.00, oov
@@ -9880,7 +9761,6 @@
 247	odum	1.000	cap_ratio=1.00, oov
 247	raiden	1.000	cap_ratio=1.00, oov
 247	ramada	0.976	cap_ratio=0.98
-247	sl	0.945	cap_ratio=0.95, oov
 247	spearman	1.000	cap_ratio=1.00, oov
 247	starck	1.000	cap_ratio=1.00, oov
 246	anjou	1.000	cap_ratio=1.00, oov
@@ -9889,11 +9769,9 @@
 246	catco	1.000	cap_ratio=1.00, oov
 246	dennison	1.000	cap_ratio=1.00, oov
 246	dodee	1.000	cap_ratio=1.00, oov
-246	dracula	0.994	cap_ratio=0.99, oov
 246	fontana	0.967	cap_ratio=0.97, oov
 246	hackman	0.987	cap_ratio=0.99, oov
 246	jubal	1.000	cap_ratio=1.00, oov
-246	jw	1.000	cap_ratio=1.00, oov
 246	ley	0.936	cap_ratio=0.94, oov
 246	lorenz	1.000	cap_ratio=1.00, oov
 246	pathfinder	0.991	cap_ratio=0.99, oov
@@ -9972,6 +9850,7 @@
 244	myrna	1.000	cap_ratio=1.00, oov
 244	neely	1.000	cap_ratio=1.00, oov
 244	neyers	1.000	cap_ratio=1.00, oov
+244	nortúmbria	1.000	cap_ratio=1.00, oov
 244	okwe	1.000	cap_ratio=1.00, oov
 244	parson	0.985	cap_ratio=0.99, oov
 244	pompe	1.000	cap_ratio=1.00, oov
@@ -10005,7 +9884,6 @@
 243	reznik	1.000	cap_ratio=1.00, oov
 243	rohr	1.000	cap_ratio=1.00, oov
 243	saigon	1.000	cap_ratio=1.00, oov
-243	sc	0.938	cap_ratio=0.94, oov
 243	shayes	1.000	cap_ratio=1.00, oov
 243	tima	0.882	cap_ratio=0.88, oov
 243	vixen	0.936	cap_ratio=0.94, oov
@@ -10119,7 +9997,6 @@
 239	daya	1.000	cap_ratio=1.00, oov
 239	dorsia	1.000	cap_ratio=1.00, oov
 239	ewan	0.994	cap_ratio=0.99, oov
-239	gg	1.000	cap_ratio=1.00, oov
 239	ghani	1.000	cap_ratio=1.00, oov
 239	grã	0.918	cap_ratio=0.92, oov
 239	jarl	0.986	cap_ratio=0.99, oov
@@ -10158,7 +10035,6 @@
 238	jaqobis	1.000	cap_ratio=1.00, oov
 238	johansson	1.000	cap_ratio=1.00, oov
 238	kaz	0.924	cap_ratio=0.92, oov
-238	kk	0.985	cap_ratio=0.98, oov
 238	luck	0.868	cap_ratio=0.87, oov
 238	mta	0.982	cap_ratio=0.98, oov
 238	mulgarath	1.000	cap_ratio=1.00, oov
@@ -10180,7 +10056,6 @@
 237	donnagon	1.000	cap_ratio=1.00, oov
 237	edvard	1.000	cap_ratio=1.00, oov
 237	encino	1.000	cap_ratio=1.00, oov
-237	eustáquio	0.993	cap_ratio=0.99, oov
 237	ferenc	1.000	cap_ratio=1.00, oov
 237	galina	0.967	cap_ratio=0.97, oov
 237	guldur	1.000	cap_ratio=1.00, oov
@@ -10220,7 +10095,6 @@
 236	frou	1.000	cap_ratio=1.00, oov
 236	ganesh	1.000	cap_ratio=1.00, oov
 236	giordino	1.000	cap_ratio=1.00, oov
-236	gq	1.000	cap_ratio=1.00, oov
 236	haider	1.000	cap_ratio=1.00, oov
 236	kerr	0.986	cap_ratio=0.99, oov
 236	lafite	1.000	cap_ratio=1.00, oov
@@ -10392,7 +10266,6 @@
 231	mighty	0.895	cap_ratio=0.90, oov
 231	mlucio	0.983	cap_ratio=0.98, oov
 231	muhammed	1.000	cap_ratio=1.00, oov
-231	nortúmbria	1.000	cap_ratio=1.00, oov
 231	otterton	1.000	cap_ratio=1.00, oov
 231	salameh	1.000	cap_ratio=1.00, oov
 231	seppius	1.000	cap_ratio=1.00, oov
@@ -10417,7 +10290,6 @@
 230	konig	1.000	cap_ratio=1.00, oov
 230	lim	0.957	cap_ratio=0.96, oov
 230	parallax	0.995	cap_ratio=1.00, oov
-230	rb	1.000	cap_ratio=1.00, oov
 230	sanka	0.992	cap_ratio=0.99, oov
 230	schenectady	1.000	cap_ratio=1.00, oov
 230	trinidad	1.000	cap_ratio=1.00, oov
@@ -10436,7 +10308,6 @@
 229	diogofer	1.000	cap_ratio=1.00, oov
 229	exchange	0.995	cap_ratio=1.00, oov
 229	expurgo	0.860	cap_ratio=0.86
-229	fabergé	0.990	cap_ratio=0.99, oov
 229	furio	1.000	cap_ratio=1.00, oov
 229	gambit	1.000	cap_ratio=1.00, oov
 229	greenspan	1.000	cap_ratio=1.00, oov
@@ -10817,7 +10688,6 @@
 219	tidwell	1.000	cap_ratio=1.00, oov
 219	tull	0.995	cap_ratio=0.99, oov
 219	turpin	1.000	cap_ratio=1.00, oov
-219	tx	1.000	cap_ratio=1.00, oov
 219	urbino	1.000	cap_ratio=1.00, oov
 219	zala	0.970	cap_ratio=0.97, oov
 218	asif	1.000	cap_ratio=1.00, oov
@@ -10826,7 +10696,6 @@
 218	brashear	1.000	cap_ratio=1.00, oov
 218	brecht	1.000	cap_ratio=1.00, oov
 218	calamity	1.000	cap_ratio=1.00, oov
-218	dk	0.962	cap_ratio=0.96, oov
 218	finnerty	1.000	cap_ratio=1.00, oov
 218	gambrelli	1.000	cap_ratio=1.00, oov
 218	graysmith	1.000	cap_ratio=1.00, oov
@@ -10931,7 +10800,6 @@
 215	gettys	1.000	cap_ratio=1.00, oov
 215	glynn	1.000	cap_ratio=1.00, oov
 215	gnb	1.000	cap_ratio=1.00, oov
-215	gw	1.000	cap_ratio=1.00, oov
 215	hathor	1.000	cap_ratio=1.00, oov
 215	haverford	1.000	cap_ratio=1.00, oov
 215	hynkel	1.000	cap_ratio=1.00, oov
@@ -11103,7 +10971,6 @@
 211	ravel	1.000	cap_ratio=1.00
 211	ricoletti	1.000	cap_ratio=1.00, oov
 211	rosetta	1.000	cap_ratio=1.00, oov
-211	ry	1.000	cap_ratio=1.00, oov
 211	santini	1.000	cap_ratio=1.00, oov
 211	schrute	0.990	cap_ratio=0.99, oov
 211	shinzon	1.000	cap_ratio=1.00, oov
@@ -11117,12 +10984,10 @@
 211	treasure	0.866	cap_ratio=0.87, oov
 211	utivich	0.986	cap_ratio=0.99, oov
 211	utopium	0.990	cap_ratio=0.99, oov
-211	vh	0.990	cap_ratio=0.99, oov
 210	aktaion	1.000	cap_ratio=1.00, oov
 210	axiom	1.000	cap_ratio=1.00, oov
 210	becas	0.956	cap_ratio=0.96, oov
 210	bolger	1.000	cap_ratio=1.00, oov
-210	cb	1.000	cap_ratio=1.00, oov
 210	clotilde	0.991	cap_ratio=0.99
 210	cruela	1.000	cap_ratio=1.00, oov
 210	diogo	1.000	cap_ratio=1.00
@@ -11240,6 +11105,7 @@
 207	bonney	1.000	cap_ratio=1.00, oov
 207	he-man	1.000	cap_ratio=1.00, oov
 207	hesh	1.000	cap_ratio=1.00, oov
+207	hüseyin	1.000	cap_ratio=1.00, oov
 207	inverness	1.000	cap_ratio=1.00, oov
 207	juliano	0.907	cap_ratio=0.91
 207	karos	1.000	cap_ratio=1.00, oov
@@ -11334,7 +11200,6 @@
 205	morbius	1.000	cap_ratio=1.00, oov
 205	nasty	0.962	cap_ratio=0.96, oov
 205	overland	1.000	cap_ratio=1.00, oov
-205	pl	0.936	cap_ratio=0.94, oov
 205	reykjavik	0.991	cap_ratio=0.99, oov
 205	rhaegar	1.000	cap_ratio=1.00, oov
 205	riot	0.966	cap_ratio=0.97, oov
@@ -11635,6 +11500,7 @@
 197	gormogon	1.000	cap_ratio=1.00, oov
 197	hitomi	0.938	cap_ratio=0.94, oov
 197	homem-formiga	0.982	cap_ratio=0.98, oov
+197	lígia	1.000	cap_ratio=1.00, oov
 197	minbari	1.000	cap_ratio=1.00, oov
 197	mingo	1.000	cap_ratio=1.00
 197	o'banion	1.000	cap_ratio=1.00, oov
@@ -11764,6 +11630,7 @@
 194	nope	1.000	cap_ratio=1.00, oov
 194	peary	1.000	cap_ratio=1.00, oov
 194	pib	0.995	cap_ratio=0.99
+194	príamo	1.000	cap_ratio=1.00, oov
 194	raimunda	1.000	cap_ratio=1.00, oov
 194	ramius	1.000	cap_ratio=1.00, oov
 194	risley	1.000	cap_ratio=1.00, oov
@@ -11891,7 +11758,6 @@
 191	goki	1.000	cap_ratio=1.00, oov
 191	grouch	1.000	cap_ratio=1.00, oov
 191	hammy	0.961	cap_ratio=0.96, oov
-191	hp	0.944	cap_ratio=0.94, oov
 191	hungry	0.855	cap_ratio=0.85, oov
 191	héracles	1.000	cap_ratio=1.00, oov
 191	kozlov	1.000	cap_ratio=1.00, oov
@@ -11905,7 +11771,6 @@
 191	nid	1.000	cap_ratio=1.00, oov
 191	opry	1.000	cap_ratio=1.00, oov
 191	plata	0.964	cap_ratio=0.96, oov
-191	px	0.947	cap_ratio=0.95, oov
 191	raskin	1.000	cap_ratio=1.00, oov
 191	rickie	1.000	cap_ratio=1.00, oov
 191	shlomo	0.984	cap_ratio=0.98, oov
@@ -11943,14 +11808,12 @@
 190	legacy	0.986	cap_ratio=0.99, oov
 190	leidner	1.000	cap_ratio=1.00, oov
 190	leonie	1.000	cap_ratio=1.00, oov
-190	lh	0.881	cap_ratio=0.88, oov
 190	littlefield	1.000	cap_ratio=1.00, oov
 190	mayhem	0.994	cap_ratio=0.99, oov
 190	nago	1.000	cap_ratio=1.00, oov
 190	plath	0.989	cap_ratio=0.99, oov
 190	rahm	1.000	cap_ratio=1.00, oov
 190	rayne	1.000	cap_ratio=1.00, oov
-190	rf	0.983	cap_ratio=0.98, oov
 190	saget	1.000	cap_ratio=1.00, oov
 190	schopenhauer	1.000	cap_ratio=1.00
 190	spinner	0.908	cap_ratio=0.91, oov
@@ -11980,7 +11843,6 @@
 189	glóin	1.000	cap_ratio=1.00, oov
 189	hatfields	1.000	cap_ratio=1.00, oov
 189	hecate	1.000	cap_ratio=1.00, oov
-189	hüseyin	1.000	cap_ratio=1.00, oov
 189	joxer	1.000	cap_ratio=1.00, oov
 189	kage	1.000	cap_ratio=1.00, oov
 189	kittredge	1.000	cap_ratio=1.00, oov
@@ -12072,7 +11934,6 @@
 187	lafitte	0.994	cap_ratio=0.99, oov
 187	lander	0.928	cap_ratio=0.93, oov
 187	larusso	1.000	cap_ratio=1.00, oov
-187	lígia	1.000	cap_ratio=1.00, oov
 187	mcclain	0.978	cap_ratio=0.98, oov
 187	norick	1.000	cap_ratio=1.00, oov
 187	poison	0.865	cap_ratio=0.87, oov
@@ -12139,7 +12000,6 @@
 185	animus	0.907	cap_ratio=0.91, oov
 185	anker	1.000	cap_ratio=1.00, oov
 185	asha	0.950	cap_ratio=0.95, oov
-185	baco	0.930	cap_ratio=0.93
 185	badalandabad	0.979	cap_ratio=0.98, oov
 185	beastmaster	0.944	cap_ratio=0.94, oov
 185	birdy	1.000	cap_ratio=1.00, oov
@@ -12225,7 +12085,6 @@
 184	oswego	1.000	cap_ratio=1.00, oov
 184	pcc	1.000	cap_ratio=1.00, oov
 184	pigeon	0.983	cap_ratio=0.98, oov
-184	príamo	1.000	cap_ratio=1.00, oov
 184	recording	1.000	cap_ratio=1.00, oov
 184	röhm	1.000	cap_ratio=1.00, oov
 184	sauvignon	0.883	cap_ratio=0.88, oov
@@ -12307,7 +12166,6 @@
 182	golda	1.000	cap_ratio=1.00, oov
 182	haywire	0.992	cap_ratio=0.99, oov
 182	heidelberg	1.000	cap_ratio=1.00, oov
-182	hk	1.000	cap_ratio=1.00, oov
 182	hoff	1.000	cap_ratio=1.00, oov
 182	isfahan	1.000	cap_ratio=1.00, oov
 182	jae-hyeok	1.000	cap_ratio=1.00, oov
@@ -12420,6 +12278,7 @@
 180	nicolette	1.000	cap_ratio=1.00, oov
 180	oleson	1.000	cap_ratio=1.00, oov
 180	omen	0.961	cap_ratio=0.96, oov
+180	pirenéus	1.000	cap_ratio=1.00
 180	posca	1.000	cap_ratio=1.00, oov
 180	quin	0.914	cap_ratio=0.91, oov
 180	ranvir	1.000	cap_ratio=1.00, oov
@@ -12519,7 +12378,6 @@
 178	mtac	1.000	cap_ratio=1.00, oov
 178	narayan	1.000	cap_ratio=1.00, oov
 178	owl	0.953	cap_ratio=0.95, oov
-178	pg	0.962	cap_ratio=0.96, oov
 178	pullings	1.000	cap_ratio=1.00, oov
 178	raisa	1.000	cap_ratio=1.00, oov
 178	riga	1.000	cap_ratio=1.00
@@ -12619,7 +12477,6 @@
 176	tessio	1.000	cap_ratio=1.00, oov
 176	tingle	0.983	cap_ratio=0.98, oov
 176	trautman	1.000	cap_ratio=1.00, oov
-176	ud	0.905	cap_ratio=0.91, oov
 176	walsingham	1.000	cap_ratio=1.00, oov
 176	westport	1.000	cap_ratio=1.00, oov
 176	woodley	0.944	cap_ratio=0.94, oov
@@ -12684,10 +12541,8 @@
 174	dryer	0.994	cap_ratio=0.99, oov
 174	edgware	1.000	cap_ratio=1.00, oov
 174	elementary	0.991	cap_ratio=0.99, oov
-174	fn	0.962	cap_ratio=0.96, oov
 174	freemont	1.000	cap_ratio=1.00, oov
 174	friendship	0.976	cap_ratio=0.98, oov
-174	gh	0.925	cap_ratio=0.93, oov
 174	hidalgo	1.000	cap_ratio=1.00, oov
 174	hodiak	1.000	cap_ratio=1.00, oov
 174	jeannine	1.000	cap_ratio=1.00, oov
@@ -12727,7 +12582,6 @@
 173	biederman	1.000	cap_ratio=1.00, oov
 173	bodo	0.955	cap_ratio=0.95, oov
 173	bushwick	1.000	cap_ratio=1.00, oov
-173	capua	0.994	cap_ratio=0.99, oov
 173	comte	0.988	cap_ratio=0.99, oov
 173	corday	1.000	cap_ratio=1.00, oov
 173	cramer	1.000	cap_ratio=1.00, oov
@@ -12773,7 +12627,6 @@
 172	cleric	0.992	cap_ratio=0.99, oov
 172	d's	0.970	cap_ratio=0.97, oov
 172	ddt	1.000	cap_ratio=1.00, oov
-172	ej	1.000	cap_ratio=1.00, oov
 172	essie	1.000	cap_ratio=1.00, oov
 172	fatty	0.983	cap_ratio=0.98, oov
 172	firewood	1.000	cap_ratio=1.00, oov
@@ -12854,7 +12707,6 @@
 171	nadal	0.956	cap_ratio=0.96, oov
 171	nev	0.993	cap_ratio=0.99, oov
 171	nikko	1.000	cap_ratio=1.00, oov
-171	og	0.969	cap_ratio=0.97, oov
 171	patris	0.911	cap_ratio=0.91, oov
 171	phuket	1.000	cap_ratio=1.00, oov
 171	preed	1.000	cap_ratio=1.00, oov
@@ -12906,6 +12758,7 @@
 170	twistle	1.000	cap_ratio=1.00, oov
 170	wooley	1.000	cap_ratio=1.00, oov
 170	zidane	1.000	cap_ratio=1.00, oov
+170	zâmbia	1.000	cap_ratio=1.00
 169	agness	1.000	cap_ratio=1.00, oov
 169	ancara	0.993	cap_ratio=0.99
 169	arquitetónica	1.000	cap_ratio=1.00
@@ -12951,7 +12804,6 @@
 169	niccolo	1.000	cap_ratio=1.00, oov
 169	norville	1.000	cap_ratio=1.00, oov
 169	papuça	1.000	cap_ratio=1.00, oov
-169	pirenéus	1.000	cap_ratio=1.00
 169	ramanujan	1.000	cap_ratio=1.00, oov
 169	regal	1.000	cap_ratio=1.00, oov
 169	ronal	1.000	cap_ratio=1.00, oov
@@ -13014,7 +12866,6 @@
 168	outworld	1.000	cap_ratio=1.00, oov
 168	pacer	0.877	cap_ratio=0.88, oov
 168	penh	1.000	cap_ratio=1.00, oov
-168	pk	0.942	cap_ratio=0.94, oov
 168	polina	1.000	cap_ratio=1.00, oov
 168	punchy	1.000	cap_ratio=1.00, oov
 168	raiko	1.000	cap_ratio=1.00, oov
@@ -13072,14 +12923,12 @@
 167	rosewater	1.000	cap_ratio=1.00, oov
 167	sergeevna	1.000	cap_ratio=1.00, oov
 167	shyne	1.000	cap_ratio=1.00, oov
-167	tita	0.975	cap_ratio=0.97, oov
 167	ubba	1.000	cap_ratio=1.00, oov
 167	vargo	1.000	cap_ratio=1.00, oov
 167	wildman	1.000	cap_ratio=1.00, oov
 166	agamemnon	1.000	cap_ratio=1.00, oov
 166	aldus	1.000	cap_ratio=1.00, oov
 166	asterix	1.000	cap_ratio=1.00, oov
-166	bc	0.986	cap_ratio=0.99, oov
 166	beltran	1.000	cap_ratio=1.00, oov
 166	bianco	0.954	cap_ratio=0.95, oov
 166	blum	1.000	cap_ratio=1.00, oov
@@ -13160,7 +13009,6 @@
 165	intelligence	0.971	cap_ratio=0.97, oov
 165	jacket	0.963	cap_ratio=0.96, oov
 165	jiao	0.982	cap_ratio=0.98, oov
-165	kd	0.946	cap_ratio=0.95, oov
 165	kelsi	1.000	cap_ratio=1.00, oov
 165	kleinman	1.000	cap_ratio=1.00, oov
 165	landru	1.000	cap_ratio=1.00, oov
@@ -13242,7 +13090,6 @@
 164	walternativo	1.000	cap_ratio=1.00, oov
 164	yakul	0.990	cap_ratio=0.99, oov
 163	angry	0.961	cap_ratio=0.96, oov
-163	austria	0.993	cap_ratio=0.99, oov
 163	bagby	1.000	cap_ratio=1.00, oov
 163	bilt	1.000	cap_ratio=1.00, oov
 163	bledsoe	1.000	cap_ratio=1.00, oov
@@ -13282,7 +13129,6 @@
 163	torcillo	1.000	cap_ratio=1.00, oov
 163	toye	1.000	cap_ratio=1.00, oov
 163	trickle	0.992	cap_ratio=0.99, oov
-163	tt	0.887	cap_ratio=0.89, oov
 163	u-north	1.000	cap_ratio=1.00, oov
 163	ulster	1.000	cap_ratio=1.00
 163	veldt	0.994	cap_ratio=0.99, oov
@@ -13321,7 +13167,6 @@
 162	hecht	1.000	cap_ratio=1.00, oov
 162	hirohito	1.000	cap_ratio=1.00, oov
 162	hiten	1.000	cap_ratio=1.00, oov
-162	hj	0.968	cap_ratio=0.97, oov
 162	jassie	1.000	cap_ratio=1.00, oov
 162	kiefer	1.000	cap_ratio=1.00, oov
 162	kujan	1.000	cap_ratio=1.00, oov
@@ -13335,7 +13180,6 @@
 162	minuti	0.907	cap_ratio=0.91, oov
 162	outcome	1.000	cap_ratio=1.00, oov
 162	paw	0.986	cap_ratio=0.99, oov
-162	pb	1.000	cap_ratio=1.00, oov
 162	perla	0.973	cap_ratio=0.97, oov
 162	plunkett	1.000	cap_ratio=1.00, oov
 162	plutarch	1.000	cap_ratio=1.00, oov
@@ -13347,7 +13191,6 @@
 162	ralf	1.000	cap_ratio=1.00, oov
 162	rimbaud	1.000	cap_ratio=1.00, oov
 162	rogelio	1.000	cap_ratio=1.00, oov
-162	rx	1.000	cap_ratio=1.00, oov
 162	scamander	1.000	cap_ratio=1.00, oov
 162	schell	1.000	cap_ratio=1.00, oov
 162	smoky	0.897	cap_ratio=0.90, oov
@@ -13548,10 +13391,8 @@
 159	stiletto	0.980	cap_ratio=0.98, oov
 159	syrio	1.000	cap_ratio=1.00, oov
 159	togokahn	1.000	cap_ratio=1.00, oov
-159	uc	0.965	cap_ratio=0.97, oov
 159	wmd	1.000	cap_ratio=1.00, oov
 159	wooton	1.000	cap_ratio=1.00, oov
-159	zâmbia	1.000	cap_ratio=1.00
 158	agency	0.968	cap_ratio=0.97, oov
 158	andros	1.000	cap_ratio=1.00, oov
 158	antwan	1.000	cap_ratio=1.00, oov
@@ -13671,7 +13512,6 @@
 157	walken	0.986	cap_ratio=0.99, oov
 157	whitby	1.000	cap_ratio=1.00, oov
 157	wybie	1.000	cap_ratio=1.00, oov
-157	zz	0.986	cap_ratio=0.99, oov
 156	acid	0.900	cap_ratio=0.90, oov
 156	adare	1.000	cap_ratio=1.00, oov
 156	arcádia	0.897	cap_ratio=0.90
@@ -13682,7 +13522,6 @@
 156	byrnison	1.000	cap_ratio=1.00, oov
 156	chetley	1.000	cap_ratio=1.00, oov
 156	cilla	1.000	cap_ratio=1.00, oov
-156	cleopatra	1.000	cap_ratio=1.00, oov
 156	collini	1.000	cap_ratio=1.00, oov
 156	crease	1.000	cap_ratio=1.00, oov
 156	d'harans	1.000	cap_ratio=1.00, oov
@@ -13703,12 +13542,11 @@
 156	kean	1.000	cap_ratio=1.00, oov
 156	kitano	1.000	cap_ratio=1.00, oov
 156	kore	0.966	cap_ratio=0.97, oov
-156	lc	0.971	cap_ratio=0.97, oov
-156	lz	0.890	cap_ratio=0.89, oov
 156	madmartigan	1.000	cap_ratio=1.00, oov
 156	maisy	0.993	cap_ratio=0.99, oov
 156	melo	0.859	cap_ratio=0.86
 156	nagumo	1.000	cap_ratio=1.00, oov
+156	namíbia	1.000	cap_ratio=1.00
 156	nedry	1.000	cap_ratio=1.00, oov
 156	niedermayer	1.000	cap_ratio=1.00, oov
 156	obelix	1.000	cap_ratio=1.00, oov
@@ -13897,7 +13735,6 @@
 153	pettis	1.000	cap_ratio=1.00, oov
 153	pyro	0.960	cap_ratio=0.96, oov
 153	radner	1.000	cap_ratio=1.00, oov
-153	rg	0.973	cap_ratio=0.97, oov
 153	ruffin	1.000	cap_ratio=1.00, oov
 153	shabandar	1.000	cap_ratio=1.00, oov
 153	shipley	1.000	cap_ratio=1.00, oov
@@ -14010,7 +13847,7 @@
 151	hanka	1.000	cap_ratio=1.00, oov
 151	hardenbrook	1.000	cap_ratio=1.00, oov
 151	hindley	1.000	cap_ratio=1.00, oov
-151	hq	0.966	cap_ratio=0.97, oov
+151	hispânia	1.000	cap_ratio=1.00
 151	huggy	1.000	cap_ratio=1.00, oov
 151	jhonny	0.991	cap_ratio=0.99, oov
 151	kierkegaard	1.000	cap_ratio=1.00, oov
@@ -14099,6 +13936,7 @@
 150	spt	1.000	cap_ratio=1.00, oov
 150	stamp	0.977	cap_ratio=0.98, oov
 150	supreme	0.958	cap_ratio=0.96, oov
+150	t-vírus	1.000	cap_ratio=1.00, oov
 150	teela	1.000	cap_ratio=1.00, oov
 150	thoros	1.000	cap_ratio=1.00, oov
 150	torrhen	1.000	cap_ratio=1.00, oov
@@ -14113,7 +13951,6 @@
 150	wilfrido	1.000	cap_ratio=1.00, oov
 150	winton	1.000	cap_ratio=1.00, oov
 150	wirth	1.000	cap_ratio=1.00, oov
-150	zs	1.000	cap_ratio=1.00, oov
 149	aga	0.930	cap_ratio=0.93, oov
 149	amazónico	1.000	cap_ratio=1.00
 149	applejack	0.990	cap_ratio=0.99, oov
@@ -14182,10 +14019,10 @@
 148	apófis	1.000	cap_ratio=1.00, oov
 148	arika	1.000	cap_ratio=1.00, oov
 148	bagley	1.000	cap_ratio=1.00, oov
+148	bassorá	1.000	cap_ratio=1.00
 148	briana	1.000	cap_ratio=1.00, oov
 148	butte	1.000	cap_ratio=1.00, oov
 148	calaveras	0.992	cap_ratio=0.99, oov
-148	ck	0.942	cap_ratio=0.94, oov
 148	coleridge	1.000	cap_ratio=1.00, oov
 148	common	0.928	cap_ratio=0.93, oov
 148	cro-magnon	0.950	cap_ratio=0.95, oov
@@ -14238,6 +14075,7 @@
 148	spitfire	0.953	cap_ratio=0.95, oov
 148	spruce	0.993	cap_ratio=0.99, oov
 148	supply	0.945	cap_ratio=0.94, oov
+148	traduvárius	1.000	cap_ratio=1.00, oov
 148	whitworth	1.000	cap_ratio=1.00, oov
 148	woltz	1.000	cap_ratio=1.00, oov
 148	yilmaz	1.000	cap_ratio=1.00, oov
@@ -14319,7 +14157,6 @@
 147	varna	1.000	cap_ratio=1.00, oov
 147	vassily	1.000	cap_ratio=1.00, oov
 147	wyman	0.985	cap_ratio=0.98, oov
-147	xk	1.000	cap_ratio=1.00, oov
 146	alfrid	1.000	cap_ratio=1.00, oov
 146	aol	0.939	cap_ratio=0.94, oov
 146	aurore	1.000	cap_ratio=1.00
@@ -14343,7 +14180,6 @@
 146	florian	1.000	cap_ratio=1.00, oov
 146	fortunato	1.000	cap_ratio=1.00
 146	gambino	1.000	cap_ratio=1.00, oov
-146	gc	0.913	cap_ratio=0.91, oov
 146	golitsyn	1.000	cap_ratio=1.00, oov
 146	gravity	0.904	cap_ratio=0.90, oov
 146	gypsy	0.983	cap_ratio=0.98, oov
@@ -14445,6 +14281,7 @@
 145	sewell	0.947	cap_ratio=0.95, oov
 145	shockwave	1.000	cap_ratio=1.00, oov
 145	sibyl	1.000	cap_ratio=1.00, oov
+145	silverhöjd	1.000	cap_ratio=1.00, oov
 145	sinn	1.000	cap_ratio=1.00, oov
 145	skrill	0.972	cap_ratio=0.97, oov
 145	skyline	0.976	cap_ratio=0.98, oov
@@ -14548,7 +14385,6 @@
 143	glendon	1.000	cap_ratio=1.00, oov
 143	gotti	1.000	cap_ratio=1.00, oov
 143	hartmann	1.000	cap_ratio=1.00, oov
-143	hispânia	1.000	cap_ratio=1.00
 143	hundjager	1.000	cap_ratio=1.00, oov
 143	jldr	1.000	cap_ratio=1.00, oov
 143	judit	1.000	cap_ratio=1.00, oov
@@ -14577,6 +14413,7 @@
 143	suzan	1.000	cap_ratio=1.00, oov
 143	tellegio	1.000	cap_ratio=1.00, oov
 143	thundercat	1.000	cap_ratio=1.00, oov
+143	théodred	1.000	cap_ratio=1.00, oov
 143	toast	0.873	cap_ratio=0.87, oov
 143	tomlin	1.000	cap_ratio=1.00, oov
 143	tunnel	0.874	cap_ratio=0.87, oov
@@ -14629,7 +14466,6 @@
 142	mopida	1.000	cap_ratio=1.00, oov
 142	mox	0.962	cap_ratio=0.96, oov
 142	nakano	1.000	cap_ratio=1.00, oov
-142	namíbia	1.000	cap_ratio=1.00
 142	o'phelan	1.000	cap_ratio=1.00, oov
 142	orchid	0.982	cap_ratio=0.98, oov
 142	ordoñez	1.000	cap_ratio=1.00, oov
@@ -14661,7 +14497,6 @@
 141	arrio	1.000	cap_ratio=1.00
 141	bagheera	1.000	cap_ratio=1.00, oov
 141	belyeu	1.000	cap_ratio=1.00, oov
-141	bk	1.000	cap_ratio=1.00, oov
 141	brideshead	1.000	cap_ratio=1.00, oov
 141	brigitta	1.000	cap_ratio=1.00, oov
 141	castlebeck	1.000	cap_ratio=1.00, oov
@@ -14719,7 +14554,6 @@
 141	stillson	1.000	cap_ratio=1.00, oov
 141	swissair	1.000	cap_ratio=1.00, oov
 141	sydnor	1.000	cap_ratio=1.00, oov
-141	t-vírus	1.000	cap_ratio=1.00, oov
 141	tami-lynn	1.000	cap_ratio=1.00, oov
 141	therman	1.000	cap_ratio=1.00, oov
 141	topside	0.991	cap_ratio=0.99, oov
@@ -14788,7 +14622,6 @@
 140	speaker	0.852	cap_ratio=0.85, oov
 140	teetsi	1.000	cap_ratio=1.00, oov
 140	termeh	1.000	cap_ratio=1.00, oov
-140	traduvárius	1.000	cap_ratio=1.00, oov
 140	tripplehorns	1.000	cap_ratio=1.00, oov
 140	vilena	1.000	cap_ratio=1.00, oov
 140	wachati	1.000	cap_ratio=1.00, oov
@@ -14858,7 +14691,6 @@
 138	anasazi	0.901	cap_ratio=0.90, oov
 138	anck-su-namun	1.000	cap_ratio=1.00, oov
 138	austerlitz	1.000	cap_ratio=1.00, oov
-138	bassorá	1.000	cap_ratio=1.00
 138	bazhaev	1.000	cap_ratio=1.00, oov
 138	betelgeuse	1.000	cap_ratio=1.00, oov
 138	boaz	0.990	cap_ratio=0.99, oov
@@ -14976,6 +14808,7 @@
 137	scruggs	1.000	cap_ratio=1.00, oov
 137	sever	1.000	cap_ratio=1.00
 137	shruti	1.000	cap_ratio=1.00, oov
+137	sigurbjörn	1.000	cap_ratio=1.00, oov
 137	sikander	1.000	cap_ratio=1.00, oov
 137	siro	0.976	cap_ratio=0.98, oov
 137	skerritt	1.000	cap_ratio=1.00, oov
@@ -15083,12 +14916,10 @@
 136	rumancek	1.000	cap_ratio=1.00, oov
 136	seb	1.000	cap_ratio=1.00, oov
 136	seton	1.000	cap_ratio=1.00, oov
-136	silverhöjd	1.000	cap_ratio=1.00, oov
 136	spo	1.000	cap_ratio=1.00, oov
 136	teenie	1.000	cap_ratio=1.00, oov
 136	tempest	1.000	cap_ratio=1.00, oov
 136	tept	1.000	cap_ratio=1.00, oov
-136	théodred	1.000	cap_ratio=1.00, oov
 136	tibre	0.993	cap_ratio=0.99
 136	tiggy	1.000	cap_ratio=1.00, oov
 136	tula	1.000	cap_ratio=1.00, oov
@@ -15106,7 +14937,6 @@
 135	augsburg	1.000	cap_ratio=1.00, oov
 135	bafford	1.000	cap_ratio=1.00, oov
 135	benadryl	0.948	cap_ratio=0.95, oov
-135	bm	0.933	cap_ratio=0.93, oov
 135	bunderslaw	1.000	cap_ratio=1.00, oov
 135	burtie	1.000	cap_ratio=1.00, oov
 135	calisto	1.000	cap_ratio=1.00
@@ -15420,7 +15250,6 @@
 132	schuster	1.000	cap_ratio=1.00, oov
 132	shinjuku	1.000	cap_ratio=1.00, oov
 132	sifo-dyas	1.000	cap_ratio=1.00, oov
-132	sigurbjörn	1.000	cap_ratio=1.00, oov
 132	sneed	1.000	cap_ratio=1.00, oov
 132	sns	0.984	cap_ratio=0.98
 132	sok	1.000	cap_ratio=1.00, oov
@@ -15464,12 +15293,10 @@
 131	fenn	1.000	cap_ratio=1.00, oov
 131	gally	0.983	cap_ratio=0.98, oov
 131	gerrera	1.000	cap_ratio=1.00, oov
-131	gn	0.939	cap_ratio=0.94, oov
 131	greggy	1.000	cap_ratio=1.00, oov
 131	gunnison	1.000	cap_ratio=1.00, oov
 131	halima	1.000	cap_ratio=1.00, oov
 131	hawker	1.000	cap_ratio=1.00, oov
-131	hg	0.990	cap_ratio=0.99, oov
 131	inquirer	1.000	cap_ratio=1.00, oov
 131	journey	0.907	cap_ratio=0.91, oov
 131	js	0.958	cap_ratio=0.96
@@ -15541,7 +15368,6 @@
 130	dirac	0.982	cap_ratio=0.98
 130	disko	1.000	cap_ratio=1.00, oov
 130	drn	1.000	cap_ratio=1.00, oov
-130	dt	1.000	cap_ratio=1.00, oov
 130	dunbrook	1.000	cap_ratio=1.00, oov
 130	dwarf	0.877	cap_ratio=0.88, oov
 130	egor	1.000	cap_ratio=1.00, oov
@@ -15692,7 +15518,6 @@
 129	sonderkommando	1.000	cap_ratio=1.00, oov
 129	soraya	1.000	cap_ratio=1.00, oov
 129	static	1.000	cap_ratio=1.00, oov
-129	sw	0.979	cap_ratio=0.98, oov
 129	toll	0.948	cap_ratio=0.95, oov
 129	toluca	1.000	cap_ratio=1.00, oov
 129	tomaso	1.000	cap_ratio=1.00, oov
@@ -15858,7 +15683,6 @@
 127	tremont	1.000	cap_ratio=1.00, oov
 127	waldman	1.000	cap_ratio=1.00, oov
 127	woolworth	1.000	cap_ratio=1.00, oov
-127	xr	1.000	cap_ratio=1.00, oov
 127	yevhen	1.000	cap_ratio=1.00, oov
 126	abadão	1.000	cap_ratio=1.00, oov
 126	aditya	1.000	cap_ratio=1.00, oov
@@ -15959,7 +15783,6 @@
 125	colossus	0.991	cap_ratio=0.99, oov
 125	connely	1.000	cap_ratio=1.00, oov
 125	criss	1.000	cap_ratio=1.00, oov
-125	cw	1.000	cap_ratio=1.00, oov
 125	dancort	1.000	cap_ratio=1.00, oov
 125	dotty	1.000	cap_ratio=1.00, oov
 125	dpla	1.000	cap_ratio=1.00, oov
@@ -16025,7 +15848,6 @@
 125	zimbabwe	1.000	cap_ratio=1.00, oov
 125	zoltar	1.000	cap_ratio=1.00, oov
 125	zzyzx	1.000	cap_ratio=1.00, oov
-124	agricola	0.930	cap_ratio=0.93, oov
 124	alcides	0.981	cap_ratio=0.98, oov
 124	allegheny	1.000	cap_ratio=1.00, oov
 124	antigua	0.971	cap_ratio=0.97, oov
@@ -16052,7 +15874,6 @@
 124	darbus	1.000	cap_ratio=1.00, oov
 124	dethklok	1.000	cap_ratio=1.00, oov
 124	drecker	1.000	cap_ratio=1.00, oov
-124	dv	0.946	cap_ratio=0.95, oov
 124	foix	1.000	cap_ratio=1.00, oov
 124	gaffer	0.969	cap_ratio=0.97, oov
 124	gallego	1.000	cap_ratio=1.00, oov
@@ -16176,7 +15997,6 @@
 123	playfair	0.992	cap_ratio=0.99, oov
 123	pouchy	1.000	cap_ratio=1.00, oov
 123	primrose	0.977	cap_ratio=0.98, oov
-123	qt	0.929	cap_ratio=0.93, oov
 123	rabin	1.000	cap_ratio=1.00, oov
 123	radiator	1.000	cap_ratio=1.00, oov
 123	raff	0.967	cap_ratio=0.97, oov
@@ -16318,7 +16138,6 @@
 121	dorcas	1.000	cap_ratio=1.00, oov
 121	dpt	0.863	cap_ratio=0.86, oov
 121	dresner	1.000	cap_ratio=1.00, oov
-121	dz	0.857	cap_ratio=0.86, oov
 121	eng	0.874	cap_ratio=0.87
 121	erhardt	1.000	cap_ratio=1.00, oov
 121	eyed	0.983	cap_ratio=0.98, oov
@@ -16411,8 +16230,6 @@
 120	danceny	1.000	cap_ratio=1.00, oov
 120	dargis	1.000	cap_ratio=1.00, oov
 120	dartmoor	0.980	cap_ratio=0.98, oov
-120	dh	1.000	cap_ratio=1.00, oov
-120	disneylandia	0.937	cap_ratio=0.94, oov
 120	dornocóccis	1.000	cap_ratio=1.00, oov
 120	durkin	1.000	cap_ratio=1.00, oov
 120	eagleton	1.000	cap_ratio=1.00, oov
@@ -16521,11 +16338,11 @@
 119	dda	0.928	cap_ratio=0.93, oov
 119	dough	0.922	cap_ratio=0.92, oov
 119	duman	1.000	cap_ratio=1.00, oov
-119	ef	0.881	cap_ratio=0.88, oov
 119	elf	0.904	cap_ratio=0.90, oov
 119	endframe	1.000	cap_ratio=1.00, oov
 119	erebus	1.000	cap_ratio=1.00, oov
 119	eren	0.959	cap_ratio=0.96, oov
+119	fabrício	1.000	cap_ratio=1.00, oov
 119	fatso	0.951	cap_ratio=0.95, oov
 119	faubert	1.000	cap_ratio=1.00, oov
 119	fenimore	1.000	cap_ratio=1.00, oov
@@ -16754,7 +16571,6 @@
 117	hickock	1.000	cap_ratio=1.00, oov
 117	ilse	1.000	cap_ratio=1.00, oov
 117	jah	0.903	cap_ratio=0.90, oov
-117	jm	0.988	cap_ratio=0.99, oov
 117	joshy	1.000	cap_ratio=1.00, oov
 117	kampala	1.000	cap_ratio=1.00, oov
 117	kamran	1.000	cap_ratio=1.00, oov
@@ -16897,7 +16713,6 @@
 116	tipperary	1.000	cap_ratio=1.00, oov
 116	torrence	1.000	cap_ratio=1.00, oov
 116	twenty-one	1.000	cap_ratio=1.00, oov
-116	ur	0.887	cap_ratio=0.89, oov
 116	valenzuela	1.000	cap_ratio=1.00, oov
 116	wheatley	1.000	cap_ratio=1.00, oov
 116	whinging	1.000	cap_ratio=1.00, oov
@@ -16918,6 +16733,7 @@
 115	bubba-gump	1.000	cap_ratio=1.00, oov
 115	byzantium	1.000	cap_ratio=1.00, oov
 115	cadman	1.000	cap_ratio=1.00, oov
+115	castaño	1.000	cap_ratio=1.00, oov
 115	chivo	0.859	cap_ratio=0.86, oov
 115	chrismukkah	1.000	cap_ratio=1.00, oov
 115	chuny	1.000	cap_ratio=1.00, oov
@@ -17038,7 +16854,6 @@
 114	clarkie	1.000	cap_ratio=1.00, oov
 114	clearbec	1.000	cap_ratio=1.00, oov
 114	ctx	1.000	cap_ratio=1.00, oov
-114	cz	1.000	cap_ratio=1.00, oov
 114	dafna	1.000	cap_ratio=1.00, oov
 114	dagan	1.000	cap_ratio=1.00, oov
 114	daredevil	0.976	cap_ratio=0.98, oov
@@ -17304,7 +17119,6 @@
 112	naseem	1.000	cap_ratio=1.00, oov
 112	nelec	1.000	cap_ratio=1.00, oov
 112	nicodemus	1.000	cap_ratio=1.00, oov
-112	noe	0.859	cap_ratio=0.86, oov
 112	o's	0.882	cap_ratio=0.88, oov
 112	oas	0.874	cap_ratio=0.87, oov
 112	ogilvy	1.000	cap_ratio=1.00, oov
@@ -17340,7 +17154,6 @@
 112	veeck	1.000	cap_ratio=1.00, oov
 112	vetra	1.000	cap_ratio=1.00, oov
 112	vlado	1.000	cap_ratio=1.00, oov
-112	xm	1.000	cap_ratio=1.00, oov
 112	yamaguchi	1.000	cap_ratio=1.00, oov
 112	yesung	1.000	cap_ratio=1.00, oov
 112	zaleski	1.000	cap_ratio=1.00, oov
@@ -17480,7 +17293,6 @@
 110	doria	0.961	cap_ratio=0.96, oov
 110	eason	1.000	cap_ratio=1.00, oov
 110	enya	1.000	cap_ratio=1.00, oov
-110	fabrício	1.000	cap_ratio=1.00, oov
 110	fiori	0.942	cap_ratio=0.94, oov
 110	flinkman	1.000	cap_ratio=1.00, oov
 110	friddle	1.000	cap_ratio=1.00, oov
@@ -17499,8 +17311,6 @@
 110	kiley	1.000	cap_ratio=1.00, oov
 110	kilroy	1.000	cap_ratio=1.00, oov
 110	krei	1.000	cap_ratio=1.00, oov
-110	kt	0.977	cap_ratio=0.98, oov
-110	ky	1.000	cap_ratio=1.00, oov
 110	ladon	1.000	cap_ratio=1.00, oov
 110	landfill	1.000	cap_ratio=1.00, oov
 110	lapin	0.939	cap_ratio=0.94, oov
@@ -17573,7 +17383,6 @@
 109	bulstrode	1.000	cap_ratio=1.00, oov
 109	buxton	1.000	cap_ratio=1.00, oov
 109	camorra	0.990	cap_ratio=0.99, oov
-109	castaño	1.000	cap_ratio=1.00, oov
 109	catania	1.000	cap_ratio=1.00, oov
 109	cavor	1.000	cap_ratio=1.00, oov
 109	chauncy	1.000	cap_ratio=1.00, oov
@@ -17627,6 +17436,7 @@
 109	pappass	1.000	cap_ratio=1.00, oov
 109	pedersen	1.000	cap_ratio=1.00, oov
 109	persimmon	1.000	cap_ratio=1.00, oov
+109	pinzón	1.000	cap_ratio=1.00, oov
 109	presidente-eleito	0.991	cap_ratio=0.99, oov
 109	preux	1.000	cap_ratio=1.00, oov
 109	proudfoot	1.000	cap_ratio=1.00, oov
@@ -18126,7 +17936,6 @@
 104	boynton	1.000	cap_ratio=1.00, oov
 104	brandeburgo	1.000	cap_ratio=1.00
 104	bê	0.904	cap_ratio=0.90
-104	cg	0.959	cap_ratio=0.96, oov
 104	charo	1.000	cap_ratio=1.00, oov
 104	chezlov	1.000	cap_ratio=1.00, oov
 104	chuan	0.987	cap_ratio=0.99, oov
@@ -18148,7 +17957,6 @@
 104	ewell	1.000	cap_ratio=1.00, oov
 104	exit	0.953	cap_ratio=0.95, oov
 104	fagan	1.000	cap_ratio=1.00, oov
-104	fb	0.918	cap_ratio=0.92, oov
 104	gagne	0.867	cap_ratio=0.87, oov
 104	galbatorix	1.000	cap_ratio=1.00, oov
 104	gallaccio	1.000	cap_ratio=1.00, oov
@@ -18251,6 +18059,7 @@
 104	zavitz	1.000	cap_ratio=1.00, oov
 104	zoc	1.000	cap_ratio=1.00, oov
 103	amrita	1.000	cap_ratio=1.00, oov
+103	aufídio	1.000	cap_ratio=1.00, oov
 103	aventine	1.000	cap_ratio=1.00, oov
 103	balraj	1.000	cap_ratio=1.00, oov
 103	basileia	1.000	cap_ratio=1.00
@@ -18280,7 +18089,6 @@
 103	ferdinando	1.000	cap_ratio=1.00, oov
 103	follies	0.980	cap_ratio=0.98, oov
 103	gaelle	1.000	cap_ratio=1.00, oov
-103	gd	1.000	cap_ratio=1.00, oov
 103	ginyuu	1.000	cap_ratio=1.00, oov
 103	gissing	1.000	cap_ratio=1.00, oov
 103	goldblum	1.000	cap_ratio=1.00, oov
@@ -18652,7 +18460,6 @@
 100	eel	1.000	cap_ratio=1.00, oov
 100	eyck	1.000	cap_ratio=1.00, oov
 100	fellgiebel	1.000	cap_ratio=1.00, oov
-100	fenix	0.977	cap_ratio=0.98, oov
 100	fiero	0.990	cap_ratio=0.99, oov
 100	firuzan	1.000	cap_ratio=1.00, oov
 100	flender	1.000	cap_ratio=1.00, oov
@@ -18703,7 +18510,6 @@
 100	pauiie	1.000	cap_ratio=1.00, oov
 100	pentonville	1.000	cap_ratio=1.00, oov
 100	philbin	1.000	cap_ratio=1.00, oov
-100	pinzón	1.000	cap_ratio=1.00, oov
 100	plenkov	1.000	cap_ratio=1.00, oov
 100	poldark	1.000	cap_ratio=1.00, oov
 100	poulson	1.000	cap_ratio=1.00, oov
@@ -18817,7 +18623,6 @@
 #	2432	heights	english_plural
 #	2411	hicks	english_plural
 #	2405	linus	english_plural
-#	2308	frances	english_plural
 #	2291	lars	english_plural
 #	2264	giles	english_plural
 #	2245	powers	english_plural
@@ -19210,7 +19015,6 @@
 #	200	butts	english_plural
 #	200	killjoys	english_plural
 #	199	cons	english_plural
-#	199	francois	english_plural
 #	199	jaegers	english_plural
 #	198	maps	english_plural
 #	198	sisters	english_plural
@@ -19461,7 +19265,6 @@
 #	115	luke's	english_plural
 #	115	panzers	english_plural
 #	115	pastis	english_plural
-#	114	anus	english_plural
 #	114	bloggers	english_plural
 #	114	bob's	english_plural
 #	114	cassinos	english_plural
@@ -19552,3 +19355,334 @@
 #	100	heckles	english_plural
 #	100	pius	english_plural
 #	100	poitiers	english_plural
+#
+# Short-token rule (1-2 letters, not a PT word or listed interjection):
+#	98347	h	short_token
+#	95934	mr	short_token
+#	66317	s	short_token
+#	50416	º	short_token
+#	47633	c	short_token
+#	45595	d	short_token
+#	45234	b	short_token
+#	42927	i	short_token
+#	42165	m	short_token
+#	41844	ª	short_token
+#	29832	j	short_token
+#	27502	l	short_token
+#	27201	t	short_token
+#	24379	p	short_token
+#	24192	r	short_token
+#	22466	ed	short_token
+#	22342	n	short_token
+#	21684	al	short_token
+#	17986	st	short_token
+#	17753	g	short_token
+#	17645	of	short_token
+#	17307	f	short_token
+#	15470	k	short_token
+#	14757	el	short_token
+#	13969	u	short_token
+#	10205	in	short_token
+#	8912	le	short_token
+#	8065	q	short_token
+#	7871	bo	short_token
+#	7691	us	short_token
+#	7320	w	short_token
+#	7049	it	short_token
+#	6965	jo	short_token
+#	6802	y	short_token
+#	6743	we	short_token
+#	6617	on	short_token
+#	6595	by	short_token
+#	6273	my	short_token
+#	6069	z	short_token
+#	5946	yo	short_token
+#	5561	dj	short_token
+#	5515	es	short_token
+#	5262	jr	short_token
+#	5181	oz	short_token
+#	5145	fu	short_token
+#	4658	ã	short_token
+#	4657	po	short_token
+#	4572	dc	short_token
+#	4435	ss	short_token
+#	4406	up	short_token
+#	4231	ms	short_token
+#	4189	th	short_token
+#	4022	am	short_token
+#	4012	wu	short_token
+#	3944	au	short_token
+#	3538	nã	short_token
+#	3355	ty	short_token
+#	3317	go	short_token
+#	3306	di	short_token
+#	3122	co	short_token
+#	2929	et	short_token
+#	2725	an	short_token
+#	2659	su	short_token
+#	2644	un	short_token
+#	2634	du	short_token
+#	2618	ba	short_token
+#	2543	jj	short_token
+#	2463	ra	short_token
+#	2461	he	short_token
+#	2430	sd	short_token
+#	2273	yu	short_token
+#	2239	aa	short_token
+#	2211	qi	short_token
+#	2208	vs	short_token
+#	2188	mg	short_token
+#	2151	at	short_token
+#	2076	bi	short_token
+#	2052	sg	short_token
+#	2046	sa	short_token
+#	2014	ow	short_token
+#	1969	tc	short_token
+#	1930	cc	short_token
+#	1929	av	short_token
+#	1918	aj	short_token
+#	1913	er	short_token
+#	1878	lu	short_token
+#	1833	ro	short_token
+#	1811	ko	short_token
+#	1757	ak	short_token
+#	1754	tj	short_token
+#	1716	mc	short_token
+#	1703	jt	short_token
+#	1703	ny	short_token
+#	1694	mu	short_token
+#	1686	ep	short_token
+#	1654	dl	short_token
+#	1634	pm	short_token
+#	1587	vó	short_token
+#	1575	ºc	short_token
+#	1566	hr	short_token
+#	1537	il	short_token
+#	1491	je	short_token
+#	1485	vu	short_token
+#	1408	if	short_token
+#	1407	rj	short_token
+#	1394	ml	short_token
+#	1298	jd	short_token
+#	1296	ki	short_token
+#	1293	fs	short_token
+#	1278	ni	short_token
+#	1258	bu	short_token
+#	1247	eo	short_token
+#	1240	or	short_token
+#	1198	oj	short_token
+#	1192	id	short_token
+#	1185	rm	short_token
+#	1183	ox	short_token
+#	1170	ac	short_token
+#	1133	yi	short_token
+#	1129	ka	short_token
+#	1124	mj	short_token
+#	1116	cj	short_token
+#	1097	sy	short_token
+#	1021	wo	short_token
+#	1013	ch	short_token
+#	1008	ea	short_token
+#	976	lj	short_token
+#	975	hd	short_token
+#	973	cy	short_token
+#	973	oo	short_token
+#	969	hu	short_token
+#	918	aw	short_token
+#	888	io	short_token
+#	887	ay	short_token
+#	886	ab	short_token
+#	868	jb	short_token
+#	853	br	short_token
+#	832	rd	short_token
+#	823	re	short_token
+#	802	zo	short_token
+#	763	hs	short_token
+#	751	bb	short_token
+#	732	jc	short_token
+#	722	ph	short_token
+#	717	ig	short_token
+#	694	ev	short_token
+#	694	rh	short_token
+#	689	jp	short_token
+#	668	pu	short_token
+#	666	ap	short_token
+#	665	mt	short_token
+#	658	qg	short_token
+#	656	lt	short_token
+#	656	ns	short_token
+#	656	rp	short_token
+#	647	ø	short_token
+#	646	fm	short_token
+#	634	ku	short_token
+#	612	oc	short_token
+#	610	gu	short_token
+#	607	ga	short_token
+#	607	om	short_token
+#	602	ds	short_token
+#	597	im	short_token
+#	583	ee	short_token
+#	577	uv	short_token
+#	575	bj	short_token
+#	571	ae	short_token
+#	570	fo	short_token
+#	554	ll	short_token
+#	536	fr	short_token
+#	529	iz	short_token
+#	525	vp	short_token
+#	519	pd	short_token
+#	515	ji	short_token
+#	503	sj	short_token
+#	499	gs	short_token
+#	489	mk	short_token
+#	487	dd	short_token
+#	482	gt	short_token
+#	470	ru	short_token
+#	463	wa	short_token
+#	461	op	short_token
+#	445	oa	short_token
+#	445	rv	short_token
+#	441	nd	short_token
+#	436	ke	short_token
+#	436	tr	short_token
+#	435	ge	short_token
+#	434	ci	short_token
+#	416	gi	short_token
+#	411	ag	short_token
+#	408	sh	short_token
+#	402	tk	short_token
+#	397	gr	short_token
+#	396	zi	short_token
+#	388	kc	short_token
+#	379	rc	short_token
+#	371	db	short_token
+#	370	lp	short_token
+#	368	nr	short_token
+#	366	ts	short_token
+#	364	vx	short_token
+#	359	ju	short_token
+#	358	rs	short_token
+#	355	xu	short_token
+#	341	cq	short_token
+#	341	md	short_token
+#	340	й	short_token
+#	334	sp	short_token
+#	326	sm	short_token
+#	325	cs	short_token
+#	323	kw	short_token
+#	316	ct	short_token
+#	313	ew	short_token
+#	296	oy	short_token
+#	296	uu	short_token
+#	292	ib	short_token
+#	288	mx	short_token
+#	287	dp	short_token
+#	281	gm	short_token
+#	269	xy	short_token
+#	258	ie	short_token
+#	257	pf	short_token
+#	256	ng	short_token
+#	255	fp	short_token
+#	253	ls	short_token
+#	253	xl	short_token
+#	248	ic	short_token
+#	247	sl	short_token
+#	246	jw	short_token
+#	245	ye	short_token
+#	243	sc	short_token
+#	239	gg	short_token
+#	238	kk	short_token
+#	236	gq	short_token
+#	236	za	short_token
+#	234	ol	short_token
+#	230	rb	short_token
+#	229	ua	short_token
+#	222	qe	short_token
+#	219	tx	short_token
+#	218	dk	short_token
+#	215	gw	short_token
+#	211	ry	short_token
+#	211	vh	short_token
+#	210	cb	short_token
+#	208	lv	short_token
+#	205	pl	short_token
+#	202	cr	short_token
+#	202	ec	short_token
+#	200	mn	short_token
+#	191	hp	short_token
+#	191	px	short_token
+#	190	lh	short_token
+#	190	rf	short_token
+#	185	rr	short_token
+#	184	cl	short_token
+#	182	hk	short_token
+#	178	ey	short_token
+#	178	pg	short_token
+#	176	ud	short_token
+#	174	fn	short_token
+#	174	gh	short_token
+#	172	ej	short_token
+#	171	og	short_token
+#	169	ez	short_token
+#	168	pk	short_token
+#	166	bc	short_token
+#	165	kd	short_token
+#	163	tt	short_token
+#	162	hj	short_token
+#	162	pb	short_token
+#	162	rx	short_token
+#	162	xe	short_token
+#	159	uc	short_token
+#	157	sk	short_token
+#	157	zz	short_token
+#	156	lc	short_token
+#	156	lz	short_token
+#	156	rt	short_token
+#	154	uk	short_token
+#	153	rg	short_token
+#	152	az	short_token
+#	151	hq	short_token
+#	151	ik	short_token
+#	150	zs	short_token
+#	148	ck	short_token
+#	147	xk	short_token
+#	146	gc	short_token
+#	145	té	short_token
+#	143	ob	short_token
+#	141	bk	short_token
+#	138	ax	short_token
+#	137	nt	short_token
+#	136	ut	short_token
+#	135	bm	short_token
+#	135	éh	short_token
+#	133	tm	short_token
+#	131	gn	short_token
+#	131	hg	short_token
+#	130	dt	short_token
+#	129	sw	short_token
+#	127	xr	short_token
+#	125	cw	short_token
+#	124	dv	short_token
+#	123	qt	short_token
+#	122	nc	short_token
+#	121	dz	short_token
+#	120	dh	short_token
+#	119	ef	short_token
+#	117	jm	short_token
+#	116	ft	short_token
+#	116	ur	short_token
+#	114	cz	short_token
+#	113	ж	short_token
+#	112	xm	short_token
+#	110	kt	short_token
+#	110	ky	short_token
+#	110	mê	short_token
+#	108	ih	short_token
+#	108	lf	short_token
+#	108	zu	short_token
+#	105	af	short_token
+#	105	lr	short_token
+#	104	cg	short_token
+#	104	fb	short_token
+#	103	fl	short_token
+#	103	gd	short_token

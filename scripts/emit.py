@@ -176,7 +176,7 @@ def write_all(entries: Sequence[Entry], cfg: dict[str, Any], out_dir: Path) -> l
 
 
 def _write_dropped_file(
-    path: Path, rows, bp_excluded, min_count: int, total: int, foreign=()
+    path: Path, rows, bp_excluded, min_count: int, total: int, foreign=(), short=()
 ) -> None:
     with path.open("w", encoding="utf-8", newline="\n") as fh:
         fh.write("# Lemmas filtered out by the proper-noun/OOV heuristic.\n")
@@ -198,6 +198,10 @@ def _write_dropped_file(
             fh.write("#\n# Foreign-word filter (English plurals):\n")
             for lemma, count, reason in foreign:
                 fh.write(f"#\t{count}\t{lemma}\t{reason}\n")
+        if short:
+            fh.write("#\n# Short-token rule (1-2 letters, not a PT word or listed interjection):\n")
+            for lemma, count, reason in short:
+                fh.write(f"#\t{count}\t{lemma}\t{reason}\n")
 
 
 def write_dropped(log, cfg: dict[str, Any], out_dir: Path) -> list[Path]:
@@ -213,10 +217,11 @@ def write_dropped(log, cfg: dict[str, Any], out_dir: Path) -> list[Path]:
 
     full_path = out_dir / ocfg["dropped_proper_nouns_full"]
     _write_dropped_file(full_path, log.proper_nouns, log.bp_excluded, 1, total,
-                        getattr(log, "foreign", ()))
+                        getattr(log, "foreign", ()), getattr(log, "short", ()))
 
     head = [r for r in log.proper_nouns if r[1] >= min_count]
     path = out_dir / ocfg["dropped_proper_nouns"]
     _write_dropped_file(path, head, log.bp_excluded, min_count, total,
-                        [f for f in getattr(log, "foreign", ()) if f[1] >= min_count])
+                        [f for f in getattr(log, "foreign", ()) if f[1] >= min_count],
+                        [f for f in getattr(log, "short", ()) if f[1] >= min_count])
     return [path, full_path]

@@ -44,14 +44,15 @@
   "split_tokens": 6788290,
   "lemma_closure_redirects": 7813,
   "mwes_retained": 657,
-  "diacritic_folded": 29457,
-  "foreign_dropped": 11168,
+  "diacritic_folded": 30178,
+  "foreign_dropped": 11152,
+  "short_dropped": 721,
   "bp_excluded": 16,
-  "proper_nouns_dropped": 251898,
+  "proper_nouns_dropped": 251346,
   "entries": 10000,
-  "suspects": 18,
+  "suspects": 6,
   "gold": {
     "pipeline, stage 2 (gated)": 0.9849397590361446
   },
-  "elapsed_s": 24.9
+  "elapsed_s": 25.6
 }

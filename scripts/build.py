@@ -37,7 +37,7 @@ FIX_FLAGS = (
     "diacritic_folding", "accent_variant_folding", "bp_after_folding",
     "extended_proper_nouns", "mwe_constituent_check", "lemma_closure",
     "plural_folding", "split_enclitics", "english_plurals_foreign",
-    "split_ambiguous",
+    "split_ambiguous", "short_token_rule",
 )
 
 
@@ -261,6 +261,7 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
         lemma_counts, cap_ratios, cfg, lemmas_mod.in_dictionary, lemmas_mod.in_english
     )
     stats["foreign_dropped"] = len(flog.foreign)
+    stats["short_dropped"] = len(flog.short)
     stats["bp_excluded"] = len(flog.bp_excluded)
     stats["proper_nouns_dropped"] = len(flog.proper_nouns)
     _log(f"  dropped {len(flog.proper_nouns):,} proper nouns, "

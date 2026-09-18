@@ -197,7 +197,12 @@ def find_suspects(
                             f"{lemma} is a regular inflection of {base}")
                 )
 
-    whitelist = set(qcfg.get("whitelist_pairs") or ())
+    def _key(pair: str) -> str:
+        a, _, b = pair.partition("|")
+        return "|".join(sorted((a, b)))
+
+    whitelist = {_key(p) for p in (qcfg.get("whitelist_pairs") or ())}
+    whitelist |= {_key(p) for p in (qcfg.get("manual_whitelist_pairs") or ())}
     found = [s for s in found if s.pair_key not in whitelist]
     # Deduplicate (a pair can trip more than one check) and order by rank.
     seen: set[tuple[str, str]] = set()
@@ -279,6 +284,21 @@ def render_folds(fold_log, cfg: dict[str, Any]) -> str:
     ]
     for src, dst, sc, dc, kind, _ in words:
         lines.append(f"| `{src}` | {sc:,} | `{dst}` | {dc:,} | {dc / sc:,.0f}x |")
+    upper = cfg["fixes"].get("diacritic_review_below", 20)
+    band = [f for f in fold_log if f[4] == "unaccented" and f[3] < upper * f[2]]
+    lines += [
+        "",
+        f"### Folds between {ratio}x and {upper}x ({len(band):,}) — review these",
+        "",
+        f"Merged since the ratio was lowered from {upper}x to {ratio}x. Each is a "
+        "missing-accent form at 10-20x less frequent than its accented twin.",
+        "",
+        "| from | count | into | count | ratio | from is a PT word |",
+        "|---|---:|---|---:|---:|---|",
+    ]
+    for src, dst, sc, dc, kind, is_word in band:
+        lines.append(f"| `{src}` | {sc:,} | `{dst}` | {dc:,} | {dc / sc:,.1f}x | "
+                     f"{'yes' if is_word else ''} |")
     rest = [f for f in fold_log if not f[5]]
     lines += ["", f"<details><summary>All other folds ({len(rest):,})</summary>", "",
               "| from | count | into | count | kind |", "|---|---:|---|---:|---|"]

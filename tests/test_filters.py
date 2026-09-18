@@ -66,8 +66,12 @@ class TestDiacriticFolding:
         assert ("nao", "não", 10, 900, "unaccented", False) in log
 
     def test_below_ratio_is_left_alone(self, stage2):
-        folded, log = filters.fold_diacritics({"nao": 10, "não": 190}, stage2, fake_dict)
-        assert folded == {"nao": 10, "não": 190} and log == []
+        folded, log = filters.fold_diacritics({"nao": 10, "não": 90}, stage2, fake_dict)
+        assert folded == {"nao": 10, "não": 90} and log == []
+
+    def test_folds_at_10x(self, stage2):
+        folded, _ = filters.fold_diacritics({"video": 10, "vídeo": 150}, stage2, fake_dict)
+        assert folded == {"vídeo": 160}
 
     def test_unaccented_fold_ignores_the_dictionary(self, stage2):
         """The ratio replaces the dictionary check: `numero` is a real word
@@ -140,3 +144,39 @@ class TestProperNouns:
         assert set(kept) == {"casa"}
         assert [w for w, *_ in log.proper_nouns] == ["kelty"]
         assert [w for w, _ in log.bp_excluded] == ["cara"]
+
+
+class TestShortTokens:
+    @pytest.fixture
+    def s2(self, stage2):
+        from scripts import config as config_mod
+        return config_mod.with_overrides(stage2, {"fixes.short_token_rule": True})
+
+    @pytest.mark.parametrize("lemma", ["ã", "nã", "ra", "sa"])
+    def test_fragment_is_dropped(self, s2, lemma):
+        kept, log = filters.apply({lemma: 3000}, {}, s2, fake_dict)
+        assert kept == {} and [w for w, *_ in log.short] == [lemma]
+
+    @pytest.mark.parametrize("lemma", ["e", "é", "da", "so"])   # in fake_dict
+    def test_dictionary_word_survives(self, s2, lemma):
+        kept, _ = filters.apply({lemma: 3000}, {}, s2, fake_dict)
+        assert kept == {lemma: 3000}
+
+    @pytest.mark.parametrize("lemma", ["ah", "oh", "hã", "pá", "ó"])
+    def test_listed_interjection_survives(self, s2, lemma):
+        kept, _ = filters.apply({lemma: 3000}, {}, s2, fake_dict)
+        assert kept == {lemma: 3000}
+
+    def test_three_letters_are_not_affected(self, s2):
+        kept, _ = filters.apply({"xpt": 3000}, {}, s2, fake_dict)
+        assert kept == {"xpt": 3000}
+
+
+def test_manual_whitelist_is_order_independent(cfg):
+    from types import SimpleNamespace
+    from scripts import config as config_mod, quality
+    c = config_mod.with_overrides(cfg, {"quality.check_relemmatize": False,
+                                        "quality.check_inflected_forms": False})
+    entries = [SimpleNamespace(lemma="cirurgia", rank=1, is_mwe=False),
+               SimpleNamespace(lemma="cirurgiã", rank=2, is_mwe=False)]
+    assert quality.find_suspects(entries, c) == []

@@ -27,11 +27,13 @@ class FilterLog:
     bp_excluded: list[tuple[str, str]] = field(default_factory=list)
     proper_nouns: list[tuple[str, int, float, str]] = field(default_factory=list)
     foreign: list[tuple[str, int, str]] = field(default_factory=list)
+    short: list[tuple[str, int, str]] = field(default_factory=list)
 
     def dropped_lemmas(self) -> set[str]:
         return ({w for w, _ in self.bp_excluded}
                 | {w for w, _, _, _ in self.proper_nouns}
-                | {w for w, _, _ in self.foreign})
+                | {w for w, _, _ in self.foreign}
+                | {w for w, _, _ in self.short})
 
 
 def bp_exclusion_set(cfg: dict[str, Any]) -> set[str]:
@@ -48,6 +50,15 @@ def bp_exclusion_set(cfg: dict[str, Any]) -> set[str]:
     if cfg["fixes"].get("bp_after_folding"):
         listed |= {strip_diacritics(w) for w in listed}
     return listed
+
+
+def is_fragment(lemma: str, cfg: dict[str, Any], in_dictionary: Callable[[str], bool]) -> bool:
+    """A 1-2 letter lemma that is neither a PT word nor a listed
+    interjection: ã, nã, ra, sa and similar subtitle fragments."""
+    st = cfg["filters"]["short_tokens"]
+    if len(lemma) > st["max_length"]:
+        return False
+    return not in_dictionary(lemma) and lemma not in set(st["interjections"])
 
 
 def is_english_plural(
@@ -100,16 +111,30 @@ def apply(
     """Run both filters.  Returns the surviving counts and a log."""
     log = FilterLog()
     bp = bp_exclusion_set(cfg)
+    interjections = (set(cfg["filters"]["short_tokens"]["interjections"])
+                     if cfg["run"]["stage"] >= 2 and cfg["fixes"].get("short_token_rule")
+                     else set())
     kept: dict[str, int] = {}
 
     for lemma, count in lemma_counts.items():
         if lemma in bp:
             log.bp_excluded.append((lemma, "bp_exclusion"))
             continue
+        if (cfg["run"]["stage"] >= 2 and cfg["fixes"].get("short_token_rule")
+                and is_fragment(lemma, cfg, in_dictionary)):
+            log.short.append((lemma, count, "short_token"))
+            continue
         if (cfg["run"]["stage"] >= 2 and cfg["fixes"].get("english_plurals_foreign")
                 and in_english is not None
                 and is_english_plural(lemma, in_dictionary, in_english)):
             log.foreign.append((lemma, count, "english_plural"))
+            continue
+        # A listed interjection is by definition not a name. They are prone
+        # to false positives: capitalization is measured away from the start
+        # of a line but not of a sentence, and interjections usually open
+        # one (iá: 98% capitalized).
+        if lemma in interjections:
+            kept[lemma] = count
             continue
         drop, reason = is_proper_noun(
             lemma, count, cap_ratios.get(lemma, 0.0), cfg, in_dictionary
@@ -121,6 +146,7 @@ def apply(
 
     log.proper_nouns.sort(key=lambda t: (-t[1], t[0]))
     log.foreign.sort(key=lambda t: (-t[1], t[0]))
+    log.short.sort(key=lambda t: (-t[1], t[0]))
     log.bp_excluded.sort()
     return kept, log
 

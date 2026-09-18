@@ -45,6 +45,7 @@ _FIX_FLAGS = (
     "split_enclitics",
     "english_plurals_foreign",
     "split_ambiguous",
+    "short_token_rule",
 )
 
 

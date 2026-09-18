@@ -118,23 +118,28 @@ What stage 2 does on top of the baseline:
 - **Lemma closure** with plural folding (guards: plurale tantum and
   invariant nouns in config, no closed-class words, a real singular, and a
   frequency ratio).
-- **Diacritic folding**: unaccented forms at >= 20x; wrong and Brazilian
-  accents whenever the form is not a PT word. Every fold is in QUALITY.md.
+- **Diacritic folding**: unaccented forms at >= 10x; wrong and Brazilian
+  accents whenever the form is not a PT word. Every fold is in QUALITY.md,
+  with the 10-20x band in its own review section.
 - **Filters**: BP list (with `cara` restored), proper nouns by
-  capitalization, English plurals to the foreign-word filter.
+  capitalization, English plurals to the foreign-word filter, and a
+  short-token rule: a 1-2 letter lemma survives only as a PT word or a
+  listed interjection (config `filters.short_tokens`).
 
 Published lemma map: 98.5% on the reviewed gold set.
 
-**The gate fails on 18 suspects**, listed with reasons in QUALITY.md. 44
-pairs whose members are both PT dictionary words are whitelisted by the
-rule in `make_whitelist.py`.
+**The gate fails on 6 suspects**, all missing-accent forms below the 10x
+ratio (`camera`, `frigorifico`, `amen`, `bla`, `mafia`, `karate`). 44 pairs
+of dictionary words are whitelisted by the rule in `make_whitelist.py`;
+three more (`cirurgiã`, `espiã`, `ha`/`hã`) are whitelisted by decision in
+`quality.manual_whitelist_pairs`, which regeneration does not touch.
 
 ## Not yet done
 
-- 18 duplicate-entry suspects: 11 missing-accent typos below the 20x
-  ratio, 2 feminine nouns the dictionary lacks (`cirurgiã`, `espiã`), and
-  5 pairs of junk or distinct short tokens (`hã`/`ha`, `ã`, `nã`, `ra`,
-  `sa`).
-- The extended proper-noun filter drops capitalized common words:
-  `deus`, `sr`, `sra`, `dr`, `natal`, `cristo`, `majestade`.
+- 6 missing-accent suspects below the 10x ratio.
+- `eval/proper_noun_drops_review.tsv`: 286 dictionary words the proper-noun
+  filter drops (>= 5,000 occurrences), awaiting a decision column. Regenerate
+  with `python -m scripts.make_proper_noun_review`; filled decisions are kept.
+  The filter's capitalization test ignores line starts but not sentence
+  starts mid-line, so words that tend to open a sentence can look like names.
 - `data/lemma_overrides.tsv` (the empirical override table) is empty.
