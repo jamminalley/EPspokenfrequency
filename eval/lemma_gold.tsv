@@ -1,401 +1,401 @@
 rank_40m	surface	count_40m	claude_lemma	category	note	jim_lemma	jim_verdict
-31	meu	837472	meu	ok			
-40	vamos	643918	ir	ok			
-45	ao	575064	ao	contraction	a+o. Decide: keep contractions as own entries (learner-useful) or split into a + o like Davies		
-46	nos	575014	nos	ambiguous	clitic 'nos' (us) OR contraction em+os. Needs context; 'nos' as clitic is far commoner in dialogue		
-55	sei	510186	saber	ok			
-57	lá	502588	lá	ok			
-64	quem	442696	quem	ok			
-65	onde	435137	onde	ok			
-66	nada	435065	nada	ok			
-70	então	398627	então	ok			
-72	quero	387795	querer	ok			
-78	esta	345333	este	ambiguous	demonstrative (lemma este) OR 'está' typed without accent — very common in subtitles. Diacritic-folding rule must NOT merge these		
-80	disse	336534	dizer	ok			
-81	sua	334448	seu	ok			
-84	lo	330568	o	clitic	from fazê-lo etc. Lemma is the pronoun 'o'		
-89	bom	321533	bom	ok			
-93	temos	313521	ter	ok			
-106	quer	267904	querer	ok			
-109	vez	265860	vez	ok			
-112	favor	256776	favor	ok			
-122	talvez	233562	talvez	ok			
-123	mãe	232185	mãe	ok			
-131	alguém	217894	alguém	ok			
-138	queres	208768	querer	ok			
-146	senhor	194178	senhor	ok			
-154	algo	180313	algo	ok			
-155	preciso	177058	precisar	ambiguous	mostly verb (preciso de...) but also adj 'preciso' (precise). Verb wins in dialogue		
-166	vão	161634	ir	ambiguous	3pl of ir; rarely adj 'vão' (vain). Verb wins		
-170	outra	156840	outro	ok			
-171	comigo	156395	comigo	convention	keep as own entry, or fold into eu? Davies keeps comigo		
-175	vá	152750	ir	ok			
-176	dinheiro	152161	dinheiro	ok			
-178	esse	149690	esse	ok			
-196	hoje	132248	hoje	ok			
-200	merda	127949	merda	ok			
-205	têm	123310	ter	ok			
-215	quanto	118990	quanto	ok			
-217	carro	117088	carro	ok			
-220	deixa	116536	deixar	ok			
-221	amigo	116279	amigo	ok			
-230	nas	109393	nas	contraction	em+as		
-236	fez	106085	fazer	ok			
-237	aos	106016	aos	contraction	a+os		
-239	dentro	105097	dentro	ok			
-254	achas	95378	achar	ok			
-258	homens	92588	homem	ok			
-281	cabeça	84819	cabeça	ok			
-324	morto	72786	morto	ambiguous	adj/noun 'morto' OR participle of morrer/matar. Convention: keep 'morto' as adjective lemma		
-327	medo	71317	medo	ok			
-335	cara	68457	cara	ok	EP 'face' — legitimate. NOTE: the old BP exclusion list dropped 'cara' entirely, which is wrong for EP		
-338	suas	67623	seu	ok			
-342	desta	66890	desta	contraction	de+esta		
-347	morte	65698	morte	ok			
-371	quarto	61642	quarto	ok			
-377	alguns	60550	algum	ok			
-384	acontecer	58812	acontecer	ok			
-429	difícil	51265	difícil	ok			
-431	procura	51125	procurar	ambiguous	verb 3sg/imperative OR noun 'procura' (demand). Verb wins in dialogue		
-436	algumas	50123	algum	ok			
-442	coração	49455	coração	ok			
-443	maior	49378	maior	convention	comparative of grande; dictionaries (incl. Davies) list maior as its own lemma		
-451	segundo	48722	segundo	ok	num/noun/prep all share one lemma		
-452	pedir	48666	pedir	ok			
-459	número	48179	número	ok			
-463	havia	47952	haver	ok			
-464	viu	47775	ver	ok			
-474	teve	46785	ter	ok			
-486	john	45311	john	proper			
-487	meses	45247	mês	ok			
-499	devo	43886	dever	ok			
-510	muitos	42338	muito	ok			
-515	poderia	42030	poder	ok			
-518	armas	41692	arma	ok			
-522	teria	41319	ter	ok			
-540	licença	39025	licença	ok			
-543	fogo	38883	fogo	ok			
-550	mudar	38502	mudar	ok			
-574	comida	36426	comida	ok			
-578	mr	36226	mr	abbrev	English 'Mr' — subtitle leftover		
-588	luz	35754	luz	ok			
-597	ligar	35111	ligar	ok			
-607	pé	34572	pé	ok			
-614	perguntar	34230	perguntar	ok			
-631	peço	33284	pedir	ok			
-637	miúdo	32925	miúdo	ok	EP-specific, good sign		
-638	encontrei	32850	encontrar	ok			
-647	diferente	32146	diferente	ok			
-666	hospital	30959	hospital	ok			
-674	conhece	30689	conhecer	ok			
-692	natal	29638	natal	ok	Natal (Christmas) — lowercased proper noun; keep		
-695	entra	29480	entrar	ok			
-697	fique	29436	ficar	ok			
-700	música	29412	música	ok			
-707	tinhas	29127	ter	ok			
-708	jovem	29121	jovem	ok			
-709	beber	29113	beber	ok			
-712	miúda	29037	miúdo	convention	gendered noun: fold miúda into miúdo, or keep miúda separate? Davies-style is masc. lemma. Decide once, apply everywhere		
-715	ai	28641	ai	ambiguous	interjection 'ai' OR 'aí' typed without accent. Both frequent		
-718	acontece	28563	acontecer	ok			
-738	bonito	27094	bonito	ok			
-751	viagem	26696	viagem	ok			
-753	próximo	26592	próximo	ok			
-766	vale	25888	valer	ambiguous	verb (vale a pena, 'vale' = ok) OR noun 'vale' (valley). Verb wins		
-791	mamã	24979	mamã	ok	EP-specific		
-796	doente	24936	doente	ok			
-800	pare	24853	parar	ok			
-803	finalmente	24771	finalmente	ok			
-807	lutar	24651	lutar	ok			
-823	harry	24089	harry	proper			
-829	tiro	23895	tiro	ambiguous	noun 'tiro' (shot) OR 1sg of tirar. Noun wins		
-831	sonho	23827	sonho	ambiguous	noun OR 1sg of sonhar. Noun wins		
-853	bons	23209	bom	ok			
-857	gostar	23147	gostar	ok			
-862	levou	22926	levar	ok			
-893	quantos	22117	quanto	ok			
-899	mike	21964	mike	proper			
-904	excelente	21709	excelente	ok			
-914	nesse	21463	nesse	contraction	em+esse		
-920	parabéns	21344	parabéns	ok	plurale tantum		
-932	fomos	21056	ir	ambiguous	ir OR ser — identical forms. The known ser/ir problem; only a tagger over sentences can split this		
-934	fbi	21039	fbi	abbrev			
-939	metade	20943	metade	ok			
-941	mandar	20921	mandar	ok			
-952	hipótese	20531	hipótese	ok			
-953	chamado	20511	chamar	ambiguous	participle of chamar OR noun 'chamado' (call, BP-leaning). Verb wins in EP		
-960	papel	20430	papel	ok			
-962	banco	20371	banco	ok			
-976	saia	20177	sair	ambiguous	subjunctive/imperative of sair OR noun 'saia' (skirt). Verb wins		
-988	vêm	19929	vir	ok			
-997	vejam	19736	ver	ok			
-1260	aceitar	14801	aceitar	ok			
-1304	loucura	14271	loucura	ok			
-1448	levantar	12796	levantar	ok			
-1453	discutir	12731	discutir	ok			
-1487	agradeço	12457	agradecer	ok			
-1496	cheguei	12331	chegar	ok			
-1499	serei	12300	ser	ok			
-1659	faca	10978	faca	ok			
-1712	venho	10583	vir	ok			
-1754	estados	10351	estado	ok	often 'Estados Unidos'		
-1788	importas	10131	importar	ok			
-1816	possamos	9994	poder	ok			
-1828	sentimentos	9895	sentimento	ok			
-1964	ryan	9018	ryan	proper			
-2017	crescer	8760	crescer	ok			
-2044	pressa	8604	pressa	ok			
-2081	ted	8391	ted	proper			
-2083	estejam	8386	estar	ok			
-2111	vingança	8258	vingança	ok			
-2143	equipamento	8089	equipamento	ok			
-2229	f	7650	f	abbrev	single letter — spelled-out names, 'F.B.I.' etc. Probably drop single letters		
-2292	big	7444	big	foreign	English		
-2322	defender	7330	defender	ok			
-2334	abram	7301	abrir	ok			
-2354	confio	7228	confiar	ok			
-2424	garanto	6989	garantir	ok			
-2493	ferida	6717	ferida	ambiguous	noun 'ferida' (wound) OR fem. of adj/participle ferido. Noun wins		
-2504	violência	6693	violência	ok			
-2533	assinar	6614	assinar	ok			
-2749	lados	6029	lado	ok			
-2989	wayne	5453	wayne	proper			
-3109	trinta	5198	trinta	ok			
-3239	show	4939	show	foreign	English loan; BP-leaning (EP: espetáculo)		
-3252	miller	4912	miller	proper			
-3298	pau	4816	pau	ok			
-3489	puxar	4483	puxar	ok			
-3583	leonard	4339	leonard	proper			
-3608	vomitar	4315	vomitar	ok			
-3712	posse	4131	posse	ok			
-3806	quinze	3996	quinze	ok			
-3810	mentes	3993	mentir	ambiguous	2sg of mentir OR plural of noun 'mente'. Verb wins in dialogue		
-3851	identificar	3952	identificar	ok			
-3939	reconhecer	3840	reconhecer	ok			
-3940	protege	3840	proteger	ok			
-4035	randy	3721	randy	proper			
-4085	células	3668	célula	ok			
-4160	aaron	3597	aaron	proper			
-4179	francamente	3583	francamente	ok			
-4198	tiraram	3570	tirar	ok			
-4408	tatuagem	3367	tatuagem	ok			
-4410	naquilo	3364	naquilo	contraction	em+aquilo		
-4503	alvos	3272	alvo	ok			
-4511	recebo	3264	receber	ok			
-4539	tigre	3235	tigre	ok			
-4643	desgraça	3143	desgraça	ok			
-4722	infantil	3075	infantil	ok			
-4740	descrição	3060	descrição	ok			
-4806	grau	3004	grau	ok			
-4940	burke	2886	burke	proper			
-4982	curva	2864	curva	ok			
-4993	turner	2857	turner	proper			
-4995	quartel	2855	quartel	ok			
-5104	harris	2782	harris	proper			
-5151	capacete	2750	capacete	ok			
-5176	kennedy	2730	kennedy	proper			
-5295	avancem	2653	avançar	ok			
-5307	tentam	2646	tentar	ok			
-5335	daniels	2630	daniels	proper			
-5356	agulha	2613	agulha	ok			
-5402	liberta	2588	libertar	ambiguous	verb OR fem. of adj 'liberto'. Verb wins		
-5414	precisavas	2581	precisar	ok			
-5445	quinto	2560	quinto	ok			
-5498	gota	2526	gota	ok			
-5525	tratei	2511	tratar	ok			
-5623	aparecem	2439	aparecer	ok			
-5640	coisinha	2429	coisinha	convention	diminutive: keep as own lemma, or fold into coisa? Recommend keep (learners need to see diminutives)		
-5693	saberemos	2401	saber	ok			
-5723	rex	2385	rex	proper			
-5729	comentários	2382	comentário	ok			
-5733	bolachas	2382	bolacha	ok			
-5758	internos	2370	interno	ok			
-5832	garotos	2323	garoto	ok	BP-leaning word (EP: miúdo/rapaz)		
-5859	modos	2312	modo	ok			
-5878	desenvolvimento	2303	desenvolvimento	ok			
-5892	dna	2298	dna	abbrev	EP would be ADN		
-5939	assustou	2273	assustar	ok			
-5994	morder	2244	morder	ok			
-6060	pirata	2205	pirata	ok			
-6082	cais	2189	cais	ambiguous	noun 'cais' (quay) OR 2sg of cair. Verb likelier in dialogue		
-6123	pensão	2172	pensão	ok			
-6244	inglesa	2115	inglês	ok			
-6370	gerir	2058	gerir	ok			
-6469	ação	2013	ação	ok	post-1990-Agreement spelling; pre-AO EP is 'acção'. Both will appear in corpus — decide whether to merge		
-6488	edith	2003	edith	proper			
-6608	fluxo	1953	fluxo	ok			
-6816	onu	1870	onu	abbrev			
-6879	paro	1845	parar	ok			
-6958	condicionado	1821	condicionado	ambiguous	'ar condicionado' (adj) OR participle of condicionar. Adj wins		
-7032	mecânico	1793	mecânico	ok			
-7081	seguindo	1776	seguir	ok			
-7097	espreitar	1768	espreitar	ok	EP-specific		
-7210	numero	1737	número	typo	missing accent — diacritic fold target; 'numero' is not a PT word so folding is safe		
-7223	einstein	1734	einstein	proper			
-7256	vivido	1724	viver	ok			
-7260	sexto	1723	sexto	ok			
-7287	cavernas	1715	caverna	ok			
-7308	voces	1710	você	typo	BP + missing accent. The old pipeline's BP filter missed this spelling		
-7315	comparado	1707	comparar	ok			
-7332	apanhámo	1702	apanhar	artifact	from 'apanhámo-lo' (apanhámos + clitic). Hyphen split leaves a truncated stem — tokenizer must restore the -s before lemmatizing		
-7392	punha	1681	pôr	ok			
-7396	hálito	1679	hálito	ok			
-7457	perfeitos	1661	perfeito	ok			
-7462	lâmpada	1660	lâmpada	ok			
-7548	insisto	1632	insistir	ok			
-7561	acontecimento	1630	acontecimento	ok			
-7569	tradicional	1628	tradicional	ok			
-7588	recebem	1623	receber	ok			
-7619	desligou	1617	desligar	ok			
-7748	powell	1587	powell	proper			
-7960	legalmente	1529	legalmente	ok			
-7965	garrett	1528	garrett	proper			
-7996	comam	1518	comer	ok			
-8109	contratos	1488	contrato	ok			
-8198	tomaram	1462	tomar	ok			
-8239	adulta	1450	adulto	ok			
-8255	fenda	1447	fenda	ok			
-8323	memphis	1431	memphis	proper			
-8361	veneza	1420	veneza	proper	place name (Venice) — PT spelling, but still a proper noun		
-8413	paramédicos	1408	paramédico	ok			
-8542	detector	1379	detector	ok			
-8690	vazias	1348	vazio	ok			
-8766	atiraram	1333	atirar	ok			
-8843	pensaria	1318	pensar	ok			
-8961	bebido	1294	beber	ok			
-9021	revolta	1281	revolta	ambiguous	noun OR 3sg of revoltar. Noun wins		
-9076	puderam	1269	poder	ok			
-9077	cocktail	1269	cocktail	foreign	loan, used in EP		
-9123	combinámos	1259	combinar	ok	EP-only spelling (-ámos), good EP marker		
-9210	esgotos	1243	esgoto	ok			
-9215	proveito	1241	proveito	ok			
-9295	pilhas	1226	pilha	ok			
-9462	cora	1195	cora	proper			
-9584	concorrência	1176	concorrência	ok			
-9601	encoste	1173	encostar	ok			
-9687	vencido	1161	vencer	ok			
-9725	tomava	1154	tomar	ok			
-9738	syd	1153	syd	proper			
-9752	vala	1149	vala	ok			
-9832	vendia	1133	vender	ok			
-9887	arruinado	1124	arruinar	ok			
-10161	facilidade	1075	facilidade	ok			
-10305	agricultor	1055	agricultor	ok			
-10479	oitavo	1030	oitavo	ok			
-10624	et	1008	et	foreign	Latin/English fragment (E.T., et al.)		
-10670	admirador	1001	admirador	ok			
-11406	localizado	902	localizar	ok			
-11524	convence	889	convencer	ok			
-11636	suporta	876	suportar	ok			
-11661	acolá	874	acolá	ok			
-12377	crescemos	805	crescer	ok			
-12520	cosmos	791	cosmos	ok			
-12527	quadrados	790	quadrado	ok			
-12787	whoo	767	whoo	foreign	English interjection		
-12854	panfletos	761	panfleto	ok			
-13284	escória	725	escória	ok			
-13334	distantes	721	distante	ok			
-13773	phantoms	687	phantoms	foreign	English		
-14224	huey	655	huey	proper			
-14470	víbora	639	víbora	ok			
-14617	lula	630	lula	ok	squid — but also a name; keep as noun		
-14663	want	627	want	foreign	English		
-15014	recrutamento	607	recrutamento	ok			
-15108	normalidade	603	normalidade	ok			
-15451	schwartz	582	schwartz	proper			
-15462	saque	581	saque	ok			
-15754	veados	565	veado	ok			
-16160	parecendo	544	parecer	ok			
-16265	vagamente	539	vagamente	ok			
-16401	disparas	532	disparar	ok			
-16584	livingston	524	livingston	proper			
-16614	batidas	522	batida	ok			
-16645	grendel	521	grendel	proper			
-16734	necessitar	516	necessitar	ok			
-16757	educados	515	educado	ok	adj; could also be participle of educar		
-17021	wagner	504	wagner	proper			
-17067	auscultadores	502	auscultador	ok	EP-specific (BP: fones)		
-17675	honrados	476	honrado	ok			
-17684	avisados	476	avisar	ok	participle		
-17687	asno	476	asno	ok			
-17966	codificada	465	codificar	ok			
-17987	despacho	464	despacho	ok			
-18408	contrabandistas	447	contrabandista	ok			
-18759	reservatório	434	reservatório	ok			
-18902	salgado	429	salgado	ok			
-18906	desportiva	429	desportivo	ok	EP spelling (BP: esportivo)		
-18953	that's	428	that's	foreign	English		
-19297	macgruber	416	macgruber	proper			
-19757	swearengen	400	swearengen	proper			
-19796	patinho	398	patinho	convention	diminutive of pato — same decision as coisinha		
-20192	craniano	386	craniano	ok			
-20328	atendi	381	atender	ok			
-20478	lung	377	lung	foreign			
-20512	colson	376	colson	proper			
-20627	namorei	372	namorar	ok			
-20998	borbulhas	362	borbulha	ok			
-21665	antro	344	antro	ok			
-21913	heavy	339	heavy	foreign			
-22213	despeçam	332	despedir	ok			
-22461	lavaste	326	lavar	ok	EP-only 2sg preterite		
-22577	sacas	323	sacar	ambiguous	2sg of sacar OR plural of noun 'saca'. Verb likelier		
-22668	gaulês	321	gaulês	ok			
-23216	julgavas	307	julgar	ok			
-23736	caçando	296	caçar	ok	gerund — BP-leaning form (EP prefers 'a caçar')		
-23853	colabora	294	colaborar	ok			
-24179	embolia	287	embolia	ok			
-24348	cravar	283	cravar	ok			
-24459	alcoolismo	281	alcoolismo	ok			
-24479	cumprindo	281	cumprir	ok			
-24493	fronsac	281	fronsac	proper			
-25221	boog	268	boog	proper			
-25269	jure	267	jurar	ok			
-25477	albin	263	albin	proper			
-25548	odile	261	odile	proper			
-25820	teta	256	teta	ok			
-25830	sniper	256	sniper	foreign	loan		
-26721	toxicodependente	242	toxicodependente	ok	EP-specific		
-27420	mascarada	231	mascarado	ok	adj; also noun 'mascarada' (masquerade)		
-27424	bodes	231	bode	ok			
-27617	dadores	228	dador	ok	EP-specific (BP: doador)		
-28304	cientifica	219	científico	typo	missing accent → científica → científico		
-28618	educadas	215	educado	ok			
-28750	corrompido	213	corromper	ok			
-28848	azevinho	212	azevinho	ok			
-28855	excitou	212	excitar	ok			
-29183	martins	208	martins	proper	surname		
-29392	falharem	205	falhar	ok			
-30132	perdões	197	perdão	ok			
-30162	encaminhar	197	encaminhar	ok			
-30450	hummer	194	hummer	proper	brand		
-30631	fornicação	192	fornicação	ok			
-31107	gorman	187	gorman	proper			
-31147	desistirmos	186	desistir	ok			
-31725	fuck	180	fuck	foreign	English		
-31929	defronte	178	defronte	ok			
-32093	bray	177	bray	proper			
-32329	géneros	174	género	ok	EP spelling (BP: gênero)		
-32648	arre	171	arre	ok	interjection		
-33025	reconfigurar	168	reconfigurar	ok			
-33616	hitomi	163	hitomi	proper			
-33963	virarem	160	virar	ok			
-34300	colombiana	157	colombiano	ok			
-34309	ulyanov	157	ulyanov	proper			
-34336	pritchett	157	pritchett	proper			
-34699	sâo	154	são	typo	wrong accent (circumflex for tilde) — encoding/typing error; underlying word is 'são' (ser 3pl, or adj)		
-34973	rutland	152	rutland	proper			
-35090	designadas	151	designar	ok			
-35863	esventrar	145	esventrar	ok			
-35975	supersticiosa	144	supersticioso	ok			
-36228	moltisanti	143	moltisanti	proper			
-36760	keno	139	keno	proper			
-36952	rodman	137	rodman	proper			
-36968	compreendesse	137	compreender	ok			
-37044	insistimos	137	insistir	ok			
-37566	kersey	134	kersey	proper			
-37930	fartava	131	fartar	ok			
-38014	armazenados	131	armazenar	ok			
-38546	ocultismo	128	ocultismo	ok			
-38610	planadores	127	planador	ok			
-39303	libéria	123	libéria	proper	Liberia		
-39390	ricci	123	ricci	proper			
+31	meu	837472	meu	ok			ok
+40	vamos	643918	ir	ok			ok
+45	ao	575064	ao	contraction	a+o. Decide: keep contractions as own entries (learner-useful) or split into a + o like Davies		ok
+46	nos	575014	nos	ambiguous	clitic 'nos' (us) OR contraction em+os. Needs context; 'nos' as clitic is far commoner in dialogue		ok
+55	sei	510186	saber	ok			ok
+57	lá	502588	lá	ok			ok
+64	quem	442696	quem	ok			ok
+65	onde	435137	onde	ok			ok
+66	nada	435065	nada	ok			ok
+70	então	398627	então	ok			ok
+72	quero	387795	querer	ok			ok
+78	esta	345333	este	ambiguous	demonstrative (lemma este) OR 'está' typed without accent — very common in subtitles. Diacritic-folding rule must NOT merge these	este|estar	fix
+80	disse	336534	dizer	ok			ok
+81	sua	334448	seu	ok			ok
+84	lo	330568	o	clitic	from fazê-lo etc. Lemma is the pronoun 'o'		ok
+89	bom	321533	bom	ok			ok
+93	temos	313521	ter	ok			ok
+106	quer	267904	querer	ok			ok
+109	vez	265860	vez	ok			ok
+112	favor	256776	favor	ok			ok
+122	talvez	233562	talvez	ok			ok
+123	mãe	232185	mãe	ok			ok
+131	alguém	217894	alguém	ok			ok
+138	queres	208768	querer	ok			ok
+146	senhor	194178	senhor	ok			ok
+154	algo	180313	algo	ok			ok
+155	preciso	177058	precisar	ambiguous	mostly verb (preciso de...) but also adj 'preciso' (precise). Verb wins in dialogue		ok
+166	vão	161634	ir	ambiguous	3pl of ir; rarely adj 'vão' (vain). Verb wins		ok
+170	outra	156840	outro	ok			ok
+171	comigo	156395	comigo	convention	keep as own entry, or fold into eu? Davies keeps comigo		ok
+175	vá	152750	ir	ok			ok
+176	dinheiro	152161	dinheiro	ok			ok
+178	esse	149690	esse	ok			ok
+196	hoje	132248	hoje	ok			ok
+200	merda	127949	merda	ok			ok
+205	têm	123310	ter	ok			ok
+215	quanto	118990	quanto	ok			ok
+217	carro	117088	carro	ok			ok
+220	deixa	116536	deixar	ok			ok
+221	amigo	116279	amigo	ok			ok
+230	nas	109393	nas	contraction	em+as		ok
+236	fez	106085	fazer	ok			ok
+237	aos	106016	aos	contraction	a+os		ok
+239	dentro	105097	dentro	ok			ok
+254	achas	95378	achar	ok			ok
+258	homens	92588	homem	ok			ok
+281	cabeça	84819	cabeça	ok			ok
+324	morto	72786	morto	ambiguous	adj/noun 'morto' OR participle of morrer/matar. Convention: keep 'morto' as adjective lemma		ok
+327	medo	71317	medo	ok			ok
+335	cara	68457	cara	ok	EP 'face' — legitimate. NOTE: the old BP exclusion list dropped 'cara' entirely, which is wrong for EP		ok
+338	suas	67623	seu	ok			ok
+342	desta	66890	desta	contraction	de+esta		ok
+347	morte	65698	morte	ok			ok
+371	quarto	61642	quarto	ok			ok
+377	alguns	60550	algum	ok			ok
+384	acontecer	58812	acontecer	ok			ok
+429	difícil	51265	difícil	ok			ok
+431	procura	51125	procurar	ambiguous	verb 3sg/imperative OR noun 'procura' (demand). Verb wins in dialogue		ok
+436	algumas	50123	algum	ok			ok
+442	coração	49455	coração	ok			ok
+443	maior	49378	maior	convention	comparative of grande; dictionaries (incl. Davies) list maior as its own lemma		ok
+451	segundo	48722	segundo	ok	num/noun/prep all share one lemma		ok
+452	pedir	48666	pedir	ok			ok
+459	número	48179	número	ok			ok
+463	havia	47952	haver	ok			ok
+464	viu	47775	ver	ok			ok
+474	teve	46785	ter	ok			ok
+486	john	45311	john	proper			drop
+487	meses	45247	mês	ok			ok
+499	devo	43886	dever	ok			ok
+510	muitos	42338	muito	ok			ok
+515	poderia	42030	poder	ok			ok
+518	armas	41692	arma	ok			ok
+522	teria	41319	ter	ok			ok
+540	licença	39025	licença	ok			ok
+543	fogo	38883	fogo	ok			ok
+550	mudar	38502	mudar	ok			ok
+574	comida	36426	comida	ok			ok
+578	mr	36226	mr	abbrev	English 'Mr' — subtitle leftover		drop
+588	luz	35754	luz	ok			ok
+597	ligar	35111	ligar	ok			ok
+607	pé	34572	pé	ok			ok
+614	perguntar	34230	perguntar	ok			ok
+631	peço	33284	pedir	ok			ok
+637	miúdo	32925	miúdo	ok	EP-specific, good sign		ok
+638	encontrei	32850	encontrar	ok			ok
+647	diferente	32146	diferente	ok			ok
+666	hospital	30959	hospital	ok			ok
+674	conhece	30689	conhecer	ok			ok
+692	natal	29638	natal	ok	Natal (Christmas) — lowercased proper noun; keep		ok
+695	entra	29480	entrar	ok			ok
+697	fique	29436	ficar	ok			ok
+700	música	29412	música	ok			ok
+707	tinhas	29127	ter	ok			ok
+708	jovem	29121	jovem	ok			ok
+709	beber	29113	beber	ok			ok
+712	miúda	29037	miúdo	convention	gendered noun: fold miúda into miúdo, or keep miúda separate? Davies-style is masc. lemma. Decide once, apply everywhere		ok
+715	ai	28641	ai	ambiguous	interjection 'ai' OR 'aí' typed without accent. Both frequent		ok
+718	acontece	28563	acontecer	ok			ok
+738	bonito	27094	bonito	ok			ok
+751	viagem	26696	viagem	ok			ok
+753	próximo	26592	próximo	ok			ok
+766	vale	25888	valer	ambiguous	verb (vale a pena, 'vale' = ok) OR noun 'vale' (valley). Verb wins		ok
+791	mamã	24979	mamã	ok	EP-specific		ok
+796	doente	24936	doente	ok			ok
+800	pare	24853	parar	ok			ok
+803	finalmente	24771	finalmente	ok			ok
+807	lutar	24651	lutar	ok			ok
+823	harry	24089	harry	proper			drop
+829	tiro	23895	tiro	ambiguous	noun 'tiro' (shot) OR 1sg of tirar. Noun wins		ok
+831	sonho	23827	sonho	ambiguous	noun OR 1sg of sonhar. Noun wins		ok
+853	bons	23209	bom	ok			ok
+857	gostar	23147	gostar	ok			ok
+862	levou	22926	levar	ok			ok
+893	quantos	22117	quanto	ok			ok
+899	mike	21964	mike	proper			drop
+904	excelente	21709	excelente	ok			ok
+914	nesse	21463	nesse	contraction	em+esse		ok
+920	parabéns	21344	parabéns	ok	plurale tantum		ok
+932	fomos	21056	ir	ambiguous	ir OR ser — identical forms. The known ser/ir problem; only a tagger over sentences can split this	ir|ser	fix
+934	fbi	21039	fbi	abbrev			drop
+939	metade	20943	metade	ok			ok
+941	mandar	20921	mandar	ok			ok
+952	hipótese	20531	hipótese	ok			ok
+953	chamado	20511	chamar	ambiguous	participle of chamar OR noun 'chamado' (call, BP-leaning). Verb wins in EP		ok
+960	papel	20430	papel	ok			ok
+962	banco	20371	banco	ok			ok
+976	saia	20177	sair	ambiguous	subjunctive/imperative of sair OR noun 'saia' (skirt). Verb wins		ok
+988	vêm	19929	vir	ok			ok
+997	vejam	19736	ver	ok			ok
+1260	aceitar	14801	aceitar	ok			ok
+1304	loucura	14271	loucura	ok			ok
+1448	levantar	12796	levantar	ok			ok
+1453	discutir	12731	discutir	ok			ok
+1487	agradeço	12457	agradecer	ok			ok
+1496	cheguei	12331	chegar	ok			ok
+1499	serei	12300	ser	ok			ok
+1659	faca	10978	faca	ok			ok
+1712	venho	10583	vir	ok			ok
+1754	estados	10351	estado	ok	often 'Estados Unidos'		ok
+1788	importas	10131	importar	ok			ok
+1816	possamos	9994	poder	ok			ok
+1828	sentimentos	9895	sentimento	ok			ok
+1964	ryan	9018	ryan	proper			drop
+2017	crescer	8760	crescer	ok			ok
+2044	pressa	8604	pressa	ok			ok
+2081	ted	8391	ted	proper			drop
+2083	estejam	8386	estar	ok			ok
+2111	vingança	8258	vingança	ok			ok
+2143	equipamento	8089	equipamento	ok			ok
+2229	f	7650	f	abbrev	single letter — spelled-out names, 'F.B.I.' etc. Probably drop single letters		drop
+2292	big	7444	big	foreign	English		drop
+2322	defender	7330	defender	ok			ok
+2334	abram	7301	abrir	ok			ok
+2354	confio	7228	confiar	ok			ok
+2424	garanto	6989	garantir	ok			ok
+2493	ferida	6717	ferida	ambiguous	noun 'ferida' (wound) OR fem. of adj/participle ferido. Noun wins		ok
+2504	violência	6693	violência	ok			ok
+2533	assinar	6614	assinar	ok			ok
+2749	lados	6029	lado	ok			ok
+2989	wayne	5453	wayne	proper			drop
+3109	trinta	5198	trinta	ok			ok
+3239	show	4939	show	foreign	English loan; BP-leaning (EP: espetáculo)		drop
+3252	miller	4912	miller	proper			drop
+3298	pau	4816	pau	ok			ok
+3489	puxar	4483	puxar	ok			ok
+3583	leonard	4339	leonard	proper			drop
+3608	vomitar	4315	vomitar	ok			ok
+3712	posse	4131	posse	ok			ok
+3806	quinze	3996	quinze	ok			ok
+3810	mentes	3993	mentir	ambiguous	2sg of mentir OR plural of noun 'mente'. Verb wins in dialogue		ok
+3851	identificar	3952	identificar	ok			ok
+3939	reconhecer	3840	reconhecer	ok			ok
+3940	protege	3840	proteger	ok			ok
+4035	randy	3721	randy	proper			drop
+4085	células	3668	célula	ok			ok
+4160	aaron	3597	aaron	proper			drop
+4179	francamente	3583	francamente	ok			ok
+4198	tiraram	3570	tirar	ok			ok
+4408	tatuagem	3367	tatuagem	ok			ok
+4410	naquilo	3364	naquilo	contraction	em+aquilo		ok
+4503	alvos	3272	alvo	ok			ok
+4511	recebo	3264	receber	ok			ok
+4539	tigre	3235	tigre	ok			ok
+4643	desgraça	3143	desgraça	ok			ok
+4722	infantil	3075	infantil	ok			ok
+4740	descrição	3060	descrição	ok			ok
+4806	grau	3004	grau	ok			ok
+4940	burke	2886	burke	proper			drop
+4982	curva	2864	curva	ok			ok
+4993	turner	2857	turner	proper			drop
+4995	quartel	2855	quartel	ok			ok
+5104	harris	2782	harris	proper			drop
+5151	capacete	2750	capacete	ok			ok
+5176	kennedy	2730	kennedy	proper			drop
+5295	avancem	2653	avançar	ok			ok
+5307	tentam	2646	tentar	ok			ok
+5335	daniels	2630	daniels	proper			drop
+5356	agulha	2613	agulha	ok			ok
+5402	liberta	2588	libertar	ambiguous	verb OR fem. of adj 'liberto'. Verb wins		ok
+5414	precisavas	2581	precisar	ok			ok
+5445	quinto	2560	quinto	ok			ok
+5498	gota	2526	gota	ok			ok
+5525	tratei	2511	tratar	ok			ok
+5623	aparecem	2439	aparecer	ok			ok
+5640	coisinha	2429	coisinha	convention	diminutive: keep as own lemma, or fold into coisa? Recommend keep (learners need to see diminutives)		ok
+5693	saberemos	2401	saber	ok			ok
+5723	rex	2385	rex	proper			drop
+5729	comentários	2382	comentário	ok			ok
+5733	bolachas	2382	bolacha	ok			ok
+5758	internos	2370	interno	ok			ok
+5832	garotos	2323	garoto	ok	BP-leaning word (EP: miúdo/rapaz)		ok
+5859	modos	2312	modo	ok			ok
+5878	desenvolvimento	2303	desenvolvimento	ok			ok
+5892	dna	2298	dna	abbrev	EP would be ADN		drop
+5939	assustou	2273	assustar	ok			ok
+5994	morder	2244	morder	ok			ok
+6060	pirata	2205	pirata	ok			ok
+6082	cais	2189	cais	ambiguous	noun 'cais' (quay) OR 2sg of cair. Verb likelier in dialogue		ok
+6123	pensão	2172	pensão	ok			ok
+6244	inglesa	2115	inglês	ok			ok
+6370	gerir	2058	gerir	ok			ok
+6469	ação	2013	ação	ok	post-1990-Agreement spelling; pre-AO EP is 'acção'. Both will appear in corpus — decide whether to merge		ok
+6488	edith	2003	edith	proper			drop
+6608	fluxo	1953	fluxo	ok			ok
+6816	onu	1870	onu	abbrev			drop
+6879	paro	1845	parar	ok			ok
+6958	condicionado	1821	condicionado	ambiguous	'ar condicionado' (adj) OR participle of condicionar. Adj wins		ok
+7032	mecânico	1793	mecânico	ok			ok
+7081	seguindo	1776	seguir	ok			ok
+7097	espreitar	1768	espreitar	ok	EP-specific		ok
+7210	numero	1737	número	typo	missing accent — diacritic fold target; 'numero' is not a PT word so folding is safe		ok
+7223	einstein	1734	einstein	proper			drop
+7256	vivido	1724	viver	ok			ok
+7260	sexto	1723	sexto	ok			ok
+7287	cavernas	1715	caverna	ok			ok
+7308	voces	1710	você	typo	BP + missing accent. The old pipeline's BP filter missed this spelling		drop
+7315	comparado	1707	comparar	ok			ok
+7332	apanhámo	1702	apanhar	artifact	from 'apanhámo-lo' (apanhámos + clitic). Hyphen split leaves a truncated stem — tokenizer must restore the -s before lemmatizing		ok
+7392	punha	1681	pôr	ok			ok
+7396	hálito	1679	hálito	ok			ok
+7457	perfeitos	1661	perfeito	ok			ok
+7462	lâmpada	1660	lâmpada	ok			ok
+7548	insisto	1632	insistir	ok			ok
+7561	acontecimento	1630	acontecimento	ok			ok
+7569	tradicional	1628	tradicional	ok			ok
+7588	recebem	1623	receber	ok			ok
+7619	desligou	1617	desligar	ok			ok
+7748	powell	1587	powell	proper			drop
+7960	legalmente	1529	legalmente	ok			ok
+7965	garrett	1528	garrett	proper			drop
+7996	comam	1518	comer	ok			ok
+8109	contratos	1488	contrato	ok			ok
+8198	tomaram	1462	tomar	ok			ok
+8239	adulta	1450	adulto	ok			ok
+8255	fenda	1447	fenda	ok			ok
+8323	memphis	1431	memphis	proper			drop
+8361	veneza	1420	veneza	proper	place name (Venice) — PT spelling, but still a proper noun		drop
+8413	paramédicos	1408	paramédico	ok			ok
+8542	detector	1379	detector	ok			ok
+8690	vazias	1348	vazio	ok			ok
+8766	atiraram	1333	atirar	ok			ok
+8843	pensaria	1318	pensar	ok			ok
+8961	bebido	1294	beber	ok			ok
+9021	revolta	1281	revolta	ambiguous	noun OR 3sg of revoltar. Noun wins		ok
+9076	puderam	1269	poder	ok			ok
+9077	cocktail	1269	cocktail	foreign	loan, used in EP		drop
+9123	combinámos	1259	combinar	ok	EP-only spelling (-ámos), good EP marker		ok
+9210	esgotos	1243	esgoto	ok			ok
+9215	proveito	1241	proveito	ok			ok
+9295	pilhas	1226	pilha	ok			ok
+9462	cora	1195	cora	proper	Jim: verb corar (blush)? Corpus check: 1171 lines, only 50 lowercase and most truncated coragem/coração — ~96% the name. Dropped.		drop
+9584	concorrência	1176	concorrência	ok			ok
+9601	encoste	1173	encostar	ok			ok
+9687	vencido	1161	vencer	ok			ok
+9725	tomava	1154	tomar	ok			ok
+9738	syd	1153	syd	proper			drop
+9752	vala	1149	vala	ok			ok
+9832	vendia	1133	vender	ok			ok
+9887	arruinado	1124	arruinar	ok			ok
+10161	facilidade	1075	facilidade	ok			ok
+10305	agricultor	1055	agricultor	ok			ok
+10479	oitavo	1030	oitavo	ok			ok
+10624	et	1008	et	foreign	Latin/English fragment (E.T., et al.)		drop
+10670	admirador	1001	admirador	ok			ok
+11406	localizado	902	localizar	ok			ok
+11524	convence	889	convencer	ok			ok
+11636	suporta	876	suportar	ok			ok
+11661	acolá	874	acolá	ok			ok
+12377	crescemos	805	crescer	ok			ok
+12520	cosmos	791	cosmos	ok			ok
+12527	quadrados	790	quadrado	ok			ok
+12787	whoo	767	whoo	foreign	English interjection		drop
+12854	panfletos	761	panfleto	ok			ok
+13284	escória	725	escória	ok			ok
+13334	distantes	721	distante	ok			ok
+13773	phantoms	687	phantoms	foreign	English		drop
+14224	huey	655	huey	proper			drop
+14470	víbora	639	víbora	ok			ok
+14617	lula	630	lula	ok	squid — but also a name; keep as noun		ok
+14663	want	627	want	foreign	English		drop
+15014	recrutamento	607	recrutamento	ok			ok
+15108	normalidade	603	normalidade	ok			ok
+15451	schwartz	582	schwartz	proper			drop
+15462	saque	581	saque	ok			ok
+15754	veados	565	veado	ok			ok
+16160	parecendo	544	parecer	ok			ok
+16265	vagamente	539	vagamente	ok			ok
+16401	disparas	532	disparar	ok			ok
+16584	livingston	524	livingston	proper			drop
+16614	batidas	522	batida	ok			ok
+16645	grendel	521	grendel	proper			drop
+16734	necessitar	516	necessitar	ok			ok
+16757	educados	515	educado	ok	adj; could also be participle of educar		ok
+17021	wagner	504	wagner	proper			drop
+17067	auscultadores	502	auscultador	ok	EP-specific (BP: fones)		ok
+17675	honrados	476	honrado	ok			ok
+17684	avisados	476	avisar	ok	participle		ok
+17687	asno	476	asno	ok			ok
+17966	codificada	465	codificar	ok			ok
+17987	despacho	464	despacho	ok			ok
+18408	contrabandistas	447	contrabandista	ok			ok
+18759	reservatório	434	reservatório	ok			ok
+18902	salgado	429	salgado	ok			ok
+18906	desportiva	429	desportivo	ok	EP spelling (BP: esportivo)		ok
+18953	that's	428	that's	foreign	English		drop
+19297	macgruber	416	macgruber	proper			drop
+19757	swearengen	400	swearengen	proper			drop
+19796	patinho	398	patinho	convention	diminutive of pato — same decision as coisinha		ok
+20192	craniano	386	craniano	ok			ok
+20328	atendi	381	atender	ok			ok
+20478	lung	377	lung	foreign			drop
+20512	colson	376	colson	proper			drop
+20627	namorei	372	namorar	ok			ok
+20998	borbulhas	362	borbulha	ok			ok
+21665	antro	344	antro	ok			ok
+21913	heavy	339	heavy	foreign			drop
+22213	despeçam	332	despedir	ok			ok
+22461	lavaste	326	lavar	ok	EP-only 2sg preterite		ok
+22577	sacas	323	sacar	ambiguous	2sg of sacar OR plural of noun 'saca'. Verb likelier		ok
+22668	gaulês	321	gaulês	ok			ok
+23216	julgavas	307	julgar	ok			ok
+23736	caçando	296	caçar	ok	gerund — BP-leaning form (EP prefers 'a caçar')		ok
+23853	colabora	294	colaborar	ok			ok
+24179	embolia	287	embolia	ok			ok
+24348	cravar	283	cravar	ok			ok
+24459	alcoolismo	281	alcoolismo	ok			ok
+24479	cumprindo	281	cumprir	ok			ok
+24493	fronsac	281	fronsac	proper			drop
+25221	boog	268	boog	proper			drop
+25269	jure	267	jurar	ok			ok
+25477	albin	263	albin	proper			drop
+25548	odile	261	odile	proper			drop
+25820	teta	256	teta	ok			ok
+25830	sniper	256	sniper	foreign	loan		drop
+26721	toxicodependente	242	toxicodependente	ok	EP-specific		ok
+27420	mascarada	231	mascarado	ok	adj; also noun 'mascarada' (masquerade)		ok
+27424	bodes	231	bode	ok			ok
+27617	dadores	228	dador	ok	EP-specific (BP: doador)		ok
+28304	cientifica	219	científico	typo	missing accent → científica → científico		ok
+28618	educadas	215	educado	ok			ok
+28750	corrompido	213	corromper	ok			ok
+28848	azevinho	212	azevinho	ok			ok
+28855	excitou	212	excitar	ok			ok
+29183	martins	208	martins	proper	surname		drop
+29392	falharem	205	falhar	ok			ok
+30132	perdões	197	perdão	ok			ok
+30162	encaminhar	197	encaminhar	ok			ok
+30450	hummer	194	hummer	proper	brand		drop
+30631	fornicação	192	fornicação	ok			ok
+31107	gorman	187	gorman	proper			drop
+31147	desistirmos	186	desistir	ok			ok
+31725	fuck	180	fuck	foreign	English		drop
+31929	defronte	178	defronte	ok			ok
+32093	bray	177	bray	proper			drop
+32329	géneros	174	género	ok	EP spelling (BP: gênero)		ok
+32648	arre	171	arre	ok	interjection		ok
+33025	reconfigurar	168	reconfigurar	ok			ok
+33616	hitomi	163	hitomi	proper			drop
+33963	virarem	160	virar	ok			ok
+34300	colombiana	157	colombiano	ok			ok
+34309	ulyanov	157	ulyanov	proper			drop
+34336	pritchett	157	pritchett	proper			drop
+34699	sâo	154	são	typo	wrong accent (circumflex for tilde) — encoding/typing error; underlying word is 'são' (ser 3pl, or adj)		ok
+34973	rutland	152	rutland	proper			drop
+35090	designadas	151	designar	ok			ok
+35863	esventrar	145	esventrar	ok			ok
+35975	supersticiosa	144	supersticioso	ok			ok
+36228	moltisanti	143	moltisanti	proper			drop
+36760	keno	139	keno	proper			drop
+36952	rodman	137	rodman	proper			drop
+36968	compreendesse	137	compreender	ok			ok
+37044	insistimos	137	insistir	ok			ok
+37566	kersey	134	kersey	proper			drop
+37930	fartava	131	fartar	ok			ok
+38014	armazenados	131	armazenar	ok			ok
+38546	ocultismo	128	ocultismo	ok			ok
+38610	planadores	127	planador	ok			ok
+39303	libéria	123	libéria	proper	Liberia		drop
+39390	ricci	123	ricci	proper			drop
