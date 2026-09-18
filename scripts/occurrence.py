@@ -168,15 +168,16 @@ def tag_cached(types, contexts, cfg):
 # -- resolution --------------------------------------------------------------
 
 
-def resolve(
+def resolve_joint(
     tagged: Mapping[str, Sequence[tuple[str, str, str]]],
     lemma_map: Mapping[str, str],
     cfg: dict[str, Any],
     in_dictionary: Callable[[str], bool],
     fallback: Callable[[str], str],
 ) -> dict[str, Counter]:
-    """Votes per lemma for each tagged surface.  Only surfaces with at least
-    one usable tagged occurrence are returned; the rest keep their map lemma."""
+    """Counter{(lemma, upos): votes} for each tagged surface, keeping each
+    sentence's lemma and POS together so a count can be split across both.
+    Only surfaces with at least one tagged occurrence are returned."""
     ambiguous = set(cfg["fixes"].get("ambiguous_forms", ()))
     out: dict[str, Counter] = {}
     for surface in sorted(tagged):
@@ -184,24 +185,38 @@ def resolve(
         if not occs:
             continue
         default = lemma_map.get(surface, surface)
-        votes: Counter = Counter()
+        joint: Counter = Counter()
         participle = surface not in ambiguous
         for lemma, upos, feats in occs:
             gated = lemma if in_dictionary(lemma) else None
             if participle:
                 if upos in ("VERB", "AUX"):
                     verb = gated or fallback(surface)
-                    votes[verb if in_dictionary(verb) else default] += 1
+                    joint[(verb if in_dictionary(verb) else default, upos)] += 1
                 elif upos == "ADJ":
-                    votes[adjective_form(surface)] += 1
+                    joint[(adjective_form(surface), upos)] += 1
                 elif upos == "NOUN":
-                    votes[noun_form(surface)] += 1
+                    joint[(noun_form(surface), upos)] += 1
                 else:
-                    votes[default] += 1
+                    joint[(default, upos)] += 1
             else:
-                votes[gated or default] += 1
-        out[surface] = votes
+                joint[(gated or default, upos)] += 1
+        out[surface] = joint
     return out
+
+
+def lemma_votes(joint: Counter) -> Counter:
+    """Collapse (lemma, upos) votes to lemma votes."""
+    out: Counter = Counter()
+    for (lemma, _), n in joint.items():
+        out[lemma] += n
+    return out
+
+
+def resolve(tagged, lemma_map, cfg, in_dictionary, fallback) -> dict[str, Counter]:
+    """Votes per lemma for each tagged surface (see resolve_joint)."""
+    return {s: lemma_votes(j) for s, j in
+            resolve_joint(tagged, lemma_map, cfg, in_dictionary, fallback).items()}
 
 
 def apportion(count: int, votes: Mapping[str, int]) -> dict[str, int]:

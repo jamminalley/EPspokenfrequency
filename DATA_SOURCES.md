@@ -21,8 +21,8 @@ words, never to count them (see [README.md](README.md#how-the-list-is-built)).
 | Homepage | https://opus.nlpl.eu/OpenSubtitles/corpus/version/OpenSubtitles |
 
 As counted by this release's tokenizer, that file contains 118,469,705
-lines, 636,214,452 tokens and 838,358 unique surface types (April 2026
-release: 623,920,347 tokens, 955,446 types). The token and type counts
+lines, 636,214,452 tokens and 838,358 unique surface types (unpublished
+April 2026 list: 623,920,347 tokens, 955,446 types). The token and type counts
 depend on the tokenizer: splitting enclitic clusters (`dá-me` -> `dá` +
 `me`) adds tokens, and it turns every clitic cluster into forms that
 already exist, which reduces the number of distinct types.

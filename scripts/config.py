@@ -32,6 +32,7 @@ _REQUIRED_SECTIONS = (
     "quality",
     "output",
     "conventions",
+    "pos",
 )
 
 _FIX_FLAGS = (

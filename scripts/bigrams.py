@@ -46,6 +46,8 @@ _CTX_TYPES: frozenset[str] = frozenset()
 _CTX_K: int = 0
 _SEED: int = 0
 _SENTENCE_STARTS: bool = False
+_CTX_BIG: frozenset[str] = frozenset()
+_CTX_K_BIG: int = 0
 
 
 def _init_worker(
@@ -55,8 +57,11 @@ def _init_worker(
     ctx_k: int,
     seed: int,
     sentence_starts: bool = False,
+    ctx_big: frozenset[str] = frozenset(),
+    ctx_k_big: int = 0,
 ) -> None:
     global _TOKENIZER, _VOCAB, _NVOCAB, _CTX_TYPES, _CTX_K, _SEED, _SENTENCE_STARTS
+    global _CTX_BIG, _CTX_K_BIG
     # Case is kept so the proper-noun heuristic can see it; the
     # lowercase form is derived per token, which is what the lowercasing
     # tokenizer would have produced anyway.
@@ -67,6 +72,8 @@ def _init_worker(
     _CTX_K = ctx_k
     _SEED = seed
     _SENTENCE_STARTS = sentence_starts
+    _CTX_BIG = ctx_big
+    _CTX_K_BIG = ctx_k_big
 
 
 def _ctx_digest(seed: int, surface: str, sentence: str) -> int:
@@ -134,7 +141,10 @@ def _process_chunk(
                         ctx[tok].append((_ctx_digest(_SEED, tok, sentence), sentence))
 
     # Keep only the K best per type before returning, to bound IPC volume.
-    trimmed = {t: heapq.nsmallest(_CTX_K, v) for t, v in ctx.items()}
+    trimmed = {
+        t: heapq.nsmallest(_CTX_K_BIG if t in _CTX_BIG else _CTX_K, v)
+        for t, v in ctx.items()
+    }
     return pairs, trimmed, cap, noninitial
 
 
@@ -179,15 +189,22 @@ def bigram_pass(
     nv = len(vocab) + 1
 
     ctx_types: frozenset[str] = frozenset()
-    ctx_k = 0
+    ctx_big: frozenset[str] = frozenset()
+    ctx_k = ctx_k_big = 0
     if lem_ctx.get("enabled"):
         ctx_k = lem_ctx["samples_per_type"]
         ctx_types = frozenset(qualifying[: lem_ctx["max_types"]])
+        # Frequent forms get a larger sample. Selection is by digest, so a
+        # form's small sample is always a subset of its large one.
+        ctx_k_big = lem_ctx.get("large_samples_per_type", ctx_k)
+        big_min = lem_ctx.get("large_min_count", float("inf"))
+        ctx_big = frozenset(t for t in ctx_types if unigram_counts[t] >= big_min)
 
     if progress:
         print(
             f"  pass2: {len(vocab):,} qualifying types (>= {floor}), "
-            f"context for {len(ctx_types):,} types x {ctx_k}",
+            f"context for {len(ctx_types):,} types x {ctx_k} "
+            f"({len(ctx_big):,} of them x {ctx_k_big})",
             file=sys.stderr,
         )
 
@@ -202,7 +219,7 @@ def bigram_pass(
         processes=cfg["run"]["workers"],
         initializer=_init_worker,
         initargs=(cfg["tokenizer"], vocab, ctx_types, ctx_k, cfg["run"]["seed"],
-                  sentence_starts_rule(cfg)),
+                  sentence_starts_rule(cfg), ctx_big, ctx_k_big),
     ) as pool:
         stream = corpus.chunks(cfg)
         for i, (chunk_pairs, chunk_ctx, chunk_cap, chunk_noninit) in enumerate(
@@ -212,7 +229,8 @@ def bigram_pass(
             cap.update(chunk_cap)
             noninitial.update(chunk_noninit)
             for surface, cands in chunk_ctx.items():
-                merged = heapq.nsmallest(ctx_k, ctx_best[surface] + cands)
+                k = ctx_k_big if surface in ctx_big else ctx_k
+                merged = heapq.nsmallest(k, ctx_best[surface] + cands)
                 ctx_best[surface] = merged
             if bg["prune_every_chunks"] and i % bg["prune_every_chunks"] == 0:
                 before = len(pairs)

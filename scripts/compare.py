@@ -2,7 +2,7 @@
 
 Reports, per the brief: top-5000 lemma set overlap, Spearman correlation of
 ranks for shared lemmas, and the largest discrepancies -- plus the tokenizer
-fingerprint, pos_guess agreement, and the quality report summary.
+fingerprint, POS agreement, and the quality report summary.
 """
 
 from __future__ import annotations
@@ -39,8 +39,17 @@ def compare_bands(
     rebuilt: Sequence[Mapping[str, str]],
     top_n: int,
 ) -> dict[str, Any]:
-    o_rank = {r["lemma"]: int(r["rank"]) for r in original if int(r["rank"]) <= top_n}
-    r_rank = {r["lemma"]: int(r["rank"]) for r in rebuilt if int(r["rank"]) <= top_n}
+    # A lemma can have one row per POS; compare lemmas at their best rank.
+    def best(rows):
+        out: dict[str, int] = {}
+        for r in rows:
+            rank = int(r["rank"])
+            if rank <= top_n and rank < out.get(r["lemma"], 10**9):
+                out[r["lemma"]] = rank
+        return out
+
+    o_rank = best(original)
+    r_rank = best(rebuilt)
     o_set, r_set = set(o_rank), set(r_rank)
     shared = o_set & r_set
 
@@ -49,8 +58,14 @@ def compare_bands(
         ((w, o_rank[w], r_rank[w], r_rank[w] - o_rank[w]) for w in shared),
         key=lambda t: (-abs(t[3]), t[0]),
     )
-    o_pos = {r["lemma"]: r["pos_guess"] for r in original}
-    r_pos = {r["lemma"]: r["pos_guess"] for r in rebuilt}
+    o_pos: dict[str, str] = {}
+    r_pos: dict[str, str] = {}
+    # The April files call the column pos_guess; from this version it is pos.
+    col = lambda r: r.get("pos", r.get("pos_guess", ""))
+    for r in original:
+        o_pos.setdefault(r["lemma"], col(r))
+    for r in rebuilt:
+        r_pos.setdefault(r["lemma"], col(r))
     pos_shared = [w for w in shared if w in o_pos and w in r_pos]
     pos_agree = sum(1 for w in pos_shared if o_pos[w] == r_pos[w])
 
@@ -165,15 +180,16 @@ def render(
             f"({rep['overlap_pct']:.1f}% of the original)**",
             f"- Jaccard: {rep['jaccard']:.3f}",
             f"- **Spearman rho on shared lemmas: {rep['spearman']:.4f}**",
-            f"- pos_guess agreement: {rep['pos_agreement']:.1%} "
+            f"- POS agreement: {rep['pos_agreement']:.1%} "
             f"over {rep['pos_compared']:,} shared lemmas",
             f"- MWEs: original {rep['mwe_original']}, rebuild "
             f"{rep['mwe_rebuilt']}, shared {rep['mwe_shared']}",
             "",
-            "> pos_guess rules were fitted to `out/` (see scripts/fit_postag.py),",
-            "> so this agreement figure is partly circular and is not evidence",
-            "> that the tagger is good -- only that it reproduces the original,",
-            "> mistakes included.",
+            ("> This build's POS comes from the tagger; April's came from a rule"
+             " heuristic, so this is agreement between two methods, not accuracy."
+             if stage >= 2 else
+             "> The stage 1 POS rules were fitted to the April list (see"
+             " scripts/fit_postag.py), so this agreement figure is partly circular."),
             "",
             "### Largest rank movements (shared lemmas)",
             "",

@@ -134,3 +134,16 @@ def test_stage1_view_is_the_april_pipeline(cfg):
     assert cfg["run"]["stage"] == 1
     assert cfg["lemmatizer"]["backend"] == "simplemma"
     assert not any(v for v in cfg["fixes"].values() if isinstance(v, bool))
+
+
+def test_frequent_forms_get_the_larger_sample(cfg):
+    from scripts import bigrams
+    lines = [f"Hoje eu fui ao sítio número {i} e vi a casa." for i in range(80)]
+    bigrams._init_worker(cfg["tokenizer"], {}, frozenset({"casa", "hoje"}), 5, 7,
+                         False, frozenset({"casa"}), 50)
+    _, ctx, _, _ = bigrams._process_chunk(lines)
+    assert len(ctx["casa"]) == 50 and len(ctx["hoje"]) == 5
+    # Digest selection: the small sample is a prefix of the large one.
+    bigrams._init_worker(cfg["tokenizer"], {}, frozenset({"casa"}), 5, 7)
+    _, small, _, _ = bigrams._process_chunk(lines)
+    assert small["casa"] == ctx["casa"][:5]

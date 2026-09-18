@@ -8,18 +8,18 @@ Ready-to-import Anki decks are included.
 
 | | |
 |---|---|
-| Entries | 10,000 lemmas (two files of 5,000) |
-| Multi-word expressions | 302 in the top 10,000, flagged with `is_mwe` |
+| Entries | 10,000 rows (two files of 5,000): 9,390 distinct words, 311 of them listed once per part of speech, plus 295 multi-word expressions |
 | Corpus | OPUS OpenSubtitles v2018, `pt` (Portugal-tagged) |
 | Corpus size | 118,469,705 lines · 636,214,452 tokens · 838,358 unique surface types |
 | Lemmatization accuracy | 98.5% on a 332-word human-reviewed sample |
+| Part of speech | From a neural tagger (Stanza), by majority vote over up to 50 sentences per word |
 | Licence | CC BY-SA 4.0 — see [LICENSE](LICENSE) |
 
-This is the second release. The first (April 2026) was produced by a
-pipeline whose scripts were lost; it is kept in
-[`archive/out_april_2026/`](archive/out_april_2026/) and tagged
-`v0-april-2026`. What changed, and why ranks moved, is in
-[CHANGELOG.md](CHANGELOG.md).
+An earlier version of this list (April 2026) was never published; the
+pipeline that produced it was lost. It is kept for comparison only in
+[`archive/out_april_2026/`](archive/out_april_2026/) (tag
+`v0-april-2026`), and [CHANGELOG.md](CHANGELOG.md) records how this list
+differs from it.
 
 ---
 
@@ -63,7 +63,7 @@ That has real consequences.
   said. Real conversation looks different.
 - **The register is dramatic dialogue.** Film and TV over-represent crime,
   conflict, romance, and emergencies. *Matar* ("to kill") lands at rank
-  120, *morrer* at 148, *arma* at 242 and *polícia* at 259 — higher than
+  121, *morrer* at 153, *arma* at 248 and *polícia* at 267 — higher than
   any corpus of everyday life would put them. The vocabulary of work,
   admin, school and errands correspondingly sits lower.
 - **Much of it is translated.** A large share of these subtitles are
@@ -91,8 +91,8 @@ professionally edited, and comes with the things this list lacks.
 | Registers | Film/TV dialogue | Spoken, fiction, newspaper, academic |
 | Variety | Portugal-tagged, BP markers excluded post hoc; headwords in post-1990 spelling | Both varieties, with BP/EP marked per entry |
 | Glosses & examples | None | English glosses and example sentences throughout |
-| Lemmatization | Automatic: a neural tagger (Stanza) reading each word in real sentences, checked against a dictionary. 98.5% correct on a 332-word hand-checked sample | Curated |
-| POS tags | **Still a rule-based guess**, not tagger output — see caveats | Professionally tagged |
+| Lemmatization | Automatic: a neural tagger (Stanza) reading each word in up to 50 real sentences, checked against a dictionary. 98.5% correct on a 332-word hand-checked sample | Curated |
+| POS tags | Automatic, from the same tagger: majority vote over each word's sample sentences, and a word used as two parts of speech is listed once for each. Not hand-checked | Professionally tagged |
 | Contractions (*do*, *ao*, *pela*) | Kept as their own entries | Split into preposition + article |
 | Review | Automatic output. Spot-checked against a hand-reviewed sample, with about 830 individual decisions made by hand (gold set, gender pairs, proper-noun drops); not edited entry by entry | Edited and peer-reviewed |
 | Cost | Free | A book you buy |
@@ -107,22 +107,35 @@ replacement, and it has not been edited the way a published dictionary is.
 
 These are specific and worth knowing before you study from the list.
 
-- **`pos_guess` is a heuristic, not a tagger.** Stanza is used to decide
-  lemmas, but the published POS column still comes from a closed-class
-  lookup plus suffix rules, reconstructed from the April list. It
-  reproduces that list's choices *including its mistakes* (`aqui` as a
-  pronoun, `também` as a conjunction, `deus` as `unk`). Use it to filter
-  roughly; do not trust it entry by entry.
+- **Part of speech is tagger output, not hand-checked.** The `pos`
+  column is Stanza's tag, by majority vote over each word's sample
+  sentences (50 for the 4,347 most frequent word forms, 5 for the rest).
+  The tagger is not always consistent with itself: 3% of its tags
+  contradicted the lemma it gave in the same sentence (a VERB tag on the
+  noun *pergunta*) and were discarded. A word the tagger regularly uses two
+  ways gets one row per part of speech, with its count divided between
+  them: `a` (article and preposition), `que` (conjunction and pronoun),
+  `este` (determiner and pronoun), `morto` (adjective and noun). The tags
+  follow Universal Dependencies conventions, with one exception made for
+  learners: a preposition is never counted as a conjunction (UD tags *para*
+  in *para fazer* as one). 148 entries the tagger never saw intact, mostly
+  contractions such as `do` and `pela`, keep a rule-based guess.
+- **`ser` and `ir` are not separated.** `foi`, `fui`, `fomos` and `foram`
+  belong to *ser* ("was") or *ir* ("went") depending on the sentence. The
+  tagger assigns them to *ser* almost every time: all 50 sampled uses of
+  `fui` and `fomos` went to *ser*, including *fui ao Paquistão* and *fomos
+  buscar ajuda*. *Ser* is therefore overcounted and *ir* undercounted, by
+  an amount this list cannot measure.
 - **Lemmatization is not perfect.** 98.5% on the hand-checked sample means
   something like 150 of the 10,000 entries may carry a lemma error. The
   known pattern: Stanza sometimes reads a verb form as a noun (`procura`,
   `mentes`, `sacas` kept as nouns) or picks the wrong verb (`vejam` as
   *vir*, not *ver*).
-- **Split counts are estimates.** Forms whose lemma depends on the
-  sentence — participles (`educados`: *educar* or *educado*) and forms like
-  `fomos` (*ser* or *ir*) — have their counts divided according to how the
-  tagger reads five sample sentences per word. That is a 20%-granular
-  estimate, not a count of every occurrence.
+- **Split counts are estimates.** Participles (`educados`: the verb
+  *educar* or the adjective *educado*) and words used as two parts of
+  speech have their counts divided according to how the tagger reads a
+  sample of sentences: 50 for word forms with 10,000+ occurrences, which
+  gives 2% steps, and 5 for the rest (20% steps).
 - **Six known duplicates remain.** Missing-accent forms are folded into
   their accented twin only when the accented form is at least 10× as
   frequent. Six pairs fall below that and appear twice: `camera`/`câmera`,
@@ -154,9 +167,7 @@ These are specific and worth knowing before you study from the list.
 ## What's in `out/`
 
 Two rank bands — **1–5000** and **5001–10000** — each published in four
-formats. Files without a number in the name are the first band. File
-names and the Anki header directives are the same as in the April release,
-so an existing import keeps working.
+formats. Files without a number in the name are the first band.
 
 ### The frequency lists
 
@@ -172,7 +183,7 @@ TSV and CSV hold identical data; pick whichever your tools prefer. Columns:
 | `rank` | 1-based rank by `raw_freq`. |
 | `lemma` | Lemma form, or the surface multi-word expression for MWE entries. |
 | `is_mwe` | `1` for a multi-word expression, `0` otherwise. |
-| `pos_guess` | Rule-based POS heuristic. One of `det`, `prep`, `conj`, `pron`, `adv`, `intj`, `num`, `noun`, `adj`, `verb`, `mwe`, `unk`. Not tagger output — see caveats. |
+| `pos` | Part of speech from the tagger. One of `det`, `prep`, `conj`, `pron`, `adv`, `intj`, `num`, `noun`, `adj`, `verb`, `mwe`, `unk`. A word used as two parts of speech has one row for each. See caveats. |
 | `raw_freq` | Lemma occurrence count across the full corpus. |
 | `freq_per_million` | Occurrences per million tokens (of 636,214,452). |
 
@@ -180,7 +191,7 @@ TSV and CSV hold identical data; pick whichever your tools prefer. Columns:
 
 | File | Fields |
 |---|---|
-| `ep_spoken_anki_minimal.tsv` | Rank, Lemma_PT, POS_guess, Is_MWE, Raw_Freq, Freq_per_million, Tags |
+| `ep_spoken_anki_minimal.tsv` | Rank, Lemma_PT, POS, Is_MWE, Raw_Freq, Freq_per_million, Tags |
 | `ep_spoken_anki_enrichable.tsv` | The same, plus empty `Gloss_EN`, `Example_PT`, `Example_EN` for you to fill in |
 | `ep_spoken_5001_10000_anki_minimal.tsv` | Ranks 5001–10000, minimal fields |
 | `ep_spoken_5001_10000_anki_enrichable.tsv` | Ranks 5001–10000, enrichable fields |
@@ -193,7 +204,7 @@ TSV and CSV hold identical data; pick whichever your tools prefer. Columns:
 | `dropped_proper_nouns.txt` | Words removed as proper nouns (with 100+ occurrences), plus the BP exclusions, English plurals and fragments removed by the other filters. |
 
 The build reports are in [`reports/`](reports/): `COMPARISON.md` (this
-release against the April one), `QUALITY.md` (the quality gate and every
+list against the unpublished April 2026 version), `QUALITY.md` (the quality gate and every
 accent fold), and `backend_scores.md` (how the lemmatizers compared).
 
 ---
@@ -206,20 +217,25 @@ From `pt.txt.gz` to `out/`, in one command (`python -m scripts.build`):
    artifacts and lowercases. Enclitic clusters are split and the verb is
    restored: `fazê-lo` counts as *fazer* + *lo*, and `dar-lhe-ia` as
    *daria* + *lhe*.
-2. **Second pass.** Bigram counts for multi-word expressions, five sample
-   sentences for every frequent word, and capitalization statistics for
+2. **Second pass.** Bigram counts for multi-word expressions, sample
+   sentences for every frequent word (50 for the 4,347 word forms with
+   10,000+ occurrences, 5 for the rest), and capitalization statistics for
    the proper-noun filter.
-3. **Lemmatize.** The 63,253 surface forms frequent enough to reach the
-   list are lemmatized by [Stanza](https://stanfordnlp.github.io/stanza/),
-   reading each word inside its sample sentences. When Stanza's answer is
-   not a dictionary word (it occasionally invents forms like *agradeçar*),
+3. **Tag and lemmatize.** [Stanza](https://stanfordnlp.github.io/stanza/)
+   reads the 63,253 word forms frequent enough to reach the list inside
+   their sample sentences — about 500,000 sentences — and gives each
+   occurrence a lemma and a part of speech. The majority lemma wins, after
+   discarding votes where the lemma and the tag contradict each other. When
+   Stanza's answer is not a dictionary word (it occasionally invents forms
+   like *agradeçar*),
    [simplemma](https://github.com/adbar/simplemma) is used instead; simplemma
    also handles the rare tail. A small table of hand-verified corrections
    covers errors Stanza makes at high frequency (`dói` is *doer*, not
    *dizer*).
-4. **Resolve context-dependent forms per occurrence.** Participles and
-   forms like `fomos` are split between lemmas according to how Stanza tags
-   them in their sample sentences.
+4. **Resolve context-dependent forms per occurrence.** Participles are
+   split between the verb and the adjective according to how Stanza tags
+   them in their sample sentences. (Forms like `fomos` go through the same
+   step, but the tagger nearly always answers *ser*; see caveats.)
 5. **Apply the lemmatization conventions** in
    [eval/conventions.md](eval/conventions.md):
    1. contractions (`do`, `ao`, `pela`) are their own entries;
@@ -249,10 +265,15 @@ From `pt.txt.gz` to `out/`, in one command (`python -m scripts.build`):
    [eval/proper_noun_drops_review.tsv](eval/proper_noun_drops_review.tsv).
    English plurals are removed, and so are one- and two-letter fragments
    that are neither words nor interjections.
-8. **Rank and emit** the top 10,000 by lemma count, with multi-word
+8. **Assign part of speech.** Each word's count is divided across the
+   parts of speech the tagger gave it, the same way participle counts are
+   divided across lemmas. A second part of speech becomes its own row only
+   if it holds at least 25% of the word's count and at least 3 tagged
+   sentences; otherwise it joins the majority.
+9. **Rank and emit** the top 10,000 rows by count, with multi-word
    expressions — kept by log-likelihood (Dunning G² ≥ 2500) and a
-   collocation share of at least 5% — ranked alongside them. 302 of them
-   make the top 10,000: 194 in the first band and 108 in the second.
+   collocation share of at least 5% — ranked alongside them. 295 of them
+   make the top 10,000: 191 in the first band and 104 in the second.
 
 ### How it is checked
 
@@ -330,19 +351,14 @@ importing, go to **Tools → Manage Note Types → Add**, name it
 `Portuguese (EP) – Spoken Frequency`, and give it fields matching the file
 you plan to import:
 
-- *minimal*: `Rank`, `Lemma_PT`, `POS_guess`, `Is_MWE`, `Raw_Freq`,
+- *minimal*: `Rank`, `Lemma_PT`, `POS`, `Is_MWE`, `Raw_Freq`,
   `Freq_per_million`
-- *enrichable*: `Rank`, `Lemma_PT`, `POS_guess`, `Gloss_EN`, `Example_PT`,
+- *enrichable*: `Rank`, `Lemma_PT`, `POS`, `Gloss_EN`, `Example_PT`,
   `Example_EN`, `Is_MWE`, `Raw_Freq`, `Freq_per_million`
 
 (The `Tags` column is not a field — Anki maps it to note tags
 automatically.) Then design your own card templates; front/back layout is
 a personal choice and none is shipped here.
-
-**Upgrading from the April release?** The files, note type and deck names
-are unchanged, so re-importing updates matching notes. Ranks and some
-headwords have changed (see [CHANGELOG.md](CHANGELOG.md)), so notes for
-words that left the list are not removed automatically.
 
 ### Which file should I import?
 
@@ -364,7 +380,7 @@ than importing 5,000 cards and drowning:
 | `freq::0001-0500`, `freq::0501-1000`, … | 500-word band |
 | `freq500::…` | 500-word band (alias) |
 | `freq1000::0001-1000`, … | 1000-word band |
-| `pos::det`, `pos::verb`, … | Part-of-speech guess |
+| `pos::det`, `pos::verb`, … | Part of speech |
 | `source::opensubtitles_ep_v2018` | Provenance |
 | `variety::EP`, `register::spoken` | Variety and register |
 
@@ -378,14 +394,14 @@ to it.
 ```
 out/                   Published frequency lists and Anki decks
 reports/               Build reports: comparison, quality gate, backend scores
-archive/out_april_2026/  The April 2026 release, kept for comparison
+archive/out_april_2026/  The unpublished April 2026 list, kept for comparison
 eval/                  Gold set, conventions, and the hand-reviewed decision files
 scripts/               The pipeline (python -m scripts.build)
 tests/                 Unit tests (pytest; no corpus needed)
 config.yaml            Every threshold, list and switch the pipeline uses
 data/                  Corpus download target — gitignored, never committed
 DATA_SOURCES.md        Corpus citation and download instructions
-CHANGELOG.md           What changed between releases
+CHANGELOG.md           What changed between versions
 ```
 
 `data/` is excluded from version control because the corpus is a 1.1 GB

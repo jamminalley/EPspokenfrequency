@@ -1,4 +1,4 @@
-"""The `pos_guess` heuristic.
+"""Rule-based POS fallback (the April list's `pos_guess` heuristic).
 
 README: "rule-based POS heuristic (closed-class lookup + suffix rules).
 Values: det, prep, conj, pron, adv, intj, num, noun, adj, verb, mwe, unk.

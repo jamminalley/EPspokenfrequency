@@ -28,6 +28,7 @@ from scripts import emit as emit_mod
 from scripts import eval_lemmas as eval_mod
 from scripts import filters as filters_mod
 from scripts import occurrence as occurrence_mod
+from scripts import pos as pos_mod
 from scripts import lemmas as lemmas_mod
 from scripts import quality as quality_mod
 from scripts.postag import PosTagger
@@ -119,9 +120,10 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     # -- step 2: lemmatize -------------------------------------------------
     _log(f"step 2: lemmatize ({cfg['lemmatizer']['backend']})")
     types = sorted(uni.counts)
-    backend = lemmas_mod.get_backend(cfg["lemmatizer"]["backend"], cfg)
+    lem = cfg["lemmatizer"]
 
-    tier = cfg["lemmatizer"].get("tiered", {})
+    tier = lem.get("tiered", {})
+    min_count = None
     if tier.get("enabled"):
         limit = max(hi for _, hi in cfg["output"]["bands"])
         min_count = tier.get("primary_min_count")
@@ -134,10 +136,32 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
             at_limit = ordered[limit - 1] if len(ordered) >= limit else 1
             min_count = max(at_limit // tier.get("safety_factor", 10), 1)
         stats["tier_min_count"] = min_count
+        _log(f"  tier threshold: surface count >= {min_count:,}")
+
+    # One Stanza tagging pass over every frequent word's sample sentences
+    # supplies lemmas, per-occurrence splits and POS alike.
+    tags: dict | None = None
+    if lem["backend"] == "gated" and lem["gate"]["primary"] == "stanza_tags":
+        tier_types = [t for t in types if uni.counts[t] >= (min_count or 1)]
+        tags = occurrence_mod.tag_cached(tier_types, bg.contexts, cfg)
+        stats["tagged_types"] = sum(1 for t in tier_types if tags.get(t))
+        stats["tagged_sentences"] = sum(len(v) for v in tags.values())
+        is_verb = pos_mod.verb_lemmas(tags)
+        closed = frozenset(PosTagger.load().closed)
+        vote_filter = None
+        if lem.get("tags_vote_filter") == "consistency":
+            vote_filter = lambda s, l, u: pos_mod.consistent(s, l, u, is_verb, closed)
+        backend = lemmas_mod.GatedBackend(
+            lemmas_mod.TagsBackend(tags, vote_filter),
+            lemmas_mod.SimplemmaBackend(),
+            lem.get("spellchecker_lang", "pt"),
+        )
+    else:
+        backend = lemmas_mod.get_backend(lem["backend"], cfg)
+    if tier.get("enabled"):
         backend = lemmas_mod.TieredBackend(
             backend, lemmas_mod.SimplemmaBackend(), uni.counts, min_count
         )
-        _log(f"  tier threshold: surface count >= {min_count:,}")
 
     lemma_map = lemmas_mod.build_lemma_map(cfg, types, bg.contexts, backend=backend)
 
@@ -163,19 +187,26 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
 
     # Per-occurrence resolution: participles and fomos-type forms.
     splits: dict[str, Counter] = {}
+    joint_splits: dict[str, Counter] = {}
     split_protected: set[str] = set()
     if cfg["run"]["stage"] >= 2 and cfg["fixes"].get("split_ambiguous"):
         tier_min = stats.get("tier_min_count") or cfg["lemmatizer"]["tiered"]["primary_min_count"]
         cands = occurrence_mod.candidates(uni.counts, cfg, tier_min)
         _log(f"  per-occurrence: {len(cands):,} candidate surfaces (count >= {tier_min})")
-        tagged = occurrence_mod.tag_cached(cands, bg.contexts, cfg)
+        if tags is not None:
+            tagged = {c: tags.get(c, []) for c in cands}
+        else:
+            tagged = occurrence_mod.tag_cached(cands, bg.contexts, cfg)
         simple = lemmas_mod.SimplemmaBackend()
         sm = lambda w: simple.lemmatize_types([w])[w]
-        votes = occurrence_mod.resolve(tagged, lemma_map, cfg, lemmas_mod.in_dictionary, sm)
-        for surface, v in votes.items():
-            norm: Counter = Counter()
-            for lemma, n in v.items():
-                norm[conventions_mod.normalize_lemma(lemma, cfg, lemmas_mod.in_dictionary, sm)] += n
+        joint = occurrence_mod.resolve_joint(tagged, lemma_map, cfg, lemmas_mod.in_dictionary, sm)
+        for surface, j in joint.items():
+            norm_joint: Counter = Counter()
+            for (lemma, upos), n in j.items():
+                norm_joint[(conventions_mod.normalize_lemma(
+                    lemma, cfg, lemmas_mod.in_dictionary, sm), upos)] += n
+            joint_splits[surface] = norm_joint
+            norm = occurrence_mod.lemma_votes(norm_joint)
             splits[surface] = norm
             lemma_map[surface] = sorted(norm, key=lambda l: (-norm[l], l))[0]
             for lemma in norm:
@@ -313,7 +344,41 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     _log("step 5: rank and emit")
     tagger = PosTagger.load()
     limit = max(hi for _, hi in cfg["output"]["bands"])
-    entries = emit_mod.rank_entries(kept, mwes, uni.n_tokens, tagger, limit)
+
+    # Part of speech: from the tagger where there is evidence, split across
+    # entries the way counts are split across lemmas; the rule heuristic
+    # otherwise (and always in stage 1).
+    fold_to = {src: dst for src, dst, *_ in fold_log}
+    headword_of_lemma = lambda l: fold_to.get(follow(l), follow(l))
+    headword_of_surface = lambda s: headword_of_lemma(lemma_map.get(s, s))
+    weighted: dict = {}
+    raw_votes: dict = {}
+    if cfg["pos"]["source"] == "tagger" and tags is not None and cfg["run"]["stage"] >= 2:
+        pos_stats: dict[str, int] = {}
+        weighted, raw_votes = pos_mod.aggregate(
+            uni.counts, tags, joint_splits, headword_of_surface, headword_of_lemma, cfg,
+            closed=frozenset(tagger.closed), stats=pos_stats)
+        stats["pos_votes_counted"] = pos_stats.get("counted", 0)
+        stats["pos_votes_inconsistent"] = pos_stats.get("inconsistent", 0)
+    rows: list[tuple[str, str, int, bool]] = []
+    n_split = n_fallback = 0
+    for lemma, count in kept.items():
+        parts = pos_mod.assign(lemma, count, weighted, raw_votes, cfg, tagger.tag)
+        if lemma not in weighted:
+            n_fallback += 1
+        if len(parts) > 1:
+            n_split += 1
+        rows += [(lemma, pos, c, False) for pos, c in parts]
+    rows += [(m["mwe"], "mwe", int(m["raw_freq"]), True) for m in mwes]
+    entries = emit_mod.rank_rows(rows, uni.n_tokens, limit)
+    published = {e.lemma for e in entries if not e.is_mwe}
+    stats["pos_source"] = cfg["pos"]["source"] if weighted else "heuristic"
+    stats["pos_split_lemmas_all"] = n_split
+    stats["pos_split_in_list"] = sum(
+        1 for l in published if sum(1 for e in entries if e.lemma == l and not e.is_mwe) > 1)
+    stats["pos_heuristic_in_list"] = sum(1 for l in published if l not in weighted)
+    _log(f"  POS: {stats['pos_split_in_list']:,} published lemmas split by POS, "
+         f"{stats['pos_heuristic_in_list']:,} on the heuristic (no tagged evidence)")
     written = emit_mod.write_all(entries, cfg, out_dir)
     written += emit_mod.write_dropped(flog, cfg, out_dir)
     stats["entries"] = len(entries)
@@ -330,10 +395,19 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
         exempt |= set(cfg["fixes"].get("plurale_tantum", ()))
         if cfg["conventions"].get("enabled"):
             exempt |= conventions_mod.protected_forms(cfg)
-    entry_lemmas = [e.lemma for e in entries if not e.is_mwe]
+    # One row per lemma for the duplicate checks: a lemma split by POS is
+    # one word, not a duplicate of itself.
+    seen: set[str] = set()
+    lemma_entries = []
+    for e in entries:
+        if e.is_mwe or e.lemma in seen:
+            continue
+        seen.add(e.lemma)
+        lemma_entries.append(e)
+    entry_lemmas = [e.lemma for e in lemma_entries]
     relemma = {w: (w if w in exempt else follow(lemma_map.get(w, w))) for w in entry_lemmas}
     suspects = quality_mod.find_suspects(
-        entries, cfg, lambda w: relemma.get(w, w), closed_class=frozenset(exempt),
+        lemma_entries, cfg, lambda w: relemma.get(w, w), closed_class=frozenset(exempt),
     )
     quality_mod.write_tsv(suspects, rep_dir / cfg["paths"]["reports"]["quality_tsv"])
     quality_text = quality_mod.render_report(suspects, cfg)

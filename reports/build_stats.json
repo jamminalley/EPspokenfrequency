@@ -7,16 +7,18 @@
     "types": 838358
   },
   "bigram_pairs": 8365112,
-  "context_types": 60000,
+  "context_types": 70000,
   "tier_min_count": 144,
+  "tagged_types": 62494,
+  "tagged_sentences": 498791,
   "conventions": {
     "1_clitic_allomorphs": {
       "surfaces": 4,
       "tokens": 1895087
     },
     "1_contractions": {
-      "surfaces": 4,
-      "tokens": 1719397
+      "surfaces": 8,
+      "tokens": 4525790
     },
     "1_pronouns": {
       "surfaces": 7,
@@ -24,11 +26,11 @@
     },
     "2_gender": {
       "surfaces": 30,
-      "tokens": 144130
+      "tokens": 104849
     },
     "2_gender_exception": {
-      "surfaces": 37,
-      "tokens": 211900
+      "surfaces": 38,
+      "tokens": 22202883
     },
     "3_diminutives": {
       "surfaces": 1349,
@@ -43,20 +45,26 @@
       "tokens": 1471646
     }
   },
-  "split_surfaces": 4692,
-  "split_multi_lemma": 1388,
-  "split_tokens": 6788290,
-  "lemma_closure_redirects": 7805,
+  "split_surfaces": 4931,
+  "split_multi_lemma": 1524,
+  "split_tokens": 9226084,
+  "lemma_closure_redirects": 7723,
   "mwes_retained": 657,
-  "diacritic_folded": 30183,
-  "foreign_dropped": 11152,
-  "short_dropped": 718,
+  "diacritic_folded": 30210,
+  "foreign_dropped": 11153,
+  "short_dropped": 717,
   "bp_excluded": 16,
-  "proper_nouns_dropped": 251318,
+  "proper_nouns_dropped": 251322,
+  "pos_votes_counted": 444620,
+  "pos_votes_inconsistent": 13876,
+  "pos_source": "tagger",
+  "pos_split_lemmas_all": 658,
+  "pos_split_in_list": 311,
+  "pos_heuristic_in_list": 148,
   "entries": 10000,
   "suspects": 0,
   "gold": {
     "pipeline, stage 2 (gated)": 0.9849397590361446
   },
-  "elapsed_s": 24.6
+  "elapsed_s": 36.1
 }

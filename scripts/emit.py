@@ -3,7 +3,7 @@
 README: "Top 5000 entries by raw lemma count, output as TSV and CSV" (the
 published set actually runs to 10,000 across two bands).
 
-Columns, exactly as the original: rank, lemma, is_mwe, pos_guess, raw_freq,
+Columns, exactly as the original: rank, lemma, is_mwe, pos, raw_freq,
 freq_per_million.  The per-million figure is round(raw / total_tokens * 1e6,
 3), which reproduces all 10,000 original rows exactly.
 
@@ -25,7 +25,7 @@ class Entry:
     rank: int
     lemma: str
     is_mwe: bool
-    pos_guess: str
+    pos: str
     raw_freq: int
     freq_per_million: float
 
@@ -34,13 +34,13 @@ class Entry:
             str(self.rank),
             self.lemma,
             "1" if self.is_mwe else "0",
-            self.pos_guess,
+            self.pos,
             str(self.raw_freq),
             f"{self.freq_per_million:.3f}",
         ]
 
 
-HEADER = ["rank", "lemma", "is_mwe", "pos_guess", "raw_freq", "freq_per_million"]
+HEADER = ["rank", "lemma", "is_mwe", "pos", "raw_freq", "freq_per_million"]
 
 
 def band_label(rank: int, size: int) -> str:
@@ -85,12 +85,25 @@ def rank_entries(
                 rank=i,
                 lemma=lemma,
                 is_mwe=is_mwe,
-                pos_guess=tagger.tag(lemma, is_mwe=is_mwe),
+                pos=tagger.tag(lemma, is_mwe=is_mwe),
                 raw_freq=count,
                 freq_per_million=round(count / total_tokens * 1e6, 3),
             )
         )
     return out
+
+
+def rank_rows(
+    rows: Sequence[tuple[str, str, int, bool]], total_tokens: int, limit: int
+) -> list[Entry]:
+    """Rank (lemma, pos, count, is_mwe) rows. A lemma split by POS has one
+    row per POS; ties break by lemma then POS, so order is deterministic."""
+    ordered = sorted(rows, key=lambda r: (-r[2], r[0], r[1]))
+    return [
+        Entry(rank=i, lemma=lemma, is_mwe=is_mwe, pos=pos, raw_freq=count,
+              freq_per_million=round(count / total_tokens * 1e6, 3))
+        for i, (lemma, pos, count, is_mwe) in enumerate(ordered[:limit], start=1)
+    ]
 
 
 def _write_delimited(path: Path, rows: Iterable[Sequence[str]], delimiter: str) -> None:
@@ -135,16 +148,16 @@ def write_anki(
         fh.write(f"#tags column:{len(columns)}\n")
         writer = csv.writer(fh, delimiter="\t", lineterminator="\n")
         for e in entries:
-            tags = build_tags(e.rank, e.pos_guess, cfg)
+            tags = build_tags(e.rank, e.pos, cfg)
             if enrichable:
                 writer.writerow(
-                    [e.rank, e.lemma, e.pos_guess, "", "", "",
+                    [e.rank, e.lemma, e.pos, "", "", "",
                      "1" if e.is_mwe else "0", e.raw_freq,
                      f"{e.freq_per_million:.3f}", tags]
                 )
             else:
                 writer.writerow(
-                    [e.rank, e.lemma, e.pos_guess, "1" if e.is_mwe else "0",
+                    [e.rank, e.lemma, e.pos, "1" if e.is_mwe else "0",
                      e.raw_freq, f"{e.freq_per_million:.3f}", tags]
                 )
 

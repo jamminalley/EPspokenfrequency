@@ -1,6 +1,6 @@
 # Lemmas filtered out by the proper-noun/OOV heuristic.
 # Sorted desc by raw count -- review to rescue any false positives.
-# Truncated to entries with >= 100 occurrences: 18,527 of 251,318. The full list is written next to
+# Truncated to entries with >= 100 occurrences: 18,532 of 251,322. The full list is written next to
 # this file as *_full.txt and is not committed.
 # count	lemma	cap_ratio	reason
 132092	john	0.998	review_decision
@@ -16,6 +16,7 @@
 67169	david	0.998	review_decision
 59941	george	0.999	review_decision
 58380	james	0.999	review_decision
+53631	oder	0.893	cap_ratio=0.89
 53610	ben	0.996	cap_ratio=1.00, oov
 51609	harry	0.999	cap_ratio=1.00, oov
 50638	iorque	0.999	review_decision
@@ -184,12 +185,12 @@
 15536	king	0.989	review_decision
 15509	parker	0.999	cap_ratio=1.00, oov
 15466	olivia	0.998	cap_ratio=1.00, oov
-15421	miller	0.994	review_decision
 15399	leonard	1.000	review_decision
 15355	cooper	0.998	cap_ratio=1.00, oov
 15333	vincent	0.998	cap_ratio=1.00, oov
 15309	molly	0.998	cap_ratio=1.00, oov
 15305	jessica	0.997	cap_ratio=1.00, oov
+15273	miller	0.994	review_decision
 15131	ross	0.999	cap_ratio=1.00, oov
 15115	jay	0.998	cap_ratio=1.00, oov
 15076	penny	0.969	cap_ratio=0.97, oov
@@ -4845,7 +4846,6 @@
 631	mahal	0.997	cap_ratio=1.00, oov
 631	pee-wee	0.998	cap_ratio=1.00, oov
 631	scrappy	0.993	cap_ratio=0.99, oov
-631	series	0.931	cap_ratio=0.93
 631	sil	0.935	cap_ratio=0.94, oov
 631	tarek	1.000	cap_ratio=1.00, oov
 630	abernathy	1.000	cap_ratio=1.00, oov
@@ -6499,6 +6499,7 @@
 429	navajo	0.866	cap_ratio=0.87, oov
 429	ontário	1.000	cap_ratio=1.00
 429	schubert	1.000	cap_ratio=1.00
+429	tivo	0.950	cap_ratio=0.95, oov
 429	zira	1.000	cap_ratio=1.00, oov
 428	babi	1.000	cap_ratio=1.00, oov
 428	bartok	1.000	cap_ratio=1.00
@@ -8331,6 +8332,7 @@
 308	wire	0.893	cap_ratio=0.89, oov
 308	wise	0.953	cap_ratio=0.95, oov
 307	abba	0.986	cap_ratio=0.99, oov
+307	amã	0.981	cap_ratio=0.98
 307	antonieta	1.000	cap_ratio=1.00
 307	bin-khalid	1.000	cap_ratio=1.00, oov
 307	dolphin	0.983	cap_ratio=0.98, oov
@@ -8528,7 +8530,6 @@
 298	spenser	1.000	cap_ratio=1.00
 298	trafalgar	1.000	cap_ratio=1.00, oov
 297	aemon	1.000	cap_ratio=1.00, oov
-297	amã	0.981	cap_ratio=0.98
 297	bardot	1.000	cap_ratio=1.00, oov
 297	beatty	1.000	cap_ratio=1.00, oov
 297	bloomfield	1.000	cap_ratio=1.00, oov
@@ -13355,6 +13356,7 @@
 159	reven	1.000	cap_ratio=1.00, oov
 159	rojos	1.000	cap_ratio=1.00, oov
 159	saeed	1.000	cap_ratio=1.00, oov
+159	sando	0.987	cap_ratio=0.99, oov
 159	scala	1.000	cap_ratio=1.00
 159	shade	0.950	cap_ratio=0.95, oov
 159	sizzler	1.000	cap_ratio=1.00, oov
@@ -13902,6 +13904,7 @@
 150	poppa	0.979	cap_ratio=0.98, oov
 150	quincannon	1.000	cap_ratio=1.00, oov
 150	saba	0.864	cap_ratio=0.86, oov
+150	sanada	0.914	cap_ratio=0.91
 150	setrakian	1.000	cap_ratio=1.00, oov
 150	sher	0.964	cap_ratio=0.96, oov
 150	skank	0.925	cap_ratio=0.92, oov
@@ -13998,6 +14001,7 @@
 148	coleridge	1.000	cap_ratio=1.00, oov
 148	common	0.928	cap_ratio=0.93, oov
 148	cro-magnon	0.950	cap_ratio=0.95, oov
+148	dignam	0.957	cap_ratio=0.96
 148	divx	0.866	cap_ratio=0.87, oov
 148	elli	1.000	cap_ratio=1.00, oov
 148	emolia	1.000	cap_ratio=1.00, oov
@@ -14116,6 +14120,7 @@
 147	reeve	1.000	cap_ratio=1.00, oov
 147	renai	1.000	cap_ratio=1.00, oov
 147	revok	1.000	cap_ratio=1.00, oov
+147	rosales	1.000	cap_ratio=1.00, oov
 147	rov	1.000	cap_ratio=1.00, oov
 147	sintagma	1.000	cap_ratio=1.00
 147	stallion	0.976	cap_ratio=0.98, oov
@@ -19115,6 +19120,7 @@
 #	149	kamikazes	english_plural
 #	149	orioles	english_plural
 #	149	pockets	english_plural
+#	148	millers	english_plural
 #	148	pipes	english_plural
 #	148	pistons	english_plural
 #	148	shavers	english_plural
@@ -19355,7 +19361,7 @@
 #	14757	el	short_token
 #	13969	u	short_token
 #	10205	in	short_token
-#	8912	le	short_token
+#	8817	le	short_token
 #	8065	q	short_token
 #	7871	bo	short_token
 #	7691	us	short_token
@@ -19369,8 +19375,8 @@
 #	6273	my	short_token
 #	6069	z	short_token
 #	5946	yo	short_token
+#	5763	es	short_token
 #	5561	dj	short_token
-#	5515	es	short_token
 #	5262	jr	short_token
 #	5181	oz	short_token
 #	5145	fu	short_token
@@ -19546,6 +19552,7 @@
 #	313	ew	short_token
 #	296	oy	short_token
 #	296	uu	short_token
+#	296	vo	short_token
 #	292	ib	short_token
 #	288	mx	short_token
 #	287	dp	short_token
@@ -19625,7 +19632,6 @@
 #	137	nt	short_token
 #	136	ut	short_token
 #	135	bm	short_token
-#	135	éh	short_token
 #	133	tm	short_token
 #	131	gn	short_token
 #	131	hg	short_token

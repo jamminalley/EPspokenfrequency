@@ -14,6 +14,7 @@ fbi	68048	0.973	yes
 david	67169	0.998	yes
 george	59941	0.999	yes
 james	58380	0.999	yes
+oder	53631	0.893	yes
 iorque	50638	0.999	yes
 américa	50432	0.997	yes
 henry	48921	0.999	yes
@@ -98,8 +99,8 @@ francisco	15922	0.998	yes
 park	15818	0.996	yes
 julie	15757	0.994	yes
 king	15536	0.989	yes
-miller	15421	0.994	yes
 leonard	15399	1.000	yes
+miller	15273	0.994	yes
 lincoln	15031	0.995	yes
 fred	15000	1.000	yes
 gordon	14985	1.000	yes

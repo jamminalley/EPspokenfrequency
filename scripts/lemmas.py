@@ -335,6 +335,42 @@ class TieredBackend:
         return out
 
 
+class TagsBackend:
+    """Lemmas from the single Stanza tagging pass (scripts/occurrence.py).
+
+    Each surface gets the majority lemma over its tagged sample sentences,
+    ties broken lexicographically. The same pass supplies POS and the
+    per-occurrence splits, so all three come from one reading of the same
+    sentences.
+    """
+
+    name = "stanza_tags"
+
+    def __init__(
+        self,
+        tags: Mapping[str, Sequence[tuple[str, str, str]]],
+        vote_filter: Callable[[str, str, str], bool] | None = None,
+    ) -> None:
+        self.tags = tags
+        # (surface, lemma, upos) -> keep this sentence's vote? Drops votes
+        # where Stanza's lemma and tag contradict each other (`saia` given
+        # lemma *saia* but tagged VERB); if every vote is dropped, all count.
+        self.vote_filter = vote_filter
+
+    def lemmatize_types(
+        self, types: Sequence[str], contexts: Contexts | None = None
+    ) -> dict[str, str]:
+        out: dict[str, str] = {}
+        for surface in types:
+            occs = self.tags.get(surface, ())
+            kept = occs
+            if self.vote_filter is not None:
+                kept = [o for o in occs if self.vote_filter(surface, o[0], o[1])] or occs
+            votes = Counter(lemma for lemma, _, _ in kept)
+            out[surface] = _majority(votes, fallback=surface)
+        return out
+
+
 class VoteBackend:
     """Majority vote across member backends.
 

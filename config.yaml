@@ -89,8 +89,13 @@ lemmatizer:
   # `gated`: primary backend, but when its lemma is not a PT dictionary word
   # (stanza's agradeçar, comprir) fall back to the secondary's answer.
   gate:
-    primary: stanza
+    # stanza_tags: lemmas from the single Stanza tagging pass that also
+    # supplies POS and per-occurrence splits (scripts/occurrence.py).
+    primary: stanza_tags
     fallback: simplemma
+  # Drop a sentence's lemma vote when Stanza's lemma and tag contradict each
+  # other (lemma *saia* tagged VERB) -- the same rule the POS votes use.
+  tags_vote_filter: consistency     # consistency | none
   # Stanza is ~1000x slower per type than simplemma, so it is used only for
   # types frequent enough to reach the published bands; the tail gets
   # simplemma. See COMPARISON.md for the runtime estimate.
@@ -109,7 +114,13 @@ lemmatizer:
   context:
     enabled: true             # lemmatize in sampled sentence context
     samples_per_type: 5
-    max_types: 60000          # types (by rank) to collect context for
+    # Frequent forms get a larger sample: their counts are split across
+    # lemmas and POS by these votes, and 5 sentences gives 20% granularity.
+    large_samples_per_type: 50
+    large_min_count: 10000
+    # Types (by rank) to collect context for. Must cover the Stanza tier
+    # (63,253 types at count >= 144); 60,000 left ~3,000 of them untagged.
+    max_types: 70000
   validate_with_spellchecker: true
   spellchecker_lang: pt
   overrides_path: scripts/data/lemma_overrides.tsv
@@ -264,6 +275,41 @@ fixes:
   # legitimate MWEs like `o que`, `é que` and `à noite` still pass.
   mwe_constituent_whitelist: ["dr", "sr", "sra", "mr", "ms", "st"]
 
+# Published part of speech, from Stanza's tags over each word's sampled
+# sentences. A lemma's count is divided across POS the way surface counts
+# are divided across lemmas; a secondary POS becomes its own entry only
+# with enough evidence, otherwise its share joins the majority POS.
+pos:
+  source: tagger              # tagger | heuristic
+  split_min_share: 0.25       # count-weighted share of the lemma
+  split_min_votes: 3          # tagged sentences supporting it
+  # Prepositions are never conjunctions. Universal Dependencies tags a
+  # preposition before an infinitive as SCONJ ("para fazer"), which gave
+  # para and de a second, conjunction row. For these words a CCONJ/SCONJ tag
+  # counts as prep; their other readings are untouched (a is also the
+  # article, segundo also "second", visto also a participle). The brief's
+  # list, plus every preposition on the closed-class list.
+  always_prep: ["a", "de", "para", "por", "até", "sem", "com", "em", "sobre",
+                "após", "ante", "através", "conforme", "contra", "desde",
+                "durante", "entre", "exceto", "perante", "salvo", "segundo",
+                "sob", "trás", "visto"]
+  # UD tags -> the list's POS values. PROPN counts as noun: proper nouns
+  # are removed by the filter, so a surviving PROPN tag is a tagger miss.
+  upos_map:
+    NOUN: noun
+    PROPN: noun
+    VERB: verb
+    AUX: verb
+    ADJ: adj
+    ADV: adv
+    PRON: pron
+    DET: det
+    ADP: prep
+    CCONJ: conj
+    SCONJ: conj
+    INTJ: intj
+    NUM: num
+
 # Headword policies from eval/conventions.md. A top-level section rather
 # than part of `lemmatizer:` on purpose: the lemma cache is keyed on the
 # lemmatizer settings, and these run after the backend, so changing a
@@ -352,6 +398,7 @@ quality:
     - "cirurgia|cirurgiã"   # surgery / a (female) surgeon
     - "espia|espiã"         # spies, he spies / a (female) spy
     - "ha|hã"               # laughter / hesitation: two interjections
+    - "media|média"         # EP "os media" (the media) / "média" (average)
   # Known typo pairs: a missing-accent spelling below the 10x folding
   # ratio, so it survives as its own entry. Accepted as known rather than
   # folded, so the release build passes; any new suspect still fails it.
@@ -423,8 +470,8 @@ output:
     notetype: "Portuguese (EP) – Spoken Frequency"
     html: false
     separator: tab
-    minimal_columns: [Rank, Lemma_PT, POS_guess, Is_MWE, Raw_Freq, Freq_per_million, Tags]
-    enrichable_columns: [Rank, Lemma_PT, POS_guess, Gloss_EN, Example_PT, Example_EN, Is_MWE, Raw_Freq, Freq_per_million, Tags]
+    minimal_columns: [Rank, Lemma_PT, POS, Is_MWE, Raw_Freq, Freq_per_million, Tags]
+    enrichable_columns: [Rank, Lemma_PT, POS, Gloss_EN, Example_PT, Example_EN, Is_MWE, Raw_Freq, Freq_per_million, Tags]
     tags:
       band500: 500
       band1000: 1000

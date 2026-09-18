@@ -1,8 +1,43 @@
 # Changelog
 
-## 2026-09 — rebuilt pipeline, human-checked
+## Unreleased — part of speech from the tagger, larger samples
 
-The first release whose pipeline is in this repository. `python -m
+**Overlap with the April list** is now 79.0% of band 1 (ρ 0.944) and
+63.3% of band 2 (ρ 0.851). Against v0.9 the word lists barely change; what
+changes is the POS column and, through POS splitting, which rows fill the
+last places of each band.
+
+- **Part of speech from Stanza.** The POS column -- renamed from
+  `pos_guess` to `pos`, and the Anki field from `POS_guess` to `POS` -- is
+  now the tagger's majority vote over each word's sample sentences,
+  replacing the rule heuristic reconstructed from the April list.
+  Prepositions are never counted as conjunctions (Universal Dependencies
+  tags *para fazer* as one); the list is in config.yaml. A word the tagger uses
+  as two parts of speech gets one row for each, with its count divided the
+  same way participle counts are divided across lemmas: 311 words now have
+  more than one row (`a` as article and preposition, `que`, `este`,
+  `morto`), so the 10,000 rows hold 9,390 distinct words. 148 entries
+  without usable tags, mostly contractions, keep the heuristic.
+- **Larger samples for frequent words.** Word forms with 10,000+
+  occurrences are now read in 50 sentences instead of 5, so their splits
+  move in 2% steps instead of 20%.
+- **One tagging pass.** Lemmas, participle splits and POS now come from a
+  single Stanza pass over about 500,000 sentences, and a lemma vote is
+  discarded when Stanza's lemma and tag contradict each other (`saia`
+  given the lemma *saia* but tagged VERB). Gold-set accuracy is unchanged
+  at 98.5%. `vá` added to the override table (Stanza read it as *ver*).
+- **`ser` and `ir` are not separated after all.** v0.9 said they were split
+  by context. The larger sample shows the tagger assigns `foi`, `fui`,
+  `fomos` and `foram` to *ser* almost regardless of context — all 50
+  sampled uses of `fui` and `fomos`, including *fui ao Paquistão*. The
+  README now says *ser* is overcounted and *ir* undercounted. *Ser* now
+  counts 21.5M tokens and *ir* 8.9M. A next-word rule is written
+  (`scripts/serir.py`) but not applied: `eval/ser_ir_sample.tsv` holds 100
+  random corpus lines, 20 per form, for human labeling first.
+
+## v0.9 — 2026-09, rebuilt pipeline, human-checked (private checkpoint)
+
+The first version whose pipeline is in this repository. `python -m
 scripts.build` regenerates `out/` from the corpus, byte for byte, with the
 pinned library versions.
 
@@ -22,9 +57,10 @@ the same word several times, and this release does not.
   each word in real sentences, with a dictionary check and simplemma as the
   fallback: 98.5% correct on a human-reviewed sample, against 90.4% for
   simplemma alone.
-- **`ser` and `ir` separated.** April assigned `foi`, `fomos`, `foram`
-  wholesale to `ir`. They are now split by context: `ir` falls from 11.2M
-  tokens to 9.5M, and `ser` rises from 20.6M to 22.9M.
+- **`ser` and `ir` separated** — *later found not to work; see
+  Unreleased.* April assigned `foi`, `fomos`, `foram` wholesale to `ir`.
+  They were split by the tagger: `ir` fell from 11.2M tokens to 9.5M, and
+  `ser` rose from 20.6M to 22.9M.
 - **Enclitics split.** April counted `dá-me` and `vou-me` as single words
   (its README said otherwise). They are now split into verb + pronoun, so
   `vai-te embora` no longer creates its own entries, and object pronouns
@@ -61,14 +97,14 @@ the same word several times, and this release does not.
 
 ### Unchanged
 
-File names, columns, the Anki note type, deck names and tags, so an
-existing Anki import keeps working. The `pos_guess` column is still a
-rule-based heuristic, reconstructed from the April list.
+The `pos_guess` column was still a rule-based heuristic, reconstructed
+from the April list.
 
-## 2026-04 — original release (`v0-april-2026`)
+## 2026-04 — first version, unpublished (`v0-april-2026`)
 
 Frequency list of the top 10,000 lemmas, with Anki decks, produced by a
-pipeline whose scripts were later lost. Automatic output, not reviewed.
+pipeline whose scripts were later lost. Automatic output, not reviewed,
+and never published.
 Kept in [archive/out_april_2026/](archive/out_april_2026/) for comparison.
 
 Known problems, all found while rebuilding: inflected forms and accent
