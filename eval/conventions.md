@@ -17,12 +17,18 @@ Learners meet and produce them as single words. This is the main
 deliberate departure from Davies, which splits them — it is why `do`,
 `da`, `ao` appear "missing" from his list and near the top of this one.
 
-## 2. Gendered noun pairs fold into the masculine
+## 2. Adjectives fold to the masculine; noun pairs keep the feminine
 
-`miúda` → `miúdo`, `inglesa` → `inglês`, `adulta` → `adulto`, following
-dictionary practice. Exception: a feminine form with its own distinct
-meaning stays separate (e.g. `ferida` "wound" is not the feminine of
-`ferido`).
+Adjectives and participles fold to the masculine singular (`branca` →
+`branco`, `culpada` → `culpado`), since the feminine is pure agreement.
+Nouns for people and animals keep the feminine as its own headword
+(`senhora`, `namorada`, `tia`, `miúda`, `viúva`): a learner has to learn
+these words, and hiding `senhora` (237k occurrences) inside `senhor` would
+misrepresent what is actually said. This matches Davies, who lists
+`senhora`, `filha`, `menina` separately. A feminine with its own distinct
+meaning always stays (`música`, `sexta`, `ferida`). Forms that are both
+adjective and noun (`inglesa`) are resolved per occurrence by the tagger.
+The pair-by-pair decisions are in `eval/gender_pairs.tsv`.
 
 ## 3. Diminutives stay separate
 

@@ -46,7 +46,7 @@ rank_40m	surface	count_40m	claude_lemma	category	note	jim_lemma	jim_verdict
 254	achas	95378	achar	ok			ok
 258	homens	92588	homem	ok			ok
 281	cabeça	84819	cabeça	ok			ok
-324	morto	72786	morto	ambiguous	adj/noun 'morto' OR participle of morrer/matar. Convention: keep 'morto' as adjective lemma		ok
+324	morto	72786	morto	ambiguous	adj/noun 'morto' OR participle of morrer/matar. Convention: keep 'morto' as adjective lemma	morrer|morto	fix
 327	medo	71317	medo	ok			ok
 335	cara	68457	cara	ok	EP 'face' — legitimate. NOTE: the old BP exclusion list dropped 'cara' entirely, which is wrong for EP		ok
 338	suas	67623	seu	ok			ok
@@ -95,7 +95,7 @@ rank_40m	surface	count_40m	claude_lemma	category	note	jim_lemma	jim_verdict
 707	tinhas	29127	ter	ok			ok
 708	jovem	29121	jovem	ok			ok
 709	beber	29113	beber	ok			ok
-712	miúda	29037	miúdo	convention	gendered noun: fold miúda into miúdo, or keep miúda separate? Davies-style is masc. lemma. Decide once, apply everywhere		ok
+712	miúda	29037	miúdo	convention	gendered noun: fold miúda into miúdo, or keep miúda separate? Davies-style is masc. lemma. Decide once, apply everywhere	miúda	fix
 715	ai	28641	ai	ambiguous	interjection 'ai' OR 'aí' typed without accent. Both frequent		ok
 718	acontece	28563	acontecer	ok			ok
 738	bonito	27094	bonito	ok			ok
@@ -123,7 +123,7 @@ rank_40m	surface	count_40m	claude_lemma	category	note	jim_lemma	jim_verdict
 939	metade	20943	metade	ok			ok
 941	mandar	20921	mandar	ok			ok
 952	hipótese	20531	hipótese	ok			ok
-953	chamado	20511	chamar	ambiguous	participle of chamar OR noun 'chamado' (call, BP-leaning). Verb wins in EP		ok
+953	chamado	20511	chamar	ambiguous	participle of chamar OR noun 'chamado' (call, BP-leaning). Verb wins in EP	chamar|chamado	fix
 960	papel	20430	papel	ok			ok
 962	banco	20371	banco	ok			ok
 976	saia	20177	sair	ambiguous	subjunctive/imperative of sair OR noun 'saia' (skirt). Verb wins		ok
@@ -155,7 +155,7 @@ rank_40m	surface	count_40m	claude_lemma	category	note	jim_lemma	jim_verdict
 2334	abram	7301	abrir	ok			ok
 2354	confio	7228	confiar	ok			ok
 2424	garanto	6989	garantir	ok			ok
-2493	ferida	6717	ferida	ambiguous	noun 'ferida' (wound) OR fem. of adj/participle ferido. Noun wins		ok
+2493	ferida	6717	ferida	ambiguous	noun 'ferida' (wound) OR fem. of adj/participle ferido. Noun wins	ferir|ferida	fix
 2504	violência	6693	violência	ok			ok
 2533	assinar	6614	assinar	ok			ok
 2749	lados	6029	lado	ok			ok
@@ -198,7 +198,7 @@ rank_40m	surface	count_40m	claude_lemma	category	note	jim_lemma	jim_verdict
 5307	tentam	2646	tentar	ok			ok
 5335	daniels	2630	daniels	proper			drop
 5356	agulha	2613	agulha	ok			ok
-5402	liberta	2588	libertar	ambiguous	verb OR fem. of adj 'liberto'. Verb wins		ok
+5402	liberta	2588	libertar	ambiguous	verb OR fem. of adj 'liberto'. Verb wins	libertar|liberto	fix
 5414	precisavas	2581	precisar	ok			ok
 5445	quinto	2560	quinto	ok			ok
 5498	gota	2526	gota	ok			ok
@@ -219,24 +219,24 @@ rank_40m	surface	count_40m	claude_lemma	category	note	jim_lemma	jim_verdict
 6060	pirata	2205	pirata	ok			ok
 6082	cais	2189	cais	ambiguous	noun 'cais' (quay) OR 2sg of cair. Verb likelier in dialogue		ok
 6123	pensão	2172	pensão	ok			ok
-6244	inglesa	2115	inglês	ok			ok
+6244	inglesa	2115	inglês	ok		inglês|inglesa	fix
 6370	gerir	2058	gerir	ok			ok
 6469	ação	2013	ação	ok	post-1990-Agreement spelling; pre-AO EP is 'acção'. Both will appear in corpus — decide whether to merge		ok
 6488	edith	2003	edith	proper			drop
 6608	fluxo	1953	fluxo	ok			ok
 6816	onu	1870	onu	abbrev			drop
 6879	paro	1845	parar	ok			ok
-6958	condicionado	1821	condicionado	ambiguous	'ar condicionado' (adj) OR participle of condicionar. Adj wins		ok
+6958	condicionado	1821	condicionado	ambiguous	'ar condicionado' (adj) OR participle of condicionar. Adj wins	condicionar|condicionado	fix
 7032	mecânico	1793	mecânico	ok			ok
 7081	seguindo	1776	seguir	ok			ok
 7097	espreitar	1768	espreitar	ok	EP-specific		ok
 7210	numero	1737	número	typo	missing accent — diacritic fold target; 'numero' is not a PT word so folding is safe		ok
 7223	einstein	1734	einstein	proper			drop
-7256	vivido	1724	viver	ok			ok
+7256	vivido	1724	viver	ok		viver|vivido	fix
 7260	sexto	1723	sexto	ok			ok
 7287	cavernas	1715	caverna	ok			ok
 7308	voces	1710	você	typo	BP + missing accent. The old pipeline's BP filter missed this spelling		drop
-7315	comparado	1707	comparar	ok			ok
+7315	comparado	1707	comparar	ok		comparar|comparado	fix
 7332	apanhámo	1702	apanhar	artifact	from 'apanhámo-lo' (apanhámos + clitic). Hyphen split leaves a truncated stem — tokenizer must restore the -s before lemmatizing		ok
 7392	punha	1681	pôr	ok			ok
 7396	hálito	1679	hálito	ok			ok
@@ -253,16 +253,16 @@ rank_40m	surface	count_40m	claude_lemma	category	note	jim_lemma	jim_verdict
 7996	comam	1518	comer	ok			ok
 8109	contratos	1488	contrato	ok			ok
 8198	tomaram	1462	tomar	ok			ok
-8239	adulta	1450	adulto	ok			ok
+8239	adulta	1450	adulto	ok		adulto|adulta	fix
 8255	fenda	1447	fenda	ok			ok
 8323	memphis	1431	memphis	proper			drop
 8361	veneza	1420	veneza	proper	place name (Venice) — PT spelling, but still a proper noun		drop
 8413	paramédicos	1408	paramédico	ok			ok
-8542	detector	1379	detector	ok			ok
+8542	detector	1379	detector	ok		detetor	fix
 8690	vazias	1348	vazio	ok			ok
 8766	atiraram	1333	atirar	ok			ok
 8843	pensaria	1318	pensar	ok			ok
-8961	bebido	1294	beber	ok			ok
+8961	bebido	1294	beber	ok		beber|bebido	fix
 9021	revolta	1281	revolta	ambiguous	noun OR 3sg of revoltar. Noun wins		ok
 9076	puderam	1269	poder	ok			ok
 9077	cocktail	1269	cocktail	foreign	loan, used in EP		drop
@@ -273,18 +273,18 @@ rank_40m	surface	count_40m	claude_lemma	category	note	jim_lemma	jim_verdict
 9462	cora	1195	cora	proper	Jim: verb corar (blush)? Corpus check: 1171 lines, only 50 lowercase and most truncated coragem/coração — ~96% the name. Dropped.		drop
 9584	concorrência	1176	concorrência	ok			ok
 9601	encoste	1173	encostar	ok			ok
-9687	vencido	1161	vencer	ok			ok
+9687	vencido	1161	vencer	ok		vencer|vencido	fix
 9725	tomava	1154	tomar	ok			ok
 9738	syd	1153	syd	proper			drop
 9752	vala	1149	vala	ok			ok
 9832	vendia	1133	vender	ok			ok
-9887	arruinado	1124	arruinar	ok			ok
+9887	arruinado	1124	arruinar	ok		arruinar|arruinado	fix
 10161	facilidade	1075	facilidade	ok			ok
 10305	agricultor	1055	agricultor	ok			ok
 10479	oitavo	1030	oitavo	ok			ok
 10624	et	1008	et	foreign	Latin/English fragment (E.T., et al.)		drop
 10670	admirador	1001	admirador	ok			ok
-11406	localizado	902	localizar	ok			ok
+11406	localizado	902	localizar	ok		localizar|localizado	fix
 11524	convence	889	convencer	ok			ok
 11636	suporta	876	suportar	ok			ok
 11661	acolá	874	acolá	ok			ok
@@ -309,16 +309,16 @@ rank_40m	surface	count_40m	claude_lemma	category	note	jim_lemma	jim_verdict
 16265	vagamente	539	vagamente	ok			ok
 16401	disparas	532	disparar	ok			ok
 16584	livingston	524	livingston	proper			drop
-16614	batidas	522	batida	ok			ok
+16614	batidas	522	batida	ok		bater|batida	fix
 16645	grendel	521	grendel	proper			drop
 16734	necessitar	516	necessitar	ok			ok
-16757	educados	515	educado	ok	adj; could also be participle of educar		ok
+16757	educados	515	educado	ok	adj; could also be participle of educar	educar|educado	fix
 17021	wagner	504	wagner	proper			drop
 17067	auscultadores	502	auscultador	ok	EP-specific (BP: fones)		ok
-17675	honrados	476	honrado	ok			ok
-17684	avisados	476	avisar	ok	participle		ok
+17675	honrados	476	honrado	ok		honrar|honrado	fix
+17684	avisados	476	avisar	ok	participle	avisar|avisado	fix
 17687	asno	476	asno	ok			ok
-17966	codificada	465	codificar	ok			ok
+17966	codificada	465	codificar	ok		codificar|codificado	fix
 17987	despacho	464	despacho	ok			ok
 18408	contrabandistas	447	contrabandista	ok			ok
 18759	reservatório	434	reservatório	ok			ok
@@ -355,12 +355,12 @@ rank_40m	surface	count_40m	claude_lemma	category	note	jim_lemma	jim_verdict
 25820	teta	256	teta	ok			ok
 25830	sniper	256	sniper	foreign	loan		drop
 26721	toxicodependente	242	toxicodependente	ok	EP-specific		ok
-27420	mascarada	231	mascarado	ok	adj; also noun 'mascarada' (masquerade)		ok
+27420	mascarada	231	mascarado	ok	adj; also noun 'mascarada' (masquerade)	mascarar|mascarado	fix
 27424	bodes	231	bode	ok			ok
 27617	dadores	228	dador	ok	EP-specific (BP: doador)		ok
 28304	cientifica	219	científico	typo	missing accent → científica → científico		ok
-28618	educadas	215	educado	ok			ok
-28750	corrompido	213	corromper	ok			ok
+28618	educadas	215	educado	ok		educar|educado	fix
+28750	corrompido	213	corromper	ok		corromper|corrompido	fix
 28848	azevinho	212	azevinho	ok			ok
 28855	excitou	212	excitar	ok			ok
 29183	martins	208	martins	proper	surname		drop
@@ -379,12 +379,12 @@ rank_40m	surface	count_40m	claude_lemma	category	note	jim_lemma	jim_verdict
 33025	reconfigurar	168	reconfigurar	ok			ok
 33616	hitomi	163	hitomi	proper			drop
 33963	virarem	160	virar	ok			ok
-34300	colombiana	157	colombiano	ok			ok
+34300	colombiana	157	colombiano	ok		colombiano|colombiana	fix
 34309	ulyanov	157	ulyanov	proper			drop
 34336	pritchett	157	pritchett	proper			drop
 34699	sâo	154	são	typo	wrong accent (circumflex for tilde) — encoding/typing error; underlying word is 'são' (ser 3pl, or adj)		ok
 34973	rutland	152	rutland	proper			drop
-35090	designadas	151	designar	ok			ok
+35090	designadas	151	designar	ok		designar|designado	fix
 35863	esventrar	145	esventrar	ok			ok
 35975	supersticiosa	144	supersticioso	ok			ok
 36228	moltisanti	143	moltisanti	proper			drop
@@ -394,7 +394,7 @@ rank_40m	surface	count_40m	claude_lemma	category	note	jim_lemma	jim_verdict
 37044	insistimos	137	insistir	ok			ok
 37566	kersey	134	kersey	proper			drop
 37930	fartava	131	fartar	ok			ok
-38014	armazenados	131	armazenar	ok			ok
+38014	armazenados	131	armazenar	ok		armazenar|armazenado	fix
 38546	ocultismo	128	ocultismo	ok			ok
 38610	planadores	127	planador	ok			ok
 39303	libéria	123	libéria	proper	Liberia		drop
