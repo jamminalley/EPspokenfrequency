@@ -83,6 +83,7 @@ def render(
     gold_summary: str,
     stats: Mapping[str, Any],
     baseline_reports: Sequence[tuple[str, dict[str, Any]]] = (),
+    conventions_text: str = "",
 ) -> str:
     from scripts.counts import format_fingerprint
 
@@ -219,6 +220,83 @@ def render(
                 "",
             ]
 
+    if conventions_text:
+        lines += [conventions_text, ""]
+
     lines += ["## Gold-set lemmatizer accuracy", "", gold_summary, "",
               "## Quality report", "", quality_summary, ""]
     return "\n".join(lines) + "\n"
+
+
+_CONVENTION_TITLES = {
+    "1_contractions": "1. Contractions are their own entries",
+    "2_gender": "2. Gendered nouns fold into the masculine",
+    "2_gender_exception": "2. (exception) Feminines with their own meaning kept separate",
+    "3_diminutives": "3. Diminutives stay separate",
+    "4_comparatives": "4. Comparatives are their own lemmas",
+    "5_spelling_reform": "5. Spelling-reform variants merge under the post-1990 spelling",
+}
+
+
+def render_conventions(log, counts: Mapping[str, int], entries: Sequence[Any]) -> str:
+    """Which published entries each convention changed.
+
+    Built from the convention log: every (surface, old lemma, new lemma)
+    remap moves that surface's tokens from the old headword to the new one.
+    """
+    rank = {e.lemma: e.rank for e in entries if not e.is_mwe}
+    cutoff = min((e.raw_freq for e in entries), default=0)
+    lines = [
+        "## Lemmatization conventions (eval/conventions.md)",
+        "",
+        "Each convention remaps surfaces from one headword to another. Below:",
+        "the published entries each one created, grew or protected, and the",
+        "former headwords it merged away that were big enough to have been",
+        f"published on their own (>= {cutoff:,} tokens, the rank-10000 count).",
+        "",
+        "| convention | surfaces remapped | tokens moved |",
+        "|---|---:|---:|",
+    ]
+    summary = log.summary(counts)
+    for name in sorted(log.changes):
+        lines.append(f"| {_CONVENTION_TITLES.get(name, name)} | "
+                     f"{summary[name]['surfaces']:,} | {summary[name]['tokens']:,} |")
+    lines.append("")
+
+    for name in sorted(log.changes):
+        gained: dict[str, int] = {}
+        lost: dict[str, int] = {}
+        sources: dict[str, set[str]] = {}
+        for surface, old, new in log.changes[name]:
+            c = counts.get(surface, 0)
+            gained[new] = gained.get(new, 0) + c
+            lost[old] = lost.get(old, 0) + c
+            sources.setdefault(new, set()).add(surface)
+
+        published = sorted(
+            (w for w in gained if w in rank), key=lambda w: (rank[w], w)
+        )
+        merged_away = sorted(
+            (w for w, c in lost.items() if w not in rank and c >= cutoff),
+            key=lambda w: (-lost[w], w),
+        )
+        lines += [f"### {_CONVENTION_TITLES.get(name, name)}", ""]
+        if published:
+            lines += ["| entry | rank | tokens gained | from surfaces |",
+                      "|---|---:|---:|---|"]
+            for w in published[:25]:
+                srcs = ", ".join(f"`{x}`" for x in sorted(sources[w])[:6])
+                more = f" +{len(sources[w]) - 6}" if len(sources[w]) > 6 else ""
+                lines.append(f"| `{w}` | {rank[w]} | {gained[w]:,} | {srcs}{more} |")
+            if len(published) > 25:
+                lines.append(f"\n_{len(published) - 25} further published entries affected._")
+            lines.append("")
+        else:
+            lines += ["_No published entry affected._", ""]
+        if merged_away:
+            lines.append(
+                "Former headwords merged away: "
+                + ", ".join(f"`{w}` ({lost[w]:,})" for w in merged_away[:25])
+            )
+            lines.append("")
+    return "\n".join(lines)

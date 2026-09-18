@@ -1,96 +1,53 @@
 # Lemmatizer backend comparison
 
-Scored against `eval/lemma_gold.tsv` with sampled sentence context
-(5 sentences per type, 395 of 400 gold surfaces covered).
+Scored against the human-reviewed gold set `eval/lemma_gold.tsv`: 332 scored rows, 68 rows marked `drop` excluded. A gold value with `|` accepts either alternative (`fomos` → `ir|ser`). All backends see the same sampled sentence context (5 per type).
 
-> **Provisional.** 0 of 400 gold rows carry a human verdict, so the gold
-> falls back to `claude_lemma`, a first-pass guess. The *direction* of this
-> result is robust — spaCy's errors are independently verifiable non-words —
-> but the magnitude is not. Fill in `jim_lemma` / `jim_verdict` to firm it up.
+Each backend is scored two ways. **With conventions** passes its output through the convention layer from `eval/conventions.md` — contractions, gender pairs, diminutives, comparatives, spelling reform — which is what the pipeline publishes, and is the column that matters. **Raw** is the backend alone.
 
-| backend | overall | ranks 1–1000 | 1001–10000 | 10001+ | errors |
-|---|---:|---:|---:|---:|---:|
-| `spacy` pt_core_news_lg 3.8.0 | 83.8% | 82.3% | 83.3% | 85.8% | 65 |
-| `simplemma` 2.0.0 | 90.8% | 90.0% | 91.3% | 90.8% | 37 |
-| `stanza` pt | 92.2% | **96.2%** | 92.7% | 87.5% | 31 |
-| `vote` (all three) | **93.2%** | 93.1% | **94.0%** | **92.5%** | 27 |
+| backend | with conventions | raw | ranks 1–1000 | 1001–10000 | 10001+ | errors |
+|---|---:|---:|---:|---:|---:|---:|
+| `stanza+gate` — **pipeline backend** | **94.9%** | 94.6% | 97.6% | 95.9% | 89.4% | 17 |
+| `stanza` | **91.9%** | 91.6% | 97.6% | 91.8% | 83.5% | 27 |
+| `vote` (simplemma + stanza + spacy) | **92.2%** | 91.9% | 96.8% | 92.6% | 84.7% | 26 |
+| `simplemma` 2.0.0 | **92.2%** | 90.4% | 94.4% | 91.8% | 89.4% | 26 |
+| `spacy` pt_core_news_lg — *dropped* | **83.1%** | 81.0% | 88.0% | 80.3% | 80.0% | 56 |
 
-The backends fail in genuinely different places: only **6** gold rows defeat
-all three. Stanza rescues 30 simplemma errors; simplemma rescues 24 Stanza
-errors. That independence is why the majority beats every member.
+Band columns are with conventions. Ranks are from the 40M-line sample the gold set was drawn from.
 
-## spaCy loses on verb morphology, and invents non-words
+## Conclusions
 
-Verified directly, outside the pipeline wrapper:
+- **stanza+gate is the best backend by about 3 points**, and best or tied-best in every band. The gate — fall back to simplemma when Stanza's lemma is not a dictionary word — fixes exactly the errors Stanza makes by inventing non-words (`agradeço` → *agradeçar*, `comprei` → *comprir*).
+- **The conventions help simplemma most** (90.4% → 92.2%), because simplemma folds forms the conventions keep apart: `aos`, `nas`, `nos` (contractions), `coisinha` (diminutive), `música`, `cara`, `ferida` (feminines with their own meaning). Stanza already keeps those apart, so the layer barely changes it.
+- **spaCy is last by about 12 points** and has been dropped. It fails on European Portuguese verb morphology — `combinámos` → *combinár*, `cheguei` unlemmatized — and emits lemmas containing spaces (`ao` → `a o`).
+- **The vote does not beat stanza+gate.** A majority including the weakest backend lets it outvote the strongest one.
 
-| surface | spaCy lemma | correct |
-|---|---|---|
-| `cheguei` | `cheguei` (unchanged) | `chegar` |
-| `Abram` | `Abram` (capital kept) | `abrir` |
-| `agradeço` | `agradeçar` — not a word | `agradecer` |
-| `combinámos` | `combinár` — not a word | `combinar` |
-| `tua` | `tuo` — not a word | `teu` |
-| `ao` | `a o` — contains a space | `ao` |
+## The 17 remaining stanza+gate errors
 
-`combinámos` is the European spelling specifically (BP writes
-`combinamos`), so the failure is worst exactly where this project cares.
-The `a o` output would also break the `is_mwe` distinction, since a lemma
-with a space is indistinguishable from a multi-word entry.
+| surface | gold | pipeline | kind |
+|---|---|---|---|
+| `lo` | `o` | `ele` | enclitic pronoun from the gold's hyphen-splitting tokenizer; pipeline does not split |
+| `procura` | `procurar` | `procura` | stanza picks the noun *procura* over *procurar* |
+| `vejam` | `ver` | `vir` | stanza picks *vir* for a form of *ver* |
+| `estados` | `estado` | `estados` | plural not folded |
+| `mentes` | `mentir` | `mente` | stanza picks the noun *mente* over *mentir* |
+| `numero` | `número` | `numero` | **gold conflicts with the no-merge rule** (see below) |
+| `detector` | `detector` | `detetor` | **gold conflicts with convention 5** (see below) |
+| `arruinado` | `arruinar` | `arruinado` | participle kept as adjective (gold: verb) |
+| `quadrados` | `quadrado` | `quadrados` | plural not folded |
+| `educados` | `educado` | `educar` | participle read as verb (gold: adjective) |
+| `honrados` | `honrado` | `honrar` | participle read as verb (gold: adjective) |
+| `sacas` | `sacar` | `saca` | stanza picks the noun *saca* over *sacar* |
+| `mascarada` | `mascarado` | `mascarar` | participle read as verb (gold: adjective) |
+| `bodes` | `bode` | `bodes` | plural not folded |
+| `cientifica` | `científico` | `cientifico` | missing accent + gender; `cientifico` is not reachable by folding |
+| `corrompido` | `corromper` | `corrompido` | participle kept as adjective (gold: verb) |
+| `sâo` | `são` | `ser` | wrong diacritic (â for ã); not a missing accent, so folding cannot reach it |
 
-## simplemma loses by over-lemmatizing nouns into verbs
+Five of the 17 are participles, and the gold is not uniform about them: `arruinado` and `corrompido` go to the verb, while `educados`, `honrados` and `mascarada` go to the adjective. That is a legitimate context-dependent split, but no type-level rule can match both halves. Worth a convention of its own.
 
-spaCy is right and simplemma wrong on this class:
+## Two gold rows that contradict eval/conventions.md
 
-| surface | simplemma | correct |
-|---|---|---|
-| `agulha` | `agulhar` | `agulha` (a needle) |
-| `fenda` | `fender` | `fenda` (a crack) |
-| `ferida` | `ferido` | `ferida` (a wound) |
-| `cara` | `caro` | `cara` (a face) |
-| `coisinha` | `coisa` | `coisinha` |
+These count as pipeline errors above, but the pipeline is following the written convention in both. One side or the other needs to change.
 
-That `cara` row is the same word the original pipeline wrongly excluded as
-Brazilian.
-
-## The 2-member vote was meaningless
-
-`vote` scored identically to `simplemma` to four figures — not a
-coincidence. With two members every disagreement is a 1–1 tie, so the
-tiebreak priority decides every case and the vote reduces to its first
-backend. It needs three members. Stanza is being installed as the third.
-
-## But the vote loses on this project's own problem cases
-
-Aggregate accuracy is not the whole story. On the specific errors the
-original README documented, the vote is **worse than Stanza alone**:
-
-| surface | simplemma | spaCy | stanza | vote | correct |
-|---|---|---|---|---|---|
-| `chegas` | `chega` ✗ | `chega` ✗ | `chegar` ✓ | `chega` ✗ | `chegar` |
-| `voce` | `voce` ✗ | `voce` ✗ | `você` ✓ | `voce` ✗ | `você` |
-| `nao` | `não` ✓ | `nao` ✗ | `nao` ✗ | `nao` ✗ | `não` |
-
-`chegas` → `chega` is the exact error the original README calls out. Stanza
-fixes it; the vote reintroduces it. The mechanism is simple: spaCy, the
-weakest backend at 83.8%, carries equal weight, so whenever it echoes
-simplemma's mistake it outvotes the strongest backend 2–1.
-
-## Recommendation
-
-Three options, in order of preference:
-
-1. **Stanza alone.** Best single backend (92.2%, and 96.2% on the first
-   1000 ranks where accuracy matters most), and it fixes the documented
-   `chegas` error. Costs ~1s per 20 sentences — fine at type level.
-2. **Weighted or Stanza-anchored vote** — require Stanza to be outvoted by
-   *both* others rather than either. Keeps the aggregate gain without
-   letting the weakest member reintroduce known errors.
-3. **Plain 3-way vote.** Best aggregate (93.2%) but demonstrably
-   reintroduces errors this project already knows about.
-
-Dropping spaCy entirely is also defensible: it is last by 7 points, emits
-non-words, and its one real contribution (noun over-lemmatization) is
-already covered by Stanza.
-
-All of these numbers rest on an unreviewed gold set. The `chegas` / `voce`
-/ `nao` rows above do not — those are checkable by inspection.
+- **`detector`** — the gold keeps `detector`, but convention 5 merges pre-1990 spellings under the post-1990 one, and the post-1990 European spelling is `detetor`. Either the gold row or the convention needs an exception.
+- **`numero`** — the gold folds it into `número`, and conventions.md even lists `numero` as an example of a missing-accent form to fold. But the same rule says to fold *only when the unaccented string is not itself a valid word*, and `numero` is one: *eu numero*, "I number". The rule and its example disagree.

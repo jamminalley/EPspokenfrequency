@@ -184,6 +184,53 @@ fixes:
   # legitimate MWEs like `o que`, `é que` and `à noite` still pass.
   mwe_constituent_whitelist: ["dr", "sr", "sra", "mr", "ms", "st"]
 
+# Headword policies from eval/conventions.md. A top-level section rather
+# than part of `lemmatizer:` on purpose: the lemma cache is keyed on the
+# lemmatizer settings, and these run after the backend, so changing a
+# convention must not force another hour of Stanza.
+conventions:
+  enabled: true              # applied in stage 2 only
+  # 1. Contractions are their own entries (the main departure from Davies).
+  contractions:
+    enabled: true
+    forms: ["ao", "aos", "à", "às", "do", "da", "dos", "das", "no", "na",
+            "nos", "nas", "pelo", "pela", "pelos", "pelas", "num", "numa",
+            "nuns", "numas", "dum", "duma", "duns", "dumas",
+            "deste", "desta", "destes", "destas", "desse", "dessa", "desses",
+            "dessas", "daquele", "daquela", "daqueles", "daquelas", "disto",
+            "disso", "daquilo", "neste", "nesta", "nestes", "nestas", "nesse",
+            "nessa", "nesses", "nessas", "naquele", "naquela", "naqueles",
+            "naquelas", "nisto", "nisso", "naquilo", "àquele", "àquela",
+            "àqueles", "àquelas", "àquilo", "dele", "dela", "deles", "delas",
+            "nele", "nela", "neles", "nelas", "daqui", "daí", "dali", "noutro",
+            "noutra", "noutros", "noutras", "doutro", "doutra",
+            "comigo", "contigo", "consigo", "connosco", "convosco"]
+  # 2. Gendered nouns fold into the masculine, unless the feminine has its
+  # own meaning. No automatic test tells menina/menino (fold) from
+  # música/músico (keep) -- simplemma folds every -a form and stanza keeps
+  # every feminine noun -- so pairs are listed and reviewed in pairs_file,
+  # like the lemma gold set: jim_decision overrides claude_decision.
+  gender:
+    enabled: true
+    pairs_file: eval/gender_pairs.tsv
+    exceptions: ["ferida", "cara"]   # always kept, whatever the file says
+  # 3. Diminutives stay separate (coisinha, patinho, dinheirinho).
+  diminutives:
+    enabled: true
+  # 4. Comparatives and superlatives are their own lemmas.
+  comparatives:
+    enabled: true
+    forms:
+      maior: ["maior", "maiores"]
+      melhor: ["melhor", "melhores"]
+      pior: ["pior", "piores"]
+      menor: ["menor", "menores"]
+  # 5. Pre-1990 spellings merge under the post-1990 spelling, but only when
+  # the old spelling is not in the PT dictionary and the new one is -- which
+  # leaves facto and contacto (still correct in European spelling) alone.
+  spelling_reform:
+    enabled: true
+
 quality:
   # Stage 1 reproduces the original's known flaws, so the gate warns.
   # Stage 2 sets this true (enforced in config validation).

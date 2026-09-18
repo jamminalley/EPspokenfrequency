@@ -3,11 +3,13 @@
 The gold set at eval/lemma_gold.tsv is authored by hand and is never
 generated or modified by this pipeline.  Its convention, from eval/README.md:
 the gold answer is `jim_lemma` when non-empty, else `claude_lemma`, for rows
-whose `jim_verdict` is not `drop`.
+whose `jim_verdict` is not `drop`; dropped rows are not scored.
 
-Until the human review is filled in, the gold falls back entirely to
-`claude_lemma` -- a first-pass guess.  Scores in that state measure
-agreement with a guess, not accuracy, and every report says so.
+A gold value containing "|" lists acceptable alternatives: `fomos` is
+`ir|ser` because its lemma depends on context (eval/conventions.md), so a
+prediction of either is correct.
+
+If any row lacks a human verdict the report is labelled provisional.
 
 Run: python -m scripts.eval_lemmas --config config.yaml [--backend simplemma ...]
 """
@@ -24,7 +26,7 @@ from typing import Any, Mapping, Sequence
 @dataclass(frozen=True)
 class GoldRow:
     surface: str
-    gold: str
+    gold: tuple[str, ...]  # acceptable alternatives
     rank: int
     count: int
     category: str
@@ -48,10 +50,11 @@ def load_gold(cfg: dict[str, Any]) -> tuple[list[GoldRow], dict[str, Any]]:
                 continue
             if jim or verdict:
                 n_reviewed += 1
+            answer = (jim or rec["claude_lemma"].strip()).lower()
             rows.append(
                 GoldRow(
                     surface=rec["surface"].strip(),
-                    gold=(jim or rec["claude_lemma"].strip()).lower(),
+                    gold=parse_alternatives(answer),
                     rank=int(rec["rank_40m"]),
                     count=int(rec["count_40m"]),
                     category=(rec.get("category") or "").strip(),
@@ -63,9 +66,16 @@ def load_gold(cfg: dict[str, Any]) -> tuple[list[GoldRow], dict[str, Any]]:
         "n_rows": len(rows),
         "n_dropped": n_dropped,
         "n_reviewed": n_reviewed,
-        "fully_reviewed": n_reviewed == len(rows) + n_dropped and len(rows) > 0,
+        # Every scored row carries a human verdict (dropped rows had one too).
+        "fully_reviewed": len(rows) > 0 and n_reviewed == len(rows),
     }
     return rows, meta
+
+
+def parse_alternatives(value: str) -> tuple[str, ...]:
+    """'ir|ser' -> ('ir', 'ser'); 'casa' -> ('casa',)."""
+    alts = tuple(a.strip() for a in value.split("|") if a.strip())
+    return alts or (value,)
 
 
 def band_of(rank: int) -> str:
@@ -85,12 +95,12 @@ def score(
     errors: list[tuple[str, str, str]] = []
     for row in rows:
         got = (predictions.get(row.surface) or row.surface).lower()
-        ok = int(got == row.gold)
+        ok = int(got in row.gold)
         hits += ok
         by_band.setdefault(band_of(row.rank), []).append(ok)
         by_category.setdefault(row.category or "(none)", []).append(ok)
         if not ok:
-            errors.append((row.surface, row.gold, got))
+            errors.append((row.surface, "|".join(row.gold), got))
     return {
         "n": len(rows),
         "accuracy": hits / len(rows) if rows else float("nan"),

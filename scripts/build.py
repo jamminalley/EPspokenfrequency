@@ -22,6 +22,7 @@ from typing import Any
 from scripts import bigrams as bigrams_mod
 from scripts import compare as compare_mod
 from scripts import config as config_mod
+from scripts import conventions as conventions_mod
 from scripts import counts as counts_mod
 from scripts import emit as emit_mod
 from scripts import eval_lemmas as eval_mod
@@ -95,6 +96,26 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
 
     lemma_map = lemmas_mod.build_lemma_map(cfg, types, bg.contexts, backend=backend)
 
+    conv_log = None
+    if cfg["run"]["stage"] >= 2 and cfg["conventions"].get("enabled"):
+        # Before closure: closure uses the map as its own oracle, so it then
+        # respects the conventions instead of undoing them.
+        simple = lemmas_mod.SimplemmaBackend()
+        cache: dict[str, str] = {}
+
+        def relemmatize(word: str) -> str:
+            if word not in cache:
+                cache[word] = simple.lemmatize_types([word])[word]
+            return cache[word]
+
+        lemma_map, conv_log = conventions_mod.apply(
+            lemma_map, cfg, lemmas_mod.in_dictionary, relemmatize
+        )
+        stats["conventions"] = conv_log.summary(uni.counts)
+        for name, info in stats["conventions"].items():
+            _log(f"  convention {name}: {info['surfaces']:,} surfaces, "
+                 f"{info['tokens']:,} tokens")
+
     if cfg["fixes"].get("lemma_closure"):
         lemma_map, redirects = lemmas_mod.close_lemma_map(
             lemma_map, lemmas_mod.SimplemmaBackend(), bg.contexts
@@ -149,7 +170,10 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     relemma = {w: lemma_map.get(w, w) for w in entry_lemmas}
     suspects = quality_mod.find_suspects(
         entries, cfg, lambda w: relemma.get(w, w),
-        closed_class=frozenset(tagger.closed),
+        closed_class=frozenset(tagger.closed)
+        | frozenset(conventions_mod.protected_forms(cfg)
+                    if cfg["run"]["stage"] >= 2 and cfg["conventions"].get("enabled")
+                    else ()),
     )
     quality_mod.write_tsv(suspects, out_dir / cfg["paths"]["reports"]["quality_tsv"])
     quality_text = quality_mod.render_report(suspects, cfg)
@@ -158,13 +182,16 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     _log(f"  {len(suspects):,} suspect duplicate entries")
 
     # -- gold-set evaluation ----------------------------------------------
+    # Score the lemma map this build actually published -- backend, gate,
+    # conventions and closure together -- not a backend in isolation. The
+    # backend-by-backend comparison lives in backend_scores.md.
     _log("gold-set evaluation")
     try:
-        gold_results, gold_meta = eval_mod.evaluate(
-            cfg, [cfg["lemmatizer"]["backend"], "spacy"], bg.contexts
-        )
-        gold_text = eval_mod.render(gold_results, gold_meta)
-        stats["gold"] = {k: v.get("accuracy") for k, v in gold_results.items()}
+        gold_rows, gold_meta = eval_mod.load_gold(cfg)
+        label = f"pipeline, stage {cfg['run']['stage']} ({cfg['lemmatizer']['backend']})"
+        result = eval_mod.score(gold_rows, lemma_map)
+        gold_text = eval_mod.render({label: result}, gold_meta)
+        stats["gold"] = {label: result["accuracy"]}
     except FileNotFoundError as exc:
         gold_text = f"_Gold set unavailable: {exc}_"
         stats["gold"] = None
@@ -191,9 +218,13 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
                     (f"ranks {lo}-{hi}", compare_mod.compare_bands(base, rebuilt, hi))
                 )
 
+    conventions_text = ""
+    if conv_log is not None:
+        conventions_text = compare_mod.render_conventions(conv_log, uni.counts, entries)
+
     report = compare_mod.render(
         cfg, fingerprint_rows, band_reports, quality_text, gold_text, stats,
-        baseline_reports=baseline_reports,
+        baseline_reports=baseline_reports, conventions_text=conventions_text,
     )
     (out_dir / cfg["paths"]["reports"]["comparison"]).write_text(report, encoding="utf-8")
 

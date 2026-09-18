@@ -1,0 +1,147 @@
+feminine	masculine	fem_count	masc_count	claude_decision	reason	jim_decision
+a	o	21990620	27761156	keep	function word: handled by the backend	
+da	do	3451307	4494223	keep	contraction: convention 1	
+senhora	senhor	237388	631530	fold	person noun: feminine counterpart	
+cara	caro	205646	34160	keep	feminine has its own meaning (face)	
+menina	menino	153418	71089	fold	person noun: feminine counterpart	
+miúda	miúdo	126718	161686	fold	person noun: feminine counterpart (in gold set)	
+música	músico	92595	6492	keep	feminine has its own meaning (music)	
+vista	visto	84812	263	keep	feminine has its own meaning (view)	
+namorada	namorado	61619	50705	fold	person noun: feminine counterpart	
+direita	direito	57314	119921	keep	feminine has its own meaning (right side)	
+branca	branco	39434	74432	fold	adjective: general rule folds to masculine	
+tia	tio	37794	75601	fold	person noun: feminine counterpart	
+lisa	liso	27045	2002	fold	adjective: general rule folds to masculine	
+enfermeira	enfermeiro	26853	3933	fold	person noun: feminine counterpart	
+secretária	secretário	26815	10574	keep	feminine has its own meaning (desk)	
+política	político	26807	23191	keep	feminine has its own meaning (policy, politics)	
+alternativa	alternativo	22848	2725	keep	feminine has its own meaning (an alternative)	
+traseira	traseiro	22815	15805	keep	feminine has its own meaning (rear)	
+prostituta	prostituto	22651	1315	fold	person noun: feminine counterpart	
+tinta	tinto	19035	2884	keep	feminine has its own meaning (paint, ink)	
+santa	santo	18333	29886	fold	person noun: feminine counterpart	
+suspeita	suspeito	18107	58274	keep	feminine has its own meaning (suspicion)	
+empregada	empregado	17616	25835	fold	person noun: feminine counterpart	
+marinha	marinho	16644	3746	keep	feminine has its own meaning (navy)	
+técnica	técnico	16526	13221	keep	feminine has its own meaning (technique)	
+clínica	clínico	16035	3265	keep	feminine has its own meaning (clinic)	
+solta	solto	15018	5777	fold	adjective: general rule folds to masculine	
+sexta	sexto	14930	5404	keep	weekday (Friday)	
+seca	seco	14544	12973	keep	feminine has its own meaning (drought; also slang 'bore')	
+matemática	matemático	12830	2737	keep	feminine has its own meaning (mathematics)	
+índia	índio	11999	16530	keep	place name, not the feminine (India)	
+vaga	vago	11101	3380	keep	feminine has its own meaning (vacancy, wave)	
+prática	prático	11047	3296	keep	feminine has its own meaning (practice)	
+dona	dono	10656	35943	keep	ambiguous; kept pending review (title 'Dona' vs owner)	
+pata	pato	10106	10227	keep	feminine has its own meaning (paw)	
+viúva	viúvo	10040	1037	fold	person noun: feminine counterpart	
+advogada	advogado	9924	80558	fold	person noun: feminine counterpart	
+parada	parado	9878	24076	keep	feminine has its own meaning (stop, parade)	
+culpada	culpado	9242	4891	fold	adjective: general rule folds to masculine	
+lógica	lógico	9168	4544	keep	feminine has its own meaning (logic)	
+química	químico	9123	11886	keep	feminine has its own meaning (chemistry)	
+florida	florido	8772	359	keep	place name, not the feminine (Florida)	
+serena	sereno	8596	871	fold	adjective: general rule folds to masculine	
+parva	parvo	8488	24609	fold	adjective: general rule folds to masculine	
+vestida	vestido	8323	51901	keep	feminine has its own meaning (masculine form is 'vestido', a dress)	
+pegada	pegado	8193	230	keep	feminine has its own meaning (footprint)	
+táctica	táctico	8138	1767	keep	feminine has its own meaning (tactic)	
+solitária	solitário	7846	12285	keep	feminine has its own meaning (solitary confinement)	
+sobrinha	sobrinho	7834	12552	fold	person noun: feminine counterpart	
+moça	moço	7577	3863	fold	person noun: feminine counterpart	
+parceira	parceiro	7309	45017	fold	person noun: feminine counterpart	
+terça	terço	6872	4189	keep	weekday (Tuesday)	
+testa	testo	6476	361	keep	feminine has its own meaning (forehead)	
+aluna	aluno	6176	23283	fold	person noun: feminine counterpart	
+senhoria	senhorio	5621	3239	keep	feminine has its own meaning (landlady; 'Vossa Senhoria')	
+directora	director	5543	34651	fold	person noun: feminine counterpart	
+tola	tolo	5541	20328	fold	adjective: general rule folds to masculine	
+secundária	secundário	5456	11893	keep	feminine has its own meaning (secondary school)	
+indiana	indiano	5417	3279	keep	ambiguous; kept pending review (Indian; also Indiana)	
+borracha	borracho	5407	2458	keep	feminine has its own meaning (rubber, eraser)	
+mona	mono	5371	595	keep	ambiguous; kept pending review	
+porca	porco	5183	38105	keep	feminine has its own meaning (sow; nut for a bolt)	
+senadora	senador	5134	23873	fold	person noun: feminine counterpart	
+primária	primário	5114	2416	keep	feminine has its own meaning (primary school)	
+amo-a	amo-o	4943	4400	keep	enclitic cluster, not a noun	
+escrava	escravo	4908	23573	fold	person noun: feminine counterpart	
+característica	característico	4817	516	keep	feminine has its own meaning (a characteristic)	
+companheira	companheiro	4753	33449	fold	person noun: feminine counterpart	
+vera	vero	4677	339	keep	given name	
+suíça	suíço	4536	2771	keep	place name, not the feminine (Switzerland)	
+neta	neto	4502	13070	fold	person noun: feminine counterpart	
+ética	ético	4463	1733	keep	feminine has its own meaning (ethics)	
+soviética	soviético	4164	5810	fold	adjective: general rule folds to masculine	
+católica	católico	4102	5918	fold	adjective: general rule folds to masculine	
+nata	nato	3935	3194	keep	feminine has its own meaning (cream)	
+estatística	estatístico	3926	304	keep	feminine has its own meaning (statistics)	
+costeira	costeiro	3925	548	fold	adjective: general rule folds to masculine	
+cantora	cantor	3870	4884	fold	person noun: feminine counterpart	
+prisioneira	prisioneiro	3857	33956	fold	person noun: feminine counterpart	
+doméstica	doméstico	3830	4833	keep	feminine has its own meaning (housemaid)	
+dançarina	dançarino	3776	3594	fold	person noun: feminine counterpart	
+bailarina	bailarino	3763	1478	fold	person noun: feminine counterpart	
+electrónica	electrónico	3680	3540	keep	feminine has its own meaning (electronics)	
+drogada	drogado	3671	11746	fold	adjective: general rule folds to masculine	
+ex-namorada	ex-namorado	3618	3522	fold	person noun: feminine counterpart	
+brava	bravo	3483	21501	keep	ambiguous; kept pending review (masculine 'bravo' is mostly the interjection)	
+mecânica	mecânico	3291	7287	keep	feminine has its own meaning (mechanics)	
+encantada	encantado	3286	7543	fold	adjective: general rule folds to masculine	
+cozinheira	cozinheiro	3257	7156	fold	person noun: feminine counterpart	
+caçadora	caçador	3160	20661	fold	person noun: feminine counterpart	
+castanha	castanho	3156	8267	keep	feminine has its own meaning (chestnut)	
+inimiga	inimigo	3104	74838	fold	person noun: feminine counterpart	
+vampira	vampiro	3098	32320	fold	person noun: feminine counterpart	
+falhada	falhado	2861	15818	fold	adjective: general rule folds to masculine	
+informática	informático	2844	2855	keep	feminine has its own meaning (computing)	
+polónia	polónio	2823	285	keep	place name, not the feminine (Poland; masculine form is polonium)	
+morena	moreno	2818	2006	fold	adjective: general rule folds to masculine	
+balística	balístico	2741	550	keep	feminine has its own meaning (ballistics)	
+síria	sírio	2727	1317	keep	place name, not the feminine (Syria)	
+bruta	bruto	2716	5651	fold	adjective: general rule folds to masculine	
+pedrada	pedrado	2713	6527	keep	feminine has its own meaning (a thrown stone)	
+cunhada	cunhado	2587	4431	fold	person noun: feminine counterpart	
+argentina	argentino	2535	856	keep	place name, not the feminine (Argentina)	
+traidora	traidor	2457	20377	fold	person noun: feminine counterpart	
+feiticeira	feiticeiro	2450	12066	fold	person noun: feminine counterpart	
+penitenciária	penitenciário	2424	156	keep	feminine has its own meaning (penitentiary)	
+franca	franco	2338	11600	fold	adjective: general rule folds to masculine	
+guerreira	guerreiro	2332	13502	fold	person noun: feminine counterpart	
+sócia	sócio	2302	21000	fold	person noun: feminine counterpart	
+conselheira	conselheiro	2292	9595	fold	person noun: feminine counterpart	
+silenciosa	silencioso	2215	6330	fold	adjective: general rule folds to masculine	
+sogra	sogro	2186	2738	fold	person noun: feminine counterpart	
+criativa	criativo	2179	4989	fold	adjective: general rule folds to masculine	
+tremenda	tremendo	2176	2968	fold	adjective: general rule folds to masculine	
+culinária	culinário	2130	343	keep	feminine has its own meaning (cooking)	
+recta	recto	2120	1205	keep	feminine has its own meaning (straight line; masculine is rectum)	
+pomba	pombo	2086	4688	keep	feminine has its own meaning (dove, distinct from pombo)	
+substituta	substituto	2046	7668	fold	person noun: feminine counterpart	
+viu-a	viu-o	2017	4235	keep	enclitic cluster, not a noun	
+vegetariana	vegetariano	1998	2842	fold	adjective: general rule folds to masculine	
+maia	maio	1989	8252	keep	given name/place	
+gasosa	gasoso	1903	294	keep	feminine has its own meaning (soda)	
+virada	virado	1891	3765	keep	feminine has its own meaning (a turn)	
+estática	estático	1869	444	keep	feminine has its own meaning (static)	
+dinâmica	dinâmico	1804	1048	keep	feminine has its own meaning (dynamics)	
+perita	perito	1790	11572	fold	person noun: feminine counterpart	
+funcionária	funcionário	1763	14560	fold	person noun: feminine counterpart	
+herdeira	herdeiro	1763	8301	fold	person noun: feminine counterpart	
+nona	nono	1744	1977	fold	adjective: general rule folds to masculine (ordinal)	
+procuradora	procurador	1742	9100	fold	person noun: feminine counterpart	
+farmacêutica	farmacêutico	1741	2454	keep	ambiguous; kept pending review (pharmacist; pharmaceutical company)	
+pedreira	pedreiro	1721	923	keep	feminine has its own meaning (quarry)	
+chapada	chapado	1710	1130	keep	feminine has its own meaning (a slap)	
+desgraçada	desgraçado	1690	14281	fold	adjective: general rule folds to masculine	
+retórica	retórico	1675	232	keep	feminine has its own meaning (rhetoric)	
+idosa	idoso	1633	5727	fold	person noun: feminine counterpart	
+lutadora	lutador	1623	10847	fold	person noun: feminine counterpart	
+operadora	operador	1623	4431	keep	ambiguous; kept pending review (operator; phone company)	
+roberta	roberto	1571	2942	keep	given name	
+psicóloga	psicólogo	1552	4378	fold	person noun: feminine counterpart	
+treinadora	treinador	1546	24002	fold	person noun: feminine counterpart	
+mariana	mariano	1528	305	keep	given name	
+calçada	calçado	1520	347	keep	feminine has its own meaning (pavement)	
+salvadora	salvador	1514	6761	keep	ambiguous; kept pending review	
+serva	servo	1514	4542	fold	person noun: feminine counterpart	
+vitela	vitelo	1490	331	keep	feminine has its own meaning (veal)	

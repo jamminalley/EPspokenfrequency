@@ -31,6 +31,7 @@ _REQUIRED_SECTIONS = (
     "fixes",
     "quality",
     "output",
+    "conventions",
 )
 
 _FIX_FLAGS = (
