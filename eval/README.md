@@ -37,3 +37,13 @@ If a line contains the form more than once, label the first occurrence:
 that is the one the rule reads. Subtitle text repeats, so the same line
 can be drawn twice. The rule is not applied to the published counts until
 this sample has been scored.
+
+`ser_ir_sample.tsv` / `ser_ir_sample_context.csv` — 100 corpus lines (20 per
+form: foi, fui, fomos, foram, fora) with the two subtitle lines before and
+after (`line_no` locates the occurrence in `data/pt.txt.gz`). `rule_guess`
+is `scripts/serir.py`'s next-word rule. `informant_label` was produced by an
+LLM acting as a European-Portuguese informant, following
+`ser_ir_informant_prompt.md`; the advisor checked all 100 independently and
+Jim reviewed the seven rows where the rule or the informant was unsure, and
+adopted the informant's labels as `human_label` (the gold). Labels: `ser`,
+`ir`, `other` (the adverb *fora* "outside", 19 of the 20 *fora* rows).
