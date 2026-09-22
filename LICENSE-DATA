@@ -6,16 +6,19 @@ WHAT THIS LICENSE COVERS
 This file licenses the DATA in this repository under the Creative Commons
 Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0):
 
-    out/        the frequency lists, the Anki package and Anki TSV files
-    eval/       the gold sets, conventions and hand-reviewed decision files
-    reports/    the build reports
-    archive/    the unpublished April 2026 list, kept for comparison
+    out/              the frequency lists, the Anki package and Anki TSV files
+    eval/             the gold sets, conventions and hand-reviewed decision files
+    reports/          the build reports
+    archive/          the unpublished April 2026 list, kept for comparison
+    README.md         the documentation
+    CHANGELOG.md
+    DATA_SOURCES.md
 
     https://creativecommons.org/licenses/by-sa/4.0/
 
-The CODE -- scripts/ and tests/ -- is licensed separately, under the MIT
-License: see LICENSE. No other path in this repository is covered by this
-file.
+The CODE -- scripts/ (including scripts/data/), tests/, config.yaml and
+requirements.txt -- is licensed separately, under the MIT License: see
+LICENSE. No other path in this repository is covered by this file.
 
 WHY SHAREALIKE
 --------------

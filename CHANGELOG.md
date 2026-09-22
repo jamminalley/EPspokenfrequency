@@ -7,6 +7,11 @@
 changes is the POS column and, through POS splitting, which rows fill the
 last places of each band.
 
+**Known issues.** Re-importing a later `.apkg` over this one matches notes
+by word and part of speech, and Anki's "Update notes" option then replaces
+every field, glosses and examples a learner has typed in included; choosing
+"Never" keeps them but freezes ranks. Deferred to v1.1, when glosses ship.
+
 - **A ready-to-import Anki package**, `out/EP_Spoken_Frequency.apkg`: one
   note type, two decks (1–5000, 5001–10000), a Portuguese → English card
   for every note, and an English → Portuguese card that appears only once

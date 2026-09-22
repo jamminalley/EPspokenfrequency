@@ -5,11 +5,16 @@ WHAT THIS LICENSE COVERS
 ------------------------
 This file licenses the CODE in this repository under the MIT License:
 
-    scripts/    the pipeline that builds the frequency lists
-    tests/      its unit tests
+    scripts/           the pipeline that builds the frequency lists,
+                       including scripts/data/ (its rule tables and
+                       lemma overrides) and scripts/README.md
+    tests/             its unit tests
+    config.yaml        the pipeline configuration
+    requirements.txt   its Python dependencies
 
-The DATA -- out/, eval/, reports/ and archive/ -- is licensed separately,
-under CC BY-SA 4.0: see LICENSE-DATA. No other path in this repository is
+The DATA and documentation -- out/, eval/, reports/, archive/, README.md,
+CHANGELOG.md and DATA_SOURCES.md -- are licensed separately, under
+CC BY-SA 4.0: see LICENSE-DATA. No other path in this repository is
 covered by this file.
 
 HOW TO ATTRIBUTE
