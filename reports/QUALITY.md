@@ -1512,7 +1512,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `furia` | 138 | `fúria` | 7,146 | unaccented |
 | `quilômetro` | 138 | `quilómetro` | 22,061 | accent_variant |
 | `relaçäo` | 138 | `relação` | 101,548 | accent_variant |
-| `ír` | 138 | `ir` | 8,867,588 | accent_variant |
+| `ír` | 138 | `ir` | 9,022,856 | accent_variant |
 | `depôr` | 137 | `depor` | 5,649 | accent_variant |
 | `selénia` | 137 | `selenia` | 232 | accent_variant |
 | `cronômetro` | 136 | `cronómetro` | 1,130 | accent_variant |
@@ -1708,7 +1708,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mû` | 103 | `mu` | 1,532 | accent_variant |
 | `andréa` | 102 | `andrea` | 6,347 | accent_variant |
 | `diáriamente` | 102 | `diariamente` | 3,718 | accent_variant |
-| `fóra` | 102 | `fora` | 396,031 | accent_variant |
+| `fóra` | 102 | `fora` | 391,656 | accent_variant |
 | `patria` | 102 | `pátria` | 4,022 | unaccented |
 | `raphaël` | 102 | `raphael` | 938 | accent_variant |
 | `agnès` | 101 | `agnes` | 2,881 | accent_variant |
@@ -1826,7 +1826,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `stéphanie` | 88 | `stephanie` | 4,525 | accent_variant |
 | `sófia` | 88 | `sofia` | 4,615 | accent_variant |
 | `tristán` | 88 | `tristan` | 1,582 | accent_variant |
-| `fôra` | 87 | `fora` | 396,031 | accent_variant |
+| `fôra` | 87 | `fora` | 391,656 | accent_variant |
 | `galia` | 87 | `gália` | 1,006 | unaccented |
 | `infancia` | 87 | `infância` | 12,994 | unaccented |
 | `letícia` | 87 | `leticia` | 391 | accent_variant |
@@ -2500,7 +2500,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `jerônimo` | 44 | `jerónimo` | 432 | accent_variant |
 | `pandemônio` | 44 | `pandemónio` | 452 | accent_variant |
 | `pöem` | 44 | `poem` | 174 | accent_variant |
-| `sér` | 44 | `ser` | 21,484,602 | accent_variant |
+| `sér` | 44 | `ser` | 21,333,709 | accent_variant |
 | `sérpico` | 44 | `serpico` | 337 | accent_variant |
 | `tranqüilamente` | 44 | `tranquilamente` | 1,160 | accent_variant |
 | `voluntáriamente` | 44 | `voluntariamente` | 2,068 | accent_variant |
@@ -3961,7 +3961,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sicômoros` | 19 | `sicómoros` | 25 | accent_variant |
 | `suícidas` | 19 | `suicídas` | 32 | accent_variant |
 | `sémenov` | 19 | `semenov` | 27 | accent_variant |
-| `sêr` | 19 | `ser` | 21,484,602 | accent_variant |
+| `sêr` | 19 | `ser` | 21,333,709 | accent_variant |
 | `sòmente` | 19 | `somente` | 16,077 | accent_variant |
 | `taí` | 19 | `tai` | 1,885 | accent_variant |
 | `tirár` | 19 | `tirar` | 409,177 | accent_variant |
@@ -10253,7 +10253,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fonéticamente` | 4 | `foneticamente` | 60 | accent_variant |
 | `formacäo` | 4 | `formação` | 11,953 | accent_variant |
 | `formaldeido` | 4 | `formaldeído` | 473 | unaccented |
-| `forá` | 4 | `fora` | 396,031 | accent_variant |
+| `forá` | 4 | `fora` | 391,656 | accent_variant |
 | `fotográfias` | 4 | `fotografías` | 26 | accent_variant |
 | `fouché` | 4 | `fouche` | 14 | accent_variant |
 | `francísco` | 4 | `francisco` | 15,918 | accent_variant |
@@ -23388,7 +23388,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fortificaçoes` | 1 | `fortificaçöes` | 3 | accent_variant |
 | `fortunà` | 1 | `fortuna` | 17,197 | accent_variant |
 | `fortá` | 1 | `forta` | 5 | accent_variant |
-| `forà` | 1 | `fora` | 396,031 | accent_variant |
+| `forà` | 1 | `fora` | 391,656 | accent_variant |
 | `forámen` | 1 | `foramen` | 22 | accent_variant |
 | `força-io` | 1 | `forçá-io` | 6 | accent_variant |
 | `forçaaèrea` | 1 | `forçaaérea` | 10 | accent_variant |

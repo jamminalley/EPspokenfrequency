@@ -45,9 +45,32 @@
       "tokens": 1471646
     }
   },
+  "serir": {
+    "foi": {
+      "ir": 0.1026,
+      "ser": 0.8974
+    },
+    "fui": {
+      "ir": 0.257,
+      "ser": 0.743
+    },
+    "fomos": {
+      "ir": 0.2898,
+      "ser": 0.7102
+    },
+    "foram": {
+      "ir": 0.1135,
+      "ser": 0.8865
+    },
+    "fora": {
+      "fora": 0.9889,
+      "ir": 0.0,
+      "ser": 0.0111
+    }
+  },
   "split_surfaces": 4931,
-  "split_multi_lemma": 1524,
-  "split_tokens": 9226084,
+  "split_multi_lemma": 1527,
+  "split_tokens": 9961305,
   "lemma_closure_redirects": 7723,
   "mwes_retained": 657,
   "diacritic_folded": 30210,
@@ -66,5 +89,5 @@
   "gold": {
     "pipeline, stage 2 (gated)": 0.9849397590361446
   },
-  "elapsed_s": 36.1
+  "elapsed_s": 49.3
 }

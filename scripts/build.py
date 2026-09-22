@@ -212,6 +212,36 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
             for lemma in norm:
                 if lemma in (occurrence_mod.adjective_form(surface), occurrence_mod.noun_form(surface)):
                     split_protected.add(lemma)
+        # ser / ir: the tagger cannot separate them, so foi/fui/fomos/foram/
+        # fora are split by the next-word rule instead -- but only if the rule,
+        # exactly as it now stands, has been scored above the threshold.
+        sc = cfg["serir"]
+        if sc.get("apply"):
+            from scripts import serir as serir_mod
+
+            score = serir_mod.load_score("reports/serir_scores.md")
+            ok = (score is not None and score["accuracy"] >= sc["min_accuracy"]
+                  and score["rule_digest"] == serir_mod.rule_digest(cfg))
+            if not ok:
+                _log("  ser/ir: rule NOT applied -- no current score at or above "
+                     f"{sc['min_accuracy']:.0%} (run python -m scripts.serir --score)")
+            else:
+                serir_joint = serir_mod.counts_joint(cfg, _log)
+                stats["serir"] = {}
+                for form, j in serir_joint.items():
+                    if not j:
+                        continue
+                    joint_splits[form] = j
+                    splits[form] = occurrence_mod.lemma_votes(j)
+                    lemma_map[form] = sorted(splits[form], key=lambda l: (-splits[form][l], l))[0]
+                    votes = splits[form]
+                    tot = sum(votes.values())
+                    stats["serir"][form] = {l: round(v / tot, 4) for l, v in sorted(votes.items())}
+                _log("  ser/ir: rule applied (score "
+                     f"{score['accuracy']:.1%}): " + ", ".join(
+                         f"{f} ser {v.get('ser', 0):.0%}/ir {v.get('ir', 0):.0%}"
+                         for f, v in stats["serir"].items()))
+
         multi = {s: v for s, v in splits.items() if len(v) > 1}
         stats["split_surfaces"] = len(splits)
         stats["split_multi_lemma"] = len(multi)

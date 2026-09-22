@@ -33,6 +33,7 @@ _REQUIRED_SECTIONS = (
     "output",
     "conventions",
     "pos",
+    "serir",
 )
 
 _FIX_FLAGS = (

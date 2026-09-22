@@ -310,6 +310,31 @@ pos:
     INTJ: intj
     NUM: num
 
+# ser / ir for foi, fui, fomos, foram, fora (scripts/serir.py). Stanza
+# lemmatizes these to *ser* regardless of context, so the verb readings are
+# split by a next-word rule instead, measured against eval/ser_ir_sample.tsv.
+serir:
+  apply: true                 # only if scoring clears min_accuracy
+  min_accuracy: 0.95          # on decided verb rows of the gold sample
+  sample_per_form: 1000       # random corpus lines per form for the counts
+  seed: 20260922
+  # Forms with a genuine non-verb reading. Only these keep a non-verb tag
+  # (fora, the adverb "outside"). For the others, Stanza's non-verb tags are
+  # errors -- 6% of foi tagged SCONJ in clefts like "Foi por isso que" --
+  # and are shared out in the form's ser/ir ratio, like an abstention.
+  nonverb_forms: ["fora"]
+  # Nouns that make "a/à + determiner + noun" a destination (fui à minha
+  # casa -> ir) rather than an article opening a subject or predicate
+  # (qual foi a tua defesa -> ser).
+  destination_nouns: ["casa", "escola", "trabalho", "cidade", "hospital",
+    "igreja", "praia", "polícia", "esquadra", "festa", "loja", "quarto",
+    "cozinha", "sala", "rua", "cinema", "restaurante", "bar", "aeroporto",
+    "estação", "banco", "mercado", "supermercado", "escritório",
+    "universidade", "faculdade", "aldeia", "vila", "terra", "prisão",
+    "cadeia", "tribunal", "farmácia", "clínica", "médico", "funeral",
+    "casamento", "reunião", "aula", "missa", "guerra", "montanha", "campo",
+    "quinta", "loja", "garagem", "cave", "sítio", "lugar", "país", "mundo"]
+
 # Headword policies from eval/conventions.md. A top-level section rather
 # than part of `lemmatizer:` on purpose: the lemma cache is keyed on the
 # lemmatizer settings, and these run after the backend, so changing a

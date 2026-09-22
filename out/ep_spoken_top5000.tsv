@@ -1,6 +1,6 @@
 rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 1	o	0	det	29886324	46975.236
-2	ser	0	verb	21484665	33769.533
+2	ser	0	verb	21333772	33532.360
 3	não	0	adv	17987071	28272.025
 4	que	0	conj	16526745	25976.689
 5	de	0	prep	15387769	24186.450
@@ -10,7 +10,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 9	e	0	conj	10307063	16200.611
 10	a	0	prep	10188760	16014.663
 11	ter	0	verb	9540174	14995.217
-12	ir	0	verb	8867726	13938.266
+12	ir	0	verb	9022994	14182.315
 13	para	0	prep	7212230	11336.162
 14	eu	0	pron	6283025	9875.640
 15	que	0	pron	5808269	9129.420
@@ -206,9 +206,9 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 205	nem	0	conj	406690	639.234
 206	ligar	0	verb	404088	635.144
 207	sério	0	noun	396958	623.937
-208	fora	0	adv	396225	622.785
-209	alguma coisa	1	mwe	393129	617.919
-210	pôr	0	verb	392547	617.004
+208	alguma coisa	1	mwe	393129	617.919
+209	pôr	0	verb	392547	617.004
+210	fora	0	adv	391850	615.909
 211	hoje	0	adv	391341	615.109
 212	dela	0	pron	388270	610.282
 213	novo	0	adj	387345	608.828

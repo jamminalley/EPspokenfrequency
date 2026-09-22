@@ -26,14 +26,23 @@ last places of each band.
   discarded when Stanza's lemma and tag contradict each other (`saia`
   given the lemma *saia* but tagged VERB). Gold-set accuracy is unchanged
   at 98.5%. `vá` added to the override table (Stanza read it as *ver*).
-- **`ser` and `ir` are not separated after all.** v0.9 said they were split
-  by context. The larger sample shows the tagger assigns `foi`, `fui`,
-  `fomos` and `foram` to *ser* almost regardless of context — all 50
-  sampled uses of `fui` and `fomos`, including *fui ao Paquistão*. The
-  README now says *ser* is overcounted and *ir* undercounted. *Ser* now
-  counts 21.5M tokens and *ir* 8.9M. A next-word rule is written
-  (`scripts/serir.py`) but not applied: `eval/ser_ir_sample.tsv` holds 100
-  random corpus lines, 20 per form, for human labeling first.
+- **`ser` and `ir` are now split by a rule.** v0.9 said the tagger split
+  them by context; it does not. The larger sample shows it assigns `foi`,
+  `fui`, `fomos` and `foram` to *ser* almost regardless of context, all 50
+  sampled uses of `fui` and `fomos` included (*fui ao Paquistão*). Stanza
+  now only decides whether an occurrence is a verb, which keeps the adverb
+  *fora* ("outside") out, and a next-word rule (`scripts/serir.py`) picks
+  *ser* or *ir*. Scored against 100 random corpus lines checked by hand
+  (`eval/ser_ir_sample.tsv`): 95.9% right on the verb uses it decides,
+  abstaining on 9%; none of the 19 adverbial *fora* lines reaches it.
+  Abstentions, and non-verb tags on forms that are always verbs (Stanza
+  tags 6% of `foi` as a conjunction in clefts like *Foi por isso que*),
+  take the form's own *ser*/*ir* ratio. The build applies the rule only
+  while a passing score exists for its current version. Per form, *ir* is
+  now 26% of `fui`, 29% of `fomos`, 11% of `foram` and 10% of `foi`. *Ser*
+  goes from 21.5M tokens to 21.3M and *ir* from 8.9M to 9.0M: `fui` and
+  `fomos` move a lot, but `foi`, the biggest form by far, is mostly the
+  copula.
 
 ## v0.9 — 2026-09, rebuilt pipeline, human-checked (private checkpoint)
 

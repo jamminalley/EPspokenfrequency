@@ -5,7 +5,7 @@
 #columns:Rank	Lemma_PT	POS	Is_MWE	Raw_Freq	Freq_per_million	Tags
 #tags column:7
 1	o	det	0	29886324	46975.236	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
-2	ser	verb	0	21484665	33769.533	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
+2	ser	verb	0	21333772	33532.360	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 3	não	adv	0	17987071	28272.025	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::adv source::opensubtitles_ep_v2018 variety::EP register::spoken
 4	que	conj	0	16526745	25976.689	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::conj source::opensubtitles_ep_v2018 variety::EP register::spoken
 5	de	prep	0	15387769	24186.450	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::prep source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -15,7 +15,7 @@
 9	e	conj	0	10307063	16200.611	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::conj source::opensubtitles_ep_v2018 variety::EP register::spoken
 10	a	prep	0	10188760	16014.663	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::prep source::opensubtitles_ep_v2018 variety::EP register::spoken
 11	ter	verb	0	9540174	14995.217	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
-12	ir	verb	0	8867726	13938.266	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
+12	ir	verb	0	9022994	14182.315	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 13	para	prep	0	7212230	11336.162	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::prep source::opensubtitles_ep_v2018 variety::EP register::spoken
 14	eu	pron	0	6283025	9875.640	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 15	que	pron	0	5808269	9129.420	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -211,9 +211,9 @@
 205	nem	conj	0	406690	639.234	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::conj source::opensubtitles_ep_v2018 variety::EP register::spoken
 206	ligar	verb	0	404088	635.144	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 207	sério	noun	0	396958	623.937	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
-208	fora	adv	0	396225	622.785	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::adv source::opensubtitles_ep_v2018 variety::EP register::spoken
-209	alguma coisa	mwe	1	393129	617.919	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::mwe source::opensubtitles_ep_v2018 variety::EP register::spoken
-210	pôr	verb	0	392547	617.004	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
+208	alguma coisa	mwe	1	393129	617.919	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::mwe source::opensubtitles_ep_v2018 variety::EP register::spoken
+209	pôr	verb	0	392547	617.004	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
+210	fora	adv	0	391850	615.909	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::adv source::opensubtitles_ep_v2018 variety::EP register::spoken
 211	hoje	adv	0	391341	615.109	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::adv source::opensubtitles_ep_v2018 variety::EP register::spoken
 212	dela	pron	0	388270	610.282	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 213	novo	adj	0	387345	608.828	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken

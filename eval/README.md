@@ -15,28 +15,30 @@ decisions; `note` explains the tricky ones. `jim_lemma` / `jim_verdict`
 `jim_lemma` when non-empty, else `claude_lemma`, for rows whose verdict is not
 `drop`.
 
-## `ser_ir_sample.tsv` — for human labeling
+## `ser_ir_sample.tsv` — gold for the ser/ir rule
 
 100 corpus lines containing `foi`, `fui`, `fomos`, `foram` or `fora`, 20
 per form, drawn uniformly at random from the whole corpus (reservoir
-sampling, seed 20260912; regenerate with `python -m scripts.serir`, which
-refuses to overwrite once labels are entered). It exists to test a
-next-word rule for telling *ser* from *ir*, because the tagger cannot: it
-assigns these forms to *ser* almost regardless of context.
+sampling, seed 20260912; `python -m scripts.serir` regenerates it and
+refuses to overwrite labels). It tests the next-word rule that splits
+these forms between *ser* and *ir*, because the tagger cannot: it assigns
+them to *ser* almost regardless of context.
 
-Columns: `form`, `sentence`, `rule_guess` (the rule's answer: `ser`, `ir`,
-or `?` where it abstains), and `human_label`, blank, for:
+Columns: `form`, `sentence`, `line_no`, `rule_guess` (the rule's answer
+when the sample was drawn: `ser`, `ir`, or `?` where it abstains),
+`informant_label`, and `human_label`, the gold:
 
 - `ser` — "was" (*foi feito*, *fui eu*)
 - `ir` — "went" (*fui ao médico*, *fomos buscar ajuda*)
-- `other` — not a form of either verb. Most `fora` rows are the adverb
-  "outside" (*lá fora*, *fora de questão*), and the rule labels them
-  anyway, so these rows show where it misfires.
+- `other` — not a form of either verb: the adverb *fora* ("outside") in
+  19 of the 20 `fora` rows.
 
-If a line contains the form more than once, label the first occurrence:
-that is the one the rule reads. Subtitle text repeats, so the same line
-can be drawn twice. The rule is not applied to the published counts until
-this sample has been scored.
+The first occurrence of the form in a line is the one labeled, and the one
+the rule reads. Subtitle text repeats, so a line can be drawn twice.
+`python -m scripts.serir --score` scores the current rule against
+`human_label` and writes `reports/serir_scores.md`; the build applies the
+rule to the counts only while that score is at least 95% for the rule as
+it currently stands.
 
 `ser_ir_sample.tsv` / `ser_ir_sample_context.csv` — 100 corpus lines (20 per
 form: foi, fui, fomos, foram, fora) with the two subtitle lines before and

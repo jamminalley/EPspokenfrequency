@@ -120,12 +120,20 @@ These are specific and worth knowing before you study from the list.
   learners: a preposition is never counted as a conjunction (UD tags *para*
   in *para fazer* as one). 148 entries the tagger never saw intact, mostly
   contractions such as `do` and `pela`, keep a rule-based guess.
-- **`ser` and `ir` are not separated.** `foi`, `fui`, `fomos` and `foram`
-  belong to *ser* ("was") or *ir* ("went") depending on the sentence. The
-  tagger assigns them to *ser* almost every time: all 50 sampled uses of
-  `fui` and `fomos` went to *ser*, including *fui ao Paquistão* and *fomos
-  buscar ajuda*. *Ser* is therefore overcounted and *ir* undercounted, by
-  an amount this list cannot measure.
+- **`ser` and `ir` are separated by a rule, not by the tagger.** `foi`,
+  `fui`, `fomos`, `foram` and `fora` belong to *ser* ("was") or *ir*
+  ("went") depending on the sentence, and the tagger assigns them to *ser*
+  almost every time (*fui ao Paquistão* included). So the tagger only
+  decides whether an occurrence is a verb at all — the adverb *fora*,
+  "outside", is not — and a rule reading the neighbouring words picks the
+  verb: *ir* before *a*, *ao*, *para*, *embora* or an infinitive, or after
+  *lá*; *ser* before a participle, an adjective, a noun phrase or nothing.
+  Against 100 random corpus lines checked by hand, it is right on 95.9% of
+  the verb uses it decides and abstains on 9%; an abstention takes the
+  form's own *ser*/*ir* ratio. The split is estimated from 1,000 random
+  lines per form, so each form's share is good to about ±3 percentage
+  points. It misses idioms (*ele não foi nessa*) and elliptical questions (*sempre
+  foram?*). *Ser* counts 21.3M tokens and *ir* 9.0M.
 - **Lemmatization is not perfect.** 98.5% on the hand-checked sample means
   something like 150 of the 10,000 entries may carry a lemma error. The
   known pattern: Stanza sometimes reads a verb form as a noun (`procura`,
@@ -234,8 +242,9 @@ From `pt.txt.gz` to `out/`, in one command (`python -m scripts.build`):
    *dizer*).
 4. **Resolve context-dependent forms per occurrence.** Participles are
    split between the verb and the adjective according to how Stanza tags
-   them in their sample sentences. (Forms like `fomos` go through the same
-   step, but the tagger nearly always answers *ser*; see caveats.)
+   them in their sample sentences. `foi`, `fui`, `fomos`, `foram` and
+   `fora` are split between *ser* and *ir* by a separate next-word rule,
+   because the tagger cannot tell them apart (see caveats).
 5. **Apply the lemmatization conventions** in
    [eval/conventions.md](eval/conventions.md):
    1. contractions (`do`, `ao`, `pela`) are their own entries;
@@ -290,6 +299,16 @@ From `pt.txt.gz` to `out/`, in one command (`python -m scripts.build`):
   `cirurgiã`/`cirurgia`), and the six known typo pairs from the caveats,
   which sit below the 10× folding threshold. Any new suspect fails the
   build.
+- **A hand-checked *ser*/*ir* sample.**
+  [eval/ser_ir_sample.tsv](eval/ser_ir_sample.tsv) is 100 corpus lines
+  drawn at random, 20 for each of `foi`, `fui`, `fomos`, `foram` and
+  `fora`. The labels were proposed by an AI model acting as a Portuguese
+  informant and checked independently by hand. The *ser*/*ir* rule is right
+  on **95.9%** of the verb uses it decides (71 of 74), abstains on 9%, and
+  none of the 19 lines where *fora* is the adverb reaches it. The build
+  uses the rule only while a score of at least 95% exists for its current
+  version; the full table is in
+  [reports/serir_scores.md](reports/serir_scores.md).
 - **Determinism.** The same corpus, configuration and library versions
   produce byte-identical output.
 
