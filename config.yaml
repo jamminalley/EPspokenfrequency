@@ -497,6 +497,21 @@ output:
     separator: tab
     minimal_columns: [Rank, Lemma_PT, POS, Is_MWE, Raw_Freq, Freq_per_million, Tags]
     enrichable_columns: [Rank, Lemma_PT, POS, Gloss_EN, Example_PT, Example_EN, Is_MWE, Raw_Freq, Freq_per_million, Tags]
+    # The .apkg (scripts/build_apkg.py). The ids were generated once, on
+    # 2026-09-22, and must NEVER be regenerated: Anki recognises the note
+    # type and decks by these numbers, and notes by a GUID derived from
+    # lemma + POS, so a later release imported over this one updates notes
+    # instead of duplicating them.
+    apkg:
+      file: EP_Spoken_Frequency.apkg
+      model_id: 1179315797
+      decks:
+        - name: "Portuguese::European Portuguese - Spoken::1-5000"
+          id: 2038517696
+        - name: "Portuguese::European Portuguese - Spoken::5001-10000"
+          id: 1869653180
+      # Fixed package timestamp, so the same lists give the same .apkg bytes.
+      timestamp: 1790035200     # 2026-09-22T00:00:00Z
     tags:
       band500: 500
       band1000: 1000

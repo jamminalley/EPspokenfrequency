@@ -11,6 +11,7 @@ simplemma==2.0.0        # fallback lemmatizer (dictionary gate, frequency tail)
 pyspellchecker==0.9.0   # PT dictionary for the gate and filters; EN list for foreign words
 regex==2026.9.10        # Unicode-aware tokenization
 pyyaml==6.0.3           # config.yaml
+genanki==0.13.1         # the .apkg Anki package
 
 # Tests only
 pytest==9.1.1

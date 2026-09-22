@@ -414,6 +414,14 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     stats["entries"] = len(entries)
     _log(f"  wrote {len(written)} files to {out_dir}/")
 
+    # The ready-to-import Anki package, built from the band files just written.
+    from scripts import build_apkg
+
+    apkg = build_apkg.build(cfg, out_dir)
+    stats["apkg"] = {"bytes": apkg["bytes"], "notes": apkg["notes"]}
+    _log(f"  wrote {Path(apkg['path']).name}: {apkg['bytes']:,} bytes, "
+         + ", ".join(f"{n:,} notes" for n in apkg["notes"].values()))
+
     # -- quality report ----------------------------------------------------
     _log("quality report")
     # Use the lemma map itself as the oracle, so the check asks "is this

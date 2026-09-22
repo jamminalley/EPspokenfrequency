@@ -197,8 +197,9 @@ TSV and CSV hold identical data; pick whichever your tools prefer. Columns:
 
 ### The Anki decks
 
-| File | Fields |
+| File | What it is |
 |---|---|
+| `EP_Spoken_Frequency.apkg` | **Ready to import**: both decks, the note type and the card templates in one package. See [Importing the Anki decks](#importing-the-anki-decks). |
 | `ep_spoken_anki_minimal.tsv` | Rank, Lemma_PT, POS, Is_MWE, Raw_Freq, Freq_per_million, Tags |
 | `ep_spoken_anki_enrichable.tsv` | The same, plus empty `Gloss_EN`, `Example_PT`, `Example_EN` for you to fill in |
 | `ep_spoken_5001_10000_anki_minimal.tsv` | Ranks 5001–10000, minimal fields |
@@ -351,48 +352,78 @@ options.
 
 ## Importing the Anki decks
 
-The `*_anki_*.tsv` files carry Anki's header directives, so Anki
-configures the import itself — separator, note type, target deck, field
+**Use `out/EP_Spoken_Frequency.apkg`.** In Anki, choose **File → Import**,
+select it, and you are done: the note type, the card templates and both
+decks come with it.
+
+- Two decks: `Portuguese::European Portuguese - Spoken::1-5000` and
+  `…::5001-10000`, 5,000 notes each.
+- One note type, `Portuguese (EP) – Spoken Frequency`, with the fields
+  `Rank`, `Lemma_PT`, `POS`, `Gloss_EN`, `Example_PT`, `Example_EN`,
+  `Is_MWE`, `Raw_Freq` and `Freq_per_million`.
+- **Card 1 (Portuguese → English)** shows the word large, with its part of
+  speech beneath it. The back adds your gloss and example sentences if you
+  have filled them in, with the rank and frequency in small print.
+- **Card 2 (English → Portuguese)** exists only for notes whose `Gloss_EN`
+  is filled in. The list ships without glosses, so at first you only have
+  Card 1. Type a gloss into a note and its reverse card appears.
+- Every note carries the tags below, the same as in the TSV files.
+
+**Importing a later release.** Notes are identified by their word and part
+of speech, so a new release matches the notes you already have instead of
+adding duplicates, and your review history is kept. Anki's import screen
+asks whether to **Update notes**. *If newer* or *Always* brings in the new
+ranks and counts, but it replaces **every** field, including glosses and
+examples you have typed in. To keep your own glosses, choose **Never**;
+your ranks then stay as they were.
+
+### Advanced: the TSV files, for your own note type
+
+If you want your own fields or card design, import the `*_anki_*.tsv`
+files instead. They carry Anki's header directives, so Anki configures
+most of the import itself: separator, note type, target deck, field
 mapping and tags column are all declared in the file.
 
-1. In Anki, choose **File → Import**.
-2. Select one of the `out/*_anki_*.tsv` files.
-3. The import screen will pre-fill from the file's headers. Check that:
-   - **Field separator** is Tab
-   - **Notetype** is `Portuguese (EP) – Spoken Frequency`
-   - **Deck** is `Portuguese::European Portuguese - Spoken - First 5000`
-     (or `... - 5001 to 10000`)
-   - **Allow HTML in fields** is off
+1. **Create the note type first**; Anki will not invent it for you. Go to
+   **Tools → Manage Note Types → Add**, name it
+   `Portuguese (EP) – Spoken Frequency`, and give it fields matching the
+   file you plan to import:
+   - *minimal*: `Rank`, `Lemma_PT`, `POS`, `Is_MWE`, `Raw_Freq`,
+     `Freq_per_million`
+   - *enrichable*: `Rank`, `Lemma_PT`, `POS`, `Gloss_EN`, `Example_PT`,
+     `Example_EN`, `Is_MWE`, `Raw_Freq`, `Freq_per_million`
+
+   (The `Tags` column is not a field; Anki maps it to note tags
+   automatically.) Then design your own card templates.
+2. Choose **File → Import** and select one of the `out/*_anki_*.tsv` files.
+3. The import screen pre-fills from the file's headers. Check that the
+   **Field separator** is Tab, the **Notetype** is `Portuguese (EP) –
+   Spoken Frequency`, the **Deck** is `Portuguese::European Portuguese -
+   Spoken - First 5000` (or `... - 5001 to 10000`), and **Allow HTML in
+   fields** is off.
 4. Click **Import**.
 
-**Create the note type first.** Anki will not invent it for you. Before
-importing, go to **Tools → Manage Note Types → Add**, name it
-`Portuguese (EP) – Spoken Frequency`, and give it fields matching the file
-you plan to import:
-
-- *minimal*: `Rank`, `Lemma_PT`, `POS`, `Is_MWE`, `Raw_Freq`,
-  `Freq_per_million`
-- *enrichable*: `Rank`, `Lemma_PT`, `POS`, `Gloss_EN`, `Example_PT`,
-  `Example_EN`, `Is_MWE`, `Raw_Freq`, `Freq_per_million`
-
-(The `Tags` column is not a field — Anki maps it to note tags
-automatically.) Then design your own card templates; front/back layout is
-a personal choice and none is shipped here.
+Do not mix the two paths in one Anki profile: the TSV import creates its
+own notes, separate from the `.apkg`'s, so you would study every word
+twice.
 
 ### Which file should I import?
 
-Take **`ep_spoken_anki_enrichable.tsv`** if you intend to add your own
-translations and example sentences as you study — which is the approach
-that actually builds retention. Take the *minimal* file if you only want
-the ranked word list and will look things up elsewhere.
+**The `.apkg`**, unless you have a reason not to. It has room for your own
+translations and example sentences, which is the approach that actually
+builds retention, and adding a gloss gives you the reverse card for free.
 
-Either way, start with the first 5,000 and leave `5001_10000` until you
-have worked through it.
+On the advanced path, take **`ep_spoken_anki_enrichable.tsv`** if you will
+add glosses and examples, or the *minimal* file if you only want the ranked
+word list and will look things up elsewhere.
+
+Either way, start with the first 5,000 and leave the 5,001–10,000 deck
+until you have worked through it.
 
 ### Studying in frequency order
 
 Every note is tagged with its rank band, so you can study in slices rather
-than importing 5,000 cards and drowning:
+than facing 5,000 new cards at once:
 
 | Tag | Meaning |
 |---|---|

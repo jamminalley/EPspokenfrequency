@@ -7,6 +7,12 @@
 changes is the POS column and, through POS splitting, which rows fill the
 last places of each band.
 
+- **A ready-to-import Anki package**, `out/EP_Spoken_Frequency.apkg`: one
+  note type, two decks (1–5000, 5001–10000), a Portuguese → English card
+  for every note, and an English → Portuguese card that appears only once
+  a gloss is added. Notes are identified by word and part of speech, so a
+  later release imported over this one updates notes instead of
+  duplicating them. The TSV files remain for building your own note type.
 - **Part of speech from Stanza.** The POS column -- renamed from
   `pos_guess` to `pos`, and the Anki field from `POS_guess` to `POS` -- is
   now the tagger's majority vote over each word's sample sentences,
