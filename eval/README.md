@@ -49,3 +49,11 @@ LLM acting as a European-Portuguese informant, following
 Jim reviewed the seven rows where the rule or the informant was unsure, and
 adopted the informant's labels as `human_label` (the gold). Labels: `ser`,
 `ir`, `other` (the adverb *fora* "outside", 19 of the 20 *fora* rows).
+
+`ser_ir_sample2.tsv` — a second, held-out sample of 100 lines (20 per form,
+drawn with seed 20260922 from every corpus line containing one of the five
+forms, excluding lines and sentences used in the first sample; rows are
+shuffled). Labelled by Jim's Portuguese tutor, a native speaker, through a
+web page (labels ser / ir / outro, an "unsure" flag, and an optional
+comment). This sample was never used to develop the rule; it is the test
+set. `scripts/serir.py` must be scored against it without modification.
