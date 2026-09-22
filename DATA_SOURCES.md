@@ -105,9 +105,12 @@ underlying corpus — that is the work this project stands on.
 The subtitles themselves are community-contributed material from
 [opensubtitles.org](https://www.opensubtitles.org/), redistributed by OPUS
 for research use. OPUS asks that you cite the papers above. This project's
-derived counts are released under CC BY-SA 4.0 (see [LICENSE](LICENSE)),
-which covers this dataset only and grants no rights in the upstream
-subtitle text.
+derived data — the counts and lists in `out/`, and `eval/`, `reports/` and
+`archive/` — is released under CC BY-SA 4.0 (see
+[LICENSE-DATA](LICENSE-DATA)); the pipeline code in `scripts/` and `tests/`
+is under the MIT License (see [LICENSE](LICENSE)). Neither licence covers
+the corpus itself or grants any rights in the upstream subtitle text,
+which is not in this repository.
 
 ## Tools used
 

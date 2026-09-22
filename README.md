@@ -13,7 +13,7 @@ Ready-to-import Anki decks are included.
 | Corpus size | 118,469,705 lines · 636,214,452 tokens · 838,358 unique surface types |
 | Lemmatization accuracy | 98.5% on a 332-word human-reviewed sample |
 | Part of speech | From a neural tagger (Stanza), by majority vote over up to 50 sentences per word |
-| Licence | CC BY-SA 4.0 — see [LICENSE](LICENSE) |
+| Licence | Data (`out/`, `eval/`, `reports/`, `archive/`): CC BY-SA 4.0 — see [LICENSE-DATA](LICENSE-DATA). Code (`scripts/`, `tests/`): MIT — see [LICENSE](LICENSE) |
 
 An earlier version of this list (April 2026) was never published; the
 pipeline that produced it was lost. It is kept for comparison only in
@@ -462,8 +462,19 @@ file that has no business in git history. Download it yourself following
 
 ## Licence and citation
 
-Released under **CC BY-SA 4.0** ([LICENSE](LICENSE)). Use it, change it,
-redistribute it — keep the attribution and share derivatives alike.
+The data and the code are licensed separately:
+
+- **The data** — the lists and Anki files in `out/`, and `eval/`,
+  `reports/` and `archive/` — is **CC BY-SA 4.0**
+  ([LICENSE-DATA](LICENSE-DATA)). Use it, change it, redistribute it: keep
+  the attribution and share derivatives alike.
+- **The code** — `scripts/` and `tests/` — is **MIT** ([LICENSE](LICENSE)),
+  so you can reuse the pipeline in any project, keeping the copyright
+  notice.
+
+To attribute the data: *European Portuguese Spoken Frequency List, by Jim
+Ranalli (Professor Caloiro), licensed under CC BY-SA 4.0. Derived from OPUS
+OpenSubtitles v2018 (Lison & Tiedemann 2016).*
 
 If you publish anything based on this, please cite the underlying corpus:
 
