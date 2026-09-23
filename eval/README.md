@@ -57,3 +57,13 @@ shuffled). Labelled by Jim's Portuguese tutor, a native speaker, through a
 web page (labels ser / ir / outro, an "unsure" flag, and an optional
 comment). This sample was never used to develop the rule; it is the test
 set. `scripts/serir.py` must be scored against it without modification.
+
+Sample 2 labels arrived 2026-09-23: 99 labelled (t075 abstained — *Não, fui!*
+is too short to decide without the film). The tutor reported that the
+neighbouring lines, although they are the true adjacent lines in
+`pt.txt.gz`, usually did not read as a coherent scene. So adjacent lines in
+the OPUS OpenSubtitles monolingual file are NOT reliable dialogue context:
+the corpus appears to be deduplicated / reordered / interleaved across
+subtitle versions. Sentence-level counts and tagging are unaffected, but
+"sample sentences" in this project should be read as isolated lines, never
+as scenes, and future annotation tasks should not rely on neighbours.
