@@ -505,11 +505,90 @@ output:
     apkg:
       file: EP_Spoken_Frequency.apkg
       model_id: 1179315797
+      # Twenty subdecks of 500 under one parent, numbered so they sort in
+      # rank order. Generated once on 2026-09-23 and never regenerated;
+      # the two 5,000-note deck ids they replace were never published.
       decks:
-        - name: "Portuguese::European Portuguese - Spoken::1-5000"
-          id: 2038517696
-        - name: "Portuguese::European Portuguese - Spoken::5001-10000"
-          id: 1869653180
+        - name: "Portuguese::European Portuguese - Spoken::01 · 1–500"
+          id: 2068073358
+          lo: 1
+          hi: 500
+        - name: "Portuguese::European Portuguese - Spoken::02 · 501–1000"
+          id: 1644245857
+          lo: 501
+          hi: 1000
+        - name: "Portuguese::European Portuguese - Spoken::03 · 1001–1500"
+          id: 1345053726
+          lo: 1001
+          hi: 1500
+        - name: "Portuguese::European Portuguese - Spoken::04 · 1501–2000"
+          id: 1181939655
+          lo: 1501
+          hi: 2000
+        - name: "Portuguese::European Portuguese - Spoken::05 · 2001–2500"
+          id: 1443946357
+          lo: 2001
+          hi: 2500
+        - name: "Portuguese::European Portuguese - Spoken::06 · 2501–3000"
+          id: 1360713097
+          lo: 2501
+          hi: 3000
+        - name: "Portuguese::European Portuguese - Spoken::07 · 3001–3500"
+          id: 2105631544
+          lo: 3001
+          hi: 3500
+        - name: "Portuguese::European Portuguese - Spoken::08 · 3501–4000"
+          id: 1709690318
+          lo: 3501
+          hi: 4000
+        - name: "Portuguese::European Portuguese - Spoken::09 · 4001–4500"
+          id: 1546293187
+          lo: 4001
+          hi: 4500
+        - name: "Portuguese::European Portuguese - Spoken::10 · 4501–5000"
+          id: 2089242372
+          lo: 4501
+          hi: 5000
+        - name: "Portuguese::European Portuguese - Spoken::11 · 5001–5500"
+          id: 1374366428
+          lo: 5001
+          hi: 5500
+        - name: "Portuguese::European Portuguese - Spoken::12 · 5501–6000"
+          id: 1142449800
+          lo: 5501
+          hi: 6000
+        - name: "Portuguese::European Portuguese - Spoken::13 · 6001–6500"
+          id: 1774535697
+          lo: 6001
+          hi: 6500
+        - name: "Portuguese::European Portuguese - Spoken::14 · 6501–7000"
+          id: 1783859346
+          lo: 6501
+          hi: 7000
+        - name: "Portuguese::European Portuguese - Spoken::15 · 7001–7500"
+          id: 1580005185
+          lo: 7001
+          hi: 7500
+        - name: "Portuguese::European Portuguese - Spoken::16 · 7501–8000"
+          id: 2079134348
+          lo: 7501
+          hi: 8000
+        - name: "Portuguese::European Portuguese - Spoken::17 · 8001–8500"
+          id: 1421632181
+          lo: 8001
+          hi: 8500
+        - name: "Portuguese::European Portuguese - Spoken::18 · 8501–9000"
+          id: 1814710621
+          lo: 8501
+          hi: 9000
+        - name: "Portuguese::European Portuguese - Spoken::19 · 9001–9500"
+          id: 1954409756
+          lo: 9001
+          hi: 9500
+        - name: "Portuguese::European Portuguese - Spoken::20 · 9501–10000"
+          id: 1890686391
+          lo: 9501
+          hi: 10000
       # Fixed package timestamp, so the same lists give the same .apkg bytes.
       timestamp: 1790035200     # 2026-09-22T00:00:00Z
     tags:

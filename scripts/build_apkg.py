@@ -1,7 +1,8 @@
 """Build out/EP_Spoken_Frequency.apkg, the ready-to-import Anki package.
 
 One note type, "Portuguese (EP) – Spoken Frequency", with the enrichable
-field set, and one deck per rank band. Two card templates:
+field set, and twenty subdecks of 500 words, numbered so they sort in rank
+order (`01 · 1–500` … `20 · 9501–10000`). Two card templates:
 
   Card 1  PT -> EN  every note
   Card 2  EN -> PT  only when Gloss_EN is filled in: its front is wrapped
@@ -108,11 +109,17 @@ def build(cfg: dict[str, Any], out_dir: Path) -> dict[str, Any]:
     acfg = cfg["output"]["anki"]
     pcfg = acfg["apkg"]
     mdl = model(cfg)
-    decks = []
-    counts: dict[str, int] = {}
+    decks = [genanki.Deck(d["id"], d["name"]) for d in pcfg["decks"]]
+    by_rank = sorted(zip(pcfg["decks"], decks), key=lambda t: t[0]["lo"])
     seen: set[str] = set()
-    for spec, deck_cfg in zip(cfg["output"]["files"], pcfg["decks"]):
-        deck = genanki.Deck(deck_cfg["id"], deck_cfg["name"])
+
+    def deck_for(rank: int) -> "genanki.Deck":
+        for spec, deck in by_rank:
+            if spec["lo"] <= rank <= spec["hi"]:
+                return deck
+        raise ValueError(f"rank {rank} falls outside every deck in config")
+
+    for spec in cfg["output"]["files"]:
         with (out_dir / f"{spec['stem']}.tsv").open(encoding="utf-8", newline="") as fh:
             for row in csv.DictReader(fh, delimiter="\t"):
                 guid = note_guid(row["lemma"], row["pos"])
@@ -120,7 +127,7 @@ def build(cfg: dict[str, Any], out_dir: Path) -> dict[str, Any]:
                     raise ValueError(f"duplicate note (lemma, pos): {row['lemma']!r}, {row['pos']!r}")
                 seen.add(guid)
                 rank = int(row["rank"])
-                deck.add_note(genanki.Note(
+                deck_for(rank).add_note(genanki.Note(
                     model=mdl,
                     fields=[row["rank"], row["lemma"], row["pos"], "", "", "",
                             row["is_mwe"], row["raw_freq"], row["freq_per_million"]],
@@ -128,12 +135,11 @@ def build(cfg: dict[str, Any], out_dir: Path) -> dict[str, Any]:
                     guid=guid,
                     sort_field=row["rank"],
                 ))
-        decks.append(deck)
-        counts[deck_cfg["name"]] = len(deck.notes)
 
     path = out_dir / pcfg["file"]
     genanki.Package(decks).write_to_file(str(path), timestamp=pcfg["timestamp"])
-    return {"path": str(path), "notes": counts, "bytes": path.stat().st_size}
+    return {"path": str(path), "bytes": path.stat().st_size,
+            "notes": {d.name: len(d.notes) for d in decks}}
 
 
 def main() -> None:

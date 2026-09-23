@@ -86,15 +86,33 @@
   "pos_heuristic_in_list": 148,
   "entries": 10000,
   "apkg": {
-    "bytes": 3444954,
+    "bytes": 3457242,
     "notes": {
-      "Portuguese::European Portuguese - Spoken::1-5000": 5000,
-      "Portuguese::European Portuguese - Spoken::5001-10000": 5000
+      "Portuguese::European Portuguese - Spoken::01 · 1–500": 500,
+      "Portuguese::European Portuguese - Spoken::02 · 501–1000": 500,
+      "Portuguese::European Portuguese - Spoken::03 · 1001–1500": 500,
+      "Portuguese::European Portuguese - Spoken::04 · 1501–2000": 500,
+      "Portuguese::European Portuguese - Spoken::05 · 2001–2500": 500,
+      "Portuguese::European Portuguese - Spoken::06 · 2501–3000": 500,
+      "Portuguese::European Portuguese - Spoken::07 · 3001–3500": 500,
+      "Portuguese::European Portuguese - Spoken::08 · 3501–4000": 500,
+      "Portuguese::European Portuguese - Spoken::09 · 4001–4500": 500,
+      "Portuguese::European Portuguese - Spoken::10 · 4501–5000": 500,
+      "Portuguese::European Portuguese - Spoken::11 · 5001–5500": 500,
+      "Portuguese::European Portuguese - Spoken::12 · 5501–6000": 500,
+      "Portuguese::European Portuguese - Spoken::13 · 6001–6500": 500,
+      "Portuguese::European Portuguese - Spoken::14 · 6501–7000": 500,
+      "Portuguese::European Portuguese - Spoken::15 · 7001–7500": 500,
+      "Portuguese::European Portuguese - Spoken::16 · 7501–8000": 500,
+      "Portuguese::European Portuguese - Spoken::17 · 8001–8500": 500,
+      "Portuguese::European Portuguese - Spoken::18 · 8501–9000": 500,
+      "Portuguese::European Portuguese - Spoken::19 · 9001–9500": 500,
+      "Portuguese::European Portuguese - Spoken::20 · 9501–10000": 500
     }
   },
   "suspects": 0,
   "gold": {
     "pipeline, stage 2 (gated)": 0.9849397590361446
   },
-  "elapsed_s": 52.9
+  "elapsed_s": 55.6
 }

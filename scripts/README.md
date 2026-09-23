@@ -58,7 +58,7 @@ Other entry points:
 | `pos.py` | Published POS from tagger votes; consistency rule; POS splits |
 | `postag.py` | Rule-based POS fallback |
 | `emit.py` | Ranking, per-million, TSV/CSV/Anki writers |
-| `build_apkg.py` | The `.apkg` Anki package, from the band files (run by `build`) |
+| `build_apkg.py` | The `.apkg`: twenty 500-word decks from the band files (run by `build`) |
 | `quality.py` | Suspect duplicates, the gate, the fold listing |
 | `compare.py` | `COMPARISON.md` |
 | `eval_lemmas.py` | Gold-set scoring |

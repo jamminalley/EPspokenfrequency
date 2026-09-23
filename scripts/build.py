@@ -420,7 +420,7 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     apkg = build_apkg.build(cfg, out_dir)
     stats["apkg"] = {"bytes": apkg["bytes"], "notes": apkg["notes"]}
     _log(f"  wrote {Path(apkg['path']).name}: {apkg['bytes']:,} bytes, "
-         + ", ".join(f"{n:,} notes" for n in apkg["notes"].values()))
+         f"{sum(apkg['notes'].values()):,} notes in {len(apkg['notes'])} decks")
 
     # -- quality report ----------------------------------------------------
     _log("quality report")

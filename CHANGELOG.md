@@ -13,7 +13,8 @@ every field, glosses and examples a learner has typed in included; choosing
 "Never" keeps them but freezes ranks. Deferred to v1.1, when glosses ship.
 
 - **A ready-to-import Anki package**, `out/EP_Spoken_Frequency.apkg`: one
-  note type, two decks (1–5000, 5001–10000), a Portuguese → English card
+  note type, twenty decks of 500 words numbered in rank order
+  (`01 · 1–500` … `20 · 9501–10000`), a Portuguese → English card
   for every note, and an English → Portuguese card that appears only once
   a gloss is added. Notes are identified by word and part of speech, so a
   later release imported over this one updates notes instead of

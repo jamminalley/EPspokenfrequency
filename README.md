@@ -199,7 +199,7 @@ TSV and CSV hold identical data; pick whichever your tools prefer. Columns:
 
 | File | What it is |
 |---|---|
-| `EP_Spoken_Frequency.apkg` | **Ready to import**: both decks, the note type and the card templates in one package. See [Importing the Anki decks](#importing-the-anki-decks). |
+| `EP_Spoken_Frequency.apkg` | **Ready to import**: twenty decks of 500 words, the note type and the card templates in one package. See [Importing the Anki decks](#importing-the-anki-decks). |
 | `ep_spoken_anki_minimal.tsv` | Rank, Lemma_PT, POS, Is_MWE, Raw_Freq, Freq_per_million, Tags |
 | `ep_spoken_anki_enrichable.tsv` | The same, plus empty `Gloss_EN`, `Example_PT`, `Example_EN` for you to fill in |
 | `ep_spoken_5001_10000_anki_minimal.tsv` | Ranks 5001–10000, minimal fields |
@@ -356,8 +356,10 @@ options.
 select it, and you are done: the note type, the card templates and both
 decks come with it.
 
-- Two decks: `Portuguese::European Portuguese - Spoken::1-5000` and
-  `…::5001-10000`, 5,000 notes each.
+- Twenty decks of 500 words each, under one parent and numbered so they
+   sort in rank order: `Portuguese::European Portuguese - Spoken::01 ·
+   1–500`, `::02 · 501–1000`, and so on to `::20 · 9501–10000`. Study them
+   in order and you meet the commonest words first.
 - One note type, `Portuguese (EP) – Spoken Frequency`, with the fields
   `Rank`, `Lemma_PT`, `POS`, `Gloss_EN`, `Example_PT`, `Example_EN`,
   `Is_MWE`, `Raw_Freq` and `Freq_per_million`.
@@ -415,27 +417,31 @@ builds retention, and adding a gloss gives you the reverse card for free.
 
 On the advanced path, take **`ep_spoken_anki_enrichable.tsv`** if you will
 add glosses and examples, or the *minimal* file if you only want the ranked
-word list and will look things up elsewhere.
-
-Either way, start with the first 5,000 and leave the 5,001–10,000 deck
-until you have worked through it.
+word list and will look things up elsewhere. The TSV files hold 5,000 words
+each, so you will want to slice them by tag (below) as you go.
 
 ### Studying in frequency order
 
-Every note is tagged with its rank band, so you can study in slices rather
-than facing 5,000 new cards at once:
+The twenty decks are the order. Work through `01 · 1–500` before `02 ·
+501–1000`, and you learn the words roughly in the order you will hear
+them. The numbers keep the decks in order in Anki's deck list, and each
+deck has its own daily limits, so a deck you have not started sends you no
+new cards.
+
+Every note also carries tags, for slicing more finely than a deck — all
+the verbs in the first thousand, say — from the Anki browser:
 
 | Tag | Meaning |
 |---|---|
-| `freq::0001-0500`, `freq::0501-1000`, … | 500-word band |
+| `freq::0001-0500`, `freq::0501-1000`, … | 500-word band (matches the decks) |
 | `freq500::…` | 500-word band (alias) |
 | `freq1000::0001-1000`, … | 1000-word band |
 | `pos::det`, `pos::verb`, … | Part of speech |
 | `source::opensubtitles_ep_v2018` | Provenance |
 | `variety::EP`, `register::spoken` | Variety and register |
 
-Use the Anki browser to select a band, and suspend the rest until you get
-to it.
+The tags are on the TSV notes too, and are the only way to study those in
+order, since each TSV file imports into a single 5,000-note deck.
 
 ---
 

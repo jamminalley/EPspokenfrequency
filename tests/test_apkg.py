@@ -15,7 +15,22 @@ def test_ids_are_never_regenerated(release_cfg):
     them makes a re-import create a second note type and second decks."""
     a = release_cfg["output"]["anki"]["apkg"]
     assert a["model_id"] == 1179315797
-    assert [d["id"] for d in a["decks"]] == [2038517696, 1869653180]
+    assert [d["id"] for d in a["decks"]] == [
+        2068073358, 1644245857, 1345053726, 1181939655, 1443946357, 1360713097,
+        2105631544, 1709690318, 1546293187, 2089242372, 1374366428, 1142449800,
+        1774535697, 1783859346, 1580005185, 2079134348, 1421632181, 1814710621,
+        1954409756, 1890686391]
+
+
+def test_decks_tile_the_whole_range(release_cfg):
+    """Twenty decks of 500, contiguous and in order, named to sort."""
+    decks = release_cfg["output"]["anki"]["apkg"]["decks"]
+    assert len(decks) == 20
+    assert [(d["lo"], d["hi"]) for d in decks] == [(i * 500 + 1, i * 500 + 500)
+                                                   for i in range(20)]
+    assert [d["name"].split("::")[-1] for d in decks][:2] == ["01 · 1–500", "02 · 501–1000"]
+    assert decks[-1]["name"].endswith("20 · 9501–10000")
+    assert len({d["id"] for d in decks}) == 20
 
 
 def test_guid_depends_on_lemma_and_pos_only():
@@ -40,7 +55,8 @@ def test_package_from_band_files(release_cfg, tmp_path):
     (tmp_path / "ep_spoken_5001_10000.tsv").write_text(
         header + "5001\tfulano\t0\tnoun\t5\t0.1\n", encoding="utf-8")
     res = build_apkg.build(release_cfg, tmp_path)
-    assert list(res["notes"].values()) == [3, 1]
+    counts = {name.split("::")[-1]: n for name, n in res["notes"].items() if n}
+    assert counts == {"01 · 1–500": 3, "11 · 5001–5500": 1}
     with zipfile.ZipFile(res["path"]) as z:
         z.extract("collection.anki2", tmp_path)
     db = sqlite3.connect(tmp_path / "collection.anki2")
