@@ -37,7 +37,8 @@ Other entry points:
 | `python -m scripts.make_proper_noun_review` | Merge new proper-noun drops into the review file, keeping decisions |
 | `python -m scripts.fit_postag` | Regenerate `data/postag_rules.yaml` from the April release |
 | `python -m scripts.build_apkg` | Rebuild only the `.apkg` from the lists in `out/` |
-| `python -m scripts.serir --score` | Score the ser/ir rule against `eval/ser_ir_sample.tsv`; writes `reports/serir_scores.md` and the `.json` the build checks |
+| `python -m scripts.score_serir` | Score the ser/ir rule against both samples (development and held-out) and write the whole of `reports/serir_scores.md` |
+| `python -m scripts.serir --score` | Development sample only; rewrites that report without the held-out table, and the `.json` the build checks |
 | `python -m scripts.serir` | Draw a fresh ser/ir sample (refuses to overwrite labels) |
 
 ## Layout
@@ -53,6 +54,7 @@ Other entry points:
 | `lemmas.py` | Backends (simplemma, Stanza, gated, tiered, vote), overrides, closure |
 | `occurrence.py` | The Stanza tagging pass; per-occurrence splitting of participles |
 | `serir.py` | ser/ir next-word rule, its scoring, and its sample for the counts |
+| `score_serir.py` | Scores the rule against both labeled samples into one report |
 | `conventions.py` | The five conventions of `eval/conventions.md`, plus pronouns |
 | `filters.py` | BP list, proper nouns and review decisions, foreign words, fragments, accent folding |
 | `pos.py` | Published POS from tagger votes; consistency rule; POS splits |

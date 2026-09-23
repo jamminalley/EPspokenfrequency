@@ -11,6 +11,11 @@ last places of each band.
 by word and part of speech, and Anki's "Update notes" option then replaces
 every field, glosses and examples a learner has typed in included; choosing
 "Never" keeps them but freezes ranks. Deferred to v1.1, when glosses ship.
+On the held-out ser/ir sample, one adverbial *fora* in twenty reached the
+rule and was called a verb (*lá fora*: Stanza mistagged it, and the rule's
+"lá before the form" signal then read it as a destination); it affects
+about 1% of `fora` tokens, and is left for a later round rather than tuned
+away against the test set.
 
 - **A ready-to-import Anki package**, `out/EP_Spoken_Frequency.apkg`: one
   note type, twenty decks of 500 words numbered in rank order
@@ -46,7 +51,10 @@ every field, glosses and examples a learner has typed in included; choosing
   *fora* ("outside") out, and a next-word rule (`scripts/serir.py`) picks
   *ser* or *ir*. Scored against 100 random corpus lines checked by hand
   (`eval/ser_ir_sample.tsv`): 95.9% right on the verb uses it decides,
-  abstaining on 9%; none of the 19 adverbial *fora* lines reaches it.
+  abstaining on 9%; none of the 19 adverbial *fora* lines reaches it. On a
+  held-out sample of another 100 lines labeled afterwards by a native
+  speaker (`eval/ser_ir_sample2.tsv`), 93.2% (68/73), abstaining on 8% —
+  the honest estimate, since the rule was never tuned against it.
   Abstentions, and non-verb tags on forms that are always verbs (Stanza
   tags 6% of `foi` as a conjunction in clefts like *Foi por isso que*),
   take the form's own *ser*/*ir* ratio. The build applies the rule only

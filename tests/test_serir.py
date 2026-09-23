@@ -67,3 +67,18 @@ def test_adverbial_fora_keeps_its_reading(release_cfg):
     j = joint_from_tagged("fora", [("Está lá fora.", "fora", "ADV")] * 2
                           + [("Se eu fora rico.", "ser", "AUX")], release_cfg)
     assert j[("fora", "ADV")] == 2 and j[("ser", "AUX")] == 1
+
+
+def test_heldout_table_reports_gate_leaks():
+    """The held-out table must show an `outro` row that reached the rule,
+    not hide it: one did (lá fora, mistagged AUX)."""
+    from scripts import score_serir
+    res = {"rows": 99, "accuracy": 0.5,
+           "per_form": {f: {} for f in score_serir.FORMS},
+           "totals": {"verb": 2, "decided": 2, "correct": 1, "abstain": 0,
+                      "gated_out": 0, "other": 20},
+           "errors": [], "leaks": [("fora", "Está lá fora.", "AUX")]}
+    res["per_form"]["fora"] = {"other": 20}
+    table = "\n".join(score_serir.render(res, "eval/x.tsv"))
+    assert "| `fora` | 0 | 0 | 0 | – | 0 | – | 0 | 20 | 1 |" in table
+    assert "50.0%" in table

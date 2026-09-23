@@ -77,6 +77,13 @@ That has real consequences.
 - **It is single-genre and one snapshot in time.** No news, no academic
   prose, no fiction, no non-fiction, no actual recorded conversation, and
   nothing newer than the 2018 corpus release.
+- **Neighbouring lines are not a scene.** The corpus file is a stream of
+  subtitle lines that has been deduplicated, reordered and interleaved
+  across different subtitle versions of the same films, so two adjacent
+  lines usually do not belong to one exchange. Counting and tagging are
+  unaffected, since both work a line at a time, but every "sample sentence"
+  in this project is an isolated line: do not read the lines around one as
+  its context, and do not build an annotation task that relies on them.
 
 ### How this differs from Davies
 
@@ -128,9 +135,12 @@ These are specific and worth knowing before you study from the list.
   "outside", is not — and a rule reading the neighbouring words picks the
   verb: *ir* before *a*, *ao*, *para*, *embora* or an infinitive, or after
   *lá*; *ser* before a participle, an adjective, a noun phrase or nothing.
-  Against 100 random corpus lines checked by hand, it is right on 95.9% of
-  the verb uses it decides and abstains on 9%; an abstention takes the
-  form's own *ser*/*ir* ratio. The split is estimated from 1,000 random
+  On the 100 lines used to develop it, it is right on 95.9% of the verb
+  uses it decides; on a **held-out** 100 lines labeled afterwards by a
+  native speaker, **93.2%** (68 of 73), abstaining on 8%. An abstention
+  takes the form's own *ser*/*ir* ratio. Every one of those five held-out
+  errors calls an *ir* use *ser* (*já fomos*, *já foram todos?*), so *ir*
+  is still undercounted a little. The split is estimated from 1,000 random
   lines per form, so each form's share is good to about ±3 percentage
   points. It misses idioms (*ele não foi nessa*) and elliptical questions (*sempre
   foram?*). *Ser* counts 21.3M tokens and *ir* 9.0M.
@@ -300,15 +310,20 @@ From `pt.txt.gz` to `out/`, in one command (`python -m scripts.build`):
   `cirurgiã`/`cirurgia`), and the six known typo pairs from the caveats,
   which sit below the 10× folding threshold. Any new suspect fails the
   build.
-- **A hand-checked *ser*/*ir* sample.**
-  [eval/ser_ir_sample.tsv](eval/ser_ir_sample.tsv) is 100 corpus lines
-  drawn at random, 20 for each of `foi`, `fui`, `fomos`, `foram` and
-  `fora`. The labels were proposed by an AI model acting as a Portuguese
-  informant and checked independently by hand. The *ser*/*ir* rule is right
-  on **95.9%** of the verb uses it decides (71 of 74), abstains on 9%, and
-  none of the 19 lines where *fora* is the adverb reaches it. The build
-  uses the rule only while a score of at least 95% exists for its current
-  version; the full table is in
+- **Two labeled *ser*/*ir* samples**, 100 corpus lines each, 20 for each of
+  `foi`, `fui`, `fomos`, `foram` and `fora`.
+  [eval/ser_ir_sample.tsv](eval/ser_ir_sample.tsv) was used to develop the
+  rule: its labels were proposed by an AI model acting as a Portuguese
+  informant and checked by hand, and the rule scores **95.9%** on the verb
+  uses it decides (71 of 74).
+  [eval/ser_ir_sample2.tsv](eval/ser_ir_sample2.tsv) is **held out**:
+  labeled afterwards by a native speaker (Jim's Portuguese tutor), never
+  used to shape the rule, and therefore the honest estimate — **93.2%**
+  (68 of 73), abstaining on 8%. Stanza's verb test keeps the adverb *fora*
+  away from the rule in 19 of 20 held-out cases; the exception is *lá
+  fora*, which it mistagged as a verb. The build uses the rule only while a
+  score of at least 95% on the development set exists for its current
+  version; both tables are in
   [reports/serir_scores.md](reports/serir_scores.md).
 - **Determinism.** The same corpus, configuration and library versions
   produce byte-identical output.

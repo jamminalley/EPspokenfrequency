@@ -28,3 +28,34 @@ ratio among decided occurrences.
 | `fomos` | Nós jogamos, fomos a uma daquelas capelas de casamento baratas. | ir | ser |
 | `foram` | Então, sempre foram? | ir | ser |
 
+
+## Held-out test set: `eval/ser_ir_sample2.tsv`
+
+100 further corpus lines drawn the same way, 20 per form; 99
+carry a label. Labeled by a native speaker (Jim's Portuguese tutor),
+after the rule was finished: these labels were never used to shape it,
+so this is the honest estimate of how the rule behaves on new text.
+
+| form | verb rows | decided | correct | accuracy | abstained | abstention rate | gated out | `outro` rows | `outro` given a verb |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `foi` | 20 | 17 | 17 | 100.0% | 3 | 15% | 0 | 0 | 0 |
+| `fui` | 19 | 17 | 16 | 94.1% | 2 | 11% | 0 | 0 | 0 |
+| `fomos` | 20 | 20 | 19 | 95.0% | 0 | 0% | 0 | 0 | 0 |
+| `foram` | 20 | 19 | 16 | 84.2% | 1 | 5% | 0 | 0 | 0 |
+| `fora` | 0 | 0 | 0 | – | 0 | – | 0 | 20 | 1 |
+| **all** | 79 | 73 | 68 | 93.2% | 6 | 8% | 0 | 20 | 1 |
+
+**Accuracy on decided verb rows: 93.2%** (68/73), abstaining on 6 of 79. The rule is not tuned against this set.
+
+<details><summary>Errors</summary>
+
+| form | sentence | tutor | rule |
+|---|---|---|---|
+| `foram` | Já foram todos? | ir | ser |
+| `foram` | O que me recorda aquela vez em que um inglês, um irlandês, um escocês, um vigário, um rabino e um padre foram todos ao mesmo bar. | ir | ser |
+| `fui` | Tu sabes, Eu fui da Ford à cinco meses atrás. | ir | ser |
+| `fomos` | - Pai, já fomos. | ir | ser |
+| `foram` | Foram á procura dele em tua casa! | ir | ser |
+
+</details>
+
