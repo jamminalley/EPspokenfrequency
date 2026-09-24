@@ -32,8 +32,8 @@ ratio among decided occurrences.
 ## Held-out test set: `eval/ser_ir_sample2.tsv`
 
 100 further corpus lines drawn the same way, 20 per form; 99
-carry a label. Labeled by a native speaker (Jim's Portuguese tutor),
-after the rule was finished: these labels were never used to shape it,
+carry a label. Labeled by a native-speaker Portuguese teacher after
+the rule was finished: these labels were never used to shape it,
 so this is the honest estimate of how the rule behaves on new text.
 
 | form | verb rows | decided | correct | accuracy | abstained | abstention rate | gated out | `outro` rows | `outro` given a verb |

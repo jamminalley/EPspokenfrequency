@@ -53,13 +53,13 @@ adopted the informant's labels as `human_label` (the gold). Labels: `ser`,
 `ser_ir_sample2.tsv` — a second, held-out sample of 100 lines (20 per form,
 drawn with seed 20260922 from every corpus line containing one of the five
 forms, excluding lines and sentences used in the first sample; rows are
-shuffled). Labelled by Jim's Portuguese tutor, a native speaker, through a
+shuffled). Labelled by a native-speaker Portuguese teacher through a
 web page (labels ser / ir / outro, an "unsure" flag, and an optional
 comment). This sample was never used to develop the rule; it is the test
 set. `scripts/serir.py` must be scored against it without modification.
 
 Sample 2 labels arrived 2026-09-23: 99 labelled (t075 abstained — *Não, fui!*
-is too short to decide without the film). The tutor reported that the
+is too short to decide without the film). The teacher reported that the
 neighbouring lines, although they are the true adjacent lines in
 `pt.txt.gz`, usually did not read as a coherent scene. So adjacent lines in
 the OPUS OpenSubtitles monolingual file are NOT reliable dialogue context:

@@ -137,10 +137,10 @@ These are specific and worth knowing before you study from the list.
   *lá*; *ser* before a participle, an adjective, a noun phrase or nothing.
   On the 100 lines used to develop it, it is right on 95.9% of the verb
   uses it decides; on a **held-out** 100 lines labeled afterwards by a
-  native speaker, **93.2%** (68 of 73), abstaining on 8%. An abstention
-  takes the form's own *ser*/*ir* ratio. Every one of those five held-out
-  errors calls an *ir* use *ser* (*já fomos*, *já foram todos?*), so *ir*
-  is still undercounted a little. The split is estimated from 1,000 random
+  native-speaker Portuguese teacher, **93.2%** (68 of 73), abstaining on
+  8%. An abstention takes the form's own *ser*/*ir* ratio. Every one of
+  those five held-out errors calls an *ir* use *ser* (*já fomos*, *já foram
+  todos?*), so *ir* is still undercounted a little. The split is estimated from 1,000 random
   lines per form, so each form's share is good to about ±3 percentage
   points. It misses idioms (*ele não foi nessa*) and elliptical questions (*sempre
   foram?*). *Ser* counts 21.3M tokens and *ir* 9.0M.
@@ -242,9 +242,10 @@ From `pt.txt.gz` to `out/`, in one command (`python -m scripts.build`):
    the proper-noun filter.
 3. **Tag and lemmatize.** [Stanza](https://stanfordnlp.github.io/stanza/)
    reads the 63,253 word forms frequent enough to reach the list inside
-   their sample sentences — about 500,000 sentences — and gives each
-   occurrence a lemma and a part of speech. The majority lemma wins, after
-   discarding votes where the lemma and the tag contradict each other. When
+   their sample sentences — about 500,000 sentences, covering 62,494 of
+   those forms — and gives each occurrence a lemma and a part of speech.
+   The majority lemma wins, after discarding votes where the lemma and the
+   tag contradict each other. When
    Stanza's answer is not a dictionary word (it occasionally invents forms
    like *agradeçar*),
    [simplemma](https://github.com/adbar/simplemma) is used instead; simplemma
@@ -317,8 +318,8 @@ From `pt.txt.gz` to `out/`, in one command (`python -m scripts.build`):
   informant and checked by hand, and the rule scores **95.9%** on the verb
   uses it decides (71 of 74).
   [eval/ser_ir_sample2.tsv](eval/ser_ir_sample2.tsv) is **held out**:
-  labeled afterwards by a native speaker (Jim's Portuguese tutor), never
-  used to shape the rule, and therefore the honest estimate — **93.2%**
+  labeled afterwards by a native-speaker Portuguese teacher, never used to
+  shape the rule, and therefore the honest estimate — **93.2%**
   (68 of 73), abstaining on 8%. Stanza's verb test keeps the adverb *fora*
   away from the rule in 19 of 20 held-out cases; the exception is *lá
   fora*, which it mistagged as a verb. The build uses the rule only while a

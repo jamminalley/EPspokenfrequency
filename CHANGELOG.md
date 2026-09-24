@@ -1,21 +1,39 @@
 # Changelog
 
-## Unreleased — part of speech from the tagger, larger samples
+## 1.0.0 — 2026-09-24
 
-**Overlap with the April list** is now 79.0% of band 1 (ρ 0.944) and
-63.3% of band 2 (ρ 0.851). Against v0.9 the word lists barely change; what
-changes is the POS column and, through POS splitting, which rows fill the
-last places of each band.
+The first public release: 10,000 words of European Portuguese film and TV
+dialogue, ranked, with a ready-to-import Anki package. Lemmas come from a
+neural tagger checked against a dictionary and score 98.5% on a
+hand-reviewed sample; the part of speech is the tagger's, and `ser` and
+`ir` are separated by a rule measured against a native-speaker-labeled
+sample.
 
-**Known issues.** Re-importing a later `.apkg` over this one matches notes
-by word and part of speech, and Anki's "Update notes" option then replaces
-every field, glosses and examples a learner has typed in included; choosing
-"Never" keeps them but freezes ranks. Deferred to v1.1, when glosses ship.
-On the held-out ser/ir sample, one adverbial *fora* in twenty reached the
-rule and was called a verb (*lá fora*: Stanza mistagged it, and the rule's
-"lá before the form" signal then read it as a destination); it affects
-about 1% of `fora` tokens, and is left for a later round rather than tuned
-away against the test set.
+**Overlap with the April list** is 79.0% of band 1 (ρ 0.944) and 63.3% of
+band 2 (ρ 0.851). Against the v0.9 checkpoint the word lists barely change;
+what changed there was the POS column and, through POS splitting, which
+rows fill the last places of each band.
+
+**Known issues.**
+
+- **No glosses or example sentences.** The `Gloss_EN`, `Example_PT` and
+  `Example_EN` fields ship empty, for you to fill in; until a note has a
+  gloss it has no English → Portuguese card. Glosses are planned for 1.1.
+- **Six accent pairs are accepted as known typos** and appear as two
+  entries each: `camera`/`câmera`, `frigorifico`/`frigorífico`,
+  `amen`/`ámen`, `bla`/`blá`, `mafia`/`máfia`, `karate`/`karaté`. They sit
+  below the 10× folding ratio, and the quality gate accepts them by name.
+- **The `ser`/`ir` rule is right on 95.9%** of the verb uses it decides on
+  the development sample and **93.2%** (68 of 73) on the held-out sample,
+  abstaining on 8–9%. Its errors all call an `ir` use `ser`, so `ir` is
+  still slightly undercounted. One adverbial *fora* in twenty reaches the
+  rule at all (*lá fora*, mistagged by Stanza), affecting about 1% of
+  `fora` tokens; left for a later round rather than tuned away against the
+  test set.
+- **Re-importing a later `.apkg`** matches notes by word and part of
+  speech, and Anki's "Update notes" option then replaces every field,
+  glosses and examples a learner has typed in included; choosing "Never"
+  keeps them but freezes ranks. Deferred to 1.1, when glosses ship.
 
 - **A ready-to-import Anki package**, `out/EP_Spoken_Frequency.apkg`: one
   note type, twenty decks of 500 words numbered in rank order
@@ -52,8 +70,9 @@ away against the test set.
   *ser* or *ir*. Scored against 100 random corpus lines checked by hand
   (`eval/ser_ir_sample.tsv`): 95.9% right on the verb uses it decides,
   abstaining on 9%; none of the 19 adverbial *fora* lines reaches it. On a
-  held-out sample of another 100 lines labeled afterwards by a native
-  speaker (`eval/ser_ir_sample2.tsv`), 93.2% (68/73), abstaining on 8% —
+  held-out sample of another 100 lines labeled afterwards by a
+  native-speaker Portuguese teacher (`eval/ser_ir_sample2.tsv`), 93.2%
+  (68/73), abstaining on 8% —
   the honest estimate, since the rule was never tuned against it.
   Abstentions, and non-verb tags on forms that are always verbs (Stanza
   tags 6% of `foi` as a conjunction in clefts like *Foi por isso que*),

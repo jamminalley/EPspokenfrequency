@@ -10,8 +10,8 @@ way to regenerate `reports/serir_scores.md`; `python -m scripts.serir
             labels proposed by an LLM informant and checked by hand; the
             rule was revised after seeing its errors
   sample 2  eval/ser_ir_sample2.tsv  held-out test set, `tutor_label`
-            labeled by a native speaker (Jim's Portuguese tutor), never
-            used to shape the rule
+            labeled by a native-speaker Portuguese teacher, never used
+            to shape the rule
 
     python -m scripts.score_serir
 """
@@ -30,7 +30,7 @@ FORMS = serir.FORMS
 
 
 def score_heldout(cfg: dict[str, Any], path: str) -> dict[str, Any]:
-    """Score the rule, unchanged, against the native speaker's labels."""
+    """Score the rule, unchanged, against the teacher's labels."""
     with open(path, encoding="utf-8", newline="") as fh:
         rows = [r for r in csv.DictReader(fh, delimiter="\t")
                 if (r.get("tutor_label") or "").strip()]
@@ -75,8 +75,8 @@ def render(res: dict[str, Any], path: str) -> list[str]:
         "## Held-out test set: `" + path + "`",
         "",
         f"100 further corpus lines drawn the same way, 20 per form; {res['rows']}",
-        "carry a label. Labeled by a native speaker (Jim's Portuguese tutor),",
-        "after the rule was finished: these labels were never used to shape it,",
+        "carry a label. Labeled by a native-speaker Portuguese teacher after",
+        "the rule was finished: these labels were never used to shape it,",
         "so this is the honest estimate of how the rule behaves on new text.",
         "",
         "| form | verb rows | decided | correct | accuracy | abstained | abstention rate | gated out | `outro` rows | `outro` given a verb |",
