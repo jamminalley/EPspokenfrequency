@@ -12,6 +12,7 @@ pyspellchecker==0.9.0   # PT dictionary for the gate and filters; EN list for fo
 regex==2026.9.10        # Unicode-aware tokenization
 pyyaml==6.0.3           # config.yaml
 genanki==0.13.1         # the .apkg Anki package
+anthropic==1.8.0        # v1.1: the glosses (scripts/gloss.py); needs ANTHROPIC_API_KEY
 
 # Tests only
 pytest==9.1.1

@@ -595,3 +595,53 @@ output:
       band500: 500
       band1000: 1000
       static: [source::opensubtitles_ep_v2018, variety::EP, register::spoken]
+
+# -- v1.1: English glosses and example sentences -------------------------
+# `python -m scripts.gloss` asks Claude for a gloss, an example sentence
+# taken verbatim from the corpus, and its translation, for each of the
+# 10,000 published rows. Everything the run depends on is pinned here and
+# recorded in every cached response, so a change to any of it invalidates
+# the cache rather than silently mixing two vintages of gloss.
+gloss:
+  model: claude-opus-5        # exact model id, never a date-suffixed alias
+  max_tokens: 1000
+  effort: low                 # output_config.effort; the task is short
+  thinking: adaptive          # adaptive | disabled
+  # There is no temperature knob on this model family: the parameter was
+  # removed with Claude 4.7 and the SDK (anthropic 1.8.0) does not accept
+  # it, so a request cannot ask for temperature 0. Repeatability comes from
+  # the response cache instead: cache/gloss/ keeps every raw response, and
+  # a rerun re-sends only the rows whose model, prompt or inputs changed.
+  temperature: null
+  prompt_path: scripts/gloss_prompt.md
+  cache_dir: cache/gloss      # raw responses, keyed by lemma + POS; gitignored
+  out_file: glosses.tsv       # written into paths.out_dir; committed
+  review_file: gloss_review.tsv    # written into paths.eval_dir
+  batch:
+    poll_seconds: 60
+    state_file: cache/gloss/batch.json
+  # Which corpus lines may be offered as an example.
+  sentences:
+    max_per_row: 20
+    min_words: 4
+    max_words: 15
+    max_proper_noun_share: 0.34   # capitalized non-dictionary words per line
+    drop_all_caps: true
+    drop_ellipsis_edges: true     # a line that starts or ends mid-sentence
+    # ser and ir share foi/fui/fomos/foram/fora, and the lemma map assigns
+    # all of them to ser (serir.py splits the counts, not the sentences),
+    # so neither entry is offered a sentence whose only evidence is a form
+    # that could belong to the other verb.
+    exclude_joint_serir: true
+  # The 50-row dry run: eval/gloss_dryrun.tsv.
+  dryrun:
+    file: gloss_dryrun.tsv      # written into paths.eval_dir
+    seed: 20260924
+    strata:                     # [first rank, last rank, how many]
+      - [1, 100, 10]
+      - [101, 2000, 20]
+      - [2001, 10000, 20]
+    require:                    # drawn inside the strata, not added to them
+      multi_pos: 3              # words the list splits across two POS rows
+      mwe: 2
+      kept_feminine_nouns: 2    # convention 2: senhora, menina, miúda, ...
