@@ -65,3 +65,14 @@ build/
 # Full proper-noun drop log: ~260k entries / 10 MB of mostly hapax noise.
 # The truncated dropped_proper_nouns.txt is committed instead.
 *_full.txt
+
+# Secrets: the API key is read from the environment (ANTHROPIC_API_KEY) and
+# must never be written to a file.
+.env
+.env.*
+*.key
+
+# Raw model responses for the glosses, keyed by lemma + POS. Regenerating a
+# row is free while these are here; the published glosses live in
+# out/glosses.tsv, which is committed.
+cache/
