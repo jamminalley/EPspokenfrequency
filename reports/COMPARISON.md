@@ -54,11 +54,11 @@ off by 10-40x. Set in config as
 
 ## Band: ranks 1-5000
 
-- Entries: original 5,000, rebuild 4,846
+- Entries: original 5,000, rebuild 4,849
 - **Shared lemmas: 3,948 (79.0% of the original)**
 - Jaccard: 0.669
 - **Spearman rho on shared lemmas: 0.9439**
-- POS agreement: 74.4% over 3,948 shared lemmas
+- POS agreement: 74.0% over 3,948 shared lemmas
 - MWEs: original 179, rebuild 191, shared 166
 
 > This build's POS comes from the tagger; April's came from a rule heuristic, so this is agreement between two methods, not accuracy.
@@ -67,31 +67,31 @@ off by 10-40x. Set in config as
 
 | lemma | original | rebuild | move |
 |---|---:|---:|---:|
-| `entendido` | 833 | 4994 | +4,161 |
-| `feito` | 294 | 4450 | +4,156 |
-| `surpreso` | 857 | 4906 | +4,049 |
-| `saída` | 4557 | 828 | -3,729 |
-| `pedido` | 4851 | 1258 | -3,593 |
-| `exato` | 4754 | 1181 | -3,573 |
-| `entrevista` | 4996 | 1682 | -3,314 |
-| `sentido` | 3865 | 588 | -3,277 |
-| `direto` | 4490 | 1214 | -3,276 |
-| `partida` | 4703 | 1432 | -3,271 |
-| `entrega` | 4710 | 1566 | -3,144 |
-| `vista` | 3864 | 774 | -3,090 |
-| `desaparecido` | 1197 | 4122 | +2,925 |
-| `escrito` | 1275 | 4192 | +2,917 |
-| `maravilha` | 4828 | 1942 | -2,886 |
-| `procura` | 3297 | 412 | -2,885 |
-| `luta` | 3626 | 755 | -2,871 |
-| `cuidado` | 3253 | 384 | -2,869 |
-| `reserva` | 4564 | 1705 | -2,859 |
-| `ajuda` | 3141 | 287 | -2,854 |
-| `proteção` | 4219 | 1368 | -2,851 |
-| `exceto` | 4514 | 1670 | -2,844 |
-| `ato` | 4313 | 1500 | -2,813 |
-| `errar` | 3435 | 639 | -2,796 |
-| `pilar` | 2042 | 4793 | +2,751 |
+| `entendido` | 833 | 4991 | +4,158 |
+| `feito` | 294 | 4447 | +4,153 |
+| `surpreso` | 857 | 4903 | +4,046 |
+| `saída` | 4557 | 827 | -3,730 |
+| `pedido` | 4851 | 1256 | -3,595 |
+| `exato` | 4754 | 1179 | -3,575 |
+| `entrevista` | 4996 | 1679 | -3,317 |
+| `direto` | 4490 | 1212 | -3,278 |
+| `sentido` | 3865 | 587 | -3,278 |
+| `partida` | 4703 | 1430 | -3,273 |
+| `entrega` | 4710 | 1564 | -3,146 |
+| `vista` | 3864 | 773 | -3,091 |
+| `desaparecido` | 1197 | 4119 | +2,922 |
+| `escrito` | 1275 | 4189 | +2,914 |
+| `maravilha` | 4828 | 1939 | -2,889 |
+| `procura` | 3297 | 413 | -2,884 |
+| `luta` | 3626 | 754 | -2,872 |
+| `cuidado` | 3253 | 385 | -2,868 |
+| `reserva` | 4564 | 1702 | -2,862 |
+| `ajuda` | 3141 | 288 | -2,853 |
+| `proteção` | 4219 | 1366 | -2,853 |
+| `exceto` | 4514 | 1667 | -2,847 |
+| `ato` | 4313 | 1498 | -2,815 |
+| `errar` | 3435 | 638 | -2,797 |
+| `projeto` | 4034 | 1285 | -2,749 |
 
 ### In the original, missing from the rebuild
 
@@ -101,17 +101,17 @@ _1,052 total._
 
 ### New in the rebuild, absent from the original
 
-`a`, `o que`, `no`, `na`, `nos`, `é que`, `é o`, `que não`, `são`, `o meu`, `tua`, `eles`, `é um`, `é uma`, `pelo`, `por isso`, `pela`, `num`, `disso`, `fora`, `nas`, `numa`, `parte`, `todos os`, `deles`, `com ele`, `senhora`, `lhes`, `sozinho`, `todas as`, `cara`, `da minha`, `desta`, `filha`, `neste`, `rapariga`, `disto`, `ei`, `deste`, `nisso`, `menina`, `contigo`, `irmã`, `nesta`, `na minha`, `miúda`, `pelos`, `amiga`, `connosco`, `esposa`, `mente`, `pelas`, `graças`, `sra`, `nessa`, `dessa`, `parabéns`, `surpresa`, `namorada`, `nesse`
+`a`, `o que`, `no`, `na`, `nos`, `é que`, `é o`, `que não`, `são`, `o meu`, `tua`, `eles`, `é um`, `é uma`, `pelo`, `por isso`, `pela`, `num`, `disso`, `fora`, `contigo`, `nas`, `numa`, `parte`, `todos os`, `deles`, `com ele`, `senhora`, `lhes`, `sozinho`, `todas as`, `cara`, `da minha`, `desta`, `filha`, `neste`, `rapariga`, `disto`, `ei`, `deste`, `nisso`, `menina`, `irmã`, `nesta`, `na minha`, `miúda`, `pelos`, `amiga`, `connosco`, `esposa`, `mente`, `pelas`, `graças`, `sra`, `nessa`, `dessa`, `parabéns`, `surpresa`, `namorada`, `nesse`
 
-_898 total._
+_901 total._
 
 ## Band: ranks 5001-10000
 
 - Entries: original 5,000, rebuild 4,887
-- **Shared lemmas: 3,165 (63.3% of the original)**
+- **Shared lemmas: 3,166 (63.3% of the original)**
 - Jaccard: 0.471
 - **Spearman rho on shared lemmas: 0.8507**
-- POS agreement: 73.6% over 3,165 shared lemmas
+- POS agreement: 73.4% over 3,166 shared lemmas
 - MWEs: original 111, rebuild 104, shared 86
 
 > This build's POS comes from the tagger; April's came from a rule heuristic, so this is agreement between two methods, not accuracy.
@@ -120,43 +120,43 @@ _898 total._
 
 | lemma | original | rebuild | move |
 |---|---:|---:|---:|
-| `batida` | 9823 | 5084 | -4,739 |
-| `congelado` | 5251 | 9947 | +4,696 |
-| `afiado` | 5164 | 9570 | +4,406 |
-| `atraído` | 5462 | 9814 | +4,352 |
-| `lisonjeado` | 9460 | 5346 | -4,114 |
-| `rimar` | 5889 | 9970 | +4,081 |
-| `metanfetamina` | 9402 | 5424 | -3,978 |
-| `desfeito` | 5217 | 9153 | +3,936 |
-| `bailarino` | 5087 | 8917 | +3,830 |
-| `legendar` | 5411 | 9208 | +3,797 |
-| `emocionado` | 9593 | 5945 | -3,648 |
-| `vagar` | 5857 | 9455 | +3,598 |
-| `admirado` | 9904 | 6309 | -3,595 |
-| `sírio` | 5878 | 9459 | +3,581 |
-| `exagerado` | 9015 | 5444 | -3,571 |
-| `coxo` | 6441 | 9951 | +3,510 |
-| `enjoado` | 8561 | 5220 | -3,341 |
-| `disputar` | 5208 | 8509 | +3,301 |
-| `empenhado` | 9268 | 6011 | -3,257 |
-| `isolado` | 5238 | 8484 | +3,246 |
-| `desempregado` | 8693 | 5505 | -3,188 |
-| `vovô` | 6051 | 9161 | +3,110 |
-| `arrasado` | 9676 | 6632 | -3,044 |
-| `envenenado` | 6731 | 9774 | +3,043 |
-| `homicida` | 5982 | 9018 | +3,036 |
+| `batida` | 9823 | 5081 | -4,742 |
+| `congelado` | 5251 | 9944 | +4,693 |
+| `afiado` | 5164 | 9567 | +4,403 |
+| `atraído` | 5462 | 9811 | +4,349 |
+| `lisonjeado` | 9460 | 5343 | -4,117 |
+| `rimar` | 5889 | 9967 | +4,078 |
+| `metanfetamina` | 9402 | 5421 | -3,981 |
+| `desfeito` | 5217 | 9150 | +3,933 |
+| `bailarino` | 5087 | 8914 | +3,827 |
+| `legendar` | 5411 | 9205 | +3,794 |
+| `emocionado` | 9593 | 5942 | -3,651 |
+| `admirado` | 9904 | 6306 | -3,598 |
+| `vagar` | 5857 | 9452 | +3,595 |
+| `sírio` | 5878 | 9456 | +3,578 |
+| `exagerado` | 9015 | 5441 | -3,574 |
+| `coxo` | 6441 | 9948 | +3,507 |
+| `enjoado` | 8561 | 5217 | -3,344 |
+| `disputar` | 5208 | 8506 | +3,298 |
+| `empenhado` | 9268 | 6008 | -3,260 |
+| `isolado` | 5238 | 8481 | +3,243 |
+| `desempregado` | 8693 | 5502 | -3,191 |
+| `vovô` | 6051 | 9158 | +3,107 |
+| `arrasado` | 9676 | 6629 | -3,047 |
+| `envenenado` | 6731 | 9771 | +3,040 |
+| `homicida` | 5982 | 9015 | +3,033 |
 
 ### In the original, missing from the rebuild
 
 `fulano`, `dificil`, `broche`, `falcão`, `fundador`, `riso`, `solidão`, `mamilo`, `t-shirt`, `atormentar`, `nadia`, `refúgio`, `complicação`, `presta atenção`, `cubo`, `encanto`, `phoenix`, `bónus`, `extensão`, `embrulhar`, `hambúrguer`, `vapor`, `pierce`, `drive`, `salvamento`, `percurso`, `orientar`, `daniels`, `tirado`, `elite`, `câmbio`, `mills`, `obrigatório`, `andrea`, `técnica`, `garrett`, `beneficiar`, `hans`, `vermelhas`, `stevens`, `river`, `contabilista`, `desmoronar`, `jurisdição`, `impressionado`, `bebes`, `invocar`, `inocência`, `intervir`, `magoado`, `perfurar`, `paula`, `douglas`, `fatiar`, `passarinhar`, `necessariamente`, `judicial`, `hastings`, `abordagem`, `jerusalém`
 
-_1,835 total._
+_1,834 total._
 
 ### New in the rebuild, absent from the original
 
-`neta`, `partilha`, `bicha`, `ética`, `happy`, `disputa`, `oposto`, `criada`, `reinar`, `psicólogo`, `ingénuo`, `infetado`, `imortal`, `roll`, `debater`, `cabina`, `adotivo`, `pacífico`, `borda`, `covarde`, `ressaca`, `condicional`, `prisioneira`, `cachorrinho`, `lógico`, `condenado`, `móvel`, `ripar`, `cona`, `strip`, `marina`, `infetar`, `hobbit`, `comunicado`, `diversos`, `registro`, `brandy`, `carinho`, `sarar`, `despedido`, `crack`, `musical`, `fluir`, `encontrado`, `ditado`, `viciar`, `bunker`, `estelar`, `terço`, `afeto`, `coitar`, `tequila`, `fritar`, `grego`, `prancha`, `mantem`, `pátria`, `novato`, `vitamina`, `aterrorizar`
+`ética`, `happy`, `disputa`, `oposto`, `criada`, `reinar`, `psicólogo`, `ingénuo`, `infetado`, `imortal`, `roll`, `debater`, `cabina`, `adotivo`, `pacífico`, `borda`, `covarde`, `ressaca`, `condicional`, `prisioneira`, `cachorrinho`, `lógico`, `condenado`, `móvel`, `ripar`, `cona`, `strip`, `marina`, `infetar`, `hobbit`, `comunicado`, `diversos`, `registro`, `brandy`, `carinho`, `sarar`, `despedido`, `crack`, `musical`, `fluir`, `encontrado`, `ditado`, `viciar`, `bunker`, `estelar`, `terço`, `afeto`, `coitar`, `tequila`, `fritar`, `grego`, `prancha`, `mantem`, `pátria`, `novato`, `vitamina`, `aterrorizar`, `mãezinha`, `cristão`, `penteado`
 
-_1,722 total._
+_1,721 total._
 
 ## Against the stage 1 baseline
 
@@ -176,26 +176,26 @@ _800 total._
 
 **Promoted by the fixes** (new in stage 2):
 
-`a`, `da`, `no`, `na`, `nos`, `são`, `eles`, `dos`, `das`, `pela`, `fora`, `às`, `nas`, `numa`, `aos`, `lhes`, `sozinho`, `nova`, `cara`, `causa`, `disto`, `ei`, `calma`, `menina`, `contigo`, `irmã`, `nesta`, `miúda`, `falta`, `pelos`, `amiga`, `connosco`, `esposa`, `papá`, `mente`, `pelas`, `graças`, `sra`, `nessa`, `namorada`, `naquela`, `ver lo`, `posso ajudar`, `direita`, `avó`, `destes`, `rio`, `destas`, `pra`, `nela`, `verão`, `calça`, `combate`, `daquela`, `tia`, `irão`, `aspeto`, `busca`, `bruxa`, `política`
+`a`, `da`, `no`, `na`, `nos`, `são`, `eles`, `dos`, `das`, `pela`, `fora`, `às`, `contigo`, `nas`, `numa`, `aos`, `lhes`, `sozinho`, `nova`, `cara`, `causa`, `disto`, `ei`, `calma`, `menina`, `irmã`, `nesta`, `miúda`, `falta`, `pelos`, `amiga`, `connosco`, `esposa`, `papá`, `mente`, `pelas`, `graças`, `sra`, `nessa`, `namorada`, `naquela`, `ver lo`, `posso ajudar`, `direita`, `avó`, `destes`, `rio`, `destas`, `pra`, `nela`, `verão`, `calça`, `combate`, `daquela`, `tia`, `irão`, `aspeto`, `busca`, `bruxa`, `política`
 
-_646 total._
+_649 total._
 
 ### Band: ranks 5001-10000
 
-- Shared with baseline: 3,329 (66.6%)
-- Spearman rho vs baseline: 0.8528
+- Shared with baseline: 3,330 (66.6%)
+- Spearman rho vs baseline: 0.8527
 
 **Dropped by the fixes** (in stage 1, gone in stage 2):
 
 `ingrediente`, `definição`, `altar`, `concorrer`, `chef`, `deduzir`, `honestidade`, `indefeso`, `gaiola`, `reconsiderar`, `ponto final`, `recomendação`, `cultivar`, `furar`, `thor`, `monitorizar`, `esplêndido`, `deu-te`, `bébé`, `hudson`, `terramoto`, `política`, `rodado`, `patente`, `flechar`, `formal`, `insecto`, `restrito`, `claque`, `feriado`, `escotilha`, `aleatório`, `enervar`, `cortina`, `nasa`, `artilharia`, `marijuana`, `desobedecer`, `ooh`, `cenoura`, `manda`, `morango`, `dvd`, `irlanda`, `facebook`, `indicação`, `húmido`, `precipitar`, `endireitar`, `pontaria`, `fêmeo`, `bernard`, `moore`, `poeira`, `frankenstein`, `providenciar`, `amo-a`, `corrido`, `virtude`, `revelação`
 
-_1,671 total._
+_1,670 total._
 
 **Promoted by the fixes** (new in stage 2):
 
-`neta`, `partilha`, `bicha`, `ética`, `disputa`, `oposto`, `criada`, `ranger`, `reinar`, `psicólogo`, `ingénuo`, `infetado`, `imortal`, `cabina`, `adotivo`, `pacífico`, `batida`, `covarde`, `ressaca`, `condicional`, `àqueles`, `prisioneira`, `cachorrinho`, `lógico`, `condenado`, `móvel`, `ripar`, `fundar`, `infetar`, `comunicado`, `diversos`, `sarar`, `musical`, `fluir`, `encontrado`, `ditado`, `viciar`, `estelar`, `terço`, `afeto`, `coitar`, `fritar`, `grego`, `prancha`, `novato`, `vitamina`, `aterrorizar`, `mãezinha`, `cristão`, `penteado`, `infinito`, `arredores`, `mação`, `técnico`, `dane`, `complexo`, `conheçoa`, `juíza`, `matoua`, `patroa`
+`ética`, `disputa`, `oposto`, `criada`, `ranger`, `reinar`, `psicólogo`, `ingénuo`, `infetado`, `imortal`, `cabina`, `adotivo`, `pacífico`, `batida`, `covarde`, `ressaca`, `condicional`, `àqueles`, `prisioneira`, `cachorrinho`, `lógico`, `condenado`, `móvel`, `ripar`, `fundar`, `infetar`, `comunicado`, `diversos`, `sarar`, `musical`, `fluir`, `encontrado`, `ditado`, `viciar`, `estelar`, `terço`, `afeto`, `coitar`, `fritar`, `grego`, `prancha`, `novato`, `vitamina`, `aterrorizar`, `mãezinha`, `cristão`, `penteado`, `infinito`, `arredores`, `mação`, `técnico`, `dane`, `complexo`, `conheçoa`, `juíza`, `matoua`, `patroa`, `lindíssimo`, `certificado`, `saudar`
 
-_1,558 total._
+_1,557 total._
 
 ## Lemmatization conventions (eval/conventions.md)
 
@@ -230,11 +230,11 @@ Former headwords merged away: `elas` (93,302)
 |---|---:|---:|---|
 | `na` | 40 | 2,539,819 | `na` |
 | `nos` | 52 | 1,714,154 | `nos` |
-| `deste` | 419 | 160,081 | `deste` |
-| `desse` | 891 | 60,349 | `desse` |
-| `destas` | 1109 | 46,144 | `destas` |
-| `noutros` | 6557 | 2,714 | `noutros` |
-| `nuns` | 8390 | 1,679 | `nuns` |
+| `deste` | 420 | 160,081 | `deste` |
+| `desse` | 889 | 60,349 | `desse` |
+| `destas` | 1107 | 46,144 | `destas` |
+| `noutros` | 6554 | 2,714 | `noutros` |
+| `nuns` | 8387 | 1,679 | `nuns` |
 
 ### Pronouns are their own lemmas (me, not eu)
 
@@ -245,37 +245,37 @@ Former headwords merged away: `elas` (93,302)
 | `lhe` | 72 | 1,328,170 | `lhe` |
 | `mim` | 96 | 973,045 | `mim` |
 | `ti` | 130 | 734,358 | `ti` |
-| `vos` | 253 | 315,880 | `vos` |
-| `lhes` | 323 | 222,561 | `lhes` |
+| `vos` | 254 | 315,880 | `vos` |
+| `lhes` | 324 | 222,561 | `lhes` |
 
 ### 2. Gendered nouns fold into the masculine
 
 | entry | rank | tokens gained | from surfaces |
 |---|---:|---:|---|
-| `tolo` | 1666 | 5,541 | `tola` |
-| `drogado` | 2411 | 3,671 | `drogada` |
-| `falhado` | 2803 | 2,861 | `falhada`, `falhadas` |
-| `parvo` | 2943 | 8,488 | `parva`, `parvas` |
-| `católico` | 3161 | 4,102 | `católica` |
-| `sereno` | 3262 | 8,596 | `serena` |
-| `salvador` | 3302 | 1,514 | `salvadora` |
-| `bravo` | 3389 | 3,483 | `brava` |
-| `solto` | 3548 | 22,585 | `solta` |
-| `franco` | 4230 | 2,338 | `franca` |
-| `operador` | 4258 | 1,623 | `operadora`, `operadoras` |
-| `desgraçado` | 4335 | 1,844 | `desgraçada`, `desgraçadas` |
-| `culpado` | 4778 | 9,242 | `culpada` |
-| `moreno` | 4840 | 2,818 | `morena`, `morenas` |
-| `costeiro` | 5022 | 3,925 | `costeira` |
-| `bruto` | 6298 | 2,886 | `bruta`, `brutas` |
-| `soviético` | 6361 | 4,164 | `soviética` |
-| `silencioso` | 6971 | 2,215 | `silenciosa` |
-| `criativo` | 7338 | 2,179 | `criativa` |
-| `tremendo` | 7342 | 2,176 | `tremenda` |
-| `encantado` | 7513 | 3,286 | `encantada` |
-| `vegetariano` | 7726 | 1,827 | `vegetariana` |
-| `nono` | 8198 | 1,744 | `nona` |
-| `farmacêutico` | 9832 | 1,741 | `farmacêutica` |
+| `tolo` | 1663 | 5,541 | `tola` |
+| `drogado` | 2408 | 3,671 | `drogada` |
+| `falhado` | 2800 | 2,861 | `falhada`, `falhadas` |
+| `parvo` | 2940 | 8,488 | `parva`, `parvas` |
+| `católico` | 3158 | 4,102 | `católica` |
+| `sereno` | 3259 | 8,596 | `serena` |
+| `salvador` | 3299 | 1,514 | `salvadora` |
+| `bravo` | 3386 | 3,483 | `brava` |
+| `solto` | 3545 | 22,585 | `solta` |
+| `franco` | 4227 | 2,338 | `franca` |
+| `operador` | 4255 | 1,623 | `operadora`, `operadoras` |
+| `desgraçado` | 4332 | 1,844 | `desgraçada`, `desgraçadas` |
+| `culpado` | 4775 | 9,242 | `culpada` |
+| `moreno` | 4837 | 2,818 | `morena`, `morenas` |
+| `costeiro` | 5019 | 3,925 | `costeira` |
+| `bruto` | 6295 | 2,886 | `bruta`, `brutas` |
+| `soviético` | 6358 | 4,164 | `soviética` |
+| `silencioso` | 6968 | 2,215 | `silenciosa` |
+| `criativo` | 7335 | 2,179 | `criativa` |
+| `tremendo` | 7339 | 2,176 | `tremenda` |
+| `encantado` | 7510 | 3,286 | `encantada` |
+| `vegetariano` | 7723 | 1,827 | `vegetariana` |
+| `nono` | 8195 | 1,744 | `nona` |
+| `farmacêutico` | 9829 | 1,741 | `farmacêutica` |
 
 Former headwords merged away: `solta` (22,585), `culpada` (9,242), `serena` (8,596), `parva` (8,488), `tola` (5,541), `soviética` (4,164), `católica` (4,102), `costeira` (3,925), `drogada` (3,671), `brava` (3,483), `encantada` (3,286), `bruta` (2,886), `falhada` (2,861), `morena` (2,818), `franca` (2,338), `silenciosa` (2,215), `criativa` (2,179), `tremenda` (2,176), `desgraçada` (1,844), `vegetariana` (1,827), `nona` (1,744), `farmacêutica` (1,741), `operadora` (1,623), `salvadora` (1,514)
 
@@ -285,29 +285,29 @@ Former headwords merged away: `solta` (22,585), `culpada` (9,242), `serena` (8,5
 |---|---:|---:|---|
 | `a` | 10 | 21,990,983 | `a` |
 | `mãe` | 131 | 11,983 | `mães` |
-| `rapariga` | 358 | 147,141 | `rapariga` |
-| `política` | 1381 | 5,020 | `políticas` |
-| `ferida` | 1785 | 31,416 | `ferida`, `feridas` |
-| `santa` | 2117 | 340 | `santas` |
-| `marinha` | 2187 | 1,163 | `marinhas` |
-| `matemática` | 2629 | 545 | `matemáticas` |
-| `lógica` | 3261 | 259 | `lógicas` |
-| `solitária` | 3363 | 1,110 | `solitárias` |
-| `seca` | 3623 | 2,087 | `secas` |
-| `secundária` | 4111 | 967 | `secundárias` |
-| `química` | 4478 | 1,873 | `químicas` |
-| `senadora` | 4658 | 19 | `senadoras` |
-| `doméstica` | 4804 | 1,003 | `domésticas` |
-| `prisioneira` | 5107 | 464 | `prisioneiras` |
-| `mecânica` | 5515 | 420 | `mecânicas` |
-| `cozinheira` | 5863 | 111 | `cozinheiras` |
-| `pedrada` | 6412 | 301 | `pedradas` |
-| `balística` | 6416 | 38 | `balísticas` |
-| `traidora` | 6722 | 128 | `traidoras` |
-| `indiana` | 7056 | 255 | `indianas` |
-| `conselheira` | 7112 | 43 | `conselheiras` |
-| `inimiga` | 7133 | 2,322 | `inimigas` |
-| `dinâmica` | 7624 | 208 | `dinâmicas` |
+| `rapariga` | 359 | 147,141 | `rapariga` |
+| `política` | 1379 | 5,020 | `políticas` |
+| `ferida` | 1782 | 31,416 | `ferida`, `feridas` |
+| `santa` | 2114 | 340 | `santas` |
+| `marinha` | 2184 | 1,163 | `marinhas` |
+| `matemática` | 2626 | 545 | `matemáticas` |
+| `lógica` | 3258 | 259 | `lógicas` |
+| `solitária` | 3360 | 1,110 | `solitárias` |
+| `seca` | 3620 | 2,087 | `secas` |
+| `secundária` | 4108 | 967 | `secundárias` |
+| `química` | 4475 | 1,873 | `químicas` |
+| `senadora` | 4655 | 19 | `senadoras` |
+| `doméstica` | 4801 | 1,003 | `domésticas` |
+| `prisioneira` | 5104 | 464 | `prisioneiras` |
+| `mecânica` | 5512 | 420 | `mecânicas` |
+| `cozinheira` | 5860 | 111 | `cozinheiras` |
+| `pedrada` | 6409 | 301 | `pedradas` |
+| `balística` | 6413 | 38 | `balísticas` |
+| `traidora` | 6719 | 128 | `traidoras` |
+| `indiana` | 7053 | 255 | `indianas` |
+| `conselheira` | 7109 | 43 | `conselheiras` |
+| `inimiga` | 7130 | 2,322 | `inimigas` |
+| `dinâmica` | 7621 | 208 | `dinâmicas` |
 
 _7 further published entries affected._
 
@@ -315,31 +315,31 @@ _7 further published entries affected._
 
 | entry | rank | tokens gained | from surfaces |
 |---|---:|---:|---|
-| `paizinho` | 4399 | 79 | `paizinhos` |
-| `irmãozinho` | 5699 | 87 | `irmãozinhos` |
-| `ajudinha` | 5729 | 9 | `ajudinhas` |
-| `espertinho` | 5853 | 320 | `espertinhos` |
-| `avozinha` | 6017 | 98 | `avozinhas` |
-| `amorzinho` | 6145 | 74 | `amorzinhos` |
-| `engraçadinho` | 6870 | 267 | `engraçadinhos` |
-| `irmãzinha` | 6997 | 57 | `irmãzinhas` |
-| `voltinha` | 7386 | 307 | `voltinhas` |
-| `carinha` | 7479 | 213 | `carinhas` |
-| `calminha` | 7524 | 2,084 | `calminha`, `calminhas` |
-| `avozinho` | 7843 | 43 | `avozinhos` |
-| `certinho` | 7860 | 194 | `certinhos` |
-| `queridinha` | 8181 | 31 | `queridinhas` |
-| `maminha` | 8314 | 1,525 | `maminhas` |
-| `pobrezinha` | 8608 | 61 | `pobrezinhas` |
-| `filhinha` | 8747 | 41 | `filhinhas` |
-| `trabalhinho` | 8777 | 205 | `trabalhinhos` |
-| `rabinho` | 8871 | 131 | `rabinhos` |
-| `coitadinha` | 8880 | 48 | `coitadinhas` |
-| `garotinha` | 9030 | 138 | `garotinhas` |
-| `olhinho` | 9526 | 102 | `olhinho` |
-| `caixinha` | 9542 | 122 | `caixinhas` |
-| `limpinho` | 9611 | 155 | `limpinhos` |
-| `queridinho` | 9672 | 176 | `queridinhos` |
+| `paizinho` | 4396 | 79 | `paizinhos` |
+| `irmãozinho` | 5696 | 87 | `irmãozinhos` |
+| `ajudinha` | 5726 | 9 | `ajudinhas` |
+| `espertinho` | 5850 | 320 | `espertinhos` |
+| `avozinha` | 6014 | 98 | `avozinhas` |
+| `amorzinho` | 6142 | 74 | `amorzinhos` |
+| `engraçadinho` | 6867 | 267 | `engraçadinhos` |
+| `irmãzinha` | 6994 | 57 | `irmãzinhas` |
+| `voltinha` | 7383 | 307 | `voltinhas` |
+| `carinha` | 7476 | 213 | `carinhas` |
+| `calminha` | 7521 | 2,084 | `calminha`, `calminhas` |
+| `avozinho` | 7840 | 43 | `avozinhos` |
+| `certinho` | 7857 | 194 | `certinhos` |
+| `queridinha` | 8178 | 31 | `queridinhas` |
+| `maminha` | 8311 | 1,525 | `maminhas` |
+| `pobrezinha` | 8605 | 61 | `pobrezinhas` |
+| `filhinha` | 8744 | 41 | `filhinhas` |
+| `trabalhinho` | 8774 | 205 | `trabalhinhos` |
+| `rabinho` | 8868 | 131 | `rabinhos` |
+| `coitadinha` | 8877 | 48 | `coitadinhas` |
+| `garotinha` | 9027 | 138 | `garotinhas` |
+| `olhinho` | 9523 | 102 | `olhinho` |
+| `caixinha` | 9539 | 122 | `caixinhas` |
+| `limpinho` | 9608 | 155 | `limpinhos` |
+| `queridinho` | 9669 | 176 | `queridinhos` |
 
 _5 further published entries affected._
 
@@ -348,12 +348,12 @@ _5 further published entries affected._
 | entry | rank | tokens gained | from surfaces |
 |---|---:|---:|---|
 | `melhor` | 115 | 73,976 | `melhores` |
-| `ótimo` | 262 | 307,353 | `óptima`, `óptimas`, `óptimo`, `óptimos`, `ótima`, `ótimo` +1 |
-| `maior` | 396 | 26,512 | `maiores` |
+| `ótimo` | 263 | 307,353 | `óptima`, `óptimas`, `óptimo`, `óptimos`, `ótima`, `ótimo` +1 |
+| `maior` | 397 | 26,512 | `maiores` |
 | `pior` | 534 | 15,844 | `piores` |
-| `menor` | 1640 | 6,768 | `menores` |
-| `mínimo` | 2339 | 12,363 | `mínima`, `mínimas`, `mínimos` |
-| `máximo` | 2833 | 10,541 | `máxima`, `máximas` |
+| `menor` | 1638 | 6,768 | `menores` |
+| `mínimo` | 2336 | 12,363 | `mínima`, `mínimas`, `mínimos` |
+| `máximo` | 2830 | 10,541 | `máxima`, `máximas` |
 
 Former headwords merged away: `óptimas` (5,757), `óptimos` (5,516)
 
@@ -380,12 +380,12 @@ Former headwords merged away: `óptimas` (5,757), `óptimos` (5,516)
 | `pelo` | 157 | 7,908 | `pêlo`, `pêlos` |
 | `ajudar` | 159 | 1 | `ajudéis` |
 | `trazer` | 214 | 1 | `trazéis` |
-| `ideia` | 236 | 20,253 | `idéia`, `idéias` |
-| `viver` | 259 | 1 | `vivéis` |
-| `ótimo` | 262 | 1 | `óctimo` |
-| `comer` | 280 | 1 | `comeréis` |
-| `pois` | 377 | 1 | `póis` |
-| `coração` | 428 | 4 | `coracção` |
+| `ideia` | 237 | 20,253 | `idéia`, `idéias` |
+| `viver` | 260 | 1 | `vivéis` |
+| `ótimo` | 263 | 1 | `óctimo` |
+| `comer` | 281 | 1 | `comeréis` |
+| `pois` | 378 | 1 | `póis` |
+| `coração` | 429 | 4 | `coracção` |
 
 _403 further published entries affected._
 

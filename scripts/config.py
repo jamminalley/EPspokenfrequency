@@ -50,6 +50,7 @@ _FIX_FLAGS = (
     "short_token_rule",
     "cap_sentence_starts",
     "proper_noun_review",
+    "contraction_pos",
 )
 
 

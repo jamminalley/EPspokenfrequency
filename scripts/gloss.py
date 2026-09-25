@@ -32,12 +32,12 @@ touches ``data/``. For a multi-word entry the phrase is matched over
 *tokenized* lines, because a split enclitic (``ver lo``) is a pair of
 tokens that never appears as text.
 
-Known approximation: the cached lemma map is the one the backend and the
-dictionary gate produced, before the conventions, the closure and the
-accent folds merged some lemmas onto others. A handful of entries whose
-inflected forms all arrived through such a merge therefore find no
-sentences, and are glossed from the headword alone; ``--dry-run`` and
-``--submit`` both report how many.
+The map it reads is the one the build itself published -- backend, gate,
+conventions, closure and accent folds resolved into one surface -> entry
+lookup, written to ``.cache/`` by ``scripts.build``. An entry whose forms
+are all rarer than the 70,000th type still has no sampled sentence; those
+are rescued by one targeted pass over the corpus, picking lines by the same
+digest rule pass 2 uses, cached in ``.cache/`` like any other pass.
 """
 
 from __future__ import annotations
@@ -76,6 +76,36 @@ SCHEMA: dict[str, Any] = {
 
 COLUMNS = ("rank", "lemma", "pos", "is_mwe", "freq_per_million", "pos_share",
            "gloss", "example_pt", "example_en", "flags")
+
+_DASHES = ("-", "\u2013", "\u2014")
+_QUOTE_PAIRS = (('"', '"'), ("\u201c", "\u201d"), ("\u00ab", "\u00bb"),
+                ("\u2018", "\u2019"), ("'", "'"))
+
+
+def tidy(text: str) -> str:
+    """Presentation only: drop a subtitle's leading dialogue dash and the
+    quotation marks around a whole line.
+
+    This runs after the verbatim check, never before it. The sentence stored
+    in cache/gloss/ and checked against what was sent is the corpus line
+    exactly as the corpus has it; what a card shows is that line without the
+    dash that only means "a second speaker" and the quotes that only mean
+    "this line is a quotation". A quote inside the line is left alone, and
+    so is an unmatched one.
+    """
+    out = text.strip()
+    changed = True
+    while changed and out:
+        changed = False
+        for dash in _DASHES:
+            if out.startswith(dash) and not out[len(dash):].lstrip().startswith(dash):
+                out, changed = out[len(dash):].lstrip(), True
+        for lo, hi in _QUOTE_PAIRS:
+            if len(out) > 1 and out.startswith(lo) and out.endswith(hi):
+                inner = out[len(lo):-len(hi)]
+                if lo not in inner and hi not in inner:
+                    out, changed = inner.strip(), True
+    return out or text.strip()
 
 
 def _log(msg: str) -> None:
@@ -117,6 +147,118 @@ def load_rows(cfg: dict[str, Any]) -> list[dict[str, Any]]:
 # -- example sentences -------------------------------------------------------
 
 
+# -- a targeted corpus pass, for entries pass 2 never sampled ---------------
+#
+# Pass 2 keeps sampled lines for the 70,000 most frequent surface forms, and
+# for a multi-word entry only the lines that happen to contain the whole
+# phrase. A handful of published entries fall outside both, and rather than
+# gloss those from the headword alone they get one pass of their own, over
+# the same corpus, choosing lines by the same rule.
+
+_SCAN_TOK = None
+_SCAN_SINGLES: frozenset[str] = frozenset()
+_SCAN_PHRASES: tuple[tuple[str, ...], ...] = ()
+_SCAN_FILTER = None
+_SCAN_K = 0
+_SCAN_SEED = 0
+
+
+def _scan_init(tok_cfg: dict[str, Any], singles: frozenset[str],
+               phrases: tuple[str, ...], prefilter: tuple[str, ...],
+               k: int, seed: int) -> None:
+    import re
+
+    from scripts.tokenizer import Tokenizer
+
+    global _SCAN_TOK, _SCAN_SINGLES, _SCAN_PHRASES, _SCAN_FILTER, _SCAN_K, _SCAN_SEED
+    _SCAN_TOK = Tokenizer(dict(tok_cfg, lowercase=True))
+    _SCAN_SINGLES = singles
+    _SCAN_PHRASES = tuple(tuple(p.split()) for p in phrases)
+    # One regex over the whole line rejects the great majority of the corpus
+    # without tokenizing it. For a phrase the term is its rarest word, not
+    # the phrase itself: a phrase whose tokens are only adjacent after
+    # enclitic splitting never appears in the text as written.
+    terms = sorted(set(singles) | set(prefilter), key=len, reverse=True)
+    _SCAN_FILTER = re.compile("|".join(re.escape(t) for t in terms)) if terms else None
+    _SCAN_K, _SCAN_SEED = k, seed
+
+
+def _scan_chunk(lines: list[str]) -> dict[str, list[tuple[int, str]]]:
+    """The best K lines per wanted surface or phrase in one chunk."""
+    import heapq
+    from collections import defaultdict
+
+    from scripts.bigrams import _ctx_digest
+
+    out: dict[str, list[tuple[int, str]]] = defaultdict(list)
+    for line in lines:
+        if _SCAN_FILTER is None or not _SCAN_FILTER.search(line.lower()):
+            continue
+        sentence = line.strip()
+        toks = _SCAN_TOK.tokenize(line)
+        for token in set(toks) & _SCAN_SINGLES:
+            out[token].append((_ctx_digest(_SCAN_SEED, token, sentence), sentence))
+        for parts in _SCAN_PHRASES:
+            n = len(parts)
+            if any(toks[i:i + n] == list(parts) for i in range(len(toks) - n + 1)):
+                key = " ".join(parts)
+                out[key].append((_ctx_digest(_SCAN_SEED, key, sentence), sentence))
+    return {t: heapq.nsmallest(_SCAN_K, v) for t, v in out.items()}
+
+
+def scan_corpus(cfg: dict[str, Any], singles: Iterable[str],
+                phrases: Iterable[str], prefilter: Iterable[str],
+                k: int) -> dict[str, list[str]]:
+    """Sample corpus lines for surfaces and phrases pass 2 did not keep.
+
+    Selection is the same pure function of content pass 2 uses -- the K
+    smallest BLAKE2b digests of (seed, key, line) -- so a rescued entry's
+    sentences are drawn exactly as every other entry's were, and the result
+    does not depend on how many workers ran. Cached like any other pass.
+    """
+    import gzip
+    import heapq
+    import multiprocessing as mp
+    from collections import defaultdict
+
+    from scripts import corpus
+
+    singles, phrases = frozenset(singles), tuple(sorted(set(phrases)))
+    if not singles and not phrases:
+        return {}
+    cache = Path(cfg["paths"]["cache_dir"]) / (
+        f"gloss_rescue_{digest(str(k), cfg['corpus']['path'], *sorted(singles), *phrases)}"
+        ".json.gz")
+    if cache.is_file():
+        _log(f"  rescue: reusing cache {cache}")
+        with gzip.open(cache, "rt", encoding="utf-8") as fh:
+            return json.load(fh)
+
+    _log(f"  rescue: one corpus pass for {len(singles)} surfaces and "
+         f"{len(phrases)} phrases pass 2 never sampled")
+    best: dict[str, list[tuple[int, str]]] = defaultdict(list)
+    started = time.monotonic()
+    with mp.get_context("spawn").Pool(
+        processes=cfg["run"]["workers"], initializer=_scan_init,
+        initargs=(cfg["tokenizer"], singles, phrases, tuple(sorted(set(prefilter))),
+                  k, cfg["run"]["seed"]),
+    ) as pool:
+        for i, part in enumerate(pool.imap(_scan_chunk, corpus.chunks(cfg), chunksize=1), 1):
+            for key, cands in part.items():
+                best[key] = heapq.nsmallest(k, best[key] + cands)
+            if i % 100 == 0:
+                _log(f"    rescue chunk {i:5d}  {len(best)} of "
+                     f"{len(singles) + len(phrases)} keys seen "
+                     f"({time.monotonic() - started:.0f}s)")
+    out = {key: [line for _, line in sorted(v)] for key, v in best.items()}
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    with gzip.open(cache, "wt", encoding="utf-8") as fh:
+        json.dump(out, fh, ensure_ascii=False, sort_keys=True)
+    _log(f"  rescue: {sum(len(v) for v in out.values()):,} lines for {len(out)} keys "
+         f"in {time.monotonic() - started:.0f}s")
+    return out
+
+
 class _CacheOnlyBackend:
     """Stands in for the lemmatizer so the cached map can be reused without
     loading Stanza. Glossing must never lemmatize anything itself."""
@@ -153,11 +295,22 @@ class Sentences:
             raise SystemExit("no cached pass-2 contexts in .cache/: run "
                              "python -m scripts.build first")
         self.contexts = bg.contexts
+        self.counts = uni.counts
+        self.rescued: dict[str, list[str]] = {}
         self.tok = Tokenizer(dict(build_cfg["tokenizer"], lowercase=True))
 
-        lemma_map = lemmas_mod.build_lemma_map(
-            build_cfg, sorted(uni.counts), bg.contexts, backend=_CacheOnlyBackend()
-        )
+        # What the build actually published each surface under: the whole
+        # chain resolved into one lookup. Falling back to the raw lemma map
+        # would miss every surface that reached its entry through a
+        # convention, the closure or an accent fold.
+        lemma_map = build_mod.load_published_map(build_cfg)
+        if lemma_map is None:
+            _log("  warning: no published map in .cache/ (build predates it); "
+                 "falling back to the lemma map, which misses merged entries")
+            lemma_map = lemmas_mod.build_lemma_map(
+                build_cfg, sorted(uni.counts), bg.contexts, backend=_CacheOnlyBackend()
+            )
+        self.build_cfg = build_cfg
         joint = frozenset(serir_mod.FORMS) if self.scfg.get("exclude_joint_serir") else frozenset()
         self.by_lemma: dict[str, list[str]] = {}
         for surface, lemma in lemma_map.items():
@@ -166,6 +319,10 @@ class Sentences:
             self.by_lemma.setdefault(lemma, []).append(surface)
         _log(f"  sentences: {len(self.contexts):,} sampled types, "
              f"{len(self.by_lemma):,} lemmas with surfaces")
+
+    def surfaces_of(self, row: dict[str, Any]) -> set[str]:
+        """The inflected forms this entry is published from."""
+        return set(self.by_lemma.get(row["lemma"], ())) | {row["lemma"]}
 
     # -- candidates ---------------------------------------------------------
 
@@ -184,11 +341,52 @@ class Sentences:
 
     def candidates(self, row: dict[str, Any]) -> list[str]:
         if row["is_mwe"]:
-            lines = self._phrase_lines(row["lemma"])
+            lines = list(self.rescued.get(row["lemma"], ())) or self._phrase_lines(row["lemma"])
         else:
             surfaces = set(self.by_lemma.get(row["lemma"], ())) | {row["lemma"]}
             lines = [l for s in sorted(surfaces) for l in self.contexts.get(s, ())]
         return list(dict.fromkeys(lines))
+
+    def rescue(self, rows: Sequence[dict[str, Any]]) -> int:
+        """Give the entries pass 2 never sampled their own corpus pass.
+
+        An entry ends up here when every one of its inflected forms is rarer
+        than the 70,000th type, so the sampled-context pass skipped all of
+        them. Rather than gloss those from the headword alone, they get the
+        same treatment as everything else, one scan later.
+        """
+        missing = [r for r in rows if not self.candidates(r)]
+        if not missing:
+            return 0
+        singles: set[str] = set()
+        phrases: set[str] = set()
+        prefilter: set[str] = set()
+        for row in missing:
+            if row["is_mwe"]:
+                phrases.add(row["lemma"])
+                # Pre-filter on the phrase's rarest word: the commonest one
+                # would make the scan tokenize half the corpus.
+                prefilter.add(min(row["lemma"].split(),
+                                  key=lambda w: self.counts.get(w, 0)))
+            else:
+                singles.update(self.by_lemma.get(row["lemma"], ()))
+                singles.add(row["lemma"])
+        _log(f"  {len(missing)} entries have no sampled sentence: "
+             f"{', '.join(r['lemma'] for r in missing[:8])}"
+             f"{' ...' if len(missing) > 8 else ''}")
+        found = scan_corpus(self.build_cfg, singles, phrases, prefilter,
+                            self.scfg["max_per_row"] * 4)
+        for key, lines in found.items():
+            if " " in key:
+                self.rescued[key] = lines
+            else:
+                self.contexts[key] = list(dict.fromkeys(
+                    list(self.contexts.get(key, ())) + lines))
+        still = [r for r in missing if not self.candidates(r)]
+        _log(f"  rescued {len(missing) - len(still)} of {len(missing)}"
+             + (f"; no corpus line found for {', '.join(r['lemma'] for r in still)}"
+                if still else ""))
+        return len(missing) - len(still)
 
     # -- filtering ----------------------------------------------------------
 
@@ -226,11 +424,19 @@ class Sentences:
         return True
 
     def choose(self, row: dict[str, Any]) -> list[str]:
-        """Up to ``max_per_row`` lines, shortest first. The strict filters are
-        relaxed only when they would leave the entry with nothing."""
+        """Up to ``max_per_row`` lines, shortest first.
+
+        Three tiers, each used only when the one before it leaves the entry
+        with nothing: the full filters; then length and mid-sentence edges
+        relaxed; then no filter at all. The last tier matters for words that
+        live in shouted or sung lines -- `hmm`, `mayday`, `heil` -- where
+        every sampled line is upper case. Offering the model a poor line is
+        not the same as publishing one: it can still decline, and the review
+        file shows which entries were given nothing better.
+        """
         cands = self.candidates(row)
-        for strict in (True, False):
-            kept = [l for l in cands if self._clean(l, strict)]
+        for strict in (True, False, None):
+            kept = cands if strict is None else [l for l in cands if self._clean(l, strict)]
             if kept:
                 break
         kept.sort(key=lambda l: (len(l.split()), len(l), l))
@@ -491,95 +697,123 @@ def gloss_rows(cfg: dict[str, Any], rows: Sequence[dict[str, Any]],
 # -- the full run, through the Batch API ------------------------------------
 
 
-def submit(cfg: dict[str, Any], rows: Sequence[dict[str, Any]], sents: Sentences) -> str:
-    """Send every row that is not already cached as one batch."""
+def submit(cfg: dict[str, Any], rows: Sequence[dict[str, Any]],
+           sents: Sentences) -> list[str]:
+    """Send every row that is not already cached, as a few batches.
+
+    Split rather than sent whole: the 10,000 requests come to about 50 MB,
+    and several smaller uploads fail more gracefully than one large one.
+    A row already in cache/gloss/ under the current stamp is not re-sent, so
+    resubmitting after a partial failure costs only the rows that are missing.
+    """
     from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
     from anthropic.types.messages.batch_create_params import Request
 
     prompt = system_prompt(cfg)
     pdig = digest(prompt)
-    requests, stamps = [], {}
+    pending: list[tuple[str, dict, str, list[str]]] = []
     for row in rows:
         sentences = sents.choose(row)
         stamp = stamp_for(cfg, pdig, row, sentences)
         if cache_read(cfg, row, stamp) is not None:
             continue
         cid = f"r{row['rank']}-{digest(row['lemma'], row['pos'])[:8]}"
-        stamps[cid] = {"row": row, "stamp": stamp, "sentences": sentences}
-        requests.append(Request(
-            custom_id=cid,
-            params=MessageCreateParamsNonStreaming(
-                **request_params(cfg, prompt, row, sentences)),
-        ))
-    if not requests:
+        pending.append((cid, row, stamp, sentences))
+    if not pending:
         raise SystemExit("every row is already cached: run --collect")
+
     cli = client()
-    batch = cli.messages.batches.create(requests=requests)
+    size = cfg["gloss"]["batch"]["chunk"]
+    batches = []
+    for i in range(0, len(pending), size):
+        part = pending[i:i + size]
+        batch = cli.messages.batches.create(requests=[
+            Request(custom_id=cid,
+                    params=MessageCreateParamsNonStreaming(
+                        **request_params(cfg, prompt, row, sentences)))
+            for cid, row, stamp, sentences in part])
+        batches.append({
+            "batch_id": batch.id, "requests": len(part),
+            "rows": {cid: {"rank": row["rank"], "lemma": row["lemma"],
+                           "pos": row["pos"], "stamp": stamp,
+                           "sentences": sentences}
+                     for cid, row, stamp, sentences in part},
+        })
+        _log(f"  batch {batch.id}: {len(part):,} requests")
+
     state = Path(cfg["gloss"]["batch"]["state_file"])
     state.parent.mkdir(parents=True, exist_ok=True)
     state.write_text(json.dumps(
-        {"batch_id": batch.id, "created": batch.created_at.isoformat(),
-         "model": cfg["gloss"]["model"], "prompt_digest": pdig,
-         "requests": len(requests),
-         "rows": {cid: {"rank": v["row"]["rank"], "lemma": v["row"]["lemma"],
-                        "pos": v["row"]["pos"], "stamp": v["stamp"],
-                        "sentences": v["sentences"]}
-                  for cid, v in stamps.items()}},
+        {"model": cfg["gloss"]["model"], "prompt_digest": pdig,
+         "submitted": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+         "requests": len(pending), "batches": batches},
         ensure_ascii=False, indent=2), encoding="utf-8")
-    _log(f"batch {batch.id}: {len(requests):,} requests submitted; state in {state}")
-    return batch.id
+    _log(f"{len(pending):,} requests in {len(batches)} batches; state in {state}")
+    return [b["batch_id"] for b in batches]
 
 
 def collect(cfg: dict[str, Any], rows: Sequence[dict[str, Any]], sents: Sentences,
             wait: bool = True) -> tuple[list[dict], Usage]:
-    """Poll the batch, write every raw response into the cache, then build the
-    full result list from the cache."""
+    """Poll every batch, write each raw response into the cache, then build the
+    results from the cache -- so a collect can be repeated, and a rerun after
+    a resubmission picks up both halves."""
     state_path = Path(cfg["gloss"]["batch"]["state_file"])
     if not state_path.is_file():
         raise SystemExit(f"no batch state in {state_path}: run --submit first")
     state = json.loads(state_path.read_text(encoding="utf-8"))
     cli = client()
     usage = Usage(cfg["gloss"]["model"])
-
-    batch = cli.messages.batches.retrieve(state["batch_id"])
-    while wait and batch.processing_status != "ended":
-        _log(f"  batch {batch.id}: {batch.processing_status}, "
-             f"{batch.request_counts.processing:,} still processing")
-        time.sleep(cfg["gloss"]["batch"]["poll_seconds"])
-        batch = cli.messages.batches.retrieve(state["batch_id"])
-    if batch.processing_status != "ended":
-        raise SystemExit(f"batch {batch.id} is {batch.processing_status}, not ended")
-
     by_rank = {r["rank"]: r for r in rows}
-    failures = []
-    for result in cli.messages.batches.results(batch.id):
-        meta = state["rows"].get(result.custom_id)
-        if meta is None:
-            failures.append((result.custom_id, "unknown custom_id"))
-            continue
-        row = by_rank.get(meta["rank"])
-        if result.result.type != "succeeded":
-            failures.append((result.custom_id, result.result.type))
-            continue
-        message = result.result.message
-        parsed = parse_reply(message)
-        usage.add(message.usage)
-        cache_write(cfg, row, meta["stamp"], meta["sentences"], message, parsed)
-    for cid, why in failures:
-        _log(f"  batch result {cid}: {why}")
+    failures: list[tuple[str, str]] = []
 
-    prompt_digest_ = digest(system_prompt(cfg))
-    results, missing = [], 0
+    for entry in state["batches"]:
+        batch = cli.messages.batches.retrieve(entry["batch_id"])
+        while wait and batch.processing_status != "ended":
+            counts = batch.request_counts
+            _log(f"  {batch.id}: {batch.processing_status}, "
+                 f"{counts.processing:,} processing, {counts.succeeded:,} done")
+            time.sleep(cfg["gloss"]["batch"]["poll_seconds"])
+            batch = cli.messages.batches.retrieve(entry["batch_id"])
+        if batch.processing_status != "ended":
+            _log(f"  {batch.id} is {batch.processing_status}, not ended: skipped")
+            continue
+        n = 0
+        for result in cli.messages.batches.results(batch.id):
+            meta = entry["rows"].get(result.custom_id)
+            if meta is None:
+                failures.append((result.custom_id, "unknown custom_id"))
+                continue
+            if result.result.type != "succeeded":
+                failures.append((result.custom_id, result.result.type))
+                continue
+            row = by_rank.get(meta["rank"])
+            if row is None:
+                failures.append((result.custom_id, "rank is no longer published"))
+                continue
+            message = result.result.message
+            cache_write(cfg, row, meta["stamp"], meta["sentences"], message,
+                        parse_reply(message))
+            n += 1
+        _log(f"  {batch.id}: {n:,} responses cached")
+    for cid, why in failures[:20]:
+        _log(f"  result {cid}: {why}")
+    if len(failures) > 20:
+        _log(f"  ... and {len(failures) - 20:,} more failed results")
+
+    pdig = digest(system_prompt(cfg))
+    results, missing = [], []
     for row in rows:
         sentences = sents.choose(row)
-        blob = cache_read(cfg, row, stamp_for(cfg, prompt_digest_, row, sentences))
+        blob = cache_read(cfg, row, stamp_for(cfg, pdig, row, sentences))
         if blob is None:
-            missing += 1
+            missing.append(row)
             continue
+        usage.add(blob.get("response", {}).get("usage", {}),
+                  live=False)
         results.append({**row, **blob["parsed"], "sentences": blob["sentences"],
                         "problem": verify(blob["parsed"], blob["sentences"])})
     if missing:
-        _log(f"  {missing:,} rows have no response yet: rerun --submit then --collect")
+        _log(f"  {len(missing):,} rows have no response: rerun --submit, then --collect")
     return results, usage
 
 
@@ -601,7 +835,7 @@ def write_tsv(path: Path, results: Sequence[dict[str, Any]],
             out = [r["rank"], r["lemma"], r["pos"], "1" if r["is_mwe"] else "0",
                    r["freq_per_million"],
                    f"{r['pos_share']:.3f}" if r["split"] else "",
-                   r["gloss"], r["example_pt"], r["example_en"],
+                   r["gloss"], tidy(r["example_pt"]), tidy(r["example_en"]),
                    " ".join(r["flags"])]
             if show_sentences:
                 out += [r.get("problem", ""), len(r["sentences"]),
@@ -666,6 +900,33 @@ def dryrun_sample(cfg: dict[str, Any], rows: Sequence[dict[str, Any]]) -> list[d
     return [chosen[k] for k in sorted(chosen)]
 
 
+def review_sample(cfg: dict[str, Any],
+                  results: Sequence[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Everything a learner meets first, plus an even spread over the rest.
+
+    The top of the list is where a wrong gloss does the most damage and where
+    the words are most polysemous, so all of it is reviewed; below that the
+    sample is spread evenly by rank so no part of the list goes unlooked-at.
+    """
+    r = cfg["gloss"]["review"]
+    through, want, bands = r["all_through_rank"], r["sampled"], r["bands"]
+    rng = random.Random(r["seed"])
+    chosen = {x["rank"]: x for x in results if x["rank"] <= through}
+    rest = [x for x in results if x["rank"] > through]
+    if rest and want:
+        lo, hi = min(x["rank"] for x in rest), max(x["rank"] for x in rest)
+        width = (hi - lo + 1) / bands
+        per = [want // bands + (1 if i < want % bands else 0) for i in range(bands)]
+        for i in range(bands):
+            band = [x for x in rest
+                    if lo + i * width <= x["rank"] < lo + (i + 1) * width
+                    and x["rank"] not in chosen]
+            band.sort(key=lambda x: x["rank"])
+            for x in rng.sample(band, min(per[i], len(band))):
+                chosen[x["rank"]] = x
+    return [chosen[k] for k in sorted(chosen)]
+
+
 # -- CLI ---------------------------------------------------------------------
 
 
@@ -683,6 +944,9 @@ def main() -> None:
                       help="poll the batch and write out/glosses.tsv")
     mode.add_argument("--estimate", action="store_true",
                       help="count input tokens for the full run; no glossing")
+    mode.add_argument("--rescue", action="store_true",
+                      help="only the corpus pass for entries pass 2 never "
+                           "sampled; caches its result and stops")
     ap.add_argument("--no-wait", action="store_true",
                     help="--collect: do not poll, take whatever is ready")
     args = ap.parse_args()
@@ -693,6 +957,14 @@ def main() -> None:
     _log(f"{len(rows):,} published rows, "
          f"{len({r['lemma'] for r in rows}):,} distinct entries")
     sents = Sentences(cfg)
+    sents.rescue(rows)
+
+    if args.rescue:
+        for row in rows:
+            if not sents.choose(row):
+                print(f"still no sentence: {row['rank']} {row['lemma']} ({row['pos']})")
+        print("rescue pass cached")
+        return
 
     if args.estimate:
         prompt = system_prompt(cfg)
@@ -723,16 +995,34 @@ def main() -> None:
         return
 
     if args.collect:
+        from scripts import gloss_gates
+
         results, usage = collect(cfg, rows, sents, wait=not args.no_wait)
         out = config_mod.out_dir(cfg) / g["out_file"]
         write_tsv(out, results)
-        review = [r for r in results if r["problem"] or not r["example_pt"]
-                  or set(r["flags"]) & {"uncertain", "name-like"}]
-        write_tsv(Path(cfg["paths"]["eval_dir"]) / g["review_file"], review,
-                  show_sentences=True)
         print(f"{out}: {len(results):,} rows")
-        print(f"for review: {len(review):,} rows")
-        print("\n".join(usage.report("this collect", len(results))))
+
+        res = gloss_gates.run(results, rows, cfg, sents.tok.tokenize, sents.surfaces_of)
+        lines = usage.report("this run", len(results))
+        report = Path(cfg["paths"]["reports_dir"]) / g["gates_file"]
+        report.parent.mkdir(parents=True, exist_ok=True)
+        report.write_text(gloss_gates.render(res, cfg, lines), encoding="utf-8")
+        print(f"{report}: "
+              + ", ".join(f"{k} {v.n:,}" for k, v in res["gates"].items() if v.n))
+
+        review = review_sample(cfg, results)
+        rpath = Path(cfg["paths"]["eval_dir"]) / g["review"]["file"]
+        write_tsv(rpath, review, show_sentences=True)
+        print(f"{rpath}: {len(review):,} rows for review")
+
+        print("\n".join(lines))
+        print("flags: " + ", ".join(f"{f} {res['flags'].get(f, 0):,}"
+                                   for f in gloss_gates.FLAGS)
+              + f", none {res['unflagged']:,}")
+        # Reports first, then fail: a failing run must leave its evidence.
+        if res["failed"]:
+            raise SystemExit("gloss gate failed: " + ", ".join(res["failed"]))
+        print("every fatal gate passed")
         return
 
     # --dry-run

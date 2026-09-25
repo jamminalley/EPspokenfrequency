@@ -39,10 +39,14 @@ newspapers rather than conversation.
 register baseline, provided you read the Limitations below first and treat
 the numbers accordingly.
 
-**It is not a course, a dictionary, or a substitute for either.** There are
-no definitions, no translations, and no example sentences — just lemmas,
-ranks, and counts. (The "enrichable" Anki files leave empty columns for
-you to fill in your own glosses and examples.)
+**It is not a course, a dictionary, or a substitute for either.** The
+glosses in [`out/glosses.tsv`](out/glosses.tsv) are a one-to-three-word
+English hint per entry and one real corpus sentence, written by a language
+model in a single pass — a snapshot of what that model said on one day,
+not a lexicographer's definition. They have not been checked entry by
+entry. Treat a gloss as a starting point and a dictionary as the
+authority. (The "enrichable" Anki files leave the gloss columns empty if
+you would rather write your own.)
 
 ---
 
@@ -97,7 +101,7 @@ professionally edited, and comes with the things this list lacks.
 | Corpus | ~636M tokens, subtitles only | ~20M tokens, balanced across registers |
 | Registers | Film/TV dialogue | Spoken, fiction, newspaper, academic |
 | Variety | Portugal-tagged, BP markers excluded post hoc; headwords in post-1990 spelling | Both varieties, with BP/EP marked per entry |
-| Glosses & examples | None | English glosses and example sentences throughout |
+| Glosses & examples | One to three English senses per entry and one example sentence taken verbatim from the corpus — written by a language model in one pass, unchecked entry by entry | English glosses and example sentences throughout, written and edited by lexicographers |
 | Lemmatization | Automatic: a neural tagger (Stanza) reading each word in up to 50 real sentences, checked against a dictionary. 98.5% correct on a 332-word hand-checked sample | Curated |
 | POS tags | Automatic, from the same tagger: majority vote over each word's sample sentences, and a word used as two parts of speech is listed once for each. Not hand-checked | Professionally tagged |
 | Contractions (*do*, *ao*, *pela*) | Kept as their own entries | Split into preposition + article |
@@ -125,8 +129,34 @@ These are specific and worth knowing before you study from the list.
   `este` (determiner and pronoun), `morto` (adjective and noun). The tags
   follow Universal Dependencies conventions, with one exception made for
   learners: a preposition is never counted as a conjunction (UD tags *para*
-  in *para fazer* as one). 148 entries the tagger never saw intact, mostly
-  contractions such as `do` and `pela`, keep a rule-based guess.
+  in *para fazer* as one). Entries the tagger never saw intact keep a
+  rule-based guess, except the contractions, which are all published as
+  `det` (see below).
+- <a id="the-glosses-are-a-model-snapshot"></a>**The glosses are a model
+  snapshot, not a reference work.** Every gloss and translation in
+  `out/glosses.tsv` was written by Claude (`claude-opus-5`) in a single
+  pass, one request per entry, from the entry, its part of speech, its
+  frequency and up to twenty real corpus sentences containing it. The
+  prompt is in the repository
+  ([scripts/gloss_prompt.md](scripts/gloss_prompt.md)) because the glosses
+  cannot be read as evidence without it. Nobody checked all 10,000 by
+  hand. Two consequences worth knowing: the model chose which sense to put
+  first, so the order reflects its judgement of spoken frequency rather
+  than a count; and re-running the same prompt on a newer model would not
+  give the same answers, so unlike the lists themselves the glosses are not
+  reproducible byte for byte. The example sentences are the one part that
+  is verifiable — each is a corpus line, copied unaltered but for a leading
+  dialogue dash and surrounding quotation marks, and the build rejects any
+  the model did not copy exactly.
+- **Contractions all read `det`.** Stanza expands *do*, *nas*, *pelo* and
+  the rest into two words before tagging, so the surface token collects
+  almost no usable evidence: before this release *nas*, *no* and 26 others
+  read `unk`, and the ones with a stray tag read worse — *pelo* as a noun,
+  *deste* as a verb, *contigo* split across three parts of speech. Every
+  contraction now carries the same part of speech as *do*, which is `det`.
+  It is the right answer for the preposition-plus-article contractions and
+  a convenience for the preposition-plus-pronoun ones (*dele*, *comigo*,
+  *nisso*), which are not determiners in any analysis.
 - **`ser` and `ir` are separated by a rule, not by the tagger.** `foi`,
   `fui`, `fomos`, `foram` and `fora` belong to *ser* ("was") or *ir*
   ("went") depending on the sentence, and the tagger assigns them to *ser*
@@ -214,6 +244,18 @@ TSV and CSV hold identical data; pick whichever your tools prefer. Columns:
 | `ep_spoken_anki_enrichable.tsv` | The same, plus empty `Gloss_EN`, `Example_PT`, `Example_EN` for you to fill in |
 | `ep_spoken_5001_10000_anki_minimal.tsv` | Ranks 5001–10000, minimal fields |
 | `ep_spoken_5001_10000_anki_enrichable.tsv` | Ranks 5001–10000, enrichable fields |
+
+### The glosses
+
+| File | What it is |
+|---|---|
+| `glosses.tsv` | One row per entry: `gloss` (one to three English senses, commonest first), `example_pt` (a corpus line containing the entry, verbatim), `example_en` (its translation), `flags`. |
+
+`flags` is zero or more of `vulgar`, `bp-leaning` (the form or sense is
+mainly Brazilian), `archaic`, `name-like` (in this corpus the token is
+probably mostly a name) and `uncertain` (the model was not confident).
+Slang and vulgarities are glossed plainly: this is a record of how people
+speak, not a teaching aid. See [the caveat below](#the-glosses-are-a-model-snapshot).
 
 ### Quality-control files
 
@@ -326,8 +368,17 @@ From `pt.txt.gz` to `out/`, in one command (`python -m scripts.build`):
   score of at least 95% on the development set exists for its current
   version; both tables are in
   [reports/serir_scores.md](reports/serir_scores.md).
+- **Automatic gates on the glosses.** Every gloss run checks that each
+  published row got a gloss, that each example sentence is one of the corpus
+  lines the model was shown — character for character — and that the
+  sentence really contains the entry; a run that fails any of those is not
+  published. Counts, per-flag totals and what the run cost are in
+  [reports/gloss_gates.md](reports/gloss_gates.md). The glosses' *meaning*
+  is not gated: a sample is set aside for a reader in
+  [eval/gloss_review.tsv](eval/gloss_review.tsv).
 - **Determinism.** The same corpus, configuration and library versions
-  produce byte-identical output.
+  produce byte-identical output. The glosses are the exception — see the
+  caveat.
 
 ---
 

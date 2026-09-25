@@ -144,6 +144,21 @@ def aggregate(
     return weighted, raw
 
 
+def contraction_forms(cfg: dict[str, Any]) -> frozenset[str]:
+    """The contractions published under one POS (fixes.contraction_pos).
+
+    Stanza expands a contraction into its two words before tagging, so the
+    surface token itself collects almost no consistent evidence: the tags
+    that survive are noise, and the words with none at all fall through to
+    the rule heuristic, which answers `unk`. One POS for the whole paradigm
+    is both more accurate and more useful than 81 independent guesses.
+    """
+    con = cfg["conventions"].get("contractions", {})
+    if not (cfg["fixes"].get("contraction_pos") and cfg["pos"].get("contraction_pos")):
+        return frozenset()
+    return frozenset(con.get("forms", ()))
+
+
 def assign(
     lemma: str,
     count: int,
@@ -151,12 +166,16 @@ def assign(
     raw: Mapping[str, Counter],
     cfg: dict[str, Any],
     fallback: Callable[[str], str],
+    contractions: frozenset[str] = frozenset(),
 ) -> list[tuple[str, int]]:
     """[(pos, count)] for one lemma: one row, or one per well-supported POS.
 
     Shares below the split thresholds join the majority POS. The lemma's
-    final count is divided in proportion to the kept POS shares.
+    final count is divided in proportion to the kept POS shares. A
+    contraction is never split and never asks the tagger.
     """
+    if lemma in contractions:
+        return [(cfg["pos"]["contraction_pos"], count)]
     shares = weighted.get(lemma)
     if not shares or sum(shares.values()) == 0:
         return [(fallback(lemma), count)]

@@ -247,6 +247,13 @@ fixes:
   # Apply the human decisions in filters.proper_nouns.keep_file: `keep`
   # words are never dropped as proper nouns, `drop` words always are.
   proper_noun_review: true
+  # Publish every contraction under one part of speech (pos.contraction_pos)
+  # instead of whatever the tagger and the rule heuristic make of it. Stanza
+  # expands contractions before tagging, so the surface token collects
+  # almost no usable evidence and the fallback heuristic produced `unk` for
+  # nas, no, num and 25 others -- and worse than unk for the rest: `pelo`
+  # noun, `deste` verb, `ao` conj, `contigo` split across intj, adj and adv.
+  contraction_pos: true
   ambiguous_forms: ["foi", "fui", "fomos", "foram", "fora", "for", "esta"]
   irregular_participles: ["morto", "feito", "dito", "visto", "escrito",
                           "aberto", "posto", "coberto", "preso", "solto",
@@ -281,6 +288,11 @@ fixes:
 # with enough evidence, otherwise its share joins the majority POS.
 pos:
   source: tagger              # tagger | heuristic
+  # fixes.contraction_pos: the single POS published for every form in
+  # conventions.contractions.forms, whatever the tagger says. `do` and `da`
+  # already read det on the tagger's own evidence; this gives the rest of
+  # the paradigm the same answer instead of one noise reading each.
+  contraction_pos: det
   split_min_share: 0.25       # count-weighted share of the lemma
   split_min_votes: 3          # tagged sentences supporting it
   # Prepositions are never conjunctions. Universal Dependencies tags a
@@ -616,9 +628,25 @@ gloss:
   prompt_path: scripts/gloss_prompt.md
   cache_dir: cache/gloss      # raw responses, keyed by lemma + POS; gitignored
   out_file: glosses.tsv       # written into paths.out_dir; committed
-  review_file: gloss_review.tsv    # written into paths.eval_dir
+  gates_file: gloss_gates.md  # written into paths.reports_dir
+  # What the machine can check about a finished run (scripts/gloss_gates.py).
+  # Provenance and shape only: whether a gloss is right is a question for the
+  # reader, which is what the review file is for.
+  gates:
+    max_senses: 3             # the prompt asks for one to three
+    max_words_per_sense: 8    # it asks for six; eight is where it fails
+    max_missing_example_share: 0.05   # entries with no example sentence
+  # The human review sample: every row a learner meets first, plus a spread
+  # over the rest.
+  review:
+    file: gloss_review.tsv    # written into paths.eval_dir
+    all_through_rank: 500
+    sampled: 200              # from all_through_rank + 1 to the last rank
+    bands: 20                 # the sample is spread evenly over this many
+    seed: 20260925
   batch:
     poll_seconds: 60
+    chunk: 2500               # requests per batch; 10,000 rows is ~50 MB
     state_file: cache/gloss/batch.json
   # Which corpus lines may be offered as an example.
   sentences:

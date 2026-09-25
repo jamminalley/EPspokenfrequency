@@ -134,3 +134,41 @@ def test_both_readings_of_a_count(pcfg):
     tags = {"a": [("o", "DET", "")] * 6 + [("a", "ADP", "")] * 4}
     w, raw = pos.aggregate({"a": 1000}, tags, {}, ident, ident, pcfg)
     assert raw["a"] == Counter({"det": 6, "prep": 4})
+
+
+# -- contractions ------------------------------------------------------------
+
+
+def test_contractions_all_take_one_pos(release_cfg):
+    """fixes.contraction_pos: Stanza expands a contraction before tagging, so
+    the surface token's own tags are noise. One POS for the paradigm."""
+    from collections import Counter
+
+    from scripts import pos as pos_mod
+
+    forms = pos_mod.contraction_forms(release_cfg)
+    assert {"do", "da", "nas", "no", "pelo", "deste", "contigo"} <= forms
+    # tagger evidence that would otherwise win, and a fallback that answers unk
+    weighted = {"nas": Counter({"noun": 900, "adv": 100})}
+    for form in ("do", "nas", "pelo", "contigo"):
+        parts = pos_mod.assign(form, 1000, weighted, {}, release_cfg,
+                               lambda w: "unk", forms)
+        assert parts == [(release_cfg["pos"]["contraction_pos"], 1000)]
+    # and a contraction is never split across two rows
+    assert len(pos_mod.assign("nas", 1000, weighted, {}, release_cfg,
+                              lambda w: "unk", forms)) == 1
+
+
+def test_consigo_is_not_treated_as_a_contraction(release_cfg):
+    """It is almost always the verb in speech; config.yaml leaves it out."""
+    from scripts import pos as pos_mod
+
+    assert "consigo" not in pos_mod.contraction_forms(release_cfg)
+
+
+def test_stage_1_leaves_contraction_pos_alone(cfg):
+    """The April baseline has to stay reproducible, so the fix is off there."""
+    from scripts import pos as pos_mod
+
+    assert cfg["fixes"]["contraction_pos"] is False
+    assert pos_mod.contraction_forms(cfg) == frozenset()

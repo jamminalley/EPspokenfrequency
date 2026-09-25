@@ -1,5 +1,66 @@
 # Changelog
 
+## Unreleased
+
+Work towards 1.1.0. Not tagged or released; the version number is fixed
+when the glosses have been reviewed.
+
+### Added
+
+- **English glosses and example sentences**, `out/glosses.tsv`: one to
+  three English senses per entry, commonest first, plus one sentence taken
+  verbatim from the corpus and its translation, and flags for `vulgar`,
+  `bp-leaning`, `archaic`, `name-like` and `uncertain`. Written by Claude
+  (`claude-opus-5`), one request per entry, from the entry, its part of
+  speech, its frequency and up to twenty real corpus sentences containing
+  it. The prompt ships with the repository
+  (`scripts/gloss_prompt.md`) and the run is pinned in `config.yaml`.
+  **These are a snapshot of one model's answers, not a reference work**, and
+  are not reproducible byte for byte the way the lists are.
+- **Gates on the glosses**, `reports/gloss_gates.md`: coverage, and the
+  check that matters — every example sentence must be one of the corpus
+  lines the model was shown, character for character, and must contain the
+  entry. A run failing any fatal gate is not published. Per-flag counts and
+  the cost of the run are in the same report.
+- **A review sample**, `eval/gloss_review.tsv`: all of ranks 1–500 plus 200
+  spread evenly over the rest, with the sentences each entry was offered, so
+  a reader can check what the model was working from.
+- **A targeted corpus pass for entries the sampled contexts missed.** Nine
+  published entries — eight multi-word expressions and one folded adjective
+  — had no sampled sentence containing them, because pass 2 keeps lines for
+  the 70,000 most frequent forms and, for a phrase, only lines that happen
+  to contain the whole phrase. Those now get one scan of their own, choosing
+  lines by the same digest rule, so every one of the 10,000 entries was
+  glossed from real sentences rather than from its headword alone.
+
+### Changed
+
+- **Every contraction is now published as `det`** (`fixes.contraction_pos`,
+  `pos.contraction_pos`). Stanza expands *do*, *nas*, *pelo* and the rest
+  into two words before tagging, so the surface token collected almost no
+  usable evidence: 28 contraction entries read `unk`, and those with a stray
+  tag read worse — `pelo` as a noun, `deste` as a verb, `ao` as a
+  conjunction, `contigo` split across three parts of speech. `do` and `da`
+  already read `det` on the tagger's own evidence; the rest of the paradigm
+  now agrees with them. It is the right answer for the
+  preposition-plus-article contractions and a convenience for the
+  preposition-plus-pronoun ones (*dele*, *comigo*, *nisso*), which are not
+  determiners in any analysis.
+
+  **70 rows changed part of speech** and `unk` rows fell from 106 to 78.
+  Because the three `contigo` rows and four other split entries merge into
+  one, three entries move into the list from just below rank 10,000
+  (`carnívoro`, `decretar`, `lótus`). Word lists, counts and ranks are
+  otherwise unchanged; the gold-set score (98.5%) and the quality gate (0
+  suspects) are unaffected.
+
+  **This changes Anki note identity for those 70 notes.** A note's GUID
+  comes from its word and part of speech, so re-importing over 1.0.0 adds a
+  second note for each contraction whose POS changed and leaves the old one
+  behind. Deleting the twenty decks before importing is the clean path for
+  anyone who has not yet started reviewing.
+
+
 ## 1.0.0 — 2026-09-24
 
 The first public release: 10,000 words of European Portuguese film and TV

@@ -80,13 +80,14 @@
   "proper_nouns_dropped": 251322,
   "pos_votes_counted": 444620,
   "pos_votes_inconsistent": 13876,
+  "contraction_pos": "det",
   "pos_source": "tagger",
-  "pos_split_lemmas_all": 658,
-  "pos_split_in_list": 311,
+  "pos_split_lemmas_all": 656,
+  "pos_split_in_list": 309,
   "pos_heuristic_in_list": 148,
   "entries": 10000,
   "apkg": {
-    "bytes": 3457242,
+    "bytes": 3453146,
     "notes": {
       "Portuguese::European Portuguese - Spoken::01 · 1–500": 500,
       "Portuguese::European Portuguese - Spoken::02 · 501–1000": 500,
@@ -114,5 +115,5 @@
   "gold": {
     "pipeline, stage 2 (gated)": 0.9849397590361446
   },
-  "elapsed_s": 55.6
+  "elapsed_s": 55.2
 }

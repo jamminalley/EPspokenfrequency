@@ -12,12 +12,13 @@ Outputs go to paths.out_dir; `out/` is never written to.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 import time
 from collections import Counter
 from pathlib import Path
-from typing import Any
+from typing import Any, Mapping
 
 from scripts import bigrams as bigrams_mod
 from scripts import compare as compare_mod
@@ -87,6 +88,50 @@ def effective_config(cfg: dict[str, Any]) -> dict[str, Any]:
     if cfg["run"]["stage"] >= 2 and cfg["fixes"].get("split_enclitics"):
         cfg = config_mod.with_overrides(cfg, {"tokenizer.split_enclitics": True})
     return cfg
+
+
+def published_map_path(cfg: dict[str, Any]) -> Path:
+    """Where the surface -> published lemma map is cached.
+
+    The map is a by-product of the gold-set scoring, and the only place the
+    whole chain -- backend, gate, conventions, closure, accent folds -- is
+    resolved into one lookup. scripts/gloss.py needs it to find a published
+    entry's corpus sentences, so it is written out rather than thrown away.
+    Keyed on the settings that shape it, so it can never be read against a
+    different build.
+    """
+    material = {k: cfg[k] for k in ("tokenizer", "lemmatizer", "conventions",
+                                    "fixes", "filters", "serir")}
+    material["stage"] = cfg["run"]["stage"]
+    material["sample_lines"] = cfg["run"].get("sample_lines")
+    d = hashlib.sha256(json.dumps(material, sort_keys=True,
+                                  ensure_ascii=False).encode("utf-8")).hexdigest()[:16]
+    return Path(cfg["paths"]["cache_dir"]) / f"published_{d}.tsv.gz"
+
+
+def save_published_map(cfg: dict[str, Any], published: Mapping[str, str]) -> Path:
+    import gzip
+
+    path = published_map_path(cfg)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with gzip.open(path, "wt", encoding="utf-8", newline="\n") as fh:
+        for surface in sorted(published):
+            fh.write(f"{surface}\t{published[surface]}\n")
+    return path
+
+
+def load_published_map(cfg: dict[str, Any]) -> dict[str, str] | None:
+    import gzip
+
+    path = published_map_path(cfg)
+    if not path.is_file():
+        return None
+    out: dict[str, str] = {}
+    with gzip.open(path, "rt", encoding="utf-8") as fh:
+        for line in fh:
+            surface, _, lemma = line.rstrip("\n").partition("\t")
+            out[surface] = lemma
+    return out
 
 
 def run(cfg: dict[str, Any]) -> dict[str, Any]:
@@ -392,9 +437,13 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
         stats["pos_votes_inconsistent"] = pos_stats.get("inconsistent", 0)
     rows: list[tuple[str, str, int, bool]] = []
     n_split = n_fallback = 0
+    contractions = pos_mod.contraction_forms(cfg)
+    if contractions:
+        stats["contraction_pos"] = cfg["pos"]["contraction_pos"]
     for lemma, count in kept.items():
-        parts = pos_mod.assign(lemma, count, weighted, raw_votes, cfg, tagger.tag)
-        if lemma not in weighted:
+        parts = pos_mod.assign(lemma, count, weighted, raw_votes, cfg, tagger.tag,
+                               contractions)
+        if lemma not in weighted and lemma not in contractions:
             n_fallback += 1
         if len(parts) > 1:
             n_split += 1
@@ -471,6 +520,7 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
         # after any accent-variant fold of that lemma's count.
         fold_to = {src: dst for src, dst, *_ in fold_log}
         published = {s: fold_to.get(follow(l), follow(l)) for s, l in lemma_map.items()}
+        save_published_map(cfg, published)
         result = eval_mod.score(gold_rows, published)
         gold_text = eval_mod.render({label: result}, gold_meta)
         stats["gold"] = {label: result["accuracy"]}

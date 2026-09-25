@@ -186,3 +186,150 @@ def test_dryrun_sample_matches_the_config(release_cfg):
     assert sum(r["pos"] == "noun" and r["lemma"] in feminine
                for r in sample) >= d["require"]["kept_feminine_nouns"]
     assert sample == gloss.dryrun_sample(release_cfg, rows)
+
+
+# -- tidying for display -----------------------------------------------------
+
+
+@pytest.mark.parametrize("raw, shown", [
+    ("- Tarde demais para quê?", "Tarde demais para quê?"),
+    ("— Não sei.", "Não sei."),
+    ('"Nós somos os teus amantes alegres"', "Nós somos os teus amantes alegres"),
+    ('- "Convidas-me para ir ao cinema?"', "Convidas-me para ir ao cinema?"),
+    ("«Vem cá»", "Vem cá"),
+    # left alone: a quote inside the line, an unmatched one, and a line whose
+    # dashes are part of what was said
+    ('Ele disse "olá" e saiu.', 'Ele disse "olá" e saiu.'),
+    ('Convidas-me para ir ao cinema?"', 'Convidas-me para ir ao cinema?"'),
+    ("- - que?", "- - que?"),
+    ("Pomos o pão-de-loç na mesa.", "Pomos o pão-de-loç na mesa."),
+])
+def test_tidy(raw, shown):
+    assert gloss.tidy(raw) == shown
+
+
+def test_tidying_happens_after_the_verbatim_check(release_cfg, rows, tmp_path):
+    """The check compares against the corpus line; the card shows it tidied.
+    Tidying first would make an edited sentence pass as verbatim."""
+    sent = "- Tarde demais para quê?"
+    reply = {"gloss": "too late", "example_pt": gloss.tidy(sent),
+             "example_en": "Too late for what?", "flags": []}
+    assert gloss.verify(reply, [sent])          # the tidied form is NOT verbatim
+    ok = dict(reply, example_pt=sent)
+    assert gloss.verify(ok, [sent]) == ""
+    out = tmp_path / "g.tsv"
+    gloss.write_tsv(out, [{**rows[0], **ok, "sentences": [sent], "problem": ""}])
+    assert "- Tarde" not in out.read_text(encoding="utf-8")
+    assert "Tarde demais para quê?" in out.read_text(encoding="utf-8")
+
+
+# -- the review sample -------------------------------------------------------
+
+
+def test_review_sample_covers_the_top_and_spreads_over_the_rest(release_cfg):
+    r = release_cfg["gloss"]["review"]
+    results = [{"rank": i, "lemma": f"w{i}", "pos": "noun"} for i in range(1, 10001)]
+    sample = gloss.review_sample(release_cfg, results)
+    top = [x for x in sample if x["rank"] <= r["all_through_rank"]]
+    assert len(top) == r["all_through_rank"]
+    assert len(sample) == r["all_through_rank"] + r["sampled"]
+    assert [x["rank"] for x in sample] == sorted(x["rank"] for x in sample)
+    # every band of the tail contributes
+    rest = [x["rank"] for x in sample if x["rank"] > r["all_through_rank"]]
+    lo, hi = r["all_through_rank"] + 1, 10000
+    width = (hi - lo + 1) / r["bands"]
+    for i in range(r["bands"]):
+        assert any(lo + i * width <= k < lo + (i + 1) * width for k in rest)
+    assert sample == gloss.review_sample(release_cfg, results)
+
+
+# -- the gates ---------------------------------------------------------------
+
+
+def _result(rank=1, lemma="casa", pos="noun", mwe=False, gloss_="house",
+            ex=None, en="Let's go home.", flags=(), sentences=None, problem=""):
+    """A finished gloss row. The example defaults to one that contains the
+    entry, so each test only states what it is actually testing."""
+    if ex is None:
+        ex = f"Vamos para {lemma}."
+    if sentences is None:
+        sentences = [ex] if ex else []
+    return {"rank": rank, "lemma": lemma, "pos": pos, "is_mwe": mwe,
+            "raw_freq": 1, "freq_per_million": "1.0", "split": False,
+            "pos_share": 1.0, "gloss": gloss_, "example_pt": ex, "example_en": en,
+            "flags": list(flags), "sentences": list(sentences), "problem": problem}
+
+
+def _gates(results, cfg, rows=None):
+    from scripts import gloss_gates
+
+    def tokenize(text):
+        return [t.strip(".,!?¿¡\"'").lower() for t in text.split()]
+
+    def surfaces_of(row):
+        return {row["lemma"], row["lemma"] + "s"}
+
+    return gloss_gates.run(results, rows if rows is not None else results,
+                           cfg, tokenize, surfaces_of)
+
+
+def test_a_clean_run_passes_every_gate(release_cfg):
+    res = _gates([_result()], release_cfg)
+    assert res["failed"] == []
+    assert res["with_example"] == 1 and res["unflagged"] == 1
+
+
+def test_a_missing_row_fails_coverage(release_cfg):
+    rows = [_result(), _result(rank=2, lemma="livro")]
+    res = _gates([rows[0]], release_cfg, rows=rows)
+    assert "coverage" in res["failed"] and res["gates"]["coverage"].n == 1
+
+
+def test_an_example_that_does_not_contain_the_entry_fails(release_cfg):
+    """The strongest check: the sentence came back from the right request, but
+    it does not illustrate the entry."""
+    res = _gates([_result(ex="A casa é grande.", lemma="livro",
+                          sentences=["A casa é grande."])], release_cfg)
+    assert "contains_entry" in res["failed"]
+
+
+def test_a_multi_word_entry_needs_the_whole_phrase(release_cfg):
+    ok = _result(lemma="bom dia", pos="mwe", mwe=True, ex="Bom dia, Maria.",
+                 sentences=["Bom dia, Maria."])
+    assert _gates([ok], release_cfg)["failed"] == []
+    bad = _result(lemma="bom dia", pos="mwe", mwe=True, ex="Que bom.",
+                  sentences=["Que bom."])
+    assert "contains_entry" in _gates([bad], release_cfg)["failed"]
+
+
+def test_too_many_entries_without_an_example_fails(release_cfg):
+    """One unillustrated entry is an answer; a run full of them is a failure."""
+    few = [_result(rank=i, lemma=f"w{i}") for i in range(1, 100)]
+    few[0] = _result(rank=1, lemma="w1", ex="", en="", sentences=["Vamos para w1."])
+    res = _gates(few, release_cfg)
+    assert res["gates"]["no_example"].n == 1 and res["failed"] == []
+    many = [_result(rank=i, lemma=f"w{i}", ex="", en="",
+                    sentences=[f"Vamos para w{i}."]) for i in range(1, 100)]
+    assert "no_example" in _gates(many, release_cfg)["failed"]
+
+
+def test_shape_problems_are_counted_but_do_not_fail(release_cfg):
+    long_sense = " ".join(["word"] * 7)
+    res = _gates([_result(gloss_=f"a; b; c; d"),
+                  _result(rank=2, lemma="livro", gloss_=long_sense)], release_cfg)
+    assert res["gates"]["senses"].n == 1
+    assert res["gates"]["verbose_sense"].n == 1
+    assert res["failed"] == []
+
+
+def test_the_report_names_the_model_and_counts_the_flags(release_cfg):
+    from scripts import gloss_gates
+
+    res = _gates([_result(flags=["vulgar"]),
+                  _result(rank=2, lemma="livro", flags=["vulgar", "archaic"])],
+                 release_cfg)
+    text = gloss_gates.render(res, release_cfg, ["cost: $0.00"])
+    assert release_cfg["gloss"]["model"] in text
+    assert "snapshot" in text
+    assert "| `vulgar` | 2 |" in text and "| `archaic` | 1 |" in text
+    assert "cost: $0.00" in text
