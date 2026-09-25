@@ -55,7 +55,8 @@ def run(results: Sequence[dict[str, Any]], rows: Sequence[dict[str, Any]],
         "coverage": Gate("coverage", "published rows with no gloss row", fatal=True),
         "verbatim": Gate("verbatim", "examples that are not one of the corpus lines "
                                     "that were sent", fatal=True),
-        "gloss_present": Gate("gloss_present", "rows with an empty gloss", fatal=True),
+        "gloss_present": Gate("gloss_present", "rows with no gloss at all",
+                              fatal=True, limit=str(g["max_missing_gloss"])),
         "translated": Gate("translated", "examples with no English translation",
                            fatal=True),
         "known_flags": Gate("known_flags", "flags outside the prompt's list", fatal=True),
@@ -73,6 +74,12 @@ def run(results: Sequence[dict[str, Any]], rows: Sequence[dict[str, Any]],
                            limit=f"{g['max_missing_example_share']:.0%} of rows"),
         "model_error": Gate("model_error", "replies that were refused, truncated or "
                                            "unparseable"),
+        "escape": Gate("escape", "replies whose \\uXXXX escapes had to be decoded"),
+        "reanchored": Gate("reanchored", "examples the model tidied itself, "
+                                        "re-anchored to the corpus line"),
+        "rewritten": Gate("rewritten", "examples the model edited, so dropped"),
+        "off_target": Gate("off_target", "examples that did not contain the entry, "
+                                        "so dropped"),
     }
 
     by_key = {}
@@ -86,6 +93,8 @@ def run(results: Sequence[dict[str, Any]], rows: Sequence[dict[str, Any]],
             gates["coverage"].hit(row, "no gloss")
 
     for r in results:
+        if r.get("repaired") in gates:
+            gates[r["repaired"]].hit(r, r.get("example_pt") or "example dropped")
         if r.get("problem"):
             target = "verbatim" if "not one of the sentences" in r["problem"] else None
             if r["problem"].startswith(("refusal", "truncated", "unparseable")):
@@ -127,6 +136,10 @@ def run(results: Sequence[dict[str, Any]], rows: Sequence[dict[str, Any]],
     # An entry with nothing to illustrate it is allowed, up to a share.
     share = gates["no_example"].n / max(len(results), 1)
     gates["no_example"].fatal = share > g["max_missing_example_share"]
+    # A word the model will not gloss at all, after every retry, is a fact
+    # about the model rather than a bug in the run: named in the report and
+    # tolerated, up to a handful. More than that means something is wrong.
+    gates["gloss_present"].fatal = gates["gloss_present"].n > g["max_missing_gloss"]
 
     flags = Counter(f for r in results for f in r["flags"])
     unflagged = sum(1 for r in results if not r["flags"])
@@ -150,9 +163,10 @@ def render(res: dict[str, Any], cfg: dict[str, Any], usage_lines: Iterable[str])
         f"entries, {res['with_example']:,} with an example sentence "
         f"({res['with_example'] / max(res['rows'], 1):.1%}).",
         "",
-        f"Written by `python -m scripts.gloss --collect` with model "
+        f"Written by `python -m scripts.gloss` with model "
         f"`{g['model']}`, effort `{g['effort']}`, thinking `{g['thinking']}`, "
-        f"prompt `{g['prompt_path']}`. The glosses are a snapshot of one "
+        f"prompt `{g['prompt_path']}`, ceiling {g['max_tokens']} tokens. "
+        f"The glosses are a snapshot of one "
         f"model's answers, not a dictionary: see the review file for what a "
         f"reader made of them.",
         "",
@@ -198,5 +212,10 @@ def render(res: dict[str, Any], cfg: dict[str, Any], usage_lines: Iterable[str])
             out.append(f"| | | | _and {gate.n - len(shown):,} more_ |")
         out += ["", "</details>", ""]
 
-    out += ["## Cost", "", "```"] + list(usage_lines) + ["```", ""]
+    out += ["## Cost", "",
+            "What the published replies cost, added up from the cached "
+            "responses. A row that had to be re-asked counts only its last "
+            "attempt, so the figure is a little below what was actually "
+            "billed; the batch totals are authoritative.", "",
+            "```"] + list(usage_lines) + ["```", ""]
     return "\n".join(out)

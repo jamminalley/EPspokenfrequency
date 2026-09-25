@@ -17,6 +17,17 @@ when the glosses have been reviewed.
   (`scripts/gloss_prompt.md`) and the run is pinned in `config.yaml`.
   **These are a snapshot of one model's answers, not a reference work**, and
   are not reproducible byte for byte the way the lists are.
+- **A repair step between the model's reply and the published row**
+  (`gloss.repair`). Three things went wrong often enough in the first full
+  run to be worth handling rather than failing over, and each is handled in
+  a way that keeps the published example a real corpus line: a
+  doubly-escaped `\uXXXX` is decoded (5 rows); an example the model tidied
+  itself — dropped the dialogue dash — is re-anchored to the corpus line it
+  tidied, which changes nothing about the card (6 rows); and an example the
+  model *edited* (an accent added, a pronoun supplied, a clause trimmed) is
+  dropped, because there is no telling a correction from a corruption, and
+  the entry keeps its gloss alone (24 rows). Every one is counted and listed
+  in the gate report.
 - **Gates on the glosses**, `reports/gloss_gates.md`: coverage, and the
   check that matters — every example sentence must be one of the corpus
   lines the model was shown, character for character, and must contain the
@@ -32,6 +43,20 @@ when the glosses have been reviewed.
   to contain the whole phrase. Those now get one scan of their own, choosing
   lines by the same digest rule, so every one of the 10,000 entries was
   glossed from real sentences rather than from its headword alone.
+
+### Known issues
+
+- **One word has no gloss.** `caseiro` (rank 4209, "homemade") trips a
+  safety classifier on every attempt; the row ships with an empty gloss and
+  an `uncertain` flag. The gate names it and tolerates up to five such rows.
+- **200 entries have no example sentence** (2.0%). Either every sampled line
+  showed a different word — `doméstica` the adjective rather than the noun —
+  or the lines were unintelligible fragments. Those entries have a gloss and
+  no example; the reverse Anki card still works, the sentence fields are
+  just empty.
+- **The glosses are not reproducible byte for byte.** The lists are; these
+  are one model's answers on one day, and the response cache in `cache/gloss/`
+  is what makes a rerun repeat them rather than re-derive them.
 
 ### Changed
 

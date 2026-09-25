@@ -79,8 +79,7 @@ def test_cache_key_follows_lemma_and_pos(release_cfg, rows):
 
 
 @pytest.mark.parametrize("change", [
-    {"model": "claude-opus-4-8"}, {"max_tokens": 4000}, {"effort": "high"},
-    {"thinking": "disabled"},
+    {"model": "claude-opus-4-8"}, {"effort": "high"}, {"thinking": "disabled"},
 ])
 def test_changing_the_run_invalidates_the_cache(release_cfg, rows, change):
     """A cached response is only reused for the exact run that produced it."""
@@ -90,6 +89,48 @@ def test_changing_the_run_invalidates_the_cache(release_cfg, rows, change):
     other = config_mod.with_overrides(
         release_cfg, {f"gloss.{k}": v for k, v in change.items()})
     assert gloss.stamp_for(other, "pd", rows[0], ["Vou ser breve."]) != base
+
+
+def test_the_token_ceiling_is_not_part_of_the_cache_key(release_cfg, rows):
+    """A ceiling is not a setting: a reply that finished is the reply a higher
+    ceiling would have given, so raising it must not re-bill 10,000 rows. The
+    truncated ones come back because an errored reply is re-asked instead."""
+    from scripts import config as config_mod
+
+    base = gloss.stamp_for(release_cfg, "pd", rows[0], ["Vou ser breve."])
+    higher = config_mod.with_overrides(release_cfg, {"gloss.max_tokens": 8000})
+    assert gloss.stamp_for(higher, "pd", rows[0], ["Vou ser breve."]) == base
+
+
+def test_an_unusable_reply_is_asked_again(release_cfg, rows, tmp_path, monkeypatch):
+    """Refused, truncated, unparseable or simply empty: not an answer."""
+    from scripts import config as config_mod
+
+    cfg = config_mod.with_overrides(
+        release_cfg, {"gloss.cache_dir": str(tmp_path), "gloss.max_attempts": 2})
+    stamp = "s1"
+    good = {"gloss": "to be", "example_pt": "", "example_en": "", "flags": []}
+    gloss.cache_write(cfg, rows[0], stamp, [], {"usage": {}}, good)
+    assert gloss.cache_read(cfg, rows[0], stamp) is not None
+
+    bad = dict(good, gloss="", error="truncated at max_tokens")
+    gloss.cache_write(cfg, rows[1], stamp, [], {"usage": {}}, bad)
+    assert gloss.cache_read(cfg, rows[1], stamp) is None       # ask again
+    gloss.cache_write(cfg, rows[1], stamp, [], {"usage": {}}, bad)
+    assert gloss.cache_read(cfg, rows[1], stamp) is not None   # out of attempts
+
+
+def test_a_failed_retry_never_overwrites_an_answer(release_cfg, rows, tmp_path):
+    from scripts import config as config_mod
+
+    cfg = config_mod.with_overrides(release_cfg, {"gloss.cache_dir": str(tmp_path)})
+    good = {"gloss": "to be", "example_pt": "", "example_en": "", "flags": []}
+    gloss.cache_write(cfg, rows[0], "s1", [], {"usage": {}}, good)
+    gloss.cache_write(cfg, rows[0], "s1", [], {"usage": {}},
+                      {"gloss": "", "example_pt": "", "example_en": "",
+                       "flags": [], "error": "refusal (cyber)"})
+    kept = gloss.cache_read(cfg, rows[0], "s1")
+    assert kept["parsed"]["gloss"] == "to be" and kept["attempts"] == 2
 
 
 def test_changing_the_prompt_or_the_sentences_invalidates_the_cache(release_cfg, rows):
@@ -333,3 +374,54 @@ def test_the_report_names_the_model_and_counts_the_flags(release_cfg):
     assert "snapshot" in text
     assert "| `vulgar` | 2 |" in text and "| `archaic` | 1 |" in text
     assert "cost: $0.00" in text
+
+
+# -- repairing a reply before it is published --------------------------------
+
+CORPUS = ["- Andei à tua procura.", "Bem e mal são conceitos relativos."]
+
+
+def _repair(example, sentences=CORPUS, contains=lambda t: True, **kw):
+    reply = {"gloss": "to walk", "example_pt": example, "example_en": "x",
+             "flags": [], **kw}
+    return gloss.repair(reply, sentences, contains)
+
+
+def test_a_double_escaped_reply_is_decoded_not_dropped():
+    """Claude sometimes writes \\uXXXX as six literal characters. The sentence
+    is right; only its escaping is wrong."""
+    fixed, what = _repair("Bem e mal s\\u00e3o conceitos relativos.")
+    assert what == "escape"
+    assert fixed["example_pt"] == CORPUS[1]
+    assert gloss.verify(fixed, CORPUS) == ""
+
+
+def test_an_example_the_model_tidied_itself_is_re_anchored():
+    """Dropping the dialogue dash is what we do on output anyway, so the
+    corpus line goes back in and nothing about the card changes."""
+    fixed, what = _repair("Andei à tua procura.")
+    assert what == "reanchored"
+    assert fixed["example_pt"] == CORPUS[0]
+    assert gloss.verify(fixed, CORPUS) == ""
+
+
+def test_an_edited_example_is_dropped_and_flagged():
+    """`tras` -> `trás`, a pronoun supplied, a clause trimmed: there is no
+    telling a correction from a corruption, so the example goes."""
+    fixed, what = _repair("Tu andaste à minha procura.")
+    assert what == "rewritten"
+    assert fixed["example_pt"] == "" and fixed["example_en"] == ""
+    assert "uncertain" in fixed["flags"]
+    assert fixed["gloss"] == "to walk"        # the gloss survives
+    assert gloss.verify(fixed, CORPUS) == ""
+
+
+def test_a_real_line_that_does_not_contain_the_entry_is_dropped():
+    fixed, what = _repair(CORPUS[1], contains=lambda t: False)
+    assert what == "off_target"
+    assert fixed["example_pt"] == "" and "uncertain" in fixed["flags"]
+
+
+def test_a_clean_reply_is_left_exactly_as_it_is():
+    fixed, what = _repair(CORPUS[0])
+    assert what == "" and fixed["example_pt"] == CORPUS[0]

@@ -616,7 +616,11 @@ output:
 # the cache rather than silently mixing two vintages of gloss.
 gloss:
   model: claude-opus-5        # exact model id, never a date-suffixed alias
-  max_tokens: 1000
+  # A ceiling, not a setting: it is deliberately not part of the cache key.
+  # Nine rows of the first run hit 1000 -- adaptive thinking occasionally runs
+  # long on a word with twenty noisy sentences -- and were truncated.
+  max_tokens: 2000
+  max_attempts: 3             # an errored reply is re-asked, up to this many
   effort: low                 # output_config.effort; the task is short
   thinking: adaptive          # adaptive | disabled
   # There is no temperature knob on this model family: the parameter was
@@ -636,6 +640,10 @@ gloss:
     max_senses: 3             # the prompt asks for one to three
     max_words_per_sense: 8    # it asks for six; eight is where it fails
     max_missing_example_share: 0.05   # entries with no example sentence
+    # Words the model will not gloss even after max_attempts tries. One is a
+    # fact about the model's safety classifiers, not a broken run; the report
+    # names every one. A run that loses more than this has something wrong.
+    max_missing_gloss: 5
   # The human review sample: every row a learner meets first, plus a spread
   # over the rest.
   review:

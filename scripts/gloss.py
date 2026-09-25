@@ -51,6 +51,7 @@ import random
 import sys
 import time
 from pathlib import Path
+from collections import Counter
 from typing import Any, Callable, Iterable, Sequence
 
 # Prices per million tokens, Anthropic first-party API, checked 2026-09-24.
@@ -324,6 +325,23 @@ class Sentences:
         """The inflected forms this entry is published from."""
         return set(self.by_lemma.get(row["lemma"], ())) | {row["lemma"]}
 
+    def contains(self, row: dict[str, Any]) -> Callable[[str], bool]:
+        """Does a sentence actually contain this entry? A phrase has to be
+        there as adjacent tokens; a word, as any of its inflected forms."""
+        if row["is_mwe"]:
+            parts = row["lemma"].split()
+
+            def check(text: str) -> bool:
+                toks = self.tok.tokenize(text)
+                return any(toks[i:i + len(parts)] == parts
+                           for i in range(len(toks) - len(parts) + 1))
+        else:
+            forms = self.surfaces_of(row)
+
+            def check(text: str) -> bool:
+                return bool(set(self.tok.tokenize(text)) & forms)
+        return check
+
     # -- candidates ---------------------------------------------------------
 
     def _phrase_lines(self, phrase: str) -> list[str]:
@@ -531,18 +549,50 @@ def cache_read(cfg: dict[str, Any], row: dict[str, Any], stamp: str) -> dict | N
         return None
     if blob.get("stamp") != stamp:
         return None       # model, prompt or sentences changed: ask again
+    parsed = blob.get("parsed", {})
+    unusable = bool(parsed.get("error")) or not (parsed.get("gloss") or "").strip()
+    if unusable and blob.get("attempts", 1) < cfg["gloss"]["max_attempts"]:
+        return None       # refused, truncated, unparseable or empty: ask again
     return blob
+
+
+def cache_read_any(cfg: dict[str, Any], row: dict[str, Any], stamp: str) -> dict | None:
+    """The cached reply for this stamp even if it failed: what the run has to
+    publish, or account for, when a retry never succeeded."""
+    path = cache_file(cfg, row)
+    if not path.is_file():
+        return None
+    try:
+        blob = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+    return blob if blob.get("stamp") == stamp else None
 
 
 def cache_write(cfg: dict[str, Any], row: dict[str, Any], stamp: str,
                 sentences: Sequence[str], response: Any, parsed: dict) -> None:
     path = cache_file(cfg, row)
     path.parent.mkdir(parents=True, exist_ok=True)
+    attempts = 1
+    if path.is_file():
+        try:
+            old = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            old = {}
+        if old.get("stamp") == stamp:
+            attempts = old.get("attempts", 1) + 1
+            # Never let a retry that failed overwrite an answer that worked.
+            if parsed.get("error") and not old.get("parsed", {}).get("error"):
+                old["attempts"] = attempts
+                path.write_text(json.dumps(old, ensure_ascii=False, indent=2),
+                                encoding="utf-8")
+                return
     blob = {
         "lemma": row["lemma"], "pos": row["pos"], "rank": row["rank"],
         "stamp": stamp, "model": cfg["gloss"]["model"],
         "requested_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "sentences": list(sentences),
+        "attempts": attempts,
         "parsed": parsed,
         "response": response if isinstance(response, dict) else response.to_dict(),
     }
@@ -551,10 +601,18 @@ def cache_write(cfg: dict[str, Any], row: dict[str, Any], stamp: str,
 
 def stamp_for(cfg: dict[str, Any], prompt_digest: str, row: dict[str, Any],
               sentences: Sequence[str]) -> str:
+    """What a cached response is only valid for.
+
+    max_tokens is deliberately not part of it. It is a ceiling, not a
+    setting that changes an answer: a reply that finished is the reply a
+    higher ceiling would have given. A reply that did *not* finish carries an
+    error, and an errored response is re-asked rather than reused -- see
+    cache_read -- which is how raising the ceiling retries the truncated
+    rows without re-billing the 9,900 that were fine.
+    """
     g = cfg["gloss"]
-    return digest(g["model"], str(g["max_tokens"]), str(g["effort"]),
-                  str(g.get("thinking")), prompt_digest, row["lemma"], row["pos"],
-                  *sentences)
+    return digest(g["model"], str(g["effort"]), str(g.get("thinking")),
+                  prompt_digest, row["lemma"], row["pos"], *sentences)
 
 
 # -- talking to the API ------------------------------------------------------
@@ -643,6 +701,72 @@ def parse_reply(response: Any) -> dict[str, Any]:
     return data
 
 
+_ESCAPE = None
+
+
+def decode_escapes(text: str) -> str:
+    """Undo a doubly-escaped \\uXXXX in a reply.
+
+    Claude occasionally emits `\\u00e3` as six literal characters inside a
+    JSON string, so json.loads hands back the escape rather than the letter
+    and a perfectly good corpus line stops matching the one that was sent.
+    Only \\uXXXX is decoded, and only when it is there: nothing else in the
+    string is touched.
+    """
+    global _ESCAPE
+    if "\\u" not in text:
+        return text
+    if _ESCAPE is None:
+        import re
+
+        _ESCAPE = re.compile(r"\\u([0-9a-fA-F]{4})")
+    return _ESCAPE.sub(lambda m: chr(int(m.group(1), 16)), text)
+
+
+def repair(parsed: dict[str, Any], sentences: Sequence[str], contains,
+           ) -> tuple[dict[str, Any], str]:
+    """Make a reply publishable, or take its example away. Returns the reply
+    and the name of what had to be done, empty when nothing did.
+
+    Three things go wrong often enough to be worth handling rather than
+    failing the run over, and each is handled in a way that keeps the
+    published example a real corpus line:
+
+      escape      a doubly-escaped \\uXXXX, decoded above.
+      reanchored  the model tidied the line itself -- dropped the dialogue
+                  dash, or the quotes -- so it no longer matches what was
+                  sent. The corpus line it tidied is put back; the output is
+                  tidied anyway, so nothing about the card changes.
+      rewritten   the model edited the Portuguese: an accent added
+                  (`tras` -> `trás`), a pronoun supplied, a clause trimmed.
+                  There is no way to tell a correction from a corruption, so
+                  the example goes and the entry keeps its gloss alone.
+      off_target  the line is real and unedited but does not contain the
+                  entry. Same treatment.
+    """
+    out = dict(parsed)
+    what = ""
+    for key in ("gloss", "example_pt", "example_en"):
+        fixed = decode_escapes(out.get(key, ""))
+        if fixed != out.get(key, ""):
+            out[key], what = fixed, "escape"
+    ex = out.get("example_pt", "")
+    if ex and ex not in sentences:
+        match = next((s for s in sentences if tidy(s) == tidy(ex)), None)
+        if match is not None:
+            out["example_pt"], what = match, what or "reanchored"
+        else:
+            out["example_pt"], out["example_en"] = "", ""
+            out["flags"] = sorted(set(out.get("flags", [])) | {"uncertain"})
+            return out, "rewritten"
+    ex = out.get("example_pt", "")
+    if ex and not contains(ex):
+        out["example_pt"], out["example_en"] = "", ""
+        out["flags"] = sorted(set(out.get("flags", [])) | {"uncertain"})
+        return out, "off_target"
+    return out, what
+
+
 def verify(parsed: dict[str, Any], sentences: Sequence[str]) -> str:
     """Empty string if the reply is usable, else why not. The example must be
     one of the lines we sent, character for character."""
@@ -688,9 +812,11 @@ def gloss_rows(cfg: dict[str, Any], rows: Sequence[dict[str, Any]],
             usage.add(blob.get("response", {}).get("usage", {}), live=False)
             if progress:
                 _log(f"    {i}/{len(rows)}  {row['lemma']} ({row['pos']})  [cached]")
-        results.append({**row, **blob["parsed"],
-                        "sentences": blob.get("sentences", sentences),
-                        "problem": verify(blob["parsed"], blob.get("sentences", sentences))})
+        got = blob.get("sentences", sentences)
+        parsed, repaired = repair(blob["parsed"], got, sents.contains(row))
+        results.append({**row, **parsed, "sentences": got, "repaired": repaired,
+                        "attempts": blob.get("attempts", 1),
+                        "problem": verify(parsed, got)})
     return results, usage
 
 
@@ -800,18 +926,34 @@ def collect(cfg: dict[str, Any], rows: Sequence[dict[str, Any]], sents: Sentence
     if len(failures) > 20:
         _log(f"  ... and {len(failures) - 20:,} more failed results")
 
+    return from_cache(cfg, rows, sents, usage)
+
+
+def from_cache(cfg: dict[str, Any], rows: Sequence[dict[str, Any]], sents: Sentences,
+               usage: "Usage | None" = None) -> tuple[list[dict], Usage]:
+    """Build the finished rows from cache/gloss/ alone -- no API call.
+
+    Everything published goes through here, so re-rendering after a change to
+    the repair rules costs nothing and the raw responses stay untouched on
+    disk as the record of what the model actually said.
+    """
     pdig = digest(system_prompt(cfg))
+    usage = usage or Usage(cfg["gloss"]["model"])
     results, missing = [], []
     for row in rows:
         sentences = sents.choose(row)
-        blob = cache_read(cfg, row, stamp_for(cfg, pdig, row, sentences))
+        stamp = stamp_for(cfg, pdig, row, sentences)
+        blob = cache_read(cfg, row, stamp)
+        if blob is None:
+            blob = cache_read_any(cfg, row, stamp)   # an errored reply still counts
         if blob is None:
             missing.append(row)
             continue
-        usage.add(blob.get("response", {}).get("usage", {}),
-                  live=False)
-        results.append({**row, **blob["parsed"], "sentences": blob["sentences"],
-                        "problem": verify(blob["parsed"], blob["sentences"])})
+        usage.add(blob.get("response", {}).get("usage", {}), live=False)
+        parsed, repaired = repair(blob["parsed"], blob["sentences"], sents.contains(row))
+        results.append({**row, **parsed, "sentences": blob["sentences"],
+                        "repaired": repaired, "attempts": blob.get("attempts", 1),
+                        "problem": verify(parsed, blob["sentences"])})
     if missing:
         _log(f"  {len(missing):,} rows have no response: rerun --submit, then --collect")
     return results, usage
@@ -824,7 +966,8 @@ def write_tsv(path: Path, results: Sequence[dict[str, Any]],
               show_sentences: bool = False) -> None:
     cols = list(COLUMNS)
     if show_sentences:
-        cols += ["problem", "n_sentences", "sentences_offered"]
+        cols += ["problem", "repaired", "attempts", "n_sentences",
+                 "sentences_offered"]
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="\n") as fh:
         # csv defaults, as everywhere else in the pipeline: a sentence that
@@ -838,7 +981,8 @@ def write_tsv(path: Path, results: Sequence[dict[str, Any]],
                    r["gloss"], tidy(r["example_pt"]), tidy(r["example_en"]),
                    " ".join(r["flags"])]
             if show_sentences:
-                out += [r.get("problem", ""), len(r["sentences"]),
+                out += [r.get("problem", ""), r.get("repaired", ""),
+                        r.get("attempts", 1), len(r["sentences"]),
                         " | ".join(r["sentences"])]
             w.writerow(["" if v is None else " ".join(str(v).split()) for v in out])
 
@@ -944,6 +1088,12 @@ def main() -> None:
                       help="poll the batch and write out/glosses.tsv")
     mode.add_argument("--estimate", action="store_true",
                       help="count input tokens for the full run; no glossing")
+    mode.add_argument("--retry", action="store_true",
+                      help="re-ask, one request each, the rows whose cached "
+                           "reply was refused, truncated or unparseable")
+    mode.add_argument("--report", action="store_true",
+                      help="rebuild the outputs and the gates from the cache; "
+                           "no API call")
     mode.add_argument("--rescue", action="store_true",
                       help="only the corpus pass for entries pass 2 never "
                            "sampled; caches its result and stops")
@@ -994,16 +1144,45 @@ def main() -> None:
         print("submitted; run --collect when the batch has ended")
         return
 
-    if args.collect:
+    if args.retry:
+        pdig = digest(system_prompt(cfg))
+        todo = []
+        for row in rows:
+            sentences = sents.choose(row)
+            stamp = stamp_for(cfg, pdig, row, sentences)
+            if cache_read(cfg, row, stamp) is None:
+                todo.append(row)
+        if not todo:
+            print("nothing to retry")
+            return
+        _log(f"retrying {len(todo)} rows")
+        results, usage = gloss_rows(cfg, todo, sents)
+        for r in results:
+            state = r["problem"] or (f"repaired: {r['repaired']}" if r["repaired"]
+                                     else "ok")
+            print(f"  {r['rank']} {r['lemma']} ({r['pos']}) attempt "
+                  f"{r['attempts']}: {state}")
+        print("\n".join(usage.report("retry", len(results))))
+        print("now rerun --report to rebuild the outputs and the gates")
+        return
+
+    if args.collect or args.report:
         from scripts import gloss_gates
 
-        results, usage = collect(cfg, rows, sents, wait=not args.no_wait)
+        if args.report:
+            results, usage = from_cache(cfg, rows, sents)
+        else:
+            results, usage = collect(cfg, rows, sents, wait=not args.no_wait)
         out = config_mod.out_dir(cfg) / g["out_file"]
         write_tsv(out, results)
         print(f"{out}: {len(results):,} rows")
 
         res = gloss_gates.run(results, rows, cfg, sents.tok.tokenize, sents.surfaces_of)
         lines = usage.report("this run", len(results))
+        fixed = Counter(r["repaired"] for r in results if r["repaired"])
+        lines.append("  repaired: " + (", ".join(f"{k} {n:,}" for k, n
+                                                in sorted(fixed.items()))
+                                      if fixed else "nothing"))
         report = Path(cfg["paths"]["reports_dir"]) / g["gates_file"]
         report.parent.mkdir(parents=True, exist_ok=True)
         report.write_text(gloss_gates.render(res, cfg, lines), encoding="utf-8")
