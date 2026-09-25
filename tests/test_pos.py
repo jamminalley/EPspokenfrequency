@@ -139,31 +139,48 @@ def test_both_readings_of_a_count(pcfg):
 # -- contractions ------------------------------------------------------------
 
 
-def test_contractions_all_take_one_pos(release_cfg):
+def test_a_contraction_takes_the_pos_of_what_it_contracts(release_cfg):
     """fixes.contraction_pos: Stanza expands a contraction before tagging, so
-    the surface token's own tags are noise. One POS for the paradigm."""
+    the surface token's own tags are noise. One decided answer per form."""
     from collections import Counter
 
     from scripts import pos as pos_mod
 
-    forms = pos_mod.contraction_forms(release_cfg)
-    assert {"do", "da", "nas", "no", "pelo", "deste", "contigo"} <= forms
-    # tagger evidence that would otherwise win, and a fallback that answers unk
-    weighted = {"nas": Counter({"noun": 900, "adv": 100})}
-    for form in ("do", "nas", "pelo", "contigo"):
-        parts = pos_mod.assign(form, 1000, weighted, {}, release_cfg,
-                               lambda w: "unk", forms)
-        assert parts == [(release_cfg["pos"]["contraction_pos"], 1000)]
+    forms = pos_mod.contraction_pos(release_cfg)
+    # preposition + article or demonstrative; + pronoun; + adverb of place
+    expected = {"do": "det", "da": "det", "nas": "det", "pelo": "det",
+                "num": "det", "deste": "det", "naquela": "det", "noutro": "det",
+                "dele": "pron", "delas": "pron", "comigo": "pron",
+                "contigo": "pron", "disso": "pron", "nisto": "pron",
+                "daquilo": "pron", "daqui": "adv", "dali": "adv", "daí": "adv"}
+    for form, pos in expected.items():
+        assert forms[form] == pos, form
+    # tagger evidence that would otherwise win, and a fallback answering unk
+    weighted = {"nas": Counter({"noun": 900, "adv": 100}),
+                "dele": Counter({"noun": 900})}
+    for form, pos in (("nas", "det"), ("dele", "pron"), ("daqui", "adv")):
+        assert pos_mod.assign(form, 1000, weighted, {}, release_cfg,
+                              lambda w: "unk", forms) == [(pos, 1000)]
     # and a contraction is never split across two rows
     assert len(pos_mod.assign("nas", 1000, weighted, {}, release_cfg,
                               lambda w: "unk", forms)) == 1
+
+
+def test_every_contraction_gets_an_answer(release_cfg):
+    """A form absent from both named groups falls to the default, so no
+    contraction can slip back to the tagger or to unk."""
+    from scripts import pos as pos_mod
+
+    forms = pos_mod.contraction_pos(release_cfg)
+    assert set(forms) == set(release_cfg["conventions"]["contractions"]["forms"])
+    assert set(forms.values()) == {"det", "pron", "adv"}
 
 
 def test_consigo_is_not_treated_as_a_contraction(release_cfg):
     """It is almost always the verb in speech; config.yaml leaves it out."""
     from scripts import pos as pos_mod
 
-    assert "consigo" not in pos_mod.contraction_forms(release_cfg)
+    assert "consigo" not in pos_mod.contraction_pos(release_cfg)
 
 
 def test_stage_1_leaves_contraction_pos_alone(cfg):
@@ -171,4 +188,4 @@ def test_stage_1_leaves_contraction_pos_alone(cfg):
     from scripts import pos as pos_mod
 
     assert cfg["fixes"]["contraction_pos"] is False
-    assert pos_mod.contraction_forms(cfg) == frozenset()
+    assert pos_mod.contraction_pos(cfg) == {}

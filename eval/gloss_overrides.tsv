@@ -1,0 +1,18 @@
+# Human decisions that beat the model, for out/glosses.tsv. Like the other
+# files in eval/, a row here is a reviewer overruling automatic output, and
+# the pipeline reads it rather than being edited to match.
+#
+# Match is on lemma + pos, exactly as they appear in the published lists.
+# Only the fields you fill in are taken: leave gloss empty to keep the
+# model gloss and replace only the example, or leave both examples empty to
+# replace only the gloss. A row whose lemma + pos is not published is an
+# error, so a typo cannot fail silently.
+#
+# example_pt is normally one of the corpus lines the model was shown (they
+# are in eval/gloss_review.tsv, so you can pick a better one). A sentence
+# from anywhere else is allowed but is no longer corpus evidence: the row is
+# published with source = override and the gate counts it.
+#
+# Blank lines and lines starting with # are ignored.
+lemma	pos	gloss	example_pt	example_en	note
+caseiro	adj	homemade; home-loving; caretaker (noun)			the model refuses this word on every attempt (stop_reason refusal, category general_harms); gloss written by hand

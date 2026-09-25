@@ -1,6 +1,6 @@
 # Gloss gates
 
-`glosses.tsv`: **10,000 rows**, 9,688 distinct entries, 9,800 with an example sentence (98.0%).
+`glosses.tsv`: **10,000 rows**, 9,688 distinct entries, 9,800 with an example sentence (98.0%), 1 overridden by hand.
 
 Written by `python -m scripts.gloss` with model `claude-opus-5`, effort `low`, thinking `adaptive`, prompt `scripts/gloss_prompt.md`, ceiling 2000 tokens. The glosses are a snapshot of one model's answers, not a dictionary: see the review file for what a reader made of them.
 
@@ -10,7 +10,7 @@ Written by `python -m scripts.gloss` with model `claude-opus-5`, effort `low`, t
 |---|---|---:|---:|---|
 | `coverage` | published rows with no gloss row | 0 | 0 | ok |
 | `verbatim` | examples that are not one of the corpus lines that were sent | 0 | 0 | ok |
-| `gloss_present` | rows with no gloss at all | 5 | 1 | noted |
+| `gloss_present` | rows with no gloss at all | 0 | 0 | ok |
 | `translated` | examples with no English translation | 0 | 0 | ok |
 | `known_flags` | flags outside the prompt's list | 0 | 0 | ok |
 | `unique` | duplicate (lemma, pos) rows | 0 | 0 | ok |
@@ -19,11 +19,13 @@ Written by `python -m scripts.gloss` with model `claude-opus-5`, effort `low`, t
 | `sense_length` | senses longer than 8 words | 8 | 14 | noted |
 | `verbose_sense` | senses longer than the 6 words the prompt asks for | 6 | 37 | noted |
 | `no_example` | entries the model would not illustrate | 5% of rows | 200 | noted |
-| `model_error` | replies that were refused, truncated or unparseable | — | 1 | noted |
+| `model_error` | replies that were refused, truncated or unparseable | — | 0 | ok |
 | `escape` | replies whose \uXXXX escapes had to be decoded | — | 5 | noted |
 | `reanchored` | examples the model tidied itself, re-anchored to the corpus line | — | 6 | noted |
 | `rewritten` | examples the model edited, so dropped | — | 24 | noted |
 | `off_target` | examples that did not contain the entry, so dropped | — | 0 | ok |
+| `override` | rows a reviewer overruled (eval/gloss_overrides.tsv) | — | 1 | noted |
+| `override_off_corpus` | overridden examples that are not one of the corpus lines the model was shown | — | 0 | ok |
 
 **Every fatal gate passed.**
 
@@ -37,26 +39,17 @@ Counts are per row; a row can carry more than one.
 | `bp-leaning` | 114 | 1.14% |
 | `archaic` | 13 | 0.13% |
 | `name-like` | 148 | 1.48% |
-| `uncertain` | 350 | 3.50% |
-| _no flag_ | 9,375 | 93.75% |
+| `uncertain` | 349 | 3.49% |
+| _no flag_ | 9,376 | 93.76% |
 
 ## Senses per gloss
 
 | senses | rows |
 |---:|---:|
-| 0 | 1 |
-| 1 | 4,047 |
-| 2 | 4,217 |
-| 3 | 1,734 |
+| 1 | 4,046 |
+| 2 | 4,214 |
+| 3 | 1,739 |
 | 9 | 1 |
-
-<details><summary>gloss_present: 1 row</summary>
-
-| rank | lemma | pos | detail |
-|---:|---|---|---|
-| 4209 | caseiro | adj | empty |
-
-</details>
 
 <details><summary>senses: 1 row</summary>
 
@@ -133,14 +126,6 @@ Counts are per row; a row can carry more than one.
 
 </details>
 
-<details><summary>model_error: 1 row</summary>
-
-| rank | lemma | pos | detail |
-|---:|---|---|---|
-| 4209 | caseiro | adj | refusal (general_harms) |
-
-</details>
-
 <details><summary>escape: 5 rows</summary>
 
 | rank | lemma | pos | detail |
@@ -189,17 +174,25 @@ Counts are per row; a row can carry more than one.
 
 </details>
 
+<details><summary>override: 1 row</summary>
+
+| rank | lemma | pos | detail |
+|---:|---|---|---|
+| 4209 | caseiro | adj | the model refuses this word on every attempt (stop_reason refusal, category general_harms); gloss written by hand |
+
+</details>
+
 ## Cost
 
 What the published replies cost, added up from the cached responses. A row that had to be re-asked counts only its last attempt, so the figure is a little below what was actually billed; the batch totals are authoritative.
 
 ```
 this run: 10000 rows (0 sent now, 10000 replayed from cache/gloss/)
-  input        2,702,716 tokens (    270/row)
-  cache write  1,611,960 tokens
-  cache read   14,348,040 tokens
-  output         729,978 tokens (     73/row)
-  cost, prompt cache hitting   $49.01 standard, $24.51 batch
+  input        2,702,738 tokens (    270/row)
+  cache write  1,602,384 tokens
+  cache read   14,357,616 tokens
+  output         729,949 tokens (     73/row)
+  cost, prompt cache hitting   $48.96 standard, $24.48 batch
   cost, no cache hit at all    $111.56 standard, $55.78 batch
   repaired: escape 5, reanchored 6, rewritten 24
 ```

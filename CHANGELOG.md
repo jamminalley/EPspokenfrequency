@@ -33,6 +33,17 @@ when the glosses have been reviewed.
   lines the model was shown, character for character, and must contain the
   entry. A run failing any fatal gate is not published. Per-flag counts and
   the cost of the run are in the same report.
+- **`eval/gloss_overrides.tsv`**, a reviewer's answer beating the model's,
+  in the same shape as the other human-decision files in `eval/`: match on
+  lemma + pos, and only the fields a row fills in are taken, so a row can
+  replace the gloss, the example, or both. An overridden row is published
+  with `source = override` in `out/glosses.tsv` and is exempt from the
+  corpus-provenance gates — a reviewer's sentence has a different
+  provenance, not a broken one — but the gate counts it, and counts
+  separately any overridden example that is not one of the corpus lines the
+  model was shown. An override naming an unpublished lemma is an error, so a
+  typo cannot fail silently. Seeded with the one entry the model will not
+  gloss (`caseiro`).
 - **A review sample**, `eval/gloss_review.tsv`: all of ranks 1–500 plus 200
   spread evenly over the rest, with the sentences each entry was offered, so
   a reader can check what the model was working from.
@@ -46,9 +57,11 @@ when the glosses have been reviewed.
 
 ### Known issues
 
-- **One word has no gloss.** `caseiro` (rank 4209, "homemade") trips a
-  safety classifier on every attempt; the row ships with an empty gloss and
-  an `uncertain` flag. The gate names it and tolerates up to five such rows.
+- **One gloss is not the model's.** `caseiro` (rank 4209, "homemade") trips
+  a safety classifier on every attempt, so its gloss is written by hand in
+  `eval/gloss_overrides.tsv` and the row is marked `source = override`.
+  Every other gloss in the file is the model's. The `gloss_present` gate is
+  back to zero tolerance now that overrides cover refusals.
 - **200 entries have no example sentence** (2.0%). Either every sampled line
   showed a different word — `doméstica` the adjective rather than the noun —
   or the lines were unintelligible fragments. Those entries have a gloss and
@@ -60,17 +73,25 @@ when the glosses have been reviewed.
 
 ### Changed
 
-- **Every contraction is now published as `det`** (`fixes.contraction_pos`,
-  `pos.contraction_pos`). Stanza expands *do*, *nas*, *pelo* and the rest
-  into two words before tagging, so the surface token collected almost no
-  usable evidence: 28 contraction entries read `unk`, and those with a stray
-  tag read worse — `pelo` as a noun, `deste` as a verb, `ao` as a
-  conjunction, `contigo` split across three parts of speech. `do` and `da`
-  already read `det` on the tagger's own evidence; the rest of the paradigm
-  now agrees with them. It is the right answer for the
-  preposition-plus-article contractions and a convenience for the
-  preposition-plus-pronoun ones (*dele*, *comigo*, *nisso*), which are not
-  determiners in any analysis.
+- **Every contraction now takes the part of speech of what it contracts**
+  (`fixes.contraction_pos`, `pos.contraction_pos`). Stanza expands *do*,
+  *nas*, *pelo* and the rest into two words before tagging, so the surface
+  token collected almost no usable evidence: 28 contraction entries read
+  `unk`, and those with a stray tag read worse — `pelo` as a noun, `deste` as
+  a verb, `ao` as a conjunction, `contigo` split across three parts of
+  speech. Each form now gets one decided answer, by what it is made of
+  rather than by the paradigm it sits in:
+
+  | group | POS | forms |
+  |---|---|---|
+  | preposition + article or demonstrative | `det` | 58: *do*, *nas*, *pelo*, *num*, *deste*, *naquela*, *noutro*, … |
+  | preposition + pronoun | `pron` | 19: *dele*, *dela*, *deles*, *delas*, *nele*, *nela*, *neles*, *nelas*, *disto*, *disso*, *daquilo*, *nisto*, *nisso*, *naquilo*, *àquilo*, *comigo*, *contigo*, *connosco*, *convosco* |
+  | preposition + adverb of place | `adv` | 3: *daqui*, *daí*, *dali* |
+
+  `do` and `da` already read `det` on the tagger's own evidence; the rest of
+  the determiner group now agrees with them. The pronoun and adverb groups
+  are the ones the tagger would never have got right and a single blanket
+  answer would have got wrong.
 
   **70 rows changed part of speech** and `unk` rows fell from 106 to 78.
   Because the three `contigo` rows and four other split entries merge into

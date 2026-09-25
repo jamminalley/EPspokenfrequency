@@ -1343,7 +1343,7 @@
 6337	associado	adj	0	2901	4.560	freq::6001-6500 freq500::6001-6500 freq1000::6001-7000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
 6338	náusea	noun	0	2901	4.560	freq::6001-6500 freq500::6001-6500 freq1000::6001-7000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 6339	foleiro	adj	0	2899	4.557	freq::6001-6500 freq500::6001-6500 freq1000::6001-7000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
-6340	àquilo	det	0	2899	4.557	freq::6001-6500 freq500::6001-6500 freq1000::6001-7000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+6340	àquilo	pron	0	2899	4.557	freq::6001-6500 freq500::6001-6500 freq1000::6001-7000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 6341	exposto	adj	0	2898	4.555	freq::6001-6500 freq500::6001-6500 freq1000::6001-7000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
 6342	homossexual	noun	0	2897	4.553	freq::6001-6500 freq500::6001-6500 freq1000::6001-7000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 6343	meteorito	noun	0	2896	4.552	freq::6001-6500 freq500::6001-6500 freq1000::6001-7000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken

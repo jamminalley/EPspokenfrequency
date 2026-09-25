@@ -425,3 +425,91 @@ def test_a_real_line_that_does_not_contain_the_entry_is_dropped():
 def test_a_clean_reply_is_left_exactly_as_it_is():
     fixed, what = _repair(CORPUS[0])
     assert what == "" and fixed["example_pt"] == CORPUS[0]
+
+
+# -- a reviewer overruling the model -----------------------------------------
+
+
+def _overrides(tmp_path, release_cfg, body):
+    from scripts import config as config_mod
+
+    (tmp_path / "gloss_overrides.tsv").write_text(
+        "# a comment, and a blank line follow\n\n"
+        "lemma\tpos\tgloss\texample_pt\texample_en\tnote\n" + body,
+        encoding="utf-8")
+    return config_mod.with_overrides(release_cfg, {"paths.eval_dir": str(tmp_path)})
+
+
+def test_the_shipped_overrides_file_covers_the_refused_word(release_cfg):
+    """caseiro is refused by a safety classifier on every attempt, which is
+    why max_missing_gloss is back to zero: this file is the answer."""
+    over = gloss.load_overrides(release_cfg)
+    assert ("caseiro", "adj") in over
+    assert over[("caseiro", "adj")]["gloss"].startswith("homemade")
+    assert over[("caseiro", "adj")]["note"]
+    assert release_cfg["gloss"]["gates"]["max_missing_gloss"] == 0
+
+
+def test_only_the_fields_a_reviewer_fills_in_are_taken():
+    model = {"gloss": "wrong", "example_pt": "Uma casa velha.",
+             "example_en": "An old house.", "flags": ["uncertain"]}
+    # gloss only: the model's example survives
+    out = gloss.apply_override(model, {"gloss": "house", "example_pt": "",
+                                       "example_en": "", "note": ""})
+    assert out["gloss"] == "house" and out["example_pt"] == "Uma casa velha."
+    # example only: the model's gloss survives
+    out = gloss.apply_override(model, {"gloss": "", "example_pt": "A casa é azul.",
+                                       "example_en": "The house is blue.", "note": ""})
+    assert out["gloss"] == "wrong" and out["example_pt"] == "A casa é azul."
+    # and an override clears the model's own hedge
+    assert "uncertain" not in out["flags"]
+
+
+def test_an_override_clears_a_refusal():
+    refused = {"gloss": "", "example_pt": "", "example_en": "", "flags": ["uncertain"],
+               "error": "refusal (general_harms)"}
+    out = gloss.apply_override(refused, {"gloss": "homemade", "example_pt": "",
+                                         "example_en": "", "note": "by hand"})
+    assert gloss.verify(out, []) == ""
+
+
+def test_an_overridden_example_is_not_held_to_the_corpus_check():
+    """A reviewer's sentence has a different provenance, not a broken one --
+    but the row is marked, and the gate counts it."""
+    reply = {"gloss": "house", "example_pt": "Uma frase escrita à mão.",
+             "example_en": "A sentence written by hand.", "flags": []}
+    assert gloss.verify(reply, ["A casa é azul."])
+    assert gloss.verify(reply, ["A casa é azul."], overridden=True) == ""
+
+
+def test_the_gates_exempt_an_override_but_still_count_it(release_cfg):
+    row = {**_result(), "source": "override", "override_note": "by hand",
+           "example_pt": "Uma frase escrita à mão."}
+    res = _gates([row], release_cfg)
+    assert res["failed"] == []                     # neither verbatim nor contains_entry
+    assert res["gates"]["verbatim"].n == 0 and res["gates"]["contains_entry"].n == 0
+    assert res["gates"]["override"].n == 1
+    assert res["gates"]["override_off_corpus"].n == 1
+
+
+def test_an_override_for_an_unpublished_row_is_an_error(release_cfg, tmp_path):
+    """A typo in a lemma must not fail silently."""
+    cfg = _overrides(tmp_path, release_cfg,
+                     "casssa\tnoun\thouse\t\t\ttypo\n")
+    rows = [{"lemma": "casa", "pos": "noun"}]
+    with pytest.raises(SystemExit) as exc:
+        gloss.load_overrides(cfg, rows)
+    assert "casssa" in str(exc.value)
+
+
+def test_the_same_row_cannot_be_overridden_twice(release_cfg, tmp_path):
+    cfg = _overrides(tmp_path, release_cfg,
+                     "casa\tnoun\thouse\t\t\tone\ncasa\tnoun\thome\t\t\ttwo\n")
+    with pytest.raises(SystemExit) as exc:
+        gloss.load_overrides(cfg)
+    assert "twice" in str(exc.value)
+
+
+def test_comments_and_blank_lines_are_ignored(release_cfg, tmp_path):
+    cfg = _overrides(tmp_path, release_cfg, "\n# another comment\ncasa\tnoun\thouse\t\t\t\n")
+    assert set(gloss.load_overrides(cfg)) == {("casa", "noun")}

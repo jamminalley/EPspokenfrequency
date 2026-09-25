@@ -80,7 +80,11 @@
   "proper_nouns_dropped": 251322,
   "pos_votes_counted": 444620,
   "pos_votes_inconsistent": 13876,
-  "contraction_pos": "det",
+  "contraction_pos": {
+    "det": 58,
+    "pron": 19,
+    "adv": 3
+  },
   "pos_source": "tagger",
   "pos_split_lemmas_all": 656,
   "pos_split_in_list": 309,
@@ -115,5 +119,5 @@
   "gold": {
     "pipeline, stage 2 (gated)": 0.9849397590361446
   },
-  "elapsed_s": 55.2
+  "elapsed_s": 55.7
 }

@@ -77,6 +77,13 @@ SCHEMA: dict[str, Any] = {
 
 COLUMNS = ("rank", "lemma", "pos", "is_mwe", "freq_per_million", "pos_share",
            "gloss", "example_pt", "example_en", "flags")
+# out/glosses.tsv says where each row came from; Stage C publishes it as the
+# Gloss_Source field. The review file deliberately does not: its columns are
+# an input to whoever is reading it, so they stay put. An overridden row is
+# named in eval/gloss_overrides.tsv and counted in the gate report.
+GLOSS_COLUMNS = COLUMNS + ("source",)
+REVIEW_COLUMNS = COLUMNS + ("problem", "repaired", "attempts", "n_sentences",
+                            "sentences_offered")
 
 _DASHES = ("-", "\u2013", "\u2014")
 _QUOTE_PAIRS = (('"', '"'), ("\u201c", "\u201d"), ("\u00ab", "\u00bb"),
@@ -143,6 +150,54 @@ def load_rows(cfg: dict[str, Any]) -> list[dict[str, Any]]:
         r["split"] = parts[r["lemma"]] > 1
         r["pos_share"] = r["raw_freq"] / totals[r["lemma"]] if r["split"] else 1.0
     return rows
+
+
+def load_overrides(cfg: dict[str, Any],
+                   rows: Sequence[dict[str, Any]] | None = None) -> dict[tuple[str, str], dict]:
+    """eval/gloss_overrides.tsv: a reviewer's answer, beating the model's.
+
+    The same shape as the other human-decision files in eval/ -- the pipeline
+    reads the decision instead of being edited to match it. Only the fields a
+    row fills in are taken, so a row can replace the gloss, the example, or
+    both. A row that matches nothing published is an error: a typo in a lemma
+    must not fail silently.
+    """
+    path = Path(cfg["paths"]["eval_dir"]) / cfg["gloss"]["overrides_file"]
+    if not path.is_file():
+        return {}
+    out: dict[tuple[str, str], dict] = {}
+    with path.open(encoding="utf-8", newline="") as fh:
+        body = [line for line in fh
+                if line.strip() and not line.lstrip().startswith("#")]
+    for row in csv.DictReader(body, delimiter="\t"):
+        key = ((row.get("lemma") or "").strip(), (row.get("pos") or "").strip())
+        if not key[0]:
+            continue
+        if key in out:
+            raise SystemExit(f"{path}: {key[0]} ({key[1]}) is listed twice")
+        out[key] = {k: (row.get(k) or "").strip()
+                    for k in ("gloss", "example_pt", "example_en", "note")}
+    if rows is not None:
+        published = {(r["lemma"], r["pos"]) for r in rows}
+        unknown = sorted(k for k in out if k not in published)
+        if unknown:
+            raise SystemExit(
+                f"{path}: no published row for "
+                + ", ".join(f"{l} ({p})" for l, p in unknown))
+    return out
+
+
+def apply_override(parsed: dict[str, Any], over: dict[str, str]) -> dict[str, Any]:
+    """Take the fields the reviewer filled in, and nothing else."""
+    out = dict(parsed)
+    if over.get("gloss"):
+        out["gloss"] = over["gloss"]
+        out.pop("error", None)
+    if over.get("example_pt"):
+        out["example_pt"] = over["example_pt"]
+        out["example_en"] = over.get("example_en", "")
+    out["flags"] = [f for f in out.get("flags", ()) if f != "uncertain"]
+    return out
 
 
 # -- example sentences -------------------------------------------------------
@@ -767,15 +822,17 @@ def repair(parsed: dict[str, Any], sentences: Sequence[str], contains,
     return out, what
 
 
-def verify(parsed: dict[str, Any], sentences: Sequence[str]) -> str:
-    """Empty string if the reply is usable, else why not. The example must be
-    one of the lines we sent, character for character."""
+def verify(parsed: dict[str, Any], sentences: Sequence[str],
+           overridden: bool = False) -> str:
+    """Empty string if the row is usable, else why not. The example must be
+    one of the lines we sent, character for character -- unless a reviewer
+    put it there, which is a different provenance, not a broken one."""
     if parsed.get("error"):
         return parsed["error"]
     if not parsed["gloss"].strip():
         return "empty gloss"
     ex = parsed["example_pt"]
-    if ex and ex not in sentences:
+    if ex and ex not in sentences and not overridden:
         return "example_pt is not one of the sentences sent"
     if ex and not parsed["example_en"].strip():
         return "example_pt without a translation"
@@ -792,6 +849,7 @@ def gloss_rows(cfg: dict[str, Any], rows: Sequence[dict[str, Any]],
     prompt = system_prompt(cfg)
     pdig = digest(prompt)
     usage = Usage(cfg["gloss"]["model"])
+    overrides = load_overrides(cfg)
     cli = None
     results = []
     for i, row in enumerate(rows, 1):
@@ -814,9 +872,14 @@ def gloss_rows(cfg: dict[str, Any], rows: Sequence[dict[str, Any]],
                 _log(f"    {i}/{len(rows)}  {row['lemma']} ({row['pos']})  [cached]")
         got = blob.get("sentences", sentences)
         parsed, repaired = repair(blob["parsed"], got, sents.contains(row))
+        over = overrides.get((row["lemma"], row["pos"]))
+        if over:
+            parsed = apply_override(parsed, over)
         results.append({**row, **parsed, "sentences": got, "repaired": repaired,
                         "attempts": blob.get("attempts", 1),
-                        "problem": verify(parsed, got)})
+                        "source": "override" if over else "model",
+                        "override_note": over["note"] if over else "",
+                        "problem": verify(parsed, got, overridden=bool(over))})
     return results, usage
 
 
@@ -939,6 +1002,7 @@ def from_cache(cfg: dict[str, Any], rows: Sequence[dict[str, Any]], sents: Sente
     """
     pdig = digest(system_prompt(cfg))
     usage = usage or Usage(cfg["gloss"]["model"])
+    overrides = load_overrides(cfg, rows)
     results, missing = [], []
     for row in rows:
         sentences = sents.choose(row)
@@ -951,9 +1015,15 @@ def from_cache(cfg: dict[str, Any], rows: Sequence[dict[str, Any]], sents: Sente
             continue
         usage.add(blob.get("response", {}).get("usage", {}), live=False)
         parsed, repaired = repair(blob["parsed"], blob["sentences"], sents.contains(row))
+        over = overrides.get((row["lemma"], row["pos"]))
+        if over:
+            parsed = apply_override(parsed, over)
         results.append({**row, **parsed, "sentences": blob["sentences"],
                         "repaired": repaired, "attempts": blob.get("attempts", 1),
-                        "problem": verify(parsed, blob["sentences"])})
+                        "source": "override" if over else "model",
+                        "override_note": over["note"] if over else "",
+                        "problem": verify(parsed, blob["sentences"],
+                                          overridden=bool(over))})
     if missing:
         _log(f"  {len(missing):,} rows have no response: rerun --submit, then --collect")
     return results, usage
@@ -964,10 +1034,7 @@ def from_cache(cfg: dict[str, Any], rows: Sequence[dict[str, Any]], sents: Sente
 
 def write_tsv(path: Path, results: Sequence[dict[str, Any]],
               show_sentences: bool = False) -> None:
-    cols = list(COLUMNS)
-    if show_sentences:
-        cols += ["problem", "repaired", "attempts", "n_sentences",
-                 "sentences_offered"]
+    cols = list(REVIEW_COLUMNS if show_sentences else GLOSS_COLUMNS)
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="\n") as fh:
         # csv defaults, as everywhere else in the pipeline: a sentence that
@@ -984,6 +1051,8 @@ def write_tsv(path: Path, results: Sequence[dict[str, Any]],
                 out += [r.get("problem", ""), r.get("repaired", ""),
                         r.get("attempts", 1), len(r["sentences"]),
                         " | ".join(r["sentences"])]
+            else:
+                out.append(r.get("source", "model"))
             w.writerow(["" if v is None else " ".join(str(v).split()) for v in out])
 
 

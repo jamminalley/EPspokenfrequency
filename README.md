@@ -147,16 +147,22 @@ These are specific and worth knowing before you study from the list.
   reproducible byte for byte. The example sentences are the one part that
   is verifiable — each is a corpus line, copied unaltered but for a leading
   dialogue dash and surrounding quotation marks, and the build rejects any
-  the model did not copy exactly.
-- **Contractions all read `det`.** Stanza expands *do*, *nas*, *pelo* and
-  the rest into two words before tagging, so the surface token collects
-  almost no usable evidence: before this release *nas*, *no* and 26 others
-  read `unk`, and the ones with a stray tag read worse — *pelo* as a noun,
-  *deste* as a verb, *contigo* split across three parts of speech. Every
-  contraction now carries the same part of speech as *do*, which is `det`.
-  It is the right answer for the preposition-plus-article contractions and
-  a convenience for the preposition-plus-pronoun ones (*dele*, *comigo*,
-  *nisso*), which are not determiners in any analysis.
+  the model did not copy exactly. Where the model edited a sentence rather
+  than quoting it (24 entries), the example was dropped and the entry keeps
+  its gloss alone; 200 entries have no example because none of the sampled
+  lines showed the entry in the sense being glossed.
+- **Contractions are labelled by what they contract, not by the tagger.**
+  Stanza expands *do*, *nas*, *pelo* and the rest into two words before
+  tagging, so the surface token collects almost no usable evidence: before
+  this release *nas*, *no* and 26 others read `unk`, and the ones with a
+  stray tag read worse — *pelo* as a noun, *deste* as a verb, *contigo*
+  split across three parts of speech. Each form now gets one decided
+  answer: preposition + article or demonstrative is `det` (*do*, *nas*,
+  *pelo*, *num*, *deste*, *naquela* — 58 forms), preposition + pronoun is
+  `pron` (*dele*, *comigo*, *disso*, *nisto*, *daquilo* — 19), and
+  preposition + adverb of place is `adv` (*daqui*, *daí*, *dali*). This is
+  a decision, not tagger output, and it is the one part of the `pos` column
+  that does not come from Stanza.
 - **`ser` and `ir` are separated by a rule, not by the tagger.** `foi`,
   `fui`, `fomos`, `foram` and `fora` belong to *ser* ("was") or *ir*
   ("went") depending on the sentence, and the tagger assigns them to *ser*
@@ -249,13 +255,18 @@ TSV and CSV hold identical data; pick whichever your tools prefer. Columns:
 
 | File | What it is |
 |---|---|
-| `glosses.tsv` | One row per entry: `gloss` (one to three English senses, commonest first), `example_pt` (a corpus line containing the entry, verbatim), `example_en` (its translation), `flags`. |
+| `glosses.tsv` | One row per entry: `gloss` (one to three English senses, commonest first), `example_pt` (a corpus line containing the entry, verbatim), `example_en` (its translation), `flags`, `source`. |
 
 `flags` is zero or more of `vulgar`, `bp-leaning` (the form or sense is
 mainly Brazilian), `archaic`, `name-like` (in this corpus the token is
 probably mostly a name) and `uncertain` (the model was not confident).
 Slang and vulgarities are glossed plainly: this is a record of how people
 speak, not a teaching aid. See [the caveat below](#the-glosses-are-a-model-snapshot).
+
+`source` is `model` for every row but one. It reads `override` where a
+reviewer overruled the model in
+[eval/gloss_overrides.tsv](eval/gloss_overrides.tsv) — at present only
+*caseiro*, which the model declines to gloss at all.
 
 ### Quality-control files
 

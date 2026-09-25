@@ -73,13 +73,18 @@ def run(results: Sequence[dict[str, Any]], rows: Sequence[dict[str, Any]],
         "no_example": Gate("no_example", "entries the model would not illustrate",
                            limit=f"{g['max_missing_example_share']:.0%} of rows"),
         "model_error": Gate("model_error", "replies that were refused, truncated or "
-                                           "unparseable"),
-        "escape": Gate("escape", "replies whose \\uXXXX escapes had to be decoded"),
+                                           "unparseable", limit=""),
+        "escape": Gate("escape", "replies whose \\uXXXX escapes had to be decoded", limit=""),
         "reanchored": Gate("reanchored", "examples the model tidied itself, "
-                                        "re-anchored to the corpus line"),
-        "rewritten": Gate("rewritten", "examples the model edited, so dropped"),
+                                        "re-anchored to the corpus line", limit=""),
+        "rewritten": Gate("rewritten", "examples the model edited, so dropped", limit=""),
         "off_target": Gate("off_target", "examples that did not contain the entry, "
-                                        "so dropped"),
+                                        "so dropped", limit=""),
+        "override": Gate("override", "rows a reviewer overruled "
+                                    "(eval/gloss_overrides.tsv)", limit=""),
+        "override_off_corpus": Gate("override_off_corpus",
+                                    "overridden examples that are not one of the "
+                                    "corpus lines the model was shown", limit=""),
     }
 
     by_key = {}
@@ -93,6 +98,10 @@ def run(results: Sequence[dict[str, Any]], rows: Sequence[dict[str, Any]],
             gates["coverage"].hit(row, "no gloss")
 
     for r in results:
+        if r.get("source") == "override":
+            gates["override"].hit(r, r.get("override_note", "") or "overridden")
+            if r["example_pt"] and r["example_pt"] not in r["sentences"]:
+                gates["override_off_corpus"].hit(r, r["example_pt"])
         if r.get("repaired") in gates:
             gates[r["repaired"]].hit(r, r.get("example_pt") or "example dropped")
         if r.get("problem"):
@@ -119,7 +128,7 @@ def run(results: Sequence[dict[str, Any]], rows: Sequence[dict[str, Any]],
             gates["no_example"].hit(r, "no sentence fitted"
                                     if r["sentences"] else "no sentence available")
             continue
-        if ex not in r["sentences"]:
+        if ex not in r["sentences"] and r.get("source") != "override":
             gates["verbatim"].hit(r, ex)
         if not r["example_en"].strip():
             gates["translated"].hit(r, ex)
@@ -130,15 +139,15 @@ def run(results: Sequence[dict[str, Any]], rows: Sequence[dict[str, Any]],
                      for i in range(len(toks) - len(parts) + 1))
         else:
             ok = bool(set(toks) & surfaces_of(r))
-        if not ok:
+        if not ok and r.get("source") != "override":
             gates["contains_entry"].hit(r, ex)
 
     # An entry with nothing to illustrate it is allowed, up to a share.
     share = gates["no_example"].n / max(len(results), 1)
     gates["no_example"].fatal = share > g["max_missing_example_share"]
-    # A word the model will not gloss at all, after every retry, is a fact
-    # about the model rather than a bug in the run: named in the report and
-    # tolerated, up to a handful. More than that means something is wrong.
+    # A word the model will not gloss at all, after every retry, is a thing to
+    # fix rather than tolerate: eval/gloss_overrides.tsv is where it gets a
+    # gloss. max_missing_gloss is 0, so the run fails until it has one.
     gates["gloss_present"].fatal = gates["gloss_present"].n > g["max_missing_gloss"]
 
     flags = Counter(f for r in results for f in r["flags"])
@@ -147,6 +156,7 @@ def run(results: Sequence[dict[str, Any]], rows: Sequence[dict[str, Any]],
             "rows": len(results),
             "entries": len({r["lemma"] for r in results}),
             "with_example": sum(1 for r in results if r["example_pt"]),
+            "overridden": sum(1 for r in results if r.get("source") == "override"),
             "no_example_share": share,
             "senses": Counter(len([s for s in r["gloss"].split(";") if s.strip()])
                            for r in results),
@@ -161,7 +171,8 @@ def render(res: dict[str, Any], cfg: dict[str, Any], usage_lines: Iterable[str])
         "",
         f"`{g['out_file']}`: **{res['rows']:,} rows**, {res['entries']:,} distinct "
         f"entries, {res['with_example']:,} with an example sentence "
-        f"({res['with_example'] / max(res['rows'], 1):.1%}).",
+        f"({res['with_example'] / max(res['rows'], 1):.1%}), "
+        f"{res['overridden']:,} overridden by hand.",
         "",
         f"Written by `python -m scripts.gloss` with model "
         f"`{g['model']}`, effort `{g['effort']}`, thinking `{g['thinking']}`, "
@@ -177,7 +188,7 @@ def render(res: dict[str, Any], cfg: dict[str, Any], usage_lines: Iterable[str])
     ]
     for gate in gates.values():
         mark = "**FAIL**" if gate.failed else ("ok" if not gate.n else "noted")
-        out.append(f"| `{gate.name}` | {gate.what} | {gate.limit if gate.fatal or gate.limit != '0' else '—'} "
+        out.append(f"| `{gate.name}` | {gate.what} | {gate.limit or '—'} "
                    f"| {gate.n:,} | {mark} |")
     out += ["",
             ("**Every fatal gate passed.**" if not res["failed"]

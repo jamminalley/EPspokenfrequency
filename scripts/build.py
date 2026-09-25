@@ -437,9 +437,9 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
         stats["pos_votes_inconsistent"] = pos_stats.get("inconsistent", 0)
     rows: list[tuple[str, str, int, bool]] = []
     n_split = n_fallback = 0
-    contractions = pos_mod.contraction_forms(cfg)
+    contractions = pos_mod.contraction_pos(cfg)
     if contractions:
-        stats["contraction_pos"] = cfg["pos"]["contraction_pos"]
+        stats["contraction_pos"] = dict(Counter(contractions.values()))
     for lemma, count in kept.items():
         parts = pos_mod.assign(lemma, count, weighted, raw_votes, cfg, tagger.tag,
                                contractions)

@@ -145,7 +145,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 144	conhecer	0	verb	682411	1072.612
 145	alguém	0	pron	681206	1070.718
 146	até	0	prep	672566	1057.137
-147	dele	0	det	659670	1036.867
+147	dele	0	pron	659670	1036.867
 148	acabar	0	verb	657839	1033.989
 149	sem	0	prep	648530	1019.358
 150	todo	0	pron	647500	1017.739
@@ -180,7 +180,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 179	problema	0	noun	476443	748.872
 180	quando	0	adv	473875	744.835
 181	pedir	0	verb	473587	744.383
-182	comigo	0	det	472968	743.410
+182	comigo	0	pron	472968	743.410
 183	quanto	0	det	472835	743.201
 184	perder	0	verb	469953	738.671
 185	desculpa	0	noun	468433	736.282
@@ -199,8 +199,8 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 198	nome	0	noun	422135	663.511
 199	merda	0	noun	420214	660.491
 200	num	0	det	416992	655.427
-201	disso	0	det	416540	654.716
-202	daqui	0	det	410623	645.416
+201	disso	0	pron	416540	654.716
+202	daqui	0	adv	410623	645.416
 203	tirar	0	verb	409196	643.173
 204	trabalhar	0	verb	408007	641.304
 205	nem	0	conj	406690	639.234
@@ -210,7 +210,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 209	pôr	0	verb	392547	617.004
 210	fora	0	adv	391850	615.909
 211	hoje	0	adv	391341	615.109
-212	dela	0	det	388270	610.282
+212	dela	0	pron	388270	610.282
 213	novo	0	adj	387345	608.828
 214	trazer	0	verb	383602	602.944
 215	muito bem	1	mwe	383148	602.231
@@ -233,7 +233,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 232	lado	0	noun	350241	550.508
 233	tomar	0	verb	349351	549.109
 234	oh	0	intj	344816	541.981
-235	contigo	0	det	344146	540.928
+235	contigo	0	pron	344146	540.928
 236	três	0	num	343615	540.093
 237	ideia	0	noun	341995	537.547
 238	meu deus	1	mwe	339391	533.454
@@ -303,7 +303,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 302	porta	0	noun	251607	395.475
 303	adorar	0	verb	247565	389.122
 304	perguntar	0	verb	246289	387.116
-305	deles	0	det	245896	386.499
+305	deles	0	pron	245896	386.499
 306	entre	0	prep	244323	384.026
 307	preocupar	0	verb	241093	378.949
 308	arranjar	0	verb	240858	378.580
@@ -369,7 +369,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 368	significar	0	verb	189751	298.250
 369	buscar	0	verb	189237	297.442
 370	jogo	0	noun	188850	296.834
-371	disto	0	det	188103	295.660
+371	disto	0	pron	188103	295.660
 372	tal	0	adv	187816	295.209
 373	fugir	0	verb	187140	294.146
 374	quarto	0	adj	186477	293.104
@@ -430,7 +430,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 429	coração	0	noun	156611	246.161
 430	brincar	0	verb	156473	245.944
 431	primeiro	0	adv	155358	244.191
-432	nisso	0	det	154902	243.475
+432	nisso	0	pron	154902	243.475
 433	menina	0	noun	153418	241.142
 434	meio	0	num	152779	240.138
 435	diferente	0	adj	152584	239.831
@@ -601,7 +601,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 600	apresentar	0	verb	99329	156.125
 601	assunto	0	noun	99324	156.117
 602	subir	0	verb	99167	155.870
-603	connosco	0	det	98545	154.893
+603	connosco	0	pron	98545	154.893
 604	carta	0	noun	98513	154.842
 605	chave	0	noun	98363	154.607
 606	facto	0	noun	98362	154.605
@@ -651,7 +651,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 650	viagem	0	noun	89486	140.654
 651	merecer	0	verb	89009	139.904
 652	às vezes	1	mwe	88551	139.184
-653	nisto	0	det	88517	139.131
+653	nisto	0	pron	88517	139.131
 654	tiro	0	noun	88439	139.008
 655	juntar	0	verb	88397	138.942
 656	normal	0	adj	88170	138.585
@@ -802,7 +802,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 801	lamentar	0	noun	67382	105.911
 802	negro	0	adj	67373	105.897
 803	alma	0	noun	67288	105.763
-804	nele	0	det	67121	105.501
+804	nele	0	pron	67121	105.501
 805	piada	0	noun	67117	105.494
 806	abandonar	0	verb	67099	105.466
 807	preso	0	adj	67055	105.397
@@ -853,7 +853,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 852	dessa	0	det	63832	100.331
 853	the	0	noun	63661	100.062
 854	comandante	0	noun	63601	99.968
-855	daí	0	det	63597	99.962
+855	daí	0	adv	63597	99.962
 856	eles estão	1	mwe	63556	99.897
 857	baixo	0	adj	63492	99.797
 858	norte	0	noun	62876	98.828
@@ -977,7 +977,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 976	convencer	0	verb	54048	84.952
 977	supor	0	verb	53996	84.871
 978	falar contigo	1	mwe	53978	84.842
-979	delas	0	det	53937	84.778
+979	delas	0	pron	53937	84.778
 980	voar	0	verb	53903	84.725
 981	par	0	noun	53893	84.709
 982	jovem	0	adj	53838	84.622
@@ -1220,7 +1220,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 1219	partilhar	0	verb	41169	64.709
 1220	baixar	0	verb	41110	64.617
 1221	cada vez	1	mwe	41095	64.593
-1222	nela	0	det	41083	64.574
+1222	nela	0	pron	41083	64.574
 1223	verde	0	adj	41013	64.464
 1224	objetivo	0	noun	40970	64.397
 1225	lixo	0	noun	40929	64.332
@@ -1564,7 +1564,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 1563	leste	0	noun	28413	44.659
 1564	entrega	0	noun	28390	44.623
 1565	atrasado	0	adj	28377	44.603
-1566	convosco	0	det	28361	44.578
+1566	convosco	0	pron	28361	44.578
 1567	confuso	0	adj	28299	44.480
 1568	apreciar	0	verb	28282	44.454
 1569	permanecer	0	verb	28230	44.372
@@ -1995,7 +1995,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 1994	alinhar	0	verb	20291	31.893
 1995	traidor	0	noun	20272	31.863
 1996	transporte	0	noun	20272	31.863
-1997	daquilo	0	det	20270	31.860
+1997	daquilo	0	pron	20270	31.860
 1998	regresso	0	noun	20262	31.848
 1999	bordo	0	noun	20249	31.827
 2000	derrubar	0	verb	20219	31.780
@@ -2495,7 +2495,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 2494	cerimónia	0	noun	14658	23.039
 2495	luva	0	noun	14646	23.021
 2496	exagerar	0	verb	14626	22.989
-2497	neles	0	det	14598	22.945
+2497	neles	0	pron	14598	22.945
 2498	funcionário	0	noun	14584	22.923
 2499	molho	0	noun	14576	22.911
 2500	chupar	0	verb	14561	22.887
@@ -2718,7 +2718,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 2717	evacuar	0	verb	12781	20.089
 2718	cicatriz	0	noun	12772	20.075
 2719	altamente	0	adv	12746	20.034
-2720	dali	0	det	12744	20.031
+2720	dali	0	adv	12744	20.031
 2721	palerma	0	noun	12738	20.022
 2722	miserável	0	adj	12729	20.007
 2723	básico	0	adj	12726	20.003
@@ -3132,7 +3132,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 3131	recear	0	verb	10184	16.007
 3132	cano	0	noun	10170	15.985
 3133	encobrir	0	verb	10165	15.977
-3134	naquilo	0	det	10158	15.966
+3134	naquilo	0	pron	10158	15.966
 3135	fodido	0	verb	10155	15.962
 3136	focar	0	verb	10149	15.952
 3137	curiosidade	0	noun	10144	15.944
@@ -4448,7 +4448,7 @@ rank	lemma	is_mwe	pos	raw_freq	freq_per_million
 4447	feito	0	noun	5584	8.777
 4448	sangrento	0	adj	5579	8.769
 4449	apoderar	0	verb	5577	8.766
-4450	nelas	0	det	5577	8.766
+4450	nelas	0	pron	5577	8.766
 4451	ho	0	noun	5576	8.764
 4452	seguidor	0	noun	5574	8.761
 4453	finanças	0	noun	5568	8.752

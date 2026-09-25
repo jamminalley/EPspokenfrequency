@@ -288,11 +288,26 @@ fixes:
 # with enough evidence, otherwise its share joins the majority POS.
 pos:
   source: tagger              # tagger | heuristic
-  # fixes.contraction_pos: the single POS published for every form in
-  # conventions.contractions.forms, whatever the tagger says. `do` and `da`
-  # already read det on the tagger's own evidence; this gives the rest of
-  # the paradigm the same answer instead of one noise reading each.
-  contraction_pos: det
+  # fixes.contraction_pos: the POS published for every form in
+  # conventions.contractions.forms, whatever the tagger says (Stanza expands
+  # them before tagging, so their own tags are noise). Three groups, by what
+  # the contraction actually contracts:
+  #   default  preposition + article or demonstrative -- do, nas, pelo, num,
+  #            deste, naquela, noutro. `do` and `da` already read det on the
+  #            tagger's own evidence; the rest of the paradigm now agrees.
+  #   pron     preposition + pronoun -- dele, comigo, and the neuter
+  #            demonstratives disso, nisto, daquilo. Not determiners in any
+  #            analysis, whatever the rest of the paradigm does.
+  #   adv      preposition + adverb of place -- daqui, dali, daí.
+  # A form not listed here takes `default`.
+  contraction_pos:
+    default: det
+    pron: ["dele", "dela", "deles", "delas",
+           "nele", "nela", "neles", "nelas",
+           "disto", "disso", "daquilo",
+           "nisto", "nisso", "naquilo", "àquilo",
+           "comigo", "contigo", "connosco", "convosco"]
+    adv: ["daqui", "daí", "dali", "dacolá"]
   split_min_share: 0.25       # count-weighted share of the lemma
   split_min_votes: 3          # tagged sentences supporting it
   # Prepositions are never conjunctions. Universal Dependencies tags a
@@ -633,6 +648,10 @@ gloss:
   cache_dir: cache/gloss      # raw responses, keyed by lemma + POS; gitignored
   out_file: glosses.tsv       # written into paths.out_dir; committed
   gates_file: gloss_gates.md  # written into paths.reports_dir
+  # Human decisions, as everywhere else in eval/: a row here wins over the
+  # model's answer for the fields it fills in. Seeded with the one word the
+  # model refuses to gloss at all.
+  overrides_file: gloss_overrides.tsv   # read from paths.eval_dir
   # What the machine can check about a finished run (scripts/gloss_gates.py).
   # Provenance and shape only: whether a gloss is right is a question for the
   # reader, which is what the review file is for.
@@ -643,7 +662,9 @@ gloss:
     # Words the model will not gloss even after max_attempts tries. One is a
     # fact about the model's safety classifiers, not a broken run; the report
     # names every one. A run that loses more than this has something wrong.
-    max_missing_gloss: 5
+    # Zero: eval/gloss_overrides.tsv is where a word the model will not gloss
+    # gets one, so a missing gloss is now a thing to fix rather than tolerate.
+    max_missing_gloss: 0
   # The human review sample: every row a learner meets first, plus a spread
   # over the rest.
   review:

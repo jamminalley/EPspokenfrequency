@@ -1338,7 +1338,7 @@ rank,lemma,is_mwe,pos,raw_freq,freq_per_million
 6337,associado,0,adj,2901,4.560
 6338,náusea,0,noun,2901,4.560
 6339,foleiro,0,adj,2899,4.557
-6340,àquilo,0,det,2899,4.557
+6340,àquilo,0,pron,2899,4.557
 6341,exposto,0,adj,2898,4.555
 6342,homossexual,0,noun,2897,4.553
 6343,meteorito,0,noun,2896,4.552

@@ -58,7 +58,7 @@ off by 10-40x. Set in config as
 - **Shared lemmas: 3,948 (79.0% of the original)**
 - Jaccard: 0.669
 - **Spearman rho on shared lemmas: 0.9439**
-- POS agreement: 74.0% over 3,948 shared lemmas
+- POS agreement: 74.2% over 3,948 shared lemmas
 - MWEs: original 179, rebuild 191, shared 166
 
 > This build's POS comes from the tagger; April's came from a rule heuristic, so this is agreement between two methods, not accuracy.

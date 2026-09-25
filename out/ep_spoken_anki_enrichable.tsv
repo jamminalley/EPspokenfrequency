@@ -150,7 +150,7 @@
 144	conhecer	verb				0	682411	1072.612	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 145	alguém	pron				0	681206	1070.718	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 146	até	prep				0	672566	1057.137	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::prep source::opensubtitles_ep_v2018 variety::EP register::spoken
-147	dele	det				0	659670	1036.867	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+147	dele	pron				0	659670	1036.867	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 148	acabar	verb				0	657839	1033.989	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 149	sem	prep				0	648530	1019.358	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::prep source::opensubtitles_ep_v2018 variety::EP register::spoken
 150	todo	pron				0	647500	1017.739	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -185,7 +185,7 @@
 179	problema	noun				0	476443	748.872	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 180	quando	adv				0	473875	744.835	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::adv source::opensubtitles_ep_v2018 variety::EP register::spoken
 181	pedir	verb				0	473587	744.383	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
-182	comigo	det				0	472968	743.410	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+182	comigo	pron				0	472968	743.410	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 183	quanto	det				0	472835	743.201	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
 184	perder	verb				0	469953	738.671	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 185	desculpa	noun				0	468433	736.282	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -204,8 +204,8 @@
 198	nome	noun				0	422135	663.511	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 199	merda	noun				0	420214	660.491	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 200	num	det				0	416992	655.427	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
-201	disso	det				0	416540	654.716	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
-202	daqui	det				0	410623	645.416	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+201	disso	pron				0	416540	654.716	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
+202	daqui	adv				0	410623	645.416	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::adv source::opensubtitles_ep_v2018 variety::EP register::spoken
 203	tirar	verb				0	409196	643.173	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 204	trabalhar	verb				0	408007	641.304	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 205	nem	conj				0	406690	639.234	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::conj source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -215,7 +215,7 @@
 209	pôr	verb				0	392547	617.004	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 210	fora	adv				0	391850	615.909	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::adv source::opensubtitles_ep_v2018 variety::EP register::spoken
 211	hoje	adv				0	391341	615.109	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::adv source::opensubtitles_ep_v2018 variety::EP register::spoken
-212	dela	det				0	388270	610.282	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+212	dela	pron				0	388270	610.282	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 213	novo	adj				0	387345	608.828	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
 214	trazer	verb				0	383602	602.944	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 215	muito bem	mwe				1	383148	602.231	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::mwe source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -238,7 +238,7 @@
 232	lado	noun				0	350241	550.508	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 233	tomar	verb				0	349351	549.109	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 234	oh	intj				0	344816	541.981	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::intj source::opensubtitles_ep_v2018 variety::EP register::spoken
-235	contigo	det				0	344146	540.928	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+235	contigo	pron				0	344146	540.928	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 236	três	num				0	343615	540.093	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::num source::opensubtitles_ep_v2018 variety::EP register::spoken
 237	ideia	noun				0	341995	537.547	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 238	meu deus	mwe				1	339391	533.454	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::mwe source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -308,7 +308,7 @@
 302	porta	noun				0	251607	395.475	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 303	adorar	verb				0	247565	389.122	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 304	perguntar	verb				0	246289	387.116	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
-305	deles	det				0	245896	386.499	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+305	deles	pron				0	245896	386.499	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 306	entre	prep				0	244323	384.026	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::prep source::opensubtitles_ep_v2018 variety::EP register::spoken
 307	preocupar	verb				0	241093	378.949	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 308	arranjar	verb				0	240858	378.580	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -374,7 +374,7 @@
 368	significar	verb				0	189751	298.250	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 369	buscar	verb				0	189237	297.442	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 370	jogo	noun				0	188850	296.834	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
-371	disto	det				0	188103	295.660	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+371	disto	pron				0	188103	295.660	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 372	tal	adv				0	187816	295.209	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::adv source::opensubtitles_ep_v2018 variety::EP register::spoken
 373	fugir	verb				0	187140	294.146	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 374	quarto	adj				0	186477	293.104	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -435,7 +435,7 @@
 429	coração	noun				0	156611	246.161	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 430	brincar	verb				0	156473	245.944	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 431	primeiro	adv				0	155358	244.191	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::adv source::opensubtitles_ep_v2018 variety::EP register::spoken
-432	nisso	det				0	154902	243.475	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+432	nisso	pron				0	154902	243.475	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 433	menina	noun				0	153418	241.142	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 434	meio	num				0	152779	240.138	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::num source::opensubtitles_ep_v2018 variety::EP register::spoken
 435	diferente	adj				0	152584	239.831	freq::0001-0500 freq500::0001-0500 freq1000::0001-1000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -606,7 +606,7 @@
 600	apresentar	verb				0	99329	156.125	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 601	assunto	noun				0	99324	156.117	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 602	subir	verb				0	99167	155.870	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
-603	connosco	det				0	98545	154.893	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+603	connosco	pron				0	98545	154.893	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 604	carta	noun				0	98513	154.842	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 605	chave	noun				0	98363	154.607	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 606	facto	noun				0	98362	154.605	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -656,7 +656,7 @@
 650	viagem	noun				0	89486	140.654	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 651	merecer	verb				0	89009	139.904	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 652	às vezes	mwe				1	88551	139.184	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::mwe source::opensubtitles_ep_v2018 variety::EP register::spoken
-653	nisto	det				0	88517	139.131	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+653	nisto	pron				0	88517	139.131	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 654	tiro	noun				0	88439	139.008	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 655	juntar	verb				0	88397	138.942	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 656	normal	adj				0	88170	138.585	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -807,7 +807,7 @@
 801	lamentar	noun				0	67382	105.911	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 802	negro	adj				0	67373	105.897	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
 803	alma	noun				0	67288	105.763	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
-804	nele	det				0	67121	105.501	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+804	nele	pron				0	67121	105.501	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 805	piada	noun				0	67117	105.494	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 806	abandonar	verb				0	67099	105.466	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 807	preso	adj				0	67055	105.397	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -858,7 +858,7 @@
 852	dessa	det				0	63832	100.331	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
 853	the	noun				0	63661	100.062	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 854	comandante	noun				0	63601	99.968	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
-855	daí	det				0	63597	99.962	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+855	daí	adv				0	63597	99.962	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::adv source::opensubtitles_ep_v2018 variety::EP register::spoken
 856	eles estão	mwe				1	63556	99.897	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::mwe source::opensubtitles_ep_v2018 variety::EP register::spoken
 857	baixo	adj				0	63492	99.797	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
 858	norte	noun				0	62876	98.828	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -982,7 +982,7 @@
 976	convencer	verb				0	54048	84.952	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 977	supor	verb				0	53996	84.871	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 978	falar contigo	mwe				1	53978	84.842	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::mwe source::opensubtitles_ep_v2018 variety::EP register::spoken
-979	delas	det				0	53937	84.778	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+979	delas	pron				0	53937	84.778	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 980	voar	verb				0	53903	84.725	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 981	par	noun				0	53893	84.709	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 982	jovem	adj				0	53838	84.622	freq::0501-1000 freq500::0501-1000 freq1000::0001-1000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -1225,7 +1225,7 @@
 1219	partilhar	verb				0	41169	64.709	freq::1001-1500 freq500::1001-1500 freq1000::1001-2000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 1220	baixar	verb				0	41110	64.617	freq::1001-1500 freq500::1001-1500 freq1000::1001-2000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 1221	cada vez	mwe				1	41095	64.593	freq::1001-1500 freq500::1001-1500 freq1000::1001-2000 pos::mwe source::opensubtitles_ep_v2018 variety::EP register::spoken
-1222	nela	det				0	41083	64.574	freq::1001-1500 freq500::1001-1500 freq1000::1001-2000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+1222	nela	pron				0	41083	64.574	freq::1001-1500 freq500::1001-1500 freq1000::1001-2000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 1223	verde	adj				0	41013	64.464	freq::1001-1500 freq500::1001-1500 freq1000::1001-2000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
 1224	objetivo	noun				0	40970	64.397	freq::1001-1500 freq500::1001-1500 freq1000::1001-2000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 1225	lixo	noun				0	40929	64.332	freq::1001-1500 freq500::1001-1500 freq1000::1001-2000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -1569,7 +1569,7 @@
 1563	leste	noun				0	28413	44.659	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 1564	entrega	noun				0	28390	44.623	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 1565	atrasado	adj				0	28377	44.603	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
-1566	convosco	det				0	28361	44.578	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+1566	convosco	pron				0	28361	44.578	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 1567	confuso	adj				0	28299	44.480	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
 1568	apreciar	verb				0	28282	44.454	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 1569	permanecer	verb				0	28230	44.372	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -2000,7 +2000,7 @@
 1994	alinhar	verb				0	20291	31.893	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 1995	traidor	noun				0	20272	31.863	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 1996	transporte	noun				0	20272	31.863	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
-1997	daquilo	det				0	20270	31.860	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+1997	daquilo	pron				0	20270	31.860	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 1998	regresso	noun				0	20262	31.848	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 1999	bordo	noun				0	20249	31.827	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 2000	derrubar	verb				0	20219	31.780	freq::1501-2000 freq500::1501-2000 freq1000::1001-2000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -2500,7 +2500,7 @@
 2494	cerimónia	noun				0	14658	23.039	freq::2001-2500 freq500::2001-2500 freq1000::2001-3000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 2495	luva	noun				0	14646	23.021	freq::2001-2500 freq500::2001-2500 freq1000::2001-3000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 2496	exagerar	verb				0	14626	22.989	freq::2001-2500 freq500::2001-2500 freq1000::2001-3000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
-2497	neles	det				0	14598	22.945	freq::2001-2500 freq500::2001-2500 freq1000::2001-3000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+2497	neles	pron				0	14598	22.945	freq::2001-2500 freq500::2001-2500 freq1000::2001-3000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 2498	funcionário	noun				0	14584	22.923	freq::2001-2500 freq500::2001-2500 freq1000::2001-3000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 2499	molho	noun				0	14576	22.911	freq::2001-2500 freq500::2001-2500 freq1000::2001-3000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 2500	chupar	verb				0	14561	22.887	freq::2001-2500 freq500::2001-2500 freq1000::2001-3000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -2723,7 +2723,7 @@
 2717	evacuar	verb				0	12781	20.089	freq::2501-3000 freq500::2501-3000 freq1000::2001-3000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 2718	cicatriz	noun				0	12772	20.075	freq::2501-3000 freq500::2501-3000 freq1000::2001-3000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 2719	altamente	adv				0	12746	20.034	freq::2501-3000 freq500::2501-3000 freq1000::2001-3000 pos::adv source::opensubtitles_ep_v2018 variety::EP register::spoken
-2720	dali	det				0	12744	20.031	freq::2501-3000 freq500::2501-3000 freq1000::2001-3000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+2720	dali	adv				0	12744	20.031	freq::2501-3000 freq500::2501-3000 freq1000::2001-3000 pos::adv source::opensubtitles_ep_v2018 variety::EP register::spoken
 2721	palerma	noun				0	12738	20.022	freq::2501-3000 freq500::2501-3000 freq1000::2001-3000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 2722	miserável	adj				0	12729	20.007	freq::2501-3000 freq500::2501-3000 freq1000::2001-3000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
 2723	básico	adj				0	12726	20.003	freq::2501-3000 freq500::2501-3000 freq1000::2001-3000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -3137,7 +3137,7 @@
 3131	recear	verb				0	10184	16.007	freq::3001-3500 freq500::3001-3500 freq1000::3001-4000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 3132	cano	noun				0	10170	15.985	freq::3001-3500 freq500::3001-3500 freq1000::3001-4000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 3133	encobrir	verb				0	10165	15.977	freq::3001-3500 freq500::3001-3500 freq1000::3001-4000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
-3134	naquilo	det				0	10158	15.966	freq::3001-3500 freq500::3001-3500 freq1000::3001-4000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+3134	naquilo	pron				0	10158	15.966	freq::3001-3500 freq500::3001-3500 freq1000::3001-4000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 3135	fodido	verb				0	10155	15.962	freq::3001-3500 freq500::3001-3500 freq1000::3001-4000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 3136	focar	verb				0	10149	15.952	freq::3001-3500 freq500::3001-3500 freq1000::3001-4000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
 3137	curiosidade	noun				0	10144	15.944	freq::3001-3500 freq500::3001-3500 freq1000::3001-4000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
@@ -4453,7 +4453,7 @@
 4447	feito	noun				0	5584	8.777	freq::4001-4500 freq500::4001-4500 freq1000::4001-5000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 4448	sangrento	adj				0	5579	8.769	freq::4001-4500 freq500::4001-4500 freq1000::4001-5000 pos::adj source::opensubtitles_ep_v2018 variety::EP register::spoken
 4449	apoderar	verb				0	5577	8.766	freq::4001-4500 freq500::4001-4500 freq1000::4001-5000 pos::verb source::opensubtitles_ep_v2018 variety::EP register::spoken
-4450	nelas	det				0	5577	8.766	freq::4001-4500 freq500::4001-4500 freq1000::4001-5000 pos::det source::opensubtitles_ep_v2018 variety::EP register::spoken
+4450	nelas	pron				0	5577	8.766	freq::4001-4500 freq500::4001-4500 freq1000::4001-5000 pos::pron source::opensubtitles_ep_v2018 variety::EP register::spoken
 4451	ho	noun				0	5576	8.764	freq::4001-4500 freq500::4001-4500 freq1000::4001-5000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 4452	seguidor	noun				0	5574	8.761	freq::4001-4500 freq500::4001-4500 freq1000::4001-5000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken
 4453	finanças	noun				0	5568	8.752	freq::4001-4500 freq500::4001-4500 freq1000::4001-5000 pos::noun source::opensubtitles_ep_v2018 variety::EP register::spoken

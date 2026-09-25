@@ -144,19 +144,27 @@ def aggregate(
     return weighted, raw
 
 
-def contraction_forms(cfg: dict[str, Any]) -> frozenset[str]:
-    """The contractions published under one POS (fixes.contraction_pos).
+def contraction_pos(cfg: dict[str, Any]) -> dict[str, str]:
+    """form -> published POS for every contraction (fixes.contraction_pos).
 
     Stanza expands a contraction into its two words before tagging, so the
     surface token itself collects almost no consistent evidence: the tags
     that survive are noise, and the words with none at all fall through to
-    the rule heuristic, which answers `unk`. One POS for the whole paradigm
-    is both more accurate and more useful than 81 independent guesses.
+    the rule heuristic, which answers `unk`. A decided answer per form is
+    both more accurate and more useful than 81 independent guesses.
+
+    The answer follows what the contraction contracts, not the paradigm it
+    sits in: preposition + article or demonstrative is a determiner (`do`,
+    `nas`, `deste`), preposition + pronoun is a pronoun (`dele`, `comigo`,
+    `disso`), preposition + adverb of place is an adverb (`daqui`).
     """
-    con = cfg["conventions"].get("contractions", {})
-    if not (cfg["fixes"].get("contraction_pos") and cfg["pos"].get("contraction_pos")):
-        return frozenset()
-    return frozenset(con.get("forms", ()))
+    rule = cfg["pos"].get("contraction_pos")
+    if not (cfg["fixes"].get("contraction_pos") and rule):
+        return {}
+    forms = cfg["conventions"].get("contractions", {}).get("forms", ())
+    named = {form: pos for pos, group in rule.items() if pos != "default"
+             for form in group}
+    return {form: named.get(form, rule["default"]) for form in forms}
 
 
 def assign(
@@ -166,7 +174,7 @@ def assign(
     raw: Mapping[str, Counter],
     cfg: dict[str, Any],
     fallback: Callable[[str], str],
-    contractions: frozenset[str] = frozenset(),
+    contractions: Mapping[str, str] | None = None,
 ) -> list[tuple[str, int]]:
     """[(pos, count)] for one lemma: one row, or one per well-supported POS.
 
@@ -174,8 +182,8 @@ def assign(
     final count is divided in proportion to the kept POS shares. A
     contraction is never split and never asks the tagger.
     """
-    if lemma in contractions:
-        return [(cfg["pos"]["contraction_pos"], count)]
+    if contractions and lemma in contractions:
+        return [(contractions[lemma], count)]
     shares = weighted.get(lemma)
     if not shares or sum(shares.values()) == 0:
         return [(fallback(lemma), count)]
