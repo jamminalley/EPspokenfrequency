@@ -115,6 +115,45 @@ when the glosses have been reviewed.
   `efeitos colaterais` took its place; the other 51 replacements are new
   entries at the bottom of the list, ranks 9,904–10,000.
 
+- **`são` was published as a noun at rank 86, with 1,117,272 occurrences.**
+  It is the third person plural of *ser* — "they are" — and Stanza says so in
+  45 of its 50 sampled sentences. It was capitalized in only 2% of its
+  mid-line occurrences, so it is hardly ever the *São* of São Paulo.
+
+  The cause was a clause in the consistency rule. `pos.consistent` rejects a
+  VERB or AUX tag whose lemma is a function word, which is right for the POS
+  column — a preposition tagged VERB is noise — but *ser*, *ter*, *ir* and
+  *este* are function words and inflected verbs at the same time. So all 45
+  AUX votes were thrown away, and the 5 that read the word as a name decided
+  the lemma. `é`, `somos` and `eram` escaped only because *every* one of their
+  votes was dropped, which triggers the "if all are dropped, all count"
+  fallback. `são` had five survivors, so it did not.
+
+  Deciding which lemma an occurrence belongs to now uses
+  `pos.consistent_shape`, the same rule without that clause, and `são` and
+  `nova` join `fixes.ambiguous_forms` so their counts are divided by tag:
+
+  | entry | before | after |
+  |---|---:|---:|
+  | *ser* (verb) | 21,334,148 | **22,339,499** |
+  | `são` (noun) | 1,117,272 | 111,921 |
+  | *novo* (adj) | 387,344 | **491,234** |
+  | `nova` (noun) | 216,438 | 112,548 |
+
+  *ser* was undercounted by 4.7%. Four counts changed and nothing else: no
+  entry entered or left the list, the token total, the gold score (98.5%),
+  the quality gate (0 suspects) and the ser/ir fingerprint are all unchanged.
+
+  **The residues are still not clean entries.** `são` keeps 111,921
+  occurrences at rank 558, glossed "Saint (before male names); they are" — a
+  mixture of the name and what the tag sample did not catch. `nova` keeps
+  112,548 at rank 553 and is glossed as the feminine adjective, which means
+  those occurrences probably belong to *novo* as well: the vote was 26–24, and
+  the proper-noun side is inflated by *Nova Iorque*, which already has an
+  entry of its own at rank 1,050. Neither residue is filtered as a proper
+  noun, because the capitalization ratio is measured over every occurrence of
+  the surface, verb uses included.
+
 - **`larga` and `largas` are divided between *largar* and *largo* by tag**
   (`fixes.ambiguous_forms`). The surface is both the verb (*larga isso!*) and
   the feminine adjective (*uma rua larga*), and the whole 55,702 occurrences

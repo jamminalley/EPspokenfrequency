@@ -87,9 +87,9 @@ Counts are per row; a row can carry more than one.
 | rank | lemma | pos | detail |
 |---:|---|---|---|
 | 66 | é que | mwe | is it that (emphatic filler in questions) |
-| 222 | apanhar | verb | to get caught / take a beating |
-| 239 | embora | adv | away (in ir embora: to leave, go away) |
-| 415 | procura | noun | search (mostly in à procura de: looking for) |
+| 221 | apanhar | verb | to get caught / take a beating |
+| 238 | embora | adv | away (in ir embora: to leave, go away) |
+| 413 | procura | noun | search (mostly in à procura de: looking for) |
 | 568 | sequer | adv | even (in "nem sequer" = not even) |
 | 678 | lixar | verb | to hell with it (que se lixe) |
 | 711 | puta | noun | son of a bitch (in filho da puta) |
@@ -110,7 +110,7 @@ Counts are per row; a row can carry more than one.
 | rank | lemma | pos | detail |
 |---:|---|---|---|
 | 68 | dever | noun | no sentence fitted |
-| 484 | trás | adv | no sentence fitted |
+| 482 | trás | adv | no sentence fitted |
 | 1053 | seguinte | noun | no sentence fitted |
 | 1964 | frio | adj | no sentence fitted |
 | 2064 | namorar | verb | no sentence fitted |
@@ -145,7 +145,7 @@ Counts are per row; a row can carry more than one.
 | rank | lemma | pos | detail |
 |---:|---|---|---|
 | 35 | como | adv | - Como é que vão? |
-| 136 | andar | verb | -Andei à tua procura. |
+| 135 | andar | verb | -Andei à tua procura. |
 | 206 | ligar | verb | - O Huck ligou-me. |
 | 1378 | carreira | noun | Podias ter uma bela carreira na polícia. |
 | 1528 | pesquisa | noun | - É para pesquisa. |
@@ -156,7 +156,7 @@ Counts are per row; a row can carry more than one.
 
 | rank | lemma | pos | detail |
 |---:|---|---|---|
-| 484 | trás | adv | example dropped |
+| 482 | trás | adv | example dropped |
 | 1964 | frio | adj | example dropped |
 | 2064 | namorar | verb | example dropped |
 | 3270 | parada | noun | example dropped |
@@ -189,11 +189,11 @@ What the published replies cost, added up from the cached responses. A row that 
 
 ```
 this run: 10000 rows (0 sent now, 10000 replayed from cache/gloss/)
-  input        2,706,466 tokens (    271/row)
-  cache write  1,552,908 tokens
-  cache read   14,407,092 tokens
-  output         727,357 tokens (     73/row)
-  cost, prompt cache hitting   $48.63 standard, $24.31 batch
+  input        2,706,467 tokens (    271/row)
+  cache write  1,554,504 tokens
+  cache read   14,405,496 tokens
+  output         727,365 tokens (     73/row)
+  cost, prompt cache hitting   $48.63 standard, $24.32 batch
   cost, no cache hit at all    $111.52 standard, $55.76 batch
   repaired: escape 5, reanchored 5, rewritten 23
 ```

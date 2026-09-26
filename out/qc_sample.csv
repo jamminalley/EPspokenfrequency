@@ -1,11 +1,11 @@
 rank,lemma,is_mwe,pos,raw_freq,freq_per_million
 1,o,0,det,29933812,47022.672
 84,teu,0,det,1131125,1776.871
-167,mulher,0,noun,525217,825.057
-250,arma,0,noun,323021,507.430
-333,sozinho,0,adj,216830,340.616
-416,outra vez,1,mwe,162329,255.001
-499,miúda,0,noun,130171,204.484
+167,grande,0,adj,524602,824.091
+250,lugar,0,noun,322962,507.337
+333,pergunta,0,noun,216513,340.118
+416,aceitar,0,verb,161119,253.100
+499,acordar,0,verb,129473,203.388
 582,ah,0,intj,105599,165.884
 665,campo,0,noun,87446,137.368
 748,braço,0,noun,74832,117.553

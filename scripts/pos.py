@@ -83,6 +83,28 @@ def consistent(surface: str, lemma: str, upos: str, is_verb, closed) -> bool:
     return True
 
 
+def consistent_shape(surface: str, lemma: str, upos: str, is_verb, closed) -> bool:
+    """Does the tag agree with the shape of the lemma? Used when deciding
+    which lemma an occurrence belongs to, rather than what part of speech a
+    word has.
+
+    Same rule as `consistent` without one clause: that one also vetoes a
+    VERB/AUX tag whose lemma is a function word, which is right for the POS
+    column -- a preposition tagged VERB is noise -- but wrong here, because
+    *ser*, *ter*, *ir* and *este* are closed-class and inflected words at the
+    same time. With the veto, all 45 AUX votes saying `são` is a form of *ser*
+    were thrown away and the 5 that read it as the name *São* decided the
+    lemma, publishing 1.1 million occurrences of "they are" as a noun.
+    """
+    if upos in _VERB_TAGS:
+        return is_verb(lemma)
+    if is_verb(lemma):
+        return surface == lemma
+    if lemma in closed and upos in ("NOUN", "PROPN"):
+        return False
+    return True
+
+
 def aggregate(
     surface_counts: Mapping[str, int],
     tags: Mapping[str, Sequence[tuple[str, str, str]]],

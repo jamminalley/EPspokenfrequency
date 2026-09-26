@@ -288,8 +288,11 @@ fixes:
   # share a surface, and the lemmatizer gave the whole 55,702 to largar, which
   # then published a `largar` adj row. Listed here, the count is divided
   # between largar and largo by tag, as fomos is between ir and ser.
+  # são: 3rd person plural of ser ("they are") and the São of São Paulo, and
+  # nova: feminine of novo and the Nova of Nova Iorque. Both were published as
+  # nouns in their own right -- são at rank 86 with 1,117,272 occurrences.
   ambiguous_forms: ["foi", "fui", "fomos", "foram", "fora", "for", "esta",
-                    "larga", "largas"]
+                    "larga", "largas", "são", "nova"]
   irregular_participles: ["morto", "feito", "dito", "visto", "escrito",
                           "aberto", "posto", "coberto", "preso", "solto",
                           "aceite", "entregue", "ganho", "gasto", "pago",

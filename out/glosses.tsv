@@ -1,6 +1,6 @@
 rank	lemma	pos	is_mwe	freq_per_million	pos_share	gloss	example_pt	example_en	flags	source
 1	o	det	0	47022.672		the	Tem de ser o Sven.	It has to be Sven.		model
-2	ser	verb	0	33513.562		to be	Sim, sou o Ray.	Yes, I'm Ray.		model
+2	ser	verb	0	35092.856		to be (permanent, identity)	Sim, sou o Ray.	Yes, I'm Ray.		model
 3	não	adv	0	28255.678		no; not	Eu não penso assim..	I don't think so..		model
 4	que	conj	0	25961.670	0.740	that; than	Acho que foi tudo uma vigarice.	I think it was all a scam.		model
 5	de	prep	0	24172.507		of; from; by	Estávamos à espera de ti.	We were waiting for you.		model
@@ -84,96 +84,96 @@ rank	lemma	pos	is_mwe	freq_per_million	pos_share	gloss	example_pt	example_en	fla
 83	conseguir	verb	0	1834.482		to manage to; to be able to; to get	Acho que consigo ler.	I think I can read it.		model
 84	teu	det	0	1776.871		your (informal)	O teu pai chega em breve.	Your father arrives soon.		model
 85	que não	mwe	1	1772.718		that not; that ... doesn't	Acho que não estava a prestar atenção.	I think I wasn't paying attention.		model
-86	são	noun	0	1755.109		Saint (before male names); they are	Ficaram com o melhor, despacharam para São Petersburgo para a Eslovénia e o Montenegro.	They kept the best, shipped it off to Saint Petersburg, to Slovenia and Montenegro.	name-like	model
-87	o meu	mwe	1	1750.507		my; mine	O meu filho adora-a.	My son loves her.		model
-88	vez	noun	0	1740.085		time (occasion); às vezes: sometimes	Às vezes não é muito divertido.	Sometimes it's not much fun.		model
-89	tua	det	0	1720.426		your (feminine)	Onde mora a tua família?	Where does your family live?		model
-90	nosso	det	0	1654.422		our	Sabe os nossos nomes.	He knows our names.		model
-91	quando	conj	0	1581.858	0.680	when	Já estava assim quando eu cheguei.	It was already like that when I arrived.		model
-92	eles	pron	0	1571.639		they; them	Eles encontraram uma câmara.	They found a camera.		model
-93	nós	pron	0	1561.466		we; us	Nós temos que encontrar Fung.	We have to find Fung.		model
-94	dos	det	0	1552.605		of the; from the (plural)	O império dos mortos.	The empire of the dead.		model
-95	ouvir	verb	0	1543.745		to hear; to listen (to)	Papá, não te ouço!	Daddy, I can't hear you!		model
-96	mim	pron	0	1528.887		me (after preposition)	Ele não iria sem mim.	He wouldn't go without me.		model
-97	casa	noun	0	1500.702		house; home	Fomos para casa juntos.	We went home together.		model
-98	está bem	mwe	1	1495.737		okay; all right?; is fine	A Leah está bem?	Is Leah okay?		model
-99	pai	noun	0	1492.872		father, dad; parents (pl.)	Fui a Itália com o meu pai.	I went to Italy with my father.		model
-100	dia	noun	0	1488.563		day	Milagres acontecem todos os dias.	Miracles happen every day.		model
-101	passar	verb	0	1487.707		to pass; to spend (time); to happen (passar-se)	Que se passa, Phil?	What's going on, Phil?		model
-102	nunca	adv	0	1452.641		never	O pai nunca disse nada.	Dad never said anything.		model
-103	tempo	noun	0	1443.942		time; weather	Devíamos dar-lhe mais tempo.	We should give him more time.		model
-104	gostar	verb	0	1432.953		to like; to enjoy	Ela gosta de música.	She likes music.		model
-105	parecer	verb	0	1429.683		to seem; to look like	Parece bom para mim!	Sounds good to me!		model
-106	homem	noun	0	1402.982		man; men	O homem disse algo antes.	The man said something earlier.		model
-107	assim	adv	0	1379.336		like this; so; thus	Assim fica mais leve.	This way it's lighter.		model
-108	ainda	adv	0	1360.573		still; yet; even	O casamento ainda não acabou.	The wedding isn't over yet.		model
-109	encontrar	verb	0	1356.911		to find; to meet; to meet up (with)	Eu encontrei o queijo!	I found the cheese!		model
-110	é um	mwe	1	1337.445		it's a; he's a	Não é um sítio mau para negociar.	It's not a bad place to do business.		model
-111	sair	verb	0	1312.252		to leave; to go out; to turn out	Ela zangou-se e saiu.	She got angry and left.		model
-112	outro	det	0	1311.634	0.719	other; another	Não tenho outro local.	I don't have another place.		model
-113	ano	noun	0	1294.165		year	Daqui a 50 anos.	Fifty years from now.		model
-114	dois	num	0	1289.368		two	Acaba de fazer dois anos.	He's just turned two.		model
-115	melhor	adj	0	1286.647		better; best	És a minha melhor amiga.	You're my best friend.		model
-116	esse	det	0	1267.971	0.738	that; those	Quem te deu essas roupas?	Who gave you those clothes?		model
-117	também	adv	0	1260.060		also; too; as well	Eles também têm escadas.	They have stairs too.		model
-118	quê	pron	0	1258.836		what	Gosta de quê?	You like what?		model
-119	pessoa	noun	0	1254.584		person; people (pl.)	E ela é uma boa pessoa.	And she's a good person.		model
-120	levar	verb	0	1250.034		to take; to carry; to take (someone) somewhere	Eu levo a vodka.	I'll bring the vodka.		model
-121	matar	verb	0	1248.415		to kill	Quem matou a Amber?	Who killed Amber?		model
-122	favor	noun	0	1243.922		"favor; please (in ""por favor"")"	Julie, ouve-me, por favor.	Julie, listen to me, please.		model
-123	certo	adj	0	1223.397		right, correct; certain, some; okay? right?	Não, é a decisão certa.	No, it's the right decision.		model
-124	olhar	verb	0	1214.807		to look; to look at; look! (hey)	Não olhes para lá.	Don't look over there.		model
-125	sobre	prep	0	1210.382		about; on; over	Bem, já falámos sobre isso.	Well, we've already talked about that.		model
-126	este	pron	0	1180.785	0.321	this; this one; these	Que restaurante é este?	Which restaurant is this?		model
-127	acontecer	verb	0	1175.362		to happen; to occur	Já vi acontecer antes!	I've seen it happen before!		model
-128	chegar	verb	0	1158.247		to arrive; to be enough	Ele chegou tarde.	He arrived late.		model
-129	tão	adv	0	1157.424		so; as (in comparisons)	Isso foi tão inteligente.	That was so clever.		model
-130	ti	pron	0	1153.759		you (after prepositions)	Também precisamos de ti.	We need you too.		model
-131	mãe	noun	0	1147.080		mother; mum	Lamento muito tudo isto, mãe.	I'm so sorry about all this, Mum.		model
-132	noite	noun	0	1145.925		night; evening	Vou sobreviver a esta noite?	Am I going to survive this night?		model
-133	depois	adv	0	1140.039		after; afterwards, then; later	Talvez possam voltar depois?	Maybe you could come back later?		model
-134	vida	noun	0	1126.567		life	Nesta vida ou na outra.	In this life or the next.		model
-135	tentar	verb	0	1121.611		to try; to attempt; to tempt	Tentei fazê-lo e falhei.	I tried to do it and failed.		model
-136	andar	verb	0	1116.815		to walk; to go around (doing); to be (somewhere)	Andei à tua procura.	I've been looking for you.		model
-137	voltar	verb	0	1116.135		to return; to come back; to do again (voltar a)	Volto no domingo.	I'll be back on Sunday.		model
-138	talvez	adv	0	1112.495		maybe; perhaps	Talvez a Clara o queira.	Maybe Clara wants it.		model
-139	olá	intj	0	1111.630		hello; hi	Olá, sou o Aaron.	Hi, I'm Aaron.		model
-140	sentir	verb	0	1094.232		to feel; to be sorry; to sense	Como se sente, Poirot?	How do you feel, Poirot?		model
-141	por favor	mwe	1	1091.939		please	Presta atenção, por favor.	Pay attention, please.		model
-142	é uma	mwe	1	1090.498		it's a; she's a	Isto é uma manicura?	Is this a manicure?		model
-143	sempre	adv	0	1085.821		always	Trabalha quase sempre sozinho.	He almost always works alone.		model
-144	conhecer	verb	0	1084.466		to know (be acquainted with); to meet; to be familiar with	Conheces o DJ?	Do you know the DJ?		model
-145	alguém	pron	0	1070.098		someone; anyone	Mas talvez alguém queira.	But maybe someone will want to.		model
-146	até	prep	0	1056.565	0.740	until; up to; as far as	Só vais até ao prédio.	You're only going as far as the building.		model
-147	dele	pron	0	1036.268		his; of him; its	O nome dele é Sandford Greg.	His name is Sandford Greg.		model
-148	acabar	verb	0	1033.745		to finish; to end; to have just (done)	Não me importa, acabou.	I don't care, it's over.		model
-149	sem	prep	0	1018.768		without	Distraí-me e fiquei sem tempo.	I got distracted and ran out of time.		model
-150	chamar	verb	0	1018.144		to call; to be called (chamar-se); to summon	Vamos chamar a polícia.	Let's call the police.		model
-151	todo	pron	0	1017.150	0.312	everyone, all (of them); all, whole	Bons dias a todos.	Good morning, everyone.		model
-152	aquele	det	0	994.020		that; those	Adoro aquele sítio.	I love that place.		model
-153	morrer	verb	0	991.973		to die	Se não lutarmos, morremos.	If we don't fight, we die.		model
-154	senhor	noun	0	991.686		sir; gentleman, man; the Lord	Senhor, já é tarde.	Sir, it's already late.		model
-155	das	det	0	977.526		of the (fem. pl.); from the	Agora quero mostrar-lhe uma das minhas.	Now I want to show you one of mine.		model
-156	tipo	noun	0	949.682		guy, bloke; kind, type; like (filler)	Quem é o tipo sortudo?	Who's the lucky guy?		model
-157	pelo	det	0	920.569		by the; for the; through the	Não estou aqui pelo dinheiro.	I'm not here for the money.		model
-158	ajudar	verb	0	909.584		to help	Porque é que me ajudou?	Why did you help me?		model
-159	amigo	noun	0	907.493		friend	É o meu amigo!	He's my friend!		model
-160	algo	pron	0	887.602		something; anything	Possivelmente possamos fazer algo.	Maybe we can do something.		model
-161	sr	unk	0	858.183		Mr.; sir	Ele é um assassino, Sr. Reese.	He's a murderer, Mr. Reese.		model
-162	parar	verb	0	857.180		to stop; to halt	O meu pai parou.	My father stopped.		model
-163	filho	noun	0	855.792		son; child	Os meus cinco filhos.	My five children.		model
-164	começar	verb	0	840.939		to begin; to start	A fila começa ali.	The line starts over there.		model
-165	verdade	noun	0	830.805		truth; true; actually (na verdade)	Temos que lhe dizer a verdade.	We have to tell him the truth.		model
-166	antes	adv	0	825.170		before; beforehand, earlier	Nunca Te implorei antes.	I've never begged You before.		model
-167	mulher	noun	0	825.057		woman; wife	Chamei a tua mulher.	I called your wife.		model
-168	grande	adj	0	824.091		big, large; great	Era um homem grande.	He was a big man.		model
-169	deus	noun	0	819.306	0.702	God; god	Meu Deus, estava tão preocupada.	My God, I was so worried.		model
-170	ninguém	pron	0	796.632		nobody; anybody	Ninguém lhe pode tirar isso.	Nobody can take that away from you.		model
-171	trabalho	noun	0	793.924		work; job; homework (trabalhos de casa)	Ele precisa deste trabalho.	He needs this job.		model
-172	entrar	verb	0	792.119		to enter, to come in; to join; to get into	Não entrem em pânico.	Don't panic.		model
-173	hora	noun	0	791.946		hour; time (of day)	Saio dentro de uma hora.	I'm leaving in an hour.		model
-174	apenas	adv	0	778.692		only; just	é apenas um exercício.	It's just an exercise.		model
-175	obrigar	verb	0	774.448		to force; to make (someone do sth)	Obrigaram-me a usar isto.	They made me wear this.		model
+86	o meu	mwe	1	1750.507		my; mine	O meu filho adora-a.	My son loves her.		model
+87	vez	noun	0	1740.085		time (occasion); às vezes: sometimes	Às vezes não é muito divertido.	Sometimes it's not much fun.		model
+88	tua	det	0	1720.426		your (feminine)	Onde mora a tua família?	Where does your family live?		model
+89	nosso	det	0	1654.422		our	Sabe os nossos nomes.	He knows our names.		model
+90	quando	conj	0	1581.858	0.680	when	Já estava assim quando eu cheguei.	It was already like that when I arrived.		model
+91	eles	pron	0	1571.639		they; them	Eles encontraram uma câmara.	They found a camera.		model
+92	nós	pron	0	1561.466		we; us	Nós temos que encontrar Fung.	We have to find Fung.		model
+93	dos	det	0	1552.605		of the; from the (plural)	O império dos mortos.	The empire of the dead.		model
+94	ouvir	verb	0	1543.745		to hear; to listen (to)	Papá, não te ouço!	Daddy, I can't hear you!		model
+95	mim	pron	0	1528.887		me (after preposition)	Ele não iria sem mim.	He wouldn't go without me.		model
+96	casa	noun	0	1500.702		house; home	Fomos para casa juntos.	We went home together.		model
+97	está bem	mwe	1	1495.737		okay; all right?; is fine	A Leah está bem?	Is Leah okay?		model
+98	pai	noun	0	1492.872		father, dad; parents (pl.)	Fui a Itália com o meu pai.	I went to Italy with my father.		model
+99	dia	noun	0	1488.563		day	Milagres acontecem todos os dias.	Miracles happen every day.		model
+100	passar	verb	0	1487.707		to pass; to spend (time); to happen (passar-se)	Que se passa, Phil?	What's going on, Phil?		model
+101	nunca	adv	0	1452.641		never	O pai nunca disse nada.	Dad never said anything.		model
+102	tempo	noun	0	1443.942		time; weather	Devíamos dar-lhe mais tempo.	We should give him more time.		model
+103	gostar	verb	0	1432.953		to like; to enjoy	Ela gosta de música.	She likes music.		model
+104	parecer	verb	0	1429.683		to seem; to look like	Parece bom para mim!	Sounds good to me!		model
+105	homem	noun	0	1402.982		man; men	O homem disse algo antes.	The man said something earlier.		model
+106	assim	adv	0	1379.336		like this; so; thus	Assim fica mais leve.	This way it's lighter.		model
+107	ainda	adv	0	1360.573		still; yet; even	O casamento ainda não acabou.	The wedding isn't over yet.		model
+108	encontrar	verb	0	1356.911		to find; to meet; to meet up (with)	Eu encontrei o queijo!	I found the cheese!		model
+109	é um	mwe	1	1337.445		it's a; he's a	Não é um sítio mau para negociar.	It's not a bad place to do business.		model
+110	sair	verb	0	1312.252		to leave; to go out; to turn out	Ela zangou-se e saiu.	She got angry and left.		model
+111	outro	det	0	1311.634	0.719	other; another	Não tenho outro local.	I don't have another place.		model
+112	ano	noun	0	1294.165		year	Daqui a 50 anos.	Fifty years from now.		model
+113	dois	num	0	1289.368		two	Acaba de fazer dois anos.	He's just turned two.		model
+114	melhor	adj	0	1286.647		better; best	És a minha melhor amiga.	You're my best friend.		model
+115	esse	det	0	1267.971	0.738	that; those	Quem te deu essas roupas?	Who gave you those clothes?		model
+116	também	adv	0	1260.060		also; too; as well	Eles também têm escadas.	They have stairs too.		model
+117	quê	pron	0	1258.836		what	Gosta de quê?	You like what?		model
+118	pessoa	noun	0	1254.584		person; people (pl.)	E ela é uma boa pessoa.	And she's a good person.		model
+119	levar	verb	0	1250.034		to take; to carry; to take (someone) somewhere	Eu levo a vodka.	I'll bring the vodka.		model
+120	matar	verb	0	1248.415		to kill	Quem matou a Amber?	Who killed Amber?		model
+121	favor	noun	0	1243.922		"favor; please (in ""por favor"")"	Julie, ouve-me, por favor.	Julie, listen to me, please.		model
+122	certo	adj	0	1223.397		right, correct; certain, some; okay? right?	Não, é a decisão certa.	No, it's the right decision.		model
+123	olhar	verb	0	1214.807		to look; to look at; look! (hey)	Não olhes para lá.	Don't look over there.		model
+124	sobre	prep	0	1210.382		about; on; over	Bem, já falámos sobre isso.	Well, we've already talked about that.		model
+125	este	pron	0	1180.785	0.321	this; this one; these	Que restaurante é este?	Which restaurant is this?		model
+126	acontecer	verb	0	1175.362		to happen; to occur	Já vi acontecer antes!	I've seen it happen before!		model
+127	chegar	verb	0	1158.247		to arrive; to be enough	Ele chegou tarde.	He arrived late.		model
+128	tão	adv	0	1157.424		so; as (in comparisons)	Isso foi tão inteligente.	That was so clever.		model
+129	ti	pron	0	1153.759		you (after prepositions)	Também precisamos de ti.	We need you too.		model
+130	mãe	noun	0	1147.080		mother; mum	Lamento muito tudo isto, mãe.	I'm so sorry about all this, Mum.		model
+131	noite	noun	0	1145.925		night; evening	Vou sobreviver a esta noite?	Am I going to survive this night?		model
+132	depois	adv	0	1140.039		after; afterwards, then; later	Talvez possam voltar depois?	Maybe you could come back later?		model
+133	vida	noun	0	1126.567		life	Nesta vida ou na outra.	In this life or the next.		model
+134	tentar	verb	0	1121.611		to try; to attempt; to tempt	Tentei fazê-lo e falhei.	I tried to do it and failed.		model
+135	andar	verb	0	1116.815		to walk; to go around (doing); to be (somewhere)	Andei à tua procura.	I've been looking for you.		model
+136	voltar	verb	0	1116.135		to return; to come back; to do again (voltar a)	Volto no domingo.	I'll be back on Sunday.		model
+137	talvez	adv	0	1112.495		maybe; perhaps	Talvez a Clara o queira.	Maybe Clara wants it.		model
+138	olá	intj	0	1111.630		hello; hi	Olá, sou o Aaron.	Hi, I'm Aaron.		model
+139	sentir	verb	0	1094.232		to feel; to be sorry; to sense	Como se sente, Poirot?	How do you feel, Poirot?		model
+140	por favor	mwe	1	1091.939		please	Presta atenção, por favor.	Pay attention, please.		model
+141	é uma	mwe	1	1090.498		it's a; she's a	Isto é uma manicura?	Is this a manicure?		model
+142	sempre	adv	0	1085.821		always	Trabalha quase sempre sozinho.	He almost always works alone.		model
+143	conhecer	verb	0	1084.466		to know (be acquainted with); to meet; to be familiar with	Conheces o DJ?	Do you know the DJ?		model
+144	alguém	pron	0	1070.098		someone; anyone	Mas talvez alguém queira.	But maybe someone will want to.		model
+145	até	prep	0	1056.565	0.740	until; up to; as far as	Só vais até ao prédio.	You're only going as far as the building.		model
+146	dele	pron	0	1036.268		his; of him; its	O nome dele é Sandford Greg.	His name is Sandford Greg.		model
+147	acabar	verb	0	1033.745		to finish; to end; to have just (done)	Não me importa, acabou.	I don't care, it's over.		model
+148	sem	prep	0	1018.768		without	Distraí-me e fiquei sem tempo.	I got distracted and ran out of time.		model
+149	chamar	verb	0	1018.144		to call; to be called (chamar-se); to summon	Vamos chamar a polícia.	Let's call the police.		model
+150	todo	pron	0	1017.150	0.312	everyone, all (of them); all, whole	Bons dias a todos.	Good morning, everyone.		model
+151	aquele	det	0	994.020		that; those	Adoro aquele sítio.	I love that place.		model
+152	morrer	verb	0	991.973		to die	Se não lutarmos, morremos.	If we don't fight, we die.		model
+153	senhor	noun	0	991.686		sir; gentleman, man; the Lord	Senhor, já é tarde.	Sir, it's already late.		model
+154	das	det	0	977.526		of the (fem. pl.); from the	Agora quero mostrar-lhe uma das minhas.	Now I want to show you one of mine.		model
+155	tipo	noun	0	949.682		guy, bloke; kind, type; like (filler)	Quem é o tipo sortudo?	Who's the lucky guy?		model
+156	pelo	det	0	920.569		by the; for the; through the	Não estou aqui pelo dinheiro.	I'm not here for the money.		model
+157	ajudar	verb	0	909.584		to help	Porque é que me ajudou?	Why did you help me?		model
+158	amigo	noun	0	907.493		friend	É o meu amigo!	He's my friend!		model
+159	algo	pron	0	887.602		something; anything	Possivelmente possamos fazer algo.	Maybe we can do something.		model
+160	sr	unk	0	858.183		Mr.; sir	Ele é um assassino, Sr. Reese.	He's a murderer, Mr. Reese.		model
+161	parar	verb	0	857.180		to stop; to halt	O meu pai parou.	My father stopped.		model
+162	filho	noun	0	855.792		son; child	Os meus cinco filhos.	My five children.		model
+163	começar	verb	0	840.939		to begin; to start	A fila começa ali.	The line starts over there.		model
+164	verdade	noun	0	830.805		truth; true; actually (na verdade)	Temos que lhe dizer a verdade.	We have to tell him the truth.		model
+165	antes	adv	0	825.170		before; beforehand, earlier	Nunca Te implorei antes.	I've never begged You before.		model
+166	mulher	noun	0	825.057		woman; wife	Chamei a tua mulher.	I called your wife.		model
+167	grande	adj	0	824.091		big, large; great	Era um homem grande.	He was a big man.		model
+168	deus	noun	0	819.306	0.702	God; god	Meu Deus, estava tão preocupada.	My God, I was so worried.		model
+169	ninguém	pron	0	796.632		nobody; anybody	Ninguém lhe pode tirar isso.	Nobody can take that away from you.		model
+170	trabalho	noun	0	793.924		work; job; homework (trabalhos de casa)	Ele precisa deste trabalho.	He needs this job.		model
+171	entrar	verb	0	792.119		to enter, to come in; to join; to get into	Não entrem em pânico.	Don't panic.		model
+172	hora	noun	0	791.946		hour; time (of day)	Saio dentro de uma hora.	I'm leaving in an hour.		model
+173	apenas	adv	0	778.692		only; just	é apenas um exercício.	It's just an exercise.		model
+174	obrigar	verb	0	774.448		to force; to make (someone do sth)	Obrigaram-me a usar isto.	They made me wear this.		model
+175	novo	adj	0	771.674		new; young	És novo aqui certo?	You're new here, right?		model
 176	acreditar	verb	0	770.335		to believe	Acredito que é possível.	I believe it's possible.		model
 177	aí	adv	0	762.905		there; then (in that case)	Pois, mas ele está aí.	Yeah, but he's there.		model
 178	pouco	adv	0	755.476		little; a little (um pouco); few	Tenho pouco a dizer.	I have little to say.		model
@@ -212,351 +212,351 @@ rank	lemma	pos	is_mwe	freq_per_million	pos_share	gloss	example_pt	example_en	fla
 211	hoje	adv	0	614.753		today; nowadays	Vi a Juniper hoje.	I saw Juniper today.		model
 212	trazer	verb	0	610.043		to bring; to bring along	Podes trazer o Alberto.	You can bring Alberto.		model
 213	dela	pron	0	609.929		her; hers; of her	Eu fui até à casa dela.	I went to her house.		model
-214	novo	adj	0	608.474		new; young	És novo aqui certo?	You're new here, right?		model
-215	muito bem	mwe	1	601.883		all right; very well; well done	Muito bem, rapazes, tenho de ir.	All right, boys, I have to go.		model
-216	volta	noun	0	601.325		turn; return (de volta = back); lap	Oficial, leve-nos já de volta.	Officer, take us back right now.		model
-217	perceber	verb	0	594.281		to understand; to realize; to notice	Eu percebo, eu percebo.	I understand, I understand.		model
-218	vosso	det	0	591.521		your (plural); yours	O vosso pai está aqui.	Your father is here.		model
-219	nenhum	det	0	591.205		no; none; any (in negatives)	Não temos nenhum suspeito.	We don't have any suspect.		model
-220	continuar	verb	0	590.495		to continue; to keep on; to still be	A mãe continua fora?	Is Mum still out?		model
-221	primeiro	adj	0	584.625	0.705	first	Foi o meu primeiro serviço.	It was my first job.		model
-222	apanhar	verb	0	582.848		to catch; to pick up; to get caught / take a beating	Apanhe um taxi.	Take a taxi.		model
-223	carro	noun	0	581.670		car	Onde deixou o carro?	Where did you leave the car?		model
-224	certeza	noun	0	576.013		certainty; sure (ter a certeza); of course (com certeza)	Eu tenho a certeza que é ela.	I'm sure it's her.		model
-225	claro	adv	0	575.242	0.644	of course; sure; clearly	Oh sim, é claro.	Oh yes, of course.		model
-226	às	det	0	572.149		at (o'clock); to the (fem. pl.)	Que tal às nove?	How about nine o'clock?		model
-227	pronto	adj	0	564.912		ready; (as interjection) okay, that's it	O bacon está pronto.	The bacon is ready.		model
-228	contar	verb	0	563.715		to tell; to count; to count on	Queres que te conte?	Do you want me to tell you?		model
-229	mal	adv	0	560.810		badly; hardly, barely	Por muito mal que estivesse, não chegaria a esse extremo.	However badly off he was, he wouldn't go that far.		model
-230	último	adj	0	555.289		last; latest; final	Queriam as últimas notícias?	Did you want the latest news?		model
-231	mundo	noun	0	554.604		world	Já não pertences a este mundo.	You no longer belong to this world.		model
-232	lado	noun	0	550.197		side	Mudaste de lado?	Did you switch sides?		model
-233	tomar	verb	0	550.120		to take; to drink (have); to take over (seize)	Não vai tomar banho?	Aren't you going to take a bath?		model
-234	oh	intj	0	541.667		oh	Oh, queres ajudar?	Oh, do you want to help?		model
-235	contigo	pron	0	540.615		with you	Anda cá, deixa-me falar contigo.	Come here, let me talk to you.		model
-236	três	num	0	539.785		three	Três semanas é um piscar de olhos.	Three weeks is the blink of an eye.		model
-237	ideia	noun	0	537.236		idea	Juro que não fazia ideia.	I swear I had no idea.		model
-238	meu deus	mwe	1	533.145		my God; oh my God	Meu Deus, estava tão preocupada.	My God, I was so worried.		model
-239	embora	adv	0	532.231		away (in ir embora: to leave, go away)	O Viktor vai-se embora!	Viktor is leaving!		model
-240	rapaz	noun	0	525.501		boy; guy; (plural) guys	Rapazes, entrem no carro.	Guys, get in the car.		model
-241	mão	noun	0	522.964		hand	Cuidado com a mão.	Careful with your hand.		model
-242	porquê	adv	0	521.970		why	E posso perguntar-lhe porquê?	And may I ask you why?		model
-243	nas	det	0	521.444		in the (fem. pl.); on the; at the	Compro uma casa nas montanhas.	I'll buy a house in the mountains.		model
-244	numa	det	0	520.214		in a; into a; at a	Temos de pensar numa solução.	We have to think of a solution.		model
-245	parte	noun	0	519.821		part; share; place (somewhere)	E essa nem é a melhor parte.	And that's not even the best part.		model
-246	menos	adv	0	519.576		less; fewer; at least (pelo menos)	Bom, pelo menos tudo acabou.	Well, at least it's all over.		model
-247	todos os	mwe	1	517.724		all the; every	todos os rapazes são iguais.	All boys are the same.		model
-248	outro	pron	0	512.237	0.281	another; other; the other one	Não tenho outro local.	I don't have another place.		model
-249	amar	verb	0	510.372		to love	Ele nunca me amou.	He never loved me.		model
-250	arma	noun	0	507.430		gun; weapon	E tu guarda essa arma.	And you, put that gun away.		model
-251	lugar	noun	0	507.337		place; seat; position (rank)	Eu adoro este lugar.	I love this place.		model
-252	tanto	det	0	503.663		so much; so many	Temos tanto que fazer.	We have so much to do.		model
-253	tratar	verb	0	500.427		to treat; to deal with, take care of; to address (as)	O Walter trata disso.	Walter will take care of that.		model
-254	vos	pron	0	496.228		you (plural object); to you (plural)	Vejo-vos na próxima semana.	I'll see you next week.		model
-255	uma coisa	mwe	1	495.821		something; one thing	Tenho uma coisa para tratar.	I have something to take care of.		model
-256	família	noun	0	495.799		family	Mas tens uma família, Willie.	But you have a family, Willie.		model
-257	desculpar	verb	0	495.323		to excuse, forgive; sorry, excuse me; to apologize	Desculpe, amanhã não posso.	Sorry, I can't tomorrow.		model
-258	aos	det	0	491.459		to the (masc. pl.); at the	Já agora, fui aos correios hoje.	By the way, I went to the post office today.		model
-259	entender	verb	0	490.486		to understand	Eu entendo o porquê.	I understand why.		model
-260	viver	verb	0	490.178		to live; to reside	É onde tu vives.	That's where you live.		model
-261	dentro	adv	0	489.030		inside; within (time); in	Estarei no Cobra dentro de uma hora.	I'll be at the Cobra in an hour.		model
-262	razão	noun	0	488.226		reason; right (in ter razão)	Tens razão, isto é incrível.	You're right, this is incredible.		model
-263	ótimo	adj	0	485.455		great; excellent; fine	O bolo está ótimo.	The cake is great.		model
-264	minuto	noun	0	483.023		minute	Claro, é só um minuto.	Sure, it'll just be a minute.		model
-265	esquecer	verb	0	479.042		to forget	Vês, já me esqueci.	See, I've already forgotten.		model
-266	mudar	verb	0	475.995		to change; to move (house)	As regras não mudaram.	The rules haven't changed.		model
-267	único	adj	0	475.511		only; single; unique	Era o único portão.	It was the only gate.		model
-268	polícia	noun	0	470.910		police; police officer, cop	Porque é que não vais à polícia?	Why don't you go to the police?		model
-269	ali	adv	0	458.604		there; over there	Sim, ele está ali atrás.	Yes, he's back there.		model
-270	manter	verb	0	452.033		to keep; to maintain; to stay (reflexive)	Vamos manter isto entre nós?	Shall we keep this between us?		model
-271	esse	pron	0	449.500	0.262	that one; that; those	Fico com esse.	I'll take that one.		model
-272	abrir	verb	0	446.247		to open	Kathy, abre a porta.	Kathy, open the door.		model
-273	descobrir	verb	0	439.787		to find out; to discover	Descobre quem eles são.	Find out who they are.		model
-274	seguir	verb	0	438.963		to follow; to carry on; to go (in a direction)	Segue-me, vou-te mostrar.	Follow me, I'll show you.		model
-275	ele está	mwe	1	435.409		he is (in a state/place)	Porque é que ele está a andar em círculos perto do elevador?	Why is he walking in circles near the elevator?		model
-276	pagar	verb	0	434.940		to pay; to pay for	Eles pagam-te por isso?	Do they pay you for that?		model
-277	pois	conj	0	434.415	0.600	because, for; well then; right (agreeing)	Não és um rapaz, pois não?	You're not a boy, are you?		model
-278	segundo	adj	0	430.051		second (2nd); second (unit of time)	Querida, espera um segundo.	Honey, wait a second.		model
-279	correr	verb	0	428.918		to run; to go (turn out)	Foi bom... correu bem.	It was good... it went well.		model
-280	comer	verb	0	426.113		to eat; to fuck (vulgar)	Alí, come um pouco.	Here, eat a bit.		model
-281	nem	adv	0	425.909	0.400	not even; nor	Ela nem sabia cozinhar.	She didn't even know how to cook.		model
-282	mandar	verb	0	424.873		to send; to order (someone to do sth); to be in charge	Tem de mandar alguém.	You have to send someone.		model
-283	caso	conj	0	419.242		in case; if	Caso algo surja às três da manhã.	In case something comes up at three in the morning.		model
-284	cabeça	noun	0	418.119		head; mind	Levanta a cabeça, filho.	Lift up your head, son.		model
-285	si	pron	0	417.775		you (formal, after preposition); himself/herself/itself; oneself	Sr. De Haeck, tenho más notícias para si.	Mr. De Haeck, I have bad news for you.		model
-286	irmão	noun	0	415.238		brother	Exigência do teu irmão.	Your brother's demand.		model
-287	ajuda	noun	0	415.128		help; aid	A família precisa de ajuda.	The family needs help.		model
-288	semana	noun	0	414.337		week	Não tenho nada esta semana.	I have nothing this week.		model
-289	raio	noun	0	413.125		the hell (intensifier); damn; lightning bolt	Meu Deus, que raio é isso?	My God, what the hell is that?		model
-290	momento	noun	0	412.630		moment; time	Pode dar-nos um momento, Cathy?	Can you give us a moment, Cathy?		model
-291	aquilo	pron	0	412.353		that; that thing	aquilo foi uma loucura.	that was crazy.		model
-292	onde está	mwe	1	409.180		where is	Então onde está o Chance?	So where's Chance?		model
-293	forma	noun	0	408.258		way, manner; shape, form	Há alguma forma de o contactar?	Is there any way to contact him?		model
-294	atrás	adv	0	406.186		behind; back; ago	Vamos, estarei bem atrás de ti.	Come on, I'll be right behind you.		model
-295	cidade	noun	0	400.730		city; town	Não entendo essa cidade.	I don't understand this city.		model
-296	pequeno	adj	0	399.508		small; little	Essas são pequenas partículas.	Those are small particles.		model
-297	olho	noun	0	398.965		eye	Mantem-no debaixo de olho.	Keep an eye on him.		model
-298	importar	verb	0	398.019		to matter; to mind, to care; to import	Os nomes não importam.	Names don't matter.		model
-299	mostrar	verb	0	397.389		to show	Mostra-me o resto.	Show me the rest.		model
-300	conta	noun	0	396.717		bill; account; (tomar conta) to take care of	Quanto é a conta dela?	How much is her bill?		model
-301	história	noun	0	395.569		story; history	Já contaste a tua história.	You've already told your story.		model
-302	porta	noun	0	395.242		door	Abre a porta, ajuda-os!	Open the door, help them!		model
-303	adorar	verb	0	394.477		to love; to adore	A Kate adora tofu.	Kate loves tofu.		model
-304	perguntar	verb	0	386.924		to ask	Todos perguntam por ela.	Everyone asks about her.		model
-305	deles	pron	0	386.275		their; of them; theirs	Toma conta deles, eu vou buscar ajuda!	Take care of them, I'm going to get help!		model
-306	entre	prep	0	383.804		between; among	Não escolherei entre eles.	I won't choose between them.		model
-307	arranjar	verb	0	379.541		to get; to find; to fix	Onde arranjaste esse cinto?	Where did you get that belt?		model
-308	preocupar	verb	0	378.884		to worry; to concern	Não te preocupes, Will.	Don't worry, Will.		model
-309	amor	noun	0	377.445		love; darling, sweetheart	Então amor, que se passa?	So, love, what's going on?		model
-310	com ele	mwe	1	374.402		with him; with it	Quero saber o que se passa com ele.	I want to know what's going on with him.		model
-311	frente	noun	0	374.319		front; ahead (em frente); front (of a building)	Oscar, sai da frente.	Oscar, get out of the way.		model
-312	senhora	noun	0	372.913		lady, madam; you (polite, to a woman); wife	A senhora está ocupada.	The lady is busy.		model
-313	ganhar	verb	0	372.354		to win; to earn; to gain	Olha o que ganhei.	Look what I won.		model
-314	vivo	adj	0	370.723		alive; living; lively	E ela também está viva?	And is she alive too?		model
-315	até	adv	0	370.334	0.260	even; until; up to	Bom, isto até pode ser divertido.	Well, this could even be fun.		model
-316	desde	prep	0	370.013		since; from	Desde então que estamos juntos.	We've been together ever since.		model
-317	ok	intj	0	367.834		OK; all right	Ok, mais dois dias.	OK, two more days.		model
-318	tarde	adv	0	358.998		late	Hoje já é muito tarde.	It's too late today.		model
-319	os meus	mwe	1	358.450		my (masculine plural)	Por favor, encontras os meus filhos?	Please, can you find my children?		model
-320	procurar	verb	0	356.501		to look for; to seek; to try to	Procuro a sala 310.	I'm looking for room 310.		model
-321	tornar	verb	0	353.893		to make; to become (tornar-se)	Não a torna real.	It doesn't make it real.		model
-322	criança	noun	0	352.693		child; kid	Desde que era criança.	Ever since I was a child.		model
-323	morte	noun	0	350.976		death	Não, não tenho medo da morte.	No, I'm not afraid of death.		model
-324	lhes	pron	0	349.618		them (to them); you (formal plural)	Alguém lhes disse onde e quando.	Someone told them where and when.		model
-325	maneira	noun	0	348.616		way; manner; manners	Há muitas maneiras de fazer isso.	There are many ways to do that.		model
-326	deus	intj	0	348.253	0.298	my God!; God!; good heavens	Meu Deus, estava tão preocupada.	My God, I was so worried.		model
-327	vá lá	mwe	1	346.665		come on; go on; all right then	Vá lá, di-lo em voz alta!	Come on, say it out loud!		model
-328	próximo	adj	0	346.186		next; close; near	Vemo-nos no próximo fim-de-semana.	See you next weekend.		model
-329	feliz	adj	0	345.696		happy	Fico feliz por vê-la.	I'm glad to see her.		model
-330	dormir	verb	0	344.871		to sleep; to sleep with (have sex)	Paige, estou a dormir.	Paige, I'm sleeping.		model
-331	cima	noun	0	343.847		top; up (em cima: upstairs, on top)	Temos alguns casos lá em cima.	We have a few cases up there.		model
-332	salvar	verb	0	343.410		to save; to rescue	Salvaste-me a vida, Morgan!	You saved my life, Morgan!		model
-333	sozinho	adj	0	340.616		alone; lonely; by oneself	Eu estava sozinho.	I was alone.		model
-334	pergunta	noun	0	340.118		question	Muito bem, qual é a pergunta?	All right, what's the question?		model
-335	nova	noun	0	340.000		new (feminine); news item	Vais ver a casa nova?	Are you going to see the new house?		model
-336	junto	adv	0	339.987		together; next to (junto a/de); along	Estamos junto à porta.	We're right by the door.		model
-337	durante	prep	0	338.462		during; for (a period of)	Sim, só durante esta semana.	Yes, only during this week.		model
-338	velho	adj	0	338.126		old; elderly	Os teus velhos amigos.	Your old friends.		model
-339	receber	verb	0	337.820		to receive, to get; to be paid; to welcome, to receive (guests)	Recebi agora a chamada.	I just got the call.		model
-340	amanhã	adv	0	337.714		tomorrow	Amanhã é a acusação.	The arraignment is tomorrow.		model
-341	quase	adv	0	337.009		almost, nearly	Eu quase não me lembro.	I barely remember.		model
-342	caminho	noun	0	336.591		way; path; road	É só um obstáculo no caminho.	It's just an obstacle in the way.		model
-343	todas as	mwe	1	333.096		all the (fem. pl.); every	Considerei todas as possibilidades.	I considered all the possibilities.		model
-344	medo	noun	0	331.684		fear	Estava a tremer de medo.	I was trembling with fear.		model
-345	contra	prep	0	331.313		against	Está a trabalhar contra vocês.	He's working against you.		model
-346	partir	verb	0	326.858		to leave, depart; to break	O rei partiu de Londres.	The king departed from London.		model
-347	as pessoas	mwe	1	325.986		people	As pessoas aceitam os seus julgamentos.	People accept your judgements.		model
-348	cara	noun	0	322.728		face; guy, dude (BP)	Conheço a tua cara muito bem.	I know your face very well.		model
-349	mês	noun	0	322.431		month	E em apenas um mês!	And in just one month!		model
-350	agente	noun	0	321.741		agent; officer	Onde está o agente Poole?	Where is Agent Poole?		model
-351	da minha	mwe	1	318.796		of my; from my	Eu não estou a dar graxa, pai, eu gosto da minha professora.	I'm not sucking up, Dad, I like my teacher.		model
-352	pode ser	mwe	1	318.355		it may be; maybe; okay (that works)	Pode ser uma boa mudança para si.	It could be a good change for you.		model
-353	claro	adj	0	317.985	0.356	clear; obvious; light (colour)	A minha posição é bastante clara.	My position is quite clear.		model
-354	meu pai	mwe	1	317.698		my father; my dad	Fui a Itália com o meu pai.	I went to Italy with my father.		model
-355	desta	det	0	311.671		of this; from this	Desta vez, superaste-te mesmo.	This time, you really outdid yourself.		model
-356	pessoal	adj	0	311.388		personal; guys/everyone (as noun); staff, crew	Está tudo bem, pessoal, é só um acidente.	It's all right, guys, it's just an accident.		model
-357	filha	noun	0	311.361		daughter	A sua filha viu?	Did your daughter see?		model
-358	neste	det	0	308.775		in this	Só estar neste mundo?	Just being in this world?		model
-359	rapariga	noun	0	307.374		girl; young woman	Haverá raparigas no baile?	Will there be girls at the dance?		model
-360	sentar	verb	0	307.231		to sit down; to seat	Senta-te, por favor.	Sit down, please.		model
-361	importante	adj	0	302.858		important	Sim, sim, é importante.	Yes, yes, it's important.		model
-362	difícil	adj	0	300.384		difficult; hard	Não seria tão difícil.	It wouldn't be that hard.		model
-363	cada	det	0	299.206		each; every	Cada fio representa uma pessoa.	Each thread represents a person.		model
-364	sorte	noun	0	299.177		luck; fate	Boa sorte com a turma.	Good luck with the class.		model
-365	palavra	noun	0	298.975		word; word (promise)	Tens a minha palavra, filho.	You have my word, son.		model
-366	causa	noun	0	298.386		cause; reason; sake	Quem morre por minha causa?	Who dies because of me?		model
-367	as coisas	mwe	1	298.081		things	As coisas estavam finalmente a melhorar.	Things were finally getting better.		model
-368	significar	verb	0	298.078		to mean; to signify	Ok, o que significa isto?	Okay, what does this mean?		model
-369	buscar	verb	0	297.291		to fetch; to go get; to seek	Vai buscar o brandy, está bem?	Go get the brandy, okay?		model
-370	jogo	noun	0	296.686		game; match; gambling	Um jogo para ti?	A game for you?		model
-371	disto	pron	0	295.489		of this; about this	Tu sabes disto, certo?	You know about this, right?		model
-372	tal	adv	0	295.038	0.730	such; how about (que tal); just as (tal como)	Que tal umas tréguas?	How about a truce?		model
-373	fugir	verb	0	293.976		to run away; to flee; to escape	Napoleão fugiu de Elba.	Napoleon escaped from Elba.		model
-374	comprar	verb	0	293.825		to buy	Tenho de comprar bananas.	I have to buy bananas.		model
-375	quarto	adj	0	292.936		room; fourth	Foi para o quarto.	He went to the bedroom.		model
-376	roubar	verb	0	290.941		to steal; to rob	Roubaste um telemóvel?	You stole a cellphone?		model
-377	morto	adj	0	290.087	0.673	dead	Agora ela está morta	Now she's dead		model
-378	número	noun	0	289.973		number	Ela perguntou o meu número.	She asked for my number.		model
-379	pois	adv	0	289.611	0.400	yeah, right; well then; (pois não) right?, isn't it?	Não és um rapaz, pois não?	You're not a boy, are you?		model
-380	beber	verb	0	289.523		to drink	Bebe um copo, pago eu.	Have a drink, I'm paying.		model
-381	água	noun	0	287.067		water	Estamos sem água também.	We're out of water too.		model
-382	estranho	adj	0	286.519		strange, odd; stranger	É uma festa estranha.	It's a strange party.		model
-383	desaparecer	verb	0	286.195		to disappear; to vanish; to get lost (go away)	Olhe, está a desaparecer.	Look, it's disappearing.		model
-384	corpo	noun	0	285.215		body; corpse	E onde esconderão o corpo?	And where will they hide the body?		model
-385	cuidado	noun	0	284.862		care; watch out!; caution	Cuidado com o carro!	Watch out for the car!		model
-386	sangue	noun	0	282.435		blood	Estás pronto para beber sangue?	Are you ready to drink blood?		model
-387	existir	verb	0	281.679		to exist; there to be	Só existe uma Eva.	There's only one Eva.		model
-388	força	noun	0	281.454		strength; force	Ele só tem força num braço!	He only has strength in one arm!		model
-389	escrever	verb	0	279.948		to write	Escreve o que quiseres.	Write whatever you want.		model
-390	seguro	adj	0	278.825		safe; secure; sure	A rua está segura?	Is the street safe?		model
-391	guerra	noun	0	275.782		war	A guerra acabou, mulher.	The war is over, woman.		model
-392	lindo	adj	0	275.322		beautiful; lovely	Tu estás linda hoje.	You look beautiful today.		model
-393	rápido	adj	0	275.254		fast, quick; quickly	Isto foi rápido!	That was quick!		model
-394	manhã	noun	0	275.238		morning	Não é todas as manhãs.	It's not every morning.		model
-395	tocar	verb	0	274.458		to touch; to play (music); to ring	Toca no meu peito!	Touch my chest!		model
-396	plano	noun	0	273.883		plan; shot (camera)	Tenho um plano fantástico.	I have a fantastic plan.		model
-397	maior	adj	0	271.947		bigger; biggest; greater	É um dos maiores instrumentos.	It's one of the biggest instruments.		model
-398	adeus	intj	0	271.509		goodbye	Adeus, malta.	Goodbye, guys.		model
-399	cair	verb	0	268.853		to fall; to fall down; to drop	Eu vi-o cair.	I saw him fall.		model
-400	terra	noun	0	268.826		earth; land; hometown	Não mais canções da Terra.	No more songs of Earth.		model
-401	ei	intj	0	267.822		hey	Ei, olhe para lá.	Hey, look over there.		model
-402	perto	adv	0	266.993		near; close; nearby	Este castelo está perto do mar.	This castle is near the sea.		model
-403	bonito	adj	0	265.246		pretty; beautiful; nice	Sim, É um nome bonito.	Yes, it's a pretty name.		model
-404	confiar	verb	0	264.585		to trust; to entrust	Ouve-me, confia em mim.	Listen to me, trust me.		model
-405	mau	adj	0	263.839		bad; evil; nasty	Sou um tipo mau.	I'm a bad guy.		model
-406	miúdo	noun	0	260.127		kid; child	Os miúdos estão com ela.	The kids are with her.		model
-407	calar	verb	0	258.105		to shut up; to be quiet; to silence	John, cala a boca.	John, shut up.		model
-408	cinco	num	0	257.096		five	Não te via há uns cinco anos.	I hadn't seen you in about five years.		model
-409	altura	noun	0	257.082		time (moment); height	Agora, é a altura de lutar.	Now is the time to fight.		model
-410	segurança	noun	0	256.801		security; safety; security guard	Eu vou chamar o segurança.	I'm going to call security.		model
-411	enviar	verb	0	256.737		to send	Ele enviou-me uma mensagem.	He sent me a message.		model
-412	aparecer	verb	0	256.735		to appear; to show up; to turn up	O Chandler já apareceu?	Has Chandler shown up yet?		model
-413	equipa	noun	0	256.693		team	Faço parte de uma equipa.	I'm part of a team.		model
-414	colocar	verb	0	256.680		to put; to place; to put on	Coloque o seu casaco.	Put on your coat.		model
-415	procura	noun	0	256.218		search (mostly in à procura de: looking for); demand	Estou à procura de uma coisa.	I'm looking for something.		model
-416	outra vez	mwe	1	255.001		again	Experimenta outra vez, Greg.	Try again, Greg.		model
-417	dólar	noun	0	253.805		dollar	Um dólar está bem.	One dollar is fine.		model
-418	aceitar	verb	0	253.100		to accept; to agree to	Não, não aceito isto!	No, I won't accept this!		model
-419	dr	noun	0	252.789		Dr. (title)	Fala o Dr. Alberts.	This is Dr. Alberts speaking.		model
-420	calma	noun	0	252.104		calm; easy!, take it easy (as interjection)	Calma, ele vem a caminho.	Take it easy, he's on his way.		model
-421	deste	det	0	251.703		of this; from this	O ego dele é deste tamanho.	His ego is this big.		model
-422	mexer	verb	0	251.347		to move; to touch (meddle with); to stir	Não te mexas, Julie.	Don't move, Julie.		model
-423	quer dizer	mwe	1	250.915		that is; I mean; it means	Quer dizer, vamo-nos casar amanhã.	I mean, we're getting married tomorrow.		model
-424	chefe	noun	0	250.188		boss; chief, head	Sou o chefe desta clinica.	I'm the boss of this clinic.		model
-425	prometer	verb	0	250.133		to promise	Não posso prometer nada.	I can't promise anything.		model
-426	obrigado	verb	0	249.380	0.272	thank you; thanks	Obrigado, mãe e pai.	Thank you, Mum and Dad.		model
-427	funcionar	verb	0	247.087		to work; to function; to operate	O sistema não funciona.	The system doesn't work.		model
-428	fim	noun	0	246.920		end; weekend (fim de semana)	É o fim do meu relato.	That's the end of my account.		model
-429	coração	noun	0	246.018		heart; sweetheart	Cada bater do teu coração.	Every beat of your heart.		model
-430	brincar	verb	0	245.802		to play; to joke, kid around	Não brinques comigo, pá.	Don't mess with me, man.		model
-431	primeiro	adv	0	244.050	0.295	first; firstly	Terás de me matar primeiro.	You'll have to kill me first.		model
-432	nisso	pron	0	243.334		in that; about that; on that	Porque não pensas melhor nisso?	Why don't you think it over?		model
-433	menina	noun	0	241.003		girl; young lady (polite address); miss	Quem são as meninas?	Who are the girls?		model
-434	meio	num	0	239.999		half	Seis anos e meio depois, eu e a Mary ainda estamos juntos.	Six and a half years later, Mary and I are still together.		model
-435	diferente	adj	0	239.692		different	Ele era diferente, sabes?	He was different, you know?		model
-436	preparar	verb	0	238.148		to prepare; to get ready	Prepara-te para a mudança.	Get ready for the change.		model
-437	levantar	verb	0	237.766		to lift, to raise; to get up (reflexive); to withdraw (money)	Levante a mão, querida.	Raise your hand, dear.		model
-438	estado	noun	0	237.287		state (condition); state (nation/region)	Preferem que ele fique neste estado?	Would you rather he stayed in this state?		model
-439	meter	verb	0	236.136		to put (in); to get into; to meddle	Nos metemos em apuros.	We got into trouble.		model
-440	pegar	verb	0	235.167		to grab, to take hold of; to catch; to start (engine)	Pegou na minha caneta.	He took my pen.		model
-441	pé	noun	0	234.091		foot; ao pé de: next to	O meu pé cresceu!	My foot has grown!		model
-442	vamos lá	mwe	1	232.752		come on; let's go	Scout, vamos lá.	Scout, come on.		model
-443	lamentar	verb	0	231.802	0.687	to be sorry; to regret; to lament	Lamento, mas não podes.	I'm sorry, but you can't.		model
-444	exatamente	adv	0	231.522		exactly; precisely	Sei exactamente do que precisas.	I know exactly what you need.		model
-445	escolher	verb	0	230.319		to choose; to pick	Vá lá, escolhe um.	Come on, pick one.		model
-446	livro	noun	0	230.115		book	E sobre o livro?	And what about the book?		model
-447	proteger	verb	0	229.912		to protect	Protegeste o teu irmão.	You protected your brother.		model
-448	escola	noun	0	229.139		school	Olha, ali está a escola.	Look, there's the school.		model
-449	capitão	noun	0	228.820		captain	Capitão, o que devo fazer?	Captain, what should I do?		model
-450	festa	noun	0	228.794		party; celebration	Quero fazer uma festa.	I want to throw a party.		model
-451	quatro	num	0	228.058		four	Faço-o em quatro minutos.	I'll do it in four minutes.		model
-452	bater	verb	0	227.838		to hit; to knock; to beat	Podes bater à porta.	You can knock on the door.		model
-453	fechar	verb	0	227.612		to close; to shut; to close down	A porta não fecha!	The door won't close!		model
-454	irmã	noun	0	227.465		sister; nun (Sister)	Estou à procura da minha irmã.	I'm looking for my sister.		model
-455	baixo	noun	0	227.444	0.694	"down (in ""para baixo""); downstairs; bass (instrument)"	Toma, leva para baixo.	Here, take this downstairs.		model
-456	possível	adj	0	226.923		possible	Pai, isso não é possível.	Dad, that's not possible.		model
-457	minha mãe	mwe	1	226.433		my mother	Queria ir ver a minha mãe.	I wanted to go see my mother.		model
-458	bebé	noun	0	225.961		baby	Não toco em bebés.	I don't touch babies.		model
-459	enquanto	conj	0	225.573	0.708	while; as long as; whereas	Podia ter-te abraçado enquanto choravas.	I could have hugged you while you were crying.		model
-460	ar	noun	0	225.003		air; look (appearance); air (broadcast)	E o ar na fábrica é sujo.	And the air in the factory is dirty.		model
-461	esconder	verb	0	224.676		to hide; to hide oneself	Eu não vou esconder isto.	I'm not going to hide this.		model
-462	ontem	adv	0	223.742		yesterday	Então, como foi ontem à noite?	So, how was last night?		model
-463	jogar	verb	0	223.603		to play (game, sport); to throw	Onde estão a jogar?	Where are they playing?		model
-464	presidente	noun	0	223.592		president; chairman	O presidente não está desesperado.	The president isn't desperate.		model
-465	logo	adv	0	223.372		soon; right away; right (emphatic)	Vamos acabar logo com isto.	Let's get this over with right away.		model
-466	acordo	noun	0	223.151		agreement; deal; (de acordo com) according to	Eu posso aprovar um acordo.	I can approve a deal.		model
-467	negócio	noun	0	221.748		business; deal	Eu também tenho um negócio.	I have a business too.		model
-468	vai ser	mwe	1	221.242		it's going to be; will be	O senhor vai ser indiciado?	Are you going to be indicted, sir?		model
-469	marido	noun	0	221.037		husband	O seu marido está morto.	Your husband is dead.		model
-470	na verdade	mwe	1	220.410		actually; in fact	Na verdade isto é engraçado.	Actually, this is funny.		model
-471	alto	adj	0	218.938		tall; high; loud	Ser alto é melhor que ser baixo.	Being tall is better than being short.		model
-472	afastar	verb	0	218.866		to move away; to keep away from; to push aside	Sam, afasta-te da janela.	Sam, get away from the window.		model
-473	ordem	noun	0	218.581		order (command); order (arrangement)	Sim, são ordens dele.	Yes, they're his orders.		model
-474	lutar	verb	0	216.038		to fight; to struggle	Vieste lutar comigo?	Did you come to fight me?		model
-475	realmente	adv	0	215.959		really; actually, indeed	Estou realmente confusa.	I'm really confused.		model
-476	criar	verb	0	214.444		to create; to raise (a child); to breed	Ele criou a série.	He created the series.		model
-477	compreender	verb	0	214.296		to understand	O papá vai compreender.	Dad will understand.		model
-478	imaginar	verb	0	213.957		to imagine; to suppose	Eu nunca imaginei isso.	I never imagined that.		model
-479	mentir	verb	0	213.306		to lie	A Clemmie não mentiu.	Clemmie didn't lie.		model
-480	ler	verb	0	211.985		to read	Que andas a ler?	What are you reading?		model
-481	pena	noun	0	211.823		pity, shame; (to be) worth it; sentence (prison)	Vale a pena ter amigos.	It's worth having friends.		model
-482	decidir	verb	0	211.707		to decide	Ela decide, não nós.	She decides, not us.		model
-483	esta noite	mwe	1	211.668		tonight; last night	Vou sobreviver a esta noite?	Will I survive tonight?		model
-484	trás	adv	0	210.675		back, behind (para/de trás)			uncertain	model
-485	depressa	adv	0	209.635		quickly; hurry up	Está bem, vem depressa!	All right, come quickly!		model
-486	aprender	verb	0	209.593		to learn	Já aprendi muito hoje.	I've already learned a lot today.		model
-487	valer	verb	0	208.631		to be worth; to be valid; to be worthwhile (valer a pena)	Não vale a pena, Conan.	It's not worth it, Conan.		model
-488	mil	num	0	208.622		thousand	Eu preciso de cinco mil.	I need five thousand.		model
-489	à noite	mwe	1	208.605		at night; in the evening; tonight	O que é que se passou ontem à noite?	What happened last night?		model
-490	prova	noun	0	208.113		proof; evidence; test (exam)	Ela tem provas?	Does she have proof?		model
-491	nesta	det	0	208.011		in this; on this; at this	Eu coloquei-a nesta casa.	I put her in this house.		model
-492	prazer	noun	0	207.840		pleasure; nice to meet you	É um prazer trabalhar convosco.	It's a pleasure to work with you.		model
-493	na minha	mwe	1	207.167		in my; on my (feminine)	Quando acordei, estava na minha cama.	When I woke up, I was in my bed.		model
-494	rei	noun	0	206.578		king	Saúdem o rei Ander!	Hail King Ander!		model
-495	fácil	adj	0	206.014		easy	Gosto de coisas fáceis.	I like easy things.		model
-496	luz	noun	0	205.350		light	Alguém apagou as luzes.	Someone turned off the lights.		model
-497	servir	verb	0	204.644		to serve; to be of use; to fit	O sangue dele serve?	Will his blood do?		model
-498	atirar	verb	0	204.503		to throw; to shoot (fire); to hit on (atirar-se)	Atira as chaves para aqui.	Throw the keys over here.		model
-499	miúda	noun	0	204.484		girl; kid (female); girlfriend	Amo a minha miúda.	I love my girl.		model
-500	responder	verb	0	204.011		to answer; to reply; to respond	Não posso responder a todas.	I can't answer all of them.		model
-501	acordar	verb	0	203.388		to wake up; to wake (someone); to agree on	A Betty acordou às cinco.	Betty woke up at five.		model
-502	escutar	verb	0	203.372		to listen; to hear	Só quero que escutes.	I just want you to listen.		model
-503	demasiado	adv	0	203.031		too; too much	Estou demasiado velha para isso.	I'm too old for that.		model
-504	telefone	noun	0	202.960		telephone; phone number	Porque não tenho telefone.	Because I don't have a phone.		model
-505	verdadeiro	adj	0	202.092		true; real, genuine	A minha verdadeira paixão.	My true passion.		model
-506	tu és	mwe	1	201.682		you are	Mas tu és tão jovem!	But you're so young!		model
-507	forte	adj	0	201.433		strong	E nós somos os mais fortes.	And we're the strongest.		model
-508	minha vida	mwe	1	200.596		my life	Estes miúdos são a minha vida!	These kids are my life!		model
-509	longe	adv	0	200.145		far; far away	Fica longe da água.	Stay away from the water.		model
-510	terminar	verb	0	197.106		to finish; to end; to break up (with someone)	Tenho que terminar isso.	I have to finish that.		model
-511	passado	adj	0	196.331	0.725	last (week, year); past	Despediu-o na semana passada.	He fired him last week.		model
-512	próprio	adj	0	195.687	0.537	own; himself/herself (emphatic); very (same)	Tinha a sua própria igreja.	He had his own church.		model
-513	belo	adj	0	195.675		beautiful; fine, nice	É uma bela flor.	It's a beautiful flower.		model
-514	notícia	noun	0	195.357		news; piece of news	A boa notícia é que:	The good news is:		model
-515	prender	verb	0	195.059		to arrest; to fasten, to tie up; to hold, to trap	Não podes prender-me aqui!	You can't keep me locked up here!		model
-516	cão	noun	0	195.057		dog	Afaste-se do cão!	Get away from the dog!		model
-517	destruir	verb	0	195.026		to destroy; to ruin	Destruiu a família dele.	He destroyed his family.		model
-518	milhão	num	0	194.481		million	Um milhão de piadas.	A million jokes.		model
-519	muito tempo	mwe	1	194.258		a long time	Não fui capaz disso durante muito tempo.	I wasn't able to do that for a long time.		model
-520	jantar	noun	0	193.189		dinner	Está na hora de servir o jantar.	It's time to serve dinner.		model
-521	porra	noun	0	193.065		damn; fuck (interjection); fucking (intensifier)	Porra, és mesmo esperta.	Damn, you're really smart.	vulgar	model
-522	vender	verb	0	193.045		to sell	Ele vendeu-lhe os mísseis.	He sold him the missiles.		model
-523	gente	noun	0	192.288	0.522	people; folks	Toda a gente tem um nome.	Everybody has a name.		model
-524	rua	noun	0	192.115		street	Tentava atravessar a rua.	He was trying to cross the street.		model
-525	cortar	verb	0	191.870		to cut; to cut off; to cut out	Ela cortou-lhe a cabeça.	She cut off his head.		model
-526	ponto	noun	0	191.851		point; dot; stitch	Um ponto para mim, zero para ti.	One point for me, zero for you.		model
-527	teu pai	mwe	1	191.490		your father	O teu pai chega em breve.	Your father will be here soon.		model
-528	filme	noun	0	190.795		film, movie	Era um filme muito engraçado.	It was a very funny film.		model
-529	sítio	noun	0	189.583		place; spot; site	É um sítio onde ninguém vai.	It's a place where nobody goes.		model
-530	sinal	noun	0	189.438		sign; signal; traffic light	Há sinais de luta?	Are there signs of a struggle?		model
-531	especial	adj	0	189.389		special	Tenho algo especial para você.	I have something special for you.		model
-532	explicar	verb	0	189.231		to explain	Eu não posso explicar, mãe.	I can't explain, Mom.		model
-533	pior	adj	0	188.789		worse; worst	As miúdas são piores do que os rapazes.	Girls are worse than boys.		model
-534	qualquer coisa	mwe	1	188.252		anything; something	Não há amendoins ou pretzels, qualquer coisa?	There aren't any peanuts or pretzels, anything?		model
-535	direito	noun	0	188.218		right (entitlement); law (field of study)	E os meus direitos?	And what about my rights?		model
-536	sala	noun	0	188.175		room; living room	Não há câmaras nesta sala, hã?	There are no cameras in this room, huh?		model
-537	assassino	noun	0	187.903		murderer; killer	Procuramos um assassino.	We're looking for a murderer.		model
-538	paz	noun	0	187.793		peace	Somos de paz, sempre.	We come in peace, always.		model
-539	culpa	noun	0	187.163		fault; blame; guilt	É culpa minha, suponho.	It's my fault, I suppose.		model
-540	casar	verb	0	186.780		to marry; to get married	Ele nunca se casou.	He never got married.		model
-541	bom dia	mwe	1	186.161		good morning	Bom dia, Susan.	Good morning, Susan.		model
-542	informação	noun	0	185.403		information	Eu tenho alguma informação.	I have some information.		model
-543	além	adv	0	184.155		besides; beyond; apart from	Além disso, não tenho 17 anos.	Besides, I'm not 17 years old.		model
-544	fazer isto	mwe	1	183.976		to do this	Não compreendo porque tens de fazer isto.	I don't understand why you have to do this.		model
-545	aguentar	verb	0	182.584		to bear; to hold on; to withstand	Já não aguento mais	I can't take it any more		model
-546	seis	num	0	181.658		six	Estou cá há seis anos.	I've been here for six years.		model
-547	falta	noun	0	180.195		lack; absence; foul (sports)	É por causa da tua falta de finalidades.	It's because of your lack of goals.		model
-548	quero dizer	mwe	1	178.965		I mean; I want to say	Quero dizer, se calhar vão a algum lado.	I mean, maybe they're going somewhere.		model
-549	má	adj	0	178.849		bad; evil	A história era má.	The story was bad.		model
-550	disparar	verb	0	178.803		to shoot; to fire; to shoot up (soar)	Quem disparou a arma?	Who fired the gun?		model
-551	resolver	verb	0	178.178		to solve; to sort out; to decide	Já resolvemos o problema.	We've already solved the problem.		model
-552	país	noun	0	177.356		country	Não é assim neste país.	It's not like that in this country.		model
-553	casamento	noun	0	177.305		marriage; wedding	O meu casamento com Elizabeth?	My marriage to Elizabeth?		model
-554	médico	noun	0	176.975	0.697	doctor	Não quer ir ao médico.	He doesn't want to go to the doctor.		model
-555	gente	pron	0	176.315	0.478	everybody (toda a gente); we, us	Toda a gente tem um nome.	Everybody has a name.		model
-556	estúpido	adj	0	176.310		stupid; rude, mean	Isto é tão estúpido.	This is so stupid.		model
-557	cama	noun	0	175.979		bed	Vá, mete-te na cama.	Come on, get into bed.		model
-558	pelos	det	0	175.839		by the; for the; through the	Uma passa pelos velhos tempos.	One for old times' sake.		model
+214	muito bem	mwe	1	601.883		all right; very well; well done	Muito bem, rapazes, tenho de ir.	All right, boys, I have to go.		model
+215	volta	noun	0	601.325		turn; return (de volta = back); lap	Oficial, leve-nos já de volta.	Officer, take us back right now.		model
+216	perceber	verb	0	594.281		to understand; to realize; to notice	Eu percebo, eu percebo.	I understand, I understand.		model
+217	vosso	det	0	591.521		your (plural); yours	O vosso pai está aqui.	Your father is here.		model
+218	nenhum	det	0	591.205		no; none; any (in negatives)	Não temos nenhum suspeito.	We don't have any suspect.		model
+219	continuar	verb	0	590.495		to continue; to keep on; to still be	A mãe continua fora?	Is Mum still out?		model
+220	primeiro	adj	0	584.625	0.705	first	Foi o meu primeiro serviço.	It was my first job.		model
+221	apanhar	verb	0	582.848		to catch; to pick up; to get caught / take a beating	Apanhe um taxi.	Take a taxi.		model
+222	carro	noun	0	581.670		car	Onde deixou o carro?	Where did you leave the car?		model
+223	certeza	noun	0	576.013		certainty; sure (ter a certeza); of course (com certeza)	Eu tenho a certeza que é ela.	I'm sure it's her.		model
+224	claro	adv	0	575.242	0.644	of course; sure; clearly	Oh sim, é claro.	Oh yes, of course.		model
+225	às	det	0	572.149		at (o'clock); to the (fem. pl.)	Que tal às nove?	How about nine o'clock?		model
+226	pronto	adj	0	564.912		ready; (as interjection) okay, that's it	O bacon está pronto.	The bacon is ready.		model
+227	contar	verb	0	563.715		to tell; to count; to count on	Queres que te conte?	Do you want me to tell you?		model
+228	mal	adv	0	560.810		badly; hardly, barely	Por muito mal que estivesse, não chegaria a esse extremo.	However badly off he was, he wouldn't go that far.		model
+229	último	adj	0	555.289		last; latest; final	Queriam as últimas notícias?	Did you want the latest news?		model
+230	mundo	noun	0	554.604		world	Já não pertences a este mundo.	You no longer belong to this world.		model
+231	lado	noun	0	550.197		side	Mudaste de lado?	Did you switch sides?		model
+232	tomar	verb	0	550.120		to take; to drink (have); to take over (seize)	Não vai tomar banho?	Aren't you going to take a bath?		model
+233	oh	intj	0	541.667		oh	Oh, queres ajudar?	Oh, do you want to help?		model
+234	contigo	pron	0	540.615		with you	Anda cá, deixa-me falar contigo.	Come here, let me talk to you.		model
+235	três	num	0	539.785		three	Três semanas é um piscar de olhos.	Three weeks is the blink of an eye.		model
+236	ideia	noun	0	537.236		idea	Juro que não fazia ideia.	I swear I had no idea.		model
+237	meu deus	mwe	1	533.145		my God; oh my God	Meu Deus, estava tão preocupada.	My God, I was so worried.		model
+238	embora	adv	0	532.231		away (in ir embora: to leave, go away)	O Viktor vai-se embora!	Viktor is leaving!		model
+239	rapaz	noun	0	525.501		boy; guy; (plural) guys	Rapazes, entrem no carro.	Guys, get in the car.		model
+240	mão	noun	0	522.964		hand	Cuidado com a mão.	Careful with your hand.		model
+241	porquê	adv	0	521.970		why	E posso perguntar-lhe porquê?	And may I ask you why?		model
+242	nas	det	0	521.444		in the (fem. pl.); on the; at the	Compro uma casa nas montanhas.	I'll buy a house in the mountains.		model
+243	numa	det	0	520.214		in a; into a; at a	Temos de pensar numa solução.	We have to think of a solution.		model
+244	parte	noun	0	519.821		part; share; place (somewhere)	E essa nem é a melhor parte.	And that's not even the best part.		model
+245	menos	adv	0	519.576		less; fewer; at least (pelo menos)	Bom, pelo menos tudo acabou.	Well, at least it's all over.		model
+246	todos os	mwe	1	517.724		all the; every	todos os rapazes são iguais.	All boys are the same.		model
+247	outro	pron	0	512.237	0.281	another; other; the other one	Não tenho outro local.	I don't have another place.		model
+248	amar	verb	0	510.372		to love	Ele nunca me amou.	He never loved me.		model
+249	arma	noun	0	507.430		gun; weapon	E tu guarda essa arma.	And you, put that gun away.		model
+250	lugar	noun	0	507.337		place; seat; position (rank)	Eu adoro este lugar.	I love this place.		model
+251	tanto	det	0	503.663		so much; so many	Temos tanto que fazer.	We have so much to do.		model
+252	tratar	verb	0	500.427		to treat; to deal with, take care of; to address (as)	O Walter trata disso.	Walter will take care of that.		model
+253	vos	pron	0	496.228		you (plural object); to you (plural)	Vejo-vos na próxima semana.	I'll see you next week.		model
+254	uma coisa	mwe	1	495.821		something; one thing	Tenho uma coisa para tratar.	I have something to take care of.		model
+255	família	noun	0	495.799		family	Mas tens uma família, Willie.	But you have a family, Willie.		model
+256	desculpar	verb	0	495.323		to excuse, forgive; sorry, excuse me; to apologize	Desculpe, amanhã não posso.	Sorry, I can't tomorrow.		model
+257	aos	det	0	491.459		to the (masc. pl.); at the	Já agora, fui aos correios hoje.	By the way, I went to the post office today.		model
+258	entender	verb	0	490.486		to understand	Eu entendo o porquê.	I understand why.		model
+259	viver	verb	0	490.178		to live; to reside	É onde tu vives.	That's where you live.		model
+260	dentro	adv	0	489.030		inside; within (time); in	Estarei no Cobra dentro de uma hora.	I'll be at the Cobra in an hour.		model
+261	razão	noun	0	488.226		reason; right (in ter razão)	Tens razão, isto é incrível.	You're right, this is incredible.		model
+262	ótimo	adj	0	485.455		great; excellent; fine	O bolo está ótimo.	The cake is great.		model
+263	minuto	noun	0	483.023		minute	Claro, é só um minuto.	Sure, it'll just be a minute.		model
+264	esquecer	verb	0	479.042		to forget	Vês, já me esqueci.	See, I've already forgotten.		model
+265	mudar	verb	0	475.995		to change; to move (house)	As regras não mudaram.	The rules haven't changed.		model
+266	único	adj	0	475.511		only; single; unique	Era o único portão.	It was the only gate.		model
+267	polícia	noun	0	470.910		police; police officer, cop	Porque é que não vais à polícia?	Why don't you go to the police?		model
+268	ali	adv	0	458.604		there; over there	Sim, ele está ali atrás.	Yes, he's back there.		model
+269	manter	verb	0	452.033		to keep; to maintain; to stay (reflexive)	Vamos manter isto entre nós?	Shall we keep this between us?		model
+270	esse	pron	0	449.500	0.262	that one; that; those	Fico com esse.	I'll take that one.		model
+271	abrir	verb	0	446.247		to open	Kathy, abre a porta.	Kathy, open the door.		model
+272	descobrir	verb	0	439.787		to find out; to discover	Descobre quem eles são.	Find out who they are.		model
+273	seguir	verb	0	438.963		to follow; to carry on; to go (in a direction)	Segue-me, vou-te mostrar.	Follow me, I'll show you.		model
+274	ele está	mwe	1	435.409		he is (in a state/place)	Porque é que ele está a andar em círculos perto do elevador?	Why is he walking in circles near the elevator?		model
+275	pagar	verb	0	434.940		to pay; to pay for	Eles pagam-te por isso?	Do they pay you for that?		model
+276	pois	conj	0	434.415	0.600	because, for; well then; right (agreeing)	Não és um rapaz, pois não?	You're not a boy, are you?		model
+277	segundo	adj	0	430.051		second (2nd); second (unit of time)	Querida, espera um segundo.	Honey, wait a second.		model
+278	correr	verb	0	428.918		to run; to go (turn out)	Foi bom... correu bem.	It was good... it went well.		model
+279	comer	verb	0	426.113		to eat; to fuck (vulgar)	Alí, come um pouco.	Here, eat a bit.		model
+280	nem	adv	0	425.909	0.400	not even; nor	Ela nem sabia cozinhar.	She didn't even know how to cook.		model
+281	mandar	verb	0	424.873		to send; to order (someone to do sth); to be in charge	Tem de mandar alguém.	You have to send someone.		model
+282	caso	conj	0	419.242		in case; if	Caso algo surja às três da manhã.	In case something comes up at three in the morning.		model
+283	cabeça	noun	0	418.119		head; mind	Levanta a cabeça, filho.	Lift up your head, son.		model
+284	si	pron	0	417.775		you (formal, after preposition); himself/herself/itself; oneself	Sr. De Haeck, tenho más notícias para si.	Mr. De Haeck, I have bad news for you.		model
+285	irmão	noun	0	415.238		brother	Exigência do teu irmão.	Your brother's demand.		model
+286	ajuda	noun	0	415.128		help; aid	A família precisa de ajuda.	The family needs help.		model
+287	semana	noun	0	414.337		week	Não tenho nada esta semana.	I have nothing this week.		model
+288	raio	noun	0	413.125		the hell (intensifier); damn; lightning bolt	Meu Deus, que raio é isso?	My God, what the hell is that?		model
+289	momento	noun	0	412.630		moment; time	Pode dar-nos um momento, Cathy?	Can you give us a moment, Cathy?		model
+290	aquilo	pron	0	412.353		that; that thing	aquilo foi uma loucura.	that was crazy.		model
+291	onde está	mwe	1	409.180		where is	Então onde está o Chance?	So where's Chance?		model
+292	forma	noun	0	408.258		way, manner; shape, form	Há alguma forma de o contactar?	Is there any way to contact him?		model
+293	atrás	adv	0	406.186		behind; back; ago	Vamos, estarei bem atrás de ti.	Come on, I'll be right behind you.		model
+294	cidade	noun	0	400.730		city; town	Não entendo essa cidade.	I don't understand this city.		model
+295	pequeno	adj	0	399.508		small; little	Essas são pequenas partículas.	Those are small particles.		model
+296	olho	noun	0	398.965		eye	Mantem-no debaixo de olho.	Keep an eye on him.		model
+297	importar	verb	0	398.019		to matter; to mind, to care; to import	Os nomes não importam.	Names don't matter.		model
+298	mostrar	verb	0	397.389		to show	Mostra-me o resto.	Show me the rest.		model
+299	conta	noun	0	396.717		bill; account; (tomar conta) to take care of	Quanto é a conta dela?	How much is her bill?		model
+300	história	noun	0	395.569		story; history	Já contaste a tua história.	You've already told your story.		model
+301	porta	noun	0	395.242		door	Abre a porta, ajuda-os!	Open the door, help them!		model
+302	adorar	verb	0	394.477		to love; to adore	A Kate adora tofu.	Kate loves tofu.		model
+303	perguntar	verb	0	386.924		to ask	Todos perguntam por ela.	Everyone asks about her.		model
+304	deles	pron	0	386.275		their; of them; theirs	Toma conta deles, eu vou buscar ajuda!	Take care of them, I'm going to get help!		model
+305	entre	prep	0	383.804		between; among	Não escolherei entre eles.	I won't choose between them.		model
+306	arranjar	verb	0	379.541		to get; to find; to fix	Onde arranjaste esse cinto?	Where did you get that belt?		model
+307	preocupar	verb	0	378.884		to worry; to concern	Não te preocupes, Will.	Don't worry, Will.		model
+308	amor	noun	0	377.445		love; darling, sweetheart	Então amor, que se passa?	So, love, what's going on?		model
+309	com ele	mwe	1	374.402		with him; with it	Quero saber o que se passa com ele.	I want to know what's going on with him.		model
+310	frente	noun	0	374.319		front; ahead (em frente); front (of a building)	Oscar, sai da frente.	Oscar, get out of the way.		model
+311	senhora	noun	0	372.913		lady, madam; you (polite, to a woman); wife	A senhora está ocupada.	The lady is busy.		model
+312	ganhar	verb	0	372.354		to win; to earn; to gain	Olha o que ganhei.	Look what I won.		model
+313	vivo	adj	0	370.723		alive; living; lively	E ela também está viva?	And is she alive too?		model
+314	até	adv	0	370.334	0.260	even; until; up to	Bom, isto até pode ser divertido.	Well, this could even be fun.		model
+315	desde	prep	0	370.013		since; from	Desde então que estamos juntos.	We've been together ever since.		model
+316	ok	intj	0	367.834		OK; all right	Ok, mais dois dias.	OK, two more days.		model
+317	tarde	adv	0	358.998		late	Hoje já é muito tarde.	It's too late today.		model
+318	os meus	mwe	1	358.450		my (masculine plural)	Por favor, encontras os meus filhos?	Please, can you find my children?		model
+319	procurar	verb	0	356.501		to look for; to seek; to try to	Procuro a sala 310.	I'm looking for room 310.		model
+320	tornar	verb	0	353.893		to make; to become (tornar-se)	Não a torna real.	It doesn't make it real.		model
+321	criança	noun	0	352.693		child; kid	Desde que era criança.	Ever since I was a child.		model
+322	morte	noun	0	350.976		death	Não, não tenho medo da morte.	No, I'm not afraid of death.		model
+323	lhes	pron	0	349.618		them (to them); you (formal plural)	Alguém lhes disse onde e quando.	Someone told them where and when.		model
+324	maneira	noun	0	348.616		way; manner; manners	Há muitas maneiras de fazer isso.	There are many ways to do that.		model
+325	deus	intj	0	348.253	0.298	my God!; God!; good heavens	Meu Deus, estava tão preocupada.	My God, I was so worried.		model
+326	vá lá	mwe	1	346.665		come on; go on; all right then	Vá lá, di-lo em voz alta!	Come on, say it out loud!		model
+327	próximo	adj	0	346.186		next; close; near	Vemo-nos no próximo fim-de-semana.	See you next weekend.		model
+328	feliz	adj	0	345.696		happy	Fico feliz por vê-la.	I'm glad to see her.		model
+329	dormir	verb	0	344.871		to sleep; to sleep with (have sex)	Paige, estou a dormir.	Paige, I'm sleeping.		model
+330	cima	noun	0	343.847		top; up (em cima: upstairs, on top)	Temos alguns casos lá em cima.	We have a few cases up there.		model
+331	salvar	verb	0	343.410		to save; to rescue	Salvaste-me a vida, Morgan!	You saved my life, Morgan!		model
+332	sozinho	adj	0	340.616		alone; lonely; by oneself	Eu estava sozinho.	I was alone.		model
+333	pergunta	noun	0	340.118		question	Muito bem, qual é a pergunta?	All right, what's the question?		model
+334	junto	adv	0	339.987		together; next to (junto a/de); along	Estamos junto à porta.	We're right by the door.		model
+335	durante	prep	0	338.462		during; for (a period of)	Sim, só durante esta semana.	Yes, only during this week.		model
+336	velho	adj	0	338.126		old; elderly	Os teus velhos amigos.	Your old friends.		model
+337	receber	verb	0	337.820		to receive, to get; to be paid; to welcome, to receive (guests)	Recebi agora a chamada.	I just got the call.		model
+338	amanhã	adv	0	337.714		tomorrow	Amanhã é a acusação.	The arraignment is tomorrow.		model
+339	quase	adv	0	337.009		almost, nearly	Eu quase não me lembro.	I barely remember.		model
+340	caminho	noun	0	336.591		way; path; road	É só um obstáculo no caminho.	It's just an obstacle in the way.		model
+341	todas as	mwe	1	333.096		all the (fem. pl.); every	Considerei todas as possibilidades.	I considered all the possibilities.		model
+342	medo	noun	0	331.684		fear	Estava a tremer de medo.	I was trembling with fear.		model
+343	contra	prep	0	331.313		against	Está a trabalhar contra vocês.	He's working against you.		model
+344	partir	verb	0	326.858		to leave, depart; to break	O rei partiu de Londres.	The king departed from London.		model
+345	as pessoas	mwe	1	325.986		people	As pessoas aceitam os seus julgamentos.	People accept your judgements.		model
+346	cara	noun	0	322.728		face; guy, dude (BP)	Conheço a tua cara muito bem.	I know your face very well.		model
+347	mês	noun	0	322.431		month	E em apenas um mês!	And in just one month!		model
+348	agente	noun	0	321.741		agent; officer	Onde está o agente Poole?	Where is Agent Poole?		model
+349	da minha	mwe	1	318.796		of my; from my	Eu não estou a dar graxa, pai, eu gosto da minha professora.	I'm not sucking up, Dad, I like my teacher.		model
+350	pode ser	mwe	1	318.355		it may be; maybe; okay (that works)	Pode ser uma boa mudança para si.	It could be a good change for you.		model
+351	claro	adj	0	317.985	0.356	clear; obvious; light (colour)	A minha posição é bastante clara.	My position is quite clear.		model
+352	meu pai	mwe	1	317.698		my father; my dad	Fui a Itália com o meu pai.	I went to Italy with my father.		model
+353	desta	det	0	311.671		of this; from this	Desta vez, superaste-te mesmo.	This time, you really outdid yourself.		model
+354	pessoal	adj	0	311.388		personal; guys/everyone (as noun); staff, crew	Está tudo bem, pessoal, é só um acidente.	It's all right, guys, it's just an accident.		model
+355	filha	noun	0	311.361		daughter	A sua filha viu?	Did your daughter see?		model
+356	neste	det	0	308.775		in this	Só estar neste mundo?	Just being in this world?		model
+357	rapariga	noun	0	307.374		girl; young woman	Haverá raparigas no baile?	Will there be girls at the dance?		model
+358	sentar	verb	0	307.231		to sit down; to seat	Senta-te, por favor.	Sit down, please.		model
+359	importante	adj	0	302.858		important	Sim, sim, é importante.	Yes, yes, it's important.		model
+360	difícil	adj	0	300.384		difficult; hard	Não seria tão difícil.	It wouldn't be that hard.		model
+361	cada	det	0	299.206		each; every	Cada fio representa uma pessoa.	Each thread represents a person.		model
+362	sorte	noun	0	299.177		luck; fate	Boa sorte com a turma.	Good luck with the class.		model
+363	palavra	noun	0	298.975		word; word (promise)	Tens a minha palavra, filho.	You have my word, son.		model
+364	causa	noun	0	298.386		cause; reason; sake	Quem morre por minha causa?	Who dies because of me?		model
+365	as coisas	mwe	1	298.081		things	As coisas estavam finalmente a melhorar.	Things were finally getting better.		model
+366	significar	verb	0	298.078		to mean; to signify	Ok, o que significa isto?	Okay, what does this mean?		model
+367	buscar	verb	0	297.291		to fetch; to go get; to seek	Vai buscar o brandy, está bem?	Go get the brandy, okay?		model
+368	jogo	noun	0	296.686		game; match; gambling	Um jogo para ti?	A game for you?		model
+369	disto	pron	0	295.489		of this; about this	Tu sabes disto, certo?	You know about this, right?		model
+370	tal	adv	0	295.038	0.730	such; how about (que tal); just as (tal como)	Que tal umas tréguas?	How about a truce?		model
+371	fugir	verb	0	293.976		to run away; to flee; to escape	Napoleão fugiu de Elba.	Napoleon escaped from Elba.		model
+372	comprar	verb	0	293.825		to buy	Tenho de comprar bananas.	I have to buy bananas.		model
+373	quarto	adj	0	292.936		room; fourth	Foi para o quarto.	He went to the bedroom.		model
+374	roubar	verb	0	290.941		to steal; to rob	Roubaste um telemóvel?	You stole a cellphone?		model
+375	morto	adj	0	290.087	0.673	dead	Agora ela está morta	Now she's dead		model
+376	número	noun	0	289.973		number	Ela perguntou o meu número.	She asked for my number.		model
+377	pois	adv	0	289.611	0.400	yeah, right; well then; (pois não) right?, isn't it?	Não és um rapaz, pois não?	You're not a boy, are you?		model
+378	beber	verb	0	289.523		to drink	Bebe um copo, pago eu.	Have a drink, I'm paying.		model
+379	água	noun	0	287.067		water	Estamos sem água também.	We're out of water too.		model
+380	estranho	adj	0	286.519		strange, odd; stranger	É uma festa estranha.	It's a strange party.		model
+381	desaparecer	verb	0	286.195		to disappear; to vanish; to get lost (go away)	Olhe, está a desaparecer.	Look, it's disappearing.		model
+382	corpo	noun	0	285.215		body; corpse	E onde esconderão o corpo?	And where will they hide the body?		model
+383	cuidado	noun	0	284.862		care; watch out!; caution	Cuidado com o carro!	Watch out for the car!		model
+384	sangue	noun	0	282.435		blood	Estás pronto para beber sangue?	Are you ready to drink blood?		model
+385	existir	verb	0	281.679		to exist; there to be	Só existe uma Eva.	There's only one Eva.		model
+386	força	noun	0	281.454		strength; force	Ele só tem força num braço!	He only has strength in one arm!		model
+387	escrever	verb	0	279.948		to write	Escreve o que quiseres.	Write whatever you want.		model
+388	seguro	adj	0	278.825		safe; secure; sure	A rua está segura?	Is the street safe?		model
+389	guerra	noun	0	275.782		war	A guerra acabou, mulher.	The war is over, woman.		model
+390	lindo	adj	0	275.322		beautiful; lovely	Tu estás linda hoje.	You look beautiful today.		model
+391	rápido	adj	0	275.254		fast, quick; quickly	Isto foi rápido!	That was quick!		model
+392	manhã	noun	0	275.238		morning	Não é todas as manhãs.	It's not every morning.		model
+393	tocar	verb	0	274.458		to touch; to play (music); to ring	Toca no meu peito!	Touch my chest!		model
+394	plano	noun	0	273.883		plan; shot (camera)	Tenho um plano fantástico.	I have a fantastic plan.		model
+395	maior	adj	0	271.947		bigger; biggest; greater	É um dos maiores instrumentos.	It's one of the biggest instruments.		model
+396	adeus	intj	0	271.509		goodbye	Adeus, malta.	Goodbye, guys.		model
+397	cair	verb	0	268.853		to fall; to fall down; to drop	Eu vi-o cair.	I saw him fall.		model
+398	terra	noun	0	268.826		earth; land; hometown	Não mais canções da Terra.	No more songs of Earth.		model
+399	ei	intj	0	267.822		hey	Ei, olhe para lá.	Hey, look over there.		model
+400	perto	adv	0	266.993		near; close; nearby	Este castelo está perto do mar.	This castle is near the sea.		model
+401	bonito	adj	0	265.246		pretty; beautiful; nice	Sim, É um nome bonito.	Yes, it's a pretty name.		model
+402	confiar	verb	0	264.585		to trust; to entrust	Ouve-me, confia em mim.	Listen to me, trust me.		model
+403	mau	adj	0	263.839		bad; evil; nasty	Sou um tipo mau.	I'm a bad guy.		model
+404	miúdo	noun	0	260.127		kid; child	Os miúdos estão com ela.	The kids are with her.		model
+405	calar	verb	0	258.105		to shut up; to be quiet; to silence	John, cala a boca.	John, shut up.		model
+406	cinco	num	0	257.096		five	Não te via há uns cinco anos.	I hadn't seen you in about five years.		model
+407	altura	noun	0	257.082		time (moment); height	Agora, é a altura de lutar.	Now is the time to fight.		model
+408	segurança	noun	0	256.801		security; safety; security guard	Eu vou chamar o segurança.	I'm going to call security.		model
+409	enviar	verb	0	256.737		to send	Ele enviou-me uma mensagem.	He sent me a message.		model
+410	aparecer	verb	0	256.735		to appear; to show up; to turn up	O Chandler já apareceu?	Has Chandler shown up yet?		model
+411	equipa	noun	0	256.693		team	Faço parte de uma equipa.	I'm part of a team.		model
+412	colocar	verb	0	256.680		to put; to place; to put on	Coloque o seu casaco.	Put on your coat.		model
+413	procura	noun	0	256.218		search (mostly in à procura de: looking for); demand	Estou à procura de uma coisa.	I'm looking for something.		model
+414	outra vez	mwe	1	255.001		again	Experimenta outra vez, Greg.	Try again, Greg.		model
+415	dólar	noun	0	253.805		dollar	Um dólar está bem.	One dollar is fine.		model
+416	aceitar	verb	0	253.100		to accept; to agree to	Não, não aceito isto!	No, I won't accept this!		model
+417	dr	noun	0	252.789		Dr. (title)	Fala o Dr. Alberts.	This is Dr. Alberts speaking.		model
+418	calma	noun	0	252.104		calm; easy!, take it easy (as interjection)	Calma, ele vem a caminho.	Take it easy, he's on his way.		model
+419	deste	det	0	251.703		of this; from this	O ego dele é deste tamanho.	His ego is this big.		model
+420	mexer	verb	0	251.347		to move; to touch (meddle with); to stir	Não te mexas, Julie.	Don't move, Julie.		model
+421	quer dizer	mwe	1	250.915		that is; I mean; it means	Quer dizer, vamo-nos casar amanhã.	I mean, we're getting married tomorrow.		model
+422	chefe	noun	0	250.188		boss; chief, head	Sou o chefe desta clinica.	I'm the boss of this clinic.		model
+423	prometer	verb	0	250.133		to promise	Não posso prometer nada.	I can't promise anything.		model
+424	obrigado	verb	0	249.380	0.272	thank you; thanks	Obrigado, mãe e pai.	Thank you, Mum and Dad.		model
+425	funcionar	verb	0	247.087		to work; to function; to operate	O sistema não funciona.	The system doesn't work.		model
+426	fim	noun	0	246.920		end; weekend (fim de semana)	É o fim do meu relato.	That's the end of my account.		model
+427	coração	noun	0	246.018		heart; sweetheart	Cada bater do teu coração.	Every beat of your heart.		model
+428	brincar	verb	0	245.802		to play; to joke, kid around	Não brinques comigo, pá.	Don't mess with me, man.		model
+429	primeiro	adv	0	244.050	0.295	first; firstly	Terás de me matar primeiro.	You'll have to kill me first.		model
+430	nisso	pron	0	243.334		in that; about that; on that	Porque não pensas melhor nisso?	Why don't you think it over?		model
+431	menina	noun	0	241.003		girl; young lady (polite address); miss	Quem são as meninas?	Who are the girls?		model
+432	meio	num	0	239.999		half	Seis anos e meio depois, eu e a Mary ainda estamos juntos.	Six and a half years later, Mary and I are still together.		model
+433	diferente	adj	0	239.692		different	Ele era diferente, sabes?	He was different, you know?		model
+434	preparar	verb	0	238.148		to prepare; to get ready	Prepara-te para a mudança.	Get ready for the change.		model
+435	levantar	verb	0	237.766		to lift, to raise; to get up (reflexive); to withdraw (money)	Levante a mão, querida.	Raise your hand, dear.		model
+436	estado	noun	0	237.287		state (condition); state (nation/region)	Preferem que ele fique neste estado?	Would you rather he stayed in this state?		model
+437	meter	verb	0	236.136		to put (in); to get into; to meddle	Nos metemos em apuros.	We got into trouble.		model
+438	pegar	verb	0	235.167		to grab, to take hold of; to catch; to start (engine)	Pegou na minha caneta.	He took my pen.		model
+439	pé	noun	0	234.091		foot; ao pé de: next to	O meu pé cresceu!	My foot has grown!		model
+440	vamos lá	mwe	1	232.752		come on; let's go	Scout, vamos lá.	Scout, come on.		model
+441	lamentar	verb	0	231.802	0.687	to be sorry; to regret; to lament	Lamento, mas não podes.	I'm sorry, but you can't.		model
+442	exatamente	adv	0	231.522		exactly; precisely	Sei exactamente do que precisas.	I know exactly what you need.		model
+443	escolher	verb	0	230.319		to choose; to pick	Vá lá, escolhe um.	Come on, pick one.		model
+444	livro	noun	0	230.115		book	E sobre o livro?	And what about the book?		model
+445	proteger	verb	0	229.912		to protect	Protegeste o teu irmão.	You protected your brother.		model
+446	escola	noun	0	229.139		school	Olha, ali está a escola.	Look, there's the school.		model
+447	capitão	noun	0	228.820		captain	Capitão, o que devo fazer?	Captain, what should I do?		model
+448	festa	noun	0	228.794		party; celebration	Quero fazer uma festa.	I want to throw a party.		model
+449	quatro	num	0	228.058		four	Faço-o em quatro minutos.	I'll do it in four minutes.		model
+450	bater	verb	0	227.838		to hit; to knock; to beat	Podes bater à porta.	You can knock on the door.		model
+451	fechar	verb	0	227.612		to close; to shut; to close down	A porta não fecha!	The door won't close!		model
+452	irmã	noun	0	227.465		sister; nun (Sister)	Estou à procura da minha irmã.	I'm looking for my sister.		model
+453	baixo	noun	0	227.444	0.694	"down (in ""para baixo""); downstairs; bass (instrument)"	Toma, leva para baixo.	Here, take this downstairs.		model
+454	possível	adj	0	226.923		possible	Pai, isso não é possível.	Dad, that's not possible.		model
+455	minha mãe	mwe	1	226.433		my mother	Queria ir ver a minha mãe.	I wanted to go see my mother.		model
+456	bebé	noun	0	225.961		baby	Não toco em bebés.	I don't touch babies.		model
+457	enquanto	conj	0	225.573	0.708	while; as long as; whereas	Podia ter-te abraçado enquanto choravas.	I could have hugged you while you were crying.		model
+458	ar	noun	0	225.003		air; look (appearance); air (broadcast)	E o ar na fábrica é sujo.	And the air in the factory is dirty.		model
+459	esconder	verb	0	224.676		to hide; to hide oneself	Eu não vou esconder isto.	I'm not going to hide this.		model
+460	ontem	adv	0	223.742		yesterday	Então, como foi ontem à noite?	So, how was last night?		model
+461	jogar	verb	0	223.603		to play (game, sport); to throw	Onde estão a jogar?	Where are they playing?		model
+462	presidente	noun	0	223.592		president; chairman	O presidente não está desesperado.	The president isn't desperate.		model
+463	logo	adv	0	223.372		soon; right away; right (emphatic)	Vamos acabar logo com isto.	Let's get this over with right away.		model
+464	acordo	noun	0	223.151		agreement; deal; (de acordo com) according to	Eu posso aprovar um acordo.	I can approve a deal.		model
+465	negócio	noun	0	221.748		business; deal	Eu também tenho um negócio.	I have a business too.		model
+466	vai ser	mwe	1	221.242		it's going to be; will be	O senhor vai ser indiciado?	Are you going to be indicted, sir?		model
+467	marido	noun	0	221.037		husband	O seu marido está morto.	Your husband is dead.		model
+468	na verdade	mwe	1	220.410		actually; in fact	Na verdade isto é engraçado.	Actually, this is funny.		model
+469	alto	adj	0	218.938		tall; high; loud	Ser alto é melhor que ser baixo.	Being tall is better than being short.		model
+470	afastar	verb	0	218.866		to move away; to keep away from; to push aside	Sam, afasta-te da janela.	Sam, get away from the window.		model
+471	ordem	noun	0	218.581		order (command); order (arrangement)	Sim, são ordens dele.	Yes, they're his orders.		model
+472	lutar	verb	0	216.038		to fight; to struggle	Vieste lutar comigo?	Did you come to fight me?		model
+473	realmente	adv	0	215.959		really; actually, indeed	Estou realmente confusa.	I'm really confused.		model
+474	criar	verb	0	214.444		to create; to raise (a child); to breed	Ele criou a série.	He created the series.		model
+475	compreender	verb	0	214.296		to understand	O papá vai compreender.	Dad will understand.		model
+476	imaginar	verb	0	213.957		to imagine; to suppose	Eu nunca imaginei isso.	I never imagined that.		model
+477	mentir	verb	0	213.306		to lie	A Clemmie não mentiu.	Clemmie didn't lie.		model
+478	ler	verb	0	211.985		to read	Que andas a ler?	What are you reading?		model
+479	pena	noun	0	211.823		pity, shame; (to be) worth it; sentence (prison)	Vale a pena ter amigos.	It's worth having friends.		model
+480	decidir	verb	0	211.707		to decide	Ela decide, não nós.	She decides, not us.		model
+481	esta noite	mwe	1	211.668		tonight; last night	Vou sobreviver a esta noite?	Will I survive tonight?		model
+482	trás	adv	0	210.675		back, behind (para/de trás)			uncertain	model
+483	depressa	adv	0	209.635		quickly; hurry up	Está bem, vem depressa!	All right, come quickly!		model
+484	aprender	verb	0	209.593		to learn	Já aprendi muito hoje.	I've already learned a lot today.		model
+485	valer	verb	0	208.631		to be worth; to be valid; to be worthwhile (valer a pena)	Não vale a pena, Conan.	It's not worth it, Conan.		model
+486	mil	num	0	208.622		thousand	Eu preciso de cinco mil.	I need five thousand.		model
+487	à noite	mwe	1	208.605		at night; in the evening; tonight	O que é que se passou ontem à noite?	What happened last night?		model
+488	prova	noun	0	208.113		proof; evidence; test (exam)	Ela tem provas?	Does she have proof?		model
+489	nesta	det	0	208.011		in this; on this; at this	Eu coloquei-a nesta casa.	I put her in this house.		model
+490	prazer	noun	0	207.840		pleasure; nice to meet you	É um prazer trabalhar convosco.	It's a pleasure to work with you.		model
+491	na minha	mwe	1	207.167		in my; on my (feminine)	Quando acordei, estava na minha cama.	When I woke up, I was in my bed.		model
+492	rei	noun	0	206.578		king	Saúdem o rei Ander!	Hail King Ander!		model
+493	fácil	adj	0	206.014		easy	Gosto de coisas fáceis.	I like easy things.		model
+494	luz	noun	0	205.350		light	Alguém apagou as luzes.	Someone turned off the lights.		model
+495	servir	verb	0	204.644		to serve; to be of use; to fit	O sangue dele serve?	Will his blood do?		model
+496	atirar	verb	0	204.503		to throw; to shoot (fire); to hit on (atirar-se)	Atira as chaves para aqui.	Throw the keys over here.		model
+497	miúda	noun	0	204.484		girl; kid (female); girlfriend	Amo a minha miúda.	I love my girl.		model
+498	responder	verb	0	204.011		to answer; to reply; to respond	Não posso responder a todas.	I can't answer all of them.		model
+499	acordar	verb	0	203.388		to wake up; to wake (someone); to agree on	A Betty acordou às cinco.	Betty woke up at five.		model
+500	escutar	verb	0	203.372		to listen; to hear	Só quero que escutes.	I just want you to listen.		model
+501	demasiado	adv	0	203.031		too; too much	Estou demasiado velha para isso.	I'm too old for that.		model
+502	telefone	noun	0	202.960		telephone; phone number	Porque não tenho telefone.	Because I don't have a phone.		model
+503	verdadeiro	adj	0	202.092		true; real, genuine	A minha verdadeira paixão.	My true passion.		model
+504	tu és	mwe	1	201.682		you are	Mas tu és tão jovem!	But you're so young!		model
+505	forte	adj	0	201.433		strong	E nós somos os mais fortes.	And we're the strongest.		model
+506	minha vida	mwe	1	200.596		my life	Estes miúdos são a minha vida!	These kids are my life!		model
+507	longe	adv	0	200.145		far; far away	Fica longe da água.	Stay away from the water.		model
+508	terminar	verb	0	197.106		to finish; to end; to break up (with someone)	Tenho que terminar isso.	I have to finish that.		model
+509	passado	adj	0	196.331	0.725	last (week, year); past	Despediu-o na semana passada.	He fired him last week.		model
+510	próprio	adj	0	195.687	0.537	own; himself/herself (emphatic); very (same)	Tinha a sua própria igreja.	He had his own church.		model
+511	belo	adj	0	195.675		beautiful; fine, nice	É uma bela flor.	It's a beautiful flower.		model
+512	notícia	noun	0	195.357		news; piece of news	A boa notícia é que:	The good news is:		model
+513	prender	verb	0	195.059		to arrest; to fasten, to tie up; to hold, to trap	Não podes prender-me aqui!	You can't keep me locked up here!		model
+514	cão	noun	0	195.057		dog	Afaste-se do cão!	Get away from the dog!		model
+515	destruir	verb	0	195.026		to destroy; to ruin	Destruiu a família dele.	He destroyed his family.		model
+516	milhão	num	0	194.481		million	Um milhão de piadas.	A million jokes.		model
+517	muito tempo	mwe	1	194.258		a long time	Não fui capaz disso durante muito tempo.	I wasn't able to do that for a long time.		model
+518	jantar	noun	0	193.189		dinner	Está na hora de servir o jantar.	It's time to serve dinner.		model
+519	porra	noun	0	193.065		damn; fuck (interjection); fucking (intensifier)	Porra, és mesmo esperta.	Damn, you're really smart.	vulgar	model
+520	vender	verb	0	193.045		to sell	Ele vendeu-lhe os mísseis.	He sold him the missiles.		model
+521	gente	noun	0	192.288	0.522	people; folks	Toda a gente tem um nome.	Everybody has a name.		model
+522	rua	noun	0	192.115		street	Tentava atravessar a rua.	He was trying to cross the street.		model
+523	cortar	verb	0	191.870		to cut; to cut off; to cut out	Ela cortou-lhe a cabeça.	She cut off his head.		model
+524	ponto	noun	0	191.851		point; dot; stitch	Um ponto para mim, zero para ti.	One point for me, zero for you.		model
+525	teu pai	mwe	1	191.490		your father	O teu pai chega em breve.	Your father will be here soon.		model
+526	filme	noun	0	190.795		film, movie	Era um filme muito engraçado.	It was a very funny film.		model
+527	sítio	noun	0	189.583		place; spot; site	É um sítio onde ninguém vai.	It's a place where nobody goes.		model
+528	sinal	noun	0	189.438		sign; signal; traffic light	Há sinais de luta?	Are there signs of a struggle?		model
+529	especial	adj	0	189.389		special	Tenho algo especial para você.	I have something special for you.		model
+530	explicar	verb	0	189.231		to explain	Eu não posso explicar, mãe.	I can't explain, Mom.		model
+531	pior	adj	0	188.789		worse; worst	As miúdas são piores do que os rapazes.	Girls are worse than boys.		model
+532	qualquer coisa	mwe	1	188.252		anything; something	Não há amendoins ou pretzels, qualquer coisa?	There aren't any peanuts or pretzels, anything?		model
+533	direito	noun	0	188.218		right (entitlement); law (field of study)	E os meus direitos?	And what about my rights?		model
+534	sala	noun	0	188.175		room; living room	Não há câmaras nesta sala, hã?	There are no cameras in this room, huh?		model
+535	assassino	noun	0	187.903		murderer; killer	Procuramos um assassino.	We're looking for a murderer.		model
+536	paz	noun	0	187.793		peace	Somos de paz, sempre.	We come in peace, always.		model
+537	culpa	noun	0	187.163		fault; blame; guilt	É culpa minha, suponho.	It's my fault, I suppose.		model
+538	casar	verb	0	186.780		to marry; to get married	Ele nunca se casou.	He never got married.		model
+539	bom dia	mwe	1	186.161		good morning	Bom dia, Susan.	Good morning, Susan.		model
+540	informação	noun	0	185.403		information	Eu tenho alguma informação.	I have some information.		model
+541	além	adv	0	184.155		besides; beyond; apart from	Além disso, não tenho 17 anos.	Besides, I'm not 17 years old.		model
+542	fazer isto	mwe	1	183.976		to do this	Não compreendo porque tens de fazer isto.	I don't understand why you have to do this.		model
+543	aguentar	verb	0	182.584		to bear; to hold on; to withstand	Já não aguento mais	I can't take it any more		model
+544	seis	num	0	181.658		six	Estou cá há seis anos.	I've been here for six years.		model
+545	falta	noun	0	180.195		lack; absence; foul (sports)	É por causa da tua falta de finalidades.	It's because of your lack of goals.		model
+546	quero dizer	mwe	1	178.965		I mean; I want to say	Quero dizer, se calhar vão a algum lado.	I mean, maybe they're going somewhere.		model
+547	má	adj	0	178.849		bad; evil	A história era má.	The story was bad.		model
+548	disparar	verb	0	178.803		to shoot; to fire; to shoot up (soar)	Quem disparou a arma?	Who fired the gun?		model
+549	resolver	verb	0	178.178		to solve; to sort out; to decide	Já resolvemos o problema.	We've already solved the problem.		model
+550	país	noun	0	177.356		country	Não é assim neste país.	It's not like that in this country.		model
+551	casamento	noun	0	177.305		marriage; wedding	O meu casamento com Elizabeth?	My marriage to Elizabeth?		model
+552	médico	noun	0	176.975	0.697	doctor	Não quer ir ao médico.	He doesn't want to go to the doctor.		model
+553	nova	noun	0	176.800		new (feminine); news item	Vais ver a casa nova?	Are you going to see the new house?		model
+554	gente	pron	0	176.315	0.478	everybody (toda a gente); we, us	Toda a gente tem um nome.	Everybody has a name.		model
+555	estúpido	adj	0	176.310		stupid; rude, mean	Isto é tão estúpido.	This is so stupid.		model
+556	cama	noun	0	175.979		bed	Vá, mete-te na cama.	Come on, get into bed.		model
+557	pelos	det	0	175.839		by the; for the; through the	Uma passa pelos velhos tempos.	One for old times' sake.		model
+558	são	noun	0	175.815		Saint (before male names); they are	Ficaram com o melhor, despacharam para São Petersburgo para a Eslovénia e o Montenegro.	They kept the best, shipped it off to Saint Petersburg, to Slovenia and Montenegro.	name-like	model
 559	deve ser	mwe	1	175.454		it must be; probably is; should be	Acho que deve ser uma idiota.	I think she must be an idiot.		model
 560	largar	verb	0	175.113		to let go of; to drop; to leave (quit)	Eli, largue a arma!	Eli, drop the gun!		model
 561	boa noite	mwe	1	174.675		good evening; good night	Boa noite, subdiretor.	Good evening, Deputy Director.		model

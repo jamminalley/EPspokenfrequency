@@ -68,9 +68,9 @@
       "ser": 0.0111
     }
   },
-  "split_surfaces": 4933,
-  "split_multi_lemma": 1529,
-  "split_tokens": 10021402,
+  "split_surfaces": 4935,
+  "split_multi_lemma": 1531,
+  "split_tokens": 11354897,
   "lemma_closure_redirects": 7668,
   "mwes_retained": 657,
   "diacritic_folded": 30047,
@@ -78,8 +78,8 @@
   "short_dropped": 717,
   "bp_excluded": 16,
   "proper_nouns_dropped": 251294,
-  "pos_votes_counted": 444944,
-  "pos_votes_inconsistent": 13906,
+  "pos_votes_counted": 444913,
+  "pos_votes_inconsistent": 13861,
   "contraction_pos": {
     "det": 58,
     "pron": 19,
@@ -119,5 +119,5 @@
   "gold": {
     "pipeline, stage 2 (gated)": 0.9849397590361446
   },
-  "elapsed_s": 57.4
+  "elapsed_s": 80.3
 }

@@ -189,6 +189,7 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     # supplies lemmas, per-occurrence splits and POS alike.
     tags: dict | None = None
     vote_filter = None
+    shape_filter = None
     if lem["backend"] == "gated" and lem["gate"]["primary"] == "stanza_tags":
         tier_types = [t for t in types if uni.counts[t] >= (min_count or 1)]
         tags = occurrence_mod.tag_cached(tier_types, bg.contexts, cfg)
@@ -198,6 +199,8 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
         closed = frozenset(PosTagger.load().closed)
         if lem.get("tags_vote_filter") == "consistency":
             vote_filter = lambda s, l, u: pos_mod.consistent(s, l, u, is_verb, closed)
+            shape_filter = lambda s, l, u: pos_mod.consistent_shape(
+                s, l, u, is_verb, closed)
         backend = lemmas_mod.GatedBackend(
             lemmas_mod.TagsBackend(tags, vote_filter),
             lemmas_mod.SimplemmaBackend(),
@@ -248,7 +251,7 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
         sm = lambda w: simple.lemmatize_types([w])[w]
         joint = occurrence_mod.resolve_joint(tagged, lemma_map, cfg,
                                              lemmas_mod.in_dictionary, sm,
-                                             consistent=vote_filter)
+                                             consistent=shape_filter)
         for surface, j in joint.items():
             norm_joint: Counter = Counter()
             for (lemma, upos), n in j.items():

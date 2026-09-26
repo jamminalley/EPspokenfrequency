@@ -1750,7 +1750,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `gêlo` | 95 | `gelo` | 38,962 | accent_variant |
 | `pépé` | 95 | `pepe` | 1,552 | accent_variant |
 | `razoavel` | 95 | `razoável` | 10,693 | unaccented |
-| `săo` | 95 | `são` | 1,117,068 | accent_variant |
+| `săo` | 95 | `são` | 111,717 | accent_variant |
 | `dodó` | 94 | `dodo` | 188 | accent_variant |
 | `guzmán` | 94 | `guzman` | 304 | accent_variant |
 | `hefaísto` | 94 | `hefaisto` | 119 | accent_variant |
@@ -2491,7 +2491,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `jerônimo` | 44 | `jerónimo` | 432 | accent_variant |
 | `pandemônio` | 44 | `pandemónio` | 452 | accent_variant |
 | `pöem` | 44 | `poem` | 174 | accent_variant |
-| `sér` | 44 | `ser` | 21,334,085 | accent_variant |
+| `sér` | 44 | `ser` | 22,339,436 | accent_variant |
 | `sérpico` | 44 | `serpico` | 337 | accent_variant |
 | `tranqüilamente` | 44 | `tranquilamente` | 1,160 | accent_variant |
 | `voluntáriamente` | 44 | `voluntariamente` | 2,068 | accent_variant |
@@ -2517,7 +2517,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `padrao` | 43 | `padrão` | 24,458 | unaccented |
 | `reliquia` | 43 | `relíquia` | 3,144 | unaccented |
 | `silêncioso` | 43 | `silencioso` | 8,545 | accent_variant |
-| `sáo` | 43 | `são` | 1,117,068 | accent_variant |
+| `sáo` | 43 | `são` | 111,717 | accent_variant |
 | `tambèm` | 43 | `também` | 796,892 | accent_variant |
 | `tásse` | 43 | `tasse` | 238 | accent_variant |
 | `àsia` | 43 | `ásia` | 3,340 | accent_variant |
@@ -2789,7 +2789,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rimel` | 36 | `rímel` | 473 | unaccented |
 | `roché` | 36 | `roche` | 184 | accent_variant |
 | `réptilianos` | 36 | `reptilianos` | 260 | accent_variant |
-| `saõ` | 36 | `são` | 1,117,068 | accent_variant |
+| `saõ` | 36 | `são` | 111,717 | accent_variant |
 | `sigurbjõrn` | 36 | `sigurbjörn` | 96 | accent_variant |
 | `tendencia` | 36 | `tendência` | 6,740 | unaccented |
 | `tostäo` | 36 | `tostão` | 3,297 | accent_variant |
@@ -3068,7 +3068,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `schröder` | 30 | `schroder` | 59 | accent_variant |
 | `sifilis` | 30 | `sífilis` | 1,774 | unaccented |
 | `sugestäo` | 30 | `sugestão` | 10,030 | accent_variant |
-| `sào` | 30 | `são` | 1,117,068 | accent_variant |
+| `sào` | 30 | `são` | 111,717 | accent_variant |
 | `tradiçao` | 30 | `tradição` | 13,600 | accent_variant |
 | `velociráptor` | 30 | `velociraptor` | 266 | accent_variant |
 | `ôh` | 30 | `oh` | 344,646 | accent_variant |
@@ -3948,7 +3948,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sicômoros` | 19 | `sicómoros` | 25 | accent_variant |
 | `suícidas` | 19 | `suicídas` | 32 | accent_variant |
 | `sémenov` | 19 | `semenov` | 27 | accent_variant |
-| `sêr` | 19 | `ser` | 21,334,085 | accent_variant |
+| `sêr` | 19 | `ser` | 22,339,436 | accent_variant |
 | `sòmente` | 19 | `somente` | 16,077 | accent_variant |
 | `taí` | 19 | `tai` | 1,885 | accent_variant |
 | `tirár` | 19 | `tirar` | 416,395 | accent_variant |

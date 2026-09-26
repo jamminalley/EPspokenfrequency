@@ -82,11 +82,11 @@ off by 10-40x. Set in config as
 | `desaparecido` | 1197 | 4119 | +2,922 |
 | `escrito` | 1275 | 4188 | +2,913 |
 | `maravilha` | 4828 | 1940 | -2,888 |
-| `procura` | 3297 | 415 | -2,882 |
+| `procura` | 3297 | 413 | -2,884 |
 | `luta` | 3626 | 754 | -2,872 |
-| `cuidado` | 3253 | 385 | -2,868 |
+| `cuidado` | 3253 | 383 | -2,870 |
 | `reserva` | 4564 | 1705 | -2,859 |
-| `ajuda` | 3141 | 287 | -2,854 |
+| `ajuda` | 3141 | 286 | -2,855 |
 | `proteção` | 4219 | 1366 | -2,853 |
 | `exceto` | 4514 | 1668 | -2,846 |
 | `ato` | 4313 | 1498 | -2,815 |
@@ -101,7 +101,7 @@ _1,052 total._
 
 ### New in the rebuild, absent from the original
 
-`a`, `o que`, `no`, `na`, `nos`, `é que`, `é o`, `que não`, `são`, `o meu`, `tua`, `eles`, `é um`, `é uma`, `pelo`, `por isso`, `pela`, `num`, `disso`, `fora`, `contigo`, `nas`, `numa`, `parte`, `todos os`, `deles`, `com ele`, `senhora`, `lhes`, `sozinho`, `todas as`, `cara`, `da minha`, `desta`, `filha`, `neste`, `rapariga`, `disto`, `ei`, `deste`, `nisso`, `menina`, `irmã`, `nesta`, `na minha`, `miúda`, `pelos`, `amiga`, `connosco`, `esposa`, `mente`, `pelas`, `graças`, `sra`, `nessa`, `dessa`, `parabéns`, `surpresa`, `namorada`, `nesse`
+`a`, `o que`, `no`, `na`, `nos`, `é que`, `é o`, `que não`, `o meu`, `tua`, `eles`, `é um`, `é uma`, `pelo`, `por isso`, `pela`, `num`, `disso`, `fora`, `contigo`, `nas`, `numa`, `parte`, `todos os`, `deles`, `com ele`, `senhora`, `lhes`, `sozinho`, `todas as`, `cara`, `da minha`, `desta`, `filha`, `neste`, `rapariga`, `disto`, `ei`, `deste`, `nisso`, `menina`, `irmã`, `nesta`, `na minha`, `miúda`, `pelos`, `são`, `amiga`, `connosco`, `esposa`, `mente`, `pelas`, `graças`, `sra`, `nessa`, `dessa`, `parabéns`, `surpresa`, `namorada`, `nesse`
 
 _901 total._
 
@@ -176,7 +176,7 @@ _800 total._
 
 **Promoted by the fixes** (new in stage 2):
 
-`a`, `da`, `no`, `na`, `nos`, `são`, `eles`, `dos`, `das`, `pela`, `fora`, `às`, `contigo`, `nas`, `numa`, `aos`, `lhes`, `sozinho`, `nova`, `cara`, `causa`, `disto`, `ei`, `calma`, `menina`, `irmã`, `nesta`, `miúda`, `falta`, `pelos`, `amiga`, `connosco`, `esposa`, `papá`, `mente`, `pelas`, `graças`, `sra`, `nessa`, `namorada`, `naquela`, `ver lo`, `posso ajudar`, `direita`, `avó`, `destes`, `rio`, `destas`, `pra`, `nela`, `verão`, `calça`, `combate`, `daquela`, `tia`, `irão`, `aspeto`, `busca`, `bruxa`, `política`
+`a`, `da`, `no`, `na`, `nos`, `eles`, `dos`, `das`, `pela`, `fora`, `às`, `contigo`, `nas`, `numa`, `aos`, `lhes`, `sozinho`, `cara`, `causa`, `disto`, `ei`, `calma`, `menina`, `irmã`, `nesta`, `miúda`, `falta`, `nova`, `pelos`, `são`, `amiga`, `connosco`, `esposa`, `papá`, `mente`, `pelas`, `graças`, `sra`, `nessa`, `namorada`, `naquela`, `ver lo`, `posso ajudar`, `direita`, `avó`, `destes`, `rio`, `destas`, `pra`, `nela`, `verão`, `calça`, `combate`, `daquela`, `tia`, `irão`, `aspeto`, `busca`, `bruxa`, `política`
 
 _649 total._
 
@@ -230,7 +230,7 @@ Former headwords merged away: `elas` (93,302)
 |---|---:|---:|---|
 | `na` | 40 | 2,539,807 | `na` |
 | `nos` | 52 | 1,714,351 | `nos` |
-| `deste` | 421 | 160,215 | `deste` |
+| `deste` | 419 | 160,215 | `deste` |
 | `desse` | 889 | 60,349 | `desse` |
 | `destas` | 1108 | 46,144 | `destas` |
 | `noutros` | 6540 | 2,714 | `noutros` |
@@ -243,10 +243,10 @@ Former headwords merged away: `elas` (93,302)
 | `me` | 16 | 5,792,954 | `me` |
 | `te` | 25 | 4,164,186 | `te` |
 | `lhe` | 72 | 1,328,170 | `lhe` |
-| `mim` | 96 | 973,045 | `mim` |
-| `ti` | 130 | 734,358 | `ti` |
-| `vos` | 254 | 315,880 | `vos` |
-| `lhes` | 324 | 222,561 | `lhes` |
+| `mim` | 95 | 973,045 | `mim` |
+| `ti` | 129 | 734,358 | `ti` |
+| `vos` | 253 | 315,880 | `vos` |
+| `lhes` | 323 | 222,561 | `lhes` |
 
 ### 2. Gendered nouns fold into the masculine
 
@@ -284,8 +284,8 @@ Former headwords merged away: `solta` (24,048), `culpada` (9,242), `serena` (8,5
 | entry | rank | tokens gained | from surfaces |
 |---|---:|---:|---|
 | `a` | 9 | 22,310,510 | `a` |
-| `mãe` | 131 | 11,983 | `mães` |
-| `rapariga` | 359 | 147,141 | `rapariga` |
+| `mãe` | 130 | 11,983 | `mães` |
+| `rapariga` | 357 | 147,141 | `rapariga` |
 | `política` | 1379 | 5,020 | `políticas` |
 | `ferida` | 1782 | 31,416 | `ferida`, `feridas` |
 | `santa` | 2116 | 340 | `santas` |
@@ -347,10 +347,10 @@ _5 further published entries affected._
 
 | entry | rank | tokens gained | from surfaces |
 |---|---:|---:|---|
-| `melhor` | 115 | 73,976 | `melhores` |
-| `ótimo` | 263 | 307,353 | `óptima`, `óptimas`, `óptimo`, `óptimos`, `ótima`, `ótimo` +1 |
-| `maior` | 397 | 26,512 | `maiores` |
-| `pior` | 533 | 15,844 | `piores` |
+| `melhor` | 114 | 73,976 | `melhores` |
+| `ótimo` | 262 | 307,353 | `óptima`, `óptimas`, `óptimo`, `óptimos`, `ótima`, `ótimo` +1 |
+| `maior` | 395 | 26,512 | `maiores` |
+| `pior` | 531 | 15,844 | `piores` |
 | `menor` | 1638 | 6,768 | `menores` |
 | `mínimo` | 2338 | 12,363 | `mínima`, `mínimas`, `mínimos` |
 | `máximo` | 2833 | 10,541 | `máxima`, `máximas` |
@@ -374,18 +374,18 @@ Former headwords merged away: `óptimas` (5,757), `óptimos` (5,516)
 | `tu` | 56 | 4,821 | `ctu`, `ptu` |
 | `dever` | 68 | 3 | `devéis` |
 | `conseguir` | 83 | 1 | `conseguiréis` |
-| `matar` | 121 | 1 | `mataréis` |
-| `ti` | 130 | 82 | `cti`, `pti` |
-| `noite` | 132 | 3 | `nóite` |
-| `pelo` | 157 | 7,908 | `pêlo`, `pêlos` |
-| `ajudar` | 158 | 1 | `ajudéis` |
+| `matar` | 120 | 1 | `mataréis` |
+| `ti` | 129 | 82 | `cti`, `pti` |
+| `noite` | 131 | 3 | `nóite` |
+| `pelo` | 156 | 7,908 | `pêlo`, `pêlos` |
+| `ajudar` | 157 | 1 | `ajudéis` |
 | `trazer` | 212 | 1 | `trazéis` |
-| `ideia` | 237 | 20,253 | `idéia`, `idéias` |
-| `viver` | 260 | 1 | `vivéis` |
-| `ótimo` | 263 | 1 | `óctimo` |
-| `comer` | 280 | 1 | `comeréis` |
-| `pois` | 379 | 1 | `póis` |
-| `coração` | 429 | 4 | `coracção` |
+| `ideia` | 236 | 20,253 | `idéia`, `idéias` |
+| `viver` | 259 | 1 | `vivéis` |
+| `ótimo` | 262 | 1 | `óctimo` |
+| `comer` | 279 | 1 | `comeréis` |
+| `pois` | 377 | 1 | `póis` |
+| `coração` | 427 | 4 | `coracção` |
 
 _404 further published entries affected._
 
@@ -2167,7 +2167,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `gêlo` | 95 | `gelo` | 38,962 | accent_variant |
 | `pépé` | 95 | `pepe` | 1,552 | accent_variant |
 | `razoavel` | 95 | `razoável` | 10,693 | unaccented |
-| `săo` | 95 | `são` | 1,117,068 | accent_variant |
+| `săo` | 95 | `são` | 111,717 | accent_variant |
 | `dodó` | 94 | `dodo` | 188 | accent_variant |
 | `guzmán` | 94 | `guzman` | 304 | accent_variant |
 | `hefaísto` | 94 | `hefaisto` | 119 | accent_variant |
@@ -2908,7 +2908,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `jerônimo` | 44 | `jerónimo` | 432 | accent_variant |
 | `pandemônio` | 44 | `pandemónio` | 452 | accent_variant |
 | `pöem` | 44 | `poem` | 174 | accent_variant |
-| `sér` | 44 | `ser` | 21,334,085 | accent_variant |
+| `sér` | 44 | `ser` | 22,339,436 | accent_variant |
 | `sérpico` | 44 | `serpico` | 337 | accent_variant |
 | `tranqüilamente` | 44 | `tranquilamente` | 1,160 | accent_variant |
 | `voluntáriamente` | 44 | `voluntariamente` | 2,068 | accent_variant |
@@ -2934,7 +2934,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `padrao` | 43 | `padrão` | 24,458 | unaccented |
 | `reliquia` | 43 | `relíquia` | 3,144 | unaccented |
 | `silêncioso` | 43 | `silencioso` | 8,545 | accent_variant |
-| `sáo` | 43 | `são` | 1,117,068 | accent_variant |
+| `sáo` | 43 | `são` | 111,717 | accent_variant |
 | `tambèm` | 43 | `também` | 796,892 | accent_variant |
 | `tásse` | 43 | `tasse` | 238 | accent_variant |
 | `àsia` | 43 | `ásia` | 3,340 | accent_variant |
@@ -3206,7 +3206,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rimel` | 36 | `rímel` | 473 | unaccented |
 | `roché` | 36 | `roche` | 184 | accent_variant |
 | `réptilianos` | 36 | `reptilianos` | 260 | accent_variant |
-| `saõ` | 36 | `são` | 1,117,068 | accent_variant |
+| `saõ` | 36 | `são` | 111,717 | accent_variant |
 | `sigurbjõrn` | 36 | `sigurbjörn` | 96 | accent_variant |
 | `tendencia` | 36 | `tendência` | 6,740 | unaccented |
 | `tostäo` | 36 | `tostão` | 3,297 | accent_variant |
@@ -3485,7 +3485,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `schröder` | 30 | `schroder` | 59 | accent_variant |
 | `sifilis` | 30 | `sífilis` | 1,774 | unaccented |
 | `sugestäo` | 30 | `sugestão` | 10,030 | accent_variant |
-| `sào` | 30 | `são` | 1,117,068 | accent_variant |
+| `sào` | 30 | `são` | 111,717 | accent_variant |
 | `tradiçao` | 30 | `tradição` | 13,600 | accent_variant |
 | `velociráptor` | 30 | `velociraptor` | 266 | accent_variant |
 | `ôh` | 30 | `oh` | 344,646 | accent_variant |
@@ -4365,7 +4365,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sicômoros` | 19 | `sicómoros` | 25 | accent_variant |
 | `suícidas` | 19 | `suicídas` | 32 | accent_variant |
 | `sémenov` | 19 | `semenov` | 27 | accent_variant |
-| `sêr` | 19 | `ser` | 21,334,085 | accent_variant |
+| `sêr` | 19 | `ser` | 22,339,436 | accent_variant |
 | `sòmente` | 19 | `somente` | 16,077 | accent_variant |
 | `taí` | 19 | `tai` | 1,885 | accent_variant |
 | `tirár` | 19 | `tirar` | 416,395 | accent_variant |
