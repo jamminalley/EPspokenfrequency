@@ -180,3 +180,90 @@ class TestSentenceStarts:
     def test_tokens_match_tokenize(self, tok):
         line = "Sim. Dá-me isso - agora!"
         assert [w for w, _ in tok.tokenize_with_starts(line)] == tok.tokenize(line)
+
+
+# -- a clitic that is spelled like a tense infix ------------------------------
+
+
+def test_a_lone_clitic_is_never_read_as_a_mesoclitic_infix(tok_split):
+    """`a` and `as` are both clitics and future/conditional infixes. Without a
+    clitic to the infix's left there is no mesoclisis, and reassembling
+    anyway put `conheçoa` in the published list at rank 5,290, glossed
+    "I know her". 45 rows were like it."""
+    assert tok_split.split_enclitic("conheço-a") == ["conheço", "a"]
+    assert tok_split.split_enclitic("deixa-a") == ["deixa", "a"]
+    assert tok_split.split_enclitic("mata-as") == ["mata", "as"]
+    assert tok_split.split_enclitic("leva-a") == ["leva", "a"]
+
+
+def test_mesoclisis_still_reassembles(tok_split):
+    """The clitic sits between stem and infix, which is what makes it
+    mesoclisis: dar-lhe-ia is daria + lhe, not dar + lhe + ia."""
+    assert tok_split.split_enclitic("dar-lhe-ia") == ["daria", "lhe"]
+    assert tok_split.split_enclitic("far-se-ia") == ["faria", "se"]
+    assert tok_split.split_enclitic("dar-me-ia") == ["daria", "me"]
+
+
+def test_the_two_readings_of_a_do_not_collide(tok_split):
+    """One tail is a clitic; two tails ending in an infix are mesoclisis."""
+    assert tok_split.split_enclitic("dá-la") == ["dar", "la"]
+    assert tok_split.split_enclitic("dá-a") == ["dá", "a"]
+
+
+# -- clusters written without their hyphen -----------------------------------
+
+
+def test_a_glued_cluster_in_the_table_is_split(release_cfg):
+    """The corpus writes the same cluster both ways; the table says which."""
+    from scripts.build import effective_config
+    from scripts.tokenizer import Tokenizer
+
+    tok = Tokenizer(effective_config(release_cfg)["tokenizer"])
+    assert tok.tokenize("deixame em paz") == ["deixa", "me", "em", "paz"]
+    assert tok.tokenize("calate") == ["cala", "te"]
+    assert tok.tokenize("sêlo") == ["ser", "lo"]
+
+
+def test_a_word_that_merely_looks_glued_is_left_alone(release_cfg):
+    """Every one of these fails a test in scripts/make_glue_table.py:
+    `rodeo` and `mateo` are not attested hyphenated often enough or are
+    capitalized mid-line, `sera` is a missing accent, `saiste` a preterite."""
+    from scripts.build import effective_config
+    from scripts.tokenizer import Tokenizer
+
+    tok = Tokenizer(effective_config(release_cfg)["tokenizer"])
+    for word in ("rodeo", "mateo", "sera", "eramos", "saiste", "penthouse",
+                 "adios", "casa", "cara", "boa"):
+        assert tok.tokenize(word) == [word], word
+
+
+def test_glue_repair_is_off_in_stage_1(cfg):
+    """Stage 1 has to keep reproducing the April output byte for byte."""
+    from scripts.tokenizer import Tokenizer
+
+    assert cfg["fixes"]["repair_glued_enclitics"] is False
+    assert cfg["tokenizer"].get("repair_glue") is False
+    assert Tokenizer(cfg["tokenizer"]).tokenize("deixame") == ["deixame"]
+
+
+def test_the_table_is_hashed_into_the_tokenizer_settings(release_cfg):
+    """Every pass is cached under a hash of cfg["tokenizer"], so a change to
+    the table has to show up there or a rebuild reuses stale tokenization."""
+    digest = release_cfg["tokenizer"]["glue_repair"]["digest"]
+    assert digest and digest != "absent" and len(digest) == 16
+
+
+def test_every_table_row_splits_into_its_stem_and_clitic(release_cfg):
+    """The table is generated, so this guards the generator: each glued form
+    must rejoin to a cluster the splitter itself would split the same way."""
+    from scripts.make_glue_table import load
+    from scripts.tokenizer import Tokenizer
+
+    tok = Tokenizer(dict(release_cfg["tokenizer"], split_enclitics=True,
+                         repair_glue=False))
+    table = load(release_cfg["tokenizer"]["glue_repair"]["table"])
+    assert len(table) >= 25
+    for glued, (stem, clitic) in table.items():
+        assert glued == glued.lower()
+        assert clitic in tok._enclitic_set
+        assert stem and not stem.endswith("-")

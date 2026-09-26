@@ -61,6 +61,16 @@ class Tokenizer:
         self.restore_stems: bool = tok_cfg.get("restore_clitic_stems", False)
         self._is_word = None  # PT dictionary, loaded on first use
 
+        # Clusters the corpus also writes without their hyphen. Splitting
+        # those cannot be done by rule -- see scripts/make_glue_table.py --
+        # so it is done from a table generated from the corpus itself.
+        self.repair_glue: bool = bool(tok_cfg.get("repair_glue", False))
+        self._glued: dict[str, tuple[str, str]] = {}
+        if self.repair_glue:
+            from scripts.make_glue_table import load as _load_glue
+
+            self._glued = _load_glue(tok_cfg["glue_repair"]["table"])
+
     def _word(self, w: str) -> bool:
         if self._is_word is None:
             from scripts.lemmas import pt_dictionary
@@ -138,7 +148,10 @@ class Tokenizer:
 
     def _parts(self, word: str) -> list[str]:
         """One regex match -> surface forms (split, stripped, filtered)."""
-        parts = self.split_enclitic(word) if "-" in word and self.split_enclitics else [word]
+        if "-" in word and self.split_enclitics:
+            parts = self.split_enclitic(word)
+        else:
+            parts = self.split_glued(word) if self._glued else [word]
         out: list[str] = []
         for part in parts:
             part = part.strip("'-")
@@ -150,6 +163,22 @@ class Tokenizer:
         return out
 
     # -- enclitic handling ------------------------------------------------
+
+    def split_glued(self, word: str) -> list[str]:
+        """Split a cluster whose hyphen the subtitler left out.
+
+        ``conheçoa`` -> ["conheço", "a"]     (also written conheço-a)
+        ``deixame``  -> ["deixa", "me"]
+        ``rodeo``    -> ["rodeo"]            (not attested hyphenated)
+
+        Only the clusters in the generated table are touched, and only when
+        lowercased, so the split is exactly as verifiable as the table is.
+        """
+        found = self._glued.get(word if self.lowercase else word.lower())
+        if found is None:
+            return [word]
+        stem, clitic = found
+        return [stem, clitic]
 
     def split_enclitic(self, word: str) -> list[str]:
         """Split a hyphenated cluster into stem + clitic pronouns.
@@ -193,11 +222,21 @@ class Tokenizer:
         tail.reverse()
         if not stem:
             return tail
-        if self.restore_stems and tail[-1] in self._mesoclitic_set:
+        if self.restore_stems and len(tail) > 1 and tail[-1] in self._mesoclitic_set:
             # Mesoclisis splits the future/conditional around the clitic:
             # dar-lhe-ia is daria + lhe. Reassemble the verb rather than
-            # leaving `ia`, which would count as a form of `ir`. The stem is
-            # always the future stem, so an accented one restores to -r
+            # leaving `ia`, which would count as a form of `ir`.
+            #
+            # `len(tail) > 1` is what makes this mesoclisis rather than a
+            # plain cluster. `a` and `as` are both clitics and tense infixes,
+            # so without the test `conheço-a` reassembled into `conheçoa` and
+            # reached the published list as a word (rank 5,290 in 1.0.0,
+            # glossed "I know her"); 45 rows were like it. Mesoclisis always
+            # has the clitic between stem and infix, so a tail of one is
+            # never an infix.
+            #
+            # The stem is always the future stem, so an accented one
+            # restores to -r
             # (fá-lo-ia -> far + ia = faria, not fazia).
             if stem[-1] in _ACCENT_OFF:
                 stem = stem[:-1] + _ACCENT_OFF[stem[-1]] + "r"

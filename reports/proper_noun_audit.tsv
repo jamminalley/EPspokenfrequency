@@ -1,5 +1,5 @@
 lemma	count	cap_ratio	filter_drops
-deus	743244	0.961	yes
+deus	743248	0.961	yes
 sr	546304	0.950	yes
 dr	160921	0.984	yes
 john	132092	0.998	yes
@@ -14,7 +14,7 @@ fbi	68048	0.973	yes
 david	67169	0.998	yes
 george	59941	0.999	yes
 james	58380	0.999	yes
-oder	53631	0.893	yes
+oder	54896	0.893	yes
 iorque	50638	0.999	yes
 américa	50432	0.997	yes
 henry	48921	0.999	yes
@@ -37,11 +37,11 @@ claire	33377	0.996	yes
 mark	33235	0.996	yes
 washington	32320	0.998	yes
 jane	32165	0.997	yes
-maria	31704	0.992	yes
+maria	31702	0.992	yes
 daniel	31200	0.997	yes
 charles	31040	0.994	yes
 tv	30786	0.950	yes
-eua	29562	0.999	yes
+eua	29558	0.999	yes
 scott	29338	0.998	yes
 rachel	28884	0.999	yes
 clark	28556	0.999	yes
@@ -80,7 +80,7 @@ oliver	19143	0.995	yes
 robin	18975	0.998	yes
 rose	18932	0.995	yes
 edward	18612	1.000	yes
-texas	18390	0.996	yes
+texas	18383	0.996	yes
 jenny	18333	0.999	yes
 marcus	18146	1.000	yes
 china	18027	0.981	yes
@@ -104,12 +104,12 @@ miller	15273	0.994	yes
 lincoln	15031	0.995	yes
 fred	15000	1.000	yes
 gordon	14985	1.000	yes
-cole	14926	0.982	yes
+cole	14927	0.982	yes
 laura	14917	0.999	yes
 alemanha	14704	0.991	yes
 hitler	14558	0.996	yes
 jacob	14438	0.999	yes
-v	14386	0.857	yes
+v	14390	0.857	yes
 brown	14381	0.995	yes
 helen	14234	0.994	yes
 boston	14176	0.998	yes
@@ -151,7 +151,7 @@ russell	10406	0.999	yes
 hill	10326	0.991	yes
 francis	10228	0.999	yes
 simpson	10119	1.000	yes
-tara	10034	0.924	yes
+tara	10021	0.924	yes
 senado	9986	0.861	yes
 espanha	9876	0.997	yes
 diana	9834	0.999	yes
@@ -190,7 +190,7 @@ stanley	8551	0.997	yes
 gloria	8531	0.954	yes
 cal	8483	0.892	yes
 pedro	8483	0.997	yes
-tina	8449	0.910	yes
+tina	8451	0.910	yes
 spencer	8447	0.999	yes
 vanessa	8421	0.996	yes
 benjamin	8400	0.999	yes
@@ -204,7 +204,7 @@ liam	8120	0.967	yes
 harvard	8112	0.999	yes
 cam	8101	0.985	yes
 seattle	8056	0.994	yes
-oriente	7929	0.881	yes
+oriente	7930	0.881	yes
 miranda	7886	1.000	yes
 hong	7847	0.997	yes
 lawrence	7811	1.000	yes
@@ -254,7 +254,7 @@ calvin	5892	0.997	yes
 dvd	5854	0.984	yes
 detroit	5803	0.998	yes
 samuel	5802	0.990	yes
-alicia	5746	0.991	yes
+alicia	5754	0.991	yes
 baltimore	5706	0.993	yes
 bruno	5679	0.997	yes
 lena	5647	0.998	yes
@@ -275,7 +275,6 @@ phoenix	5342	0.996	yes
 garrett	5337	1.000	yes
 douglas	5300	0.994	yes
 gale	5294	0.988	yes
-vera	5288	0.867	yes
 paula	5286	0.991	yes
 atlanta	5252	0.989	yes
 reynolds	5227	1.000	yes
@@ -286,3 +285,4 @@ moore	5049	0.999	yes
 thor	5044	0.995	yes
 hudson	5028	1.000	yes
 nasa	5000	1.000	yes
+vera	4828	0.931	yes

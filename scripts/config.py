@@ -51,6 +51,7 @@ _FIX_FLAGS = (
     "cap_sentence_starts",
     "proper_noun_review",
     "contraction_pos",
+    "repair_glued_enclitics",
 )
 
 
@@ -63,8 +64,27 @@ def load(path: str | Path) -> dict[str, Any]:
         cfg = yaml.safe_load(fh)
     if not isinstance(cfg, dict):
         raise ConfigError(f"{path} did not parse to a mapping")
+    _stamp_glue_table(cfg)
     validate(cfg)
     return cfg
+
+
+def _stamp_glue_table(cfg: dict[str, Any]) -> None:
+    """Record the enclitic table's digest inside the tokenizer settings.
+
+    Every pass is cached under a hash of `cfg["tokenizer"]`, so a change to
+    the table has to show up there or a rebuild would silently reuse
+    tokenization from before it. The same reasoning put the lemmatizer's vote
+    filter in the config rather than in code.
+    """
+    import hashlib
+
+    glue = cfg.get("tokenizer", {}).get("glue_repair")
+    if not glue or not glue.get("table"):
+        return
+    path = Path(glue["table"])
+    glue["digest"] = (hashlib.sha256(path.read_bytes()).hexdigest()[:16]
+                      if path.is_file() else "absent")
 
 
 def validate(cfg: dict[str, Any]) -> None:

@@ -12,7 +12,7 @@ No unaccepted suspect pairs: the gate passes.
 
 ## Diacritic folds
 
-30,210 lemmas were folded into an accent variant at least 10x as frequent (4,437 unaccented, 25,773 wrong or Brazilian accent). Every fold is listed.
+30,047 lemmas were folded into an accent variant at least 10x as frequent (4,421 unaccented, 25,626 wrong or Brazilian accent). Every fold is listed.
 
 ### Folds of a dictionary word (113) — review these
 
@@ -21,31 +21,31 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | from | count | into | count | ratio |
 |---|---:|---|---:|---:|
 | `noticia` | 9,566 | `notícia` | 114,775 | 12x |
-| `ultimo` | 9,122 | `último` | 344,329 | 38x |
-| `ma` | 9,093 | `má` | 104,243 | 11x |
+| `ultimo` | 9,123 | `último` | 344,329 | 38x |
+| `ma` | 9,061 | `má` | 104,243 | 12x |
 | `vitima` | 4,834 | `vítima` | 88,814 | 18x |
 | `numero` | 4,449 | `número` | 180,051 | 40x |
 | `tao` | 4,191 | `tão` | 730,506 | 174x |
-| `inicio` | 3,940 | `início` | 40,853 | 10x |
-| `forca` | 3,934 | `força` | 175,144 | 45x |
+| `inicio` | 3,941 | `início` | 40,853 | 10x |
+| `forca` | 3,934 | `força` | 175,227 | 45x |
 | `historia` | 3,660 | `história` | 248,045 | 68x |
 | `ola` | 3,226 | `olá` | 703,259 | 218x |
-| `duvida` | 3,179 | `dúvida` | 63,380 | 20x |
+| `duvida` | 3,179 | `dúvida` | 63,376 | 20x |
 | `musica` | 3,061 | `música` | 92,595 | 30x |
 | `serio` | 2,775 | `sério` | 394,125 | 142x |
-| `forcar` | 2,509 | `forçar` | 30,283 | 12x |
-| `ate` | 2,404 | `até` | 905,561 | 377x |
+| `forcar` | 2,519 | `forçar` | 30,574 | 12x |
+| `ate` | 2,429 | `até` | 905,561 | 373x |
 | `amanha` | 2,301 | `amanhã` | 211,690 | 92x |
-| `agua` | 2,249 | `água` | 179,558 | 80x |
+| `agua` | 2,249 | `água` | 179,546 | 80x |
 | `principio` | 2,238 | `princípio` | 28,505 | 13x |
 | `radio` | 2,185 | `rádio` | 42,826 | 20x |
-| `caca` | 2,142 | `caça` | 27,157 | 13x |
+| `caca` | 2,142 | `caça` | 27,184 | 13x |
+| `mao` | 1,971 | `mão` | 330,328 | 168x |
 | `manha` | 1,964 | `manhã` | 172,553 | 88x |
-| `mao` | 1,954 | `mão` | 330,328 | 169x |
-| `publico` | 1,846 | `público` | 68,950 | 37x |
-| `divida` | 1,839 | `dívida` | 24,232 | 13x |
+| `publico` | 1,857 | `público` | 68,950 | 37x |
+| `divida` | 1,849 | `dívida` | 24,232 | 13x |
 | `exercito` | 1,740 | `exército` | 75,648 | 43x |
-| `serie` | 1,599 | `série` | 38,765 | 24x |
+| `serie` | 1,599 | `série` | 38,767 | 24x |
 | `circulo` | 1,385 | `círculo` | 17,898 | 13x |
 | `secretaria` | 1,328 | `secretária` | 26,803 | 20x |
 | `maquina` | 1,216 | `máquina` | 73,410 | 60x |
@@ -53,37 +53,37 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `silencio` | 1,061 | `silêncio` | 40,585 | 38x |
 | `alem` | 1,060 | `além` | 116,045 | 109x |
 | `especifico` | 1,048 | `específico` | 14,781 | 14x |
-| `copia` | 995 | `cópia` | 25,251 | 25x |
+| `copia` | 1,007 | `cópia` | 25,251 | 25x |
 | `industria` | 982 | `indústria` | 12,094 | 12x |
 | `memoria` | 975 | `memória` | 57,670 | 59x |
+| `analise` | 956 | `análise` | 21,118 | 22x |
 | `veiculo` | 930 | `veículo` | 24,022 | 26x |
-| `analise` | 929 | `análise` | 21,118 | 23x |
 | `titulo` | 867 | `título` | 18,023 | 21x |
-| `intimo` | 850 | `íntimo` | 10,243 | 12x |
-| `medico` | 837 | `médico` | 160,690 | 192x |
-| `legitimo` | 802 | `legítimo` | 11,170 | 14x |
+| `intimo` | 855 | `íntimo` | 10,243 | 12x |
+| `medico` | 838 | `médico` | 160,690 | 192x |
+| `legitimo` | 807 | `legítimo` | 11,170 | 14x |
 | `transito` | 801 | `trânsito` | 14,138 | 18x |
 | `alo` | 766 | `alô` | 10,737 | 14x |
-| `beneficio` | 758 | `benefício` | 8,963 | 12x |
-| `liquido` | 752 | `líquido` | 9,854 | 13x |
-| `mascara` | 731 | `máscara` | 25,014 | 34x |
+| `beneficio` | 765 | `benefício` | 8,963 | 12x |
+| `liquido` | 757 | `líquido` | 9,847 | 13x |
+| `mascara` | 732 | `máscara` | 25,014 | 34x |
 | `capitulo` | 704 | `capítulo` | 10,555 | 15x |
-| `contrario` | 689 | `contrário` | 49,431 | 72x |
-| `critico` | 675 | `crítico` | 17,126 | 25x |
-| `influencia` | 647 | `influência` | 11,925 | 18x |
+| `contrario` | 690 | `contrário` | 49,431 | 72x |
+| `critico` | 676 | `crítico` | 17,126 | 25x |
+| `influencia` | 655 | `influência` | 11,925 | 18x |
 | `varias` | 613 | `várias` | 35,106 | 57x |
 | `evidencia` | 584 | `evidência` | 8,491 | 15x |
-| `deposito` | 543 | `depósito` | 15,875 | 29x |
+| `deposito` | 547 | `depósito` | 15,875 | 29x |
 | `canada` | 504 | `canadá` | 8,223 | 16x |
 | `aniversario` | 501 | `aniversário` | 50,357 | 101x |
 | `divorcio` | 500 | `divórcio` | 15,892 | 32x |
-| `orbita` | 474 | `órbita` | 7,086 | 15x |
+| `orbita` | 479 | `órbita` | 7,086 | 15x |
 | `circunstancia` | 471 | `circunstância` | 17,649 | 37x |
 | `republica` | 468 | `república` | 12,204 | 26x |
-| `formula` | 445 | `fórmula` | 6,660 | 15x |
-| `fotografo` | 441 | `fotógrafo` | 6,067 | 14x |
+| `fotografo` | 453 | `fotógrafo` | 6,067 | 13x |
+| `formula` | 446 | `fórmula` | 6,660 | 15x |
 | `cerimonia` | 394 | `cerimónia` | 13,099 | 33x |
-| `pagina` | 370 | `página` | 29,951 | 81x |
+| `pagina` | 371 | `página` | 29,951 | 81x |
 | `autopsia` | 366 | `autópsia` | 8,671 | 24x |
 | `credito` | 363 | `crédito` | 27,046 | 75x |
 | `magico` | 352 | `mágico` | 31,315 | 89x |
@@ -91,33 +91,33 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `conferencia` | 345 | `conferência` | 16,086 | 47x |
 | `avo` | 344 | `avó` | 52,801 | 153x |
 | `vicio` | 299 | `vício` | 5,971 | 20x |
-| `vitoria` | 281 | `vitória` | 30,321 | 108x |
-| `ferias` | 272 | `férias` | 35,151 | 129x |
+| `vitoria` | 281 | `vitória` | 30,303 | 108x |
+| `ferias` | 272 | `férias` | 35,150 | 129x |
 | `custodia` | 271 | `custódia` | 12,573 | 46x |
 | `habito` | 263 | `hábito` | 13,510 | 51x |
 | `oficio` | 257 | `ofício` | 2,917 | 11x |
 | `voluntario` | 255 | `voluntário` | 12,692 | 50x |
+| `animo` | 252 | `ânimo` | 3,035 | 12x |
 | `gravido` | 251 | `grávido` | 32,074 | 128x |
-| `animo` | 249 | `ânimo` | 3,035 | 12x |
-| `autografo` | 246 | `autógrafo` | 5,451 | 22x |
+| `autografo` | 247 | `autógrafo` | 5,451 | 22x |
 | `trafico` | 231 | `tráfico` | 6,994 | 30x |
 | `lamina` | 219 | `lâmina` | 11,102 | 51x |
 | `potencia` | 203 | `potência` | 7,757 | 38x |
 | `sequencia` | 202 | `sequência` | 9,624 | 48x |
+| `autentico` | 196 | `autêntico` | 9,031 | 46x |
 | `acido` | 195 | `ácido` | 8,610 | 44x |
-| `autentico` | 195 | `autêntico` | 9,031 | 46x |
 | `capita` | 187 | `capitã` | 8,557 | 46x |
 | `baco` | 185 | `baço` | 2,165 | 12x |
 | `comissario` | 184 | `comissário` | 11,780 | 64x |
 | `ancora` | 180 | `âncora` | 3,305 | 18x |
 | `angustia` | 175 | `angústia` | 2,076 | 12x |
 | `secretario` | 174 | `secretário` | 10,808 | 62x |
-| `estimulo` | 165 | `estímulo` | 1,945 | 12x |
+| `estimulo` | 166 | `estímulo` | 1,945 | 12x |
 | `comercio` | 164 | `comércio` | 6,454 | 39x |
 | `arbitro` | 147 | `árbitro` | 3,018 | 21x |
-| `cocar` | 81 | `coçar` | 3,388 | 42x |
+| `cocar` | 81 | `coçar` | 3,396 | 42x |
 | `latex` | 81 | `látex` | 869 | 11x |
-| `acoitar` | 68 | `açoitar` | 922 | 14x |
+| `acoitar` | 68 | `açoitar` | 928 | 14x |
 | `astucia` | 44 | `astúcia` | 1,031 | 23x |
 | `jerico` | 36 | `jericó` | 420 | 12x |
 | `prototipo` | 32 | `protótipo` | 4,363 | 136x |
@@ -134,48 +134,48 @@ The source is a real PT word, merged on frequency alone. Most are missing-accent
 | `embolo` | 1 | `êmbolo` | 187 | 187x |
 | `telescopia` | 1 | `telescópia` | 12 | 12x |
 
-### Folds between 10x and 20x (723) — review these
+### Folds between 10x and 20x (717) — review these
 
 Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent form at 10-20x less frequent than its accented twin.
 
 | from | count | into | count | ratio | from is a PT word |
 |---|---:|---|---:|---:|---|
 | `noticia` | 9,566 | `notícia` | 114,775 | 12.0x | yes |
-| `ma` | 9,093 | `má` | 104,243 | 11.5x | yes |
+| `ma` | 9,061 | `má` | 104,243 | 11.5x | yes |
 | `vitima` | 4,834 | `vítima` | 88,814 | 18.4x | yes |
-| `inicio` | 3,940 | `início` | 40,853 | 10.4x | yes |
-| `pa` | 3,472 | `pá` | 51,345 | 14.8x |  |
-| `duvida` | 3,179 | `dúvida` | 63,380 | 19.9x | yes |
+| `inicio` | 3,941 | `início` | 40,853 | 10.4x | yes |
+| `pa` | 3,457 | `pá` | 51,345 | 14.9x |  |
+| `duvida` | 3,179 | `dúvida` | 63,376 | 19.9x | yes |
 | `video` | 2,905 | `vídeo` | 44,133 | 15.2x |  |
-| `forcar` | 2,509 | `forçar` | 30,283 | 12.1x | yes |
+| `forcar` | 2,519 | `forçar` | 30,574 | 12.1x | yes |
 | `frances` | 2,308 | `francês` | 41,164 | 17.8x |  |
 | `principio` | 2,238 | `princípio` | 28,505 | 12.7x | yes |
 | `obvio` | 2,194 | `óbvio` | 34,283 | 15.6x |  |
 | `radio` | 2,185 | `rádio` | 42,826 | 19.6x | yes |
-| `caca` | 2,142 | `caça` | 27,157 | 12.7x | yes |
+| `caca` | 2,142 | `caça` | 27,184 | 12.7x | yes |
 | `california` | 2,038 | `califórnia` | 21,589 | 10.6x |  |
 | `taxi` | 2,027 | `táxi` | 29,949 | 14.8x |  |
-| `divida` | 1,839 | `dívida` | 24,232 | 13.2x | yes |
+| `divida` | 1,849 | `dívida` | 24,232 | 13.1x | yes |
 | `politica` | 1,736 | `política` | 31,827 | 18.3x |  |
 | `circulo` | 1,385 | `círculo` | 17,898 | 12.9x | yes |
 | `pacifico` | 1,071 | `pacífico` | 11,275 | 10.5x | yes |
 | `especifico` | 1,048 | `específico` | 14,781 | 14.1x | yes |
 | `industria` | 982 | `indústria` | 12,094 | 12.3x | yes |
-| `intimo` | 850 | `íntimo` | 10,243 | 12.1x | yes |
+| `intimo` | 855 | `íntimo` | 10,243 | 12.0x | yes |
 | `africa` | 845 | `áfrica` | 16,372 | 19.4x |  |
-| `legitimo` | 802 | `legítimo` | 11,170 | 13.9x | yes |
+| `legitimo` | 807 | `legítimo` | 11,170 | 13.8x | yes |
 | `transito` | 801 | `trânsito` | 14,138 | 17.7x | yes |
 | `alo` | 766 | `alô` | 10,737 | 14.0x | yes |
-| `beneficio` | 758 | `benefício` | 8,963 | 11.8x | yes |
-| `liquido` | 752 | `líquido` | 9,854 | 13.1x | yes |
+| `beneficio` | 765 | `benefício` | 8,963 | 11.7x | yes |
+| `liquido` | 757 | `líquido` | 9,847 | 13.0x | yes |
 | `capitulo` | 704 | `capítulo` | 10,555 | 15.0x | yes |
-| `influencia` | 647 | `influência` | 11,925 | 18.4x | yes |
+| `influencia` | 655 | `influência` | 11,925 | 18.2x | yes |
 | `hamburguer` | 633 | `hambúrguer` | 9,222 | 14.6x |  |
 | `evidencia` | 584 | `evidência` | 8,491 | 14.5x | yes |
 | `canada` | 504 | `canadá` | 8,223 | 16.3x | yes |
-| `orbita` | 474 | `órbita` | 7,086 | 14.9x | yes |
-| `formula` | 445 | `fórmula` | 6,660 | 15.0x | yes |
-| `fotografo` | 441 | `fotógrafo` | 6,067 | 13.8x | yes |
+| `orbita` | 479 | `órbita` | 7,086 | 14.8x | yes |
+| `fotografo` | 453 | `fotógrafo` | 6,067 | 13.4x | yes |
+| `formula` | 446 | `fórmula` | 6,660 | 14.9x | yes |
 | `refugio` | 350 | `refúgio` | 5,346 | 15.3x | yes |
 | `audio` | 344 | `áudio` | 3,700 | 10.8x |  |
 | `mare` | 319 | `maré` | 5,590 | 17.5x |  |
@@ -183,8 +183,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `asia` | 309 | `ásia` | 3,340 | 10.8x |  |
 | `vicio` | 299 | `vício` | 5,971 | 20.0x | yes |
 | `oficio` | 257 | `ofício` | 2,917 | 11.4x | yes |
+| `animo` | 252 | `ânimo` | 3,035 | 12.0x | yes |
 | `panama` | 251 | `panamá` | 3,163 | 12.6x |  |
-| `animo` | 249 | `ânimo` | 3,035 | 12.2x | yes |
 | `dracula` | 246 | `drácula` | 3,177 | 12.9x |  |
 | `senor` | 227 | `señor` | 3,426 | 15.1x |  |
 | `francois` | 199 | `françois` | 2,358 | 11.8x |  |
@@ -195,7 +195,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `angustia` | 175 | `angústia` | 2,076 | 11.9x | yes |
 | `capua` | 173 | `cápua` | 1,810 | 10.5x |  |
 | `tita` | 167 | `titã` | 2,430 | 14.6x |  |
-| `estimulo` | 165 | `estímulo` | 1,945 | 11.8x | yes |
+| `estimulo` | 166 | `estímulo` | 1,945 | 11.7x | yes |
 | `austria` | 163 | `áustria` | 2,210 | 13.6x |  |
 | `cleopatra` | 156 | `cleópatra` | 1,612 | 10.3x |  |
 | `cancer` | 151 | `câncer` | 1,682 | 11.1x |  |
@@ -210,7 +210,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `colon` | 106 | `cólon` | 1,273 | 12.0x |  |
 | `atraido` | 105 | `atraído` | 1,119 | 10.7x |  |
 | `possuido` | 104 | `possuído` | 1,779 | 17.1x |  |
-| `menage` | 103 | `ménage` | 1,277 | 12.4x |  |
+| `menage` | 103 | `ménage` | 1,280 | 12.4x |  |
 | `fenix` | 100 | `fénix` | 1,740 | 17.4x |  |
 | `porta-avioes` | 98 | `porta-aviões` | 1,515 | 15.5x |  |
 | `sicilia` | 96 | `sicília` | 1,643 | 17.1x |  |
@@ -222,7 +222,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ambar` | 77 | `âmbar` | 1,328 | 17.2x |  |
 | `narnia` | 77 | `nárnia` | 1,101 | 14.3x |  |
 | `decadencia` | 74 | `decadência` | 1,226 | 16.6x |  |
-| `acoitar` | 68 | `açoitar` | 922 | 13.6x | yes |
+| `acoitar` | 68 | `açoitar` | 928 | 13.6x | yes |
 | `harmonica` | 68 | `harmónica` | 896 | 13.2x |  |
 | `bogota` | 66 | `bogotá` | 798 | 12.1x |  |
 | `chale` | 61 | `chalé` | 1,151 | 18.9x |  |
@@ -292,7 +292,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `namibia` | 14 | `namíbia` | 142 | 10.1x |  |
 | `patogeno` | 14 | `patógeno` | 234 | 16.7x |  |
 | `beneficiencia` | 13 | `beneficiência` | 139 | 10.7x |  |
-| `destroia` | 13 | `destróia` | 171 | 13.2x |  |
 | `enchante` | 13 | `enchanté` | 229 | 17.6x |  |
 | `neuronios` | 13 | `neurônios` | 217 | 16.7x |  |
 | `nortumbria` | 13 | `nortúmbria` | 231 | 17.8x |  |
@@ -342,6 +341,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `austro-hungaro` | 8 | `austro-húngaro` | 108 | 13.5x |  |
 | `carnica` | 8 | `carniça` | 105 | 13.1x |  |
 | `conteiner` | 8 | `contêiner` | 98 | 12.2x |  |
+| `diluido` | 8 | `diluído` | 119 | 14.9x |  |
 | `espacamento` | 8 | `espaçamento` | 101 | 12.6x |  |
 | `formico` | 8 | `fórmico` | 83 | 10.4x |  |
 | `genia` | 8 | `gênia` | 85 | 10.6x |  |
@@ -358,7 +358,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `catalitico` | 7 | `catalítico` | 105 | 15.0x |  |
 | `criancola` | 7 | `criançola` | 86 | 12.3x |  |
 | `criogenica` | 7 | `criogênica` | 134 | 19.1x |  |
-| `diluido` | 7 | `diluído` | 119 | 17.0x |  |
 | `dize-io` | 7 | `dizê-io` | 99 | 14.1x |  |
 | `economicos` | 7 | `econômicos` | 71 | 10.1x |  |
 | `fotons` | 7 | `fótons` | 74 | 10.6x |  |
@@ -387,7 +386,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `basilico` | 5 | `basílico` | 56 | 11.2x |  |
 | `comica` | 5 | `cômica` | 90 | 18.0x |  |
 | `congenita` | 5 | `congênita` | 62 | 12.4x |  |
-| `destroias` | 5 | `destróias` | 50 | 10.0x |  |
 | `dosimetro` | 5 | `dosímetro` | 64 | 12.8x |  |
 | `elae` | 5 | `elaé` | 57 | 11.4x |  |
 | `esras` | 5 | `esrás` | 85 | 17.0x |  |
@@ -414,6 +412,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `citia` | 4 | `cítia` | 73 | 18.2x |  |
 | `colle` | 4 | `collé` | 60 | 15.0x |  |
 | `criminalistica` | 4 | `criminalística` | 65 | 16.2x |  |
+| `encontra-ia` | 4 | `encontrá-ia` | 52 | 13.0x |  |
 | `importacao-exportacao` | 4 | `importação-exportação` | 55 | 13.8x |  |
 | `incomodos` | 4 | `incômodos` | 41 | 10.2x |  |
 | `ironica` | 4 | `irônica` | 75 | 18.8x |  |
@@ -437,11 +436,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cartaozinho` | 3 | `cartãozinho` | 45 | 15.0x |  |
 | `chachacha` | 3 | `chachachá` | 49 | 16.3x |  |
 | `cometario` | 3 | `cometário` | 30 | 10.0x |  |
-| `construistea` | 3 | `construístea` | 36 | 12.0x |  |
 | `deixa-ia` | 3 | `deixá-ia` | 58 | 19.3x |  |
 | `destacavel` | 3 | `destacável` | 37 | 12.3x |  |
 | `dola` | 3 | `dóla` | 45 | 15.0x |  |
-| `encontra-ia` | 3 | `encontrá-ia` | 52 | 17.3x |  |
 | `esquizofrenicos` | 3 | `esquizofrênicos` | 50 | 16.7x |  |
 | `euripedes` | 3 | `eurípedes` | 32 | 10.7x |  |
 | `euripides` | 3 | `eurípides` | 49 | 16.3x |  |
@@ -578,6 +575,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `zefiro` | 2 | `zéfiro` | 22 | 11.0x |  |
 | `ºaniversario` | 2 | `ºaniversário` | 32 | 16.0x |  |
 | `abeculas` | 1 | `abéculas` | 17 | 17.0x |  |
+| `abencoa` | 1 | `abencoá` | 10 | 10.0x |  |
 | `acabeca` | 1 | `acabeça` | 13 | 13.0x |  |
 | `acusa-io` | 1 | `acusá-io` | 14 | 14.0x |  |
 | `ademas` | 1 | `además` | 15 | 15.0x |  |
@@ -588,7 +586,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `alskar` | 1 | `älskar` | 14 | 14.0x |  |
 | `amao` | 1 | `amão` | 16 | 16.0x |  |
 | `amasia` | 1 | `amásia` | 15 | 15.0x |  |
-| `amordacaa` | 1 | `amordaçaa` | 13 | 13.0x |  |
 | `anti-alergico` | 1 | `anti-alérgico` | 18 | 18.0x |  |
 | `anti-semiticos` | 1 | `anti-semíticos` | 15 | 15.0x |  |
 | `anti-suicidio` | 1 | `anti-suicídio` | 13 | 13.0x |  |
@@ -604,7 +601,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `australasia` | 1 | `australásia` | 13 | 13.0x |  |
 | `autonomas` | 1 | `autônomas` | 11 | 11.0x |  |
 | `autorradio` | 1 | `autorrádio` | 17 | 17.0x |  |
-| `avaliaa` | 1 | `avaliaã` | 10 | 10.0x |  |
 | `avana` | 1 | `avanã` | 18 | 18.0x |  |
 | `aviles` | 1 | `avilés` | 12 | 12.0x |  |
 | `babilonicas` | 1 | `babilônicas` | 14 | 14.0x |  |
@@ -628,13 +624,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ciemencia` | 1 | `ciemência` | 12 | 12.0x |  |
 | `co-consul` | 1 | `co-cônsul` | 13 | 13.0x |  |
 | `coicidencia` | 1 | `coicidência` | 11 | 11.0x |  |
-| `colasa` | 1 | `colása` | 14 | 14.0x |  |
 | `com'as` | 1 | `com'ás` | 13 | 13.0x |  |
 | `comodas` | 1 | `cômodas` | 16 | 16.0x |  |
 | `complos` | 1 | `complôs` | 15 | 15.0x |  |
 | `concepcao` | 1 | `concepçäo` | 10 | 10.0x |  |
 | `confissionario` | 1 | `confissionário` | 12 | 12.0x |  |
-| `constroia` | 1 | `constróia` | 18 | 18.0x |  |
 | `contacta-ios` | 1 | `contactá-ios` | 18 | 18.0x |  |
 | `contra-interroga` | 1 | `contra-interrogá` | 11 | 11.0x |  |
 | `convence-ia` | 1 | `convencê-ia` | 13 | 13.0x |  |
@@ -737,7 +731,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `l'equipe` | 1 | `l'équipe` | 10 | 10.0x |  |
 | `ladao` | 1 | `ladão` | 18 | 18.0x |  |
 | `lanca-fumos` | 1 | `lança-fumos` | 12 | 12.0x |  |
-| `lancoa` | 1 | `lançoa` | 14 | 14.0x |  |
 | `laurencio` | 1 | `laurêncio` | 18 | 18.0x |  |
 | `leva-ia` | 1 | `levá-ia` | 16 | 16.0x |  |
 | `levissimo` | 1 | `levíssimo` | 13 | 13.0x |  |
@@ -851,6 +844,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `usa-ios` | 1 | `usá-ios` | 18 | 18.0x |  |
 | `utimos` | 1 | `útimos` | 17 | 17.0x |  |
 | `uzes` | 1 | `uzès` | 11 | 11.0x |  |
+| `v-i-t-o-r-i` | 1 | `v-i-t-ó-r-i` | 18 | 18.0x |  |
 | `valere` | 1 | `valére` | 13 | 13.0x |  |
 | `vancover` | 1 | `vancôver` | 10 | 10.0x |  |
 | `vascularizacao` | 1 | `vascularização` | 17 | 17.0x |  |
@@ -864,17 +858,17 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `webisodios` | 1 | `webisódios` | 12 | 12.0x |  |
 | `zubeyde` | 1 | `zübeyde` | 19 | 19.0x |  |
 
-<details><summary>All other folds (30,097)</summary>
+<details><summary>All other folds (29,934)</summary>
 
 | from | count | into | count | kind |
 |---|---:|---|---:|---|
-| `á` | 74,675 | `a` | 22,503,312 | accent_variant |
+| `á` | 74,676 | `a` | 22,822,857 | accent_variant |
 | `näo` | 50,132 | `não` | 17,877,211 | accent_variant |
 | `nao` | 49,805 | `não` | 17,877,211 | unaccented |
-| `ê` | 11,524 | `e` | 10,295,459 | accent_variant |
-| `so` | 10,371 | `só` | 1,714,752 | unaccented |
+| `ê` | 11,524 | `e` | 10,295,476 | accent_variant |
+| `so` | 10,372 | `só` | 1,714,752 | unaccented |
 | `familia` | 9,840 | `família` | 305,564 | unaccented |
-| `ja` | 9,073 | `já` | 1,853,641 | unaccented |
+| `ja` | 9,070 | `já` | 1,853,641 | unaccented |
 | `nâo` | 6,082 | `não` | 17,877,211 | accent_variant |
 | `aquí` | 5,899 | `aqui` | 2,355,966 | accent_variant |
 | `bébé` | 5,670 | `bebé` | 137,840 | accent_variant |
@@ -886,36 +880,36 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `voçê` | 4,406 | `você` | 1,746,755 | accent_variant |
 | `flórida` | 4,276 | `florida` | 8,853 | accent_variant |
 | `mae` | 4,081 | `mãe` | 724,015 | unaccented |
-| `ca` | 3,995 | `cá` | 419,586 | unaccented |
+| `ca` | 3,914 | `cá` | 419,586 | unaccented |
 | `ninguem` | 3,840 | `ninguém` | 502,810 | unaccented |
 | `possivel` | 3,693 | `possível` | 140,689 | unaccented |
 | `entao` | 3,644 | `então` | 1,280,096 | unaccented |
-| `miudo` | 3,507 | `miúdo` | 161,639 | unaccented |
-| `pa` | 3,472 | `pá` | 51,345 | unaccented |
+| `miudo` | 3,507 | `miúdo` | 161,636 | unaccented |
+| `pa` | 3,457 | `pá` | 51,345 | unaccented |
 | `sózinho` | 3,340 | `sozinho` | 213,447 | accent_variant |
-| `â` | 3,138 | `a` | 22,503,312 | accent_variant |
+| `â` | 3,138 | `a` | 22,822,857 | accent_variant |
 | `miuda` | 3,081 | `miúda` | 126,718 | unaccented |
 | `video` | 2,905 | `vídeo` | 44,133 | unaccented |
 | `jà` | 2,657 | `já` | 1,853,641 | accent_variant |
 | `gênio` | 2,485 | `génio` | 26,394 | accent_variant |
-| `espirito` | 2,408 | `espírito` | 50,093 | unaccented |
+| `espirito` | 2,408 | `espírito` | 50,091 | unaccented |
 | `entäo` | 2,370 | `então` | 1,280,096 | accent_variant |
 | `estupido` | 2,308 | `estúpido` | 109,912 | unaccented |
 | `frances` | 2,308 | `francês` | 41,164 | unaccented |
-| `piça` | 2,243 | `pica` | 2,506 | accent_variant |
+| `piça` | 2,243 | `pica` | 2,523 | accent_variant |
 | `america` | 2,234 | `américa` | 48,118 | unaccented |
 | `prêmio` | 2,209 | `prémio` | 27,963 | accent_variant |
-| `alí` | 2,208 | `ali` | 289,728 | accent_variant |
+| `alí` | 2,208 | `ali` | 289,729 | accent_variant |
 | `obvio` | 2,194 | `óbvio` | 34,283 | unaccented |
-| `qué` | 2,170 | `que` | 22,332,777 | accent_variant |
+| `qué` | 2,170 | `que` | 22,332,778 | accent_variant |
 | `horrivel` | 2,051 | `horrível` | 63,077 | unaccented |
-| `saír` | 2,044 | `sair` | 833,282 | accent_variant |
+| `saír` | 2,044 | `sair` | 833,310 | accent_variant |
 | `california` | 2,038 | `califórnia` | 21,589 | unaccented |
 | `taxi` | 2,027 | `táxi` | 29,949 | unaccented |
 | `là` | 1,987 | `lá` | 1,481,867 | accent_variant |
-| `tres` | 1,977 | `três` | 341,226 | unaccented |
+| `tres` | 1,977 | `três` | 341,229 | unaccented |
 | `täo` | 1,952 | `tão` | 730,506 | accent_variant |
-| `día` | 1,894 | `dia` | 945,701 | accent_variant |
+| `día` | 1,894 | `dia` | 945,693 | accent_variant |
 | `benção` | 1,841 | `bênção` | 8,778 | accent_variant |
 | `terrivel` | 1,794 | `terrível` | 51,617 | unaccented |
 | `cao` | 1,772 | `cão` | 122,006 | unaccented |
@@ -928,13 +922,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ía` | 1,642 | `iá` | 5,482 | accent_variant |
 | `edificio` | 1,623 | `edifício` | 46,414 | unaccented |
 | `provávelmente` | 1,623 | `provavelmente` | 100,611 | accent_variant |
-| `sí` | 1,615 | `si` | 264,240 | accent_variant |
-| `ç` | 1,611 | `c` | 46,021 | accent_variant |
-| `vêr` | 1,599 | `ver` | 2,425,709 | accent_variant |
+| `sí` | 1,615 | `si` | 264,241 | accent_variant |
+| `ç` | 1,611 | `c` | 46,102 | accent_variant |
+| `vêr` | 1,599 | `ver` | 2,463,259 | accent_variant |
 | `sím` | 1,598 | `sim` | 2,839,630 | accent_variant |
-| `saida` | 1,523 | `saída` | 64,633 | unaccented |
+| `saida` | 1,523 | `saída` | 64,621 | unaccented |
 | `lingua` | 1,518 | `língua` | 38,779 | unaccented |
-| `pênis` | 1,501 | `pénis` | 13,064 | accent_variant |
+| `pênis` | 1,501 | `pénis` | 13,065 | accent_variant |
 | `amén` | 1,468 | `ámen` | 9,863 | accent_variant |
 | `juíz` | 1,437 | `juiz` | 36,121 | accent_variant |
 | `incrivel` | 1,435 | `incrível` | 70,840 | unaccented |
@@ -943,7 +937,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `năo` | 1,383 | `não` | 17,877,211 | accent_variant |
 | `rapido` | 1,368 | `rápido` | 173,741 | unaccented |
 | `suíte` | 1,365 | `suite` | 7,291 | accent_variant |
-| `fodê` | 1,334 | `fode` | 7,166 | accent_variant |
+| `fodê` | 1,334 | `fode` | 7,424 | accent_variant |
 | `atras` | 1,288 | `atrás` | 257,181 | unaccented |
 | `principe` | 1,227 | `príncipe` | 32,104 | unaccented |
 | `voilà` | 1,209 | `voilá` | 1,255 | accent_variant |
@@ -961,9 +955,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `nào` | 1,010 | `não` | 17,877,211 | accent_variant |
 | `hipotese` | 991 | `hipótese` | 89,260 | unaccented |
 | `unico` | 962 | `único` | 301,707 | unaccented |
-| `nivel` | 931 | `nível` | 56,918 | unaccented |
-| `maría` | 928 | `maria` | 30,775 | accent_variant |
-| `àgua` | 920 | `água` | 179,558 | accent_variant |
+| `nivel` | 931 | `nível` | 56,920 | unaccented |
+| `maría` | 928 | `maria` | 30,773 | accent_variant |
+| `àgua` | 920 | `água` | 179,546 | accent_variant |
 | `olívia` | 917 | `olivia` | 14,548 | accent_variant |
 | `experiencia` | 909 | `experiência` | 59,124 | unaccented |
 | `olà` | 906 | `olá` | 703,259 | accent_variant |
@@ -976,8 +970,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `camara` | 845 | `câmara` | 89,503 | unaccented |
 | `perú` | 838 | `peru` | 9,838 | accent_variant |
 | `peña` | 820 | `pena` | 134,019 | accent_variant |
-| `policía` | 814 | `polícia` | 298,898 | accent_variant |
-| `virus` | 813 | `vírus` | 25,099 | unaccented |
+| `policía` | 814 | `polícia` | 298,896 | accent_variant |
+| `virus` | 813 | `vírus` | 25,105 | unaccented |
 | `amanhä` | 809 | `amanhã` | 211,690 | accent_variant |
 | `suiça` | 796 | `suíça` | 4,798 | accent_variant |
 | `simón` | 791 | `simon` | 24,679 | accent_variant |
@@ -985,7 +979,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mexico` | 780 | `méxico` | 22,654 | unaccented |
 | `tótó` | 776 | `totó` | 4,853 | accent_variant |
 | `heroi` | 773 | `herói` | 53,337 | unaccented |
-| `fa` | 762 | `fã` | 25,452 | unaccented |
+| `fa` | 760 | `fã` | 25,452 | unaccented |
 | `metrópolis` | 760 | `metropolis` | 1,813 | accent_variant |
 | `renée` | 760 | `renee` | 3,314 | accent_variant |
 | `côr` | 758 | `cor` | 45,035 | accent_variant |
@@ -994,13 +988,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tranqüilo` | 743 | `tranquilo` | 12,637 | accent_variant |
 | `proximo` | 741 | `próximo` | 219,605 | unaccented |
 | `chao` | 738 | `chão` | 82,945 | unaccented |
-| `comecar` | 735 | `começar` | 534,242 | unaccented |
+| `comecar` | 735 | `começar` | 534,588 | unaccented |
 | `razao` | 734 | `razão` | 309,282 | unaccented |
 | `razäo` | 715 | `razão` | 309,282 | accent_variant |
 | `fácilmente` | 714 | `facilmente` | 18,106 | accent_variant |
 | `fe` | 703 | `fé` | 36,508 | unaccented |
 | `avózinha` | 694 | `avozinha` | 2,518 | accent_variant |
-| `agüentar` | 691 | `aguentar` | 115,421 | accent_variant |
+| `agüentar` | 691 | `aguentar` | 115,538 | accent_variant |
 | `freqüência` | 690 | `frequência` | 15,708 | accent_variant |
 | `hétero` | 689 | `hetero` | 1,568 | accent_variant |
 | `açucar` | 684 | `açúcar` | 15,049 | accent_variant |
@@ -1017,7 +1011,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `adiós` | 617 | `adios` | 959 | accent_variant |
 | `juárez` | 612 | `juarez` | 1,164 | accent_variant |
 | `proprio` | 611 | `próprio` | 231,513 | unaccented |
-| `tras` | 611 | `trás` | 133,277 | unaccented |
+| `tras` | 611 | `trás` | 133,287 | unaccented |
 | `agencia` | 608 | `agência` | 24,332 | unaccented |
 | `avôzinho` | 594 | `avozinho` | 1,313 | accent_variant |
 | `úrsula` | 589 | `ursula` | 1,113 | accent_variant |
@@ -1060,21 +1054,21 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `león` | 471 | `leon` | 7,025 | accent_variant |
 | `seqüência` | 470 | `sequência` | 9,624 | accent_variant |
 | `sotão` | 465 | `sótão` | 5,655 | accent_variant |
-| `indio` | 463 | `índio` | 15,267 | unaccented |
+| `indio` | 463 | `índio` | 15,262 | unaccented |
 | `alguêm` | 460 | `alguém` | 675,211 | accent_variant |
-| `daquí` | 459 | `daqui` | 410,163 | accent_variant |
-| `cómo` | 457 | `como` | 3,285,447 | accent_variant |
-| `ô` | 451 | `o` | 29,885,565 | accent_variant |
+| `daquí` | 459 | `daqui` | 410,165 | accent_variant |
+| `cómo` | 457 | `como` | 3,285,638 | accent_variant |
+| `ô` | 451 | `o` | 29,933,053 | accent_variant |
 | `pornô` | 449 | `porno` | 5,247 | accent_variant |
 | `eletrônico` | 447 | `eletrónico` | 7,569 | accent_variant |
 | `ça` | 443 | `cá` | 419,586 | accent_variant |
-| `àcerca` | 441 | `acerca` | 59,576 | accent_variant |
+| `àcerca` | 441 | `acerca` | 59,572 | accent_variant |
 | `incômodo` | 440 | `incómodo` | 5,476 | accent_variant |
-| `caír` | 437 | `cair` | 170,702 | accent_variant |
-| `expôr` | 436 | `expor` | 20,657 | accent_variant |
+| `caír` | 437 | `cair` | 170,710 | accent_variant |
+| `expôr` | 436 | `expor` | 20,685 | accent_variant |
 | `sacrificio` | 436 | `sacrifício` | 17,128 | unaccented |
-| `míudo` | 433 | `miúdo` | 161,639 | accent_variant |
-| `piña` | 429 | `pina` | 441 | accent_variant |
+| `míudo` | 433 | `miúdo` | 161,636 | accent_variant |
+| `piña` | 429 | `pina` | 444 | accent_variant |
 | `atencão` | 428 | `atenção` | 107,999 | accent_variant |
 | `juizo` | 428 | `juízo` | 14,321 | unaccented |
 | `fantastico` | 422 | `fantástico` | 96,598 | unaccented |
@@ -1106,7 +1100,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `blasfêmia` | 389 | `blasfémia` | 1,451 | accent_variant |
 | `escritorio` | 386 | `escritório` | 78,059 | unaccented |
 | `missao` | 386 | `missão` | 84,134 | unaccented |
-| `saquê` | 385 | `saque` | 2,707 | accent_variant |
+| `saquê` | 385 | `saque` | 2,732 | accent_variant |
 | `côco` | 379 | `coco` | 6,021 | accent_variant |
 | `martín` | 376 | `martin` | 27,697 | accent_variant |
 | `dário` | 371 | `dario` | 541 | accent_variant |
@@ -1118,9 +1112,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `reporter` | 359 | `repórter` | 9,312 | unaccented |
 | `simbolo` | 358 | `símbolo` | 16,459 | unaccented |
 | `niño` | 356 | `nino` | 1,345 | accent_variant |
-| `saude` | 356 | `saúde` | 46,638 | unaccented |
+| `saude` | 356 | `saúde` | 46,640 | unaccented |
 | `ninguêm` | 354 | `ninguém` | 502,810 | accent_variant |
-| `ä` | 353 | `a` | 22,503,312 | accent_variant |
+| `ä` | 353 | `a` | 22,822,857 | accent_variant |
 | `léon` | 352 | `leon` | 7,025 | accent_variant |
 | `tumulo` | 350 | `túmulo` | 10,818 | unaccented |
 | `disponivel` | 349 | `disponível` | 19,596 | unaccented |
@@ -1135,9 +1129,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `codigo` | 336 | `código` | 63,697 | unaccented |
 | `prisäo` | 333 | `prisão` | 105,392 | accent_variant |
 | `freqüentemente` | 332 | `frequentemente` | 4,702 | accent_variant |
+| `pöe` | 331 | `poe` | 2,892 | accent_variant |
 | `voçes` | 331 | `voces` | 3,419 | accent_variant |
 | `possívelmente` | 330 | `possivelmente` | 11,584 | accent_variant |
-| `pöe` | 329 | `poe` | 2,832 | accent_variant |
 | `sênior` | 328 | `sénior` | 3,464 | accent_variant |
 | `vênus` | 328 | `vénus` | 2,182 | accent_variant |
 | `jesús` | 327 | `jesus` | 75,884 | accent_variant |
@@ -1167,7 +1161,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `estacão` | 302 | `estação` | 44,867 | accent_variant |
 | `orfão` | 301 | `órfão` | 6,135 | accent_variant |
 | `patê` | 299 | `paté` | 390 | accent_variant |
-| `nôs` | 298 | `nos` | 1,714,154 | accent_variant |
+| `nôs` | 298 | `nos` | 1,714,351 | accent_variant |
 | `coraçäo` | 297 | `coração` | 155,243 | accent_variant |
 | `hélène` | 294 | `helene` | 758 | accent_variant |
 | `especie` | 292 | `espécie` | 56,730 | unaccented |
@@ -1185,18 +1179,18 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `gângster` | 285 | `gangster` | 2,830 | accent_variant |
 | `óvni` | 285 | `ovni` | 2,088 | accent_variant |
 | `invisivel` | 284 | `invisível` | 12,041 | unaccented |
-| `assassíno` | 280 | `assassino` | 119,323 | accent_variant |
-| `propôr` | 280 | `propor` | 17,146 | accent_variant |
-| `anônimo` | 279 | `anónimo` | 9,248 | accent_variant |
+| `assassíno` | 280 | `assassino` | 119,336 | accent_variant |
+| `propôr` | 280 | `propor` | 17,148 | accent_variant |
+| `anônimo` | 279 | `anónimo` | 9,247 | accent_variant |
 | `saké` | 279 | `sake` | 683 | accent_variant |
 | `atê` | 278 | `até` | 905,561 | accent_variant |
 | `demonio` | 278 | `demónio` | 32,061 | unaccented |
-| `emergencia` | 277 | `emergência` | 41,636 | unaccented |
+| `emergencia` | 277 | `emergência` | 41,633 | unaccented |
 | `incendio` | 277 | `incêndio` | 23,194 | unaccented |
 | `mâe` | 277 | `mãe` | 724,015 | accent_variant |
 | `benjamín` | 276 | `benjamin` | 8,121 | accent_variant |
 | `gêmeo` | 276 | `gémeo` | 17,739 | accent_variant |
-| `pàra` | 276 | `para` | 7,211,920 | accent_variant |
+| `pàra` | 276 | `para` | 7,211,969 | accent_variant |
 | `simpatico` | 276 | `simpático` | 58,473 | unaccented |
 | `premio` | 274 | `prémio` | 27,963 | unaccented |
 | `poco` | 273 | `poço` | 12,927 | unaccented |
@@ -1214,7 +1208,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `inglés` | 264 | `inglês` | 54,101 | accent_variant |
 | `garcía` | 263 | `garcia` | 6,427 | accent_variant |
 | `irmä` | 263 | `irmã` | 143,290 | accent_variant |
-| `nòs` | 263 | `nos` | 1,714,154 | accent_variant |
+| `nòs` | 263 | `nos` | 1,714,351 | accent_variant |
 | `vô` | 263 | `vó` | 1,324 | accent_variant |
 | `básicamente` | 261 | `basicamente` | 18,571 | accent_variant |
 | `egoista` | 261 | `egoísta` | 12,908 | unaccented |
@@ -1222,14 +1216,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `questäo` | 260 | `questão` | 97,336 | accent_variant |
 | `higiênico` | 258 | `higiénico` | 3,288 | accent_variant |
 | `entâo` | 256 | `então` | 1,280,096 | accent_variant |
-| `ná` | 255 | `na` | 2,539,819 | accent_variant |
+| `ná` | 255 | `na` | 2,539,807 | accent_variant |
 | `violencia` | 255 | `violência` | 21,741 | unaccented |
 | `chäo` | 254 | `chão` | 82,945 | accent_variant |
 | `seqüestro` | 252 | `sequestro` | 3,378 | accent_variant |
 | `panama` | 251 | `panamá` | 3,163 | unaccented |
 | `söze` | 251 | `soze` | 665 | accent_variant |
 | `gerónimo` | 250 | `geronimo` | 776 | accent_variant |
-| `éa` | 250 | `ea` | 728 | accent_variant |
+| `éa` | 250 | `ea` | 712 | accent_variant |
 | `naõ` | 249 | `não` | 17,877,211 | accent_variant |
 | `muñez` | 248 | `munez` | 252 | accent_variant |
 | `ês` | 248 | `es` | 5,512 | accent_variant |
@@ -1239,12 +1233,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `geneviève` | 243 | `genevieve` | 1,001 | accent_variant |
 | `léa` | 243 | `lea` | 774 | accent_variant |
 | `vocę` | 243 | `você` | 1,746,755 | accent_variant |
-| `ò` | 243 | `o` | 29,885,565 | accent_variant |
+| `ò` | 243 | `o` | 29,933,053 | accent_variant |
 | `genero` | 241 | `género` | 29,580 | unaccented |
+| `bonus` | 238 | `bónus` | 5,337 | unaccented |
 | `octávia` | 238 | `octavia` | 1,582 | accent_variant |
-| `ü` | 238 | `u` | 13,630 | accent_variant |
-| `bonus` | 237 | `bónus` | 5,337 | unaccented |
-| `dár` | 237 | `dar` | 1,632,629 | accent_variant |
+| `ü` | 238 | `u` | 13,639 | accent_variant |
+| `dár` | 237 | `dar` | 1,634,277 | accent_variant |
 | `proíbido` | 237 | `proibido` | 6,205 | accent_variant |
 | `mamae` | 236 | `mamãe` | 10,373 | unaccented |
 | `capsula` | 235 | `cápsula` | 8,737 | unaccented |
@@ -1252,7 +1246,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `situaçao` | 233 | `situação` | 96,611 | accent_variant |
 | `lucía` | 231 | `lucia` | 1,199 | accent_variant |
 | `cômodo` | 230 | `cómodo` | 2,710 | accent_variant |
-| `dancar` | 230 | `dançar` | 66,130 | unaccented |
+| `dancar` | 230 | `dançar` | 66,142 | unaccented |
 | `posiçao` | 230 | `posição` | 71,815 | accent_variant |
 | `questao` | 230 | `questão` | 97,336 | unaccented |
 | `tenis` | 230 | `ténis` | 8,419 | unaccented |
@@ -1277,7 +1271,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `atraves` | 217 | `através` | 60,137 | unaccented |
 | `cà` | 217 | `cá` | 419,586 | accent_variant |
 | `bobó` | 216 | `bobo` | 5,404 | accent_variant |
-| `estár` | 215 | `estar` | 14,117,689 | accent_variant |
+| `estár` | 215 | `estar` | 14,117,740 | accent_variant |
 | `laboratorio` | 215 | `laboratório` | 44,399 | unaccented |
 | `audiencia` | 214 | `audiência` | 17,371 | unaccented |
 | `cocaina` | 214 | `cocaína` | 11,461 | unaccented |
@@ -1300,7 +1294,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `almoco` | 206 | `almoço` | 41,062 | unaccented |
 | `espéctaculo` | 205 | `espectaculo` | 414 | accent_variant |
 | `necessario` | 205 | `necessário` | 57,074 | unaccented |
-| `penis` | 204 | `pénis` | 13,064 | unaccented |
+| `penis` | 204 | `pénis` | 13,065 | unaccented |
 | `perimetro` | 204 | `perímetro` | 12,323 | unaccented |
 | `prisao` | 204 | `prisão` | 105,392 | unaccented |
 | `põr` | 203 | `por` | 4,232,804 | accent_variant |
@@ -1320,12 +1314,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `familía` | 197 | `família` | 305,564 | accent_variant |
 | `néo` | 197 | `neo` | 2,892 | accent_variant |
 | `bém` | 196 | `bem` | 3,665,277 | accent_variant |
-| `côrte` | 196 | `corte` | 34,191 | accent_variant |
+| `côrte` | 196 | `corte` | 34,283 | accent_variant |
 | `fênix` | 196 | `fénix` | 1,740 | accent_variant |
 | `sensacão` | 196 | `sensação` | 27,853 | accent_variant |
 | `primogênito` | 195 | `primogénito` | 1,308 | accent_variant |
 | `apos` | 194 | `após` | 65,524 | unaccented |
-| `destruír` | 194 | `destruir` | 123,209 | accent_variant |
+| `destruír` | 194 | `destruir` | 123,956 | accent_variant |
 | `producão` | 194 | `produção` | 16,192 | accent_variant |
 | `australia` | 193 | `austrália` | 5,743 | unaccented |
 | `dalí` | 193 | `dali` | 12,548 | accent_variant |
@@ -1333,8 +1327,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `müller` | 193 | `muller` | 1,133 | accent_variant |
 | `inteligencia` | 192 | `inteligência` | 17,031 | unaccented |
 | `musculo` | 192 | `músculo` | 10,983 | unaccented |
-| `trés` | 192 | `três` | 341,226 | accent_variant |
-| `danca` | 191 | `dança` | 36,787 | unaccented |
+| `trés` | 192 | `três` | 341,229 | accent_variant |
+| `danca` | 191 | `dança` | 36,783 | unaccented |
 | `díaz` | 191 | `diaz` | 2,652 | accent_variant |
 | `felícia` | 191 | `felicia` | 2,036 | accent_variant |
 | `leônidas` | 191 | `leonidas` | 674 | accent_variant |
@@ -1345,17 +1339,17 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cômico` | 189 | `cómico` | 3,112 | accent_variant |
 | `paciencia` | 189 | `paciência` | 17,693 | unaccented |
 | `provavel` | 188 | `provável` | 18,959 | unaccented |
-| `alícia` | 187 | `alicia` | 5,559 | accent_variant |
+| `alícia` | 187 | `alicia` | 5,567 | accent_variant |
 | `ceu` | 186 | `céu` | 103,169 | unaccented |
 | `píer` | 186 | `pier` | 414 | accent_variant |
 | `alcóol` | 185 | `álcool` | 18,441 | accent_variant |
-| `tràs` | 185 | `trás` | 133,277 | accent_variant |
+| `tràs` | 185 | `trás` | 133,287 | accent_variant |
 | `colombia` | 184 | `colômbia` | 3,789 | unaccented |
-| `lêr` | 183 | `ler` | 135,008 | accent_variant |
+| `lêr` | 183 | `ler` | 134,763 | accent_variant |
 | `rajá` | 183 | `raja` | 797 | accent_variant |
 | `suiço` | 183 | `suíço` | 2,509 | accent_variant |
 | `ômega` | 183 | `omega` | 1,437 | accent_variant |
-| `très` | 182 | `três` | 341,226 | accent_variant |
+| `très` | 182 | `três` | 341,229 | accent_variant |
 | `chavena` | 181 | `chávena` | 7,867 | unaccented |
 | `econômico` | 181 | `económico` | 5,439 | accent_variant |
 | `quimica` | 180 | `química` | 10,996 | unaccented |
@@ -1364,7 +1358,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `iman` | 178 | `íman` | 1,840 | unaccented |
 | `insônia` | 178 | `insónia` | 1,656 | accent_variant |
 | `michéle` | 178 | `michele` | 1,151 | accent_variant |
-| `seguranca` | 178 | `segurança` | 163,291 | unaccented |
+| `seguranca` | 178 | `segurança` | 163,289 | unaccented |
 | `criogênico` | 177 | `criogénico` | 436 | accent_variant |
 | `medium` | 177 | `médium` | 2,005 | unaccented |
 | `relatorio` | 177 | `relatório` | 52,228 | unaccented |
@@ -1395,7 +1389,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sánchez` | 169 | `sanchez` | 3,468 | accent_variant |
 | `ínicio` | 169 | `início` | 40,853 | accent_variant |
 | `tarô` | 168 | `taro` | 336 | accent_variant |
-| `consciencia` | 167 | `consciência` | 21,612 | unaccented |
+| `consciencia` | 167 | `consciência` | 21,609 | unaccented |
 | `druída` | 167 | `druida` | 1,658 | accent_variant |
 | `michèle` | 167 | `michele` | 1,151 | accent_variant |
 | `panico` | 167 | `pânico` | 22,327 | unaccented |
@@ -1403,10 +1397,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `polícial` | 166 | `policial` | 17,674 | accent_variant |
 | `ambulancia` | 165 | `ambulância` | 20,469 | unaccented |
 | `colonia` | 165 | `colónia` | 10,395 | unaccented |
-| `piço` | 165 | `pico` | 5,506 | accent_variant |
+| `piço` | 165 | `pico` | 5,508 | accent_variant |
 | `jiménez` | 164 | `jimenez` | 577 | accent_variant |
 | `oculos` | 164 | `óculos` | 20,229 | unaccented |
-| `ñ` | 164 | `n` | 22,178 | accent_variant |
+| `ñ` | 164 | `n` | 22,190 | accent_variant |
 | `armazem` | 163 | `armazém` | 19,809 | unaccented |
 | `austria` | 163 | `áustria` | 2,210 | unaccented |
 | `decisao` | 163 | `decisão` | 74,538 | unaccented |
@@ -1429,9 +1423,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `reuniao` | 159 | `reunião` | 71,610 | unaccented |
 | `oríon` | 158 | `orion` | 1,472 | accent_variant |
 | `veräo` | 158 | `verão` | 39,935 | accent_variant |
-| `vámonos` | 158 | `vamonos` | 197 | accent_variant |
 | `órion` | 158 | `orion` | 1,472 | accent_variant |
-| `doenca` | 157 | `doença` | 42,107 | unaccented |
+| `doenca` | 157 | `doença` | 42,106 | unaccented |
 | `romantico` | 157 | `romântico` | 20,041 | unaccented |
 | `salém` | 157 | `salem` | 1,900 | accent_variant |
 | `cleopatra` | 156 | `cleópatra` | 1,612 | unaccented |
@@ -1444,11 +1437,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `médici` | 154 | `medici` | 1,215 | accent_variant |
 | `cancão` | 153 | `canção` | 38,195 | accent_variant |
 | `dóri` | 153 | `dori` | 326 | accent_variant |
-| `pôrra` | 153 | `porra` | 122,752 | accent_variant |
+| `pôrra` | 153 | `porra` | 122,747 | accent_variant |
 | `situaçäo` | 153 | `situação` | 96,611 | accent_variant |
 | `príncipio` | 152 | `princípio` | 28,505 | accent_variant |
 | `realizacão` | 152 | `realização` | 8,121 | accent_variant |
-| `êle` | 152 | `ele` | 3,858,001 | accent_variant |
+| `êle` | 152 | `ele` | 3,858,000 | accent_variant |
 | `cancer` | 151 | `câncer` | 1,682 | unaccented |
 | `duzia` | 151 | `dúzia` | 14,842 | unaccented |
 | `hibrido` | 151 | `híbrido` | 4,151 | unaccented |
@@ -1462,11 +1455,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `traír` | 149 | `trair` | 14,716 | accent_variant |
 | `trípoli` | 149 | `tripoli` | 334 | accent_variant |
 | `björn` | 148 | `bjorn` | 943 | accent_variant |
-| `cêdo` | 148 | `cedo` | 84,321 | accent_variant |
+| `cêdo` | 148 | `cedo` | 84,324 | accent_variant |
 | `sakê` | 148 | `sake` | 683 | accent_variant |
 | `confortavel` | 147 | `confortável` | 20,921 | unaccented |
 | `krüger` | 147 | `kruger` | 1,263 | accent_variant |
-| `ése` | 147 | `ese` | 490 | accent_variant |
 | `chávez` | 146 | `chavez` | 1,035 | accent_variant |
 | `gérard` | 146 | `gerard` | 2,195 | accent_variant |
 | `mãmã` | 146 | `mamã` | 69,988 | accent_variant |
@@ -1480,7 +1472,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `nenê` | 144 | `nene` | 200 | accent_variant |
 | `séti` | 144 | `seti` | 243 | accent_variant |
 | `vigilancia` | 144 | `vigilância` | 22,369 | unaccented |
-| `yá` | 144 | `ya` | 5,296 | accent_variant |
+| `yá` | 144 | `ya` | 5,295 | accent_variant |
 | `àrvore` | 144 | `árvore` | 57,391 | accent_variant |
 | `camâra` | 143 | `câmara` | 89,503 | accent_variant |
 | `colegio` | 143 | `colégio` | 7,985 | unaccented |
@@ -1493,7 +1485,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `safári` | 142 | `safari` | 1,262 | accent_variant |
 | `vôce` | 142 | `você` | 1,746,755 | accent_variant |
 | `mustafá` | 141 | `mustafa` | 518 | accent_variant |
-| `ŕ` | 141 | `r` | 24,051 | accent_variant |
+| `ŕ` | 141 | `r` | 24,059 | accent_variant |
 | `ceú` | 140 | `céu` | 103,169 | accent_variant |
 | `cãmara` | 140 | `câmara` | 89,503 | accent_variant |
 | `dispôr` | 140 | `dispor` | 6,747 | accent_variant |
@@ -1512,7 +1504,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `furia` | 138 | `fúria` | 7,146 | unaccented |
 | `quilômetro` | 138 | `quilómetro` | 22,061 | accent_variant |
 | `relaçäo` | 138 | `relação` | 101,548 | accent_variant |
-| `ír` | 138 | `ir` | 9,022,856 | accent_variant |
+| `ír` | 138 | `ir` | 9,023,122 | accent_variant |
 | `depôr` | 137 | `depor` | 5,649 | accent_variant |
 | `selénia` | 137 | `selenia` | 232 | accent_variant |
 | `cronômetro` | 136 | `cronómetro` | 1,130 | accent_variant |
@@ -1551,14 +1543,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aló` | 130 | `alô` | 10,737 | accent_variant |
 | `babilônia` | 130 | `babilónia` | 1,249 | accent_variant |
 | `brontë` | 130 | `bronte` | 197 | accent_variant |
+| `odio` | 130 | `ódio` | 15,102 | unaccented |
 | `ñão` | 130 | `não` | 17,877,211 | accent_variant |
-| `ciencia` | 129 | `ciência` | 28,987 | unaccented |
+| `ciencia` | 129 | `ciência` | 28,983 | unaccented |
 | `energía` | 129 | `energia` | 64,798 | accent_variant |
 | `mutagénico` | 129 | `mutagênico` | 137 | accent_variant |
-| `odio` | 129 | `ódio` | 15,102 | unaccented |
-| `páraa` | 129 | `paraa` | 190 | accent_variant |
 | `resistencia` | 129 | `resistência` | 15,267 | unaccented |
-| `súper` | 129 | `super` | 24,294 | accent_variant |
+| `súper` | 129 | `super` | 24,295 | accent_variant |
 | `tápia` | 129 | `tapia` | 505 | accent_variant |
 | `cla` | 128 | `clã` | 8,131 | unaccented |
 | `jürgen` | 128 | `jurgen` | 267 | accent_variant |
@@ -1566,7 +1557,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ontém` | 128 | `ontem` | 142,295 | accent_variant |
 | `perdao` | 128 | `perdão` | 35,449 | unaccented |
 | `sériamente` | 128 | `seriamente` | 4,467 | accent_variant |
-| `çomo` | 128 | `como` | 3,285,447 | accent_variant |
+| `çomo` | 128 | `como` | 3,285,638 | accent_variant |
 | `perdäo` | 127 | `perdão` | 35,449 | accent_variant |
 | `relaçao` | 127 | `relação` | 101,548 | accent_variant |
 | `traduçao` | 127 | `tradução` | 58,904 | accent_variant |
@@ -1574,8 +1565,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `crônico` | 126 | `crónico` | 2,403 | accent_variant |
 | `iván` | 126 | `ivan` | 6,659 | accent_variant |
 | `adrián` | 125 | `adrian` | 6,405 | accent_variant |
-| `avancar` | 125 | `avançar` | 64,351 | unaccented |
-| `compôr` | 125 | `compor` | 8,533 | accent_variant |
+| `avancar` | 125 | `avançar` | 64,355 | unaccented |
+| `compôr` | 125 | `compor` | 8,542 | accent_variant |
 | `estatua` | 125 | `estátua` | 9,151 | unaccented |
 | `mío` | 125 | `mio` | 377 | accent_variant |
 | `póia` | 125 | `poia` | 149 | accent_variant |
@@ -1586,7 +1577,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pensilvania` | 124 | `pensilvânia` | 3,523 | unaccented |
 | `páraquedas` | 124 | `paraquedas` | 771 | accent_variant |
 | `quimico` | 124 | `químico` | 10,013 | unaccented |
-| `té` | 124 | `te` | 4,163,573 | accent_variant |
+| `té` | 124 | `te` | 4,164,229 | accent_variant |
 | `verônica` | 124 | `veronica` | 5,527 | accent_variant |
 | `däo` | 123 | `dao` | 202 | accent_variant |
 | `telémovel` | 123 | `telemóvel` | 69,130 | accent_variant |
@@ -1600,7 +1591,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `estaçao` | 121 | `estação` | 44,867 | accent_variant |
 | `estevão` | 121 | `estêvão` | 602 | accent_variant |
 | `zézinho` | 121 | `zezinho` | 293 | accent_variant |
-| `éi` | 121 | `ei` | 170,334 | accent_variant |
+| `éi` | 121 | `ei` | 170,339 | accent_variant |
 | `ôptimo` | 121 | `optimo` | 1,726 | accent_variant |
 | `adoravel` | 120 | `adorável` | 20,169 | unaccented |
 | `disneylandia` | 120 | `disneylândia` | 1,277 | unaccented |
@@ -1638,14 +1629,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `televisao` | 112 | `televisão` | 42,839 | unaccented |
 | `terrívelmente` | 112 | `terrivelmente` | 3,829 | accent_variant |
 | `tônica` | 112 | `tónica` | 692 | accent_variant |
-| `ácerca` | 112 | `acerca` | 59,576 | accent_variant |
+| `ácerca` | 112 | `acerca` | 59,572 | accent_variant |
 | `juiza` | 111 | `juíza` | 3,908 | unaccented |
 | `québec` | 111 | `quebec` | 440 | accent_variant |
 | `robo` | 111 | `robô` | 15,119 | unaccented |
 | `sólo` | 111 | `solo` | 20,513 | accent_variant |
 | `termômetro` | 111 | `termómetro` | 802 | accent_variant |
 | `tênue` | 111 | `ténue` | 1,268 | accent_variant |
-| `têr` | 111 | `ter` | 9,540,062 | accent_variant |
+| `têr` | 111 | `ter` | 9,545,514 | accent_variant |
 | `véronique` | 111 | `veronique` | 174 | accent_variant |
 | `dificíl` | 110 | `difícil` | 185,378 | accent_variant |
 | `espaco` | 110 | `espaço` | 69,707 | unaccented |
@@ -1663,19 +1654,19 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `manhâ` | 109 | `manhã` | 172,553 | accent_variant |
 | `républica` | 109 | `república` | 12,204 | accent_variant |
 | `esplendido` | 108 | `esplêndido` | 5,034 | unaccented |
-| `fôda` | 108 | `foda` | 62,711 | accent_variant |
+| `fôda` | 108 | `foda` | 62,723 | accent_variant |
 | `pseudônimo` | 108 | `pseudónimo` | 1,924 | accent_variant |
 | `àmen` | 108 | `ámen` | 9,863 | accent_variant |
 | `catéter` | 107 | `cateter` | 1,283 | accent_variant |
 | `inacreditavel` | 107 | `inacreditável` | 16,684 | unaccented |
 | `iô` | 107 | `io` | 766 | accent_variant |
-| `mágia` | 107 | `magia` | 38,783 | accent_variant |
+| `mágia` | 107 | `magia` | 38,782 | accent_variant |
 | `opá` | 107 | `opa` | 950 | accent_variant |
 | `polônio` | 107 | `polónio` | 285 | accent_variant |
 | `saudavel` | 107 | `saudável` | 19,187 | unaccented |
 | `súbitamente` | 107 | `subitamente` | 3,367 | accent_variant |
 | `théo` | 107 | `theo` | 4,652 | accent_variant |
-| `abraco` | 106 | `abraço` | 14,203 | unaccented |
+| `abraco` | 106 | `abraço` | 14,249 | unaccented |
 | `colon` | 106 | `cólon` | 1,273 | unaccented |
 | `cámara` | 106 | `câmara` | 89,503 | accent_variant |
 | `ginasio` | 106 | `ginásio` | 11,131 | unaccented |
@@ -1701,10 +1692,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `possuido` | 104 | `possuído` | 1,779 | unaccented |
 | `sindrome` | 104 | `síndrome` | 4,453 | unaccented |
 | `alêm` | 103 | `além` | 116,045 | accent_variant |
-| `ameaca` | 103 | `ameaça` | 43,315 | unaccented |
+| `ameaca` | 103 | `ameaça` | 43,337 | unaccented |
 | `cházinho` | 103 | `chazinho` | 270 | accent_variant |
 | `hipoglicémia` | 103 | `hipoglicemia` | 191 | accent_variant |
-| `menage` | 103 | `ménage` | 1,277 | unaccented |
+| `menage` | 103 | `ménage` | 1,280 | unaccented |
 | `mû` | 103 | `mu` | 1,532 | accent_variant |
 | `andréa` | 102 | `andrea` | 6,347 | accent_variant |
 | `diáriamente` | 102 | `diariamente` | 3,718 | accent_variant |
@@ -1714,7 +1705,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `agnès` | 101 | `agnes` | 2,881 | accent_variant |
 | `aparencia` | 101 | `aparência` | 12,510 | unaccented |
 | `cristovão` | 101 | `cristóvão` | 717 | accent_variant |
-| `dé` | 101 | `de` | 15,387,617 | accent_variant |
+| `dé` | 101 | `de` | 15,387,641 | accent_variant |
 | `fenix` | 100 | `fénix` | 1,740 | unaccented |
 | `metrônomo` | 100 | `metrónomo` | 124 | accent_variant |
 | `nuño` | 100 | `nuno` | 189 | accent_variant |
@@ -1722,7 +1713,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `transferencia` | 100 | `transferência` | 12,954 | unaccented |
 | `él` | 100 | `el` | 14,657 | accent_variant |
 | `óla` | 100 | `olá` | 703,259 | accent_variant |
-| `ajudà` | 99 | `ajuda` | 262,878 | accent_variant |
+| `ajudà` | 99 | `ajuda` | 264,146 | accent_variant |
 | `amônia` | 99 | `amónia` | 318 | accent_variant |
 | `cadaver` | 99 | `cadáver` | 24,675 | unaccented |
 | `destruido` | 99 | `destruído` | 3,532 | unaccented |
@@ -1735,12 +1726,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `esmé` | 98 | `esme` | 592 | accent_variant |
 | `estaçäo` | 98 | `estação` | 44,867 | accent_variant |
 | `irao` | 98 | `irão` | 36,398 | unaccented |
-| `lí` | 98 | `li` | 33,987 | accent_variant |
+| `lí` | 98 | `li` | 34,279 | accent_variant |
 | `mássimo` | 98 | `massimo` | 278 | accent_variant |
 | `plutônio` | 98 | `plutónio` | 1,847 | accent_variant |
 | `porta-avioes` | 98 | `porta-aviões` | 1,515 | unaccented |
 | `predio` | 98 | `prédio` | 26,126 | unaccented |
-| `redireccioná` | 98 | `redirecciona` | 198 | accent_variant |
+| `redireccioná` | 98 | `redirecciona` | 203 | accent_variant |
 | `thérèse` | 98 | `therese` | 387 | accent_variant |
 | `estrogênio` | 97 | `estrogénio` | 473 | accent_variant |
 | `miseravel` | 97 | `miserável` | 12,618 | unaccented |
@@ -1764,13 +1755,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `guzmán` | 94 | `guzman` | 304 | accent_variant |
 | `hefaísto` | 94 | `hefaisto` | 119 | accent_variant |
 | `informaçäo` | 94 | `informação` | 117,540 | accent_variant |
-| `inspeccioná` | 94 | `inspecciona` | 139 | accent_variant |
+| `inspeccioná` | 94 | `inspecciona` | 143 | accent_variant |
 | `materia` | 94 | `matéria` | 10,743 | unaccented |
 | `romênia` | 94 | `roménia` | 1,236 | accent_variant |
 | `sofa` | 94 | `sofá` | 18,580 | unaccented |
 | `tunica` | 94 | `túnica` | 1,248 | unaccented |
 | `cartäo` | 93 | `cartão` | 53,450 | accent_variant |
-| `construír` | 93 | `construir` | 77,784 | accent_variant |
+| `construír` | 93 | `construir` | 78,196 | accent_variant |
 | `decisäo` | 93 | `decisão` | 74,538 | accent_variant |
 | `folego` | 93 | `fôlego` | 5,218 | unaccented |
 | `kilômetros` | 93 | `kilómetros` | 446 | accent_variant |
@@ -1785,9 +1776,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `espetaculo` | 92 | `espetáculo` | 46,817 | unaccented |
 | `estăo` | 92 | `estáo` | 134 | accent_variant |
 | `jasäo` | 92 | `jasão` | 367 | accent_variant |
-| `menáge` | 92 | `ménage` | 1,277 | accent_variant |
+| `menáge` | 92 | `ménage` | 1,280 | accent_variant |
 | `päo` | 92 | `pão` | 22,130 | accent_variant |
-| `sì` | 92 | `si` | 264,240 | accent_variant |
+| `sì` | 92 | `si` | 264,241 | accent_variant |
 | `tragedia` | 92 | `tragédia` | 13,185 | unaccented |
 | `curriculo` | 91 | `currículo` | 5,089 | unaccented |
 | `elá` | 91 | `ela` | 2,046,331 | accent_variant |
@@ -1805,7 +1796,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `jános` | 90 | `janos` | 218 | accent_variant |
 | `minímo` | 90 | `mínimo` | 31,672 | accent_variant |
 | `oxigenio` | 90 | `oxigénio` | 12,664 | unaccented |
-| `repôr` | 90 | `repor` | 2,272 | accent_variant |
+| `repôr` | 90 | `repor` | 2,273 | accent_variant |
 | `ryûzaki` | 90 | `ryuzaki` | 338 | accent_variant |
 | `sobrevivencia` | 90 | `sobrevivência` | 11,087 | unaccented |
 | `taca` | 90 | `taça` | 10,724 | unaccented |
@@ -1835,7 +1826,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `traçy` | 87 | `tracy` | 8,976 | accent_variant |
 | `érica` | 87 | `erica` | 5,512 | accent_variant |
 | `cartao` | 86 | `cartão` | 53,450 | unaccented |
-| `esqueçer` | 86 | `esquecer` | 303,654 | accent_variant |
+| `esqueçer` | 86 | `esquecer` | 304,862 | accent_variant |
 | `françês` | 86 | `francês` | 41,164 | accent_variant |
 | `milhao` | 86 | `milhão` | 123,610 | unaccented |
 | `operaçäo` | 86 | `operação` | 63,652 | accent_variant |
@@ -1851,11 +1842,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sistêmico` | 85 | `sistémico` | 254 | accent_variant |
 | `vídia` | 85 | `vidia` | 93 | accent_variant |
 | `álucard` | 85 | `alucard` | 265 | accent_variant |
-| `accioná` | 84 | `acciona` | 652 | accent_variant |
+| `accioná` | 84 | `acciona` | 655 | accent_variant |
 | `autotrófos` | 84 | `autótrofos` | 139 | accent_variant |
 | `bebedo` | 84 | `bêbedo` | 15,922 | unaccented |
 | `cumplice` | 84 | `cúmplice` | 9,226 | unaccented |
-| `lé` | 84 | `lê` | 15,496 | accent_variant |
+| `lé` | 84 | `lê` | 15,795 | accent_variant |
 | `onibus` | 84 | `ônibus` | 2,294 | unaccented |
 | `salao` | 84 | `salão` | 13,576 | unaccented |
 | `valentín` | 84 | `valentin` | 543 | accent_variant |
@@ -1868,7 +1859,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pequeño` | 83 | `pequeno` | 254,236 | accent_variant |
 | `tobías` | 83 | `tobias` | 2,210 | accent_variant |
 | `ventoínha` | 83 | `ventoinha` | 1,607 | accent_variant |
-| `ú` | 83 | `u` | 13,630 | accent_variant |
+| `ú` | 83 | `u` | 13,639 | accent_variant |
 | `camiäo` | 82 | `camião` | 36,011 | accent_variant |
 | `capôt` | 82 | `capot` | 677 | accent_variant |
 | `desagradavel` | 82 | `desagradável` | 10,902 | unaccented |
@@ -1876,11 +1867,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `harmônica` | 82 | `harmónica` | 896 | accent_variant |
 | `idolo` | 82 | `ídolo` | 2,577 | unaccented |
 | `preco` | 82 | `preço` | 48,430 | unaccented |
-| `seqüestrar` | 82 | `sequestrar` | 5,855 | accent_variant |
+| `seqüestrar` | 82 | `sequestrar` | 5,896 | accent_variant |
 | `valdés` | 82 | `valdes` | 287 | accent_variant |
-| `î` | 82 | `i` | 42,762 | accent_variant |
+| `î` | 82 | `i` | 42,774 | accent_variant |
 | `abençõe` | 81 | `abencoe` | 129 | accent_variant |
-| `bâ` | 81 | `ba` | 2,511 | accent_variant |
+| `bâ` | 81 | `ba` | 2,496 | accent_variant |
 | `cédric` | 81 | `cedric` | 1,547 | accent_variant |
 | `engracado` | 81 | `engraçado` | 73,014 | unaccented |
 | `inés` | 81 | `inês` | 415 | accent_variant |
@@ -1906,7 +1897,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `màximo` | 78 | `máximo` | 46,136 | accent_variant |
 | `porfíria` | 78 | `porfiria` | 137 | accent_variant |
 | `stá` | 78 | `sta` | 684 | accent_variant |
-| `ë` | 78 | `e` | 10,295,459 | accent_variant |
+| `ë` | 78 | `e` | 10,295,476 | accent_variant |
 | `ódin` | 78 | `odin` | 2,721 | accent_variant |
 | `ambar` | 77 | `âmbar` | 1,328 | unaccented |
 | `cêra` | 77 | `cera` | 4,102 | accent_variant |
@@ -1915,6 +1906,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `hécate` | 77 | `hecate` | 111 | accent_variant |
 | `narnia` | 77 | `nárnia` | 1,101 | unaccented |
 | `operacão` | 77 | `operação` | 63,652 | accent_variant |
+| `poê` | 77 | `poe` | 2,892 | accent_variant |
 | `recompôr` | 77 | `recompor` | 5,058 | accent_variant |
 | `tranqüilizante` | 77 | `tranquilizante` | 2,730 | accent_variant |
 | `ué` | 77 | `ue` | 732 | accent_variant |
@@ -1928,20 +1920,20 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `eé` | 76 | `ee` | 490 | accent_variant |
 | `fotónico` | 76 | `fotônico` | 89 | accent_variant |
 | `gené` | 76 | `gene` | 10,403 | accent_variant |
-| `guía` | 76 | `guia` | 15,711 | accent_variant |
+| `guía` | 76 | `guia` | 15,762 | accent_variant |
 | `ha-de` | 76 | `há-de` | 11,984 | unaccented |
 | `héroi` | 76 | `herói` | 53,337 | accent_variant |
 | `maiô` | 76 | `maio` | 8,252 | accent_variant |
-| `mí` | 76 | `mi` | 7,215 | accent_variant |
+| `mí` | 76 | `mi` | 7,216 | accent_variant |
 | `porquë` | 76 | `porque` | 1,552,691 | accent_variant |
 | `précrime` | 76 | `precrime` | 393 | accent_variant |
 | `salario` | 76 | `salário` | 13,059 | unaccented |
-| `teletransportá` | 76 | `teletransporta` | 142 | accent_variant |
+| `teletransportá` | 76 | `teletransporta` | 150 | accent_variant |
 | `trafego` | 76 | `tráfego` | 4,512 | unaccented |
 | `uisque` | 76 | `uísque` | 12,225 | unaccented |
 | `vés` | 76 | `ves` | 598 | accent_variant |
 | `épsilon` | 76 | `epsilon` | 245 | accent_variant |
-| `í` | 76 | `i` | 42,762 | accent_variant |
+| `í` | 76 | `i` | 42,774 | accent_variant |
 | `aco` | 75 | `aço` | 10,942 | unaccented |
 | `capitán` | 75 | `capitan` | 180 | accent_variant |
 | `gardênias` | 75 | `gardénias` | 81 | accent_variant |
@@ -1956,7 +1948,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `visivel` | 75 | `visível` | 4,517 | unaccented |
 | `decadencia` | 74 | `decadência` | 1,226 | unaccented |
 | `desdêmona` | 74 | `desdemona` | 107 | accent_variant |
-| `direccioná` | 74 | `direcciona` | 145 | accent_variant |
+| `direccioná` | 74 | `direcciona` | 154 | accent_variant |
 | `discipulo` | 74 | `discípulo` | 2,848 | unaccented |
 | `importãncia` | 74 | `importância` | 20,324 | accent_variant |
 | `japones` | 74 | `japonês` | 19,163 | unaccented |
@@ -1968,7 +1960,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `entáo` | 73 | `então` | 1,280,096 | accent_variant |
 | `gutiérrez` | 73 | `gutierrez` | 549 | accent_variant |
 | `könig` | 73 | `konig` | 157 | accent_variant |
-| `mê` | 73 | `me` | 5,793,529 | accent_variant |
+| `mê` | 73 | `me` | 5,793,623 | accent_variant |
 | `mônaco` | 73 | `mónaco` | 1,034 | accent_variant |
 | `papà` | 73 | `papá` | 78,885 | accent_variant |
 | `parabêns` | 73 | `parabéns` | 62,061 | accent_variant |
@@ -1993,24 +1985,23 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `bofia` | 71 | `bófia` | 7,556 | unaccented |
 | `bohéme` | 71 | `bohème` | 83 | accent_variant |
 | `classico` | 71 | `clássico` | 14,386 | unaccented |
-| `companhía` | 71 | `companhia` | 64,130 | accent_variant |
+| `companhía` | 71 | `companhia` | 64,119 | accent_variant |
 | `distraido` | 71 | `distraído` | 5,357 | unaccented |
 | `flexivel` | 71 | `flexível` | 2,809 | unaccented |
 | `investigaçao` | 71 | `investigação` | 48,034 | accent_variant |
 | `lapis` | 71 | `lápis` | 6,110 | unaccented |
 | `solitario` | 71 | `solitário` | 11,175 | unaccented |
 | `àguia` | 71 | `águia` | 9,150 | accent_variant |
-| `çom` | 71 | `com` | 4,680,143 | accent_variant |
+| `çom` | 71 | `com` | 4,680,146 | accent_variant |
 | `caixäo` | 70 | `caixão` | 11,255 | accent_variant |
-| `etá` | 70 | `eta` | 696 | accent_variant |
-| `extraordinario` | 70 | `extraordinário` | 18,822 | unaccented |
+| `etá` | 70 | `eta` | 695 | accent_variant |
+| `extraordinario` | 70 | `extraordinário` | 18,820 | unaccented |
 | `génia` | 70 | `gênia` | 85 | accent_variant |
 | `gêiser` | 70 | `geiser` | 228 | accent_variant |
 | `invencivel` | 70 | `invencível` | 3,999 | unaccented |
 | `niccolò` | 70 | `niccolo` | 97 | accent_variant |
 | `nícolas` | 70 | `nicolas` | 1,059 | accent_variant |
 | `permissao` | 70 | `permissão` | 18,771 | unaccented |
-| `poê` | 70 | `poe` | 2,832 | accent_variant |
 | `públicamente` | 70 | `publicamente` | 3,243 | accent_variant |
 | `rídiculo` | 70 | `ridículo` | 39,230 | accent_variant |
 | `suícida` | 70 | `suicida` | 422 | accent_variant |
@@ -2031,11 +2022,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `telémaco` | 69 | `telêmaco` | 83 | accent_variant |
 | `trêmulo` | 69 | `trémulo` | 503 | accent_variant |
 | `valérie` | 69 | `valerie` | 4,217 | accent_variant |
-| `ágora` | 69 | `agora` | 1,524,160 | accent_variant |
+| `ágora` | 69 | `agora` | 1,524,159 | accent_variant |
 | `almocar` | 68 | `almoçar` | 19,386 | unaccented |
 | `artistico` | 68 | `artístico` | 4,672 | unaccented |
 | `barbaro` | 68 | `bárbaro` | 4,593 | unaccented |
-| `caraca` | 68 | `caraça` | 26,876 | unaccented |
 | `entào` | 68 | `então` | 1,280,096 | accent_variant |
 | `harmonica` | 68 | `harmónica` | 896 | unaccented |
 | `lórien` | 68 | `lorien` | 113 | accent_variant |
@@ -2045,10 +2035,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `supôr` | 68 | `supor` | 53,928 | accent_variant |
 | `tía` | 68 | `tia` | 37,796 | accent_variant |
 | `valvula` | 68 | `válvula` | 5,190 | unaccented |
+| `caraca` | 67 | `caraça` | 26,876 | unaccented |
 | `crêr` | 67 | `crer` | 99,883 | accent_variant |
 | `déjá` | 67 | `déjà` | 1,004 | accent_variant |
 | `shé` | 67 | `she` | 1,575 | accent_variant |
-| `virús` | 67 | `vírus` | 25,099 | accent_variant |
+| `virús` | 67 | `vírus` | 25,105 | accent_variant |
 | `âs` | 67 | `às` | 363,993 | accent_variant |
 | `émile` | 67 | `emile` | 1,108 | accent_variant |
 | `íon` | 67 | `ion` | 78 | accent_variant |
@@ -2068,6 +2059,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fôfo` | 65 | `fofo` | 8,235 | accent_variant |
 | `instantâneamente` | 65 | `instantaneamente` | 2,090 | accent_variant |
 | `irmâ` | 65 | `irmã` | 143,290 | accent_variant |
+| `iê` | 65 | `ie` | 132 | accent_variant |
 | `josépha` | 65 | `josepha` | 94 | accent_variant |
 | `mecanico` | 65 | `mecânico` | 6,867 | unaccented |
 | `michaël` | 65 | `michael` | 84,173 | accent_variant |
@@ -2078,19 +2070,18 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `teräo` | 65 | `terao` | 81 | accent_variant |
 | `toquio` | 65 | `tóquio` | 4,911 | unaccented |
 | `tâo` | 65 | `tão` | 730,506 | accent_variant |
-| `coleccioná` | 64 | `colecciona` | 645 | accent_variant |
+| `coleccioná` | 64 | `colecciona` | 651 | accent_variant |
 | `diversao` | 64 | `diversão` | 21,435 | unaccented |
 | `famíliar` | 64 | `familiar` | 33,919 | accent_variant |
 | `guiao` | 64 | `guião` | 6,993 | unaccented |
 | `impossivél` | 64 | `impossível` | 62,857 | accent_variant |
-| `iê` | 64 | `ie` | 132 | accent_variant |
 | `juán` | 64 | `juan` | 6,814 | accent_variant |
 | `karaokê` | 64 | `karaoke` | 1,885 | accent_variant |
 | `ladrao` | 64 | `ladrão` | 35,039 | unaccented |
 | `lámia` | 64 | `lamia` | 235 | accent_variant |
 | `mjölnir` | 64 | `mjolnir` | 107 | accent_variant |
 | `passáro` | 64 | `pássaro` | 29,802 | accent_variant |
-| `vía` | 64 | `via` | 42,167 | accent_variant |
+| `vía` | 64 | `via` | 34,413 | accent_variant |
 | `aviöes` | 63 | `avioes` | 125 | accent_variant |
 | `bufalo` | 63 | `búfalo` | 2,902 | unaccented |
 | `bébes` | 63 | `bebes` | 5,288 | accent_variant |
@@ -2098,7 +2089,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `història` | 63 | `história` | 248,045 | accent_variant |
 | `inès` | 63 | `inês` | 415 | accent_variant |
 | `líbido` | 63 | `libido` | 503 | accent_variant |
-| `maco` | 63 | `maço` | 3,439 | unaccented |
+| `maco` | 63 | `maço` | 3,440 | unaccented |
 | `pelotäo` | 63 | `pelotão` | 7,908 | accent_variant |
 | `ravióli` | 63 | `ravioli` | 351 | accent_variant |
 | `revoluçäo` | 63 | `revolução` | 11,738 | accent_variant |
@@ -2108,9 +2099,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `biônica` | 62 | `biónica` | 100 | accent_variant |
 | `cabräo` | 62 | `cabrão` | 53,311 | accent_variant |
 | `dendê` | 62 | `dende` | 96 | accent_variant |
-| `destrocar` | 62 | `destroçar` | 3,392 | unaccented |
+| `destrocar` | 62 | `destroçar` | 3,426 | unaccented |
 | `específicamente` | 62 | `especificamente` | 6,069 | accent_variant |
-| `espiríto` | 62 | `espírito` | 50,093 | accent_variant |
+| `espiríto` | 62 | `espírito` | 50,091 | accent_variant |
 | `feiúra` | 62 | `feiura` | 95 | accent_variant |
 | `hámster` | 62 | `hamster` | 1,461 | accent_variant |
 | `liçao` | 62 | `lição` | 26,513 | accent_variant |
@@ -2123,14 +2114,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pênalti` | 62 | `penalti` | 192 | accent_variant |
 | `pôem` | 62 | `poem` | 174 | accent_variant |
 | `sensaçäo` | 62 | `sensação` | 27,853 | accent_variant |
-| `sêde` | 62 | `sede` | 21,644 | accent_variant |
-| `voô` | 62 | `voo` | 46,441 | accent_variant |
+| `sêde` | 62 | `sede` | 21,657 | accent_variant |
+| `voô` | 62 | `voo` | 46,442 | accent_variant |
 | `capricòrnio` | 61 | `capricórnio` | 764 | accent_variant |
 | `chale` | 61 | `chalé` | 1,151 | unaccented |
 | `cléves` | 61 | `cleves` | 153 | accent_variant |
 | `condiçöes` | 61 | `condicões` | 75 | accent_variant |
 | `cêu` | 61 | `céu` | 103,169 | accent_variant |
-| `disfarçe` | 61 | `disfarce` | 14,268 | accent_variant |
+| `disfarçe` | 61 | `disfarce` | 14,270 | accent_variant |
 | `divisao` | 61 | `divisão` | 22,835 | unaccented |
 | `fernández` | 61 | `fernandez` | 563 | accent_variant |
 | `forlì` | 61 | `forli` | 148 | accent_variant |
@@ -2146,6 +2137,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `póker` | 61 | `poker` | 2,352 | accent_variant |
 | `saläo` | 61 | `salão` | 13,576 | accent_variant |
 | `sensaçao` | 61 | `sensação` | 27,853 | accent_variant |
+| `vigía` | 61 | `vigia` | 13,211 | accent_variant |
 | `ùnica` | 61 | `unica` | 2,002 | accent_variant |
 | `allô` | 60 | `allo` | 197 | accent_variant |
 | `astronômico` | 60 | `astronómico` | 690 | accent_variant |
@@ -2155,13 +2147,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `eugène` | 60 | `eugene` | 4,987 | accent_variant |
 | `heroí` | 60 | `herói` | 53,337 | accent_variant |
 | `iräo` | 60 | `irão` | 36,398 | accent_variant |
-| `matà` | 60 | `máta` | 103 | accent_variant |
+| `matà` | 60 | `máta` | 107 | accent_variant |
 | `môle` | 60 | `mole` | 6,052 | accent_variant |
 | `outrém` | 60 | `outrem` | 487 | accent_variant |
 | `plastico` | 60 | `plástico` | 16,051 | unaccented |
 | `quao` | 60 | `quão` | 35,913 | unaccented |
 | `sicários` | 60 | `sicarios` | 108 | accent_variant |
-| `vigía` | 60 | `vigia` | 12,869 | accent_variant |
 | `áh` | 60 | `ah` | 105,209 | accent_variant |
 | `über` | 60 | `uber` | 604 | accent_variant |
 | `aiatolá` | 59 | `aiatola` | 95 | accent_variant |
@@ -2174,14 +2165,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `hipotéticamente` | 59 | `hipoteticamente` | 1,520 | accent_variant |
 | `icônico` | 59 | `icónico` | 251 | accent_variant |
 | `kahlúa` | 59 | `kahlua` | 118 | accent_variant |
-| `ká` | 59 | `ka` | 1,063 | accent_variant |
+| `ká` | 59 | `ka` | 1,038 | accent_variant |
 | `paixäo` | 59 | `paixão` | 15,713 | accent_variant |
 | `quêm` | 59 | `quem` | 1,305,285 | accent_variant |
 | `rigido` | 59 | `rígido` | 7,889 | unaccented |
 | `senorita` | 59 | `señorita` | 827 | unaccented |
 | `seqüestrador` | 59 | `sequestrador` | 2,060 | accent_variant |
 | `súbtil` | 59 | `subtil` | 4,684 | accent_variant |
-| `tecnología` | 59 | `tecnologia` | 28,030 | accent_variant |
+| `tecnología` | 59 | `tecnologia` | 28,029 | accent_variant |
 | `tâmisa` | 59 | `tamisa` | 596 | accent_variant |
 | `têve` | 59 | `tevê` | 66 | accent_variant |
 | `versao` | 59 | `versão` | 18,716 | unaccented |
@@ -2235,7 +2226,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `núvem` | 56 | `nuvem` | 15,084 | accent_variant |
 | `opçao` | 56 | `opção` | 41,856 | accent_variant |
 | `secundario` | 56 | `secundário` | 10,926 | unaccented |
-| `secçäo` | 56 | `secção` | 16,840 | accent_variant |
+| `secçäo` | 56 | `secção` | 16,842 | accent_variant |
 | `subito` | 56 | `súbito` | 4,040 | unaccented |
 | `sö` | 56 | `só` | 1,714,752 | accent_variant |
 | `ói` | 56 | `oi` | 28,312 | accent_variant |
@@ -2243,7 +2234,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `arabia` | 55 | `arábia` | 1,930 | unaccented |
 | `bolivia` | 55 | `bolívia` | 1,319 | unaccented |
 | `cara-de-cú` | 55 | `cara-de-cu` | 205 | accent_variant |
-| `conheçer` | 55 | `conhecer` | 682,332 | accent_variant |
+| `conheçer` | 55 | `conhecer` | 690,273 | accent_variant |
 | `currículum` | 55 | `curriculum` | 652 | accent_variant |
 | `có` | 55 | `co` | 3,028 | accent_variant |
 | `esôfago` | 55 | `esófago` | 678 | accent_variant |
@@ -2270,7 +2261,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `matematica` | 54 | `matemática` | 13,375 | unaccented |
 | `pepé` | 54 | `pepe` | 1,552 | accent_variant |
 | `potêncial` | 54 | `potencial` | 14,733 | accent_variant |
-| `pús` | 54 | `pus` | 19,632 | accent_variant |
+| `pús` | 54 | `pus` | 19,633 | accent_variant |
 | `rádiodifusão` | 54 | `radiodifusão` | 104 | accent_variant |
 | `senõr` | 54 | `señor` | 3,426 | accent_variant |
 | `tăo` | 54 | `tão` | 730,506 | accent_variant |
@@ -2285,7 +2276,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `poligrafo` | 53 | `polígrafo` | 1,943 | unaccented |
 | `produçao` | 53 | `produção` | 16,192 | accent_variant |
 | `satanas` | 53 | `satanás` | 4,755 | unaccented |
-| `seccão` | 53 | `secção` | 16,840 | accent_variant |
+| `seccão` | 53 | `secção` | 16,842 | accent_variant |
 | `tvséries` | 53 | `tvseries` | 53 | accent_variant |
 | `alienigena` | 52 | `alienígena` | 11,389 | unaccented |
 | `autorizaçao` | 52 | `autorização` | 25,280 | accent_variant |
@@ -2305,10 +2296,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `soluçäo` | 52 | `solução` | 29,426 | accent_variant |
 | `sônia` | 52 | `sonia` | 2,025 | accent_variant |
 | `áden` | 52 | `aden` | 372 | accent_variant |
-| `éste` | 52 | `este` | 2,344,427 | accent_variant |
+| `éste` | 52 | `este` | 2,344,426 | accent_variant |
 | `amanhâ` | 51 | `amanhã` | 211,690 | accent_variant |
-| `cáca` | 51 | `caça` | 27,157 | accent_variant |
-| `dâ` | 51 | `da` | 3,452,773 | accent_variant |
+| `cáca` | 51 | `caça` | 27,184 | accent_variant |
+| `dâ` | 51 | `da` | 3,452,738 | accent_variant |
 | `extase` | 51 | `êxtase` | 1,895 | unaccented |
 | `heranca` | 51 | `herança` | 5,678 | unaccented |
 | `impressao` | 51 | `impressão` | 41,443 | unaccented |
@@ -2342,7 +2333,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rastafári` | 50 | `rastafari` | 98 | accent_variant |
 | `sureté` | 50 | `sûreté` | 69 | accent_variant |
 | `taoísta` | 50 | `taoista` | 73 | accent_variant |
-| `terà` | 50 | `tera` | 411 | accent_variant |
+| `terà` | 50 | `tera` | 408 | accent_variant |
 | `tropico` | 50 | `trópico` | 653 | unaccented |
 | `tênia` | 50 | `ténia` | 325 | accent_variant |
 | `vigilia` | 50 | `vigília` | 1,276 | unaccented |
@@ -2355,7 +2346,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `confusäo` | 49 | `confusão` | 32,721 | accent_variant |
 | `convênio` | 49 | `convénio` | 434 | accent_variant |
 | `darín` | 49 | `darin` | 521 | accent_variant |
-| `desafío` | 49 | `desafio` | 19,795 | accent_variant |
+| `desafío` | 49 | `desafio` | 19,855 | accent_variant |
 | `distãncia` | 49 | `distância` | 35,016 | accent_variant |
 | `esforcar` | 49 | `esforçar` | 18,117 | unaccented |
 | `estâs` | 49 | `estäs` | 124 | accent_variant |
@@ -2364,13 +2355,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `imbécil` | 49 | `imbecil` | 25,725 | accent_variant |
 | `iônico` | 49 | `iónico` | 291 | accent_variant |
 | `kátia` | 49 | `katia` | 739 | accent_variant |
-| `lancar` | 49 | `lançar` | 51,271 | unaccented |
+| `lancar` | 49 | `lançar` | 51,539 | unaccented |
 | `meretissimo` | 49 | `meretíssimo` | 855 | unaccented |
-| `ouvír` | 49 | `ouvir` | 980,520 | accent_variant |
+| `ouvír` | 49 | `ouvir` | 982,672 | accent_variant |
 | `por-do-sol` | 49 | `pôr-do-sol` | 4,464 | unaccented |
 | `protecçao` | 49 | `protecçäo` | 85 | accent_variant |
 | `pãnico` | 49 | `pânico` | 22,327 | accent_variant |
-| `pûs` | 49 | `pus` | 19,632 | accent_variant |
+| `pûs` | 49 | `pus` | 19,633 | accent_variant |
 | `refem` | 49 | `refém` | 22,346 | unaccented |
 | `semen` | 49 | `sémen` | 2,177 | unaccented |
 | `sinfônica` | 49 | `sinfónica` | 268 | accent_variant |
@@ -2383,7 +2374,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `acessá` | 48 | `acessa` | 79 | accent_variant |
 | `barnabás` | 48 | `barnabas` | 577 | accent_variant |
 | `chacón` | 48 | `chacon` | 120 | accent_variant |
-| `cuída` | 48 | `cuida` | 284 | accent_variant |
+| `cuída` | 48 | `cuida` | 285 | accent_variant |
 | `frédéric` | 48 | `frederic` | 998 | accent_variant |
 | `fünke` | 48 | `funke` | 242 | accent_variant |
 | `grafíti` | 48 | `grafiti` | 89 | accent_variant |
@@ -2399,7 +2390,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `nanômetros` | 48 | `nanómetros` | 56 | accent_variant |
 | `naçäo` | 48 | `nação` | 24,619 | accent_variant |
 | `néstor` | 48 | `nestor` | 775 | accent_variant |
-| `nõs` | 48 | `nos` | 1,714,154 | accent_variant |
+| `nõs` | 48 | `nos` | 1,714,351 | accent_variant |
 | `perséphone` | 48 | `persephone` | 124 | accent_variant |
 | `pressäo` | 48 | `pressão` | 39,447 | accent_variant |
 | `regiao` | 48 | `região` | 13,312 | unaccented |
@@ -2418,7 +2409,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `comunicacão` | 47 | `comunicação` | 26,430 | accent_variant |
 | `cres` | 47 | `crês` | 1,481 | unaccented |
 | `dostoiévski` | 47 | `dostoievski` | 117 | accent_variant |
-| `esperanca` | 47 | `esperança` | 60,873 | unaccented |
+| `esperanca` | 47 | `esperança` | 60,869 | unaccented |
 | `estúpidez` | 47 | `estupidez` | 12,218 | accent_variant |
 | `fusivel` | 47 | `fusível` | 2,287 | unaccented |
 | `homicído` | 47 | `homicido` | 2,524 | accent_variant |
@@ -2431,7 +2422,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `progéria` | 47 | `progeria` | 110 | accent_variant |
 | `psiqué` | 47 | `psique` | 557 | accent_variant |
 | `sacríficio` | 47 | `sacrifício` | 17,128 | accent_variant |
-| `sáude` | 47 | `saúde` | 46,638 | accent_variant |
+| `sáude` | 47 | `saúde` | 46,640 | accent_variant |
 | `telecinésia` | 47 | `telecinesia` | 331 | accent_variant |
 | `tête` | 47 | `tete` | 95 | accent_variant |
 | `ángelo` | 47 | `angelo` | 2,760 | accent_variant |
@@ -2439,10 +2430,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `alemao` | 46 | `alemão` | 35,169 | unaccented |
 | `aluminio` | 46 | `alumínio` | 2,540 | unaccented |
 | `arquitetônica` | 46 | `arquitetónica` | 123 | accent_variant |
-| `atraír` | 46 | `atrair` | 30,114 | accent_variant |
+| `atraír` | 46 | `atrair` | 30,232 | accent_variant |
 | `balcäo` | 46 | `balcão` | 7,016 | accent_variant |
 | `beltrán` | 46 | `beltran` | 120 | accent_variant |
-| `buscà` | 46 | `busca` | 34,802 | accent_variant |
+| `buscà` | 46 | `busca` | 34,805 | accent_variant |
 | `ciciñhå` | 46 | `cicinha` | 109 | accent_variant |
 | `comite` | 46 | `comité` | 8,795 | unaccented |
 | `conteudo` | 46 | `conteúdo` | 5,691 | unaccented |
@@ -2457,12 +2448,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `preferencia` | 46 | `preferência` | 4,318 | unaccented |
 | `prodigio` | 46 | `prodígio` | 1,852 | unaccented |
 | `pédicure` | 46 | `pedicure` | 282 | accent_variant |
-| `snifá` | 46 | `snifa` | 224 | accent_variant |
+| `snifá` | 46 | `snifa` | 226 | accent_variant |
 | `triade` | 46 | `tríade` | 3,549 | unaccented |
 | `vespera` | 46 | `véspera` | 6,163 | unaccented |
 | `vocës` | 46 | `voces` | 3,419 | accent_variant |
-| `ajudár` | 45 | `ajudar` | 576,331 | accent_variant |
-| `ameacar` | 45 | `ameaçar` | 30,585 | unaccented |
+| `ajudár` | 45 | `ajudar` | 578,980 | accent_variant |
+| `ameacar` | 45 | `ameaçar` | 30,991 | unaccented |
 | `basico` | 45 | `básico` | 12,679 | unaccented |
 | `baínha` | 45 | `bainha` | 825 | accent_variant |
 | `belgica` | 45 | `bélgica` | 2,165 | unaccented |
@@ -2491,7 +2482,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dóris` | 44 | `doris` | 4,191 | accent_variant |
 | `efíaltes` | 44 | `efialtes` | 50 | accent_variant |
 | `estefanía` | 44 | `estefânia` | 269 | accent_variant |
-| `estrategia` | 44 | `estratégia` | 12,421 | unaccented |
+| `estrategia` | 44 | `estratégia` | 12,418 | unaccented |
 | `fà` | 44 | `fã` | 25,452 | accent_variant |
 | `hóstil` | 44 | `hostil` | 7,267 | accent_variant |
 | `hôtel` | 44 | `hotel` | 69,569 | accent_variant |
@@ -2500,20 +2491,19 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `jerônimo` | 44 | `jerónimo` | 432 | accent_variant |
 | `pandemônio` | 44 | `pandemónio` | 452 | accent_variant |
 | `pöem` | 44 | `poem` | 174 | accent_variant |
-| `sér` | 44 | `ser` | 21,333,709 | accent_variant |
+| `sér` | 44 | `ser` | 21,334,085 | accent_variant |
 | `sérpico` | 44 | `serpico` | 337 | accent_variant |
 | `tranqüilamente` | 44 | `tranquilamente` | 1,160 | accent_variant |
 | `voluntáriamente` | 44 | `voluntariamente` | 2,068 | accent_variant |
 | `áries` | 44 | `aries` | 56 | accent_variant |
 | `adversario` | 43 | `adversário` | 9,149 | unaccented |
-| `ahá` | 43 | `aha` | 1,070 | accent_variant |
+| `ahá` | 43 | `aha` | 1,080 | accent_variant |
 | `amon-rá` | 43 | `amon-ra` | 89 | accent_variant |
 | `arigatô` | 43 | `arigato` | 361 | accent_variant |
 | `bornéo` | 43 | `borneo` | 64 | accent_variant |
 | `béchamel` | 43 | `bechamel` | 57 | accent_variant |
 | `civilizaçao` | 43 | `civilização` | 8,918 | accent_variant |
 | `compreensivel` | 43 | `compreensível` | 3,410 | unaccented |
-| `conhecoa` | 43 | `conheçoa` | 3,975 | unaccented |
 | `consequencia` | 43 | `consequência` | 18,528 | unaccented |
 | `construcão` | 43 | `construção` | 13,680 | accent_variant |
 | `estrêla` | 43 | `estrela` | 66,801 | accent_variant |
@@ -2557,7 +2547,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `négocio` | 42 | `negócio` | 141,109 | accent_variant |
 | `oregón` | 42 | `oregon` | 3,105 | accent_variant |
 | `pantano` | 42 | `pântano` | 7,234 | unaccented |
-| `polícía` | 42 | `polícia` | 298,898 | accent_variant |
+| `polícía` | 42 | `polícia` | 298,896 | accent_variant |
 | `portugues` | 42 | `português` | 7,523 | unaccented |
 | `posicao` | 42 | `posição` | 71,815 | unaccented |
 | `põ` | 42 | `pó` | 20,241 | accent_variant |
@@ -2649,6 +2639,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `provavélmente` | 40 | `provavelmente` | 100,611 | accent_variant |
 | `psicópata` | 40 | `psicopata` | 11,039 | accent_variant |
 | `pápa` | 40 | `papá` | 78,885 | accent_variant |
+| `póe` | 40 | `poe` | 2,892 | accent_variant |
 | `púdica` | 40 | `pudica` | 185 | accent_variant |
 | `quasímodo` | 40 | `quasimodo` | 273 | accent_variant |
 | `reuném` | 40 | `reunem` | 108 | accent_variant |
@@ -2662,10 +2653,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `demoniaco` | 39 | `demoníaco` | 3,171 | unaccented |
 | `desprezivel` | 39 | `desprezível` | 3,390 | unaccented |
 | `eléonore` | 39 | `eleonore` | 56 | accent_variant |
-| `endereco` | 39 | `endereço` | 12,779 | unaccented |
+| `endereco` | 39 | `endereço` | 12,781 | unaccented |
 | `esquadrao` | 39 | `esquadrão` | 10,814 | unaccented |
 | `expressäo` | 39 | `expressão` | 14,224 | accent_variant |
-| `fazêr` | 39 | `fazer` | 5,237,900 | accent_variant |
+| `fazêr` | 39 | `fazer` | 5,240,743 | accent_variant |
 | `grafítis` | 39 | `grafitis` | 117 | accent_variant |
 | `imaginaçao` | 39 | `imaginação` | 12,372 | accent_variant |
 | `imaginaçäo` | 39 | `imaginação` | 12,372 | accent_variant |
@@ -2711,7 +2702,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ió-ió` | 38 | `iô-iô` | 229 | accent_variant |
 | `joëlle` | 38 | `joelle` | 164 | accent_variant |
 | `lenco` | 38 | `lenço` | 7,480 | unaccented |
-| `levár` | 38 | `levar` | 776,166 | accent_variant |
+| `levár` | 38 | `levar` | 795,712 | accent_variant |
 | `maldicao` | 38 | `maldição` | 29,512 | unaccented |
 | `mauí` | 38 | `maui` | 979 | accent_variant |
 | `máu` | 38 | `mau` | 167,916 | accent_variant |
@@ -2720,18 +2711,18 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `möbius` | 38 | `mobius` | 89 | accent_variant |
 | `mútuamente` | 38 | `mutuamente` | 2,549 | accent_variant |
 | `neápolis` | 38 | `neapolis` | 103 | accent_variant |
-| `passé` | 38 | `passe` | 29,107 | accent_variant |
+| `passé` | 38 | `passe` | 29,359 | accent_variant |
 | `pistáchios` | 38 | `pistachios` | 41 | accent_variant |
 | `populaçao` | 38 | `população` | 11,039 | accent_variant |
 | `preocupaçäo` | 38 | `preocupação` | 22,811 | accent_variant |
-| `radiaçao` | 38 | `radiação` | 11,385 | accent_variant |
+| `radiaçao` | 38 | `radiação` | 11,386 | accent_variant |
 | `vestigio` | 38 | `vestígio` | 9,950 | unaccented |
 | `zênite` | 38 | `zénite` | 92 | accent_variant |
-| `éle` | 38 | `ele` | 3,858,001 | accent_variant |
+| `éle` | 38 | `ele` | 3,858,000 | accent_variant |
 | `ótario` | 38 | `otário` | 8,722 | accent_variant |
-| `õ` | 38 | `o` | 29,885,565 | accent_variant |
+| `õ` | 38 | `o` | 29,933,053 | accent_variant |
 | `adíos` | 37 | `adios` | 959 | accent_variant |
-| `assustáste` | 37 | `assustaste` | 5,556 | accent_variant |
+| `assustáste` | 37 | `assustaste` | 5,700 | accent_variant |
 | `atomo` | 37 | `átomo` | 3,093 | unaccented |
 | `bussola` | 37 | `bússola` | 3,748 | unaccented |
 | `bítia` | 37 | `bitia` | 76 | accent_variant |
@@ -2740,7 +2731,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `catatônica` | 37 | `catatónica` | 138 | accent_variant |
 | `clóvis` | 37 | `clovis` | 546 | accent_variant |
 | `coracäo` | 37 | `coração` | 155,243 | accent_variant |
-| `distraír` | 37 | `distrair` | 13,981 | accent_variant |
+| `distraír` | 37 | `distrair` | 14,071 | accent_variant |
 | `dândi` | 37 | `dandi` | 40 | accent_variant |
 | `déja` | 37 | `déjà` | 1,004 | accent_variant |
 | `esfincter` | 37 | `esfíncter` | 393 | unaccented |
@@ -2751,11 +2742,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `macedonia` | 37 | `macedónia` | 604 | unaccented |
 | `mecanica` | 37 | `mecânica` | 3,711 | unaccented |
 | `meritissimo` | 37 | `meritíssimo` | 13,872 | unaccented |
-| `motá` | 37 | `mota` | 10,286 | accent_variant |
+| `motá` | 37 | `mota` | 10,285 | accent_variant |
 | `patagônia` | 37 | `patagónia` | 245 | accent_variant |
-| `póe` | 37 | `poe` | 2,832 | accent_variant |
 | `respiraçao` | 37 | `respiração` | 11,306 | accent_variant |
-| `rêgo` | 37 | `rego` | 470 | accent_variant |
+| `rêgo` | 37 | `rego` | 475 | accent_variant |
 | `séverine` | 37 | `severine` | 61 | accent_variant |
 | `tomânia` | 37 | `tomania` | 129 | accent_variant |
 | `uranio` | 37 | `urânio` | 2,460 | unaccented |
@@ -2809,7 +2799,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aïcha` | 35 | `aicha` | 57 | accent_variant |
 | `biônicos` | 35 | `biónicos` | 46 | accent_variant |
 | `bórgias` | 35 | `borgias` | 193 | accent_variant |
-| `dä` | 35 | `da` | 3,452,773 | accent_variant |
+| `dä` | 35 | `da` | 3,452,738 | accent_variant |
 | `dédé` | 35 | `dede` | 684 | accent_variant |
 | `dún` | 35 | `dun` | 297 | accent_variant |
 | `emprestimo` | 35 | `empréstimo` | 11,211 | unaccented |
@@ -2835,7 +2825,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `quirón` | 35 | `quíron` | 70 | accent_variant |
 | `quiñones` | 35 | `quinones` | 48 | accent_variant |
 | `terrivél` | 35 | `terrível` | 51,617 | accent_variant |
-| `tranqüilizar` | 35 | `tranquilizar` | 2,012 | accent_variant |
+| `tranqüilizar` | 35 | `tranquilizar` | 2,062 | accent_variant |
 | `tálus` | 35 | `talus` | 202 | accent_variant |
 | `voltojá` | 35 | `voltoja` | 134 | accent_variant |
 | `véro` | 35 | `vero` | 186 | accent_variant |
@@ -2846,11 +2836,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `altruista` | 34 | `altruísta` | 1,493 | unaccented |
 | `amávelmente` | 34 | `amavelmente` | 352 | accent_variant |
 | `atencäo` | 34 | `atenção` | 107,999 | accent_variant |
-| `comó` | 34 | `como` | 3,285,447 | accent_variant |
+| `comó` | 34 | `como` | 3,285,638 | accent_variant |
 | `concentraçao` | 34 | `concentração` | 7,954 | accent_variant |
-| `conheçê` | 34 | `conheçe` | 167 | accent_variant |
+| `conheçê` | 34 | `conheçe` | 178 | accent_variant |
 | `câimbras` | 34 | `cãimbras` | 45 | accent_variant |
-| `còmo` | 34 | `como` | 3,285,447 | accent_variant |
+| `còmo` | 34 | `como` | 3,285,638 | accent_variant |
 | `después` | 34 | `despues` | 40 | accent_variant |
 | `discussäo` | 34 | `discussão` | 21,722 | accent_variant |
 | `divída` | 34 | `dívida` | 24,232 | accent_variant |
@@ -2863,20 +2853,20 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `infalivel` | 34 | `infalível` | 1,460 | unaccented |
 | `lôtus` | 34 | `lótus` | 1,136 | accent_variant |
 | `muíto` | 34 | `muito` | 2,522,051 | accent_variant |
-| `mé` | 34 | `me` | 5,793,529 | accent_variant |
+| `mé` | 34 | `me` | 5,793,623 | accent_variant |
 | `môr` | 34 | `mor` | 586 | accent_variant |
 | `nicaragua` | 34 | `nicarágua` | 799 | unaccented |
 | `nicolò` | 34 | `nicolo` | 48 | accent_variant |
 | `ocasiäo` | 34 | `ocasião` | 12,730 | accent_variant |
-| `olhó` | 34 | `olho` | 253,901 | accent_variant |
+| `olhó` | 34 | `olho` | 253,938 | accent_variant |
 | `orcamento` | 34 | `orçamento` | 7,319 | unaccented |
 | `prostata` | 34 | `próstata` | 1,364 | unaccented |
 | `psicológicamente` | 34 | `psicologicamente` | 1,110 | accent_variant |
-| `quę` | 34 | `que` | 22,332,777 | accent_variant |
+| `quę` | 34 | `que` | 22,332,778 | accent_variant |
 | `recem` | 34 | `recém` | 1,613 | unaccented |
 | `robôt` | 34 | `robot` | 7,531 | accent_variant |
 | `sanguineo` | 34 | `sanguíneo` | 7,077 | unaccented |
-| `secçao` | 34 | `secção` | 16,840 | accent_variant |
+| `secçao` | 34 | `secção` | 16,842 | accent_variant |
 | `sugestao` | 34 | `sugestão` | 10,030 | unaccented |
 | `sábiamente` | 34 | `sabiamente` | 647 | accent_variant |
 | `sûr` | 34 | `sur` | 630 | accent_variant |
@@ -2901,7 +2891,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `conseqüentemente` | 33 | `consequentemente` | 858 | accent_variant |
 | `criquete` | 33 | `críquete` | 1,070 | unaccented |
 | `cúffaro` | 33 | `cuffaro` | 59 | accent_variant |
-| `dormitorio` | 33 | `dormitório` | 4,213 | unaccented |
+| `dormitorio` | 33 | `dormitório` | 4,215 | unaccented |
 | `dàs` | 33 | `das` | 622,233 | accent_variant |
 | `découpage` | 33 | `decoupage` | 34 | accent_variant |
 | `efêmero` | 33 | `efémero` | 444 | accent_variant |
@@ -2924,7 +2914,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `segrêdo` | 33 | `segredo` | 87,145 | accent_variant |
 | `sobrio` | 33 | `sóbrio` | 8,582 | unaccented |
 | `suíca` | 33 | `suíça` | 4,798 | accent_variant |
-| `sète` | 33 | `sete` | 68,805 | accent_variant |
+| `sète` | 33 | `sete` | 68,806 | accent_variant |
 | `tataravó` | 33 | `tataravô` | 107 | accent_variant |
 | `traiçao` | 33 | `traição` | 15,582 | accent_variant |
 | `tęm` | 33 | `tém` | 113 | accent_variant |
@@ -2966,7 +2956,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `obrigaçäo` | 32 | `obrigação` | 10,021 | accent_variant |
 | `operacao` | 32 | `operação` | 63,652 | unaccented |
 | `opçäo` | 32 | `opção` | 41,856 | accent_variant |
-| `oá` | 32 | `oa` | 404 | accent_variant |
+| `oá` | 32 | `oa` | 397 | accent_variant |
 | `pelvis` | 32 | `pélvis` | 997 | unaccented |
 | `pístol` | 32 | `pistol` | 178 | accent_variant |
 | `sentenca` | 32 | `sentença` | 9,771 | unaccented |
@@ -2995,6 +2985,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `crüe` | 31 | `crue` | 66 | accent_variant |
 | `descriçäo` | 31 | `descrição` | 9,979 | accent_variant |
 | `dossie` | 31 | `dossiê` | 647 | unaccented |
+| `dë` | 31 | `de` | 15,387,641 | accent_variant |
 | `edén` | 31 | `eden` | 1,679 | accent_variant |
 | `eloísa` | 31 | `eloisa` | 37 | accent_variant |
 | `espétaculo` | 31 | `espetáculo` | 46,817 | accent_variant |
@@ -3056,7 +3047,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `déli` | 30 | `deli` | 1,142 | accent_variant |
 | `enfermaría` | 30 | `enfermaria` | 8,270 | accent_variant |
 | `exêrcito` | 30 | `exército` | 75,648 | accent_variant |
-| `freqüentar` | 30 | `frequentar` | 6,788 | accent_variant |
+| `freqüentar` | 30 | `frequentar` | 6,797 | accent_variant |
 | `grecia` | 30 | `grécia` | 4,628 | unaccented |
 | `guardiao` | 30 | `guardião` | 10,794 | unaccented |
 | `heróina` | 30 | `heroína` | 13,788 | accent_variant |
@@ -3065,10 +3056,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `itzá` | 30 | `itza` | 32 | accent_variant |
 | `lucido` | 30 | `lúcido` | 2,145 | unaccented |
 | `lunatico` | 30 | `lunático` | 4,911 | unaccented |
-| `línha` | 30 | `linha` | 91,612 | accent_variant |
+| `línha` | 30 | `linha` | 91,614 | accent_variant |
 | `montevidéu` | 30 | `montevideu` | 43 | accent_variant |
 | `pör` | 30 | `por` | 4,232,804 | accent_variant |
-| `quándo` | 30 | `quando` | 1,480,827 | accent_variant |
+| `quándo` | 30 | `quando` | 1,480,828 | accent_variant |
 | `responsavél` | 30 | `responsável` | 50,628 | accent_variant |
 | `rídicula` | 30 | `ridicula` | 187 | accent_variant |
 | `rômulo` | 30 | `rómulo` | 225 | accent_variant |
@@ -3095,10 +3086,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `côro` | 29 | `coro` | 4,918 | accent_variant |
 | `dar-te-à` | 29 | `dar-te-á` | 582 | accent_variant |
 | `demónia` | 29 | `demônia` | 39 | accent_variant |
+| `destroí` | 29 | `destroi` | 354 | accent_variant |
 | `dificéis` | 29 | `dificeis` | 625 | accent_variant |
 | `domínguez` | 29 | `dominguez` | 537 | accent_variant |
-| `dáme` | 29 | `dame` | 1,201 | accent_variant |
-| `dë` | 29 | `de` | 15,387,617 | accent_variant |
 | `emoçao` | 29 | `emoção` | 21,505 | accent_variant |
 | `escafóide` | 29 | `escafoide` | 30 | accent_variant |
 | `evolucão` | 29 | `evolução` | 6,017 | accent_variant |
@@ -3119,9 +3109,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ingenuo` | 29 | `ingénuo` | 5,647 | unaccented |
 | `javalí` | 29 | `javali` | 2,975 | accent_variant |
 | `levar-te-à` | 29 | `levar-te-á` | 316 | accent_variant |
-| `mantêr` | 29 | `manter` | 285,714 | accent_variant |
+| `mantêr` | 29 | `manter` | 287,722 | accent_variant |
 | `menéndez` | 29 | `menendez` | 118 | accent_variant |
-| `mérda` | 29 | `merda` | 420,185 | accent_variant |
+| `mérda` | 29 | `merda` | 420,136 | accent_variant |
 | `navegaçao` | 29 | `navegação` | 3,704 | accent_variant |
 | `naúseas` | 29 | `nauseas` | 52 | accent_variant |
 | `pantâno` | 29 | `pântano` | 7,234 | accent_variant |
@@ -3142,14 +3132,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tensao` | 29 | `tensão` | 12,769 | unaccented |
 | `ungüento` | 29 | `unguento` | 468 | accent_variant |
 | `uniäo` | 29 | `união` | 12,739 | accent_variant |
-| `uá` | 29 | `ua` | 199 | accent_variant |
+| `uá` | 29 | `ua` | 190 | accent_variant |
 | `velázquez` | 29 | `velazquez` | 29 | accent_variant |
 | `vocè` | 29 | `você` | 1,746,755 | accent_variant |
 | `zircônio` | 29 | `zircónio` | 154 | accent_variant |
-| `abracar` | 28 | `abraçar` | 17,839 | unaccented |
+| `abracar` | 28 | `abraçar` | 18,226 | unaccented |
 | `algodao` | 28 | `algodão` | 4,476 | unaccented |
 | `antigüidade` | 28 | `antiguidade` | 4,728 | accent_variant |
-| `apróximar` | 28 | `aproximar` | 76,818 | accent_variant |
+| `apróximar` | 28 | `aproximar` | 76,880 | accent_variant |
 | `attílio` | 28 | `attilio` | 177 | accent_variant |
 | `blusäo` | 28 | `blusão` | 1,981 | accent_variant |
 | `bonús` | 28 | `bónus` | 5,337 | accent_variant |
@@ -3159,11 +3149,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `clémence` | 28 | `clemence` | 123 | accent_variant |
 | `cocò` | 28 | `coco` | 6,021 | accent_variant |
 | `condicão` | 28 | `condição` | 35,928 | accent_variant |
-| `contrôle` | 28 | `controle` | 27,150 | accent_variant |
+| `contrôle` | 28 | `controle` | 27,167 | accent_variant |
 | `cô` | 28 | `co` | 3,028 | accent_variant |
 | `decimo` | 28 | `décimo` | 4,702 | unaccented |
 | `disfarcado` | 28 | `disfarçado` | 3,477 | unaccented |
-| `elê` | 28 | `ele` | 3,858,001 | accent_variant |
+| `elê` | 28 | `ele` | 3,858,000 | accent_variant |
 | `emoçäo` | 28 | `emoção` | 21,505 | accent_variant |
 | `erá` | 28 | `éra` | 115 | accent_variant |
 | `escuridäo` | 28 | `escuridão` | 18,392 | accent_variant |
@@ -3179,7 +3169,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `jardím` | 28 | `jardim` | 26,278 | accent_variant |
 | `logico` | 28 | `lógico` | 4,285 | unaccented |
 | `malicia` | 28 | `malícia` | 723 | unaccented |
-| `mantéma` | 28 | `mantema` | 49 | accent_variant |
 | `matinês` | 28 | `matinés` | 69 | accent_variant |
 | `nave-mae` | 28 | `nave-mãe` | 956 | unaccented |
 | `naão` | 28 | `nãão` | 41 | accent_variant |
@@ -3200,12 +3189,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sepúlveda` | 28 | `sepulveda` | 100 | accent_variant |
 | `simulaçao` | 28 | `simulação` | 4,661 | accent_variant |
 | `subatômico` | 28 | `subatómico` | 415 | accent_variant |
-| `sêlo` | 28 | `selo` | 8,008 | accent_variant |
 | `terco` | 28 | `terço` | 4,189 | unaccented |
 | `titanio` | 28 | `titânio` | 1,760 | unaccented |
 | `táxista` | 28 | `taxista` | 3,184 | accent_variant |
 | `váo` | 28 | `vao` | 1,519 | accent_variant |
-| `xa` | 28 | `xá` | 902 | unaccented |
 | `ág` | 28 | `ag` | 383 | accent_variant |
 | `éponine` | 28 | `eponine` | 116 | accent_variant |
 | `éso` | 28 | `eso` | 316 | accent_variant |
@@ -3226,7 +3213,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `considerávelmente` | 27 | `consideravelmente` | 1,024 | accent_variant |
 | `consultorio` | 27 | `consultório` | 5,211 | unaccented |
 | `cássius` | 27 | `cassius` | 1,010 | accent_variant |
-| `deixár` | 27 | `deixar` | 1,341,565 | accent_variant |
+| `deixár` | 27 | `deixar` | 1,370,546 | accent_variant |
 | `destrocado` | 27 | `destroçado` | 2,651 | unaccented |
 | `direcao` | 27 | `direção` | 58,078 | unaccented |
 | `economico` | 27 | `económico` | 5,439 | unaccented |
@@ -3265,7 +3252,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pêni` | 27 | `peni` | 173 | accent_variant |
 | `quesó` | 27 | `queso` | 81 | accent_variant |
 | `quäo` | 27 | `quão` | 35,913 | accent_variant |
-| `sobrepôr` | 27 | `sobrepor` | 1,980 | accent_variant |
+| `sobrepôr` | 27 | `sobrepor` | 1,981 | accent_variant |
 | `sémola` | 27 | `sêmola` | 48 | accent_variant |
 | `sûl` | 27 | `sul` | 55,266 | accent_variant |
 | `talvés` | 27 | `talves` | 385 | accent_variant |
@@ -3278,9 +3265,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vulcânia` | 27 | `vulcania` | 31 | accent_variant |
 | `vulneravel` | 27 | `vulnerável` | 9,203 | unaccented |
 | `válá` | 27 | `vala` | 3,444 | accent_variant |
+| `xa` | 27 | `xá` | 902 | unaccented |
 | `zoologico` | 27 | `zoológico` | 4,451 | unaccented |
 | `áquela` | 27 | `àquela` | 9,039 | accent_variant |
-| `ö` | 27 | `o` | 29,885,565 | accent_variant |
+| `ö` | 27 | `o` | 29,933,053 | accent_variant |
 | `associaçäo` | 26 | `associação` | 7,561 | accent_variant |
 | `atrio` | 26 | `átrio` | 3,081 | unaccented |
 | `autômato` | 26 | `autómato` | 539 | accent_variant |
@@ -3293,7 +3281,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `confissao` | 26 | `confissão` | 12,592 | unaccented |
 | `dadiva` | 26 | `dádiva` | 4,697 | unaccented |
 | `dagný` | 26 | `dagny` | 69 | accent_variant |
-| `destroí` | 26 | `destroi` | 338 | accent_variant |
 | `direccäo` | 26 | `direccão` | 136 | accent_variant |
 | `dublín` | 26 | `dublin` | 1,799 | accent_variant |
 | `economía` | 26 | `economia` | 10,169 | accent_variant |
@@ -3338,7 +3325,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `telefóne` | 26 | `telefone` | 129,147 | accent_variant |
 | `transgênico` | 26 | `transgénico` | 307 | accent_variant |
 | `trìs` | 26 | `tris` | 1,315 | accent_variant |
-| `viräo` | 26 | `virao` | 32 | accent_variant |
 | `vä` | 26 | `vã` | 996 | accent_variant |
 | `çonstance` | 26 | `constance` | 2,092 | accent_variant |
 | `õkei` | 26 | `okei` | 122 | accent_variant |
@@ -3346,12 +3332,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `agá` | 25 | `aga` | 120 | accent_variant |
 | `amazonia` | 25 | `amazónia` | 773 | unaccented |
 | `amón` | 25 | `amon` | 904 | accent_variant |
-| `anonimo` | 25 | `anónimo` | 9,248 | unaccented |
+| `anonimo` | 25 | `anónimo` | 9,247 | unaccented |
 | `astarté` | 25 | `astarte` | 76 | accent_variant |
 | `avaliacão` | 25 | `avaliação` | 9,532 | accent_variant |
 | `avanco` | 25 | `avanço` | 8,493 | unaccented |
 | `bulgaro` | 25 | `búlgaro` | 629 | unaccented |
-| `bá` | 25 | `ba` | 2,511 | accent_variant |
+| `bá` | 25 | `ba` | 2,496 | accent_variant |
 | `caffé` | 25 | `caffe` | 26 | accent_variant |
 | `cemiterio` | 25 | `cemitério` | 11,376 | unaccented |
 | `clamidia` | 25 | `clamídia` | 370 | unaccented |
@@ -3369,7 +3355,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `egoismo` | 25 | `egoísmo` | 1,375 | unaccented |
 | `gisèle` | 25 | `gisele` | 203 | accent_variant |
 | `historico` | 25 | `histórico` | 12,328 | unaccented |
-| `icar` | 25 | `içar` | 2,108 | unaccented |
+| `icar` | 25 | `içar` | 2,139 | unaccented |
 | `irmazinha` | 25 | `irmãzinha` | 2,381 | unaccented |
 | `jähn` | 25 | `jahn` | 28 | accent_variant |
 | `jô` | 25 | `jo` | 6,740 | accent_variant |
@@ -3402,12 +3388,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vóz` | 25 | `voz` | 74,378 | accent_variant |
 | `áqueles` | 25 | `àqueles` | 4,320 | accent_variant |
 | `ártemis` | 25 | `artemis` | 457 | accent_variant |
-| `å` | 25 | `a` | 22,503,312 | accent_variant |
+| `å` | 25 | `a` | 22,822,857 | accent_variant |
 | `édouard` | 25 | `edouard` | 296 | accent_variant |
 | `êse` | 25 | `ese` | 490 | accent_variant |
 | `íncrivel` | 25 | `incrível` | 70,840 | accent_variant |
 | `ómicron` | 25 | `omicron` | 259 | accent_variant |
-| `agradeçer` | 24 | `agradecer` | 105,691 | accent_variant |
+| `agradeçer` | 24 | `agradecer` | 105,705 | accent_variant |
 | `anáfase` | 24 | `anafáse` | 24 | accent_variant |
 | `artórius` | 24 | `artorius` | 54 | accent_variant |
 | `atônito` | 24 | `atónito` | 148 | accent_variant |
@@ -3420,14 +3406,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cardassia` | 24 | `cardássia` | 341 | unaccented |
 | `cidadäos` | 24 | `cidadaos` | 43 | accent_variant |
 | `conclusäo` | 24 | `conclusão` | 12,431 | accent_variant |
-| `conhecêr` | 24 | `conhecer` | 682,332 | accent_variant |
+| `conhecêr` | 24 | `conhecer` | 690,273 | accent_variant |
 | `constituicão` | 24 | `constituição` | 4,478 | accent_variant |
 | `coé` | 24 | `coe` | 147 | accent_variant |
 | `cássia` | 24 | `cassia` | 83 | accent_variant |
 | `daría` | 24 | `dária` | 42 | accent_variant |
 | `ecrãn` | 24 | `écran` | 439 | accent_variant |
 | `elías` | 24 | `elias` | 3,021 | accent_variant |
-| `empalá` | 24 | `empala` | 30 | accent_variant |
+| `empalá` | 24 | `empala` | 32 | accent_variant |
 | `entaõ` | 24 | `então` | 1,280,096 | accent_variant |
 | `estaçoes` | 24 | `estacões` | 30 | accent_variant |
 | `execuçäo` | 24 | `execução` | 10,019 | accent_variant |
@@ -3481,7 +3467,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `talismä` | 24 | `talismã` | 1,471 | accent_variant |
 | `trágicamente` | 24 | `tragicamente` | 965 | accent_variant |
 | `tungstênio` | 24 | `tungsténio` | 215 | accent_variant |
-| `téa` | 24 | `tea` | 1,077 | accent_variant |
+| `téa` | 24 | `tea` | 1,076 | accent_variant |
 | `utéis` | 24 | `uteis` | 62 | accent_variant |
 | `violaçao` | 24 | `violação` | 15,495 | accent_variant |
 | `viña` | 24 | `vina` | 79 | accent_variant |
@@ -3489,7 +3475,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `áerea` | 24 | `aerea` | 111 | accent_variant |
 | `åke` | 24 | `ake` | 31 | accent_variant |
 | `éticamente` | 24 | `eticamente` | 257 | accent_variant |
-| `éu` | 24 | `eu` | 6,282,997 | accent_variant |
+| `éu` | 24 | `eu` | 6,283,004 | accent_variant |
 | `administraçäo` | 23 | `administração` | 11,729 | accent_variant |
 | `aimé` | 23 | `aime` | 26 | accent_variant |
 | `almondega` | 23 | `almôndega` | 2,110 | unaccented |
@@ -3500,7 +3486,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `canabis` | 23 | `canábis` | 246 | unaccented |
 | `chèrie` | 23 | `cherie` | 733 | accent_variant |
 | `confidêncial` | 23 | `confidencial` | 12,128 | accent_variant |
-| `conheçi` | 23 | `conhecí` | 41 | accent_variant |
+| `conheçi` | 23 | `conhecí` | 43 | accent_variant |
 | `criaçäo` | 23 | `criação` | 9,381 | accent_variant |
 | `demonstraçao` | 23 | `demonstração` | 6,868 | accent_variant |
 | `detencão` | 23 | `detenção` | 11,438 | accent_variant |
@@ -3521,6 +3507,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lirio` | 23 | `lírio` | 1,410 | unaccented |
 | `litigio` | 23 | `litígio` | 471 | unaccented |
 | `lémur` | 23 | `lemur` | 26 | accent_variant |
+| `léva` | 23 | `levà` | 79 | accent_variant |
 | `límite` | 23 | `limite` | 34,252 | accent_variant |
 | `malaria` | 23 | `malária` | 1,456 | unaccented |
 | `manhá` | 23 | `manhã` | 172,553 | accent_variant |
@@ -3537,7 +3524,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `paí` | 23 | `pai` | 950,305 | accent_variant |
 | `picuínhas` | 23 | `picuinhas` | 790 | accent_variant |
 | `porquè` | 23 | `porque` | 1,552,691 | accent_variant |
-| `praca` | 23 | `praça` | 7,473 | unaccented |
+| `praca` | 23 | `praça` | 7,472 | unaccented |
 | `pôes` | 23 | `pöes` | 33 | accent_variant |
 | `quál` | 23 | `qual` | 466,245 | accent_variant |
 | `renê` | 23 | `rené` | 3,318 | accent_variant |
@@ -3565,7 +3552,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `île` | 23 | `ile` | 47 | accent_variant |
 | `abracá` | 22 | `abraca` | 47 | accent_variant |
 | `abundancia` | 22 | `abundância` | 1,768 | unaccented |
-| `acão` | 22 | `ação` | 70,875 | accent_variant |
+| `acão` | 22 | `ação` | 70,876 | accent_variant |
 | `anfitriao` | 22 | `anfitrião` | 4,683 | unaccented |
 | `anômalo` | 22 | `anómalo` | 697 | accent_variant |
 | `artémias` | 22 | `artêmias` | 25 | accent_variant |
@@ -3586,7 +3573,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `coraçâo` | 22 | `coração` | 155,243 | accent_variant |
 | `cãmera` | 22 | `câmera` | 8,293 | accent_variant |
 | `destabilizá` | 22 | `destabiliza` | 30 | accent_variant |
-| `disfrutá` | 22 | `disfruta` | 230 | accent_variant |
+| `disfrutá` | 22 | `disfruta` | 237 | accent_variant |
 | `disposiçao` | 22 | `disposição` | 9,350 | accent_variant |
 | `disposiçäo` | 22 | `disposição` | 9,350 | accent_variant |
 | `dái` | 22 | `daí` | 63,571 | accent_variant |
@@ -3623,6 +3610,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pròprio` | 22 | `próprio` | 231,513 | accent_variant |
 | `próculus` | 22 | `proculus` | 52 | accent_variant |
 | `prófase` | 22 | `profáse` | 24 | accent_variant |
+| `pära` | 22 | `para` | 7,211,969 | accent_variant |
 | `reservatorio` | 22 | `reservatório` | 1,583 | unaccented |
 | `residuo` | 22 | `resíduo` | 5,146 | unaccented |
 | `rémora` | 22 | `rêmora` | 35 | accent_variant |
@@ -3633,7 +3621,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `terraco` | 22 | `terraço` | 3,230 | unaccented |
 | `tití` | 22 | `titi` | 233 | accent_variant |
 | `tragico` | 22 | `trágico` | 7,950 | unaccented |
-| `tręs` | 22 | `três` | 341,226 | accent_variant |
+| `tręs` | 22 | `três` | 341,229 | accent_variant |
 | `vesicula` | 22 | `vesícula` | 680 | unaccented |
 | `vigario` | 22 | `vigário` | 1,149 | unaccented |
 | `yaï` | 22 | `yai` | 141 | accent_variant |
@@ -3662,6 +3650,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `combinaçao` | 21 | `combinação` | 11,699 | accent_variant |
 | `comecámos` | 21 | `comecamos` | 73 | accent_variant |
 | `compiégne` | 21 | `compiègne` | 50 | accent_variant |
+| `conheçemos` | 21 | `conhecêmos` | 21 | accent_variant |
 | `contínue` | 21 | `continúe` | 23 | accent_variant |
 | `convençäo` | 21 | `convenção` | 6,730 | accent_variant |
 | `coraçoes` | 21 | `coracões` | 48 | accent_variant |
@@ -3704,7 +3693,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mandragora` | 21 | `mandrágora` | 373 | unaccented |
 | `maquiavél` | 21 | `maquiavel` | 185 | accent_variant |
 | `matemáticamente` | 21 | `matematicamente` | 329 | accent_variant |
-| `matár` | 21 | `matar` | 783,502 | accent_variant |
+| `matár` | 21 | `matar` | 794,698 | accent_variant |
 | `medicaçao` | 21 | `medicação` | 8,383 | accent_variant |
 | `máe` | 21 | `mãe` | 724,015 | accent_variant |
 | `mêdico` | 21 | `médico` | 160,690 | accent_variant |
@@ -3720,24 +3709,23 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pinata` | 21 | `piñata` | 573 | unaccented |
 | `pokêmons` | 21 | `pokémons` | 195 | accent_variant |
 | `polisuço` | 21 | `polisuco` | 182 | accent_variant |
-| `polí` | 21 | `poli` | 501 | accent_variant |
-| `porcaría` | 21 | `porcaria` | 43,220 | accent_variant |
+| `polí` | 21 | `poli` | 508 | accent_variant |
+| `porcaría` | 21 | `porcaria` | 43,212 | accent_variant |
 | `posicão` | 21 | `posição` | 71,815 | accent_variant |
 | `protese` | 21 | `prótese` | 1,366 | unaccented |
 | `psicológia` | 21 | `psicologia` | 4,472 | accent_variant |
 | `páraquedismo` | 21 | `paraquedismo` | 120 | accent_variant |
 | `quarteiräo` | 21 | `quarteirão` | 15,217 | accent_variant |
-| `recomecar` | 21 | `recomeçar` | 12,151 | unaccented |
+| `recomecar` | 21 | `recomeçar` | 12,153 | unaccented |
 | `reproduçao` | 21 | `reprodução` | 1,810 | accent_variant |
 | `ruívo` | 21 | `ruivo` | 7,445 | accent_variant |
 | `ruíz` | 21 | `ruiz` | 2,280 | accent_variant |
 | `sabäo` | 21 | `sabão` | 4,654 | accent_variant |
 | `salvaçao` | 21 | `salvação` | 7,270 | accent_variant |
-| `sanáa` | 21 | `sanaa` | 21 | accent_variant |
 | `seleccionámos` | 21 | `seleccionamos` | 75 | accent_variant |
-| `substituír` | 21 | `substituir` | 27,788 | accent_variant |
+| `substituír` | 21 | `substituir` | 28,114 | accent_variant |
 | `sumô` | 21 | `sumo` | 14,342 | accent_variant |
-| `sêca` | 21 | `seca` | 16,871 | accent_variant |
+| `sêca` | 21 | `seca` | 16,904 | accent_variant |
 | `terca` | 21 | `terça` | 6,872 | unaccented |
 | `termometro` | 21 | `termómetro` | 802 | unaccented |
 | `thérese` | 21 | `therese` | 387 | accent_variant |
@@ -3747,7 +3735,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `turbulencia` | 21 | `turbulência` | 2,130 | unaccented |
 | `távamos` | 21 | `tavamos` | 28 | accent_variant |
 | `túnis` | 21 | `tunis` | 86 | accent_variant |
-| `tû` | 21 | `tu` | 1,635,411 | accent_variant |
+| `tû` | 21 | `tu` | 1,635,412 | accent_variant |
 | `vedaçäo` | 21 | `vedação` | 5,449 | accent_variant |
 | `virgínio` | 21 | `virginio` | 21 | accent_variant |
 | `vovo` | 21 | `vovó` | 2,354 | unaccented |
@@ -3768,7 +3756,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `apareçer` | 20 | `aparecer` | 163,413 | accent_variant |
 | `arquitetônico` | 20 | `arquitetónico` | 141 | accent_variant |
 | `ascensao` | 20 | `ascensão` | 3,535 | unaccented |
-| `asiatico` | 20 | `asiático` | 6,514 | unaccented |
+| `asiatico` | 20 | `asiático` | 6,500 | unaccented |
 | `atençâo` | 20 | `atenção` | 107,999 | accent_variant |
 | `atlantico` | 20 | `atlântico` | 3,300 | unaccented |
 | `bilhoes` | 20 | `bilhões` | 2,272 | unaccented |
@@ -3816,7 +3804,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `jessé` | 20 | `jesse` | 19,029 | accent_variant |
 | `joça` | 20 | `joca` | 90 | accent_variant |
 | `júnio` | 20 | `junio` | 44 | accent_variant |
-| `laco` | 20 | `laço` | 10,493 | unaccented |
+| `laco` | 20 | `laço` | 10,496 | unaccented |
 | `lamentavel` | 20 | `lamentável` | 2,948 | unaccented |
 | `licántropo` | 20 | `licantropo` | 223 | accent_variant |
 | `létitia` | 20 | `letitia` | 300 | accent_variant |
@@ -3839,7 +3827,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pre-nupcial` | 20 | `pré-nupcial` | 1,195 | unaccented |
 | `pro-domínio` | 20 | `pró-domínio` | 49 | accent_variant |
 | `psicologico` | 20 | `psicológico` | 7,505 | unaccented |
-| `pära` | 20 | `para` | 7,211,920 | accent_variant |
 | `púdico` | 20 | `pudico` | 116 | accent_variant |
 | `questâo` | 20 | `questão` | 97,336 | accent_variant |
 | `raciocinio` | 20 | `raciocínio` | 2,444 | unaccented |
@@ -3870,7 +3857,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `émilienne` | 20 | `emilienne` | 25 | accent_variant |
 | `ítem` | 20 | `item` | 4,563 | accent_variant |
 | `albania` | 19 | `albânia` | 688 | unaccented |
-| `alcancar` | 19 | `alcançar` | 22,889 | unaccented |
+| `alcancar` | 19 | `alcançar` | 22,933 | unaccented |
 | `alma-gêmea` | 19 | `alma-gémea` | 160 | accent_variant |
 | `alteraçäo` | 19 | `alteração` | 8,466 | accent_variant |
 | `amídala` | 19 | `amidala` | 920 | accent_variant |
@@ -3925,12 +3912,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `jiu-jítsu` | 19 | `jiu-jitsu` | 267 | accent_variant |
 | `limäo` | 19 | `limão` | 6,334 | accent_variant |
 | `lncrivel` | 19 | `lncrível` | 283 | unaccented |
-| `lár` | 19 | `lar` | 28,119 | accent_variant |
+| `lár` | 19 | `lar` | 28,120 | accent_variant |
 | `magnifíco` | 19 | `magnífico` | 13,935 | accent_variant |
 | `malígno` | 19 | `maligno` | 4,297 | accent_variant |
 | `manutençäo` | 19 | `manutenção` | 6,870 | accent_variant |
 | `mascára` | 19 | `máscara` | 25,014 | accent_variant |
-| `mãs` | 19 | `mas` | 3,602,828 | accent_variant |
+| `mãs` | 19 | `mas` | 3,602,831 | accent_variant |
 | `mée` | 19 | `mee` | 402 | accent_variant |
 | `möller` | 19 | `moller` | 36 | accent_variant |
 | `nenem` | 19 | `neném` | 309 | unaccented |
@@ -3952,35 +3939,35 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rasputín` | 19 | `rasputin` | 402 | accent_variant |
 | `relacäo` | 19 | `relação` | 101,548 | accent_variant |
 | `respiracao` | 19 | `respiração` | 11,306 | unaccented |
-| `revêr` | 19 | `rever` | 20,008 | accent_variant |
+| `revêr` | 19 | `rever` | 20,042 | accent_variant |
 | `républicano` | 19 | `republicano` | 5,043 | accent_variant |
 | `rúbrica` | 19 | `rubrica` | 265 | accent_variant |
 | `sabádo` | 19 | `sábado` | 23,857 | accent_variant |
 | `sariguéia` | 19 | `sarigueia` | 67 | accent_variant |
-| `seleccioná` | 19 | `selecciona` | 167 | accent_variant |
+| `seleccioná` | 19 | `selecciona` | 172 | accent_variant |
 | `sicômoros` | 19 | `sicómoros` | 25 | accent_variant |
 | `suícidas` | 19 | `suicídas` | 32 | accent_variant |
 | `sémenov` | 19 | `semenov` | 27 | accent_variant |
-| `sêr` | 19 | `ser` | 21,333,709 | accent_variant |
+| `sêr` | 19 | `ser` | 21,334,085 | accent_variant |
 | `sòmente` | 19 | `somente` | 16,077 | accent_variant |
 | `taí` | 19 | `tai` | 1,885 | accent_variant |
-| `tirár` | 19 | `tirar` | 409,177 | accent_variant |
+| `tirár` | 19 | `tirar` | 416,395 | accent_variant |
 | `transmissivel` | 19 | `transmissível` | 549 | unaccented |
-| `trà` | 19 | `tra` | 122 | accent_variant |
+| `trà` | 19 | `tra` | 121 | accent_variant |
 | `trãnsito` | 19 | `trânsito` | 14,138 | accent_variant |
 | `tóto` | 19 | `totó` | 4,853 | accent_variant |
 | `tôlo` | 19 | `tolo` | 25,859 | accent_variant |
-| `vigià` | 19 | `vigia` | 12,869 | accent_variant |
+| `vigià` | 19 | `vigia` | 13,211 | accent_variant |
 | `víbrio` | 19 | `vibrio` | 28 | accent_variant |
 | `víper` | 19 | `viper` | 1,507 | accent_variant |
 | `àrbitro` | 19 | `árbitro` | 3,018 | accent_variant |
-| `ár` | 19 | `ar` | 143,202 | accent_variant |
+| `ár` | 19 | `ar` | 143,210 | accent_variant |
 | `çody` | 19 | `cody` | 7,643 | accent_variant |
 | `élfiça` | 19 | `élfica` | 310 | accent_variant |
 | `élysées` | 19 | `elysées` | 28 | accent_variant |
 | `óhh` | 19 | `ohh` | 3,192 | accent_variant |
 | `ùnico` | 19 | `único` | 301,707 | accent_variant |
-| `acao` | 18 | `ação` | 70,875 | unaccented |
+| `acao` | 18 | `ação` | 70,876 | unaccented |
 | `acessivel` | 18 | `acessível` | 1,965 | unaccented |
 | `adolescencia` | 18 | `adolescência` | 1,768 | unaccented |
 | `aiá` | 18 | `aia` | 534 | accent_variant |
@@ -4010,10 +3997,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `checoslovaquia` | 18 | `checoslováquia` | 523 | unaccented |
 | `chíu` | 18 | `chiu` | 1,086 | accent_variant |
 | `clavicula` | 18 | `clavícula` | 1,364 | unaccented |
-| `comprà` | 18 | `compra` | 39,245 | accent_variant |
+| `comprà` | 18 | `compra` | 39,450 | accent_variant |
 | `comunicacao` | 18 | `comunicação` | 26,430 | unaccented |
 | `condiçäo` | 18 | `condição` | 35,928 | accent_variant |
-| `conheçemos` | 18 | `conhecêmos` | 21 | accent_variant |
 | `cu-cú` | 18 | `cu-cu` | 148 | accent_variant |
 | `demissao` | 18 | `demissão` | 5,211 | unaccented |
 | `depoís` | 18 | `depois` | 725,711 | accent_variant |
@@ -4036,7 +4022,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `estônia` | 18 | `estónia` | 334 | accent_variant |
 | `excentrico` | 18 | `excêntrico` | 2,999 | unaccented |
 | `experienciá` | 18 | `experiência` | 59,124 | accent_variant |
-| `extraír` | 18 | `extrair` | 8,195 | accent_variant |
+| `extraír` | 18 | `extrair` | 8,216 | accent_variant |
 | `faláfel` | 18 | `falafel` | 344 | accent_variant |
 | `fascinio` | 18 | `fascínio` | 1,025 | unaccented |
 | `faç` | 18 | `fac` | 103 | accent_variant |
@@ -4049,7 +4035,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `gavilán` | 18 | `gavilan` | 216 | accent_variant |
 | `girólamo` | 18 | `girolamo` | 312 | accent_variant |
 | `gustáv` | 18 | `gustav` | 1,635 | accent_variant |
-| `gá` | 18 | `ga` | 589 | accent_variant |
+| `gá` | 18 | `ga` | 587 | accent_variant |
 | `heroís` | 18 | `herois` | 206 | accent_variant |
 | `holmström` | 18 | `holmstrom` | 18 | accent_variant |
 | `huseyin` | 18 | `hüseyin` | 189 | unaccented |
@@ -4066,7 +4052,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `jávi` | 18 | `javi` | 1,510 | accent_variant |
 | `lancado` | 18 | `lançado` | 352 | unaccented |
 | `limao` | 18 | `limão` | 6,334 | unaccented |
-| `lì` | 18 | `li` | 33,987 | accent_variant |
+| `lì` | 18 | `li` | 34,279 | accent_variant |
 | `macã` | 18 | `maçã` | 8,475 | accent_variant |
 | `mansäo` | 18 | `mansão` | 8,160 | accent_variant |
 | `marcaçao` | 18 | `marcação` | 5,103 | accent_variant |
@@ -4117,7 +4103,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tracia` | 18 | `trácia` | 485 | unaccented |
 | `transilvania` | 18 | `transilvânia` | 607 | unaccented |
 | `transpôr` | 18 | `transpor` | 812 | accent_variant |
-| `trâs` | 18 | `trás` | 133,277 | accent_variant |
+| `trâs` | 18 | `trás` | 133,287 | accent_variant |
 | `tônus` | 18 | `tónus` | 90 | accent_variant |
 | `túrquia` | 18 | `turquia` | 2,291 | accent_variant |
 | `unanime` | 18 | `unânime` | 1,304 | unaccented |
@@ -4136,7 +4122,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `école` | 18 | `ecole` | 30 | accent_variant |
 | `élodie` | 18 | `elodie` | 138 | accent_variant |
 | `ík` | 18 | `ik` | 133 | accent_variant |
-| `ísso` | 18 | `isso` | 3,438,858 | accent_variant |
+| `ísso` | 18 | `isso` | 3,438,864 | accent_variant |
 | `ñato` | 18 | `nato` | 3,188 | accent_variant |
 | `óregon` | 18 | `oregon` | 3,105 | accent_variant |
 | `ôca` | 18 | `oca` | 1,707 | accent_variant |
@@ -4153,7 +4139,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `audiçao` | 17 | `audição` | 11,166 | accent_variant |
 | `auto-destruiçao` | 17 | `auto-destruição` | 851 | accent_variant |
 | `avaliaçao` | 17 | `avaliação` | 9,532 | accent_variant |
-| `balanca` | 17 | `balança` | 3,692 | unaccented |
+| `balanca` | 17 | `balança` | 3,709 | unaccented |
 | `barça` | 17 | `barca` | 1,531 | accent_variant |
 | `bebêdo` | 17 | `bêbedo` | 15,922 | accent_variant |
 | `berçario` | 17 | `berçário` | 684 | accent_variant |
@@ -4175,9 +4161,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cucú` | 17 | `cucu` | 370 | accent_variant |
 | `cámaras` | 17 | `camaras` | 234 | accent_variant |
 | `céleste` | 17 | `celeste` | 2,990 | accent_variant |
-| `cêrca` | 17 | `cerca` | 54,060 | accent_variant |
+| `cêrca` | 17 | `cerca` | 54,068 | accent_variant |
 | `demencia` | 17 | `demência` | 1,429 | unaccented |
-| `denúnciar` | 17 | `denunciar` | 18,444 | accent_variant |
+| `denúnciar` | 17 | `denunciar` | 18,554 | accent_variant |
 | `desgraca` | 17 | `desgraça` | 9,316 | unaccented |
 | `desireé` | 17 | `desiree` | 321 | accent_variant |
 | `dionisio` | 17 | `dionísio` | 284 | unaccented |
@@ -4191,8 +4177,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `estabulo` | 17 | `estábulo` | 4,603 | unaccented |
 | `estatistica` | 17 | `estatística` | 3,926 | unaccented |
 | `extensäo` | 17 | `extensão` | 5,336 | accent_variant |
-| `eà` | 17 | `ea` | 728 | accent_variant |
-| `eí` | 17 | `ei` | 170,334 | accent_variant |
+| `eà` | 17 | `ea` | 712 | accent_variant |
+| `eí` | 17 | `ei` | 170,339 | accent_variant |
 | `feromónio` | 17 | `feromônio` | 54 | accent_variant |
 | `ficção-cientifica` | 17 | `ficção-científica` | 95 | accent_variant |
 | `formulario` | 17 | `formulário` | 5,940 | unaccented |
@@ -4221,14 +4207,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ligacão` | 17 | `ligação` | 55,553 | accent_variant |
 | `liên` | 17 | `lien` | 239 | accent_variant |
 | `localizaçâo` | 17 | `localização` | 23,804 | accent_variant |
-| `léva` | 17 | `levà` | 79 | accent_variant |
 | `martí` | 17 | `marti` | 172 | accent_variant |
 | `matà-io` | 17 | `matá-io` | 384 | accent_variant |
 | `matámo-io` | 17 | `matamo-io` | 17 | accent_variant |
+| `maté` | 17 | `mate` | 19,152 | accent_variant |
 | `maé` | 17 | `mãe` | 724,015 | accent_variant |
 | `monotono` | 17 | `monótono` | 1,429 | unaccented |
 | `mágicamente` | 17 | `magicamente` | 589 | accent_variant |
-| `mál` | 17 | `mal` | 356,980 | accent_variant |
+| `mál` | 17 | `mal` | 356,984 | accent_variant |
 | `mäezinha` | 17 | `mãezinha` | 4,054 | accent_variant |
 | `móbile` | 17 | `mobile` | 539 | accent_variant |
 | `măos` | 17 | `mäos` | 534 | accent_variant |
@@ -4237,11 +4223,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ordinario` | 17 | `ordinário` | 3,240 | unaccented |
 | `paladio` | 17 | `paládio` | 283 | unaccented |
 | `papâ` | 17 | `papá` | 78,885 | accent_variant |
-| `paralizá` | 17 | `paraliza` | 30 | accent_variant |
+| `paralizá` | 17 | `paraliza` | 31 | accent_variant |
 | `períferia` | 17 | `periferia` | 777 | accent_variant |
-| `piná` | 17 | `pina` | 441 | accent_variant |
+| `piná` | 17 | `pina` | 444 | accent_variant |
 | `pipí` | 17 | `pipi` | 777 | accent_variant |
-| `procurà` | 17 | `procura` | 162,706 | accent_variant |
+| `procurà` | 17 | `procura` | 163,080 | accent_variant |
 | `propulsao` | 17 | `propulsão` | 1,910 | unaccented |
 | `pú` | 17 | `pu` | 641 | accent_variant |
 | `religiäo` | 17 | `religião` | 11,673 | accent_variant |
@@ -4249,7 +4235,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `romenia` | 17 | `roménia` | 1,236 | unaccented |
 | `rosária` | 17 | `rosaria` | 97 | accent_variant |
 | `rêm` | 17 | `rem` | 694 | accent_variant |
-| `seccäo` | 17 | `secção` | 16,840 | accent_variant |
+| `seccäo` | 17 | `secção` | 16,842 | accent_variant |
 | `secúlo` | 17 | `século` | 29,938 | accent_variant |
 | `selênio` | 17 | `selénio` | 198 | accent_variant |
 | `ser-lhe-à` | 17 | `ser-lhe-á` | 576 | accent_variant |
@@ -4260,14 +4246,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `surfá` | 17 | `surfa` | 110 | accent_variant |
 | `séniors` | 17 | `seniors` | 28 | accent_variant |
 | `sídhe` | 17 | `sidhe` | 42 | accent_variant |
-| `sôbre` | 17 | `sobre` | 770,489 | accent_variant |
+| `sôbre` | 17 | `sobre` | 770,490 | accent_variant |
 | `tasmania` | 17 | `tasmânia` | 343 | unaccented |
 | `tectônico` | 17 | `tectónico` | 370 | accent_variant |
 | `telômeros` | 17 | `telómeros` | 24 | accent_variant |
 | `terapeutico` | 17 | `terapêutico` | 723 | unaccented |
 | `toño` | 17 | `tono` | 157 | accent_variant |
 | `tranqüilizador` | 17 | `tranquilizador` | 636 | accent_variant |
-| `tà` | 17 | `ta` | 4,839 | accent_variant |
+| `tà` | 17 | `ta` | 4,833 | accent_variant |
 | `tèt` | 17 | `tet` | 489 | accent_variant |
 | `tónio` | 17 | `tonio` | 52 | accent_variant |
 | `verâo` | 17 | `verão` | 39,935 | accent_variant |
@@ -4290,7 +4276,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `anglo-saxônica` | 16 | `anglo-saxónica` | 79 | accent_variant |
 | `ança` | 16 | `anca` | 5,264 | accent_variant |
 | `anónimamente` | 16 | `anonimamente` | 651 | accent_variant |
-| `anúnciar` | 16 | `anunciar` | 17,447 | accent_variant |
+| `anúnciar` | 16 | `anunciar` | 17,461 | accent_variant |
 | `apendice` | 16 | `apêndice` | 1,568 | unaccented |
 | `aquario` | 16 | `aquário` | 3,530 | unaccented |
 | `artíficio` | 16 | `artifício` | 2,752 | accent_variant |
@@ -4329,7 +4315,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `descontraír` | 16 | `descontrair` | 10,859 | accent_variant |
 | `desirée` | 16 | `desiree` | 321 | accent_variant |
 | `destruíção` | 16 | `destruição` | 14,943 | accent_variant |
-| `destá` | 16 | `desta` | 198,386 | accent_variant |
+| `destá` | 16 | `desta` | 198,387 | accent_variant |
 | `dinamarques` | 16 | `dinamarquês` | 2,324 | unaccented |
 | `diversäo` | 16 | `diversão` | 21,435 | accent_variant |
 | `domícilio` | 16 | `domicílio` | 1,704 | accent_variant |
@@ -4360,6 +4346,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `igniçao` | 16 | `ignição` | 3,903 | accent_variant |
 | `imán` | 16 | `íman` | 1,840 | accent_variant |
 | `imãn` | 16 | `íman` | 1,840 | accent_variant |
+| `incomóda` | 16 | `incômoda` | 74 | accent_variant |
 | `indescritivel` | 16 | `indescritível` | 1,103 | unaccented |
 | `indía` | 16 | `índia` | 13,204 | accent_variant |
 | `infãncia` | 16 | `infância` | 12,994 | accent_variant |
@@ -4397,12 +4384,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `orificio` | 16 | `orifício` | 1,215 | unaccented |
 | `osteogênese` | 16 | `osteogénese` | 27 | accent_variant |
 | `pendragón` | 16 | `pendragon` | 646 | accent_variant |
-| `perdõe` | 16 | `perdoe` | 15,543 | accent_variant |
+| `perdõe` | 16 | `perdoe` | 15,615 | accent_variant |
 | `piao` | 16 | `pião` | 381 | unaccented |
-| `possuír` | 16 | `possuir` | 23,558 | accent_variant |
+| `possuír` | 16 | `possuir` | 23,528 | accent_variant |
 | `previsao` | 16 | `previsão` | 4,402 | unaccented |
 | `provavél` | 16 | `provável` | 18,959 | accent_variant |
-| `proíbir` | 16 | `proibir` | 16,325 | accent_variant |
+| `proíbir` | 16 | `proibir` | 16,410 | accent_variant |
 | `psicotico` | 16 | `psicótico` | 3,116 | unaccented |
 | `páprica` | 16 | `paprica` | 174 | accent_variant |
 | `pégada` | 16 | `pegada` | 7,766 | accent_variant |
@@ -4413,9 +4400,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `roupäo` | 16 | `roupão` | 2,630 | accent_variant |
 | `ràpida` | 16 | `rapida` | 83 | accent_variant |
 | `rémoras` | 16 | `remoras` | 18 | accent_variant |
-| `ría` | 16 | `ria` | 4,760 | accent_variant |
+| `ría` | 16 | `ria` | 4,753 | accent_variant |
 | `rùssia` | 16 | `rússia` | 13,363 | accent_variant |
-| `saïda` | 16 | `saída` | 64,633 | accent_variant |
+| `saïda` | 16 | `saída` | 64,621 | accent_variant |
 | `semi-nú` | 16 | `semi-nu` | 54 | accent_variant |
 | `slorávia` | 16 | `sloravia` | 21 | accent_variant |
 | `sombrío` | 16 | `sombrio` | 7,524 | accent_variant |
@@ -4428,8 +4415,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `telefonicas` | 16 | `telefônicas` | 165 | unaccented |
 | `trémoille` | 16 | `trémoïlle` | 18 | accent_variant |
 | `trêm` | 16 | `trem` | 5,166 | accent_variant |
-| `trës` | 16 | `três` | 341,226 | accent_variant |
-| `tênder` | 16 | `tender` | 16,247 | accent_variant |
+| `trës` | 16 | `três` | 341,229 | accent_variant |
+| `tênder` | 16 | `tender` | 16,249 | accent_variant |
 | `vocêe` | 16 | `vocêé` | 19 | accent_variant |
 | `vulcanália` | 16 | `vulcanalia` | 82 | accent_variant |
 | `vâ` | 16 | `vã` | 996 | accent_variant |
@@ -4476,7 +4463,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `campones` | 15 | `camponês` | 4,813 | unaccented |
 | `cancäo` | 15 | `canção` | 38,195 | accent_variant |
 | `castañeda` | 15 | `castaneda` | 49 | accent_variant |
-| `cauterizá` | 15 | `cauteriza` | 55 | accent_variant |
+| `cauterizá` | 15 | `cauteriza` | 56 | accent_variant |
 | `chechenia` | 15 | `chechénia` | 875 | unaccented |
 | `chào` | 15 | `chão` | 82,945 | accent_variant |
 | `ciúmento` | 15 | `ciumento` | 4,074 | accent_variant |
@@ -4490,7 +4477,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `conveniencia` | 15 | `conveniência` | 2,435 | unaccented |
 | `conves` | 15 | `convés` | 6,953 | unaccented |
 | `cécilia` | 15 | `cecilia` | 1,141 | accent_variant |
-| `cêgo` | 15 | `cego` | 28,950 | accent_variant |
+| `cêgo` | 15 | `cego` | 28,981 | accent_variant |
 | `cóboiada` | 15 | `coboiada` | 45 | accent_variant |
 | `cósimo` | 15 | `cosimo` | 372 | accent_variant |
 | `dancante` | 15 | `dançante` | 456 | unaccented |
@@ -4503,7 +4490,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dificeís` | 15 | `dificeis` | 625 | accent_variant |
 | `dramáticamente` | 15 | `dramaticamente` | 516 | accent_variant |
 | `dubé` | 15 | `dube` | 118 | accent_variant |
-| `dí` | 15 | `di` | 3,282 | accent_variant |
+| `dí` | 15 | `di` | 3,284 | accent_variant |
 | `ecrân` | 15 | `écran` | 439 | accent_variant |
 | `edipo` | 15 | `édipo` | 472 | unaccented |
 | `eficiencia` | 15 | `eficiência` | 1,971 | unaccented |
@@ -4531,7 +4518,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `húbris` | 15 | `hubris` | 27 | accent_variant |
 | `impenetravel` | 15 | `impenetrável` | 1,829 | unaccented |
 | `inacreditávelmente` | 15 | `inacreditavelmente` | 467 | accent_variant |
-| `incomóda` | 15 | `incômoda` | 74 | accent_variant |
 | `indíco` | 15 | `índico` | 392 | accent_variant |
 | `informaçâo` | 15 | `informação` | 117,540 | accent_variant |
 | `ingreme` | 15 | `íngreme` | 741 | unaccented |
@@ -4548,12 +4534,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lìn` | 15 | `lin` | 4,133 | accent_variant |
 | `madô` | 15 | `mado` | 121 | accent_variant |
 | `marçano` | 15 | `marcano` | 78 | accent_variant |
-| `maté` | 15 | `mate` | 18,604 | accent_variant |
 | `meretissíma` | 15 | `meretíssima` | 167 | accent_variant |
 | `messías` | 15 | `messias` | 3,181 | accent_variant |
 | `missöes` | 15 | `missoes` | 30 | accent_variant |
 | `màos` | 15 | `mäos` | 534 | accent_variant |
-| `máscar` | 15 | `mascar` | 1,154 | accent_variant |
+| `máscar` | 15 | `mascar` | 1,155 | accent_variant |
 | `même` | 15 | `meme` | 72 | accent_variant |
 | `mô` | 15 | `mó` | 375 | accent_variant |
 | `nausea` | 15 | `náusea` | 2,881 | unaccented |
@@ -4565,14 +4550,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `nóticias` | 15 | `noticías` | 54 | accent_variant |
 | `océano` | 15 | `oceano` | 19,017 | accent_variant |
 | `oracão` | 15 | `oração` | 10,926 | accent_variant |
-| `orgía` | 15 | `orgia` | 2,401 | accent_variant |
+| `orgía` | 15 | `orgia` | 2,400 | accent_variant |
 | `orleáns` | 15 | `orleans` | 2,683 | accent_variant |
 | `oéus` | 15 | `oeus` | 38 | accent_variant |
 | `papä` | 15 | `papá` | 78,885 | accent_variant |
-| `parár` | 15 | `parar` | 545,346 | accent_variant |
+| `parár` | 15 | `parar` | 545,644 | accent_variant |
 | `paìs` | 15 | `país` | 112,877 | accent_variant |
 | `penitenciària` | 15 | `penitenciária` | 2,424 | accent_variant |
-| `perdôe` | 15 | `perdoe` | 15,543 | accent_variant |
+| `perdôe` | 15 | `perdoe` | 15,615 | accent_variant |
 | `pilúlas` | 15 | `pilulas` | 118 | accent_variant |
 | `polén` | 15 | `pólen` | 1,432 | accent_variant |
 | `precisao` | 15 | `precisão` | 4,251 | unaccented |
@@ -4586,7 +4571,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pár` | 15 | `par` | 53,873 | accent_variant |
 | `pársi` | 15 | `parsi` | 18 | accent_variant |
 | `pátetico` | 15 | `patético` | 14,907 | accent_variant |
-| `què` | 15 | `que` | 22,332,777 | accent_variant |
+| `què` | 15 | `que` | 22,332,778 | accent_variant |
 | `ragoût` | 15 | `ragout` | 15 | accent_variant |
 | `relátorio` | 15 | `relatório` | 52,228 | accent_variant |
 | `rendiçao` | 15 | `rendição` | 3,369 | accent_variant |
@@ -4594,7 +4579,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `reves` | 15 | `revés` | 859 | unaccented |
 | `revolucionario` | 15 | `revolucionário` | 4,519 | unaccented |
 | `revoluçâo` | 15 | `revolução` | 11,738 | accent_variant |
-| `reúnir` | 15 | `reunir` | 37,279 | accent_variant |
+| `reúnir` | 15 | `reunir` | 37,305 | accent_variant |
 | `roaché` | 15 | `roache` | 37 | accent_variant |
 | `rotaçao` | 15 | `rotação` | 2,998 | accent_variant |
 | `ruím` | 15 | `ruim` | 9,415 | accent_variant |
@@ -4650,7 +4635,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aliçe` | 14 | `alice` | 22,488 | accent_variant |
 | `allí` | 14 | `alli` | 173 | accent_variant |
 | `ambigüidade` | 14 | `ambiguidade` | 292 | accent_variant |
-| `analizá` | 14 | `analiza` | 32 | accent_variant |
+| `analizá` | 14 | `analiza` | 34 | accent_variant |
 | `anatômico` | 14 | `anatómico` | 232 | accent_variant |
 | `andreï` | 14 | `andrei` | 1,186 | accent_variant |
 | `antimateria` | 14 | `antimatéria` | 796 | unaccented |
@@ -4686,9 +4671,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cliníca` | 14 | `clínica` | 16,035 | accent_variant |
 | `cléopatra` | 14 | `cleópatra` | 1,612 | accent_variant |
 | `cocózinho` | 14 | `cocozinho` | 30 | accent_variant |
-| `concluír` | 14 | `concluir` | 10,789 | accent_variant |
+| `concluír` | 14 | `concluir` | 10,796 | accent_variant |
 | `configuraçao` | 14 | `configuração` | 1,381 | accent_variant |
-| `conhecë` | 14 | `conheçe` | 167 | accent_variant |
+| `conhecë` | 14 | `conheçe` | 178 | accent_variant |
 | `conheçemo` | 14 | `conhecêmo` | 114 | accent_variant |
 | `consideravel` | 14 | `considerável` | 3,016 | unaccented |
 | `constipaçäo` | 14 | `constipação` | 2,504 | accent_variant |
@@ -4698,10 +4683,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cêsar` | 14 | `césar` | 13,024 | accent_variant |
 | `cûl-de-sac` | 14 | `cul-de-sac` | 54 | accent_variant |
 | `decepcionámos` | 14 | `decepcionamos` | 16 | accent_variant |
-| `decompôr` | 14 | `decompor` | 995 | accent_variant |
+| `decompôr` | 14 | `decompor` | 997 | accent_variant |
 | `delí` | 14 | `deli` | 1,142 | accent_variant |
 | `descaido` | 14 | `descaído` | 229 | unaccented |
-| `descomplicá` | 14 | `descomplica` | 34 | accent_variant |
+| `descomplicá` | 14 | `descomplica` | 39 | accent_variant |
 | `destrui-los-á` | 14 | `destruí-los-á` | 30 | accent_variant |
 | `différence` | 14 | `difference` | 30 | accent_variant |
 | `dificílmente` | 14 | `dificilmente` | 4,099 | accent_variant |
@@ -4732,7 +4717,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `funebre` | 14 | `fúnebre` | 1,893 | unaccented |
 | `fué` | 14 | `fue` | 102 | accent_variant |
 | `fílme` | 14 | `filme` | 121,443 | accent_variant |
-| `fôrma` | 14 | `forma` | 259,872 | accent_variant |
+| `fôrma` | 14 | `forma` | 259,876 | accent_variant |
 | `garanhäo` | 14 | `garanhão` | 4,561 | accent_variant |
 | `grózni` | 14 | `grozni` | 16 | accent_variant |
 | `gão` | 14 | `gao` | 702 | accent_variant |
@@ -4757,7 +4742,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `jáo` | 14 | `jao` | 24 | accent_variant |
 | `jötunheim` | 14 | `jotunheim` | 447 | accent_variant |
 | `khân` | 14 | `khan` | 6,792 | accent_variant |
-| `lançe` | 14 | `lance` | 12,314 | accent_variant |
+| `lançe` | 14 | `lance` | 12,324 | accent_variant |
 | `latvéria` | 14 | `latveria` | 23 | accent_variant |
 | `lesao` | 14 | `lesão` | 11,426 | unaccented |
 | `leöes` | 14 | `leoes` | 15 | accent_variant |
@@ -4767,7 +4752,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `licöes` | 14 | `liçöes` | 38 | accent_variant |
 | `linguísta` | 14 | `linguista` | 330 | accent_variant |
 | `logistica` | 14 | `logística` | 1,159 | unaccented |
-| `lígua` | 14 | `ligua` | 182 | accent_variant |
+| `lígua` | 14 | `ligua` | 184 | accent_variant |
 | `magnetómetro` | 14 | `magnetômetro` | 17 | accent_variant |
 | `marín` | 14 | `marin` | 995 | accent_variant |
 | `meléndez` | 14 | `melendez` | 53 | accent_variant |
@@ -4777,7 +4762,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mobilía` | 14 | `mobília` | 4,836 | accent_variant |
 | `máo` | 14 | `mão` | 330,328 | accent_variant |
 | `mélies` | 14 | `méliès` | 199 | accent_variant |
-| `míúdo` | 14 | `miúdo` | 161,639 | accent_variant |
+| `míúdo` | 14 | `miúdo` | 161,636 | accent_variant |
 | `músíca` | 14 | `música` | 92,595 | accent_variant |
 | `namibia` | 14 | `namíbia` | 142 | unaccented |
 | `nazare` | 14 | `nazaré` | 1,236 | unaccented |
@@ -4800,25 +4785,24 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pesames` | 14 | `pêsames` | 2,679 | unaccented |
 | `petrô` | 14 | `petro` | 83 | accent_variant |
 | `plutonio` | 14 | `plutónio` | 1,847 | unaccented |
-| `poliçia` | 14 | `polícia` | 298,898 | accent_variant |
+| `poliçia` | 14 | `polícia` | 298,896 | accent_variant |
 | `políicia` | 14 | `poliicia` | 14 | accent_variant |
 | `posiçoes` | 14 | `posiçöes` | 30 | accent_variant |
 | `poçao` | 14 | `poção` | 6,717 | accent_variant |
 | `precipicío` | 14 | `precipício` | 2,071 | accent_variant |
 | `promoçao` | 14 | `promoção` | 8,625 | accent_variant |
 | `proteçao` | 14 | `proteção` | 34,014 | accent_variant |
-| `providênciar` | 14 | `providenciar` | 4,958 | accent_variant |
+| `providênciar` | 14 | `providenciar` | 4,959 | accent_variant |
 | `prái` | 14 | `praí` | 190 | accent_variant |
 | `précisément` | 14 | `precisement` | 16 | accent_variant |
 | `própr` | 14 | `propr` | 15 | accent_variant |
 | `psicologa` | 14 | `psicóloga` | 1,557 | unaccented |
 | `pudú` | 14 | `pudu` | 21 | accent_variant |
-| `párea` | 14 | `parea` | 78 | accent_variant |
 | `pâmela` | 14 | `pamela` | 2,578 | accent_variant |
 | `pédicures` | 14 | `pedicures` | 16 | accent_variant |
 | `pítons` | 14 | `pitons` | 65 | accent_variant |
 | `quizá` | 14 | `quiza` | 15 | accent_variant |
-| `quë` | 14 | `que` | 22,332,777 | accent_variant |
+| `quë` | 14 | `que` | 22,332,778 | accent_variant |
 | `raviólis` | 14 | `raviolis` | 78 | accent_variant |
 | `razăo` | 14 | `razão` | 309,282 | accent_variant |
 | `recuperaçao` | 14 | `recuperação` | 8,495 | accent_variant |
@@ -4838,19 +4822,19 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `transilvänia` | 14 | `transilvânia` | 607 | accent_variant |
 | `tánger` | 14 | `tânger` | 407 | accent_variant |
 | `tèm` | 14 | `tém` | 113 | accent_variant |
-| `të` | 14 | `te` | 4,163,573 | accent_variant |
+| `të` | 14 | `te` | 4,164,229 | accent_variant |
 | `tótos` | 14 | `tótós` | 360 | accent_variant |
 | `vaís` | 14 | `váis` | 51 | accent_variant |
 | `vaõ` | 14 | `vao` | 1,519 | accent_variant |
 | `verité` | 14 | `vérité` | 32 | accent_variant |
 | `veterinaria` | 14 | `veterinária` | 1,105 | unaccented |
-| `vió` | 14 | `vio` | 64 | accent_variant |
+| `vió` | 14 | `vio` | 21 | accent_variant |
 | `vulcao` | 14 | `vulcão` | 4,418 | unaccented |
 | `vírginia` | 14 | `virginia` | 7,100 | accent_variant |
 | `zircónia` | 14 | `zircônia` | 23 | accent_variant |
 | `zúñiga` | 14 | `zuniga` | 18 | accent_variant |
 | `á-vontade` | 14 | `à-vontade` | 332 | accent_variant |
-| `âgua` | 14 | `água` | 179,558 | accent_variant |
+| `âgua` | 14 | `água` | 179,546 | accent_variant |
 | `âmen` | 14 | `ámen` | 9,863 | accent_variant |
 | `çerto` | 14 | `certo` | 778,779 | accent_variant |
 | `écharpes` | 14 | `echarpes` | 20 | accent_variant |
@@ -4863,7 +4847,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `abdomén` | 13 | `abdómen` | 2,535 | accent_variant |
 | `acagaçá` | 13 | `acagaça` | 38 | accent_variant |
 | `aconselhavel` | 13 | `aconselhável` | 686 | unaccented |
-| `acôrdo` | 13 | `acordo` | 141,996 | accent_variant |
+| `acôrdo` | 13 | `acordo` | 142,041 | accent_variant |
 | `aerodinamica` | 13 | `aerodinâmica` | 404 | unaccented |
 | `alema` | 13 | `alemã` | 5,356 | unaccented |
 | `altimetro` | 13 | `altímetro` | 284 | unaccented |
@@ -4871,7 +4855,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `amanä` | 13 | `amanã` | 51 | accent_variant |
 | `ampères` | 13 | `ampéres` | 14 | accent_variant |
 | `amsterdäo` | 13 | `amsterdão` | 639 | accent_variant |
-| `animé` | 13 | `anime` | 1,390 | accent_variant |
+| `animé` | 13 | `anime` | 1,394 | accent_variant |
 | `aniversàrio` | 13 | `aniversário` | 50,357 | accent_variant |
 | `aquií` | 13 | `aquii` | 68 | accent_variant |
 | `aristoteles` | 13 | `aristóteles` | 793 | unaccented |
@@ -4889,7 +4873,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `botanica` | 13 | `botânica` | 760 | unaccented |
 | `brándon` | 13 | `brandon` | 6,407 | accent_variant |
 | `báez` | 13 | `baez` | 283 | accent_variant |
-| `bôla` | 13 | `bola` | 105,518 | accent_variant |
+| `bôla` | 13 | `bola` | 105,515 | accent_variant |
 | `carissimo` | 13 | `caríssimo` | 953 | unaccented |
 | `catolico` | 13 | `católico` | 10,020 | unaccented |
 | `cañon` | 13 | `canon` | 206 | accent_variant |
@@ -4912,11 +4896,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `deméter` | 13 | `demeter` | 60 | accent_variant |
 | `depressao` | 13 | `depressão` | 6,455 | unaccented |
 | `desdem` | 13 | `desdém` | 950 | unaccented |
-| `destroia` | 13 | `destróia` | 171 | unaccented |
 | `detonaçao` | 13 | `detonação` | 2,457 | accent_variant |
 | `duplicaçao` | 13 | `duplicação` | 203 | accent_variant |
 | `dóllares` | 13 | `dollares` | 62 | accent_variant |
-| `dę` | 13 | `de` | 15,387,617 | accent_variant |
+| `dę` | 13 | `de` | 15,387,641 | accent_variant |
 | `eleiçöes` | 13 | `eleiçoes` | 15 | accent_variant |
 | `elfico` | 13 | `élfico` | 302 | unaccented |
 | `emocões` | 13 | `emoçöes` | 27 | accent_variant |
@@ -4966,7 +4949,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `incorrígivel` | 13 | `incorrigível` | 568 | accent_variant |
 | `indústrial` | 13 | `industrial` | 5,460 | accent_variant |
 | `inesquecivel` | 13 | `inesquecível` | 1,490 | unaccented |
-| `influênciar` | 13 | `influenciar` | 5,683 | accent_variant |
+| `influênciar` | 13 | `influenciar` | 5,708 | accent_variant |
 | `iniqüidade` | 13 | `iniquidade` | 348 | accent_variant |
 | `instantaneo` | 13 | `instantâneo` | 2,821 | unaccented |
 | `investigaçoes` | 13 | `investigaçöes` | 16 | accent_variant |
@@ -4978,7 +4961,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `kaká` | 13 | `kaka` | 128 | accent_variant |
 | `kataná` | 13 | `katana` | 402 | accent_variant |
 | `kléber` | 13 | `kleber` | 48 | accent_variant |
-| `lancá` | 13 | `lanca` | 66 | accent_variant |
+| `lancá` | 13 | `lanca` | 67 | accent_variant |
 | `lavatorio` | 13 | `lavatório` | 2,051 | unaccented |
 | `lelé` | 13 | `lele` | 25 | accent_variant |
 | `levâ` | 13 | `levà` | 79 | accent_variant |
@@ -4990,7 +4973,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lucânia` | 13 | `lucania` | 64 | accent_variant |
 | `lúxuria` | 13 | `luxúria` | 2,204 | accent_variant |
 | `manifestacão` | 13 | `manifestação` | 3,805 | accent_variant |
-| `metabolizá` | 13 | `metaboliza` | 63 | accent_variant |
+| `metabolizá` | 13 | `metaboliza` | 65 | accent_variant |
 | `midia` | 13 | `mídia` | 1,197 | unaccented |
 | `milimetro` | 13 | `milímetro` | 2,910 | unaccented |
 | `mimica` | 13 | `mímica` | 377 | unaccented |
@@ -5021,18 +5004,18 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `piéce` | 13 | `pièce` | 100 | accent_variant |
 | `plantaçao` | 13 | `plantação` | 3,801 | accent_variant |
 | `plá` | 13 | `pla` | 120 | accent_variant |
-| `poisé` | 13 | `poise` | 166 | accent_variant |
+| `poisé` | 13 | `poise` | 169 | accent_variant |
 | `policíal` | 13 | `policial` | 17,674 | accent_variant |
 | `politíca` | 13 | `política` | 31,827 | accent_variant |
 | `polínices` | 13 | `polinices` | 22 | accent_variant |
 | `positrônica` | 13 | `positrónica` | 60 | accent_variant |
-| `prevêr` | 13 | `prever` | 20,701 | accent_variant |
+| `prevêr` | 13 | `prever` | 20,718 | accent_variant |
 | `prevísivel` | 13 | `previsível` | 3,368 | accent_variant |
 | `principío` | 13 | `princípio` | 28,505 | accent_variant |
 | `produçâo` | 13 | `produção` | 16,192 | accent_variant |
 | `promoçäo` | 13 | `promoção` | 8,625 | accent_variant |
 | `proquê` | 13 | `proque` | 61 | accent_variant |
-| `protegêr` | 13 | `proteger` | 145,406 | accent_variant |
+| `protegêr` | 13 | `proteger` | 146,340 | accent_variant |
 | `pré-câmbrica` | 13 | `pre-cámbrica` | 15 | accent_variant |
 | `psicanalise` | 13 | `psicanálise` | 520 | unaccented |
 | `psicología` | 13 | `psicologia` | 4,472 | accent_variant |
@@ -5052,7 +5035,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `simpatía` | 13 | `simpatia` | 4,845 | accent_variant |
 | `siria` | 13 | `síria` | 2,727 | unaccented |
 | `sisqó` | 13 | `sisqo` | 27 | accent_variant |
-| `sorría` | 13 | `sorria` | 3,032 | accent_variant |
+| `sorría` | 13 | `sorria` | 3,031 | accent_variant |
 | `sáfari` | 13 | `safari` | 1,262 | accent_variant |
 | `säk` | 13 | `sak` | 29 | accent_variant |
 | `taõ` | 13 | `tão` | 730,506 | accent_variant |
@@ -5070,8 +5053,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `trínculo` | 13 | `trinculo` | 35 | accent_variant |
 | `tróis` | 13 | `trois` | 1,078 | accent_variant |
 | `tweetá` | 13 | `tweeta` | 15 | accent_variant |
-| `técnologia` | 13 | `tecnologia` | 28,030 | accent_variant |
-| `têma` | 13 | `tema` | 13,124 | accent_variant |
+| `técnologia` | 13 | `tecnologia` | 28,029 | accent_variant |
 | `vampirês` | 13 | `vampires` | 24 | accent_variant |
 | `verificacão` | 13 | `verificação` | 5,086 | accent_variant |
 | `visionario` | 13 | `visionário` | 1,667 | unaccented |
@@ -5081,7 +5063,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `xenônio` | 13 | `xenónio` | 24 | accent_variant |
 | `zacarías` | 13 | `zacarias` | 178 | accent_variant |
 | `àreas` | 13 | `areas` | 44 | accent_variant |
-| `çompanhia` | 13 | `companhia` | 64,130 | accent_variant |
+| `çompanhia` | 13 | `companhia` | 64,119 | accent_variant |
 | `écomo` | 13 | `ecomo` | 13 | accent_variant |
 | `éisto` | 13 | `eisto` | 13 | accent_variant |
 | `ésa` | 13 | `esa` | 252 | accent_variant |
@@ -5117,7 +5099,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `automovél` | 12 | `automóvel` | 8,322 | accent_variant |
 | `autorizacäo` | 12 | `autorização` | 25,280 | accent_variant |
 | `avö` | 12 | `avó` | 52,801 | accent_variant |
-| `açao` | 12 | `ação` | 70,875 | accent_variant |
+| `açao` | 12 | `ação` | 70,876 | accent_variant |
 | `baritono` | 12 | `barítono` | 203 | unaccented |
 | `belissímo` | 12 | `belíssimo` | 1,700 | accent_variant |
 | `bokú` | 12 | `boku` | 19 | accent_variant |
@@ -5127,7 +5109,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `bêlo` | 12 | `belo` | 124,550 | accent_variant |
 | `böck` | 12 | `bock` | 124 | accent_variant |
 | `bürgermeister` | 12 | `burgermeister` | 17 | accent_variant |
-| `cabêlo` | 12 | `cabelo` | 85,304 | accent_variant |
+| `cabêlo` | 12 | `cabelo` | 85,305 | accent_variant |
 | `caidínha` | 12 | `caidinha` | 299 | accent_variant |
 | `campeöes` | 12 | `campeoes` | 18 | accent_variant |
 | `canônico` | 12 | `canónico` | 123 | accent_variant |
@@ -5152,12 +5134,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `confissäo` | 12 | `confissão` | 12,592 | accent_variant |
 | `conseqüente` | 12 | `consequente` | 186 | accent_variant |
 | `contruíram` | 12 | `contruiram` | 12 | accent_variant |
-| `contêr` | 12 | `conter` | 30,828 | accent_variant |
+| `contêr` | 12 | `conter` | 30,844 | accent_variant |
 | `cooperaçao` | 12 | `cooperação` | 4,517 | accent_variant |
 | `criogénia` | 12 | `criogenia` | 248 | accent_variant |
 | `cruél` | 12 | `cruel` | 18,821 | accent_variant |
 | `crêdit` | 12 | `credit` | 312 | accent_variant |
-| `cuídate` | 12 | `cuidate` | 21 | accent_variant |
 | `cássis` | 12 | `cassis` | 59 | accent_variant |
 | `cástor` | 12 | `castor` | 3,715 | accent_variant |
 | `câes` | 12 | `cäes` | 87 | accent_variant |
@@ -5181,7 +5162,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `doçe` | 12 | `doce` | 48,440 | accent_variant |
 | `dramatico` | 12 | `dramático` | 7,046 | unaccented |
 | `désirée` | 12 | `desiree` | 321 | accent_variant |
-| `dígame` | 12 | `digame` | 21 | accent_variant |
 | `dóra` | 12 | `dora` | 1,828 | accent_variant |
 | `ecónomia` | 12 | `economia` | 10,169 | accent_variant |
 | `egua` | 12 | `égua` | 2,002 | unaccented |
@@ -5224,12 +5204,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `imparavel` | 12 | `imparável` | 1,766 | unaccented |
 | `imperdoavel` | 12 | `imperdoável` | 1,902 | unaccented |
 | `incalculavel` | 12 | `incalculável` | 622 | unaccented |
-| `incluír` | 12 | `incluir` | 41,215 | accent_variant |
+| `incluír` | 12 | `incluir` | 41,299 | accent_variant |
 | `incompetencia` | 12 | `incompetência` | 1,408 | unaccented |
 | `incontactavel` | 12 | `incontactável` | 413 | unaccented |
 | `indepêndencia` | 12 | `independência` | 4,322 | accent_variant |
 | `indiscutivel` | 12 | `indiscutível` | 481 | unaccented |
-| `indío` | 12 | `índio` | 15,267 | accent_variant |
+| `indío` | 12 | `índio` | 15,262 | accent_variant |
 | `infiél` | 12 | `infiel` | 3,703 | accent_variant |
 | `insipido` | 12 | `insípido` | 714 | unaccented |
 | `inspiraçao` | 12 | `inspiração` | 6,340 | accent_variant |
@@ -5264,7 +5244,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mênades` | 12 | `ménades` | 64 | accent_variant |
 | `mínimamente` | 12 | `minimamente` | 1,379 | accent_variant |
 | `nitrogenio` | 12 | `nitrogénio` | 1,057 | unaccented |
-| `nivél` | 12 | `nível` | 56,918 | accent_variant |
+| `nivél` | 12 | `nível` | 56,920 | accent_variant |
 | `nodoa` | 12 | `nódoa` | 4,425 | unaccented |
 | `notóriamente` | 12 | `notoriamente` | 191 | accent_variant |
 | `nãa` | 12 | `naa` | 83 | accent_variant |
@@ -5291,11 +5271,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `potavel` | 12 | `potável` | 1,057 | unaccented |
 | `princípal` | 12 | `principal` | 50,097 | accent_variant |
 | `problematico` | 12 | `problemático` | 3,851 | unaccented |
-| `práticar` | 12 | `praticar` | 20,779 | accent_variant |
+| `práticar` | 12 | `praticar` | 20,798 | accent_variant |
 | `pròximo` | 12 | `próximo` | 219,605 | accent_variant |
 | `pulmöes` | 12 | `pulmoes` | 30 | accent_variant |
 | `pà` | 12 | `pá` | 51,345 | accent_variant |
-| `péça` | 12 | `peça` | 61,405 | accent_variant |
+| `péça` | 12 | `peça` | 61,428 | accent_variant |
 | `quarteirao` | 12 | `quarteirão` | 15,217 | unaccented |
 | `quéchua` | 12 | `quechua` | 51 | accent_variant |
 | `reaccäo` | 12 | `reacçao` | 40 | accent_variant |
@@ -5304,7 +5284,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `régina` | 12 | `regina` | 5,459 | accent_variant |
 | `régine` | 12 | `regine` | 18 | accent_variant |
 | `rêpublicain` | 12 | `republicain` | 12 | accent_variant |
-| `rêve` | 12 | `reve` | 313 | accent_variant |
+| `rêve` | 12 | `reve` | 314 | accent_variant |
 | `rêves` | 12 | `revés` | 859 | accent_variant |
 | `saúdavel` | 12 | `saudável` | 19,187 | accent_variant |
 | `scéne` | 12 | `scene` | 233 | accent_variant |
@@ -5330,7 +5310,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tál` | 12 | `tal` | 257,212 | accent_variant |
 | `ténnis` | 12 | `tennis` | 177 | accent_variant |
 | `tétrion` | 12 | `tetrion` | 14 | accent_variant |
-| `têrmo` | 12 | `termo` | 54,832 | accent_variant |
+| `têrmo` | 12 | `termo` | 54,835 | accent_variant |
 | `típicamente` | 12 | `tipicamente` | 904 | accent_variant |
 | `tótem` | 12 | `totem` | 1,034 | accent_variant |
 | `tóxina` | 12 | `toxina` | 4,296 | accent_variant |
@@ -5359,7 +5339,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `acabàmos` | 11 | `acábamos` | 17 | accent_variant |
 | `academicos` | 11 | `acadêmicos` | 111 | unaccented |
 | `acçoes` | 11 | `acçöes` | 22 | accent_variant |
-| `acêrca` | 11 | `acerca` | 59,576 | accent_variant |
+| `acêrca` | 11 | `acerca` | 59,572 | accent_variant |
 | `adaptaçao` | 11 | `adaptação` | 13,262 | accent_variant |
 | `afeganistäo` | 11 | `afeganistão` | 8,156 | accent_variant |
 | `agil` | 11 | `ágil` | 1,628 | unaccented |
@@ -5403,7 +5383,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `carcere` | 11 | `cárcere` | 299 | unaccented |
 | `catatônicos` | 11 | `catatónicos` | 74 | accent_variant |
 | `categoría` | 11 | `categoria` | 5,602 | accent_variant |
-| `caírá` | 11 | `caira` | 16 | accent_variant |
 | `caïd` | 11 | `caid` | 50 | accent_variant |
 | `certidao` | 11 | `certidão` | 3,575 | unaccented |
 | `chefao` | 11 | `chefão` | 922 | unaccented |
@@ -5415,9 +5394,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `competencia` | 11 | `competência` | 2,718 | unaccented |
 | `comprimentá` | 11 | `comprimenta` | 42 | accent_variant |
 | `comunicaçoes` | 11 | `comunicacoes` | 11 | accent_variant |
-| `conheçea` | 11 | `conhecea` | 1,684 | accent_variant |
 | `contráriamente` | 11 | `contrariamente` | 515 | accent_variant |
-| `convençê` | 11 | `convençe` | 14 | accent_variant |
+| `convençê` | 11 | `convençe` | 16 | accent_variant |
 | `corporaçäo` | 11 | `corporação` | 5,220 | accent_variant |
 | `coïncidência` | 11 | `coincidência` | 18,490 | accent_variant |
 | `criacao` | 11 | `criação` | 9,381 | unaccented |
@@ -5443,7 +5421,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dudú` | 11 | `dudu` | 68 | accent_variant |
 | `duá` | 11 | `dua` | 54 | accent_variant |
 | `dãh` | 11 | `dah` | 225 | accent_variant |
-| `déste` | 11 | `deste` | 160,081 | accent_variant |
+| `déste` | 11 | `deste` | 160,215 | accent_variant |
 | `ebano` | 11 | `ébano` | 255 | unaccented |
 | `ediçao` | 11 | `edição` | 6,908 | accent_variant |
 | `educacao` | 11 | `educação` | 15,838 | unaccented |
@@ -5463,7 +5441,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `falcao` | 11 | `falcão` | 5,360 | unaccented |
 | `fantásticamente` | 11 | `fantasticamente` | 168 | accent_variant |
 | `façámos` | 11 | `facamos` | 15 | accent_variant |
-| `fixó` | 11 | `fixo` | 6,056 | accent_variant |
+| `fixó` | 11 | `fixo` | 6,086 | accent_variant |
 | `fiîlho` | 11 | `fiilho` | 60 | accent_variant |
 | `flexivél` | 11 | `flexível` | 2,809 | accent_variant |
 | `foguetao` | 11 | `foguetão` | 3,373 | unaccented |
@@ -5472,7 +5450,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `funçoes` | 11 | `funcões` | 19 | accent_variant |
 | `féromonas` | 11 | `feromonas` | 736 | accent_variant |
 | `férula` | 11 | `ferula` | 79 | accent_variant |
-| `fóde` | 11 | `fode` | 7,166 | accent_variant |
+| `fóde` | 11 | `fode` | 7,424 | accent_variant |
 | `galdêria` | 11 | `galdéria` | 2,343 | accent_variant |
 | `gasoleo` | 11 | `gasóleo` | 709 | unaccented |
 | `genébra` | 11 | `genebra` | 2,540 | accent_variant |
@@ -5546,8 +5524,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `olä` | 11 | `olá` | 703,259 | accent_variant |
 | `opcao` | 11 | `opção` | 41,856 | unaccented |
 | `orientaçäo` | 11 | `orientação` | 6,445 | accent_variant |
-| `ouvéa` | 11 | `ouvea` | 464 | accent_variant |
-| `passó` | 11 | `passo` | 74,041 | accent_variant |
+| `passó` | 11 | `passo` | 74,130 | accent_variant |
 | `paväo` | 11 | `pavão` | 1,233 | accent_variant |
 | `penitênciaria` | 11 | `penitenciária` | 2,424 | accent_variant |
 | `pensilvãnia` | 11 | `pensilvânia` | 3,523 | accent_variant |
@@ -5573,7 +5550,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `quántico` | 11 | `quântico` | 3,722 | accent_variant |
 | `quôc` | 11 | `quoc` | 14 | accent_variant |
 | `ravensbrück` | 11 | `ravensbruck` | 12 | accent_variant |
-| `reconstruír` | 11 | `reconstruir` | 8,414 | accent_variant |
+| `reconstruír` | 11 | `reconstruir` | 8,473 | accent_variant |
 | `relevancia` | 11 | `relevância` | 1,343 | unaccented |
 | `reportér` | 11 | `repórter` | 9,312 | accent_variant |
 | `ressurreicão` | 11 | `ressurreição` | 2,765 | accent_variant |
@@ -5601,8 +5578,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tentaçäo` | 11 | `tentação` | 4,469 | accent_variant |
 | `tipografico` | 11 | `tipográfico` | 130 | unaccented |
 | `tralalá` | 11 | `tralala` | 24 | accent_variant |
-| `trazêr` | 11 | `trazer` | 383,591 | accent_variant |
-| `träs` | 11 | `trás` | 133,277 | accent_variant |
+| `trazêr` | 11 | `trazer` | 388,332 | accent_variant |
+| `träs` | 11 | `trás` | 133,287 | accent_variant |
 | `tutancâmon` | 11 | `tutancamon` | 17 | accent_variant |
 | `télé` | 11 | `tele` | 216 | accent_variant |
 | `vagao` | 11 | `vagão` | 3,292 | unaccented |
@@ -5624,11 +5601,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ço` | 11 | `co` | 3,028 | accent_variant |
 | `éric` | 11 | `eric` | 29,489 | accent_variant |
 | `évocê` | 11 | `evocê` | 11 | accent_variant |
-| `êi` | 11 | `ei` | 170,334 | accent_variant |
+| `êi` | 11 | `ei` | 170,339 | accent_variant |
 | `êstase` | 11 | `estase` | 623 | accent_variant |
 | `índiano` | 11 | `indiano` | 4,535 | accent_variant |
 | `ísto` | 11 | `isto` | 2,064,783 | accent_variant |
-| `ñada` | 11 | `nada` | 1,264,916 | accent_variant |
+| `ñada` | 11 | `nada` | 1,264,917 | accent_variant |
 | `órfäo` | 11 | `órfão` | 6,135 | accent_variant |
 | `ôoo` | 11 | `ooo` | 361 | accent_variant |
 | `ömer` | 11 | `omer` | 107 | accent_variant |
@@ -5647,14 +5624,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `anöes` | 10 | `anoes` | 13 | accent_variant |
 | `aprovacäo` | 10 | `aprovação` | 6,535 | accent_variant |
 | `arranhäo` | 10 | `arranhão` | 6,204 | accent_variant |
-| `arruínar` | 10 | `arruinar` | 21,301 | accent_variant |
+| `arruínar` | 10 | `arruinar` | 21,404 | accent_variant |
 | `astá` | 10 | `asta` | 169 | accent_variant |
 | `atlantica` | 10 | `atlântica` | 207 | unaccented |
 | `auréle` | 10 | `aurèle` | 10 | accent_variant |
 | `autorizaçào` | 10 | `autorização` | 25,280 | accent_variant |
 | `aviônica` | 10 | `aviónica` | 38 | accent_variant |
 | `ayúdame` | 10 | `ayudame` | 18 | accent_variant |
-| `balancê` | 10 | `balance` | 441 | accent_variant |
+| `balancê` | 10 | `balance` | 444 | accent_variant |
 | `balazio` | 10 | `balázio` | 944 | unaccented |
 | `baräo` | 10 | `barão` | 6,864 | accent_variant |
 | `bassora` | 10 | `bassorá` | 138 | unaccented |
@@ -5695,14 +5672,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cé` | 10 | `ce` | 527 | accent_variant |
 | `cócós` | 10 | `côcos` | 92 | accent_variant |
 | `cóndor` | 10 | `condor` | 1,279 | accent_variant |
-| `cômo` | 10 | `como` | 3,285,447 | accent_variant |
+| `cômo` | 10 | `como` | 3,285,638 | accent_variant |
 | `cúpola` | 10 | `cupola` | 14 | accent_variant |
 | `daphné` | 10 | `daphne` | 2,911 | accent_variant |
 | `decencia` | 10 | `decência` | 2,679 | unaccented |
 | `decisión` | 10 | `decision` | 21 | accent_variant |
 | `delfín` | 10 | `delfin` | 12 | accent_variant |
 | `demonstraçäo` | 10 | `demonstração` | 6,868 | accent_variant |
-| `desfaco` | 10 | `desfaço` | 752 | unaccented |
+| `desfaco` | 10 | `desfaço` | 767 | unaccented |
 | `desiré` | 10 | `desire` | 68 | accent_variant |
 | `destituido` | 10 | `destituído` | 266 | unaccented |
 | `destruicao` | 10 | `destruição` | 14,943 | unaccented |
@@ -5716,25 +5693,24 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dodôs` | 10 | `dodós` | 61 | accent_variant |
 | `dolár` | 10 | `dólar` | 161,385 | accent_variant |
 | `dragöes` | 10 | `dragoes` | 19 | accent_variant |
-| `då` | 10 | `da` | 3,452,773 | accent_variant |
+| `då` | 10 | `da` | 3,452,738 | accent_variant |
+| `dè` | 10 | `de` | 15,387,641 | accent_variant |
 | `déem` | 10 | `deêm` | 278 | accent_variant |
-| `déia` | 10 | `deia` | 515 | accent_variant |
-| `dême` | 10 | `deme` | 22 | accent_variant |
+| `déia` | 10 | `deia` | 14 | accent_variant |
 | `dífícil` | 10 | `difícil` | 185,378 | accent_variant |
 | `dóem` | 10 | `doêm` | 11 | accent_variant |
 | `dóiem` | 10 | `doiem` | 23 | accent_variant |
 | `dôi` | 10 | `doi` | 1,237 | accent_variant |
 | `efraím` | 10 | `efraim` | 303 | accent_variant |
 | `eminè` | 10 | `emine` | 19 | accent_variant |
-| `encontrár` | 10 | `encontrar` | 852,363 | accent_variant |
+| `encontrár` | 10 | `encontrar` | 863,775 | accent_variant |
 | `enigmätico` | 10 | `enigmático` | 805 | accent_variant |
 | `enrijecê` | 10 | `enrijece` | 41 | accent_variant |
 | `epilépsia` | 10 | `epilepsia` | 1,036 | accent_variant |
 | `equália` | 10 | `equalia` | 11 | accent_variant |
 | `escuridăo` | 10 | `escuridão` | 18,392 | accent_variant |
 | `eslovaquia` | 10 | `eslováquia` | 255 | unaccented |
-| `espía` | 10 | `espia` | 3,291 | accent_variant |
-| `esqueçea` | 10 | `esquecea` | 847 | accent_variant |
+| `espía` | 10 | `espia` | 3,315 | accent_variant |
 | `esquimo` | 10 | `esquimó` | 1,080 | unaccented |
 | `estagnacao` | 10 | `estagnação` | 143 | unaccented |
 | `estereo` | 10 | `estéreo` | 350 | unaccented |
@@ -5765,7 +5741,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `futón` | 10 | `futon` | 111 | accent_variant |
 | `féla` | 10 | `fela` | 53 | accent_variant |
 | `fóssemos` | 10 | `fossêmos` | 15 | accent_variant |
-| `garantía` | 10 | `garantia` | 10,707 | accent_variant |
+| `garantía` | 10 | `garantia` | 10,705 | accent_variant |
 | `gasometría` | 10 | `gasometria` | 144 | accent_variant |
 | `gemêas` | 10 | `gêmeas` | 698 | accent_variant |
 | `glandula` | 10 | `glândula` | 1,809 | unaccented |
@@ -5788,7 +5764,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `huá` | 10 | `hua` | 401 | accent_variant |
 | `héii` | 10 | `heii` | 26 | accent_variant |
 | `icaro` | 10 | `ícaro` | 459 | unaccented |
-| `ievá` | 10 | `ieva` | 102 | accent_variant |
+| `ievá` | 10 | `ieva` | 110 | accent_variant |
 | `ifá` | 10 | `ifa` | 46 | accent_variant |
 | `impaciencia` | 10 | `impaciência` | 591 | unaccented |
 | `impeto` | 10 | `ímpeto` | 657 | unaccented |
@@ -5826,7 +5802,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `leviné` | 10 | `levine` | 446 | accent_variant |
 | `leïla` | 10 | `leila` | 2,697 | accent_variant |
 | `ligia` | 10 | `lígia` | 187 | unaccented |
-| `liquído` | 10 | `líquido` | 9,854 | accent_variant |
+| `liquído` | 10 | `líquido` | 9,847 | accent_variant |
 | `liçença` | 10 | `licença` | 109,900 | accent_variant |
 | `lâmia` | 10 | `lamia` | 235 | accent_variant |
 | `líquor` | 10 | `liquor` | 149 | accent_variant |
@@ -5868,7 +5844,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `níobe` | 10 | `niobe` | 570 | accent_variant |
 | `nümero` | 10 | `número` | 180,051 | accent_variant |
 | `observacao` | 10 | `observação` | 8,370 | unaccented |
-| `ofereçer` | 10 | `oferecer` | 83,837 | accent_variant |
+| `ofereçer` | 10 | `oferecer` | 83,993 | accent_variant |
 | `olè` | 10 | `ole` | 674 | accent_variant |
 | `olímpo` | 10 | `olimpo` | 1,180 | accent_variant |
 | `oréstis` | 10 | `orestis` | 19 | accent_variant |
@@ -5906,7 +5882,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pável` | 10 | `pavel` | 1,049 | accent_variant |
 | `pópil` | 10 | `popil` | 63 | accent_variant |
 | `pór` | 10 | `por` | 4,232,804 | accent_variant |
-| `pôpa` | 10 | `popa` | 2,329 | accent_variant |
+| `pôpa` | 10 | `popa` | 2,319 | accent_variant |
 | `quimíca` | 10 | `química` | 10,996 | accent_variant |
 | `quimícas` | 10 | `quimicas` | 50 | accent_variant |
 | `refeicao` | 10 | `refeição` | 18,661 | unaccented |
@@ -5917,7 +5893,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `repórters` | 10 | `reporters` | 23 | accent_variant |
 | `robó` | 10 | `robô` | 15,119 | accent_variant |
 | `rétro` | 10 | `retro` | 914 | accent_variant |
-| `rír` | 10 | `rir` | 53,375 | accent_variant |
+| `rír` | 10 | `rir` | 53,383 | accent_variant |
 | `saará` | 10 | `saara` | 288 | accent_variant |
 | `saivà-io` | 10 | `saivá-io` | 17 | accent_variant |
 | `saivé` | 10 | `saive` | 11 | accent_variant |
@@ -5959,20 +5935,20 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `trágedia` | 10 | `tragédia` | 13,185 | accent_variant |
 | `términus` | 10 | `terminus` | 265 | accent_variant |
 | `tíber` | 10 | `tiber` | 38 | accent_variant |
-| `típo` | 10 | `tipo` | 604,536 | accent_variant |
+| `típo` | 10 | `tipo` | 604,540 | accent_variant |
 | `tóscania` | 10 | `toscânia` | 261 | accent_variant |
 | `tóvarich` | 10 | `tovarich` | 54 | accent_variant |
 | `urticaria` | 10 | `urticária` | 605 | unaccented |
 | `urânus` | 10 | `uranus` | 40 | accent_variant |
 | `uça` | 10 | `uca` | 92 | accent_variant |
-| `uí` | 10 | `ui` | 1,120 | accent_variant |
+| `uí` | 10 | `ui` | 1,121 | accent_variant |
 | `valvúla` | 10 | `válvula` | 5,190 | accent_variant |
 | `vedaçao` | 10 | `vedação` | 5,449 | accent_variant |
 | `vovózinha` | 10 | `vovozinha` | 40 | accent_variant |
 | `voyeurísmo` | 10 | `voyeurismo` | 118 | accent_variant |
 | `vè` | 10 | `vë` | 69 | accent_variant |
 | `vídeoclipe` | 10 | `videoclipe` | 269 | accent_variant |
-| `vígia` | 10 | `vigia` | 12,869 | accent_variant |
+| `vígia` | 10 | `vigia` | 13,211 | accent_variant |
 | `zizì` | 10 | `zizi` | 14 | accent_variant |
 | `zão` | 10 | `zao` | 390 | accent_variant |
 | `ãh-ãh` | 10 | `ah-ah` | 172 | accent_variant |
@@ -5985,10 +5961,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `étão` | 10 | `etão` | 14 | accent_variant |
 | `ência` | 10 | `encia` | 60 | accent_variant |
 | `ítalo-americana` | 10 | `italo-americana` | 21 | accent_variant |
-| `ña` | 10 | `na` | 2,539,819 | accent_variant |
+| `ña` | 10 | `na` | 2,539,807 | accent_variant |
 | `óp` | 10 | `op` | 450 | accent_variant |
 | `óué` | 10 | `oue` | 35 | accent_variant |
-| `ù` | 10 | `u` | 13,630 | accent_variant |
+| `ù` | 10 | `u` | 13,639 | accent_variant |
 | `ús` | 10 | `us` | 7,681 | accent_variant |
 | `abencoado` | 9 | `abençoado` | 3,102 | unaccented |
 | `academica` | 9 | `acadêmica` | 94 | unaccented |
@@ -6012,7 +5988,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `andré's` | 9 | `andre's` | 13 | accent_variant |
 | `antivirus` | 9 | `antivírus` | 565 | unaccented |
 | `anulaçäo` | 9 | `anulação` | 1,759 | accent_variant |
-| `apoío` | 9 | `apoio` | 39,583 | accent_variant |
+| `apoío` | 9 | `apoio` | 39,681 | accent_variant |
 | `aprés` | 9 | `après` | 45 | accent_variant |
 | `apòs` | 9 | `após` | 65,524 | accent_variant |
 | `aquatico` | 9 | `aquático` | 2,778 | unaccented |
@@ -6025,7 +6001,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `atúm` | 9 | `atum` | 4,235 | accent_variant |
 | `aufidio` | 9 | `aufídio` | 94 | unaccented |
 | `aván` | 9 | `avan` | 29 | accent_variant |
-| `açäo` | 9 | `ação` | 70,875 | accent_variant |
+| `açäo` | 9 | `ação` | 70,876 | accent_variant |
 | `aía` | 9 | `aia` | 534 | accent_variant |
 | `aídra` | 9 | `aidra` | 9 | accent_variant |
 | `aústria` | 9 | `áustria` | 2,210 | accent_variant |
@@ -6041,7 +6017,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `bétis` | 9 | `betis` | 21 | accent_variant |
 | `börte` | 9 | `borte` | 64 | accent_variant |
 | `cabráo` | 9 | `cabrão` | 53,311 | accent_variant |
-| `cacá` | 9 | `caça` | 27,157 | accent_variant |
+| `cacá` | 9 | `caça` | 27,184 | accent_variant |
 | `cafetería` | 9 | `cafeteria` | 416 | accent_variant |
 | `caféina` | 9 | `cafeína` | 2,279 | accent_variant |
 | `caimán` | 9 | `caiman` | 97 | accent_variant |
@@ -6089,7 +6065,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `corrupçao` | 9 | `corrupção` | 4,897 | accent_variant |
 | `corsega` | 9 | `córsega` | 311 | unaccented |
 | `coró` | 9 | `coro` | 4,918 | accent_variant |
-| `così` | 9 | `cosi` | 217 | accent_variant |
+| `così` | 9 | `cosi` | 243 | accent_variant |
 | `coísa` | 9 | `coisa` | 1,811,155 | accent_variant |
 | `criogénicamente` | 9 | `criogenicamente` | 47 | accent_variant |
 | `cromio` | 9 | `crómio` | 457 | unaccented |
@@ -6108,24 +6084,23 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dejà-vu` | 9 | `déjà-vu` | 99 | accent_variant |
 | `descontraido` | 9 | `descontraído` | 2,132 | unaccented |
 | `detençao` | 9 | `detenção` | 11,438 | accent_variant |
-| `detêr` | 9 | `deter` | 76,953 | accent_variant |
+| `detêr` | 9 | `deter` | 77,467 | accent_variant |
 | `devoçao` | 9 | `devoção` | 2,659 | accent_variant |
 | `digá` | 9 | `díga` | 133 | accent_variant |
 | `dimensôes` | 9 | `dimensöes` | 12 | accent_variant |
 | `dinossáuro` | 9 | `dinossauro` | 7,941 | accent_variant |
 | `dioxido` | 9 | `dióxido` | 1,376 | unaccented |
-| `disfarcar` | 9 | `disfarçar` | 8,798 | unaccented |
-| `dispáro` | 9 | `disparo` | 12,032 | accent_variant |
+| `disfarcar` | 9 | `disfarçar` | 8,814 | unaccented |
+| `dispáro` | 9 | `disparo` | 12,035 | accent_variant |
 | `doménico` | 9 | `domenico` | 96 | accent_variant |
 | `drogámo` | 9 | `drogamo` | 14 | accent_variant |
 | `dstá` | 9 | `dsta` | 9 | accent_variant |
 | `dvorák` | 9 | `dvorak` | 71 | accent_variant |
 | `dà-mo` | 9 | `dá-mo` | 3,935 | accent_variant |
-| `dè` | 9 | `de` | 15,387,617 | accent_variant |
 | `débilmente` | 9 | `debilmente` | 35 | accent_variant |
 | `déjá-vu` | 9 | `déjà-vu` | 99 | accent_variant |
 | `déla` | 9 | `dela` | 388,261 | accent_variant |
-| `dì` | 9 | `di` | 3,282 | accent_variant |
+| `dì` | 9 | `di` | 3,284 | accent_variant |
 | `dól` | 9 | `dol` | 243 | accent_variant |
 | `ebé` | 9 | `ebe` | 29 | accent_variant |
 | `ecografía` | 9 | `ecografia` | 1,680 | accent_variant |
@@ -6144,12 +6119,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ergonômico` | 9 | `ergonómico` | 114 | accent_variant |
 | `erão` | 9 | `erao` | 32 | accent_variant |
 | `esquisitoíde` | 9 | `esquisitóide` | 369 | accent_variant |
-| `estavaà` | 9 | `estavaa` | 80 | accent_variant |
+| `estavaà` | 9 | `estavaa` | 55 | accent_variant |
 | `estefania` | 9 | `estefânia` | 269 | unaccented |
-| `estouà` | 9 | `estoua` | 185 | accent_variant |
+| `estouà` | 9 | `estoua` | 173 | accent_variant |
 | `estragao` | 9 | `estragão` | 146 | unaccented |
 | `esó` | 9 | `eso` | 316 | accent_variant |
-| `exprimentá` | 9 | `exprimenta` | 32 | accent_variant |
+| `exprimentá` | 9 | `exprimenta` | 34 | accent_variant |
 | `fabricio` | 9 | `fabrício` | 110 | unaccented |
 | `façil` | 9 | `fácil` | 129,963 | accent_variant |
 | `fiîlha` | 9 | `fiilha` | 32 | accent_variant |
@@ -6161,7 +6136,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `futil` | 9 | `fútil` | 1,528 | unaccented |
 | `fá-lo-às` | 9 | `fá-lo-ás` | 158 | accent_variant |
 | `fámilia` | 9 | `família` | 305,564 | accent_variant |
-| `fázer` | 9 | `fazer` | 5,237,900 | accent_variant |
+| `fázer` | 9 | `fazer` | 5,240,743 | accent_variant |
 | `fáçamos` | 9 | `facamos` | 15 | accent_variant |
 | `fãn` | 9 | `fan` | 636 | accent_variant |
 | `fäs` | 9 | `fas` | 63 | accent_variant |
@@ -6182,7 +6157,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `guiäo` | 9 | `guião` | 6,993 | accent_variant |
 | `górski` | 9 | `gorski` | 229 | accent_variant |
 | `gõkten` | 9 | `gökten` | 12 | accent_variant |
-| `hará` | 9 | `hara` | 243 | accent_variant |
+| `hará` | 9 | `hara` | 236 | accent_variant |
 | `helênico` | 9 | `helénico` | 69 | accent_variant |
 | `hematocrito` | 9 | `hematócrito` | 167 | unaccented |
 | `hermés` | 9 | `hermes` | 869 | accent_variant |
@@ -6193,10 +6168,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `hipópotamo` | 9 | `hipopótamo` | 1,244 | accent_variant |
 | `histöria` | 9 | `história` | 248,045 | accent_variant |
 | `huê` | 9 | `hue` | 179 | accent_variant |
-| `háaa` | 9 | `haaa` | 53 | accent_variant |
+| `háaa` | 9 | `hããã` | 46 | accent_variant |
 | `hána` | 9 | `hana` | 714 | accent_variant |
 | `hánada` | 9 | `hanada` | 19 | accent_variant |
-| `hãá` | 9 | `haa` | 311 | accent_variant |
+| `hãá` | 9 | `haa` | 323 | accent_variant |
 | `hélicoptero` | 9 | `helicóptero` | 26,270 | accent_variant |
 | `hórriveis` | 9 | `horrivéis` | 18 | accent_variant |
 | `idéa` | 9 | `idea` | 272 | accent_variant |
@@ -6246,11 +6221,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `látigo` | 9 | `latigo` | 28 | accent_variant |
 | `léger` | 9 | `leger` | 86 | accent_variant |
 | `lém` | 9 | `lem` | 2,138 | accent_variant |
-| `lë` | 9 | `lê` | 15,496 | accent_variant |
+| `lë` | 9 | `lê` | 15,795 | accent_variant |
 | `lílly` | 9 | `lilly` | 3,851 | accent_variant |
 | `lódz` | 9 | `lodz` | 197 | accent_variant |
 | `manhazinha` | 9 | `manhãzinha` | 550 | unaccented |
-| `mantêma` | 9 | `mantema` | 49 | accent_variant |
 | `mata-lo-á` | 9 | `matá-lo-á` | 132 | accent_variant |
 | `mcçlellan` | 9 | `mcclellan` | 123 | accent_variant |
 | `medía` | 9 | `média` | 13,063 | accent_variant |
@@ -6265,7 +6239,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `moisès` | 9 | `moisés` | 4,578 | accent_variant |
 | `montao` | 9 | `montão` | 1,200 | unaccented |
 | `muitissímo` | 9 | `muitíssimo` | 5,375 | accent_variant |
-| `màs` | 9 | `mas` | 3,602,828 | accent_variant |
+| `màs` | 9 | `mas` | 3,602,831 | accent_variant |
 | `mêmnon` | 9 | `memnon` | 468 | accent_variant |
 | `mìss` | 9 | `miss` | 43,252 | accent_variant |
 | `nanomàquinas` | 9 | `nanomáquinas` | 72 | accent_variant |
@@ -6279,11 +6253,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `nãso` | 9 | `naso` | 18 | accent_variant |
 | `nélson` | 9 | `nelson` | 8,547 | accent_variant |
 | `nõo` | 9 | `noo` | 11 | accent_variant |
-| `nös` | 9 | `nos` | 1,714,154 | accent_variant |
+| `nös` | 9 | `nos` | 1,714,351 | accent_variant |
 | `oceâno` | 9 | `oceano` | 19,017 | accent_variant |
 | `olimpiada` | 9 | `olimpíada` | 1,877 | unaccented |
 | `oláaa` | 9 | `olááá` | 45 | accent_variant |
-| `oncología` | 9 | `oncologia` | 640 | accent_variant |
+| `oncología` | 9 | `oncologia` | 631 | accent_variant |
 | `opcão` | 9 | `opção` | 41,856 | accent_variant |
 | `oposiçäo` | 9 | `oposição` | 3,660 | accent_variant |
 | `ortografía` | 9 | `ortografia` | 717 | accent_variant |
@@ -6328,7 +6302,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `representaçäo` | 9 | `representação` | 4,727 | accent_variant |
 | `reputacao` | 9 | `reputação` | 16,211 | unaccented |
 | `restricão` | 9 | `restrição` | 4,505 | accent_variant |
-| `retribuír` | 9 | `retribuir` | 6,475 | accent_variant |
+| `retribuír` | 9 | `retribuir` | 6,480 | accent_variant |
 | `reuniâo` | 9 | `reunião` | 71,610 | accent_variant |
 | `reúni` | 9 | `reuní` | 27 | accent_variant |
 | `rigídos` | 9 | `rigidos` | 18 | accent_variant |
@@ -6341,7 +6315,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `santánico` | 9 | `santanico` | 168 | accent_variant |
 | `satisfatóriamente` | 9 | `satisfatoriamente` | 148 | accent_variant |
 | `saúdaveis` | 9 | `saudaveis` | 18 | accent_variant |
-| `seccao` | 9 | `secção` | 16,840 | unaccented |
+| `seccao` | 9 | `secção` | 16,842 | unaccented |
 | `semén` | 9 | `sémen` | 2,177 | accent_variant |
 | `seé` | 9 | `see` | 1,221 | accent_variant |
 | `silverhojd` | 9 | `silverhöjd` | 136 | unaccented |
@@ -6361,7 +6335,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sélim` | 9 | `selim` | 361 | accent_variant |
 | `séqüito` | 9 | `séquito` | 310 | accent_variant |
 | `séro` | 9 | `sero` | 28 | accent_variant |
-| `sêda` | 9 | `seda` | 5,403 | accent_variant |
+| `sêda` | 9 | `seda` | 5,404 | accent_variant |
 | `sótao` | 9 | `sótão` | 5,655 | accent_variant |
 | `t-virus` | 9 | `t-vírus` | 141 | unaccented |
 | `ta-dá` | 9 | `ta-da` | 268 | accent_variant |
@@ -6380,7 +6354,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `têlo` | 9 | `telo` | 56 | accent_variant |
 | `tóner` | 9 | `toner` | 230 | accent_variant |
 | `tóth` | 9 | `toth` | 95 | accent_variant |
-| `tôpo` | 9 | `topo` | 21,788 | accent_variant |
+| `tôpo` | 9 | `topo` | 21,813 | accent_variant |
 | `vacuo` | 9 | `vácuo` | 2,250 | unaccented |
 | `valliére` | 9 | `vallière` | 22 | accent_variant |
 | `variaçao` | 9 | `variação` | 2,212 | accent_variant |
@@ -6429,7 +6403,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ütil` | 9 | `útil` | 29,216 | accent_variant |
 | `a-há` | 8 | `a-ha` | 93 | accent_variant |
 | `abrãao` | 8 | `abraão` | 1,382 | accent_variant |
-| `abrír` | 8 | `abrir` | 280,552 | accent_variant |
+| `abrír` | 8 | `abrir` | 284,065 | accent_variant |
 | `abênçoe` | 8 | `abencoe` | 129 | accent_variant |
 | `acusacäo` | 8 | `acusação` | 31,829 | accent_variant |
 | `admiraçäo` | 8 | `admiração` | 2,242 | accent_variant |
@@ -6438,7 +6412,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `afé` | 8 | `afe` | 69 | accent_variant |
 | `agitaçäo` | 8 | `agitação` | 2,960 | accent_variant |
 | `agonía` | 8 | `agonia` | 3,113 | accent_variant |
-| `ajudâ` | 8 | `ajuda` | 262,878 | accent_variant |
+| `ajudâ` | 8 | `ajuda` | 264,146 | accent_variant |
 | `alarcón` | 8 | `alarcon` | 14 | accent_variant |
 | `alcalá` | 8 | `alcala` | 74 | accent_variant |
 | `alcóolicas` | 8 | `alcoolicas` | 14 | accent_variant |
@@ -6448,17 +6422,15 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `alibís` | 8 | `alibis` | 94 | accent_variant |
 | `alimentaçao` | 8 | `alimentação` | 3,607 | accent_variant |
 | `amán` | 8 | `aman` | 479 | accent_variant |
-| `amávaa` | 8 | `amavaa` | 2,075 | accent_variant |
 | `amér` | 8 | `amer` | 80 | accent_variant |
 | `amígo` | 8 | `amigo` | 577,686 | accent_variant |
 | `anacrônico` | 8 | `anacrónico` | 29 | accent_variant |
-| `anatomía` | 8 | `anatomia` | 2,529 | accent_variant |
+| `anatomía` | 8 | `anatomia` | 2,528 | accent_variant |
 | `aniquilaçao` | 8 | `aniquilação` | 1,006 | accent_variant |
 | `aniversáriante` | 8 | `aniversariante` | 1,347 | accent_variant |
 | `antartida` | 8 | `antártida` | 1,116 | unaccented |
 | `antimônio` | 8 | `antimónio` | 66 | accent_variant |
 | `apice` | 8 | `ápice` | 1,254 | unaccented |
-| `apágaa` | 8 | `apagaa` | 205 | accent_variant |
 | `apés` | 8 | `apes` | 33 | accent_variant |
 | `arranhao` | 8 | `arranhão` | 6,204 | unaccented |
 | `arrepender-te-às` | 8 | `arrepender-te-ás` | 81 | accent_variant |
@@ -6474,7 +6446,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `automato` | 8 | `autómato` | 539 | unaccented |
 | `avisà` | 8 | `avísa` | 12 | accent_variant |
 | `awaré` | 8 | `aware` | 10 | accent_variant |
-| `aá` | 8 | `aa` | 2,203 | accent_variant |
+| `aá` | 8 | `aa` | 2,128 | accent_variant |
 | `aç` | 8 | `ac` | 1,159 | accent_variant |
 | `açai` | 8 | `açaí` | 55 | accent_variant |
 | `açöes` | 8 | `açoes` | 14 | accent_variant |
@@ -6482,7 +6454,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `barthélémy` | 8 | `barthélemy` | 47 | accent_variant |
 | `barón` | 8 | `baron` | 697 | accent_variant |
 | `barú` | 8 | `baru` | 11 | accent_variant |
-| `baíxo` | 8 | `baixo` | 208,185 | accent_variant |
+| `baíxo` | 8 | `baixo` | 208,655 | accent_variant |
 | `beardfacé` | 8 | `beardface` | 13 | accent_variant |
 | `bentléy` | 8 | `bentley` | 1,334 | accent_variant |
 | `bilhao` | 8 | `bilhão` | 658 | unaccented |
@@ -6538,7 +6510,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `conservatorio` | 8 | `conservatório` | 669 | unaccented |
 | `consideravél` | 8 | `considerável` | 3,016 | accent_variant |
 | `constipaçao` | 8 | `constipação` | 2,504 | accent_variant |
-| `construíua` | 8 | `construiua` | 172 | accent_variant |
 | `conteiner` | 8 | `contêiner` | 98 | unaccented |
 | `controiá` | 8 | `controia` | 12 | accent_variant |
 | `criançinha` | 8 | `criancinha` | 1,533 | accent_variant |
@@ -6553,14 +6524,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cèpes` | 8 | `cepes` | 9 | accent_variant |
 | `cêntimetros` | 8 | `centimetros` | 173 | accent_variant |
 | `cêrvo` | 8 | `cervo` | 696 | accent_variant |
-| `cópio` | 8 | `copio` | 147 | accent_variant |
+| `cópio` | 8 | `copio` | 155 | accent_variant |
 | `cônico` | 8 | `cónico` | 93 | accent_variant |
 | `d'lsére` | 8 | `d'lsere` | 8 | accent_variant |
 | `d'àgua` | 8 | `d'água` | 1,863 | accent_variant |
 | `daiquirís` | 8 | `daiquiris` | 175 | accent_variant |
 | `dancarina` | 8 | `dançarina` | 3,776 | unaccented |
 | `dar-me-às` | 8 | `dar-me-ás` | 116 | accent_variant |
-| `daía` | 8 | `daia` | 22 | accent_variant |
+| `daía` | 8 | `daia` | 9 | accent_variant |
 | `decoraçäo` | 8 | `decoração` | 4,620 | accent_variant |
 | `defice` | 8 | `défice` | 785 | unaccented |
 | `dejó` | 8 | `dejo` | 10 | accent_variant |
@@ -6576,6 +6547,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `detestavel` | 8 | `detestável` | 1,162 | unaccented |
 | `difiícil` | 8 | `difíicil` | 148 | accent_variant |
 | `digressäo` | 8 | `digressão` | 3,974 | accent_variant |
+| `diluido` | 8 | `diluído` | 119 | unaccented |
 | `direçäo` | 8 | `direção` | 58,078 | accent_variant |
 | `discinésia` | 8 | `discinesia` | 11 | accent_variant |
 | `dispensavel` | 8 | `dispensável` | 1,421 | unaccented |
@@ -6615,7 +6587,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `extinçao` | 8 | `extinção` | 4,049 | accent_variant |
 | `extorsäo` | 8 | `extorsão` | 2,994 | accent_variant |
 | `fabergè` | 8 | `fabergé` | 221 | accent_variant |
-| `fantásma` | 8 | `fantasma` | 43,017 | accent_variant |
+| `fantásma` | 8 | `fantasma` | 43,016 | accent_variant |
 | `farà` | 8 | `fara` | 324 | accent_variant |
 | `feijao` | 8 | `feijão` | 8,523 | unaccented |
 | `filadêlfia` | 8 | `filadélfia` | 6,765 | accent_variant |
@@ -6668,8 +6640,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `hoquéi` | 8 | `hóquei` | 4,555 | accent_variant |
 | `horoscopo` | 8 | `horóscopo` | 713 | unaccented |
 | `hámsters` | 8 | `hamsters` | 395 | accent_variant |
-| `hãaa` | 8 | `haaa` | 53 | accent_variant |
+| `hãaa` | 8 | `hããã` | 46 | accent_variant |
 | `hóstis` | 8 | `hostís` | 25 | accent_variant |
+| `iança` | 8 | `iançá` | 22 | accent_variant |
 | `ilegitimo` | 8 | `ilegítimo` | 1,013 | unaccented |
 | `imaginario` | 8 | `imaginário` | 4,191 | unaccented |
 | `inacreditavél` | 8 | `inacreditável` | 16,684 | accent_variant |
@@ -6682,7 +6655,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `instântaneo` | 8 | `instantâneo` | 2,821 | accent_variant |
 | `interrupçäo` | 8 | `interrupção` | 3,348 | accent_variant |
 | `ioió` | 8 | `ioiô` | 242 | accent_variant |
-| `irä` | 8 | `ira` | 10,981 | accent_variant |
+| `irä` | 8 | `ira` | 10,982 | accent_variant |
 | `isíde` | 8 | `iside` | 41 | accent_variant |
 | `ivánovna` | 8 | `ivanovna` | 80 | accent_variant |
 | `iáh` | 8 | `iah` | 44 | accent_variant |
@@ -6712,7 +6685,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `látvia` | 8 | `latvia` | 9 | accent_variant |
 | `lève` | 8 | `léve` | 10 | accent_variant |
 | `lénard` | 8 | `lenard` | 96 | accent_variant |
-| `líderar` | 8 | `liderar` | 18,353 | accent_variant |
+| `lêste` | 8 | `leste` | 28,581 | accent_variant |
+| `líderar` | 8 | `liderar` | 18,398 | accent_variant |
 | `macedônio` | 8 | `macedónio` | 221 | accent_variant |
 | `mache` | 8 | `machê` | 80 | unaccented |
 | `macãs` | 8 | `maçäs` | 14 | accent_variant |
@@ -6723,7 +6697,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `marañon` | 8 | `marañón` | 14 | accent_variant |
 | `maritimo` | 8 | `marítimo` | 2,440 | unaccented |
 | `masíno` | 8 | `masino` | 138 | accent_variant |
-| `matô` | 8 | `mato` | 30,795 | accent_variant |
+| `matô` | 8 | `mato` | 32,414 | accent_variant |
 | `mecânicamente` | 8 | `mecanicamente` | 124 | accent_variant |
 | `mecãnico` | 8 | `mecânico` | 6,867 | accent_variant |
 | `medicaçäo` | 8 | `medicação` | 8,383 | accent_variant |
@@ -6748,8 +6722,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `murmurio` | 8 | `murmúrio` | 803 | unaccented |
 | `màntua` | 8 | `mântua` | 160 | accent_variant |
 | `mào` | 8 | `mão` | 330,328 | accent_variant |
-| `máto` | 8 | `mato` | 30,795 | accent_variant |
-| `mâla` | 8 | `mala` | 60,025 | accent_variant |
+| `máto` | 8 | `mato` | 32,414 | accent_variant |
+| `mâla` | 8 | `mala` | 60,021 | accent_variant |
 | `mãel` | 8 | `mael` | 13 | accent_variant |
 | `mínuscula` | 8 | `minuscula` | 12 | accent_variant |
 | `míss` | 8 | `miss` | 43,252 | accent_variant |
@@ -6764,7 +6738,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `neurogénico` | 8 | `neurogênico` | 12 | accent_variant |
 | `niçko` | 8 | `nicko` | 36 | accent_variant |
 | `notíciário` | 8 | `noticiário` | 5,403 | accent_variant |
-| `nà` | 8 | `na` | 2,539,819 | accent_variant |
+| `nà` | 8 | `na` | 2,539,807 | accent_variant |
 | `návio` | 8 | `navio` | 46,064 | accent_variant |
 | `näoé` | 8 | `nãoé` | 173 | accent_variant |
 | `nço` | 8 | `nco` | 29 | accent_variant |
@@ -6790,7 +6764,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `perai` | 8 | `peraí` | 299 | unaccented |
 | `petala` | 8 | `pétala` | 1,381 | unaccented |
 | `peç` | 8 | `pec` | 16 | accent_variant |
-| `picó` | 8 | `pico` | 5,506 | accent_variant |
+| `picó` | 8 | `pico` | 5,508 | accent_variant |
 | `pieta` | 8 | `pietà` | 117 | unaccented |
 | `pièrre` | 8 | `pierre` | 4,477 | accent_variant |
 | `piêce` | 8 | `pièce` | 100 | accent_variant |
@@ -6817,13 +6791,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `páz` | 8 | `paz` | 119,538 | accent_variant |
 | `päozinho` | 8 | `pãozinho` | 583 | accent_variant |
 | `pêso` | 8 | `peso` | 31,624 | accent_variant |
-| `pòe` | 8 | `poe` | 2,832 | accent_variant |
+| `pòe` | 8 | `poe` | 2,892 | accent_variant |
 | `pôlas` | 8 | `polas` | 8 | accent_variant |
 | `pôres-do-sol` | 8 | `pores-do-sol` | 74 | accent_variant |
 | `públicidade` | 8 | `publicidade` | 9,992 | accent_variant |
 | `racao` | 8 | `ração` | 3,308 | unaccented |
-| `radiacao` | 8 | `radiação` | 11,385 | unaccented |
-| `radiaçäo` | 8 | `radiação` | 11,385 | accent_variant |
+| `radiacao` | 8 | `radiação` | 11,386 | unaccented |
+| `radiaçäo` | 8 | `radiação` | 11,386 | accent_variant |
 | `ragnarök` | 8 | `ragnarok` | 165 | accent_variant |
 | `rapagäo` | 8 | `rapagão` | 1,304 | accent_variant |
 | `rapído` | 8 | `rápido` | 173,741 | accent_variant |
@@ -6832,12 +6806,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `reabilitaçäo` | 8 | `reabilitação` | 6,580 | accent_variant |
 | `realizaçao` | 8 | `realização` | 8,121 | accent_variant |
 | `recomendaçao` | 8 | `recomendação` | 5,051 | accent_variant |
-| `reconhêço` | 8 | `reconheco` | 37 | accent_variant |
+| `reconhêço` | 8 | `reconheco` | 38 | accent_variant |
 | `reconstituicäo` | 8 | `reconstituição` | 520 | accent_variant |
 | `recordaçoes` | 8 | `recordaçöes` | 30 | accent_variant |
 | `recreaçâo` | 8 | `recreação` | 452 | accent_variant |
 | `recuperaçäo` | 8 | `recuperação` | 8,495 | accent_variant |
-| `recupéraa` | 8 | `recuperaa` | 104 | accent_variant |
+| `recuperà` | 8 | `recupéra` | 10 | accent_variant |
 | `reembalámos` | 8 | `reembalamos` | 8 | accent_variant |
 | `relógiozinho` | 8 | `relogiozinho` | 8 | accent_variant |
 | `rendicão` | 8 | `rendição` | 3,369 | accent_variant |
@@ -6855,15 +6829,15 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rôbot` | 8 | `robot` | 7,531 | accent_variant |
 | `rônin` | 8 | `ronin` | 359 | accent_variant |
 | `rûssia` | 8 | `rússia` | 13,363 | accent_variant |
-| `sacó` | 8 | `saco` | 52,247 | accent_variant |
+| `sacó` | 8 | `saco` | 52,254 | accent_variant |
 | `saldaña` | 8 | `saldana` | 41 | accent_variant |
 | `samôa` | 8 | `samoa` | 268 | accent_variant |
 | `santería` | 8 | `santeria` | 103 | accent_variant |
-| `saüde` | 8 | `saúde` | 46,638 | accent_variant |
+| `saüde` | 8 | `saúde` | 46,640 | accent_variant |
 | `scâneres` | 8 | `scaneres` | 13 | accent_variant |
 | `securité` | 8 | `sécurité` | 11 | accent_variant |
 | `secúlos` | 8 | `seculos` | 74 | accent_variant |
-| `segurânça` | 8 | `segurança` | 163,291 | accent_variant |
+| `segurânça` | 8 | `segurança` | 163,289 | accent_variant |
 | `semaforo` | 8 | `semáforo` | 2,180 | unaccented |
 | `semi-automatica` | 8 | `semi-automática` | 363 | unaccented |
 | `sensivél` | 8 | `sensível` | 14,712 | accent_variant |
@@ -6912,7 +6886,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `turne` | 8 | `turnê` | 497 | unaccented |
 | `tào` | 8 | `tão` | 730,506 | accent_variant |
 | `táx` | 8 | `tax` | 45 | accent_variant |
-| `tâ` | 8 | `ta` | 4,839 | accent_variant |
+| `tâ` | 8 | `ta` | 4,833 | accent_variant |
 | `tã-tã` | 8 | `tá-tá` | 14 | accent_variant |
 | `téc` | 8 | `tec` | 619 | accent_variant |
 | `télévision` | 8 | `television` | 163 | accent_variant |
@@ -6942,12 +6916,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vává` | 8 | `vavá` | 9 | accent_variant |
 | `vídeo-vigilância` | 8 | `video-vigilância` | 19 | accent_variant |
 | `vígil` | 8 | `vigil` | 18 | accent_variant |
-| `vísta` | 8 | `vista` | 71,937 | accent_variant |
+| `vísta` | 8 | `vista` | 71,975 | accent_variant |
 | `wílbur` | 8 | `wilbur` | 924 | accent_variant |
 | `yósuke` | 8 | `yosuke` | 14 | accent_variant |
 | `yõ` | 8 | `yo` | 5,924 | accent_variant |
 | `zootécnico` | 8 | `zootecnico` | 10 | accent_variant |
-| `àgora` | 8 | `agora` | 1,524,160 | accent_variant |
+| `àgora` | 8 | `agora` | 1,524,159 | accent_variant |
 | `àlamo` | 8 | `álamo` | 553 | accent_variant |
 | `àos` | 8 | `aos` | 312,831 | accent_variant |
 | `àrtemis` | 8 | `artemis` | 457 | accent_variant |
@@ -6963,7 +6937,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `çandar` | 8 | `candar` | 11 | accent_variant |
 | `çlair` | 8 | `clair` | 1,045 | accent_variant |
 | `çá` | 8 | `cá` | 419,586 | accent_variant |
-| `èa` | 8 | `ea` | 728 | accent_variant |
+| `èa` | 8 | `ea` | 712 | accent_variant |
 | `èsther` | 8 | `esther` | 3,504 | accent_variant |
 | `édith` | 8 | `edith` | 6,405 | accent_variant |
 | `éduard` | 8 | `eduard` | 483 | accent_variant |
@@ -6975,14 +6949,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `éé` | 8 | `ee` | 490 | accent_variant |
 | `ênio` | 8 | `enio` | 8 | accent_variant |
 | `ícarus` | 8 | `icarus` | 1,036 | accent_variant |
-| `ída` | 8 | `ida` | 7,564 | accent_variant |
+| `ída` | 8 | `ida` | 7,562 | accent_variant |
 | `ímpossivel` | 8 | `impossível` | 62,857 | accent_variant |
 | `íncubus` | 8 | `incubus` | 29 | accent_variant |
 | `ópt` | 8 | `opt` | 38 | accent_variant |
 | `óregãos` | 8 | `oregãos` | 54 | accent_variant |
 | `öptimo` | 8 | `optimo` | 1,726 | accent_variant |
 | `ún` | 8 | `un` | 2,636 | accent_variant |
-| `û` | 8 | `u` | 13,630 | accent_variant |
+| `û` | 8 | `u` | 13,639 | accent_variant |
 | `abaco` | 7 | `ábaco` | 187 | unaccented |
 | `accões` | 7 | `acçöes` | 22 | accent_variant |
 | `acola` | 7 | `acolá` | 1,794 | unaccented |
@@ -6998,7 +6972,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `almírante` | 7 | `almirante` | 11,249 | accent_variant |
 | `alucinógenicos` | 7 | `alucinogénicos` | 38 | accent_variant |
 | `amavéis` | 7 | `amaveis` | 24 | accent_variant |
-| `ameacá` | 7 | `ameaça` | 43,315 | accent_variant |
+| `ameacá` | 7 | `ameaça` | 43,337 | accent_variant |
 | `amigavél` | 7 | `amigável` | 7,802 | accent_variant |
 | `amor-proprio` | 7 | `amor-próprio` | 471 | unaccented |
 | `amélio` | 7 | `amelio` | 27 | accent_variant |
@@ -7033,7 +7007,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ascensäo` | 7 | `ascensão` | 3,535 | accent_variant |
 | `ascânio` | 7 | `ascanio` | 111 | accent_variant |
 | `astronomo` | 7 | `astrónomo` | 989 | unaccented |
-| `atribuír` | 7 | `atribuir` | 7,548 | accent_variant |
+| `atribuír` | 7 | `atribuir` | 7,559 | accent_variant |
 | `audiçäo` | 7 | `audição` | 11,166 | accent_variant |
 | `austràlia` | 7 | `austrália` | 5,743 | accent_variant |
 | `aéi` | 7 | `aei` | 25 | accent_variant |
@@ -7059,7 +7033,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `bêbe` | 7 | `bebé` | 137,840 | accent_variant |
 | `bêco` | 7 | `beco` | 12,924 | accent_variant |
 | `cacadeira` | 7 | `caçadeira` | 3,186 | unaccented |
-| `cacar` | 7 | `caçar` | 29,495 | unaccented |
+| `cacar` | 7 | `caçar` | 29,542 | unaccented |
 | `cafê` | 7 | `café` | 92,422 | accent_variant |
 | `calçinhas` | 7 | `calcinhas` | 871 | accent_variant |
 | `canarias` | 7 | `canárias` | 179 | unaccented |
@@ -7103,6 +7077,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `constituiçao` | 7 | `constituição` | 4,478 | accent_variant |
 | `contra-atacámos` | 7 | `contra-atacamos` | 10 | accent_variant |
 | `contra-inteligencia` | 7 | `contra-inteligência` | 182 | unaccented |
+| `contruíu` | 7 | `contruiu` | 34 | accent_variant |
 | `coracöes` | 7 | `coracões` | 48 | accent_variant |
 | `cornélius` | 7 | `cornelius` | 1,381 | accent_variant |
 | `corrupcão` | 7 | `corrupção` | 4,897 | accent_variant |
@@ -7139,14 +7114,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `descricao` | 7 | `descrição` | 9,979 | unaccented |
 | `descriçao` | 7 | `descrição` | 9,979 | accent_variant |
 | `desperdiçio` | 7 | `desperdício` | 7,842 | accent_variant |
+| `destraí` | 7 | `destrai` | 8 | accent_variant |
 | `destruí-las-á` | 7 | `destrui-las-á` | 7 | accent_variant |
 | `devoçäo` | 7 | `devoção` | 2,659 | accent_variant |
 | `diabolico` | 7 | `diabólico` | 3,549 | unaccented |
-| `diluido` | 7 | `diluído` | 119 | unaccented |
 | `dimensäo` | 7 | `dimensão` | 7,426 | accent_variant |
-| `diminuír` | 7 | `diminuir` | 12,513 | accent_variant |
+| `diminuír` | 7 | `diminuir` | 12,518 | accent_variant |
 | `dinamo` | 7 | `dínamo` | 243 | unaccented |
-| `distraíaa` | 7 | `distraiaa` | 11 | accent_variant |
 | `distribuicão` | 7 | `distribuição` | 4,454 | accent_variant |
 | `distribuiçao` | 7 | `distribuição` | 4,454 | accent_variant |
 | `dize-io` | 7 | `dizê-io` | 99 | unaccented |
@@ -7165,7 +7139,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `econômia` | 7 | `economia` | 10,169 | accent_variant |
 | `eletronica` | 7 | `eletrônica` | 639 | unaccented |
 | `empurrao` | 7 | `empurrão` | 2,839 | unaccented |
-| `emêrgencia` | 7 | `emergência` | 41,636 | accent_variant |
+| `emêrgencia` | 7 | `emergência` | 41,633 | accent_variant |
 | `encontrar-te-às` | 7 | `encontrar-te-ás` | 18 | accent_variant |
 | `encontrá-lo-à` | 7 | `encontrá-lo-á` | 53 | accent_variant |
 | `encólpio` | 7 | `encolpio` | 19 | accent_variant |
@@ -7177,7 +7151,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `espectáculozinho` | 7 | `espectaculozinho` | 38 | accent_variant |
 | `espermatogênese` | 7 | `espermatogénese` | 7 | accent_variant |
 | `espíões` | 7 | `espioes` | 16 | accent_variant |
-| `esqueçê` | 7 | `esqueçe` | 898 | accent_variant |
+| `esqueçê` | 7 | `esqueçe` | 913 | accent_variant |
 | `esstás` | 7 | `esstas` | 7 | accent_variant |
 | `essêncial` | 7 | `essencial` | 8,750 | accent_variant |
 | `estatistico` | 7 | `estatístico` | 304 | unaccented |
@@ -7215,12 +7189,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `funerál` | 7 | `funeral` | 23,731 | accent_variant |
 | `fálo-ei` | 7 | `falo-ei` | 25 | accent_variant |
 | `fánatico` | 7 | `fanático` | 4,665 | accent_variant |
-| `fícar` | 7 | `ficar` | 1,633,484 | accent_variant |
+| `fícar` | 7 | `ficar` | 1,633,485 | accent_variant |
 | `fíel` | 7 | `fiel` | 11,118 | accent_variant |
 | `fínal` | 7 | `final` | 82,730 | accent_variant |
 | `fíígado` | 7 | `fíigado` | 8 | accent_variant |
 | `fó` | 7 | `fo` | 563 | accent_variant |
-| `fóda` | 7 | `foda` | 62,711 | accent_variant |
+| `fóda` | 7 | `foda` | 62,723 | accent_variant |
 | `fútile` | 7 | `futile` | 8 | accent_variant |
 | `füehrer` | 7 | `fuehrer` | 52 | accent_variant |
 | `ganha-päo` | 7 | `ganha-pão` | 860 | accent_variant |
@@ -7270,7 +7244,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `invisivél` | 7 | `invisível` | 12,041 | accent_variant |
 | `irmé` | 7 | `irme` | 12 | accent_variant |
 | `irresponsavél` | 7 | `irresponsável` | 3,627 | accent_variant |
-| `irà` | 7 | `ira` | 10,981 | accent_variant |
+| `irà` | 7 | `ira` | 10,982 | accent_variant |
 | `irán` | 7 | `iran` | 50 | accent_variant |
 | `istván` | 7 | `istvan` | 160 | accent_variant |
 | `ió` | 7 | `io` | 766 | accent_variant |
@@ -7283,10 +7257,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `jão` | 7 | `jao` | 24 | accent_variant |
 | `jésus` | 7 | `jesus` | 75,884 | accent_variant |
 | `jóvem` | 7 | `jovem` | 114,087 | accent_variant |
-| `kä` | 7 | `ka` | 1,063 | accent_variant |
-| `lacar` | 7 | `laçar` | 392 | unaccented |
+| `kä` | 7 | `ka` | 1,038 | accent_variant |
+| `lacar` | 7 | `laçar` | 399 | unaccented |
 | `legiäo` | 7 | `legião` | 5,383 | accent_variant |
-| `lembrár` | 7 | `lembrar` | 436,559 | accent_variant |
+| `lembrár` | 7 | `lembrar` | 436,683 | accent_variant |
 | `lencol` | 7 | `lençol` | 8,819 | unaccented |
 | `letônia` | 7 | `letónia` | 225 | accent_variant |
 | `levã` | 7 | `levà` | 79 | accent_variant |
@@ -7327,7 +7301,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `miklós` | 7 | `miklos` | 35 | accent_variant |
 | `milao` | 7 | `milão` | 2,431 | unaccented |
 | `miniaturizá` | 7 | `miniaturiza` | 11 | accent_variant |
-| `minístro` | 7 | `ministro` | 17,643 | accent_variant |
+| `minístro` | 7 | `ministro` | 17,644 | accent_variant |
 | `mississipí` | 7 | `mississípi` | 1,110 | accent_variant |
 | `moido` | 7 | `moído` | 600 | unaccented |
 | `molé` | 7 | `mole` | 6,052 | accent_variant |
@@ -7384,13 +7358,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pavía` | 7 | `pavia` | 63 | accent_variant |
 | `paínel` | 7 | `painel` | 7,722 | accent_variant |
 | `peco-ihe` | 7 | `peço-ihe` | 110 | unaccented |
-| `pedír` | 7 | `pedir` | 473,580 | accent_variant |
+| `pedír` | 7 | `pedir` | 474,139 | accent_variant |
 | `pekín` | 7 | `pekin` | 23 | accent_variant |
 | `pelucia` | 7 | `pelúcia` | 307 | unaccented |
 | `perdiçäo` | 7 | `perdição` | 1,106 | accent_variant |
 | `perdió` | 7 | `perdio` | 11 | accent_variant |
-| `perdêr` | 7 | `perder` | 469,946 | accent_variant |
-| `perdô` | 7 | `perdo` | 36 | accent_variant |
+| `perdêr` | 7 | `perder` | 471,140 | accent_variant |
+| `perdô` | 7 | `perdo` | 39 | accent_variant |
 | `periódo` | 7 | `período` | 17,523 | accent_variant |
 | `permissâo` | 7 | `permissão` | 18,771 | accent_variant |
 | `peços` | 7 | `pecos` | 216 | accent_variant |
@@ -7425,20 +7399,19 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pàgina` | 7 | `página` | 29,951 | accent_variant |
 | `pára-lama` | 7 | `para-lama` | 8 | accent_variant |
 | `pára-vento` | 7 | `para-vento` | 8 | accent_variant |
-| `párar` | 7 | `parar` | 545,346 | accent_variant |
+| `párar` | 7 | `parar` | 545,644 | accent_variant |
 | `pès` | 7 | `pes` | 196 | accent_variant |
 | `pélé` | 7 | `pele` | 45,578 | accent_variant |
 | `pétunia` | 7 | `petúnia` | 372 | accent_variant |
 | `píada` | 7 | `piada` | 67,110 | accent_variant |
 | `póni` | 7 | `poni` | 23 | accent_variant |
-| `pôea` | 7 | `põea` | 306 | accent_variant |
 | `pôrno` | 7 | `porno` | 5,247 | accent_variant |
-| `querá` | 7 | `quera` | 33 | accent_variant |
-| `querído` | 7 | `querido` | 422,172 | accent_variant |
+| `querá` | 7 | `quera` | 28 | accent_variant |
+| `querído` | 7 | `querido` | 422,170 | accent_variant |
 | `quiromância` | 7 | `quiromancia` | 10 | accent_variant |
 | `quiéres` | 7 | `quieres` | 105 | accent_variant |
 | `racio` | 7 | `rácio` | 336 | unaccented |
-| `radiacão` | 7 | `radiação` | 11,385 | accent_variant |
+| `radiacão` | 7 | `radiação` | 11,386 | accent_variant |
 | `razáo` | 7 | `razão` | 309,282 | accent_variant |
 | `realizacao` | 7 | `realização` | 8,121 | unaccented |
 | `reanimaçao` | 7 | `reanimação` | 1,426 | accent_variant |
@@ -7468,9 +7441,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `salâo` | 7 | `salão` | 13,576 | accent_variant |
 | `saudaçao` | 7 | `saudação` | 7,276 | accent_variant |
 | `saíde` | 7 | `saide` | 13 | accent_variant |
-| `saírá` | 7 | `saira` | 44 | accent_variant |
-| `saùde` | 7 | `saúde` | 46,638 | accent_variant |
-| `saúdar` | 7 | `saudar` | 3,974 | accent_variant |
+| `saírá` | 7 | `saira` | 42 | accent_variant |
+| `saùde` | 7 | `saúde` | 46,640 | accent_variant |
+| `saúdar` | 7 | `saudar` | 3,981 | accent_variant |
 | `secretàrio` | 7 | `secretário` | 10,808 | accent_variant |
 | `seguí-lo-ão` | 7 | `segui-lo-ão` | 52 | accent_variant |
 | `selassié` | 7 | `selassie` | 27 | accent_variant |
@@ -7478,7 +7451,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `semínole` | 7 | `seminole` | 65 | accent_variant |
 | `senõrita` | 7 | `señorita` | 827 | accent_variant |
 | `separaçao` | 7 | `separação` | 5,995 | accent_variant |
-| `sestá` | 7 | `sesta` | 5,082 | accent_variant |
+| `sestá` | 7 | `sesta` | 5,074 | accent_variant |
 | `setôra` | 7 | `setora` | 44 | accent_variant |
 | `silica` | 7 | `sílica` | 172 | unaccented |
 | `silicio` | 7 | `silício` | 372 | unaccented |
@@ -7510,7 +7483,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `suícidios` | 7 | `suicidios` | 75 | accent_variant |
 | `sä` | 7 | `sã` | 3,061 | accent_variant |
 | `sèder` | 7 | `seder` | 195 | accent_variant |
-| `sèrie` | 7 | `série` | 38,765 | accent_variant |
+| `sèrie` | 7 | `série` | 38,767 | accent_variant |
 | `ségur` | 7 | `segur` | 24 | accent_variant |
 | `sêder` | 7 | `seder` | 195 | accent_variant |
 | `sêja` | 7 | `sejá` | 73 | accent_variant |
@@ -7528,9 +7501,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `therèse` | 7 | `therese` | 387 | accent_variant |
 | `tiené` | 7 | `tiene` | 128 | accent_variant |
 | `toracotomía` | 7 | `toracotomia` | 239 | accent_variant |
-| `tornár` | 7 | `tornar` | 223,687 | accent_variant |
+| `tornár` | 7 | `tornar` | 225,275 | accent_variant |
 | `totos` | 7 | `tótós` | 360 | unaccented |
 | `tradicao` | 7 | `tradição` | 13,600 | unaccented |
+| `tranquilíza` | 7 | `tranqüiliza` | 23 | accent_variant |
 | `transmissâo` | 7 | `transmissão` | 14,154 | accent_variant |
 | `travöes` | 7 | `travoes` | 12 | accent_variant |
 | `trompé` | 7 | `trompe` | 14 | accent_variant |
@@ -7573,19 +7547,19 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `xica` | 7 | `xiça` | 143 | unaccented |
 | `zelandia` | 7 | `zelândia` | 1,697 | unaccented |
 | `zézé` | 7 | `zezé` | 67 | accent_variant |
-| `àa` | 7 | `aa` | 2,203 | accent_variant |
+| `àa` | 7 | `aa` | 2,128 | accent_variant |
 | `ábíetee` | 7 | `abietee` | 15 | accent_variant |
 | `ácho` | 7 | `açho` | 22 | accent_variant |
 | `águila` | 7 | `aguila` | 39 | accent_variant |
 | `álguém` | 7 | `alguém` | 675,211 | accent_variant |
 | `ánimo` | 7 | `ânimo` | 3,035 | accent_variant |
 | `áqui` | 7 | `aqui` | 2,355,966 | accent_variant |
-| `árma` | 7 | `arma` | 322,986 | accent_variant |
+| `árma` | 7 | `arma` | 323,014 | accent_variant |
 | `âmbulancia` | 7 | `ambulância` | 20,469 | accent_variant |
 | `ângelus` | 7 | `angelus` | 301 | accent_variant |
 | `åh` | 7 | `ah` | 105,209 | accent_variant |
 | `çadete` | 7 | `cadete` | 4,826 | accent_variant |
-| `çala` | 7 | `cála` | 408 | accent_variant |
+| `çala` | 7 | `cála` | 410 | accent_variant |
 | `çima` | 7 | `cima` | 218,878 | accent_variant |
 | `çonfederado` | 7 | `confederado` | 1,051 | accent_variant |
 | `çontinua` | 7 | `continúa` | 16 | accent_variant |
@@ -7623,7 +7597,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `afrodisiaco` | 6 | `afrodisíaco` | 723 | unaccented |
 | `ailín` | 6 | `ailin` | 40 | accent_variant |
 | `aindaà` | 6 | `aindaa` | 9 | accent_variant |
-| `ajúda` | 6 | `ajuda` | 262,878 | accent_variant |
+| `ajúda` | 6 | `ajuda` | 264,146 | accent_variant |
 | `alcoolatra` | 6 | `alcoólatra` | 651 | unaccented |
 | `alergênico` | 6 | `alergénico` | 6 | accent_variant |
 | `alitália` | 6 | `alitalia` | 64 | accent_variant |
@@ -7670,7 +7644,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `autodestruíres` | 6 | `autodestruires` | 7 | accent_variant |
 | `aviaçäo` | 6 | `aviação` | 2,257 | accent_variant |
 | `aviâo` | 6 | `avião` | 92,572 | accent_variant |
-| `avíso` | 6 | `aviso` | 32,449 | accent_variant |
+| `avíso` | 6 | `aviso` | 32,928 | accent_variant |
 | `azaleas` | 6 | `azáleas` | 102 | unaccented |
 | `aãaaãah` | 6 | `aaaaaah` | 25 | accent_variant |
 | `açula` | 6 | `acula` | 22 | accent_variant |
@@ -7678,7 +7652,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aïe` | 6 | `aie` | 29 | accent_variant |
 | `babalú` | 6 | `babalu` | 25 | accent_variant |
 | `baklavá` | 6 | `baklava` | 149 | accent_variant |
-| `balancar` | 6 | `balançar` | 3,793 | unaccented |
+| `balancar` | 6 | `balançar` | 3,806 | unaccented |
 | `balanco` | 6 | `balanço` | 2,391 | unaccented |
 | `baltico` | 6 | `báltico` | 376 | unaccented |
 | `balõ` | 6 | `balo` | 120 | accent_variant |
@@ -7774,7 +7748,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `complicaçoes` | 6 | `complicaçöes` | 16 | accent_variant |
 | `composicao` | 6 | `composição` | 3,347 | unaccented |
 | `compressâo` | 6 | `compressão` | 1,862 | accent_variant |
-| `compreênder` | 6 | `compreender` | 136,159 | accent_variant |
+| `compreênder` | 6 | `compreender` | 136,411 | accent_variant |
 | `compínskas` | 6 | `compinskas` | 36 | accent_variant |
 | `comté` | 6 | `comte` | 167 | accent_variant |
 | `comunhäo` | 6 | `comunhão` | 1,613 | accent_variant |
@@ -7803,7 +7777,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cordobês` | 6 | `cordobés` | 13 | accent_variant |
 | `corporacao` | 6 | `corporação` | 5,220 | unaccented |
 | `corticoesteróides` | 6 | `corticoesteroides` | 11 | accent_variant |
-| `coçaa` | 6 | `cocaã` | 24 | accent_variant |
 | `cresçer` | 6 | `crescer` | 87,770 | accent_variant |
 | `crià` | 6 | `cría` | 8 | accent_variant |
 | `crochêt` | 6 | `crochet` | 61 | accent_variant |
@@ -7818,7 +7791,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cáctus` | 6 | `cactus` | 219 | accent_variant |
 | `cália` | 6 | `calia` | 22 | accent_variant |
 | `cás` | 6 | `cãs` | 19 | accent_variant |
-| `cása` | 6 | `casa` | 955,316 | accent_variant |
+| `cása` | 6 | `casa` | 955,313 | accent_variant |
 | `cátolico` | 6 | `católico` | 10,020 | accent_variant |
 | `cãmeras` | 6 | `camêras` | 18 | accent_variant |
 | `cägado` | 6 | `cágado` | 454 | accent_variant |
@@ -7843,13 +7816,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `desactivámo` | 6 | `desactivamo` | 15 | accent_variant |
 | `desagrádavel` | 6 | `desagradável` | 10,902 | accent_variant |
 | `desconfortavél` | 6 | `desconfortável` | 7,341 | accent_variant |
-| `descúlpa` | 6 | `desculpa` | 468,427 | accent_variant |
+| `descúlpa` | 6 | `desculpa` | 468,439 | accent_variant |
 | `desejavel` | 6 | `desejável` | 936 | unaccented |
 | `desfavoravel` | 6 | `desfavorável` | 311 | unaccented |
 | `desistencia` | 6 | `desistência` | 609 | unaccented |
 | `desossá` | 6 | `desossa` | 11 | accent_variant |
 | `desperdicío` | 6 | `desperdício` | 7,842 | accent_variant |
-| `destroís` | 6 | `destrois` | 16 | accent_variant |
+| `destroís` | 6 | `destrois` | 17 | accent_variant |
 | `destruí-lo-á` | 6 | `destrui-lo-á` | 6 | accent_variant |
 | `detonacao` | 6 | `detonação` | 2,457 | unaccented |
 | `devastaçao` | 6 | `devastação` | 956 | accent_variant |
@@ -7862,7 +7835,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `digámos` | 6 | `dígamos` | 15 | accent_variant |
 | `dir-te-à` | 6 | `dir-te-á` | 247 | accent_variant |
 | `direcçâo` | 6 | `direccão` | 136 | accent_variant |
-| `disfrúta` | 6 | `disfruta` | 230 | accent_variant |
+| `disfrúta` | 6 | `disfruta` | 237 | accent_variant |
 | `dissipar-se-à` | 6 | `dissipar-se-á` | 7 | accent_variant |
 | `distracçäo` | 6 | `distracçao` | 8 | accent_variant |
 | `diàrio` | 6 | `diário` | 23,374 | accent_variant |
@@ -7872,14 +7845,15 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `documentario` | 6 | `documentário` | 3,536 | unaccented |
 | `dojô` | 6 | `dojo` | 1,106 | accent_variant |
 | `dormías` | 6 | `dormias` | 1,249 | accent_variant |
-| `duvída` | 6 | `dúvida` | 63,380 | accent_variant |
+| `duvída` | 6 | `dúvida` | 63,376 | accent_variant |
+| `dáme` | 6 | `dame` | 1,202 | accent_variant |
 | `dár-nos-á` | 6 | `dar-nos-á` | 554 | accent_variant |
 | `dáte` | 6 | `date` | 206 | accent_variant |
 | `dávid` | 6 | `david` | 67,158 | accent_variant |
 | `dädiva` | 6 | `dádiva` | 4,697 | accent_variant |
 | `däniken` | 6 | `daniken` | 51 | accent_variant |
 | `déjâ-vu` | 6 | `déjà-vu` | 99 | accent_variant |
-| `déus` | 6 | `deus` | 743,238 | accent_variant |
+| `déus` | 6 | `deus` | 743,242 | accent_variant |
 | `dím` | 6 | `dim` | 678 | accent_variant |
 | `dõnitz` | 6 | `dönitz` | 33 | accent_variant |
 | `döppelganger` | 6 | `doppelgänger` | 513 | accent_variant |
@@ -7893,7 +7867,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `elohêinu` | 6 | `eloheinu` | 19 | accent_variant |
 | `elyseés` | 6 | `elysées` | 28 | accent_variant |
 | `encontrâ` | 6 | `encontrà` | 52 | accent_variant |
-| `engrávidar` | 6 | `engravidar` | 8,228 | accent_variant |
+| `engrávidar` | 6 | `engravidar` | 8,515 | accent_variant |
 | `entá` | 6 | `entã` | 223 | accent_variant |
 | `enérgicamente` | 6 | `energicamente` | 83 | accent_variant |
 | `epidémia` | 6 | `epidemia` | 3,444 | accent_variant |
@@ -7901,7 +7875,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `equinocio` | 6 | `equinócio` | 196 | unaccented |
 | `erupçäo` | 6 | `erupção` | 3,355 | accent_variant |
 | `esboco` | 6 | `esboço` | 2,981 | unaccented |
-| `escalà` | 6 | `escala` | 10,271 | accent_variant |
+| `escalà` | 6 | `escala` | 10,275 | accent_variant |
 | `escravidao` | 6 | `escravidão` | 1,856 | unaccented |
 | `escrutinio` | 6 | `escrutínio` | 514 | unaccented |
 | `espana` | 6 | `españa` | 62 | unaccented |
@@ -7999,7 +7973,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `humílde` | 6 | `humilde` | 6,895 | accent_variant |
 | `hurrá` | 6 | `hurra` | 1,356 | accent_variant |
 | `hàs-de` | 6 | `hás-de` | 3,727 | accent_variant |
-| `hãa` | 6 | `haa` | 311 | accent_variant |
+| `hãa` | 6 | `haa` | 323 | accent_variant |
 | `hãagen-dazs` | 6 | `haagen-dazs` | 55 | accent_variant |
 | `hänsel` | 6 | `hansel` | 1,334 | accent_variant |
 | `häst` | 6 | `hast` | 21 | accent_variant |
@@ -8078,7 +8052,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `litio` | 6 | `lítio` | 864 | unaccented |
 | `livrar-te-à` | 6 | `livrar-te-á` | 10 | accent_variant |
 | `livre-transito` | 6 | `livre-trânsito` | 767 | unaccented |
-| `lmagína` | 6 | `lmagina` | 64 | accent_variant |
+| `lmagína` | 6 | `lmagina` | 69 | accent_variant |
 | `lnvestigaçao` | 6 | `lnvestigação` | 47 | accent_variant |
 | `lobulo` | 6 | `lóbulo` | 1,340 | unaccented |
 | `ludwíg` | 6 | `ludwig` | 1,079 | accent_variant |
@@ -8089,21 +8063,20 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `léman` | 6 | `leman` | 27 | accent_variant |
 | `léone` | 6 | `leone` | 591 | accent_variant |
 | `léontine` | 6 | `leontine` | 10 | accent_variant |
-| `lévaa` | 6 | `levaa` | 7,313 | accent_variant |
 | `lúna` | 6 | `luna` | 3,107 | accent_variant |
 | `magníficamente` | 6 | `magnificamente` | 160 | accent_variant |
 | `maldición` | 6 | `maldicion` | 8 | accent_variant |
 | `mandarín` | 6 | `mandarin` | 61 | accent_variant |
 | `mandriäo` | 6 | `mandrião` | 508 | accent_variant |
 | `mansao` | 6 | `mansão` | 8,160 | unaccented |
-| `mantèm` | 6 | `mantem` | 4,125 | accent_variant |
+| `mantèm` | 6 | `mantem` | 4,180 | accent_variant |
 | `manutencäo` | 6 | `manutenção` | 6,870 | accent_variant |
 | `manômetro` | 6 | `manómetro` | 307 | accent_variant |
 | `maozinha` | 6 | `mãozinha` | 2,899 | unaccented |
 | `maquína` | 6 | `máquina` | 73,410 | accent_variant |
 | `maracás` | 6 | `maracas` | 103 | accent_variant |
 | `marcha-a-ré` | 6 | `marcha-à-ré` | 10 | accent_variant |
-| `marça` | 6 | `marca` | 50,329 | accent_variant |
+| `marça` | 6 | `marca` | 50,440 | accent_variant |
 | `mashá` | 6 | `masha` | 414 | accent_variant |
 | `massé` | 6 | `masse` | 15 | accent_variant |
 | `mata-io` | 6 | `matá-io` | 384 | unaccented |
@@ -8136,11 +8109,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `municões` | 6 | `muniçoes` | 37 | accent_variant |
 | `muídos` | 6 | `muidos` | 6 | accent_variant |
 | `muítissimo` | 6 | `muitíssimo` | 5,375 | accent_variant |
-| `mãr` | 6 | `mar` | 58,806 | accent_variant |
+| `mãr` | 6 | `mar` | 58,863 | accent_variant |
 | `mäquina` | 6 | `máquina` | 73,410 | accent_variant |
 | `mèxico` | 6 | `méxico` | 22,654 | accent_variant |
 | `méry` | 6 | `mery` | 40 | accent_variant |
-| `mêu` | 6 | `meu` | 4,786,029 | accent_variant |
+| `mêu` | 6 | `meu` | 4,786,026 | accent_variant |
 | `mínino` | 6 | `minino` | 10 | accent_variant |
 | `míssíl` | 6 | `míssil` | 17,400 | accent_variant |
 | `míudoska` | 6 | `miudoska` | 28 | accent_variant |
@@ -8163,7 +8136,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `necroterio` | 6 | `necrotério` | 572 | unaccented |
 | `negaçäo` | 6 | `negação` | 3,434 | accent_variant |
 | `negociaçao` | 6 | `negociação` | 9,052 | accent_variant |
-| `negóciar` | 6 | `negociar` | 26,811 | accent_variant |
+| `negóciar` | 6 | `negociar` | 26,812 | accent_variant |
 | `negöcio` | 6 | `negócio` | 141,109 | accent_variant |
 | `neocortéx` | 6 | `neocórtex` | 65 | accent_variant |
 | `nhá` | 6 | `nha` | 262 | accent_variant |
@@ -8207,7 +8180,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `parvalhâo` | 6 | `parvalhão` | 11,869 | accent_variant |
 | `parvoiçes` | 6 | `parvoices` | 158 | accent_variant |
 | `parámetros` | 6 | `parametros` | 22 | accent_variant |
-| `paré` | 6 | `páre` | 2,569 | accent_variant |
+| `paré` | 6 | `páre` | 2,579 | accent_variant |
 | `passaräo` | 6 | `passarao` | 9 | accent_variant |
 | `pastó` | 6 | `pasto` | 1,486 | accent_variant |
 | `pasé` | 6 | `pase` | 23 | accent_variant |
@@ -8235,7 +8208,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `plânctons` | 6 | `planctons` | 6 | accent_variant |
 | `pocão` | 6 | `poção` | 6,717 | accent_variant |
 | `polen` | 6 | `pólen` | 1,432 | unaccented |
-| `polìcia` | 6 | `polícia` | 298,898 | accent_variant |
+| `polìcia` | 6 | `polícia` | 298,896 | accent_variant |
 | `pontifice` | 6 | `pontífice` | 279 | unaccented |
 | `porta-bagágens` | 6 | `porta-bagagens` | 2,137 | accent_variant |
 | `posicäo` | 6 | `posição` | 71,815 | accent_variant |
@@ -8262,13 +8235,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `párabrisas` | 6 | `parabrisas` | 28 | accent_variant |
 | `párade` | 6 | `parade` | 242 | accent_variant |
 | `pândora` | 6 | `pandora` | 2,254 | accent_variant |
-| `pãra` | 6 | `para` | 7,211,920 | accent_variant |
+| `pãra` | 6 | `para` | 7,211,969 | accent_variant |
 | `pç` | 6 | `pc` | 1,510 | accent_variant |
 | `pè` | 6 | `pé` | 148,370 | accent_variant |
 | `pênaltis` | 6 | `penaltis` | 54 | accent_variant |
 | `pícles` | 6 | `picles` | 891 | accent_variant |
 | `pó-pó` | 6 | `po-po` | 51 | accent_variant |
-| `póli` | 6 | `poli` | 501 | accent_variant |
+| `póli` | 6 | `poli` | 508 | accent_variant |
 | `pósters` | 6 | `pôsters` | 16 | accent_variant |
 | `púre` | 6 | `puré` | 1,899 | accent_variant |
 | `queja` | 6 | `quejá` | 282 | unaccented |
@@ -8354,8 +8327,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sãc` | 6 | `sac` | 258 | accent_variant |
 | `sébastopol` | 6 | `sebastopol` | 81 | accent_variant |
 | `sémita` | 6 | `semita` | 146 | accent_variant |
-| `sêco` | 6 | `seco` | 10,751 | accent_variant |
-| `sól` | 6 | `sol` | 66,391 | accent_variant |
+| `sêco` | 6 | `seco` | 10,762 | accent_variant |
+| `sól` | 6 | `sol` | 66,394 | accent_variant |
 | `sóum` | 6 | `soum` | 21 | accent_variant |
 | `sôco` | 6 | `soco` | 7,822 | accent_variant |
 | `sôryù` | 6 | `soryu` | 33 | accent_variant |
@@ -8379,7 +8352,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tradicões` | 6 | `tradiçöes` | 11 | accent_variant |
 | `tradiçoes` | 6 | `tradiçöes` | 11 | accent_variant |
 | `trajetoria` | 6 | `trajetória` | 3,337 | unaccented |
-| `tranquilíza` | 6 | `tranqüiliza` | 23 | accent_variant |
 | `transatlantico` | 6 | `transatlântico` | 365 | unaccented |
 | `transgêneros` | 6 | `transgéneros` | 14 | accent_variant |
 | `transilvãnia` | 6 | `transilvânia` | 607 | accent_variant |
@@ -8387,24 +8359,25 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `trinità` | 6 | `trinitá` | 45 | accent_variant |
 | `triptófano` | 6 | `triptofano` | 29 | accent_variant |
 | `trombocitopênica` | 6 | `trombocitopénica` | 17 | accent_variant |
-| `trábalho` | 6 | `trabalho` | 505,387 | accent_variant |
+| `trábalho` | 6 | `trabalho` | 505,391 | accent_variant |
 | `tráta` | 6 | `tratà` | 11 | accent_variant |
 | `trêndelag` | 6 | `trendelag` | 6 | accent_variant |
-| `trôco` | 6 | `troco` | 13,255 | accent_variant |
+| `trôco` | 6 | `troco` | 13,341 | accent_variant |
 | `trömso` | 6 | `tromso` | 38 | accent_variant |
 | `tumúlos` | 6 | `tumulos` | 26 | accent_variant |
 | `tábem` | 6 | `tabém` | 29 | accent_variant |
-| `tár` | 6 | `tar` | 694 | accent_variant |
+| `tár` | 6 | `tar` | 700 | accent_variant |
 | `tânzania` | 6 | `tanzânia` | 390 | accent_variant |
 | `téns` | 6 | `têns` | 109 | accent_variant |
 | `téta` | 6 | `teta` | 3,400 | accent_variant |
 | `téxico` | 6 | `texico` | 9 | accent_variant |
+| `têma` | 6 | `tema` | 13,097 | accent_variant |
 | `tímbale` | 6 | `timbale` | 48 | accent_variant |
 | `tînhamos` | 6 | `tinhámos` | 11 | accent_variant |
 | `tómas` | 6 | `tomas` | 7,663 | accent_variant |
 | `tóraxica` | 6 | `toráxica` | 70 | accent_variant |
 | `tôa` | 6 | `toa` | 2,063 | accent_variant |
-| `tę` | 6 | `te` | 4,163,573 | accent_variant |
+| `tę` | 6 | `te` | 4,164,229 | accent_variant |
 | `udún` | 6 | `udun` | 56 | accent_variant |
 | `ultra-sônicos` | 6 | `ultra-sónicos` | 27 | accent_variant |
 | `unión` | 6 | `union` | 2,921 | accent_variant |
@@ -8441,6 +8414,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `yôsuke` | 6 | `yosuke` | 14 | accent_variant |
 | `zoólogico` | 6 | `zoológico` | 4,451 | accent_variant |
 | `zébra` | 6 | `zebra` | 2,127 | accent_variant |
+| `à-g-u` | 6 | `á-g-u` | 12 | accent_variant |
 | `àrabe` | 6 | `árabe` | 8,373 | accent_variant |
 | `àtua` | 6 | `ãtua` | 13 | accent_variant |
 | `àudio` | 6 | `áudio` | 3,700 | accent_variant |
@@ -8452,7 +8426,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `áqua` | 6 | `aqua` | 321 | accent_variant |
 | `ávi` | 6 | `avi` | 1,397 | accent_variant |
 | `ãjanela` | 6 | `ajanela` | 90 | accent_variant |
-| `äa` | 6 | `aa` | 2,203 | accent_variant |
+| `äa` | 6 | `aa` | 2,128 | accent_variant |
 | `çhama` | 6 | `chamà` | 17 | accent_variant |
 | `çoes` | 6 | `ções` | 31 | accent_variant |
 | `ços` | 6 | `cós` | 31 | accent_variant |
@@ -8469,7 +8443,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `éris` | 6 | `eris` | 230 | accent_variant |
 | `éspecie` | 6 | `espécie` | 56,730 | accent_variant |
 | `éstás` | 6 | `estäs` | 124 | accent_variant |
-| `éta` | 6 | `eta` | 696 | accent_variant |
+| `éta` | 6 | `eta` | 695 | accent_variant |
 | `ílicitas` | 6 | `ilicitas` | 11 | accent_variant |
 | `ímedíatamente` | 6 | `imediatamente` | 58,253 | accent_variant |
 | `ímpossível` | 6 | `impossível` | 62,857 | accent_variant |
@@ -8482,7 +8456,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `óbus` | 6 | `obus` | 322 | accent_variant |
 | `óink` | 6 | `oink` | 236 | accent_variant |
 | `óxigenio` | 6 | `oxigénio` | 12,664 | accent_variant |
-| `ôa` | 6 | `oa` | 404 | accent_variant |
+| `ôa` | 6 | `oa` | 397 | accent_variant |
 | `ông` | 6 | `ong` | 591 | accent_variant |
 | `õd` | 6 | `od` | 62 | accent_variant |
 | `özgür` | 6 | `ozgur` | 107 | accent_variant |
@@ -8508,7 +8482,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `afônia` | 5 | `afonia` | 10 | accent_variant |
 | `agradavélmente` | 5 | `agradavelmente` | 302 | accent_variant |
 | `agradävel` | 5 | `agradável` | 31,480 | accent_variant |
-| `agóra` | 5 | `agora` | 1,524,160 | accent_variant |
+| `agóra` | 5 | `agora` | 1,524,159 | accent_variant |
 | `ahãn` | 5 | `ahan` | 12 | accent_variant |
 | `aiatolás` | 5 | `aiatolas` | 19 | accent_variant |
 | `ajudà-ia` | 5 | `ajudá-ia` | 78 | accent_variant |
@@ -8683,10 +8657,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `consûl` | 5 | `cônsul` | 2,314 | accent_variant |
 | `contaminacao` | 5 | `contaminação` | 2,240 | unaccented |
 | `continuaräo` | 5 | `continuarao` | 5 | accent_variant |
-| `continuaà` | 5 | `continuaa` | 15 | accent_variant |
+| `continuaà` | 5 | `continuaa` | 14 | accent_variant |
 | `controversia` | 5 | `controvérsia` | 1,278 | unaccented |
-| `contruíu` | 5 | `contruiu` | 34 | accent_variant |
-| `convênce` | 5 | `convençe` | 14 | accent_variant |
+| `convênce` | 5 | `convençe` | 16 | accent_variant |
 | `convêncemo` | 5 | `convencêmo` | 10 | accent_variant |
 | `cornucopia` | 5 | `cornucópia` | 220 | unaccented |
 | `correccão` | 5 | `correcçäo` | 7 | accent_variant |
@@ -8703,7 +8676,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `croût` | 5 | `crout` | 5 | accent_variant |
 | `críanças` | 5 | `criancas` | 726 | accent_variant |
 | `críptido` | 5 | `criptido` | 8 | accent_variant |
-| `críticar` | 5 | `criticar` | 6,038 | accent_variant |
+| `críticar` | 5 | `criticar` | 6,056 | accent_variant |
 | `cumpliçe` | 5 | `cúmplice` | 9,226 | accent_variant |
 | `custô` | 5 | `custo` | 13,318 | accent_variant |
 | `cáfé` | 5 | `café` | 92,422 | accent_variant |
@@ -8716,8 +8689,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cérberus` | 5 | `cerberus` | 465 | accent_variant |
 | `cêpo` | 5 | `cepo` | 675 | accent_variant |
 | `cídade` | 5 | `cidade` | 255,092 | accent_variant |
-| `círcular` | 5 | `circular` | 7,467 | accent_variant |
+| `círcular` | 5 | `circular` | 7,472 | accent_variant |
 | `cód` | 5 | `cod` | 684 | accent_variant |
+| `córta` | 5 | `cortà` | 6 | accent_variant |
 | `côdigo` | 5 | `código` | 63,697 | accent_variant |
 | `cúcú` | 5 | `cucu` | 370 | accent_variant |
 | `d'isère` | 5 | `d'isere` | 8 | accent_variant |
@@ -8731,6 +8705,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `declaraçăo` | 5 | `declaração` | 19,457 | accent_variant |
 | `decomposicao` | 5 | `decomposição` | 2,126 | unaccented |
 | `degradaçäo` | 5 | `degradação` | 873 | accent_variant |
+| `deixa-io` | 5 | `deixá-io` | 281 | unaccented |
 | `deixâ` | 5 | `deixà` | 57 | accent_variant |
 | `delicía` | 5 | `delícia` | 3,099 | accent_variant |
 | `demolicao` | 5 | `demolição` | 2,168 | unaccented |
@@ -8738,9 +8713,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dermóide` | 5 | `dermoide` | 6 | accent_variant |
 | `desagradavél` | 5 | `desagradável` | 10,902 | accent_variant |
 | `descontraídamente` | 5 | `descontraidamente` | 63 | accent_variant |
-| `desperdiçeia` | 5 | `desperdiceia` | 68 | accent_variant |
 | `despressurizacão` | 5 | `despressurização` | 235 | accent_variant |
-| `destroias` | 5 | `destróias` | 50 | unaccented |
+| `destruiría` | 5 | `destruíria` | 14 | accent_variant |
 | `destrás` | 5 | `destras` | 5 | accent_variant |
 | `desçuipa` | 5 | `descuipa` | 35 | accent_variant |
 | `determinacao` | 5 | `determinação` | 3,341 | unaccented |
@@ -8773,21 +8747,21 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `doçe-ou-travessura` | 5 | `doce-ou-travessura` | 5 | accent_variant |
 | `dragäo` | 5 | `dragão` | 26,433 | accent_variant |
 | `duça` | 5 | `duca` | 104 | accent_variant |
-| `dára` | 5 | `dara` | 674 | accent_variant |
+| `dára` | 5 | `dara` | 387 | accent_variant |
 | `dâo` | 5 | `dao` | 202 | accent_variant |
 | `décimal` | 5 | `decimal` | 388 | accent_variant |
 | `déjalo` | 5 | `dejalo` | 9 | accent_variant |
 | `délhi` | 5 | `delhi` | 607 | accent_variant |
 | `díos` | 5 | `dios` | 762 | accent_variant |
 | `dírektor` | 5 | `direktor` | 242 | accent_variant |
-| `dízer` | 5 | `dizer` | 4,249,674 | accent_variant |
+| `dízer` | 5 | `dizer` | 4,250,274 | accent_variant |
 | `dó-si-dó` | 5 | `do-si-do` | 60 | accent_variant |
 | `dóiares` | 5 | `dôiares` | 104 | accent_variant |
 | `dólas` | 5 | `dolás` | 10 | accent_variant |
 | `dóllars` | 5 | `dollars` | 269 | accent_variant |
-| `dùvida` | 5 | `dúvida` | 63,380 | accent_variant |
+| `dùvida` | 5 | `dúvida` | 63,376 | accent_variant |
 | `dû` | 5 | `du` | 2,618 | accent_variant |
-| `düvida` | 5 | `dúvida` | 63,380 | accent_variant |
+| `düvida` | 5 | `dúvida` | 63,376 | accent_variant |
 | `dăo` | 5 | `dao` | 202 | accent_variant |
 | `echárpe` | 5 | `echarpe` | 171 | accent_variant |
 | `ecônomica` | 5 | `econômica` | 233 | accent_variant |
@@ -8795,14 +8769,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `elae` | 5 | `elaé` | 57 | unaccented |
 | `elastômero` | 5 | `elastómero` | 10 | accent_variant |
 | `eloqüentemente` | 5 | `eloquentemente` | 130 | accent_variant |
-| `elé` | 5 | `ele` | 3,858,001 | accent_variant |
+| `elé` | 5 | `ele` | 3,858,000 | accent_variant |
 | `embôlo` | 5 | `êmbolo` | 187 | accent_variant |
 | `emié` | 5 | `emie` | 6 | accent_variant |
 | `encalçe` | 5 | `encalce` | 130 | accent_variant |
-| `encestá` | 5 | `encesta` | 170 | accent_variant |
+| `encestá` | 5 | `encesta` | 177 | accent_variant |
 | `encontrao` | 5 | `encontrão` | 422 | unaccented |
 | `energetico` | 5 | `energético` | 3,328 | unaccented |
-| `enfíar` | 5 | `enfiar` | 27,708 | accent_variant |
+| `enfíar` | 5 | `enfiar` | 28,243 | accent_variant |
 | `enormé` | 5 | `enorme` | 50,245 | accent_variant |
 | `entoaçäo` | 5 | `entoação` | 135 | accent_variant |
 | `entusiasmadissimo` | 5 | `entusiasmadíssimo` | 138 | unaccented |
@@ -8817,7 +8791,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `espetácular` | 5 | `espetacular` | 19,533 | accent_variant |
 | `espéctacular` | 5 | `espectácular` | 11 | accent_variant |
 | `espétacular` | 5 | `espetacular` | 19,533 | accent_variant |
-| `esqueçeas` | 5 | `esqueceas` | 70 | accent_variant |
 | `esquisofrênico` | 5 | `esquisofrénico` | 8 | accent_variant |
 | `esquí` | 5 | `esqui` | 2,576 | accent_variant |
 | `esras` | 5 | `esrás` | 85 | unaccented |
@@ -8837,7 +8810,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `esvaír` | 5 | `esvair` | 2,841 | accent_variant |
 | `etiénne` | 5 | `etienne` | 562 | accent_variant |
 | `eufónica` | 5 | `eufônica` | 6 | accent_variant |
-| `evoluír` | 5 | `evoluir` | 6,921 | accent_variant |
+| `evoluír` | 5 | `evoluir` | 6,923 | accent_variant |
 | `exaustäo` | 5 | `exaustão` | 1,197 | accent_variant |
 | `exceçao` | 5 | `exceção` | 11,342 | accent_variant |
 | `excitacao` | 5 | `excitação` | 3,696 | unaccented |
@@ -8847,10 +8820,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `exposicão` | 5 | `exposição` | 11,524 | accent_variant |
 | `expressöes` | 5 | `expressoes` | 6 | accent_variant |
 | `extincão` | 5 | `extinção` | 4,049 | accent_variant |
-| `extraórdinário` | 5 | `extraordinário` | 18,822 | accent_variant |
+| `extraórdinário` | 5 | `extraordinário` | 18,820 | accent_variant |
 | `exércíto` | 5 | `exército` | 75,648 | accent_variant |
 | `fabricacao` | 5 | `fabricação` | 455 | unaccented |
-| `facaa` | 5 | `façaa` | 535 | unaccented |
 | `fahrvergnügen` | 5 | `fahrvergnugen` | 5 | accent_variant |
 | `falatorio` | 5 | `falatório` | 754 | unaccented |
 | `falsificacão` | 5 | `falsificação` | 3,184 | accent_variant |
@@ -8888,13 +8860,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fusivéis` | 5 | `fusiveis` | 52 | accent_variant |
 | `fà-io-ei` | 5 | `fá-io-ei` | 47 | accent_variant |
 | `fàei` | 5 | `faei` | 37 | accent_variant |
-| `fèrias` | 5 | `férias` | 35,151 | accent_variant |
+| `fèrias` | 5 | `férias` | 35,150 | accent_variant |
 | `félicie` | 5 | `felicie` | 10 | accent_variant |
 | `féliz` | 5 | `feliz` | 220,052 | accent_variant |
 | `férmiões` | 5 | `fermiões` | 7 | accent_variant |
 | `fíc` | 5 | `fic` | 14 | accent_variant |
 | `fíca` | 5 | `ficá` | 35 | accent_variant |
-| `fôrça` | 5 | `força` | 175,144 | accent_variant |
+| `fôrça` | 5 | `força` | 175,227 | accent_variant |
 | `fôs` | 5 | `fos` | 70 | accent_variant |
 | `fürst` | 5 | `furst` | 76 | accent_variant |
 | `gallé` | 5 | `galle` | 11 | accent_variant |
@@ -8913,7 +8885,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `giosuè` | 5 | `giosué` | 51 | accent_variant |
 | `glándulas` | 5 | `glandulas` | 21 | accent_variant |
 | `glãndula` | 5 | `glândula` | 1,809 | accent_variant |
-| `glôria` | 5 | `glória` | 15,704 | accent_variant |
+| `glôria` | 5 | `glória` | 15,703 | accent_variant |
 | `goncalo` | 5 | `gonçalo` | 852 | unaccented |
 | `goncalves` | 5 | `gonçalves` | 242 | unaccented |
 | `govêrno` | 5 | `governo` | 66,340 | accent_variant |
@@ -8923,7 +8895,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `génessier` | 5 | `gènessier` | 5 | accent_variant |
 | `güerito` | 5 | `guerito` | 5 | accent_variant |
 | `güin` | 5 | `guin` | 90 | accent_variant |
-| `harás` | 5 | `haras` | 45 | accent_variant |
+| `harás` | 5 | `haras` | 18 | accent_variant |
 | `haté` | 5 | `hate` | 141 | accent_variant |
 | `hawaí` | 5 | `hawai` | 746 | accent_variant |
 | `helicòptero` | 5 | `helicóptero` | 26,270 | accent_variant |
@@ -8939,12 +8911,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `hostia` | 5 | `hóstia` | 258 | unaccented |
 | `hoà` | 5 | `hoa` | 61 | accent_variant |
 | `hué` | 5 | `hue` | 179 | accent_variant |
-| `háa` | 5 | `haa` | 311 | accent_variant |
+| `háa` | 5 | `haa` | 323 | accent_variant |
 | `hábeas-corpus` | 5 | `habeas-corpus` | 17 | accent_variant |
 | `hádes` | 5 | `hades` | 2,239 | accent_variant |
 | `hárem` | 5 | `harém` | 712 | accent_variant |
 | `háviamos` | 5 | `haviamos` | 51 | accent_variant |
-| `hááá` | 5 | `haaa` | 53 | accent_variant |
+| `hááá` | 5 | `hããã` | 46 | accent_variant |
 | `hâm` | 5 | `ham` | 6,898 | accent_variant |
 | `hä-de` | 5 | `há-de` | 11,984 | accent_variant |
 | `hässlich` | 5 | `hasslich` | 24 | accent_variant |
@@ -8954,10 +8926,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `hóspicio` | 5 | `hospício` | 2,065 | accent_variant |
 | `húmilde` | 5 | `humilde` | 6,895 | accent_variant |
 | `iaiá` | 5 | `iaia` | 16 | accent_variant |
-| `icá` | 5 | `ica` | 56 | accent_variant |
+| `icá` | 5 | `ica` | 59 | accent_variant |
 | `identificacäo` | 5 | `identificação` | 21,483 | accent_variant |
 | `identifícação` | 5 | `identificação` | 21,483 | accent_variant |
-| `idióta` | 5 | `idiota` | 161,213 | accent_variant |
+| `idióta` | 5 | `idiota` | 161,195 | accent_variant |
 | `ievà-io` | 5 | `ievá-io` | 119 | accent_variant |
 | `iglésias` | 5 | `iglesias` | 152 | accent_variant |
 | `iglôs` | 5 | `iglos` | 10 | accent_variant |
@@ -8980,6 +8952,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `inclinômetros` | 5 | `inclinómetros` | 5 | accent_variant |
 | `inclusíve` | 5 | `inclusive` | 4,566 | accent_variant |
 | `incompativel` | 5 | `incompatível` | 594 | unaccented |
+| `incomódo` | 5 | `incómodo` | 5,476 | accent_variant |
 | `indigestäo` | 5 | `indigestão` | 690 | accent_variant |
 | `indiscricão` | 5 | `indiscrição` | 973 | accent_variant |
 | `indivísivel` | 5 | `indivisível` | 207 | accent_variant |
@@ -9086,26 +9059,26 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `manifestaçäo` | 5 | `manifestação` | 3,805 | accent_variant |
 | `manipulaçäo` | 5 | `manipulação` | 2,414 | accent_variant |
 | `manténham` | 5 | `mantênham` | 6 | accent_variant |
-| `mantér` | 5 | `manter` | 285,714 | accent_variant |
+| `mantér` | 5 | `manter` | 287,722 | accent_variant |
 | `marcaçäo` | 5 | `marcação` | 5,103 | accent_variant |
 | `marmore` | 5 | `mármore` | 1,770 | unaccented |
 | `marquéz` | 5 | `marquez` | 816 | accent_variant |
 | `martiné` | 5 | `martine` | 1,343 | accent_variant |
 | `mastectomía` | 5 | `mastectomia` | 168 | accent_variant |
-| `masà` | 5 | `masa` | 179 | accent_variant |
+| `masà` | 5 | `masa` | 176 | accent_variant |
 | `matar-me-à` | 5 | `matar-me-á` | 113 | accent_variant |
 | `matar-te-à` | 5 | `matar-te-á` | 174 | accent_variant |
 | `matemàtica` | 5 | `matemática` | 13,375 | accent_variant |
 | `matuláo` | 5 | `matulão` | 2,565 | accent_variant |
 | `matámo-ios` | 5 | `matamo-ios` | 10 | accent_variant |
-| `mató` | 5 | `mato` | 30,795 | accent_variant |
+| `mató` | 5 | `mato` | 32,414 | accent_variant |
 | `mau-polícia` | 5 | `mau-policia` | 16 | accent_variant |
 | `mauzao` | 5 | `mauzão` | 3,775 | unaccented |
 | `mecánico` | 5 | `mecânico` | 6,867 | accent_variant |
 | `melodía` | 5 | `melodia` | 2,840 | accent_variant |
 | `melôa` | 5 | `meloa` | 204 | accent_variant |
 | `menós` | 5 | `menos` | 330,748 | accent_variant |
-| `metá` | 5 | `meta` | 20,136 | accent_variant |
+| `metá` | 5 | `meta` | 20,296 | accent_variant |
 | `micronesia` | 5 | `micronésia` | 81 | unaccented |
 | `microscopio` | 5 | `microscópio` | 1,720 | unaccented |
 | `mimico` | 5 | `mímico` | 203 | unaccented |
@@ -9123,7 +9096,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `monetáriamente` | 5 | `monetariamente` | 68 | accent_variant |
 | `monoculo` | 5 | `monóculo` | 199 | unaccented |
 | `morón` | 5 | `moron` | 44 | accent_variant |
-| `mostrár` | 5 | `mostrar` | 252,365 | accent_variant |
+| `mostrár` | 5 | `mostrar` | 252,966 | accent_variant |
 | `movél` | 5 | `móvel` | 7,225 | accent_variant |
 | `muculmano` | 5 | `muçulmano` | 5,131 | unaccented |
 | `municao` | 5 | `munição` | 15,446 | unaccented |
@@ -9146,7 +9119,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mômone` | 5 | `momone` | 62 | accent_variant |
 | `mõe` | 5 | `moe` | 3,916 | accent_variant |
 | `müsica` | 5 | `música` | 92,595 | accent_variant |
-| `măs` | 5 | `mas` | 3,602,828 | accent_variant |
+| `măs` | 5 | `mas` | 3,602,831 | accent_variant |
 | `n-nao` | 5 | `n-não` | 300 | unaccented |
 | `narsîl` | 5 | `narsil` | 84 | accent_variant |
 | `nataçäo` | 5 | `natação` | 2,321 | accent_variant |
@@ -9180,7 +9153,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `obituario` | 5 | `obituário` | 883 | unaccented |
 | `obrigacões` | 5 | `obrigaçoes` | 9 | accent_variant |
 | `obrigatorio` | 5 | `obrigatório` | 5,307 | unaccented |
-| `obtêr` | 5 | `obter` | 45,430 | accent_variant |
+| `obtêr` | 5 | `obter` | 45,520 | accent_variant |
 | `obá` | 5 | `oba` | 160 | accent_variant |
 | `oceanografía` | 5 | `oceanografia` | 48 | accent_variant |
 | `odiás` | 5 | `odias` | 8 | accent_variant |
@@ -9210,7 +9183,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pareô` | 5 | `páreo` | 299 | accent_variant |
 | `parondí` | 5 | `parondi` | 30 | accent_variant |
 | `parricída` | 5 | `parricida` | 73 | accent_variant |
-| `partír` | 5 | `partir` | 207,780 | accent_variant |
+| `partír` | 5 | `partir` | 208,067 | accent_variant |
 | `pará-choques` | 5 | `pára-choques` | 1,143 | accent_variant |
 | `parábens` | 5 | `parabéns` | 62,061 | accent_variant |
 | `parádo` | 5 | `parado` | 14,434 | accent_variant |
@@ -9236,11 +9209,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `phenix` | 5 | `phénix` | 138 | unaccented |
 | `photónico` | 5 | `photonico` | 6 | accent_variant |
 | `pichón` | 5 | `pichon` | 22 | accent_variant |
-| `pilôto` | 5 | `piloto` | 31,551 | accent_variant |
+| `pilôto` | 5 | `piloto` | 31,558 | accent_variant |
 | `pirí` | 5 | `piri` | 59 | accent_variant |
 | `platôs` | 5 | `platos` | 12 | accent_variant |
 | `plumérias` | 5 | `plumerias` | 6 | accent_variant |
-| `podeá` | 5 | `podea` | 46 | accent_variant |
+| `podeá` | 5 | `podea` | 18 | accent_variant |
 | `poisnäo` | 5 | `poisnão` | 38 | accent_variant |
 | `poiícia` | 5 | `poiíçia` | 18 | accent_variant |
 | `políícia` | 5 | `poliicia` | 14 | accent_variant |
@@ -9251,7 +9224,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `populacäo` | 5 | `população` | 11,039 | accent_variant |
 | `por-porquê` | 5 | `por-porque` | 7 | accent_variant |
 | `pos-traumática` | 5 | `pós-traumática` | 95 | accent_variant |
-| `possuíua` | 5 | `possuiua` | 45 | accent_variant |
 | `posêidon` | 5 | `poseidon` | 1,198 | accent_variant |
 | `potassio` | 5 | `potássio` | 1,729 | unaccented |
 | `potàvel` | 5 | `potável` | 1,057 | accent_variant |
@@ -9260,7 +9232,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pre-adolescente` | 5 | `pré-adolescente` | 96 | unaccented |
 | `pre-câmbrica` | 5 | `pre-cámbrica` | 15 | accent_variant |
 | `precauçoes` | 5 | `precauçöes` | 11 | accent_variant |
-| `preparà` | 5 | `prepára` | 23 | accent_variant |
+| `preparà` | 5 | `prepára` | 24 | accent_variant |
 | `prepárate` | 5 | `preparate` | 10 | accent_variant |
 | `preservacao` | 5 | `preservação` | 1,328 | unaccented |
 | `pressâo` | 5 | `pressão` | 39,447 | accent_variant |
@@ -9274,7 +9246,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `propôe` | 5 | `propöe` | 11 | accent_variant |
 | `protecçâo` | 5 | `protecçäo` | 85 | accent_variant |
 | `proteçâo` | 5 | `proteção` | 34,014 | accent_variant |
-| `protéger` | 5 | `proteger` | 145,406 | accent_variant |
+| `protéger` | 5 | `proteger` | 146,340 | accent_variant |
 | `provaçäo` | 5 | `provação` | 1,278 | accent_variant |
 | `provocaçao` | 5 | `provocação` | 1,707 | accent_variant |
 | `pruszków` | 5 | `pruszkow` | 17 | accent_variant |
@@ -9317,13 +9289,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `recompöe` | 5 | `recompôe` | 13 | accent_variant |
 | `recordaçao` | 5 | `recordação` | 12,604 | accent_variant |
 | `recreaçao` | 5 | `recreação` | 452 | accent_variant |
-| `recíclaas` | 5 | `reciclaas` | 5 | accent_variant |
 | `redaçao` | 5 | `redação` | 1,683 | accent_variant |
 | `reflexao` | 5 | `reflexão` | 1,653 | unaccented |
 | `regio` | 5 | `régio` | 227 | unaccented |
 | `relutancia` | 5 | `relutância` | 798 | unaccented |
 | `removivel` | 5 | `removível` | 93 | unaccented |
-| `renúnciar` | 5 | `renunciar` | 6,393 | accent_variant |
+| `renúnciar` | 5 | `renunciar` | 6,402 | accent_variant |
 | `representacao` | 5 | `representação` | 4,727 | unaccented |
 | `repugnancia` | 5 | `repugnância` | 310 | unaccented |
 | `resolucão` | 5 | `resolução` | 3,852 | accent_variant |
@@ -9357,10 +9328,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sacríficios` | 5 | `sacrificios` | 227 | accent_variant |
 | `sacríficos` | 5 | `sacrifícos` | 9 | accent_variant |
 | `sair-se-à` | 5 | `sair-se-á` | 32 | accent_variant |
-| `saivá` | 5 | `saiva` | 29 | accent_variant |
+| `saivá` | 5 | `saiva` | 32 | accent_variant |
 | `salmón` | 5 | `salmon` | 217 | accent_variant |
 | `salobreña` | 5 | `salobrena` | 5 | accent_variant |
-| `salvó` | 5 | `salvo` | 37,797 | accent_variant |
+| `salvó` | 5 | `salvo` | 37,861 | accent_variant |
 | `sarcásticamente` | 5 | `sarcasticamente` | 35 | accent_variant |
 | `sardônico` | 5 | `sardónico` | 13 | accent_variant |
 | `sasá` | 5 | `sasa` | 47 | accent_variant |
@@ -9378,7 +9349,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sermöes` | 5 | `sermoes` | 6 | accent_variant |
 | `servís` | 5 | `servis` | 180 | accent_variant |
 | `servíço` | 5 | `serviço` | 96,743 | accent_variant |
-| `seís` | 5 | `seis` | 115,631 | accent_variant |
+| `seís` | 5 | `seis` | 115,635 | accent_variant |
 | `señhor` | 5 | `senhor` | 631,285 | accent_variant |
 | `seño` | 5 | `seno` | 96 | accent_variant |
 | `shérif` | 5 | `sherif` | 73 | accent_variant |
@@ -9416,12 +9387,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `suposiçao` | 5 | `suposição` | 3,233 | accent_variant |
 | `supremacía` | 5 | `supremacia` | 718 | accent_variant |
 | `surfámos` | 5 | `surfamos` | 51 | accent_variant |
-| `sustentár` | 5 | `sustentar` | 8,037 | accent_variant |
+| `sustentár` | 5 | `sustentar` | 8,062 | accent_variant |
 | `sutís` | 5 | `sutis` | 83 | accent_variant |
 | `suéçia` | 5 | `suécia` | 2,268 | accent_variant |
 | `svävelsjö` | 5 | `svavelsjö` | 25 | accent_variant |
 | `sác` | 5 | `sac` | 258 | accent_variant |
-| `sáca` | 5 | `saca` | 3,304 | accent_variant |
+| `sáca` | 5 | `saca` | 3,372 | accent_variant |
 | `sálario` | 5 | `salário` | 13,059 | accent_variant |
 | `sárvár` | 5 | `sarvar` | 41 | accent_variant |
 | `sänscrito` | 5 | `sânscrito` | 296 | accent_variant |
@@ -9448,7 +9419,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `taïda` | 5 | `taida` | 5 | accent_variant |
 | `tchékhov` | 5 | `tchekhov` | 43 | accent_variant |
 | `telegráfo` | 5 | `telégrafo` | 863 | accent_variant |
-| `tempêro` | 5 | `tempero` | 1,147 | accent_variant |
+| `tempêro` | 5 | `tempero` | 1,148 | accent_variant |
 | `tenochtitlán` | 5 | `tenochtitlan` | 8 | accent_variant |
 | `tenório` | 5 | `tenorio` | 5 | accent_variant |
 | `teräs` | 5 | `teras` | 66 | accent_variant |
@@ -9460,7 +9431,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `thérése` | 5 | `therese` | 387 | accent_variant |
 | `titúlo` | 5 | `título` | 18,023 | accent_variant |
 | `tivé` | 5 | `tíve` | 6 | accent_variant |
-| `tocár` | 5 | `tocar` | 174,340 | accent_variant |
+| `tocár` | 5 | `tocar` | 174,708 | accent_variant |
 | `tomàs` | 5 | `tomas` | 7,663 | accent_variant |
 | `torco` | 5 | `torço` | 357 | unaccented |
 | `torrido` | 5 | `tórrido` | 274 | unaccented |
@@ -9481,7 +9452,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `travao` | 5 | `travão` | 6,643 | unaccented |
 | `trilhoes` | 5 | `trilhões` | 183 | unaccented |
 | `trintao` | 5 | `trintão` | 183 | unaccented |
-| `trágaa` | 5 | `tragaa` | 1,154 | accent_variant |
 | `trálálá` | 5 | `tralala` | 24 | accent_variant |
 | `tränsito` | 5 | `trânsito` | 14,138 | accent_variant |
 | `trío` | 5 | `trio` | 1,482 | accent_variant |
@@ -9497,7 +9467,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tê-lo-à` | 5 | `tê-lo-á` | 169 | accent_variant |
 | `tê-lo-às` | 5 | `tê-lo-ás` | 137 | accent_variant |
 | `tëem` | 5 | `teêm` | 100 | accent_variant |
-| `tù` | 5 | `tu` | 1,635,411 | accent_variant |
+| `tù` | 5 | `tu` | 1,635,412 | accent_variant |
 | `tútano` | 5 | `tutano` | 459 | accent_variant |
 | `tümulo` | 5 | `túmulo` | 10,818 | accent_variant |
 | `tünel` | 5 | `túnel` | 23,379 | accent_variant |
@@ -9518,14 +9488,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `veneravel` | 5 | `venerável` | 471 | unaccented |
 | `venía` | 5 | `vénia` | 1,788 | accent_variant |
 | `vergérus` | 5 | `vergerus` | 19 | accent_variant |
-| `verà` | 5 | `vera` | 5,280 | accent_variant |
+| `verà` | 5 | `vera` | 4,820 | accent_variant |
 | `vibraçäo` | 5 | `vibração` | 4,437 | accent_variant |
 | `vice-presidencia` | 5 | `vice-presidência` | 318 | unaccented |
 | `vigilãncia` | 5 | `vigilância` | 22,369 | accent_variant |
 | `vigiläncia` | 5 | `vigilância` | 22,369 | accent_variant |
-| `violà` | 5 | `viola` | 3,563 | accent_variant |
+| `violà` | 5 | `viola` | 3,635 | accent_variant |
 | `violíno` | 5 | `violino` | 3,766 | accent_variant |
-| `visità` | 5 | `visita` | 53,131 | accent_variant |
+| `visità` | 5 | `visita` | 53,229 | accent_variant |
 | `vitalicia` | 5 | `vitalícia` | 218 | unaccented |
 | `vocaçao` | 5 | `vocação` | 1,937 | accent_variant |
 | `vocâs` | 5 | `voças` | 9 | accent_variant |
@@ -9542,7 +9512,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vípers` | 5 | `vipers` | 608 | accent_variant |
 | `vísiveis` | 5 | `visiveis` | 22 | accent_variant |
 | `vísivel` | 5 | `visível` | 4,517 | accent_variant |
-| `võo` | 5 | `voo` | 46,441 | accent_variant |
+| `võo` | 5 | `voo` | 46,442 | accent_variant |
 | `vúdú` | 5 | `vudu` | 1,308 | accent_variant |
 | `vęm` | 5 | `vém` | 29 | accent_variant |
 | `whískey` | 5 | `whiskey` | 2,051 | accent_variant |
@@ -9556,28 +9526,29 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `àlvarez` | 5 | `alvarez` | 2,363 | accent_variant |
 | `àminha` | 5 | `aminha` | 265 | accent_variant |
 | `ácula` | 5 | `acula` | 22 | accent_variant |
-| `ála` | 5 | `ala` | 12,305 | accent_variant |
+| `ála` | 5 | `ala` | 12,306 | accent_variant |
 | `álvaroej` | 5 | `alvaroej` | 13 | accent_variant |
-| `ám` | 5 | `am` | 4,015 | accent_variant |
+| `ám` | 5 | `am` | 4,016 | accent_variant |
 | `áme` | 5 | `amé` | 8 | accent_variant |
 | `áos` | 5 | `aos` | 312,831 | accent_variant |
-| `ára` | 5 | `ara` | 278 | accent_variant |
+| `ára` | 5 | `ara` | 281 | accent_variant |
+| `áta` | 5 | `ata` | 1,531 | accent_variant |
 | `átimo` | 5 | `ãtimo` | 6 | accent_variant |
 | `áustria-húngria` | 5 | `áustria-hungria` | 15 | accent_variant |
 | `áustriaco` | 5 | `austríaco` | 1,383 | accent_variant |
 | `ázul` | 5 | `azul` | 51,830 | accent_variant |
 | `áí` | 5 | `aí` | 485,559 | accent_variant |
-| `âncorar` | 5 | `ancorar` | 895 | accent_variant |
-| `ãgua` | 5 | `água` | 179,558 | accent_variant |
+| `âncorar` | 5 | `ancorar` | 896 | accent_variant |
+| `ãgua` | 5 | `água` | 179,546 | accent_variant |
 | `ãjustiça` | 5 | `àjustiça` | 5 | accent_variant |
 | `ãlskar` | 5 | `älskar` | 14 | accent_variant |
 | `ãnoite` | 5 | `anoite` | 33 | accent_variant |
 | `äfrica` | 5 | `áfrica` | 16,372 | accent_variant |
-| `ägua` | 5 | `água` | 179,558 | accent_variant |
+| `ägua` | 5 | `água` | 179,546 | accent_variant |
 | `äguas` | 5 | `àguas` | 57 | accent_variant |
 | `älcool` | 5 | `álcool` | 18,441 | accent_variant |
 | `ås` | 5 | `às` | 363,993 | accent_variant |
-| `çonheces` | 5 | `conheçes` | 135 | accent_variant |
+| `çonheces` | 5 | `conheçes` | 137 | accent_variant |
 | `çrawford` | 5 | `crawford` | 3,977 | accent_variant |
 | `éjogos` | 5 | `ejogos` | 7 | accent_variant |
 | `éluard` | 5 | `eluard` | 9 | accent_variant |
@@ -9587,12 +9558,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `éspectaculo` | 5 | `espectaculo` | 414 | accent_variant |
 | `ét` | 5 | `et` | 2,920 | accent_variant |
 | `étudooque` | 5 | `etudooque` | 5 | accent_variant |
-| `étá` | 5 | `eta` | 696 | accent_variant |
+| `étá` | 5 | `eta` | 695 | accent_variant |
 | `éxército` | 5 | `exército` | 75,648 | accent_variant |
 | `íle` | 5 | `ile` | 47 | accent_variant |
 | `ís` | 5 | `is` | 4,727 | accent_variant |
 | `îl` | 5 | `il` | 1,532 | accent_variant |
-| `ï` | 5 | `i` | 42,762 | accent_variant |
+| `ï` | 5 | `i` | 42,774 | accent_variant |
 | `ób` | 5 | `ob` | 138 | accent_variant |
 | `óg` | 5 | `og` | 166 | accent_variant |
 | `ólá` | 5 | `olá` | 703,259 | accent_variant |
@@ -9602,7 +9573,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `óxi` | 5 | `oxi` | 142 | accent_variant |
 | `óó` | 5 | `oo` | 893 | accent_variant |
 | `út` | 5 | `ut` | 131 | accent_variant |
-| `ş` | 5 | `s` | 66,312 | accent_variant |
+| `ş` | 5 | `s` | 66,342 | accent_variant |
 | `aarao` | 4 | `aarão` | 209 | unaccented |
 | `abbès` | 4 | `abbes` | 5 | accent_variant |
 | `abraçinho` | 4 | `abracinho` | 218 | accent_variant |
@@ -9628,7 +9599,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `afericao` | 4 | `aferição` | 68 | unaccented |
 | `afrodísiaco` | 4 | `afrodisíaco` | 723 | accent_variant |
 | `afônico` | 4 | `afónico` | 32 | accent_variant |
-| `agorá` | 4 | `agora` | 1,524,160 | accent_variant |
+| `agorá` | 4 | `agora` | 1,524,159 | accent_variant |
 | `agradeçido` | 4 | `agradecido` | 10,906 | accent_variant |
 | `agrádavel` | 4 | `agradável` | 31,480 | accent_variant |
 | `agávacea` | 4 | `agavácea` | 18 | accent_variant |
@@ -9638,7 +9609,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aià` | 4 | `aia` | 534 | accent_variant |
 | `ajudar-me-à` | 4 | `ajudar-me-á` | 131 | accent_variant |
 | `ajudá-lo-à` | 4 | `ajudá-lo-á` | 65 | accent_variant |
-| `ajudä` | 4 | `ajuda` | 262,878 | accent_variant |
+| `ajudä` | 4 | `ajuda` | 264,146 | accent_variant |
 | `ajuízar` | 4 | `ajuizar` | 366 | accent_variant |
 | `alaïa` | 4 | `alaia` | 20 | accent_variant |
 | `albôndigas` | 4 | `albondigas` | 10 | accent_variant |
@@ -9662,13 +9633,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `alíen` | 4 | `alien` | 2,311 | accent_variant |
 | `alívia` | 4 | `alivía` | 4 | accent_variant |
 | `alôz` | 4 | `aloz` | 19 | accent_variant |
-| `amaldicoar` | 4 | `amaldiçoar` | 6,840 | unaccented |
-| `amandá` | 4 | `amanda` | 17,254 | accent_variant |
+| `amaldicoar` | 4 | `amaldiçoar` | 6,913 | unaccented |
+| `amandá` | 4 | `amanda` | 17,255 | accent_variant |
 | `amanhãa` | 4 | `amanhãà` | 5 | accent_variant |
 | `amarrá-io` | 4 | `amarra-io` | 4 | accent_variant |
 | `ambiçöes` | 4 | `ambiçoes` | 4 | accent_variant |
 | `ambulãncia` | 4 | `ambulância` | 20,469 | accent_variant |
-| `ameacoua` | 4 | `ameaçoua` | 276 | unaccented |
 | `amonia` | 4 | `amónia` | 318 | unaccented |
 | `amoço` | 4 | `amoco` | 5 | accent_variant |
 | `amsterdao` | 4 | `amsterdão` | 639 | unaccented |
@@ -9683,7 +9653,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `angêlo` | 4 | `angelo` | 2,760 | accent_variant |
 | `aniquilaçäo` | 4 | `aniquilação` | 1,006 | accent_variant |
 | `aniversârio` | 4 | `aniversário` | 50,357 | accent_variant |
-| `antia` | 4 | `antía` | 131 | unaccented |
 | `antiatômico` | 4 | `antiatómico` | 6 | accent_variant |
 | `antò` | 4 | `anto` | 36 | accent_variant |
 | `antônimo` | 4 | `antónimo` | 13 | accent_variant |
@@ -9698,8 +9667,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aplicaçoes` | 4 | `aplicacoes` | 5 | accent_variant |
 | `aplicaçöes` | 4 | `aplicacoes` | 5 | accent_variant |
 | `apostasía` | 4 | `apostasia` | 33 | accent_variant |
-| `apresentár` | 4 | `apresentar` | 99,325 | accent_variant |
-| `aquéce` | 4 | `aqueçe` | 5 | accent_variant |
+| `apresentár` | 4 | `apresentar` | 99,711 | accent_variant |
+| `aquéce` | 4 | `aqueçe` | 6 | accent_variant |
 | `aquêle` | 4 | `aquele` | 632,720 | accent_variant |
 | `aquííí` | 4 | `aquiii` | 12 | accent_variant |
 | `aragonés` | 4 | `aragonês` | 15 | accent_variant |
@@ -9725,10 +9694,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `assaitámos` | 4 | `assaitamos` | 8 | accent_variant |
 | `astrofisico` | 4 | `astrofísico` | 367 | unaccented |
 | `asturias` | 4 | `astúrias` | 41 | unaccented |
-| `ataqueà` | 4 | `ataquea` | 14 | accent_variant |
-| `atendêr` | 4 | `atender` | 53,596 | accent_variant |
+| `atendêr` | 4 | `atender` | 53,684 | accent_variant |
 | `atiradico` | 4 | `atiradiço` | 281 | unaccented |
-| `atirár` | 4 | `atirar` | 127,181 | accent_variant |
+| `atirár` | 4 | `atirar` | 130,179 | accent_variant |
 | `atlás` | 4 | `atlas` | 1,458 | accent_variant |
 | `atläntico` | 4 | `atlântico` | 3,300 | accent_variant |
 | `atléta` | 4 | `atleta` | 6,611 | accent_variant |
@@ -9796,7 +9764,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `bulgària` | 4 | `bulgária` | 668 | accent_variant |
 | `burés` | 4 | `bures` | 4 | accent_variant |
 | `busca-ios` | 4 | `buscá-ios` | 51 | unaccented |
-| `buscâ` | 4 | `busca` | 34,802 | accent_variant |
+| `buscâ` | 4 | `busca` | 34,805 | accent_variant |
 | `butterçup` | 4 | `buttercup` | 339 | accent_variant |
 | `buça` | 4 | `buca` | 19 | accent_variant |
 | `buéda` | 4 | `bueda` | 9 | accent_variant |
@@ -9820,7 +9788,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `bôites` | 4 | `boites` | 16 | accent_variant |
 | `böhme` | 4 | `bohme` | 9 | accent_variant |
 | `bölling` | 4 | `bolling` | 40 | accent_variant |
-| `búsca` | 4 | `busca` | 34,802 | accent_variant |
+| `búsca` | 4 | `busca` | 34,805 | accent_variant |
 | `búu` | 4 | `buu` | 155 | accent_variant |
 | `cacedônios` | 4 | `cacedónios` | 21 | accent_variant |
 | `cacête` | 4 | `cacete` | 1,235 | accent_variant |
@@ -9888,7 +9856,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cionàmos` | 4 | `cionamos` | 4 | accent_variant |
 | `circulacao` | 4 | `circulação` | 3,021 | unaccented |
 | `citia` | 4 | `cítia` | 73 | unaccented |
-| `ciéncia` | 4 | `ciência` | 28,987 | accent_variant |
+| `ciéncia` | 4 | `ciência` | 28,983 | accent_variant |
 | `classificaçäo` | 4 | `classificação` | 1,886 | accent_variant |
 | `claustrofobico` | 4 | `claustrofóbico` | 815 | unaccented |
 | `cleptomaniaco` | 4 | `cleptomaníaco` | 254 | unaccented |
@@ -9906,6 +9874,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `colonizaçäo` | 4 | `colonização` | 507 | accent_variant |
 | `coloraçao` | 4 | `coloração` | 482 | accent_variant |
 | `colápso` | 4 | `colapso` | 6,029 | accent_variant |
+| `colóca` | 4 | `colocà` | 6 | accent_variant |
 | `colómbia` | 4 | `colômbia` | 3,789 | accent_variant |
 | `combústível` | 4 | `combustível` | 16,835 | accent_variant |
 | `comemoracão` | 4 | `comemoração` | 1,738 | accent_variant |
@@ -9929,7 +9898,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `confissöes` | 4 | `confissoes` | 5 | accent_variant |
 | `confiîar` | 4 | `confiiar` | 19 | accent_variant |
 | `conhecë-io` | 4 | `conhecê-io` | 256 | accent_variant |
-| `conhêce` | 4 | `conheçe` | 167 | accent_variant |
+| `conhêce` | 4 | `conheçe` | 178 | accent_variant |
 | `conseguiräo` | 4 | `conseguirao` | 8 | accent_variant |
 | `considerà-io` | 4 | `considerá-io` | 7 | accent_variant |
 | `consistencia` | 4 | `consistência` | 843 | unaccented |
@@ -9937,10 +9906,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `consultória` | 4 | `consultoria` | 594 | accent_variant |
 | `continuacao` | 4 | `continuação` | 1,359 | unaccented |
 | `contribuicao` | 4 | `contribuição` | 3,333 | unaccented |
-| `contà` | 4 | `conta` | 252,359 | accent_variant |
-| `contár` | 4 | `contar` | 358,611 | accent_variant |
+| `contà` | 4 | `conta` | 252,536 | accent_variant |
+| `contár` | 4 | `contar` | 358,846 | accent_variant |
 | `contênção` | 4 | `contenção` | 3,232 | accent_variant |
-| `convençea` | 4 | `convencea` | 186 | accent_variant |
 | `conversación` | 4 | `conversacion` | 4 | accent_variant |
 | `conversäo` | 4 | `conversão` | 1,253 | accent_variant |
 | `convês` | 4 | `convés` | 6,953 | accent_variant |
@@ -9965,9 +9933,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `curticao` | 4 | `curtição` | 307 | unaccented |
 | `cutucá` | 4 | `cutuca` | 10 | accent_variant |
 | `càlmate` | 4 | `cálmate` | 24 | accent_variant |
-| `cácá` | 4 | `caça` | 27,157 | accent_variant |
+| `cácá` | 4 | `caça` | 27,184 | accent_variant |
 | `cádaver` | 4 | `cadáver` | 24,675 | accent_variant |
-| `cálate` | 4 | `calate` | 27 | accent_variant |
 | `cáme` | 4 | `came` | 131 | accent_variant |
 | `cánepa` | 4 | `canepa` | 12 | accent_variant |
 | `cára-pálida` | 4 | `cara-pálida` | 34 | accent_variant |
@@ -9998,13 +9965,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dancámos` | 4 | `dancamos` | 12 | accent_variant |
 | `daniéle` | 4 | `daniele` | 230 | accent_variant |
 | `dartín` | 4 | `dartin` | 21 | accent_variant |
-| `darà` | 4 | `dara` | 674 | accent_variant |
+| `darà` | 4 | `dara` | 387 | accent_variant |
 | `daì` | 4 | `daí` | 63,571 | accent_variant |
 | `debía` | 4 | `debia` | 7 | accent_variant |
 | `decepcionámo` | 4 | `decepcionamo` | 4 | accent_variant |
 | `decibél` | 4 | `decibel` | 314 | accent_variant |
 | `definicão` | 4 | `definição` | 5,080 | accent_variant |
-| `deixa-io` | 4 | `deixá-io` | 281 | unaccented |
 | `deixä` | 4 | `deixà` | 57 | accent_variant |
 | `delbrück` | 4 | `delbruck` | 28 | accent_variant |
 | `delirío` | 4 | `delírio` | 2,413 | accent_variant |
@@ -10022,9 +9988,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `deslocaçao` | 4 | `deslocação` | 858 | accent_variant |
 | `desnecessario` | 4 | `desnecessário` | 5,174 | unaccented |
 | `destruir-se-à` | 4 | `destruir-se-á` | 37 | accent_variant |
-| `destruiría` | 4 | `destruíria` | 14 | accent_variant |
 | `destruí-la-á` | 4 | `destrui-la-á` | 12 | accent_variant |
-| `desçuipe` | 4 | `descuipe` | 80 | accent_variant |
+| `desçuipe` | 4 | `descuipe` | 81 | accent_variant |
 | `detencäo` | 4 | `detenção` | 11,438 | accent_variant |
 | `detençöes` | 4 | `detênções` | 5 | accent_variant |
 | `deterioraçao` | 4 | `deterioração` | 702 | accent_variant |
@@ -10039,7 +10004,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `difícíl` | 4 | `difícil` | 185,378 | accent_variant |
 | `difíïcil` | 4 | `difíicil` | 148 | accent_variant |
 | `digivoluí` | 4 | `digivolui` | 32 | accent_variant |
-| `digoà` | 4 | `digoa` | 21 | accent_variant |
 | `dilataçao` | 4 | `dilatação` | 932 | accent_variant |
 | `dilataçäo` | 4 | `dilatação` | 932 | accent_variant |
 | `dilitio` | 4 | `dilítio` | 116 | unaccented |
@@ -10056,15 +10020,15 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `disneylãndia` | 4 | `disneylândia` | 1,277 | accent_variant |
 | `dispôe` | 4 | `dispöe` | 9 | accent_variant |
 | `dissoluçao` | 4 | `dissolução` | 551 | accent_variant |
-| `distingüir` | 4 | `distinguir` | 7,679 | accent_variant |
+| `distingüir` | 4 | `distinguir` | 7,692 | accent_variant |
 | `distinçao` | 4 | `distinção` | 2,636 | accent_variant |
-| `distribuír` | 4 | `distribuir` | 9,173 | accent_variant |
+| `distribuír` | 4 | `distribuir` | 9,268 | accent_variant |
 | `distáncia` | 4 | `distância` | 35,016 | accent_variant |
 | `diziá` | 4 | `dizía` | 15 | accent_variant |
 | `dizà` | 4 | `diza` | 18 | accent_variant |
-| `dizêr` | 4 | `dizer` | 4,249,674 | accent_variant |
+| `dizêr` | 4 | `dizer` | 4,250,274 | accent_variant |
 | `diámetro` | 4 | `diâmetro` | 1,593 | accent_variant |
-| `diâ` | 4 | `dia` | 945,701 | accent_variant |
+| `diâ` | 4 | `dia` | 945,693 | accent_variant |
 | `doaçäo` | 4 | `doação` | 4,230 | accent_variant |
 | `docil` | 4 | `dócil` | 1,265 | unaccented |
 | `dormencia` | 4 | `dormência` | 376 | unaccented |
@@ -10081,7 +10045,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dêmm` | 4 | `demm` | 4 | accent_variant |
 | `dêo` | 4 | `deo` | 110 | accent_variant |
 | `dêsse-mos` | 4 | `desse-mos` | 18 | accent_variant |
-| `dêste` | 4 | `deste` | 160,081 | accent_variant |
+| `dêste` | 4 | `deste` | 160,215 | accent_variant |
 | `dëem` | 4 | `deêm` | 278 | accent_variant |
 | `díalogo` | 4 | `diálogo` | 2,510 | accent_variant |
 | `dífícíl` | 4 | `difícil` | 185,378 | accent_variant |
@@ -10119,12 +10083,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `elém` | 4 | `elem` | 7 | accent_variant |
 | `elú` | 4 | `élu` | 16 | accent_variant |
 | `embrulhá-lho` | 4 | `embrulha-lho` | 5 | accent_variant |
-| `emergêncía` | 4 | `emergência` | 41,636 | accent_variant |
-| `emergëncia` | 4 | `emergência` | 41,636 | accent_variant |
+| `emergêncía` | 4 | `emergência` | 41,633 | accent_variant |
+| `emergëncia` | 4 | `emergência` | 41,633 | accent_variant |
 | `emissario` | 4 | `emissário` | 1,668 | unaccented |
 | `emocäo` | 4 | `emoção` | 21,505 | accent_variant |
 | `empresaria` | 4 | `empresária` | 434 | unaccented |
 | `encenacao` | 4 | `encenação` | 1,918 | unaccented |
+| `encontra-ia` | 4 | `encontrá-ia` | 52 | unaccented |
 | `encontra-la-á` | 4 | `encontrá-la-á` | 40 | accent_variant |
 | `encontrar-me-à` | 4 | `encontrar-me-á` | 73 | accent_variant |
 | `encontrà-io` | 4 | `encontrá-io` | 216 | accent_variant |
@@ -10134,14 +10099,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `enconträmos` | 4 | `encontràmos` | 13 | accent_variant |
 | `endoscópicamente` | 4 | `endoscopicamente` | 7 | accent_variant |
 | `energón` | 4 | `energon` | 609 | accent_variant |
-| `enfeiticar` | 4 | `enfeitiçar` | 2,072 | unaccented |
+| `enfeiticar` | 4 | `enfeitiçar` | 2,117 | unaccented |
 | `engraçádo` | 4 | `engraçado` | 73,014 | accent_variant |
 | `engström` | 4 | `engstrom` | 35 | accent_variant |
 | `enterrâ` | 4 | `enterrà` | 6 | accent_variant |
-| `entragá` | 4 | `entraga` | 14 | accent_variant |
-| `entregà` | 4 | `entrega` | 28,385 | accent_variant |
+| `entragá` | 4 | `entraga` | 16 | accent_variant |
+| `entregà` | 4 | `entrega` | 28,742 | accent_variant |
 | `entusiastico` | 4 | `entusiástico` | 274 | unaccented |
-| `ená` | 4 | `ena` | 18,928 | accent_variant |
+| `ená` | 4 | `ena` | 18,914 | accent_variant |
 | `ençontramo` | 4 | `encontràmo` | 7 | accent_variant |
 | `ephraïm` | 4 | `ephraim` | 366 | accent_variant |
 | `equilâtero` | 4 | `equilátero` | 55 | accent_variant |
@@ -10165,7 +10130,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `espècie` | 4 | `espécie` | 56,730 | accent_variant |
 | `espéc` | 4 | `espec` | 37 | accent_variant |
 | `espéctáculo` | 4 | `espectaculo` | 414 | accent_variant |
-| `espìrito` | 4 | `espírito` | 50,093 | accent_variant |
+| `espìrito` | 4 | `espírito` | 50,091 | accent_variant |
 | `espíritismo` | 4 | `espiritismo` | 81 | accent_variant |
 | `espíritualmente` | 4 | `espiritualmente` | 610 | accent_variant |
 | `esqueçemo` | 4 | `esquecêmo` | 4 | accent_variant |
@@ -10200,31 +10165,31 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `excelència` | 4 | `excelência` | 11,009 | accent_variant |
 | `excelênte` | 4 | `excelente` | 66,625 | accent_variant |
 | `excepçoes` | 4 | `excepçöes` | 8 | accent_variant |
-| `excluír` | 4 | `excluir` | 8,606 | accent_variant |
+| `excluír` | 4 | `excluir` | 8,642 | accent_variant |
 | `exibicao` | 4 | `exibição` | 4,248 | unaccented |
 | `explicacäo` | 4 | `explicação` | 20,084 | accent_variant |
 | `explosöes` | 4 | `explosoes` | 5 | accent_variant |
 | `expressào` | 4 | `expressão` | 14,224 | accent_variant |
 | `expréss` | 4 | `express` | 1,558 | accent_variant |
-| `extraórdinario` | 4 | `extraordinário` | 18,822 | accent_variant |
+| `extraórdinario` | 4 | `extraordinário` | 18,820 | accent_variant |
 | `extraórdinária` | 4 | `extraordinaria` | 53 | accent_variant |
 | `exôdo` | 4 | `êxodo` | 980 | accent_variant |
 | `eyewítness` | 4 | `eyewitness` | 93 | accent_variant |
-| `eá` | 4 | `ea` | 728 | accent_variant |
+| `eá` | 4 | `ea` | 712 | accent_variant |
 | `eíe` | 4 | `eie` | 1,815 | accent_variant |
 | `fa-lo-íamos` | 4 | `fá-lo-íamos` | 21 | accent_variant |
 | `facílmente` | 4 | `facilmente` | 18,106 | accent_variant |
 | `faisäo` | 4 | `faisão` | 791 | accent_variant |
 | `falsificaçao` | 4 | `falsificação` | 3,184 | accent_variant |
 | `falsificaçäo` | 4 | `falsificação` | 3,184 | accent_variant |
-| `falár` | 4 | `falar` | 1,547,217 | accent_variant |
+| `falár` | 4 | `falar` | 1,547,251 | accent_variant |
 | `far-lhe-à` | 4 | `far-lhe-á` | 140 | accent_variant |
 | `far-me-à` | 4 | `far-me-á` | 168 | accent_variant |
-| `faràs` | 4 | `faras` | 44 | accent_variant |
+| `faràs` | 4 | `faras` | 43 | accent_variant |
 | `farés` | 4 | `farès` | 69 | accent_variant |
 | `fazêmo-io` | 4 | `fazemo-io` | 19 | accent_variant |
 | `façao` | 4 | `fação` | 2,646 | accent_variant |
-| `façá` | 4 | `faca` | 41,501 | accent_variant |
+| `façá` | 4 | `faca` | 41,506 | accent_variant |
 | `faíscante` | 4 | `faiscante` | 43 | accent_variant |
 | `federacão` | 4 | `federação` | 5,372 | accent_variant |
 | `feicäo` | 4 | `feição` | 721 | accent_variant |
@@ -10271,16 +10236,16 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fugí` | 4 | `fúgi` | 5 | accent_variant |
 | `funcionàrios` | 4 | `funcionarios` | 28 | accent_variant |
 | `funcionã` | 4 | `funcioná` | 4 | accent_variant |
-| `fábrico` | 4 | `fabrico` | 1,685 | accent_variant |
+| `fábrico` | 4 | `fabrico` | 1,690 | accent_variant |
 | `fác` | 4 | `fac` | 103 | accent_variant |
 | `fácilidade` | 4 | `facilidade` | 3,452 | accent_variant |
 | `fára` | 4 | `fara` | 324 | accent_variant |
 | `fáser` | 4 | `faser` | 35 | accent_variant |
-| `fáça` | 4 | `faca` | 41,501 | accent_variant |
-| `fäça` | 4 | `faca` | 41,501 | accent_variant |
+| `fáça` | 4 | `faca` | 41,506 | accent_variant |
+| `fäça` | 4 | `faca` | 41,506 | accent_variant |
 | `fè` | 4 | `fé` | 36,508 | accent_variant |
 | `fêno` | 4 | `feno` | 1,549 | accent_variant |
-| `fêrias` | 4 | `férias` | 35,151 | accent_variant |
+| `fêrias` | 4 | `férias` | 35,150 | accent_variant |
 | `fícarmos` | 4 | `ficármos` | 13 | accent_variant |
 | `fív` | 4 | `fiv` | 80 | accent_variant |
 | `fízeram` | 4 | `fizéram` | 13 | accent_variant |
@@ -10303,7 +10268,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `girissimo` | 4 | `giríssimo` | 234 | unaccented |
 | `giróscopio` | 4 | `giroscópio` | 361 | accent_variant |
 | `gläser` | 4 | `glaser` | 97 | accent_variant |
-| `glòria` | 4 | `glória` | 15,704 | accent_variant |
+| `glòria` | 4 | `glória` | 15,703 | accent_variant |
 | `gokú` | 4 | `goku` | 2,868 | accent_variant |
 | `gonfaloniére` | 4 | `gonfaloniere` | 65 | accent_variant |
 | `gotico` | 4 | `gótico` | 1,267 | unaccented |
@@ -10315,11 +10280,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `gráficamente` | 4 | `graficamente` | 52 | accent_variant |
 | `gréçia` | 4 | `grécia` | 4,628 | accent_variant |
 | `grúa` | 4 | `grua` | 1,427 | accent_variant |
-| `guardà` | 4 | `guarda` | 91,821 | accent_variant |
+| `guardà` | 4 | `guarda` | 93,038 | accent_variant |
 | `guiar-nos-à` | 4 | `guiar-nos-á` | 64 | accent_variant |
 | `guillén` | 4 | `guillen` | 5 | accent_variant |
 | `guineus` | 4 | `guinéus` | 800 | unaccented |
-| `guià` | 4 | `guia` | 15,711 | accent_variant |
+| `guià` | 4 | `guia` | 15,762 | accent_variant |
 | `guálter` | 4 | `gualter` | 16 | accent_variant |
 | `guê` | 4 | `gue` | 38 | accent_variant |
 | `géniozinho` | 4 | `geniozinho` | 110 | accent_variant |
@@ -10363,7 +10328,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `há-há` | 4 | `ha-ha` | 419 | accent_variant |
 | `hám` | 4 | `ham` | 6,898 | accent_variant |
 | `hánoi` | 4 | `hanói` | 189 | accent_variant |
-| `háá` | 4 | `haa` | 311 | accent_variant |
+| `háá` | 4 | `haa` | 323 | accent_variant |
 | `hè` | 4 | `he` | 2,440 | accent_variant |
 | `héctares` | 4 | `hectáres` | 6 | accent_variant |
 | `hélas` | 4 | `helas` | 5 | accent_variant |
@@ -10372,15 +10337,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `hípótese` | 4 | `hipótese` | 89,260 | accent_variant |
 | `hórarios` | 4 | `horarios` | 17 | accent_variant |
 | `hóspicios` | 4 | `hospicios` | 5 | accent_variant |
-| `iança` | 4 | `iançá` | 22 | accent_variant |
 | `iançámos` | 4 | `iançamos` | 4 | accent_variant |
 | `iatrogênicas` | 4 | `iatrogénicas` | 7 | accent_variant |
 | `ibáñez` | 4 | `ibanez` | 146 | accent_variant |
 | `icóne` | 4 | `ícone` | 1,531 | accent_variant |
 | `identificavel` | 4 | `identificável` | 462 | unaccented |
 | `idilico` | 4 | `idílico` | 208 | unaccented |
-| `idíota` | 4 | `idiota` | 161,213 | accent_variant |
-| `ievä` | 4 | `ieva` | 102 | accent_variant |
+| `idíota` | 4 | `idiota` | 161,195 | accent_variant |
+| `ievä` | 4 | `ieva` | 110 | accent_variant |
 | `iliada` | 4 | `ilíada` | 95 | unaccented |
 | `ilión` | 4 | `ílion` | 18 | accent_variant |
 | `iluminaçao` | 4 | `iluminação` | 2,685 | accent_variant |
@@ -10402,7 +10366,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `inclinacao` | 4 | `inclinação` | 1,739 | unaccented |
 | `incocebível` | 4 | `incocebivel` | 5 | accent_variant |
 | `incomodos` | 4 | `incômodos` | 41 | unaccented |
-| `incomódo` | 4 | `incómodo` | 5,476 | accent_variant |
 | `incontrolävel` | 4 | `incontrolável` | 1,553 | accent_variant |
 | `incuravél` | 4 | `incurável` | 860 | accent_variant |
 | `indicaçoes` | 4 | `indicaçöes` | 10 | accent_variant |
@@ -10472,7 +10435,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `joué` | 4 | `joue` | 9 | accent_variant |
 | `jucá` | 4 | `juca` | 13 | accent_variant |
 | `juncäo` | 4 | `junção` | 1,308 | accent_variant |
-| `juntár` | 4 | `juntar` | 88,393 | accent_variant |
+| `juntár` | 4 | `juntar` | 88,681 | accent_variant |
 | `junçäo` | 4 | `junção` | 1,308 | accent_variant |
 | `jurisdicao` | 4 | `jurisdição` | 5,317 | unaccented |
 | `justificavel` | 4 | `justificável` | 472 | unaccented |
@@ -10565,12 +10528,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `länder` | 4 | `lander` | 183 | accent_variant |
 | `läudano` | 4 | `láudano` | 341 | accent_variant |
 | `lå` | 4 | `lá` | 1,481,867 | accent_variant |
+| `lêia` | 4 | `leia` | 8,924 | accent_variant |
 | `lêmur` | 4 | `lemur` | 26 | accent_variant |
-| `lêste` | 4 | `leste` | 28,407 | accent_variant |
-| `lêsteas` | 4 | `lesteas` | 60 | accent_variant |
 | `líndissimo` | 4 | `lindíssimo` | 3,941 | accent_variant |
 | `lío` | 4 | `lio` | 14 | accent_variant |
-| `lívre` | 4 | `livre` | 100,930 | accent_variant |
+| `lívre` | 4 | `livre` | 100,938 | accent_variant |
 | `lógotipo` | 4 | `logótipo` | 1,189 | accent_variant |
 | `lóló` | 4 | `lolo` | 114 | accent_variant |
 | `lór` | 4 | `lor` | 122 | accent_variant |
@@ -10584,10 +10546,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `macä` | 4 | `maçã` | 8,475 | accent_variant |
 | `madrileño` | 4 | `madrileno` | 21 | accent_variant |
 | `magnetomêtro` | 4 | `magnetômetro` | 17 | accent_variant |
-| `magoáste` | 4 | `magoaste` | 3,675 | accent_variant |
+| `magoáste` | 4 | `magoaste` | 3,766 | accent_variant |
 | `mahomé` | 4 | `mahome` | 7 | accent_variant |
 | `maidiçao` | 4 | `maidicão` | 9 | accent_variant |
-| `maldíto` | 4 | `maldito` | 84,310 | accent_variant |
+| `maldíto` | 4 | `maldito` | 84,309 | accent_variant |
 | `malevola` | 4 | `malévola` | 457 | unaccented |
 | `mamã-san` | 4 | `mama-san` | 21 | accent_variant |
 | `mamãzita` | 4 | `mamazita` | 21 | accent_variant |
@@ -10597,8 +10559,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `manifestaçöes` | 4 | `manifestaçoes` | 7 | accent_variant |
 | `manobravél` | 4 | `manobrável` | 107 | accent_variant |
 | `manometro` | 4 | `manómetro` | 307 | unaccented |
-| `mantêmas` | 4 | `mantémas` | 8 | accent_variant |
-| `mantì` | 4 | `manti` | 55 | accent_variant |
+| `mantì` | 4 | `manti` | 56 | accent_variant |
 | `mantô` | 4 | `manto` | 3,183 | accent_variant |
 | `maquinária` | 4 | `maquinaria` | 1,062 | accent_variant |
 | `marabú` | 4 | `marabu` | 21 | accent_variant |
@@ -10637,7 +10598,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `miliampères` | 4 | `miliamperes` | 61 | accent_variant |
 | `milimétricamente` | 4 | `milimetricamente` | 18 | accent_variant |
 | `miquéias` | 4 | `miqueias` | 20 | accent_variant |
-| `misturár` | 4 | `misturar` | 14,547 | accent_variant |
+| `misturár` | 4 | `misturar` | 14,619 | accent_variant |
 | `miúa` | 4 | `miua` | 4 | accent_variant |
 | `mobiliario` | 4 | `mobiliário` | 782 | unaccented |
 | `mogadiscio` | 4 | `mogadíscio` | 365 | unaccented |
@@ -10666,12 +10627,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `máster` | 4 | `master` | 1,129 | accent_variant |
 | `mástico` | 4 | `mastico` | 5 | accent_variant |
 | `mátas` | 4 | `matás` | 49 | accent_variant |
-| `máte` | 4 | `mate` | 18,604 | accent_variant |
+| `máte` | 4 | `mate` | 19,152 | accent_variant |
 | `máuser` | 4 | `mauser` | 264 | accent_variant |
 | `mâezinha` | 4 | `mãezinha` | 4,054 | accent_variant |
 | `mäozinha` | 4 | `mãozinha` | 2,899 | accent_variant |
 | `médicamente` | 4 | `medicamente` | 463 | accent_variant |
-| `ménàge` | 4 | `ménage` | 1,277 | accent_variant |
+| `ménàge` | 4 | `ménage` | 1,280 | accent_variant |
 | `mésmo` | 4 | `mesmo` | 1,239,747 | accent_variant |
 | `méxico-americana` | 4 | `mexico-americana` | 7 | accent_variant |
 | `mêdoc` | 4 | `medoc` | 25 | accent_variant |
@@ -10696,7 +10657,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `natál` | 4 | `natal` | 80,759 | accent_variant |
 | `naço` | 4 | `naco` | 1,008 | accent_variant |
 | `naúsea` | 4 | `náusea` | 2,881 | accent_variant |
-| `negligênciar` | 4 | `negligenciar` | 1,682 | accent_variant |
+| `negligênciar` | 4 | `negligenciar` | 1,697 | accent_variant |
 | `negóciozinho` | 4 | `negociozinho` | 37 | accent_variant |
 | `negôcios` | 4 | `négocios` | 26 | accent_variant |
 | `nenêm` | 4 | `neném` | 309 | accent_variant |
@@ -10725,7 +10686,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `nãî` | 4 | `nai` | 543 | accent_variant |
 | `nè` | 4 | `né` | 4,118 | accent_variant |
 | `nénhum` | 4 | `nenhum` | 376,344 | accent_variant |
-| `nìvel` | 4 | `nível` | 56,918 | accent_variant |
+| `nìvel` | 4 | `nível` | 56,920 | accent_variant |
 | `níam` | 4 | `niam` | 34 | accent_variant |
 | `nóes` | 4 | `noes` | 17 | accent_variant |
 | `núme` | 4 | `nume` | 11 | accent_variant |
@@ -10793,7 +10754,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pediatrica` | 4 | `pediátrica` | 433 | unaccented |
 | `pediatría` | 4 | `pediatria` | 1,083 | accent_variant |
 | `peidámo` | 4 | `peidamo` | 13 | accent_variant |
-| `pendurà` | 4 | `pendura` | 1,360 | accent_variant |
+| `pendurà` | 4 | `pendura` | 1,436 | accent_variant |
 | `penitenciaría` | 4 | `penitenciária` | 2,424 | accent_variant |
 | `pentâgono` | 4 | `pentágono` | 5,520 | accent_variant |
 | `penúmbra` | 4 | `penumbra` | 292 | accent_variant |
@@ -10808,7 +10769,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `perpetuaçäo` | 4 | `perpetuação` | 55 | accent_variant |
 | `persegui-los-à` | 4 | `persegui-los-á` | 13 | accent_variant |
 | `perseguiçöes` | 4 | `perseguiçoes` | 4 | accent_variant |
-| `perseguír` | 4 | `perseguir` | 43,035 | accent_variant |
+| `perseguír` | 4 | `perseguir` | 43,395 | accent_variant |
 | `persistencia` | 4 | `persistência` | 854 | unaccented |
 | `perturbaçao` | 4 | `perturbação` | 2,468 | accent_variant |
 | `perturbaçäo` | 4 | `perturbação` | 2,468 | accent_variant |
@@ -10828,7 +10789,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pitié-salpêtriêre` | 4 | `pitié-salpêtriére` | 11 | accent_variant |
 | `pivia` | 4 | `pívia` | 193 | unaccented |
 | `piçada` | 4 | `picada` | 3,288 | accent_variant |
-| `piño` | 4 | `pino` | 2,710 | accent_variant |
+| `piño` | 4 | `pino` | 2,714 | accent_variant |
 | `piñon` | 4 | `pinon` | 20 | accent_variant |
 | `plantacao` | 4 | `plantação` | 3,801 | unaccented |
 | `plexiglás` | 4 | `plexiglas` | 41 | accent_variant |
@@ -10867,7 +10828,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `prefêrencia` | 4 | `preferência` | 4,318 | accent_variant |
 | `preguicar` | 4 | `preguiçar` | 119 | unaccented |
 | `premeditaçäo` | 4 | `premeditação` | 398 | accent_variant |
-| `prendêr` | 4 | `prender` | 123,473 | accent_variant |
+| `prendêr` | 4 | `prender` | 124,167 | accent_variant |
 | `preparatoria` | 4 | `preparatória` | 802 | unaccented |
 | `pressionà-io` | 4 | `pressioná-io` | 15 | accent_variant |
 | `pressurizaçao` | 4 | `pressurização` | 351 | accent_variant |
@@ -10876,7 +10837,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `previsäo` | 4 | `previsão` | 4,402 | accent_variant |
 | `proibídos` | 4 | `proíbidos` | 42 | accent_variant |
 | `proletario` | 4 | `proletário` | 266 | unaccented |
-| `promovêr` | 4 | `promover` | 12,682 | accent_variant |
+| `promovêr` | 4 | `promover` | 12,694 | accent_variant |
 | `propicío` | 4 | `propício` | 548 | accent_variant |
 | `proporçao` | 4 | `proporção` | 2,370 | accent_variant |
 | `propós` | 4 | `propos` | 76 | accent_variant |
@@ -10886,12 +10847,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `proteger-me-à` | 4 | `proteger-me-á` | 57 | accent_variant |
 | `provisao` | 4 | `provisão` | 3,880 | unaccented |
 | `provisóriamente` | 4 | `provisoriamente` | 193 | accent_variant |
-| `provà` | 4 | `prova` | 132,394 | accent_variant |
+| `provà` | 4 | `prova` | 132,476 | accent_variant |
 | `proxíma` | 4 | `proxima` | 953 | accent_variant |
-| `práia` | 4 | `praia` | 33,855 | accent_variant |
+| `práia` | 4 | `praia` | 33,854 | accent_variant |
 | `práqui` | 4 | `praqui` | 17 | accent_variant |
 | `prätica` | 4 | `prática` | 11,259 | accent_variant |
-| `prégar` | 4 | `pregar` | 11,386 | accent_variant |
+| `prégar` | 4 | `pregar` | 11,411 | accent_variant |
 | `préto` | 4 | `preto` | 56,814 | accent_variant |
 | `prévisualizar` | 4 | `previsualizar` | 14 | accent_variant |
 | `prêto` | 4 | `preto` | 56,814 | accent_variant |
@@ -10916,6 +10877,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `páh` | 4 | `pah` | 406 | accent_variant |
 | `pálacio` | 4 | `palácio` | 16,162 | accent_variant |
 | `páral` | 4 | `paral` | 5 | accent_variant |
+| `párea` | 4 | `parea` | 9 | accent_variant |
 | `pássa-ma` | 4 | `passa-ma` | 191 | accent_variant |
 | `pássamos` | 4 | `passàmos` | 24 | accent_variant |
 | `páteticos` | 4 | `pateticos` | 11 | accent_variant |
@@ -10924,6 +10886,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pãzinho` | 4 | `pázinho` | 69 | accent_variant |
 | `péano` | 4 | `peano` | 6 | accent_variant |
 | `péga` | 4 | `pegâ` | 4 | accent_variant |
+| `pélo` | 4 | `pelo` | 586,014 | accent_variant |
 | `péniz` | 4 | `pêniz` | 12 | accent_variant |
 | `pêgazinha` | 4 | `pegazinha` | 57 | accent_variant |
 | `pêna` | 4 | `pena` | 134,019 | accent_variant |
@@ -10957,7 +10920,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rabêta` | 4 | `rabeta` | 235 | accent_variant |
 | `radiofreqüência` | 4 | `radiofrequência` | 137 | accent_variant |
 | `radiogoniômetro` | 4 | `radiogoniómetro` | 4 | accent_variant |
-| `ramá` | 4 | `rama` | 790 | accent_variant |
+| `ramá` | 4 | `rama` | 789 | accent_variant |
 | `raspao` | 4 | `raspão` | 886 | unaccented |
 | `raçoes` | 4 | `racöes` | 6 | accent_variant |
 | `reabilitaçao` | 4 | `reabilitação` | 6,580 | accent_variant |
@@ -10967,11 +10930,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `recibí` | 4 | `recibi` | 29 | accent_variant |
 | `reconciliaçao` | 4 | `reconciliação` | 1,313 | accent_variant |
 | `reconstruçao` | 4 | `reconstrução` | 2,731 | accent_variant |
-| `recuperâ` | 4 | `recuperà` | 8 | accent_variant |
+| `recuperâ` | 4 | `recupéra` | 10 | accent_variant |
 | `redencão` | 4 | `redenção` | 2,547 | accent_variant |
 | `redé` | 4 | `rede` | 34,221 | accent_variant |
 | `refeiçoes` | 4 | `refeiçöes` | 16 | accent_variant |
 | `regeneraçäo` | 4 | `regeneração` | 1,073 | accent_variant |
+| `reidratá` | 4 | `reidrata` | 5 | accent_variant |
 | `rejeicao` | 4 | `rejeição` | 2,351 | unaccented |
 | `rejeiçao` | 4 | `rejeição` | 2,351 | accent_variant |
 | `relaçăo` | 4 | `relação` | 101,548 | accent_variant |
@@ -11021,7 +10985,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rück` | 4 | `ruck` | 9 | accent_variant |
 | `sabrás` | 4 | `sabras` | 99 | accent_variant |
 | `sacrificío` | 4 | `sacrifício` | 17,128 | accent_variant |
-| `sacrifícar` | 4 | `sacrificar` | 15,837 | accent_variant |
+| `sacrifícar` | 4 | `sacrificar` | 15,863 | accent_variant |
 | `sacrilegio` | 4 | `sacrilégio` | 777 | unaccented |
 | `saldaño` | 4 | `saldano` | 11 | accent_variant |
 | `saliencia` | 4 | `saliência` | 529 | unaccented |
@@ -11107,7 +11071,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `séamus` | 4 | `seamus` | 991 | accent_variant |
 | `ségolène` | 4 | `ségoléne` | 12 | accent_variant |
 | `sêniors` | 4 | `seniors` | 28 | accent_variant |
-| `së` | 4 | `se` | 6,371,522 | accent_variant |
+| `së` | 4 | `se` | 6,371,694 | accent_variant |
 | `símone` | 4 | `simone` | 3,910 | accent_variant |
 | `síncro` | 4 | `sincro` | 224 | accent_variant |
 | `síte` | 4 | `site` | 10,984 | accent_variant |
@@ -11168,13 +11132,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `transmissöes` | 4 | `transmissoes` | 8 | accent_variant |
 | `transylvänia` | 4 | `transylvania` | 32 | accent_variant |
 | `traumatico` | 4 | `traumático` | 2,170 | unaccented |
-| `traíua` | 4 | `traiua` | 220 | accent_variant |
 | `traíção` | 4 | `traição` | 15,582 | accent_variant |
 | `trombocitopénia` | 4 | `trombocitopenia` | 39 | accent_variant |
 | `trouxêmo` | 4 | `trouxémo` | 28 | accent_variant |
 | `trálala` | 4 | `tralala` | 24 | accent_variant |
 | `tráz-mo` | 4 | `traz-mo` | 253 | accent_variant |
-| `trêta` | 4 | `treta` | 57,719 | accent_variant |
+| `trêta` | 4 | `treta` | 57,716 | accent_variant |
 | `tríqui-tríqui` | 4 | `triqui-triqui` | 9 | accent_variant |
 | `tularémia` | 4 | `tularemia` | 67 | accent_variant |
 | `turbilhäo` | 4 | `turbilhão` | 631 | accent_variant |
@@ -11205,7 +11168,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `urgêncías` | 4 | `urgencias` | 38 | accent_variant |
 | `uricléia` | 4 | `uricleia` | 4 | accent_variant |
 | `usà-ia` | 4 | `usá-ia` | 42 | accent_variant |
-| `usár` | 4 | `usar` | 442,943 | accent_variant |
+| `usár` | 4 | `usar` | 446,904 | accent_variant |
 | `usä` | 4 | `usà` | 21 | accent_variant |
 | `utilizá-io` | 4 | `utiliza-io` | 4 | accent_variant |
 | `utriculária` | 4 | `utricularia` | 6 | accent_variant |
@@ -11229,6 +11192,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `verăo` | 4 | `verão` | 39,935 | accent_variant |
 | `vestigíos` | 4 | `vestigios` | 150 | accent_variant |
 | `veterinària` | 4 | `veterinária` | 1,105 | accent_variant |
+| `violáste` | 4 | `violaste` | 1,155 | accent_variant |
 | `visavó` | 4 | `visavô` | 5 | accent_variant |
 | `viscera` | 4 | `víscera` | 477 | unaccented |
 | `visăo` | 4 | `visão` | 38,316 | accent_variant |
@@ -11242,7 +11206,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `voluvel` | 4 | `volúvel` | 252 | unaccented |
 | `voço` | 4 | `voco` | 8 | accent_variant |
 | `vulnérável` | 4 | `vulnerável` | 9,203 | accent_variant |
-| `vàmonos` | 4 | `vamonos` | 197 | accent_variant |
+| `vàmonos` | 4 | `vámonos` | 158 | accent_variant |
 | `váse` | 4 | `vase` | 4 | accent_variant |
 | `vázio` | 4 | `vazio` | 42,554 | accent_variant |
 | `vãao` | 4 | `vaão` | 5 | accent_variant |
@@ -11250,14 +11214,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `välissä` | 4 | `valissa` | 4 | accent_variant |
 | `vértigo` | 4 | `vertigo` | 531 | accent_variant |
 | `vê-los-às` | 4 | `vê-los-ás` | 17 | accent_variant |
-| `vêa` | 4 | `vea` | 6 | accent_variant |
+| `vêa` | 4 | `vea` | 4 | accent_variant |
 | `vêe` | 4 | `vee` | 766 | accent_variant |
 | `vênce` | 4 | `vençe` | 4 | accent_variant |
 | `vídeoclip` | 4 | `videoclip` | 189 | accent_variant |
 | `víena` | 4 | `viena` | 3,265 | accent_variant |
 | `vírgem` | 4 | `virgem` | 17,079 | accent_variant |
-| `vísíta` | 4 | `visita` | 53,131 | accent_variant |
-| `vívo` | 4 | `vivo` | 235,960 | accent_variant |
+| `vísíta` | 4 | `visita` | 53,229 | accent_variant |
+| `vívo` | 4 | `vivo` | 235,989 | accent_variant |
 | `víxen` | 4 | `vixen` | 239 | accent_variant |
 | `vóss` | 4 | `voss` | 1,077 | accent_variant |
 | `vôvo` | 4 | `vovó` | 2,354 | accent_variant |
@@ -11281,8 +11245,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `àngeles` | 4 | `angeles` | 23,130 | accent_variant |
 | `àrduo` | 4 | `árduo` | 2,472 | accent_variant |
 | `àz` | 4 | `az` | 146 | accent_variant |
-| `áa` | 4 | `aa` | 2,203 | accent_variant |
-| `ábrea` | 4 | `abrea` | 2,193 | accent_variant |
+| `áa` | 4 | `aa` | 2,128 | accent_variant |
 | `áfro-americano` | 4 | `afro-americano` | 896 | accent_variant |
 | `ága` | 4 | `aga` | 120 | accent_variant |
 | `áinda` | 4 | `ainda` | 865,825 | accent_variant |
@@ -11326,7 +11289,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `éesta` | 4 | `eestá` | 25 | accent_variant |
 | `élisabeth` | 4 | `elisabeth` | 1,080 | accent_variant |
 | `émilion` | 4 | `emilion` | 13 | accent_variant |
-| `éna` | 4 | `ena` | 18,928 | accent_variant |
+| `éna` | 4 | `ena` | 18,914 | accent_variant |
 | `énoque` | 4 | `enoque` | 95 | accent_variant |
 | `épó` | 4 | `epo` | 128 | accent_variant |
 | `ésim` | 4 | `esim` | 6 | accent_variant |
@@ -11381,13 +11344,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aceitavél` | 3 | `aceitável` | 4,882 | accent_variant |
 | `aceleracäo` | 3 | `aceleração` | 1,695 | accent_variant |
 | `acelerômetros` | 3 | `acelerómetros` | 4 | accent_variant |
-| `acertár` | 3 | `acertar` | 44,735 | accent_variant |
+| `acertár` | 3 | `acertar` | 44,757 | accent_variant |
 | `acolà` | 3 | `acolá` | 1,794 | accent_variant |
 | `acompanha-la-á` | 3 | `acompanhá-la-á` | 6 | accent_variant |
 | `acompanha-lo-á` | 3 | `acompanhá-lo-á` | 32 | accent_variant |
 | `acompanha-lo-ão` | 3 | `acompanhá-lo-ão` | 5 | accent_variant |
 | `acompanhà` | 3 | `acompánha` | 9 | accent_variant |
-| `acompanhár` | 3 | `acompanhar` | 46,959 | accent_variant |
+| `acompanhár` | 3 | `acompanhar` | 47,896 | accent_variant |
 | `activacao` | 3 | `activaçao` | 40 | unaccented |
 | `acumulaçao` | 3 | `acumulação` | 596 | accent_variant |
 | `acç` | 3 | `acc` | 23 | accent_variant |
@@ -11413,7 +11376,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `agradavéis` | 3 | `agradaveis` | 19 | accent_variant |
 | `agradeç` | 3 | `agradec` | 6 | accent_variant |
 | `aguçadissimos` | 3 | `aguçadíssimos` | 6 | accent_variant |
-| `agárraa` | 3 | `agarraa` | 1,377 | accent_variant |
 | `agęncia` | 3 | `agência` | 24,332 | accent_variant |
 | `ahãm` | 3 | `aham` | 237 | accent_variant |
 | `ajuda-la-á` | 3 | `ajudá-la-á` | 46 | accent_variant |
@@ -11486,7 +11448,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `anón` | 3 | `anon` | 24 | accent_variant |
 | `anôs` | 3 | `años` | 143 | accent_variant |
 | `ao-ao` | 3 | `ão-ão` | 30 | unaccented |
-| `apanhástea` | 3 | `apanhastea` | 328 | accent_variant |
 | `apanhâ` | 3 | `apanhà` | 28 | accent_variant |
 | `apanhämos` | 3 | `apanhàmos` | 3 | accent_variant |
 | `apaná` | 3 | `apana` | 22 | accent_variant |
@@ -11521,15 +11482,15 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `arquidíacono` | 3 | `arquidiácono` | 50 | accent_variant |
 | `arquitectónicamente` | 3 | `arquitectonicamente` | 19 | accent_variant |
 | `arranjã` | 3 | `arranjà` | 8 | accent_variant |
-| `arranquê` | 3 | `arranque` | 2,737 | accent_variant |
-| `arrastár` | 3 | `arrastar` | 24,292 | accent_variant |
+| `arranquê` | 3 | `arranque` | 2,744 | accent_variant |
+| `arrastár` | 3 | `arrastar` | 24,738 | accent_variant |
 | `arrivés` | 3 | `arrives` | 4 | accent_variant |
 | `arrá` | 3 | `arra` | 36 | accent_variant |
 | `artério-venosa` | 3 | `arterio-venosa` | 12 | accent_variant |
 | `artísta` | 3 | `artista` | 23,373 | accent_variant |
 | `arvóres` | 3 | `àrvores` | 83 | accent_variant |
 | `asensaçãode` | 3 | `asensacãode` | 6 | accent_variant |
-| `asiàtico` | 3 | `asiático` | 6,514 | accent_variant |
+| `asiàtico` | 3 | `asiático` | 6,500 | accent_variant |
 | `asmatico` | 3 | `asmático` | 401 | unaccented |
 | `assangé` | 3 | `assange` | 273 | accent_variant |
 | `assoviá` | 3 | `assovia` | 3 | accent_variant |
@@ -11727,7 +11688,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `chainé` | 3 | `chaine` | 11 | accent_variant |
 | `chama-io` | 3 | `chamá-io` | 82 | unaccented |
 | `chamâ` | 3 | `chamà` | 17 | accent_variant |
-| `chateár` | 3 | `chatear` | 28,793 | accent_variant |
+| `chateár` | 3 | `chatear` | 28,868 | accent_variant |
 | `chechênios` | 3 | `chechénios` | 26 | accent_variant |
 | `chegaräo` | 3 | `chegarao` | 15 | accent_variant |
 | `chihuahuá` | 3 | `chihuahua` | 1,275 | accent_variant |
@@ -11786,14 +11747,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `colhöes` | 3 | `colhões` | 1,320 | accent_variant |
 | `colisäo` | 3 | `colisão` | 3,471 | accent_variant |
 | `colocacao` | 3 | `colocação` | 1,087 | unaccented |
-| `colocár` | 3 | `colocar` | 159,287 | accent_variant |
+| `colocár` | 3 | `colocar` | 163,395 | accent_variant |
 | `colocásia` | 3 | `colocasia` | 5 | accent_variant |
 | `coléga` | 3 | `colega` | 51,159 | accent_variant |
 | `colêgio` | 3 | `colégio` | 7,985 | accent_variant |
-| `colóca` | 3 | `colocà` | 6 | accent_variant |
 | `colónico` | 3 | `colônico` | 5 | accent_variant |
 | `cometario` | 3 | `cometário` | 30 | unaccented |
-| `começãr` | 3 | `começar` | 534,242 | accent_variant |
+| `começãr` | 3 | `começar` | 534,588 | accent_variant |
 | `comissaríado` | 3 | `comissariado` | 172 | accent_variant |
 | `comissöes` | 3 | `comissoes` | 5 | accent_variant |
 | `comió` | 3 | `comio` | 8 | accent_variant |
@@ -11812,8 +11772,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `configuracão` | 3 | `configuração` | 1,381 | accent_variant |
 | `confirmacäo` | 3 | `confirmação` | 6,391 | accent_variant |
 | `congregaçäo` | 3 | `congregação` | 1,795 | accent_variant |
-| `conhecę` | 3 | `conheçe` | 167 | accent_variant |
-| `conheç` | 3 | `conhec` | 27 | accent_variant |
+| `conhecę` | 3 | `conheçe` | 178 | accent_variant |
+| `conheç` | 3 | `conhec` | 28 | accent_variant |
 | `conheçimento` | 3 | `conhecimento` | 29,801 | accent_variant |
 | `conhécem` | 3 | `conheçem` | 24 | accent_variant |
 | `conhê` | 3 | `conhe` | 35 | accent_variant |
@@ -11823,7 +11783,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `consolaçäo` | 3 | `consolação` | 1,338 | accent_variant |
 | `constipacao` | 3 | `constipação` | 2,504 | unaccented |
 | `constituiçâo` | 3 | `constituição` | 4,478 | accent_variant |
-| `construistea` | 3 | `construístea` | 36 | unaccented |
 | `contabílisticos` | 3 | `contabilisticos` | 4 | accent_variant |
 | `continuaçäo` | 3 | `continuação` | 1,359 | accent_variant |
 | `continęncia` | 3 | `continência` | 1,111 | accent_variant |
@@ -11831,7 +11790,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `contra-revoluçäo` | 3 | `contra-revolução` | 37 | accent_variant |
 | `contraccões` | 3 | `contracçoes` | 5 | accent_variant |
 | `contradiçao` | 3 | `contradição` | 1,377 | accent_variant |
-| `contraír` | 3 | `contrair` | 3,052 | accent_variant |
+| `contraír` | 3 | `contrair` | 3,058 | accent_variant |
 | `contribuiçao` | 3 | `contribuição` | 3,333 | accent_variant |
 | `contígo` | 3 | `contigo` | 344,143 | accent_variant |
 | `convalescênça` | 3 | `convalescença` | 332 | accent_variant |
@@ -11917,10 +11876,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `có-có-ró-có` | 3 | `có-co-ro-có` | 3 | accent_variant |
 | `cócóró-cócó` | 3 | `cocoro-cocó` | 3 | accent_variant |
 | `cólinho` | 3 | `colinho` | 73 | accent_variant |
-| `cólo` | 3 | `colo` | 6,807 | accent_variant |
+| `cólo` | 3 | `colo` | 6,815 | accent_variant |
 | `córmac` | 3 | `cormac` | 251 | accent_variant |
-| `córtaa` | 3 | `cortaa` | 388 | accent_variant |
-| `côma` | 3 | `coma` | 18,030 | accent_variant |
+| `côma` | 3 | `coma` | 18,082 | accent_variant |
 | `côr-de` | 3 | `cor-de` | 13 | accent_variant |
 | `côr-de-laranja` | 3 | `cor-de-laranja` | 624 | accent_variant |
 | `côto` | 3 | `coto` | 437 | accent_variant |
@@ -11946,14 +11904,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `deixa-ia` | 3 | `deixá-ia` | 58 | unaccented |
 | `deixà-ios` | 3 | `deixá-ios` | 103 | accent_variant |
 | `deixá-ias` | 3 | `deixà-ias` | 4 | accent_variant |
-| `deixástea` | 3 | `deixastea` | 1,483 | accent_variant |
 | `deixémo` | 3 | `deixêmo` | 19 | accent_variant |
 | `dejé` | 3 | `deje` | 15 | accent_variant |
 | `delegaçao` | 3 | `delegação` | 2,277 | accent_variant |
 | `delfím` | 3 | `delfim` | 491 | accent_variant |
 | `delinquencia` | 3 | `delinquência` | 183 | unaccented |
 | `deltoide` | 3 | `deltóide` | 68 | unaccented |
-| `delête` | 3 | `delete` | 84 | accent_variant |
+| `delête` | 3 | `delete` | 85 | accent_variant |
 | `demoniâca` | 3 | `demoniaca` | 57 | accent_variant |
 | `demonstracäo` | 3 | `demonstração` | 6,868 | accent_variant |
 | `demáis` | 3 | `demais` | 104,112 | accent_variant |
@@ -11962,7 +11919,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `depó` | 3 | `depo` | 56 | accent_variant |
 | `depôsito` | 3 | `depósito` | 15,875 | accent_variant |
 | `dequê` | 3 | `deque` | 771 | accent_variant |
-| `desapontár` | 3 | `desapontar` | 6,996 | accent_variant |
+| `desapontár` | 3 | `desapontar` | 7,048 | accent_variant |
 | `desaprovaçäo` | 3 | `desaprovação` | 272 | accent_variant |
 | `desarrumaçäo` | 3 | `desarrumação` | 885 | accent_variant |
 | `descançe` | 3 | `descance` | 26 | accent_variant |
@@ -11970,26 +11927,24 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `desconstruçao` | 3 | `desconstrução` | 44 | accent_variant |
 | `descutíamos` | 3 | `descutiamos` | 4 | accent_variant |
 | `desejavámos` | 3 | `desejavamos` | 6 | accent_variant |
-| `desejár` | 3 | `desejar` | 75,338 | accent_variant |
+| `desejár` | 3 | `desejar` | 75,454 | accent_variant |
 | `deserçäo` | 3 | `deserção` | 746 | accent_variant |
 | `desidratacao` | 3 | `desidratação` | 1,017 | unaccented |
 | `designaçäo` | 3 | `designação` | 710 | accent_variant |
 | `desintoxicaçao` | 3 | `desintoxicação` | 1,531 | accent_variant |
 | `desirèe` | 3 | `desiree` | 321 | accent_variant |
 | `destacavel` | 3 | `destacável` | 37 | unaccented |
-| `destroirá` | 3 | `destroira` | 3 | accent_variant |
 | `destroêm` | 3 | `destróem` | 25 | accent_variant |
-| `destroía` | 3 | `destróia` | 171 | accent_variant |
 | `destruicão` | 3 | `destruição` | 14,943 | accent_variant |
 | `destruicäo` | 3 | `destruição` | 14,943 | accent_variant |
-| `destruío` | 3 | `destruio` | 5 | accent_variant |
+| `destruío` | 3 | `destruio` | 6 | accent_variant |
 | `destrúa` | 3 | `destruã` | 3 | accent_variant |
 | `detecçâo` | 3 | `detecçao` | 3 | accent_variant |
 | `detecçäo` | 3 | `detecçao` | 3 | accent_variant |
 | `detencões` | 3 | `detênções` | 5 | accent_variant |
 | `devlín` | 3 | `devlin` | 2,330 | accent_variant |
 | `devìamos` | 3 | `deviámos` | 4 | accent_variant |
-| `dexá` | 3 | `dexa` | 51 | accent_variant |
+| `dexá` | 3 | `dexa` | 52 | accent_variant |
 | `deça` | 3 | `deca` | 24 | accent_variant |
 | `deé` | 3 | `dee` | 3,486 | accent_variant |
 | `dia-à-dia` | 3 | `dia-a-dia` | 1,370 | accent_variant |
@@ -12031,10 +11986,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `domesticà` | 3 | `doméstica` | 4,833 | accent_variant |
 | `domésticamente` | 3 | `domesticamente` | 25 | accent_variant |
 | `dormitórium` | 3 | `dormitorium` | 3 | accent_variant |
-| `doênça` | 3 | `doença` | 42,107 | accent_variant |
-| `doêr` | 3 | `doer` | 52,397 | accent_variant |
+| `doênça` | 3 | `doença` | 42,106 | accent_variant |
+| `doêr` | 3 | `doer` | 52,428 | accent_variant |
 | `doí-doí` | 3 | `dói-dói` | 357 | accent_variant |
-| `doís` | 3 | `dois` | 820,785 | accent_variant |
+| `doís` | 3 | `dois` | 820,786 | accent_variant |
 | `dracúla` | 3 | `drácula` | 3,177 | accent_variant |
 | `drastico` | 3 | `drástico` | 1,630 | unaccented |
 | `drá` | 3 | `dra` | 42,874 | accent_variant |
@@ -12062,11 +12017,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dígno` | 3 | `digno` | 12,188 | accent_variant |
 | `dína` | 3 | `dina` | 1,369 | accent_variant |
 | `dísso` | 3 | `disso` | 416,537 | accent_variant |
-| `dívidir` | 3 | `dividir` | 28,616 | accent_variant |
+| `dívidir` | 3 | `dividir` | 28,693 | accent_variant |
 | `dó's` | 3 | `do's` | 3 | accent_variant |
 | `dóllar` | 3 | `dollar` | 451 | accent_variant |
 | `dóls` | 3 | `dols` | 12 | accent_variant |
-| `dôrmir` | 3 | `dormir` | 219,536 | accent_variant |
+| `dôrmir` | 3 | `dormir` | 219,535 | accent_variant |
 | `döme` | 3 | `dome` | 306 | accent_variant |
 | `döner` | 3 | `doner` | 16 | accent_variant |
 | `ecología` | 3 | `ecologia` | 181 | accent_variant |
@@ -12087,25 +12042,25 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `eleiçäo` | 3 | `eleição` | 13,888 | accent_variant |
 | `eletródos` | 3 | `elétrodos` | 600 | accent_variant |
 | `elevar-se-à` | 3 | `elevar-se-á` | 14 | accent_variant |
+| `elimína` | 3 | `eliminà` | 4 | accent_variant |
 | `eliseos` | 3 | `elíseos` | 77 | unaccented |
 | `elián` | 3 | `elian` | 111 | accent_variant |
 | `eloquencia` | 3 | `eloquência` | 255 | unaccented |
 | `eléctrons` | 3 | `electrons` | 6 | accent_variant |
 | `eléctrões-volt` | 3 | `electrões-volt` | 22 | accent_variant |
 | `elíseus` | 3 | `eliseus` | 4 | accent_variant |
-| `emalá` | 3 | `emala` | 37 | accent_variant |
-| `embaracar` | 3 | `embaraçar` | 2,172 | unaccented |
-| `emergéncia` | 3 | `emergência` | 41,636 | accent_variant |
-| `emergęncia` | 3 | `emergência` | 41,636 | accent_variant |
+| `emalá` | 3 | `emala` | 38 | accent_variant |
+| `embaracar` | 3 | `embaraçar` | 2,190 | unaccented |
+| `emergéncia` | 3 | `emergência` | 41,633 | accent_variant |
+| `emergęncia` | 3 | `emergência` | 41,633 | accent_variant |
 | `emocao` | 3 | `emoção` | 21,505 | unaccented |
 | `emoçôes` | 3 | `emoçöes` | 27 | accent_variant |
-| `emprestár` | 3 | `emprestar` | 28,713 | accent_variant |
+| `emprestár` | 3 | `emprestar` | 28,776 | accent_variant |
 | `emprêgo` | 3 | `emprego` | 80,430 | accent_variant |
 | `empurraozinho` | 3 | `empurrãozinho` | 623 | unaccented |
 | `encarnacäo` | 3 | `encarnação` | 771 | accent_variant |
 | `enchantee` | 3 | `enchantée` | 68 | unaccented |
 | `enchantê` | 3 | `enchanté` | 229 | accent_variant |
-| `encontra-ia` | 3 | `encontrá-ia` | 52 | unaccented |
 | `encontra-io` | 3 | `encontrá-io` | 216 | unaccented |
 | `encontra-la-ás` | 3 | `encontrá-la-ás` | 19 | accent_variant |
 | `encontra-la-ão` | 3 | `encontrá-la-ão` | 14 | accent_variant |
@@ -12115,8 +12070,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `enconträ` | 3 | `encontrà` | 52 | accent_variant |
 | `encômio` | 3 | `encómio` | 6 | accent_variant |
 | `endêmico` | 3 | `endémico` | 87 | accent_variant |
-| `enforcár` | 3 | `enforcar` | 15,758 | accent_variant |
-| `engañar` | 3 | `enganar` | 88,079 | accent_variant |
+| `enforcár` | 3 | `enforcar` | 15,822 | accent_variant |
+| `engañar` | 3 | `enganar` | 88,526 | accent_variant |
 | `engracadinho` | 3 | `engraçadinho` | 3,376 | unaccented |
 | `enláçe` | 3 | `enlace` | 127 | accent_variant |
 | `enrabámos` | 3 | `enrabamos` | 3 | accent_variant |
@@ -12125,7 +12080,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `entubacao` | 3 | `entubação` | 181 | unaccented |
 | `entusiasmadissímos` | 3 | `entusiasmadíssimos` | 56 | accent_variant |
 | `envelôpe` | 3 | `envelope` | 7,458 | accent_variant |
-| `enviár` | 3 | `enviar` | 161,967 | accent_variant |
+| `enviár` | 3 | `enviar` | 163,431 | accent_variant |
 | `epaaá` | 3 | `epáaa` | 7 | accent_variant |
 | `epico` | 3 | `épico` | 2,957 | unaccented |
 | `epífanias` | 3 | `epifanias` | 40 | accent_variant |
@@ -12138,8 +12093,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `eré` | 3 | `ere` | 59 | accent_variant |
 | `escalao` | 3 | `escalão` | 933 | unaccented |
 | `escotílha` | 3 | `escotilha` | 5,004 | accent_variant |
-| `escutaiá` | 3 | `escutaia` | 13 | accent_variant |
-| `escôria` | 3 | `escória` | 1,847 | accent_variant |
+| `escôria` | 3 | `escória` | 1,845 | accent_variant |
 | `esforçáste` | 3 | `esforcaste` | 7 | accent_variant |
 | `esménard` | 3 | `esmenard` | 9 | accent_variant |
 | `espanhôis` | 3 | `espanhoís` | 3 | accent_variant |
@@ -12148,7 +12102,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `especulaçäo` | 3 | `especulação` | 2,865 | accent_variant |
 | `especulaçöes` | 3 | `especulaçoes` | 4 | accent_variant |
 | `especíes` | 3 | `especies` | 31 | accent_variant |
-| `específicar` | 3 | `especificar` | 1,340 | accent_variant |
+| `específicar` | 3 | `especificar` | 1,342 | accent_variant |
 | `especímens` | 3 | `especimens` | 4 | accent_variant |
 | `esperàvamos` | 3 | `esperavámos` | 15 | accent_variant |
 | `esplenectomía` | 3 | `esplenectomia` | 105 | accent_variant |
@@ -12158,7 +12112,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `espétaculos` | 3 | `espetaculos` | 3 | accent_variant |
 | `espêcime` | 3 | `espécime` | 2,596 | accent_variant |
 | `espí` | 3 | `espi` | 18 | accent_variant |
-| `espíríto` | 3 | `espírito` | 50,093 | accent_variant |
+| `espíríto` | 3 | `espírito` | 50,091 | accent_variant |
 | `esqueçido` | 3 | `esquecido` | 764 | accent_variant |
 | `esquizofrenico` | 3 | `esquizofrénico` | 1,140 | unaccented |
 | `esquizofrenicos` | 3 | `esquizofrênicos` | 50 | unaccented |
@@ -12167,7 +12121,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `estelí` | 3 | `esteli` | 3 | accent_variant |
 | `estupído` | 3 | `estúpido` | 109,912 | accent_variant |
 | `estupôr` | 3 | `estupor` | 7,155 | accent_variant |
-| `estàr` | 3 | `estar` | 14,117,689 | accent_variant |
+| `estàr` | 3 | `estar` | 14,117,740 | accent_variant |
 | `estáblo` | 3 | `establo` | 3 | accent_variant |
 | `estáms` | 3 | `estams` | 3 | accent_variant |
 | `estárá` | 3 | `estarà` | 18 | accent_variant |
@@ -12199,13 +12153,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `exercicíos` | 3 | `exercicios` | 117 | accent_variant |
 | `exibícionismo` | 3 | `exibicionismo` | 341 | accent_variant |
 | `eximio` | 3 | `exímio` | 425 | unaccented |
-| `experiênciei` | 3 | `experienciei` | 113 | accent_variant |
+| `experiênciei` | 3 | `experienciei` | 117 | accent_variant |
 | `expetáculo` | 3 | `expetacúlo` | 3 | accent_variant |
 | `explicacão` | 3 | `explicação` | 20,084 | accent_variant |
 | `explosâo` | 3 | `explosão` | 28,461 | accent_variant |
 | `explêndidas` | 3 | `explendidas` | 3 | accent_variant |
 | `expressăo` | 3 | `expressão` | 14,224 | accent_variant |
 | `expôe` | 3 | `expöe` | 6 | accent_variant |
+| `expôseste` | 3 | `exposeste` | 5 | accent_variant |
 | `extendê` | 3 | `extende` | 61 | accent_variant |
 | `extincäo` | 3 | `extinção` | 4,049 | accent_variant |
 | `extinçăo` | 3 | `extinção` | 4,049 | accent_variant |
@@ -12226,7 +12181,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fantàstica` | 3 | `fantastica` | 104 | accent_variant |
 | `fares` | 3 | `farès` | 69 | unaccented |
 | `farăo` | 3 | `faraó` | 3,770 | accent_variant |
-| `fazâ` | 3 | `faza` | 22 | accent_variant |
+| `fazâ` | 3 | `faza` | 9 | accent_variant |
 | `fazè` | 3 | `fazë` | 23 | accent_variant |
 | `fazì` | 3 | `fazi` | 3 | accent_variant |
 | `façámo` | 3 | `facamo` | 3 | accent_variant |
@@ -12237,7 +12192,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fenomenos` | 3 | `fenômenos` | 135 | unaccented |
 | `fenêtre` | 3 | `fenétre` | 3 | accent_variant |
 | `fernäo` | 3 | `fernão` | 163 | accent_variant |
-| `festá` | 3 | `festa` | 145,647 | accent_variant |
+| `festá` | 3 | `festa` | 145,640 | accent_variant |
 | `fiancèe` | 3 | `fiancée` | 12 | accent_variant |
 | `ficar-lhe-à` | 3 | `ficar-lhe-á` | 37 | accent_variant |
 | `ficar-vos-à` | 3 | `ficar-vos-á` | 4 | accent_variant |
@@ -12254,7 +12209,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fléxiveis` | 3 | `flexiveis` | 12 | accent_variant |
 | `flôrzinha` | 3 | `florzinha` | 724 | accent_variant |
 | `fortimbras` | 3 | `fortimbrás` | 48 | unaccented |
-| `forçár` | 3 | `forçar` | 30,283 | accent_variant |
+| `forçár` | 3 | `forçar` | 30,574 | accent_variant |
 | `fotográfia` | 3 | `fotografia` | 67,777 | accent_variant |
 | `fotonico` | 3 | `fotônico` | 89 | unaccented |
 | `fotonicos` | 3 | `fotônicos` | 117 | unaccented |
@@ -12275,11 +12230,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `frédo` | 3 | `fredo` | 1,351 | accent_variant |
 | `fröbe` | 3 | `frobe` | 18 | accent_variant |
 | `fröhliche` | 3 | `frohliche` | 11 | accent_variant |
-| `fuià` | 3 | `fuia` | 16 | accent_variant |
+| `fuià` | 3 | `fuia` | 8 | accent_variant |
 | `fundicao` | 3 | `fundição` | 710 | unaccented |
 | `furgao` | 3 | `furgão` | 661 | unaccented |
 | `furugård` | 3 | `furugard` | 8 | accent_variant |
-| `furô` | 3 | `furo` | 3,489 | accent_variant |
+| `furô` | 3 | `furo` | 3,492 | accent_variant |
 | `futuristico` | 3 | `futurístico` | 35 | unaccented |
 | `futéis` | 3 | `futeis` | 11 | accent_variant |
 | `fà-io-à` | 3 | `fá-io-á` | 16 | accent_variant |
@@ -12302,12 +12257,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fénelon` | 3 | `fenelón` | 3 | accent_variant |
 | `féra` | 3 | `fera` | 3,741 | accent_variant |
 | `fériazinhas` | 3 | `feriazinhas` | 30 | accent_variant |
-| `fésta` | 3 | `festa` | 145,647 | accent_variant |
+| `fésta` | 3 | `festa` | 145,640 | accent_variant |
 | `fídias` | 3 | `fidias` | 9 | accent_variant |
 | `fíes` | 3 | `fiés` | 4 | accent_variant |
 | `fílmem` | 3 | `filmem` | 304 | accent_variant |
 | `fórums` | 3 | `forums` | 10 | accent_variant |
-| `fôdo` | 3 | `fodo` | 1,500 | accent_variant |
+| `fôdo` | 3 | `fodo` | 1,549 | accent_variant |
 | `fôfinho` | 3 | `fofinho` | 5,996 | accent_variant |
 | `fúchsias` | 3 | `fuchsias` | 4 | accent_variant |
 | `führers` | 3 | `fuhrers` | 3 | accent_variant |
@@ -12340,7 +12295,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `girafá` | 3 | `girafa` | 1,717 | accent_variant |
 | `girissíma` | 3 | `giríssima` | 127 | accent_variant |
 | `giò` | 3 | `gio` | 314 | accent_variant |
-| `gloría` | 3 | `glória` | 15,704 | accent_variant |
+| `gloría` | 3 | `glória` | 15,703 | accent_variant |
 | `gló` | 3 | `glo` | 109 | accent_variant |
 | `gostàvamos` | 3 | `gostavámos` | 5 | accent_variant |
 | `goñi` | 3 | `goni` | 4 | accent_variant |
@@ -12432,6 +12387,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `háo-de` | 3 | `hão-de` | 3,637 | accent_variant |
 | `hár` | 3 | `har` | 165 | accent_variant |
 | `hãm` | 3 | `ham` | 6,898 | accent_variant |
+| `hãâã` | 3 | `hããã` | 46 | accent_variant |
 | `héber` | 3 | `heber` | 13 | accent_variant |
 | `héliocentricidade` | 3 | `heliocentricidade` | 3 | accent_variant |
 | `héloise` | 3 | `heloise` | 93 | accent_variant |
@@ -12440,7 +12396,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `hístorias` | 3 | `histôrias` | 3 | accent_variant |
 | `hórácio` | 3 | `horácio` | 441 | accent_variant |
 | `hô-hô-hô` | 3 | `ho-ho-ho` | 108 | accent_variant |
-| `höra` | 3 | `hora` | 504,139 | accent_variant |
+| `höra` | 3 | `hora` | 504,135 | accent_variant |
 | `hă` | 3 | `hã` | 11,397 | accent_variant |
 | `iao` | 3 | `ião` | 635 | unaccented |
 | `iatrogênica` | 3 | `iatrogénica` | 3 | accent_variant |
@@ -12453,7 +12409,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `idiáis` | 3 | `idiais` | 10 | accent_variant |
 | `idéal` | 3 | `ideal` | 14,768 | accent_variant |
 | `idêntificado` | 3 | `identificado` | 602 | accent_variant |
-| `idêntificar` | 3 | `identificar` | 43,647 | accent_variant |
+| `idêntificar` | 3 | `identificar` | 43,891 | accent_variant |
 | `ievámo` | 3 | `ievamo` | 3 | accent_variant |
 | `ieão` | 3 | `ieâo` | 4 | accent_variant |
 | `iibertá` | 3 | `iiberta` | 4 | accent_variant |
@@ -12580,7 +12536,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `irônicamente` | 3 | `ironicamente` | 1,164 | accent_variant |
 | `irăo` | 3 | `irão` | 36,398 | accent_variant |
 | `issoe` | 3 | `issoé` | 60 | unaccented |
-| `issó` | 3 | `isso` | 3,438,858 | accent_variant |
+| `issó` | 3 | `isso` | 3,438,864 | accent_variant |
 | `isté` | 3 | `iste` | 68 | accent_variant |
 | `isí` | 3 | `isi` | 378 | accent_variant |
 | `isís` | 3 | `isis` | 847 | accent_variant |
@@ -12598,7 +12554,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `jacúzis` | 3 | `jacuzis` | 5 | accent_variant |
 | `jerichó` | 3 | `jericho` | 2,427 | accent_variant |
 | `jeronimo` | 3 | `jerónimo` | 432 | unaccented |
-| `jogár` | 3 | `jogar` | 142,118 | accent_variant |
+| `jogár` | 3 | `jogar` | 142,339 | accent_variant |
 | `jolín` | 3 | `jolin` | 9 | accent_variant |
 | `joquéis` | 3 | `joqueis` | 5 | accent_variant |
 | `joséph` | 3 | `joseph` | 10,607 | accent_variant |
@@ -12615,7 +12571,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `jägerbars` | 3 | `jagerbars` | 12 | accent_variant |
 | `jérsey` | 3 | `jersey` | 8,820 | accent_variant |
 | `jóckey` | 3 | `jockey` | 585 | accent_variant |
-| `jógo` | 3 | `jogo` | 188,845 | accent_variant |
+| `jógo` | 3 | `jogo` | 188,860 | accent_variant |
 | `júiz` | 3 | `juiz` | 36,121 | accent_variant |
 | `júlian` | 3 | `julian` | 8,436 | accent_variant |
 | `kazým` | 3 | `kazym` | 6 | accent_variant |
@@ -12653,7 +12609,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `levantà` | 3 | `levánta` | 11 | accent_variant |
 | `levar-me-à` | 3 | `levar-me-á` | 83 | accent_variant |
 | `levá-lá` | 3 | `leva-lá` | 9 | accent_variant |
-| `levádoa` | 3 | `levadoa` | 7 | accent_variant |
 | `levä` | 3 | `levà` | 79 | accent_variant |
 | `leâo` | 3 | `leão` | 15,737 | accent_variant |
 | `leña` | 3 | `lena` | 5,595 | accent_variant |
@@ -12699,11 +12654,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lêmingues` | 3 | `lemingues` | 92 | accent_variant |
 | `lêsbica` | 3 | `lesbica` | 38 | accent_variant |
 | `lía` | 3 | `liã` | 4 | accent_variant |
-| `líbertar` | 3 | `libertar` | 77,280 | accent_variant |
+| `líbertar` | 3 | `libertar` | 78,487 | accent_variant |
 | `líbertação` | 3 | `libertação` | 7,076 | accent_variant |
 | `líceu` | 3 | `liceu` | 22,843 | accent_variant |
 | `límicolas` | 3 | `limícolas` | 22 | accent_variant |
-| `líndo` | 3 | `lindo` | 175,264 | accent_variant |
+| `líndo` | 3 | `lindo` | 175,262 | accent_variant |
 | `líxivia` | 3 | `lixívia` | 1,616 | accent_variant |
 | `lóg` | 3 | `log` | 238 | accent_variant |
 | `lógia` | 3 | `logia` | 7 | accent_variant |
@@ -12730,7 +12685,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mamí` | 3 | `mami` | 760 | accent_variant |
 | `mandà-io` | 3 | `mandá-io` | 73 | accent_variant |
 | `mandäo` | 3 | `mandão` | 1,430 | accent_variant |
-| `mandô` | 3 | `mando` | 15,565 | accent_variant |
+| `mandô` | 3 | `mando` | 15,994 | accent_variant |
 | `manganés` | 3 | `manganês` | 103 | accent_variant |
 | `manicomios` | 3 | `manicômios` | 35 | unaccented |
 | `manipulacao` | 3 | `manipulação` | 2,414 | unaccented |
@@ -12757,7 +12712,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `matemätica` | 3 | `matemática` | 13,375 | accent_variant |
 | `matricúla` | 3 | `matrícula` | 9,712 | accent_variant |
 | `matulao` | 3 | `matulão` | 2,565 | unaccented |
-| `matâ` | 3 | `máta` | 103 | accent_variant |
+| `matâ` | 3 | `máta` | 107 | accent_variant |
 | `matéo` | 3 | `mateo` | 1,542 | accent_variant |
 | `matérial` | 3 | `material` | 32,760 | accent_variant |
 | `mauritania` | 3 | `mauritânia` | 68 | unaccented |
@@ -12815,7 +12770,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `momómito` | 3 | `momomito` | 7 | accent_variant |
 | `monsîeur` | 3 | `monsieur` | 9,988 | accent_variant |
 | `montäo` | 3 | `montão` | 1,200 | accent_variant |
-| `mordë` | 3 | `morde` | 4,744 | accent_variant |
+| `mordë` | 3 | `morde` | 4,856 | accent_variant |
 | `mostrar-te-à` | 3 | `mostrar-te-á` | 65 | accent_variant |
 | `moïse` | 3 | `moise` | 15 | accent_variant |
 | `mulher-demônio` | 3 | `mulher-demónio` | 19 | accent_variant |
@@ -12829,7 +12784,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mánager` | 3 | `manager` | 1,296 | accent_variant |
 | `máscio` | 3 | `mascio` | 3 | accent_variant |
 | `mástique` | 3 | `mastique` | 11 | accent_variant |
-| `mátaa` | 3 | `mataa` | 3,143 | accent_variant |
 | `mátamos` | 3 | `matàmos` | 11 | accent_variant |
 | `máter` | 3 | `mater` | 775 | accent_variant |
 | `mâfia` | 3 | `máfia` | 8,326 | accent_variant |
@@ -12839,8 +12793,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mãoz` | 3 | `maoz` | 8 | accent_variant |
 | `mäo-de-obra` | 3 | `mão-de-obra` | 1,209 | accent_variant |
 | `mårten` | 3 | `marten` | 30 | accent_variant |
-| `mè` | 3 | `me` | 5,793,529 | accent_variant |
-| `médi` | 3 | `medi` | 483 | accent_variant |
+| `mè` | 3 | `me` | 5,793,623 | accent_variant |
 | `médida` | 3 | `medida` | 23,940 | accent_variant |
 | `médiobanca` | 3 | `mediobanca` | 5 | accent_variant |
 | `médéric` | 3 | `mederic` | 3 | accent_variant |
@@ -12849,7 +12802,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mêtodo` | 3 | `método` | 15,303 | accent_variant |
 | `mêtro` | 3 | `metro` | 63,381 | accent_variant |
 | `mìsseis` | 3 | `misseís` | 21 | accent_variant |
-| `mímo` | 3 | `mimo` | 2,066 | accent_variant |
+| `mímo` | 3 | `mimo` | 2,074 | accent_variant |
 | `míni-avc` | 3 | `mini-avc` | 11 | accent_variant |
 | `mísia` | 3 | `misia` | 4 | accent_variant |
 | `míssão` | 3 | `missão` | 84,134 | accent_variant |
@@ -12936,7 +12889,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ocupaçâo` | 3 | `ocupação` | 3,788 | accent_variant |
 | `ocúpate` | 3 | `ocupate` | 3 | accent_variant |
 | `odià` | 3 | `odia` | 7 | accent_variant |
-| `odiár` | 3 | `odiar` | 64,281 | accent_variant |
+| `odiár` | 3 | `odiar` | 64,852 | accent_variant |
 | `odío` | 3 | `ódio` | 15,102 | accent_variant |
 | `ogün` | 3 | `ogun` | 15 | accent_variant |
 | `oiä` | 3 | `oiá` | 19 | accent_variant |
@@ -12966,7 +12919,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `otavio` | 3 | `otávio` | 169 | unaccented |
 | `otár` | 3 | `otar` | 35 | accent_variant |
 | `otávius` | 3 | `otavius` | 9 | accent_variant |
-| `oucoa` | 3 | `ouçoa` | 344 | unaccented |
 | `outravés` | 3 | `outraves` | 3 | accent_variant |
 | `ouví-ios` | 3 | `ouvi-ios` | 42 | accent_variant |
 | `ouí` | 3 | `oui` | 2,101 | accent_variant |
@@ -13008,7 +12960,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `paráquedismo` | 3 | `paraquedismo` | 120 | accent_variant |
 | `pasquà` | 3 | `pasqua` | 29 | accent_variant |
 | `passàvamos` | 3 | `passavamos` | 49 | accent_variant |
-| `passô` | 3 | `passo` | 74,041 | accent_variant |
+| `passô` | 3 | `passo` | 74,130 | accent_variant |
 | `pastél` | 3 | `pastel` | 1,271 | accent_variant |
 | `patatá` | 3 | `patata` | 6 | accent_variant |
 | `patógenios` | 3 | `patogénios` | 6 | accent_variant |
@@ -13026,14 +12978,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `penitenciäria` | 3 | `penitenciária` | 2,424 | accent_variant |
 | `pensarâo` | 3 | `pensaräo` | 4 | accent_variant |
 | `pença` | 3 | `penca` | 155 | accent_variant |
-| `penís` | 3 | `pénis` | 13,064 | accent_variant |
+| `penís` | 3 | `pénis` | 13,065 | accent_variant |
 | `pepè` | 3 | `pepe` | 1,552 | accent_variant |
 | `pequenos-almocos` | 3 | `pequenos-almoços` | 359 | unaccented |
 | `perde-io` | 3 | `perdê-io` | 42 | unaccented |
 | `perder-se-à` | 3 | `perder-se-á` | 87 | accent_variant |
 | `perder-se-äo` | 3 | `perder-se-ão` | 61 | accent_variant |
-| `perdôoa` | 3 | `perdooa` | 105 | accent_variant |
-| `perguntár` | 3 | `perguntar` | 246,286 | accent_variant |
+| `perguntár` | 3 | `perguntar` | 246,306 | accent_variant |
 | `perimêtro` | 3 | `perímetro` | 12,323 | accent_variant |
 | `perseguicäo` | 3 | `perseguição` | 9,426 | accent_variant |
 | `perspicacia` | 3 | `perspicácia` | 718 | unaccented |
@@ -13170,7 +13121,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pâ` | 3 | `pá` | 51,345 | accent_variant |
 | `pân` | 3 | `pan` | 4,983 | accent_variant |
 | `pândita` | 3 | `pandita` | 6 | accent_variant |
-| `pâra` | 3 | `para` | 7,211,920 | accent_variant |
+| `pâra` | 3 | `para` | 7,211,969 | accent_variant |
 | `pão-de-lô` | 3 | `pão-de-ló` | 174 | accent_variant |
 | `pãr` | 3 | `par` | 53,873 | accent_variant |
 | `pänico` | 3 | `pânico` | 22,327 | accent_variant |
@@ -13184,7 +13135,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pêsame` | 3 | `pésame` | 3 | accent_variant |
 | `pêssima` | 3 | `pessima` | 40 | accent_variant |
 | `pírex` | 3 | `pirex` | 7 | accent_variant |
-| `póea` | 3 | `põea` | 306 | accent_variant |
 | `póem` | 3 | `poem` | 174 | accent_variant |
 | `póg` | 3 | `pog` | 43 | accent_variant |
 | `pór-do-sol` | 3 | `pôr-do-sol` | 4,464 | accent_variant |
@@ -13199,15 +13149,15 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pömo` | 3 | `pômo` | 54 | accent_variant |
 | `pösteres` | 3 | `pôsteres` | 96 | accent_variant |
 | `pùblico` | 3 | `público` | 68,950 | accent_variant |
-| `públicar` | 3 | `publicar` | 17,574 | accent_variant |
+| `públicar` | 3 | `publicar` | 17,675 | accent_variant |
 | `pûblico` | 3 | `público` | 68,950 | accent_variant |
-| `pőe` | 3 | `poe` | 2,832 | accent_variant |
+| `pőe` | 3 | `poe` | 2,892 | accent_variant |
 | `pőem` | 3 | `poem` | 174 | accent_variant |
 | `qu'e` | 3 | `qu'é` | 212 | unaccented |
 | `quadrilatero` | 3 | `quadrilátero` | 38 | unaccented |
 | `quadrúplo` | 3 | `quádruplo` | 434 | accent_variant |
 | `quarta-féira` | 3 | `quarta-feira` | 6,315 | accent_variant |
-| `quebrár` | 3 | `quebrar` | 35,696 | accent_variant |
+| `quebrár` | 3 | `quebrar` | 35,878 | accent_variant |
 | `querés` | 3 | `querês` | 4 | accent_variant |
 | `questőes` | 3 | `questöes` | 39 | accent_variant |
 | `queê` | 3 | `queé` | 104 | accent_variant |
@@ -13223,7 +13173,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `racíocino` | 3 | `raciocíno` | 4 | accent_variant |
 | `radamés` | 3 | `radames` | 20 | accent_variant |
 | `radiografía` | 3 | `radiografia` | 2,114 | accent_variant |
-| `radíação` | 3 | `radiação` | 11,385 | accent_variant |
+| `radíação` | 3 | `radiação` | 11,386 | accent_variant |
 | `ramadán` | 3 | `ramadan` | 31 | accent_variant |
 | `rapáz` | 3 | `rapaz` | 334,522 | accent_variant |
 | `rapída` | 3 | `rapida` | 83 | accent_variant |
@@ -13284,7 +13234,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `res-do-chao` | 3 | `rés-do-chão` | 853 | unaccented |
 | `resedá` | 3 | `reseda` | 190 | accent_variant |
 | `restauraçao` | 3 | `restauração` | 1,253 | accent_variant |
-| `restítuir` | 3 | `restituir` | 1,051 | accent_variant |
+| `restítuir` | 3 | `restituir` | 1,052 | accent_variant |
 | `resístance` | 3 | `resistance` | 147 | accent_variant |
 | `retaliaçao` | 3 | `retaliação` | 2,440 | accent_variant |
 | `retaliaçäo` | 3 | `retaliação` | 2,440 | accent_variant |
@@ -13334,11 +13284,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `satâ` | 3 | `satã` | 1,022 | accent_variant |
 | `satä` | 3 | `satã` | 1,022 | accent_variant |
 | `saudaçóes` | 3 | `saudaçoes` | 18 | accent_variant |
-| `saudà` | 3 | `sauda` | 76 | accent_variant |
+| `saudà` | 3 | `sauda` | 77 | accent_variant |
 | `saudí` | 3 | `saudi` | 23 | accent_variant |
 | `sauvé` | 3 | `sauve` | 12 | accent_variant |
-| `saìda` | 3 | `saída` | 64,633 | accent_variant |
-| `saìr` | 3 | `sair` | 833,282 | accent_variant |
+| `saìda` | 3 | `saída` | 64,621 | accent_variant |
+| `saìr` | 3 | `sair` | 833,310 | accent_variant |
 | `saídinha` | 3 | `saidinha` | 18 | accent_variant |
 | `saúdável` | 3 | `saudável` | 19,187 | accent_variant |
 | `schröedinger` | 3 | `schroedinger` | 46 | accent_variant |
@@ -13417,7 +13367,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `suaili` | 3 | `suaíli` | 112 | unaccented |
 | `submergivel` | 3 | `submergível` | 108 | unaccented |
 | `submícron` | 3 | `submicron` | 3 | accent_variant |
-| `substituíua` | 3 | `substituiua` | 85 | accent_variant |
 | `substituíção` | 3 | `substituição` | 2,416 | accent_variant |
 | `substã` | 3 | `substâ` | 4 | accent_variant |
 | `substítuiram` | 3 | `substituiram` | 34 | accent_variant |
@@ -13448,13 +13397,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sãm` | 3 | `sam` | 97,309 | accent_variant |
 | `säftig` | 3 | `saftig` | 3 | accent_variant |
 | `sänger` | 3 | `sanger` | 39 | accent_variant |
-| `sè` | 3 | `se` | 6,371,522 | accent_variant |
+| `sè` | 3 | `se` | 6,371,694 | accent_variant |
 | `séder` | 3 | `seder` | 195 | accent_variant |
 | `sémem` | 3 | `sêmem` | 18 | accent_variant |
 | `sérbia` | 3 | `serbia` | 10 | accent_variant |
 | `sérir` | 3 | `serir` | 18 | accent_variant |
 | `sérvio-bòsnio` | 3 | `sérvio-bósnio` | 11 | accent_variant |
-| `séte` | 3 | `sete` | 68,805 | accent_variant |
+| `séte` | 3 | `sete` | 68,806 | accent_variant |
 | `sévres` | 3 | `sèvres` | 16 | accent_variant |
 | `sêa` | 3 | `sea` | 1,446 | accent_variant |
 | `sêm` | 3 | `sem` | 648,526 | accent_variant |
@@ -13474,7 +13423,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `súfrágio` | 3 | `sufrágio` | 225 | accent_variant |
 | `súor` | 3 | `suor` | 5,139 | accent_variant |
 | `súper-estrela` | 3 | `super-estrela` | 375 | accent_variant |
-| `sę` | 3 | `se` | 6,371,522 | accent_variant |
+| `sę` | 3 | `se` | 6,371,694 | accent_variant |
 | `ta-ta-tâ` | 3 | `ta-ta-ta` | 16 | accent_variant |
 | `ta-tâ` | 3 | `tá-tá` | 14 | accent_variant |
 | `taití` | 3 | `taiti` | 810 | accent_variant |
@@ -13569,7 +13518,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `trátas` | 3 | `tratás` | 10 | accent_variant |
 | `tráx` | 3 | `trax` | 31 | accent_variant |
 | `tráz-ma` | 3 | `traz-ma` | 294 | accent_variant |
-| `trâ` | 3 | `tra` | 122 | accent_variant |
+| `trâ` | 3 | `tra` | 121 | accent_variant |
 | `trânquilo` | 3 | `tranquilo` | 12,637 | accent_variant |
 | `trânquilos` | 3 | `tranqüilos` | 100 | accent_variant |
 | `trâns` | 3 | `trans` | 642 | accent_variant |
@@ -13622,13 +13571,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `uránio` | 3 | `urânio` | 2,460 | accent_variant |
 | `usar-te-à` | 3 | `usar-te-á` | 7 | accent_variant |
 | `usã` | 3 | `usà` | 21 | accent_variant |
-| `usó` | 3 | `uso` | 28,465 | accent_variant |
+| `usó` | 3 | `uso` | 29,045 | accent_variant |
 | `utilizacao` | 3 | `utilização` | 1,710 | unaccented |
 | `utilizaçăo` | 3 | `utilização` | 1,710 | accent_variant |
 | `uàu` | 3 | `uau` | 18,766 | accent_variant |
 | `vacafóbico` | 3 | `vacafobico` | 3 | accent_variant |
 | `vacão` | 3 | `vação` | 18 | accent_variant |
-| `vaià` | 3 | `vaia` | 205 | accent_variant |
+| `vaià` | 3 | `vaia` | 190 | accent_variant |
 | `valkíria` | 3 | `valkiria` | 4 | accent_variant |
 | `variaçöes` | 3 | `variacoes` | 3 | accent_variant |
 | `vegetaçäo` | 3 | `vegetação` | 1,183 | accent_variant |
@@ -13657,15 +13606,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vigíla` | 3 | `vigila` | 22 | accent_variant |
 | `vigílância` | 3 | `vigilância` | 22,369 | accent_variant |
 | `violaçăo` | 3 | `violação` | 15,495 | accent_variant |
-| `violáste` | 3 | `violaste` | 1,036 | accent_variant |
 | `violäo` | 3 | `violão` | 412 | accent_variant |
 | `violéncia` | 3 | `violência` | 21,741 | accent_variant |
 | `violęncia` | 3 | `violência` | 21,741 | accent_variant |
 | `virjà` | 3 | `virjá` | 8 | accent_variant |
-| `viràs` | 3 | `viras` | 1,459 | accent_variant |
+| `viràs` | 3 | `viras` | 1,460 | accent_variant |
 | `vis-á-vis` | 3 | `vis-à-vis` | 25 | accent_variant |
 | `vitreo` | 3 | `vítreo` | 152 | unaccented |
-| `vivó` | 3 | `vivo` | 235,960 | accent_variant |
+| `vivó` | 3 | `vivo` | 235,989 | accent_variant |
 | `viétname` | 3 | `vietname` | 7,585 | accent_variant |
 | `vocãš` | 3 | `voças` | 9 | accent_variant |
 | `vossê` | 3 | `vosse` | 17 | accent_variant |
@@ -13673,7 +13621,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `voulá` | 3 | `voula` | 80 | accent_variant |
 | `voupassarà` | 3 | `voupassara` | 8 | accent_variant |
 | `vulneravél` | 3 | `vulnerável` | 9,203 | accent_variant |
-| `váiá` | 3 | `vaia` | 205 | accent_variant |
+| `váiá` | 3 | `vaia` | 190 | accent_variant |
 | `válery` | 3 | `valery` | 94 | accent_variant |
 | `válquirias` | 3 | `valquirias` | 12 | accent_variant |
 | `värias` | 3 | `várias` | 35,106 | accent_variant |
@@ -13688,8 +13636,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vëem` | 3 | `véem` | 6 | accent_variant |
 | `vítebsk` | 3 | `vitebsk` | 24 | accent_variant |
 | `víti` | 3 | `viti` | 8 | accent_variant |
-| `víver` | 3 | `viver` | 311,933 | accent_variant |
-| `vômitar` | 3 | `vomitar` | 22,460 | accent_variant |
+| `víver` | 3 | `viver` | 312,036 | accent_variant |
+| `vômitar` | 3 | `vomitar` | 22,487 | accent_variant |
 | `võe` | 3 | `voê` | 23 | accent_variant |
 | `wafflebó` | 3 | `wafflebô` | 16 | accent_variant |
 | `wäre` | 3 | `ware` | 184 | accent_variant |
@@ -13743,7 +13691,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `áre` | 3 | `are` | 1,963 | accent_variant |
 | `áser` | 3 | `aser` | 19 | accent_variant |
 | `ássim` | 3 | `assim` | 877,772 | accent_variant |
-| `átaa` | 3 | `ataa` | 111 | accent_variant |
 | `áton` | 3 | `aton` | 15 | accent_variant |
 | `áté` | 3 | `até` | 905,561 | accent_variant |
 | `âhn` | 3 | `ahn` | 796 | accent_variant |
@@ -13756,19 +13703,19 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ãngelo` | 3 | `angelo` | 2,760 | accent_variant |
 | `ãnossa` | 3 | `anossa` | 23 | accent_variant |
 | `ãquiio` | 3 | `aquiio` | 3 | accent_variant |
-| `ãterra` | 3 | `aterra` | 1,530 | accent_variant |
+| `ãterra` | 3 | `aterra` | 1,534 | accent_variant |
 | `äh` | 3 | `ah` | 105,209 | accent_variant |
 | `änimo` | 3 | `ânimo` | 3,035 | accent_variant |
 | `äo` | 3 | `ao` | 1,697,487 | accent_variant |
-| `är` | 3 | `ar` | 143,202 | accent_variant |
+| `är` | 3 | `ar` | 143,210 | accent_variant |
 | `ärnas` | 3 | `arnäs` | 25 | accent_variant |
 | `åkerlund` | 3 | `akerlund` | 7 | accent_variant |
-| `åá` | 3 | `aa` | 2,203 | accent_variant |
+| `åá` | 3 | `aa` | 2,128 | accent_variant |
 | `ç'um` | 3 | `c'um` | 5,525 | accent_variant |
 | `çado` | 3 | `cado` | 48 | accent_variant |
-| `çaiar` | 3 | `caiar` | 261 | accent_variant |
+| `çaiar` | 3 | `caiar` | 263 | accent_variant |
 | `çancão` | 3 | `canção` | 38,195 | accent_variant |
-| `çaso` | 3 | `caso` | 266,877 | accent_variant |
+| `çaso` | 3 | `caso` | 266,879 | accent_variant |
 | `çertamente` | 3 | `certamente` | 33,113 | accent_variant |
 | `çhurubusco` | 3 | `churubusco` | 7 | accent_variant |
 | `çia` | 3 | `cia` | 29,277 | accent_variant |
@@ -13776,12 +13723,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `çolbert` | 3 | `colbert` | 479 | accent_variant |
 | `çombustível` | 3 | `combustível` | 16,835 | accent_variant |
 | `çongressista` | 3 | `congressista` | 7,026 | accent_variant |
-| `çonhece` | 3 | `conheçe` | 167 | accent_variant |
+| `çonhece` | 3 | `conheçe` | 178 | accent_variant |
+| `çonheco` | 3 | `conhêço` | 5 | accent_variant |
 | `çonheço` | 3 | `conhêço` | 5 | accent_variant |
 | `çonseguiste` | 3 | `conseguíste` | 5 | accent_variant |
 | `çonsidera` | 3 | `considerà` | 4 | accent_variant |
 | `çonstituição` | 3 | `constituição` | 4,478 | accent_variant |
-| `çonta` | 3 | `conta` | 252,359 | accent_variant |
+| `çonta` | 3 | `conta` | 252,536 | accent_variant |
 | `çontudo` | 3 | `contudo` | 12,486 | accent_variant |
 | `çuide` | 3 | `cuíde` | 17 | accent_variant |
 | `çãc` | 3 | `cac` | 66 | accent_variant |
@@ -13819,7 +13767,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ìtás` | 3 | `itas` | 3 | accent_variant |
 | `ícon` | 3 | `icon` | 28 | accent_variant |
 | `ídeía` | 3 | `ideia` | 341,920 | accent_variant |
-| `ídíota` | 3 | `idiota` | 161,213 | accent_variant |
+| `ídíota` | 3 | `idiota` | 161,195 | accent_variant |
 | `ígar` | 3 | `igar` | 4 | accent_variant |
 | `ílicitos` | 3 | `ilicitos` | 5 | accent_variant |
 | `ímbecil` | 3 | `imbecil` | 25,725 | accent_variant |
@@ -13841,13 +13789,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ógiva` | 3 | `ogiva` | 4,246 | accent_variant |
 | `ógre` | 3 | `ogre` | 2,915 | accent_variant |
 | `óio` | 3 | `oio` | 9 | accent_variant |
-| `ólear` | 3 | `olear` | 594 | accent_variant |
+| `ólear` | 3 | `olear` | 603 | accent_variant |
 | `óleol` | 3 | `oléol` | 4 | accent_variant |
 | `ómnia` | 3 | `omnia` | 74 | accent_variant |
 | `óohh` | 3 | `oohh` | 36 | accent_variant |
 | `óooo` | 3 | `oooo` | 47 | accent_variant |
 | `óptimal` | 3 | `optimal` | 10 | accent_variant |
-| `óra` | 3 | `ora` | 59,655 | accent_variant |
+| `óra` | 3 | `ora` | 59,653 | accent_variant |
 | `órfao` | 3 | `órfão` | 6,135 | accent_variant |
 | `órfãozinhos` | 3 | `orfãozinhos` | 7 | accent_variant |
 | `órgao` | 3 | `órgão` | 11,364 | accent_variant |
@@ -13858,17 +13806,16 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `óyeme` | 3 | `oyeme` | 3 | accent_variant |
 | `ô-ôh` | 3 | `o-oh` | 28 | accent_variant |
 | `ôculos` | 3 | `óculos` | 20,229 | accent_variant |
-| `ôra` | 3 | `ora` | 59,655 | accent_variant |
+| `ôra` | 3 | `ora` | 59,653 | accent_variant |
 | `ôôôô` | 3 | `oooo` | 47 | accent_variant |
 | `õmega` | 3 | `omega` | 1,437 | accent_variant |
 | `öpera` | 3 | `ópera` | 6,598 | accent_variant |
-| `östra` | 3 | `ostra` | 3,134 | accent_variant |
+| `östra` | 3 | `ostra` | 3,132 | accent_variant |
 | `ùltimas` | 3 | `ultímas` | 7 | accent_variant |
 | `úitima` | 3 | `ûitima` | 13 | accent_variant |
 | `únca` | 3 | `unca` | 23 | accent_variant |
 | `úníco` | 3 | `único` | 301,707 | accent_variant |
 | `aamèrica` | 2 | `aamérica` | 26 | accent_variant |
-| `abandonástea` | 2 | `abandonastea` | 102 | accent_variant |
 | `abencoar-te-á` | 2 | `abençoar-te-á` | 11 | accent_variant |
 | `abencõe` | 2 | `abencoe` | 129 | accent_variant |
 | `abençoá-lo-á` | 2 | `abençoa-lo-á` | 2 | accent_variant |
@@ -13878,14 +13825,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `abominavéis` | 2 | `abominaveis` | 2 | accent_variant |
 | `abominaçao` | 2 | `abominação` | 1,578 | accent_variant |
 | `abracão` | 2 | `abração` | 44 | accent_variant |
-| `abraçeas` | 2 | `abraceas` | 3 | accent_variant |
-| `abraçár` | 2 | `abraçar` | 17,839 | accent_variant |
+| `abraçár` | 2 | `abraçar` | 18,226 | accent_variant |
 | `abraçáva` | 2 | `abracava` | 4 | accent_variant |
 | `abraçâ` | 2 | `abraca` | 47 | accent_variant |
 | `abrir-se-à` | 2 | `abrir-se-á` | 135 | accent_variant |
-| `abré` | 2 | `ábre` | 13 | accent_variant |
+| `abré` | 2 | `ábre` | 17 | accent_variant |
 | `absorçao` | 2 | `absorção` | 517 | accent_variant |
-| `abáixo` | 2 | `abaixo` | 53,176 | accent_variant |
+| `abáixo` | 2 | `abaixo` | 53,177 | accent_variant |
 | `abélard` | 2 | `abelard` | 53 | accent_variant |
 | `abênçõe` | 2 | `abencoe` | 129 | accent_variant |
 | `abòbora` | 2 | `abóbora` | 4,116 | accent_variant |
@@ -13910,7 +13856,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `acolítar` | 2 | `acolitar` | 13 | accent_variant |
 | `acompanhar-me-äo` | 2 | `acompanhar-me-ão` | 28 | accent_variant |
 | `acompanhâ` | 2 | `acompánha` | 9 | accent_variant |
-| `acompaño` | 2 | `acompano` | 3 | accent_variant |
+| `acompaño` | 2 | `acompano` | 4 | accent_variant |
 | `aconselhá-io` | 2 | `aconselha-io` | 2 | accent_variant |
 | `acontecerä` | 2 | `acontecerà` | 2 | accent_variant |
 | `acordao` | 2 | `acórdão` | 45 | unaccented |
@@ -13943,7 +13889,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `adolêscencia` | 2 | `adolescência` | 1,768 | accent_variant |
 | `adoraçäo` | 2 | `adoração` | 1,233 | accent_variant |
 | `adoràveis` | 2 | `adoraveis` | 11 | accent_variant |
-| `adorávaa` | 2 | `adoravaa` | 321 | accent_variant |
 | `adorä` | 2 | `adorà` | 3 | accent_variant |
 | `adversärio` | 2 | `adversário` | 9,149 | accent_variant |
 | `advocacía` | 2 | `advocacia` | 1,505 | accent_variant |
@@ -13980,7 +13925,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `agênçia` | 2 | `agência` | 24,332 | accent_variant |
 | `agô` | 2 | `ago` | 154 | accent_variant |
 | `agôsto` | 2 | `agosto` | 7,528 | accent_variant |
-| `agùa` | 2 | `água` | 179,558 | accent_variant |
+| `agùa` | 2 | `água` | 179,546 | accent_variant |
 | `agúentaria` | 2 | `agüentaria` | 60 | accent_variant |
 | `agüe` | 2 | `ague` | 2 | accent_variant |
 | `aicançar` | 2 | `aicancar` | 6 | accent_variant |
@@ -14030,9 +13975,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `alumen` | 2 | `alúmen` | 31 | unaccented |
 | `aluminío` | 2 | `alumínio` | 2,540 | accent_variant |
 | `alvéolar` | 2 | `alveolar` | 29 | accent_variant |
-| `alà` | 2 | `ala` | 12,305 | accent_variant |
+| `alà` | 2 | `ala` | 12,306 | accent_variant |
 | `aláric` | 2 | `alaric` | 1,206 | accent_variant |
-| `alâ` | 2 | `ala` | 12,305 | accent_variant |
+| `alâ` | 2 | `ala` | 12,306 | accent_variant |
 | `aléatoriamente` | 2 | `aleatoriamente` | 906 | accent_variant |
 | `alélos` | 2 | `alelos` | 159 | accent_variant |
 | `alíenigenas` | 2 | `alienigenas` | 69 | accent_variant |
@@ -14104,21 +14049,21 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `anuncía` | 2 | `anúncia` | 10 | accent_variant |
 | `anzó` | 2 | `anzo` | 3 | accent_variant |
 | `anàlises` | 2 | `analíses` | 2 | accent_variant |
-| `análisar` | 2 | `analisar` | 24,814 | accent_variant |
+| `análisar` | 2 | `analisar` | 24,998 | accent_variant |
 | `anãlise` | 2 | `análise` | 21,118 | accent_variant |
 | `ané` | 2 | `ane` | 32 | accent_variant |
 | `anímal` | 2 | `animal` | 84,920 | accent_variant |
 | `anómica` | 2 | `anômica` | 3 | accent_variant |
 | `anónimato` | 2 | `anonimato` | 1,324 | accent_variant |
 | `apanha-lo-á` | 2 | `apanhá-lo-á` | 12 | accent_variant |
-| `apanhaá` | 2 | `apanhaa` | 2,534 | accent_variant |
+| `apanhaá` | 2 | `apanhaa` | 2 | accent_variant |
 | `apanhàmo-io` | 2 | `apanhámo-io` | 76 | accent_variant |
 | `apanhàvamo` | 2 | `apanhavamo` | 5 | accent_variant |
 | `apanhãmos` | 2 | `apanhàmos` | 3 | accent_variant |
 | `apanhä` | 2 | `apanhà` | 28 | accent_variant |
 | `apariçao` | 2 | `aparição` | 2,739 | accent_variant |
 | `apatico` | 2 | `apático` | 504 | unaccented |
-| `apelído` | 2 | `apelido` | 8,617 | accent_variant |
+| `apelído` | 2 | `apelido` | 8,618 | accent_variant |
 | `apendicectomía` | 2 | `apendicectomia` | 402 | accent_variant |
 | `apercebí` | 2 | `aperçebi` | 3 | accent_variant |
 | `apertao` | 2 | `apertão` | 226 | unaccented |
@@ -14142,7 +14087,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `apêlo` | 2 | `apelo` | 3,217 | accent_variant |
 | `apíce` | 2 | `ápice` | 1,254 | accent_variant |
 | `apócaliptica` | 2 | `apocaliptica` | 2 | accent_variant |
-| `apôio` | 2 | `apoio` | 39,583 | accent_variant |
+| `apôio` | 2 | `apoio` | 39,681 | accent_variant |
 | `apôr` | 2 | `apor` | 130 | accent_variant |
 | `apôsto` | 2 | `áposto` | 3 | accent_variant |
 | `aquihelicóptero` | 2 | `aquihelicoptero` | 2 | accent_variant |
@@ -14165,7 +14110,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aristócrata` | 2 | `aristocrata` | 1,210 | accent_variant |
 | `armacäo` | 2 | `armação` | 1,372 | accent_variant |
 | `armadilhômetro` | 2 | `armadilhómetro` | 13 | accent_variant |
-| `armadílha` | 2 | `armadilha` | 26,565 | accent_variant |
+| `armadílha` | 2 | `armadilha` | 26,566 | accent_variant |
 | `armaçäo` | 2 | `armação` | 1,372 | accent_variant |
 | `armonía` | 2 | `armonia` | 15 | accent_variant |
 | `armärio` | 2 | `armário` | 21,507 | accent_variant |
@@ -14174,13 +14119,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aromatico` | 2 | `aromático` | 414 | unaccented |
 | `arqueología` | 2 | `arqueologia` | 883 | accent_variant |
 | `arrajá` | 2 | `arraja` | 3 | accent_variant |
-| `arrancár` | 2 | `arrancar` | 41,594 | accent_variant |
+| `arrancár` | 2 | `arrancar` | 41,973 | accent_variant |
 | `arranha-cêus` | 2 | `arranha-céus` | 1,285 | accent_variant |
 | `arranhöes` | 2 | `arranhoes` | 6 | accent_variant |
 | `arranjarâ` | 2 | `arranjarà` | 8 | accent_variant |
 | `arranjàssemos` | 2 | `arranjassemos` | 9 | accent_variant |
 | `arranäo` | 2 | `arranão` | 3 | accent_variant |
-| `arrasà` | 2 | `arrasa` | 1,449 | accent_variant |
+| `arrasà` | 2 | `arrasa` | 1,474 | accent_variant |
 | `arrecadaçäo` | 2 | `arrecadação` | 1,598 | accent_variant |
 | `arrogãncia` | 2 | `arrogância` | 3,339 | accent_variant |
 | `arrumaçao` | 2 | `arrumação` | 712 | accent_variant |
@@ -14195,7 +14140,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aréas` | 2 | `areas` | 44 | accent_variant |
 | `ascensíon` | 2 | `ascension` | 122 | accent_variant |
 | `asegurá` | 2 | `asegura` | 4 | accent_variant |
-| `asfixiár` | 2 | `asfixiar` | 1,595 | accent_variant |
+| `asfixiár` | 2 | `asfixiar` | 1,628 | accent_variant |
 | `asiäticos` | 2 | `asiaticos` | 12 | accent_variant |
 | `asmãtico` | 2 | `asmático` | 401 | accent_variant |
 | `aspero` | 2 | `áspero` | 1,460 | unaccented |
@@ -14207,7 +14152,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `assasíno` | 2 | `assasino` | 154 | accent_variant |
 | `assimilaçäo` | 2 | `assimilação` | 269 | accent_variant |
 | `assustà-io` | 2 | `assustá-io` | 9 | accent_variant |
-| `assustár` | 2 | `assustar` | 64,923 | accent_variant |
+| `assustár` | 2 | `assustar` | 65,495 | accent_variant |
 | `assíriano` | 2 | `assiriano` | 2 | accent_variant |
 | `astrobiología` | 2 | `astrobiologia` | 9 | accent_variant |
 | `astrología` | 2 | `astrologia` | 437 | accent_variant |
@@ -14216,7 +14161,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `asuíte` | 2 | `asuite` | 2 | accent_variant |
 | `asós` | 2 | `asos` | 11 | accent_variant |
 | `atacaräo` | 2 | `atacarao` | 7 | accent_variant |
-| `atacár` | 2 | `atacar` | 107,481 | accent_variant |
+| `atacár` | 2 | `atacar` | 107,942 | accent_variant |
 | `atalo` | 2 | `átalo` | 27 | unaccented |
 | `atencöes` | 2 | `atençöes` | 13 | accent_variant |
 | `atená` | 2 | `atena` | 579 | accent_variant |
@@ -14229,10 +14174,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `atomicas` | 2 | `atômicas` | 98 | unaccented |
 | `atraccäo` | 2 | `atracçäo` | 18 | accent_variant |
 | `atracçäozinha` | 2 | `atracçãozinha` | 4 | accent_variant |
-| `atrapalhár` | 2 | `atrapalhar` | 8,118 | accent_variant |
-| `atrapá` | 2 | `atrapa` | 8 | accent_variant |
+| `atrapalhár` | 2 | `atrapalhar` | 8,123 | accent_variant |
+| `atrapá` | 2 | `atrapa` | 10 | accent_variant |
 | `atribúida` | 2 | `atribuida` | 28 | accent_variant |
-| `atríbuía` | 2 | `atribuia` | 4 | accent_variant |
+| `atríbuía` | 2 | `atribuia` | 3 | accent_variant |
 | `atêlier` | 2 | `atelier` | 532 | accent_variant |
 | `atë` | 2 | `até` | 905,561 | accent_variant |
 | `atônico` | 2 | `atónico` | 4 | accent_variant |
@@ -14265,7 +14210,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `avelâ` | 2 | `avelã` | 710 | accent_variant |
 | `aversao` | 2 | `aversão` | 978 | unaccented |
 | `aversäo` | 2 | `aversão` | 978 | accent_variant |
-| `avisár` | 2 | `avisar` | 93,431 | accent_variant |
+| `avisár` | 2 | `avisar` | 94,307 | accent_variant |
 | `avisâ` | 2 | `avísa` | 12 | accent_variant |
 | `aviónicos` | 2 | `aviônicos` | 7 | accent_variant |
 | `aviões-cisterna` | 2 | `aviöes-cisterna` | 4 | accent_variant |
@@ -14273,15 +14218,16 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `avózinho` | 2 | `avozinho` | 1,313 | accent_variant |
 | `avôzinhos` | 2 | `avózinhos` | 4 | accent_variant |
 | `awá` | 2 | `awa` | 53 | accent_variant |
-| `aà` | 2 | `aa` | 2,203 | accent_variant |
-| `açaõ` | 2 | `ação` | 70,875 | accent_variant |
+| `aà` | 2 | `aa` | 2,128 | accent_variant |
+| `açaba` | 2 | `acába` | 3 | accent_variant |
+| `açaõ` | 2 | `ação` | 70,876 | accent_variant |
 | `açcões` | 2 | `acçöes` | 22 | accent_variant |
-| `açeite` | 2 | `aceite` | 2,683 | accent_variant |
-| `açertar` | 2 | `acertar` | 44,735 | accent_variant |
+| `açeite` | 2 | `aceite` | 2,697 | accent_variant |
+| `açertar` | 2 | `acertar` | 44,757 | accent_variant |
 | `açesso` | 2 | `acesso` | 45,068 | accent_variant |
 | `açha` | 2 | `achà` | 9 | accent_variant |
 | `açonteçe` | 2 | `aconteçe` | 49 | accent_variant |
-| `açâo` | 2 | `ação` | 70,875 | accent_variant |
+| `açâo` | 2 | `ação` | 70,876 | accent_variant |
 | `açém` | 2 | `acém` | 19 | accent_variant |
 | `açôes` | 2 | `açoes` | 14 | accent_variant |
 | `aèrea` | 2 | `aerea` | 111 | accent_variant |
@@ -14305,8 +14251,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `baguá` | 2 | `bagua` | 46 | accent_variant |
 | `bailaríno` | 2 | `bailarino` | 1,478 | accent_variant |
 | `bailé` | 2 | `baile` | 28,525 | accent_variant |
-| `baixár` | 2 | `baixar` | 41,108 | accent_variant |
-| `balançe` | 2 | `balance` | 441 | accent_variant |
+| `baixár` | 2 | `baixar` | 41,317 | accent_variant |
+| `balançe` | 2 | `balance` | 444 | accent_variant |
 | `balaça` | 2 | `balaca` | 2 | accent_variant |
 | `balcâs` | 2 | `balcãs` | 497 | accent_variant |
 | `balouco` | 2 | `balouço` | 221 | unaccented |
@@ -14337,13 +14283,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `bebê-demônio` | 2 | `bébé-demónio` | 3 | accent_variant |
 | `bebêdos` | 2 | `bebedos` | 14 | accent_variant |
 | `bebêl` | 2 | `bebel` | 19 | accent_variant |
-| `bebêr` | 2 | `beber` | 184,021 | accent_variant |
+| `bebêr` | 2 | `beber` | 184,302 | accent_variant |
 | `bedoyére` | 2 | `bedoyere` | 7 | accent_variant |
-| `beijár` | 2 | `beijar` | 52,385 | accent_variant |
+| `beijár` | 2 | `beijar` | 53,785 | accent_variant |
 | `belaïd` | 2 | `belaid` | 3 | accent_variant |
 | `bemá` | 2 | `bema` | 5 | accent_variant |
 | `bencãos` | 2 | `bencaos` | 12 | accent_variant |
-| `benefíciar` | 2 | `beneficiar` | 4,915 | accent_variant |
+| `benefíciar` | 2 | `beneficiar` | 4,917 | accent_variant |
 | `benefíícios` | 2 | `benefíicios` | 9 | accent_variant |
 | `bengalô` | 2 | `bengaló` | 3 | accent_variant |
 | `benoít` | 2 | `benoit` | 308 | accent_variant |
@@ -14437,7 +14383,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `buscà-ios` | 2 | `buscá-ios` | 51 | accent_variant |
 | `busilis` | 2 | `busílis` | 128 | unaccented |
 | `bussúla` | 2 | `bússula` | 47 | accent_variant |
-| `busça` | 2 | `busca` | 34,802 | accent_variant |
+| `busça` | 2 | `busca` | 34,805 | accent_variant |
 | `buzio` | 2 | `búzio` | 194 | unaccented |
 | `buáh` | 2 | `buah` | 6 | accent_variant |
 | `bàng` | 2 | `bang` | 6,446 | accent_variant |
@@ -14478,7 +14424,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `bória` | 2 | `boria` | 19 | accent_variant |
 | `bório` | 2 | `borio` | 10 | accent_variant |
 | `bóxeres` | 2 | `boxeres` | 4 | accent_variant |
-| `bôca` | 2 | `boca` | 93,747 | accent_variant |
+| `bôca` | 2 | `boca` | 93,739 | accent_variant |
 | `bôo` | 2 | `boo` | 2,973 | accent_variant |
 | `bõckl` | 2 | `böckl` | 7 | accent_variant |
 | `börek` | 2 | `borek` | 30 | accent_variant |
@@ -14514,7 +14460,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `calistênicos` | 2 | `calisténicos` | 9 | accent_variant |
 | `calvàrio` | 2 | `calvário` | 309 | accent_variant |
 | `caläo` | 2 | `calão` | 788 | accent_variant |
-| `calçouas` | 2 | `calcouas` | 2 | accent_variant |
 | `calé` | 2 | `cále` | 28 | accent_variant |
 | `calém` | 2 | `cálem` | 12 | accent_variant |
 | `calíbre` | 2 | `calibre` | 6,561 | accent_variant |
@@ -14532,13 +14477,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `canasträo` | 2 | `canastrão` | 107 | accent_variant |
 | `cancaozinha` | 2 | `cançãozinha` | 78 | unaccented |
 | `canhamo` | 2 | `cânhamo` | 217 | unaccented |
-| `cantandoà` | 2 | `cantandoa` | 7 | accent_variant |
 | `cantaro` | 2 | `cântaro` | 432 | unaccented |
 | `cantonés` | 2 | `cantonês` | 294 | accent_variant |
 | `cantäo` | 2 | `cantão` | 158 | accent_variant |
 | `cantäridas` | 2 | `cantáridas` | 3 | accent_variant |
 | `cantävamos` | 2 | `cantavamos` | 11 | accent_variant |
-| `cantó` | 2 | `canto` | 23,378 | accent_variant |
+| `cantó` | 2 | `canto` | 23,421 | accent_variant |
 | `canula` | 2 | `cânula` | 194 | unaccented |
 | `cançã` | 2 | `cancã` | 124 | accent_variant |
 | `caníl` | 2 | `canil` | 2,057 | accent_variant |
@@ -14614,7 +14558,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `champó` | 2 | `champô` | 1,846 | accent_variant |
 | `champóo` | 2 | `champôo` | 45 | accent_variant |
 | `chamrãn` | 2 | `chamran` | 6 | accent_variant |
-| `chamár` | 2 | `chamar` | 646,156 | accent_variant |
+| `chamár` | 2 | `chamar` | 648,130 | accent_variant |
 | `chamão` | 2 | `chamao` | 2 | accent_variant |
 | `chandôn` | 2 | `chandon` | 24 | accent_variant |
 | `changé` | 2 | `change` | 301 | accent_variant |
@@ -14652,7 +14596,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `chó` | 2 | `cho` | 3,210 | accent_variant |
 | `chófer` | 2 | `chofer` | 316 | accent_variant |
 | `chólera` | 2 | `cholera` | 5 | accent_variant |
-| `chôro` | 2 | `choro` | 4,693 | accent_variant |
+| `chôro` | 2 | `choro` | 4,698 | accent_variant |
 | `cianidrico` | 2 | `cianídrico` | 29 | unaccented |
 | `ciatica` | 2 | `ciática` | 289 | unaccented |
 | `cibernéticamente` | 2 | `ciberneticamente` | 22 | accent_variant |
@@ -14685,7 +14629,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ciâtica` | 2 | `ciática` | 289 | accent_variant |
 | `ciça` | 2 | `cica` | 4 | accent_variant |
 | `ciêntificamente` | 2 | `cientificamente` | 956 | accent_variant |
-| `ciênçia` | 2 | `ciência` | 28,987 | accent_variant |
+| `ciênçia` | 2 | `ciência` | 28,983 | accent_variant |
 | `ciò` | 2 | `cio` | 1,041 | accent_variant |
 | `claraboías` | 2 | `clarabóias` | 93 | accent_variant |
 | `classificaçao` | 2 | `classificação` | 1,886 | accent_variant |
@@ -14709,13 +14653,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cocóricó` | 2 | `cocoricó` | 18 | accent_variant |
 | `cogitaçao` | 2 | `cogitação` | 120 | accent_variant |
 | `coisão` | 2 | `coisao` | 2 | accent_variant |
-| `colaça` | 2 | `colaca` | 8 | accent_variant |
+| `colaça` | 2 | `colaca` | 9 | accent_variant |
 | `coleccionaveis` | 2 | `coleccionáveis` | 135 | unaccented |
 | `coleccão` | 2 | `colecçäo` | 18 | accent_variant |
 | `colecão` | 2 | `coleção` | 11,751 | accent_variant |
 | `coleçao` | 2 | `coleção` | 11,751 | accent_variant |
 | `colhoes` | 2 | `colhões` | 1,320 | unaccented |
-| `colhêr` | 2 | `colher` | 12,216 | accent_variant |
+| `colhêr` | 2 | `colher` | 12,248 | accent_variant |
 | `colico` | 2 | `cólico` | 831 | unaccented |
 | `collète` | 2 | `collete` | 68 | accent_variant |
 | `colocaçäo` | 2 | `colocação` | 1,087 | accent_variant |
@@ -14730,6 +14674,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `combustao` | 2 | `combustão` | 1,607 | unaccented |
 | `combustâo` | 2 | `combustão` | 1,607 | accent_variant |
 | `combustäo` | 2 | `combustão` | 1,607 | accent_variant |
+| `comea` | 2 | `comeã` | 84 | unaccented |
 | `comecaräo` | 2 | `começarao` | 4 | accent_variant |
 | `comecàmos` | 2 | `comecamos` | 73 | accent_variant |
 | `comelá` | 2 | `comela` | 11 | accent_variant |
@@ -14745,11 +14690,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `comissãrio` | 2 | `comissário` | 11,780 | accent_variant |
 | `comocäo` | 2 | `comoção` | 437 | accent_variant |
 | `comoe` | 2 | `comoé` | 56 | unaccented |
-| `compañhía` | 2 | `companhia` | 64,130 | accent_variant |
+| `compañhía` | 2 | `companhia` | 64,119 | accent_variant |
 | `compañia` | 2 | `compania` | 155 | accent_variant |
 | `compensaçäo` | 2 | `compensação` | 2,568 | accent_variant |
 | `compensaçäozita` | 2 | `compensaçãozita` | 8 | accent_variant |
-| `compensár` | 2 | `compensar` | 16,519 | accent_variant |
+| `compensár` | 2 | `compensar` | 16,573 | accent_variant |
 | `composítor` | 2 | `compositor` | 2,107 | accent_variant |
 | `comprenderà` | 2 | `comprenderá` | 7 | accent_variant |
 | `compressao` | 2 | `compressão` | 1,862 | unaccented |
@@ -14764,7 +14709,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `coméd` | 2 | `comed` | 13 | accent_variant |
 | `comémo` | 2 | `comêmo` | 15 | accent_variant |
 | `comêrcio` | 2 | `comércio` | 6,454 | accent_variant |
-| `comída` | 2 | `comida` | 107,885 | accent_variant |
+| `comída` | 2 | `comida` | 107,876 | accent_variant |
 | `comódo` | 2 | `cómodo` | 2,710 | accent_variant |
 | `comôdo` | 2 | `cómodo` | 2,710 | accent_variant |
 | `comôdos` | 2 | `cômodos` | 57 | accent_variant |
@@ -14800,18 +14745,16 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `confusión` | 2 | `confusion` | 27 | accent_variant |
 | `confutatís` | 2 | `confutatis` | 33 | accent_variant |
 | `confétis` | 2 | `confetis` | 73 | accent_variant |
-| `confíar` | 2 | `confiar` | 168,396 | accent_variant |
+| `confíar` | 2 | `confiar` | 168,427 | accent_variant |
 | `confírmação` | 2 | `confirmação` | 6,391 | accent_variant |
 | `congregacao` | 2 | `congregação` | 1,795 | unaccented |
 | `conheceräo` | 2 | `conhecerao` | 4 | accent_variant |
 | `conhecé-ia` | 2 | `conhecê-ia` | 78 | accent_variant |
-| `conhecês` | 2 | `conheçes` | 135 | accent_variant |
-| `conhecì` | 2 | `conhecí` | 41 | accent_variant |
-| `conheçesa` | 2 | `conhecesa` | 134 | accent_variant |
-| `conheçeua` | 2 | `conheceua` | 369 | accent_variant |
+| `conhecês` | 2 | `conheçes` | 137 | accent_variant |
+| `conhecì` | 2 | `conhecí` | 43 | accent_variant |
 | `conheçido` | 2 | `conhecido` | 11,832 | accent_variant |
-| `conhéce` | 2 | `conheçe` | 167 | accent_variant |
-| `conhêces` | 2 | `conheçes` | 135 | accent_variant |
+| `conhéce` | 2 | `conheçe` | 178 | accent_variant |
+| `conhêces` | 2 | `conheçes` | 137 | accent_variant |
 | `conjugaçäo` | 2 | `conjugação` | 161 | accent_variant |
 | `conluí` | 2 | `conlui` | 3 | accent_variant |
 | `conluío` | 2 | `conluio` | 619 | accent_variant |
@@ -14819,7 +14762,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `connosço` | 2 | `connosco` | 98,543 | accent_variant |
 | `conotaçoes` | 2 | `conotacões` | 2 | accent_variant |
 | `consciênte` | 2 | `consciente` | 7,606 | accent_variant |
-| `conscięncia` | 2 | `consciência` | 21,612 | accent_variant |
+| `conscięncia` | 2 | `consciência` | 21,609 | accent_variant |
 | `conscêncioso` | 2 | `conscencioso` | 9 | accent_variant |
 | `conseguíram` | 2 | `conseguirãm` | 2 | accent_variant |
 | `consequençias` | 2 | `consequencias` | 136 | accent_variant |
@@ -14828,7 +14771,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `conservacão` | 2 | `conservação` | 816 | accent_variant |
 | `considerã` | 2 | `considerà` | 4 | accent_variant |
 | `consolacäo` | 2 | `consolação` | 1,338 | accent_variant |
-| `consolár` | 2 | `consolar` | 2,266 | accent_variant |
+| `consolár` | 2 | `consolar` | 2,296 | accent_variant |
 | `consonãncia` | 2 | `consonância` | 119 | accent_variant |
 | `constituicäo` | 2 | `constituição` | 4,478 | accent_variant |
 | `constituiçaõ` | 2 | `constituição` | 4,478 | accent_variant |
@@ -14858,20 +14801,20 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `contribuicäo` | 2 | `contribuição` | 3,333 | accent_variant |
 | `contribuicões` | 2 | `contribuiçöes` | 4 | accent_variant |
 | `contribuiçoes` | 2 | `contribuiçöes` | 4 | accent_variant |
-| `controlár` | 2 | `controlar` | 85,738 | accent_variant |
+| `controlár` | 2 | `controlar` | 85,894 | accent_variant |
 | `contruídas` | 2 | `contruidas` | 5 | accent_variant |
 | `contrá` | 2 | `contra` | 210,906 | accent_variant |
 | `contríbuido` | 2 | `contribuido` | 17 | accent_variant |
 | `conturbaçäo` | 2 | `conturbação` | 5 | accent_variant |
 | `contusäo` | 2 | `contusão` | 2,954 | accent_variant |
 | `contà-ios` | 2 | `contá-ios` | 3 | accent_variant |
-| `contáto` | 2 | `contato` | 6,455 | accent_variant |
+| `contáto` | 2 | `contato` | 6,456 | accent_variant |
 | `contävamos` | 2 | `contavamos` | 9 | accent_variant |
-| `contínuar` | 2 | `continuar` | 375,893 | accent_variant |
+| `contínuar` | 2 | `continuar` | 375,897 | accent_variant |
 | `convalescenca` | 2 | `convalescença` | 332 | unaccented |
-| `convencêr` | 2 | `convencer` | 54,046 | accent_variant |
+| `convencêr` | 2 | `convencer` | 55,314 | accent_variant |
 | `convencë-io` | 2 | `convencê-io` | 69 | accent_variant |
-| `convencì` | 2 | `convencí` | 9 | accent_variant |
+| `convencì` | 2 | `convencí` | 11 | accent_variant |
 | `convençöes` | 2 | `convencöes` | 3 | accent_variant |
 | `conversaçao` | 2 | `conversação` | 1,870 | accent_variant |
 | `conversaçäo` | 2 | `conversação` | 1,870 | accent_variant |
@@ -14900,7 +14843,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `correcçâo` | 2 | `correcçäo` | 7 | accent_variant |
 | `correcçöes` | 2 | `correccöes` | 3 | accent_variant |
 | `corrosao` | 2 | `corrosão` | 300 | unaccented |
-| `corrêa` | 2 | `correa` | 83 | accent_variant |
+| `corrêa` | 2 | `correa` | 74 | accent_variant |
 | `cortesa` | 2 | `cortesã` | 544 | unaccented |
 | `cortico` | 2 | `cortiço` | 115 | unaccented |
 | `cortã` | 2 | `cortà` | 6 | accent_variant |
@@ -14920,7 +14863,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `coágulação` | 2 | `coagulação` | 671 | accent_variant |
 | `coça-coça` | 2 | `coca-coca` | 2 | accent_variant |
 | `coçes` | 2 | `coces` | 144 | accent_variant |
-| `coçoa` | 2 | `cocoa` | 192 | accent_variant |
 | `craneotomía` | 2 | `craneotomia` | 4 | accent_variant |
 | `crayón` | 2 | `crayon` | 9 | accent_variant |
 | `credivél` | 2 | `credível` | 2,899 | accent_variant |
@@ -14979,7 +14921,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `càrpatos` | 2 | `cárpatos` | 144 | accent_variant |
 | `càspia` | 2 | `caspia` | 13 | accent_variant |
 | `cácio` | 2 | `cacio` | 2 | accent_variant |
-| `cálaa` | 2 | `calaa` | 125 | accent_variant |
 | `cálamus` | 2 | `calamus` | 8 | accent_variant |
 | `cámera` | 2 | `câmera` | 8,293 | accent_variant |
 | `cánion` | 2 | `cânion` | 76 | accent_variant |
@@ -14994,10 +14935,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cãmara-botão` | 2 | `câmara-botão` | 16 | accent_variant |
 | `cãncer` | 2 | `câncer` | 1,682 | accent_variant |
 | `cãozão` | 2 | `caozao` | 2 | accent_variant |
-| `cäça` | 2 | `caça` | 27,157 | accent_variant |
+| `cäça` | 2 | `caça` | 27,184 | accent_variant |
 | `cèus` | 2 | `ceus` | 177 | accent_variant |
 | `céfalo` | 2 | `cefalo` | 6 | accent_variant |
-| `cégo` | 2 | `cego` | 28,950 | accent_variant |
+| `cégo` | 2 | `cego` | 28,981 | accent_variant |
 | `célular` | 2 | `celular` | 5,305 | accent_variant |
 | `cépes` | 2 | `cepes` | 9 | accent_variant |
 | `cérebral` | 2 | `cerebral` | 14,756 | accent_variant |
@@ -15019,17 +14960,16 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cómete` | 2 | `comète` | 2 | accent_variant |
 | `cómpre` | 2 | `compré` | 2 | accent_variant |
 | `córt` | 2 | `cort` | 188 | accent_variant |
-| `córta` | 2 | `cortà` | 6 | accent_variant |
 | `côagulo` | 2 | `coágulo` | 2,377 | accent_variant |
 | `cômico-pastoral` | 2 | `cómico-pastoral` | 3 | accent_variant |
-| `côna` | 2 | `cona` | 4,299 | accent_variant |
+| `côna` | 2 | `cona` | 4,298 | accent_variant |
 | `côrtes` | 2 | `cortês` | 1,074 | accent_variant |
 | `côuro` | 2 | `couro` | 5,964 | accent_variant |
 | `cú-de-judas` | 2 | `cu-de-judas` | 3 | accent_variant |
 | `cú-mole` | 2 | `cu-mole` | 2 | accent_variant |
 | `cúbiculo` | 2 | `cubículo` | 1,537 | accent_variant |
 | `cúme` | 2 | `cume` | 3,187 | accent_variant |
-| `cúra` | 2 | `cura` | 22,665 | accent_variant |
+| `cúra` | 2 | `cura` | 22,749 | accent_variant |
 | `cús-moles` | 2 | `cus-moles` | 3 | accent_variant |
 | `cû-cû` | 2 | `cu-cu` | 148 | accent_variant |
 | `cümplices` | 2 | `cumplices` | 34 | accent_variant |
@@ -15086,11 +15026,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `deitar-se-à` | 2 | `deitar-se-á` | 20 | accent_variant |
 | `deità` | 2 | `deitä` | 3 | accent_variant |
 | `deitámo-io` | 2 | `deitamo-io` | 9 | accent_variant |
-| `deităr` | 2 | `deitar` | 79,621 | accent_variant |
+| `deităr` | 2 | `deitar` | 81,213 | accent_variant |
 | `deixàmo-io` | 2 | `deixamo-io` | 18 | accent_variant |
 | `deixá-la-ás` | 2 | `deixa-la-ás` | 3 | accent_variant |
 | `deixámo-ios` | 2 | `deixamo-ios` | 15 | accent_variant |
-| `deixávaa` | 2 | `deixavaa` | 319 | accent_variant |
 | `deja-vú` | 2 | `déjà-vu` | 99 | accent_variant |
 | `dejá-vú` | 2 | `déjà-vu` | 99 | accent_variant |
 | `delegacía` | 2 | `delegacia` | 1,483 | accent_variant |
@@ -15128,10 +15067,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `desafiiá` | 2 | `desafiia` | 2 | accent_variant |
 | `desagradávelmente` | 2 | `desagradavelmente` | 23 | accent_variant |
 | `desamassá` | 2 | `desamassa` | 3 | accent_variant |
-| `desamárra` | 2 | `desamarra` | 754 | accent_variant |
+| `desamárra` | 2 | `desamarra` | 781 | accent_variant |
 | `desaparéce` | 2 | `desapareçe` | 29 | accent_variant |
 | `descaida` | 2 | `descaída` | 29 | unaccented |
-| `descalcar` | 2 | `descalçar` | 1,384 | unaccented |
+| `descalcar` | 2 | `descalçar` | 1,396 | unaccented |
 | `descanco` | 2 | `descanço` | 130 | unaccented |
 | `descobriräo` | 2 | `descobrirao` | 2 | accent_variant |
 | `descompressao` | 2 | `descompressão` | 1,105 | unaccented |
@@ -15144,7 +15083,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `descubrí` | 2 | `descubri` | 54 | accent_variant |
 | `desembaraco` | 2 | `desembaraço` | 78 | unaccented |
 | `desercao` | 2 | `deserção` | 746 | unaccented |
-| `deserdár` | 2 | `deserdar` | 791 | accent_variant |
+| `deserdár` | 2 | `deserdar` | 810 | accent_variant |
 | `deserçao` | 2 | `deserção` | 746 | accent_variant |
 | `designaçao` | 2 | `designação` | 710 | accent_variant |
 | `desiigá-ia` | 2 | `desiigà-ia` | 4 | accent_variant |
@@ -15160,16 +15099,16 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dessecaçäo` | 2 | `dessecação` | 23 | accent_variant |
 | `destilaçao` | 2 | `destilação` | 129 | accent_variant |
 | `destrincar` | 2 | `destrinçar` | 45 | unaccented |
+| `destroçáste` | 2 | `destrocaste` | 9 | accent_variant |
 | `destrui-lo-ão` | 2 | `destruí-lo-ão` | 5 | accent_variant |
 | `destruiräo` | 2 | `destruírão` | 4 | accent_variant |
-| `destruistea` | 2 | `destruístea` | 61 | unaccented |
 | `destruiçăo` | 2 | `destruição` | 14,943 | accent_variant |
 | `destás` | 2 | `destas` | 46,144 | accent_variant |
 | `destíno` | 2 | `destino` | 60,433 | accent_variant |
 | `destói` | 2 | `destoi` | 2 | accent_variant |
 | `desvià` | 2 | `desvía` | 3 | accent_variant |
-| `desvíar` | 2 | `desviar` | 18,066 | accent_variant |
-| `desvío` | 2 | `desvio` | 5,188 | accent_variant |
+| `desvíar` | 2 | `desviar` | 18,107 | accent_variant |
+| `desvío` | 2 | `desvio` | 5,190 | accent_variant |
 | `deságüe` | 2 | `desague` | 5 | accent_variant |
 | `desçerá` | 2 | `descerà` | 3 | accent_variant |
 | `desçuipem` | 2 | `descuipem` | 8 | accent_variant |
@@ -15186,9 +15125,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `deviámo` | 2 | `deviamo` | 24 | accent_variant |
 | `deviéis` | 2 | `devieis` | 24 | accent_variant |
 | `devolvê-mo` | 2 | `devolve-mo` | 611 | accent_variant |
-| `devolvêr` | 2 | `devolver` | 56,892 | accent_variant |
+| `devolvêr` | 2 | `devolver` | 57,921 | accent_variant |
 | `devâmos` | 2 | `devámos` | 9 | accent_variant |
-| `deví` | 2 | `devi` | 301 | accent_variant |
+| `deví` | 2 | `devi` | 302 | accent_variant |
 | `dexaría` | 2 | `dexaria` | 6 | accent_variant |
 | `dezê` | 2 | `deze` | 2 | accent_variant |
 | `deíe` | 2 | `deie` | 7 | accent_variant |
@@ -15225,7 +15164,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dislipidémia` | 2 | `dislipidemia` | 5 | accent_variant |
 | `dismenorréia` | 2 | `dismenorreia` | 5 | accent_variant |
 | `disparáte` | 2 | `disparate` | 20,956 | accent_variant |
-| `disparó` | 2 | `disparo` | 12,032 | accent_variant |
+| `disparó` | 2 | `disparo` | 12,035 | accent_variant |
 | `disperdiçá` | 2 | `disperdiça` | 2 | accent_variant |
 | `disposiçâo` | 2 | `disposição` | 9,350 | accent_variant |
 | `disposiçăo` | 2 | `disposição` | 9,350 | accent_variant |
@@ -15246,7 +15185,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dizé-io` | 2 | `dizê-io` | 99 | accent_variant |
 | `dizę` | 2 | `dizë` | 5 | accent_variant |
 | `diàriamente` | 2 | `diariamente` | 3,718 | accent_variant |
-| `diá` | 2 | `dia` | 945,701 | accent_variant |
+| `diá` | 2 | `dia` | 945,693 | accent_variant |
 | `diärio` | 2 | `diário` | 23,374 | accent_variant |
 | `dié` | 2 | `die` | 960 | accent_variant |
 | `diómedes` | 2 | `diomedes` | 34 | accent_variant |
@@ -15279,7 +15218,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `duílío` | 2 | `duilio` | 20 | accent_variant |
 | `dà-lha` | 2 | `dá-lha` | 316 | accent_variant |
 | `dà-ma` | 2 | `dá-ma` | 2,385 | accent_variant |
-| `dàr` | 2 | `dar` | 1,632,629 | accent_variant |
+| `dàr` | 2 | `dar` | 1,634,277 | accent_variant |
 | `dàrio` | 2 | `dario` | 541 | accent_variant |
 | `dàselo` | 2 | `dáselo` | 8 | accent_variant |
 | `dáaa` | 2 | `daaá` | 6 | accent_variant |
@@ -15318,7 +15257,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dêsse` | 2 | `desse` | 60,349 | accent_variant |
 | `dêvesse` | 2 | `devêsse` | 9 | accent_variant |
 | `dêvessemos` | 2 | `devessêmos` | 7 | accent_variant |
-| `dëa` | 2 | `dea` | 4,571 | accent_variant |
 | `dìem` | 2 | `diem` | 543 | accent_variant |
 | `dìga` | 2 | `díga` | 133 | accent_variant |
 | `dírhams` | 2 | `dirhams` | 27 | accent_variant |
@@ -15327,7 +15265,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dísponível` | 2 | `disponível` | 19,596 | accent_variant |
 | `dísposto` | 2 | `disposto` | 35,928 | accent_variant |
 | `dísseram` | 2 | `disséram` | 9 | accent_variant |
-| `díto` | 2 | `dito` | 1,573 | accent_variant |
+| `díto` | 2 | `dito` | 1,574 | accent_variant |
 | `dòbermans` | 2 | `dobermans` | 72 | accent_variant |
 | `dóbermans` | 2 | `dobermans` | 72 | accent_variant |
 | `dólores` | 2 | `dolores` | 2,332 | accent_variant |
@@ -15378,7 +15316,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `eleutério` | 2 | `eleuterio` | 45 | accent_variant |
 | `elevacao` | 2 | `elevação` | 1,597 | unaccented |
 | `elevaçao` | 2 | `elevação` | 1,597 | accent_variant |
-| `elimínaa` | 2 | `eliminaa` | 62 | accent_variant |
 | `elitaire` | 2 | `élitaire` | 36 | unaccented |
 | `elixír` | 2 | `elixir` | 1,597 | accent_variant |
 | `elleguá` | 2 | `ellegua` | 8 | accent_variant |
@@ -15394,7 +15331,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `elípse` | 2 | `elipse` | 204 | accent_variant |
 | `elíseo` | 2 | `eliseo` | 103 | accent_variant |
 | `embaraçà` | 2 | `embaraca` | 2 | accent_variant |
-| `embebedândoa` | 2 | `embebedandoa` | 2 | accent_variant |
 | `embebêdá` | 2 | `embebéda` | 4 | accent_variant |
 | `emblematico` | 2 | `emblemático` | 110 | unaccented |
 | `embriônico` | 2 | `embriónico` | 3 | accent_variant |
@@ -15403,36 +15339,35 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `emocöes` | 2 | `emoçöes` | 27 | accent_variant |
 | `empadäo` | 2 | `empadão` | 332 | accent_variant |
 | `empatía` | 2 | `empatia` | 2,078 | accent_variant |
-| `empratá` | 2 | `emprata` | 5 | accent_variant |
+| `empratá` | 2 | `emprata` | 6 | accent_variant |
 | `emprèstimo` | 2 | `empréstimo` | 11,211 | accent_variant |
 | `empréstado` | 2 | `emprestado` | 1,551 | accent_variant |
 | `empurräozinho` | 2 | `empurrãozinho` | 623 | accent_variant |
 | `enao` | 2 | `enão` | 83 | unaccented |
-| `encantó` | 2 | `encanto` | 5,341 | accent_variant |
+| `encantó` | 2 | `encanto` | 5,342 | accent_variant |
 | `encenaçao` | 2 | `encenação` | 1,918 | accent_variant |
 | `encontará` | 2 | `encontara` | 5 | accent_variant |
 | `encontra-ios` | 2 | `encontrá-ios` | 36 | unaccented |
 | `encontrar-nos-à` | 2 | `encontrar-nos-á` | 32 | accent_variant |
 | `encontrár-mos` | 2 | `encontrar-mos` | 525 | accent_variant |
-| `encontrástea` | 2 | `encontrastea` | 1,132 | accent_variant |
 | `encontrâmo` | 2 | `encontràmo` | 7 | accent_variant |
 | `enconträ-io` | 2 | `encontrá-io` | 216 | accent_variant |
 | `enconträo` | 2 | `encontrão` | 422 | accent_variant |
 | `encômodo` | 2 | `encomodo` | 2 | accent_variant |
 | `endoscopio` | 2 | `endoscópio` | 108 | unaccented |
 | `endôsso` | 2 | `endosso` | 152 | accent_variant |
-| `enforçar` | 2 | `enforcar` | 15,758 | accent_variant |
+| `enforçar` | 2 | `enforcar` | 15,822 | accent_variant |
 | `enfêrmo` | 2 | `enfermo` | 566 | accent_variant |
 | `enganámo-io` | 2 | `enganamo-io` | 2 | accent_variant |
-| `engenharía` | 2 | `engenharia` | 6,145 | accent_variant |
+| `engenharía` | 2 | `engenharia` | 6,141 | accent_variant |
 | `enjôs` | 2 | `enjos` | 2 | accent_variant |
-| `enriqueçer` | 2 | `enriquecer` | 3,220 | accent_variant |
+| `enriqueçer` | 2 | `enriquecer` | 3,221 | accent_variant |
 | `ensaboadéla` | 2 | `ensaboadela` | 48 | accent_variant |
 | `enterovíroses` | 2 | `enteroviroses` | 4 | accent_variant |
 | `enterrámo-io` | 2 | `enterramo-io` | 2 | accent_variant |
 | `enterrä` | 2 | `enterrà` | 6 | accent_variant |
 | `entrecôte` | 2 | `entrecote` | 3 | accent_variant |
-| `entrevistä` | 2 | `entrevista` | 25,646 | accent_variant |
+| `entrevistä` | 2 | `entrevista` | 25,652 | accent_variant |
 | `entusiasmadissimos` | 2 | `entusiasmadíssimos` | 56 | unaccented |
 | `entusiásticamente` | 2 | `entusiasticamente` | 119 | accent_variant |
 | `entãoi` | 2 | `entãoí` | 3 | accent_variant |
@@ -15462,14 +15397,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `escandá` | 2 | `escanda` | 5 | accent_variant |
 | `escarotomía` | 2 | `escarotomia` | 15 | accent_variant |
 | `escavaçäo` | 2 | `escavação` | 2,571 | accent_variant |
-| `esclareçer` | 2 | `esclarecer` | 16,062 | accent_variant |
+| `esclareçer` | 2 | `esclarecer` | 16,076 | accent_variant |
 | `escoces` | 2 | `escocês` | 5,106 | unaccented |
 | `escolióse` | 2 | `escoliose` | 224 | accent_variant |
 | `escondió` | 2 | `escondio` | 8 | accent_variant |
 | `escontrá` | 2 | `escontra` | 4 | accent_variant |
 | `escortanhá` | 2 | `escortanha` | 2 | accent_variant |
 | `escravidäo` | 2 | `escravidão` | 1,856 | accent_variant |
-| `escrevêr` | 2 | `escrever` | 177,684 | accent_variant |
+| `escrevêr` | 2 | `escrever` | 178,208 | accent_variant |
 | `escriturario` | 2 | `escriturário` | 384 | unaccented |
 | `escritóriozinho` | 2 | `escritoriozinho` | 22 | accent_variant |
 | `escrítorio` | 2 | `escritório` | 78,059 | accent_variant |
@@ -15484,10 +15419,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `esfómeado` | 2 | `esfomeado` | 5,816 | accent_variant |
 | `esmagä-io` | 2 | `esmagá-io` | 4 | accent_variant |
 | `espacíal` | 2 | `espacial` | 16,474 | accent_variant |
-| `espancár` | 2 | `espancar` | 11,679 | accent_variant |
+| `espancár` | 2 | `espancar` | 11,854 | accent_variant |
 | `espanta-coiôs` | 2 | `espanta-coiós` | 5 | accent_variant |
 | `espaçial` | 2 | `espacial` | 16,474 | accent_variant |
-| `especifícar` | 2 | `especificar` | 1,340 | accent_variant |
+| `especifícar` | 2 | `especificar` | 1,342 | accent_variant |
 | `especié` | 2 | `espécie` | 56,730 | accent_variant |
 | `espectrofotómetro` | 2 | `espectrofotômetro` | 5 | accent_variant |
 | `espectroscópia` | 2 | `espectroscopia` | 82 | accent_variant |
@@ -15498,9 +15433,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `espermê` | 2 | `esperme` | 4 | accent_variant |
 | `espertaihâo` | 2 | `espertaihão` | 6 | accent_variant |
 | `espertalhöes` | 2 | `espertalhoes` | 2 | accent_variant |
-| `esperânça` | 2 | `esperança` | 60,873 | accent_variant |
+| `esperânça` | 2 | `esperança` | 60,869 | accent_variant |
 | `espigäo` | 2 | `espigão` | 933 | accent_variant |
-| `espiár` | 2 | `espiar` | 9,926 | accent_variant |
+| `espiár` | 2 | `espiar` | 9,961 | accent_variant |
 | `espiãzinha` | 2 | `espiazinha` | 9 | accent_variant |
 | `esplênio` | 2 | `esplénio` | 2 | accent_variant |
 | `espontâniedade` | 2 | `espontaniedade` | 4 | accent_variant |
@@ -15515,7 +15450,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `espêcie` | 2 | `espécie` | 56,730 | accent_variant |
 | `espíão` | 2 | `espião` | 21,645 | accent_variant |
 | `esqueceräo` | 2 | `esquecerao` | 6 | accent_variant |
-| `esquecêr` | 2 | `esquecer` | 303,654 | accent_variant |
+| `esquecêr` | 2 | `esquecer` | 304,862 | accent_variant |
 | `esquerdá` | 2 | `esquerda` | 59,125 | accent_variant |
 | `esqueç` | 2 | `esquec` | 12 | accent_variant |
 | `esquisitoídes` | 2 | `esquisitóides` | 123 | accent_variant |
@@ -15602,7 +15537,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `experiençia` | 2 | `experiência` | 59,124 | accent_variant |
 | `experiëncia` | 2 | `experiência` | 59,124 | accent_variant |
 | `experiëncias` | 2 | `experiencias` | 226 | accent_variant |
-| `explicár` | 2 | `explicar` | 120,423 | accent_variant |
+| `explicár` | 2 | `explicar` | 120,459 | accent_variant |
 | `explicíto` | 2 | `explícito` | 1,382 | accent_variant |
 | `exploraçâo` | 2 | `exploração` | 3,559 | accent_variant |
 | `explícitamente` | 2 | `explicitamente` | 352 | accent_variant |
@@ -15610,8 +15545,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `expurgaçâo` | 2 | `expurgação` | 60 | accent_variant |
 | `expurgaçäo` | 2 | `expurgação` | 60 | accent_variant |
 | `expôem` | 2 | `expoem` | 2 | accent_variant |
-| `expôseste` | 2 | `exposeste` | 5 | accent_variant |
-| `expõr` | 2 | `expor` | 20,657 | accent_variant |
+| `expõr` | 2 | `expor` | 20,685 | accent_variant |
 | `extensivel` | 2 | `extensível` | 99 | unaccented |
 | `extorcão` | 2 | `extorção` | 93 | accent_variant |
 | `extravagâncía` | 2 | `extravagância` | 578 | accent_variant |
@@ -15621,7 +15555,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `exércido` | 2 | `exercido` | 65 | accent_variant |
 | `exérçito` | 2 | `exército` | 75,648 | accent_variant |
 | `exílado` | 2 | `exilado` | 427 | accent_variant |
-| `eís` | 2 | `eis` | 27,218 | accent_variant |
+| `eís` | 2 | `eis` | 27,219 | accent_variant |
 | `fa-lo-à` | 2 | `fá-lo-á` | 578 | accent_variant |
 | `fa-los-á` | 2 | `fá-los-á` | 29 | accent_variant |
 | `fabricaçao` | 2 | `fabricação` | 455 | accent_variant |
@@ -15661,7 +15595,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `façto` | 2 | `facto` | 98,360 | accent_variant |
 | `façó` | 2 | `fáço` | 4 | accent_variant |
 | `febríl` | 2 | `febril` | 589 | accent_variant |
-| `fecháste` | 2 | `fechaste` | 1,167 | accent_variant |
+| `fecháste` | 2 | `fechaste` | 1,185 | accent_variant |
 | `federacäo` | 2 | `federação` | 5,372 | accent_variant |
 | `fefé` | 2 | `fefe` | 36 | accent_variant |
 | `feijäo-verde` | 2 | `feijão-verde` | 162 | accent_variant |
@@ -15690,7 +15624,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fiancè` | 2 | `fiancé` | 6 | accent_variant |
 | `fiaçao` | 2 | `fiação` | 237 | accent_variant |
 | `ficàssemos` | 2 | `ficassemos` | 73 | accent_variant |
-| `ficár` | 2 | `ficar` | 1,633,484 | accent_variant |
+| `ficár` | 2 | `ficar` | 1,633,485 | accent_variant |
 | `fiduciario` | 2 | `fiduciário` | 617 | unaccented |
 | `figãdo` | 2 | `fígado` | 10,649 | accent_variant |
 | `fiimàmos` | 2 | `fiimámos` | 3 | accent_variant |
@@ -15733,11 +15667,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fortuné` | 2 | `fortune` | 759 | accent_variant |
 | `fortúnio` | 2 | `fortunio` | 28 | accent_variant |
 | `forçes` | 2 | `forces` | 535 | accent_variant |
-| `forçà` | 2 | `força` | 175,144 | accent_variant |
+| `forçà` | 2 | `força` | 175,227 | accent_variant |
 | `fossíl` | 2 | `fóssil` | 2,170 | accent_variant |
 | `fotogenico` | 2 | `fotogénico` | 356 | unaccented |
 | `fotografico` | 2 | `fotográfico` | 4,301 | unaccented |
-| `foçar` | 2 | `focar` | 10,147 | accent_variant |
+| `foçar` | 2 | `focar` | 10,164 | accent_variant |
 | `foçes` | 2 | `foces` | 4 | accent_variant |
 | `fracao` | 2 | `fração` | 2,322 | unaccented |
 | `franquevílle` | 2 | `franqueville` | 7 | accent_variant |
@@ -15748,7 +15682,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `freón` | 2 | `freon` | 133 | accent_variant |
 | `frisios` | 2 | `frísios` | 36 | unaccented |
 | `fritá-io` | 2 | `frita-io` | 2 | accent_variant |
-| `fritár` | 2 | `fritar` | 4,160 | accent_variant |
+| `fritár` | 2 | `fritar` | 4,193 | accent_variant |
 | `frivolo` | 2 | `frívolo` | 663 | unaccented |
 | `frustraçäo` | 2 | `frustração` | 2,524 | accent_variant |
 | `fráulein` | 2 | `fräulein` | 992 | accent_variant |
@@ -15757,9 +15691,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fríamente` | 2 | `friamente` | 219 | accent_variant |
 | `frígorífico` | 2 | `frigorífico` | 11,858 | accent_variant |
 | `frósques` | 2 | `frosques` | 462 | accent_variant |
-| `fudí` | 2 | `fudi` | 26 | accent_variant |
+| `fudí` | 2 | `fudi` | 27 | accent_variant |
 | `fugído` | 2 | `fugido` | 164 | accent_variant |
-| `fuiá` | 2 | `fuia` | 16 | accent_variant |
+| `fuiá` | 2 | `fuia` | 8 | accent_variant |
 | `fulguraçäo` | 2 | `fulguração` | 5 | accent_variant |
 | `fulígem` | 2 | `fuligem` | 535 | accent_variant |
 | `fundacöes` | 2 | `fundaçöes` | 3 | accent_variant |
@@ -15796,13 +15730,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fínalmente` | 2 | `finalmente` | 80,348 | accent_variant |
 | `fíneman` | 2 | `fineman` | 257 | accent_variant |
 | `fínger` | 2 | `finger` | 189 | accent_variant |
-| `fíngir` | 2 | `fingir` | 55,904 | accent_variant |
+| `fíngir` | 2 | `fingir` | 55,909 | accent_variant |
 | `fís` | 2 | `fis` | 37 | accent_variant |
 | `físiculturista` | 2 | `fisiculturista` | 13 | accent_variant |
 | `físsel` | 2 | `fissel` | 23 | accent_variant |
-| `fíve` | 2 | `five` | 3,346 | accent_variant |
+| `fíve` | 2 | `five` | 3,354 | accent_variant |
 | `fíxamente` | 2 | `fixamente` | 1,619 | accent_variant |
-| `fíxo` | 2 | `fixo` | 6,056 | accent_variant |
+| `fíxo` | 2 | `fixo` | 6,086 | accent_variant |
 | `fízesse` | 2 | `fizésse` | 16 | accent_variant |
 | `fíísica` | 2 | `fíisica` | 2 | accent_variant |
 | `fóco` | 2 | `foco` | 3,422 | accent_variant |
@@ -15841,7 +15775,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `garçao` | 2 | `garção` | 7 | accent_variant |
 | `gató` | 2 | `gato` | 43,008 | accent_variant |
 | `gaço` | 2 | `gaco` | 2 | accent_variant |
-| `geleía` | 2 | `geleia` | 3,220 | accent_variant |
+| `geleía` | 2 | `geleia` | 3,219 | accent_variant |
 | `geládo` | 2 | `gelado` | 25,970 | accent_variant |
 | `geméas` | 2 | `gêmeas` | 698 | accent_variant |
 | `gemêo` | 2 | `gémeo` | 17,739 | accent_variant |
@@ -15892,7 +15826,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `gronelãndia` | 2 | `gronelândia` | 466 | accent_variant |
 | `grosseirao` | 2 | `grosseirão` | 70 | unaccented |
 | `gráfíca` | 2 | `grafica` | 3 | accent_variant |
-| `gráu` | 2 | `grau` | 22,294 | accent_variant |
+| `gráu` | 2 | `grau` | 22,297 | accent_variant |
 | `grávi` | 2 | `gravi` | 3 | accent_variant |
 | `grávidez` | 2 | `gravidez` | 6,826 | accent_variant |
 | `gráça` | 2 | `graça` | 43,145 | accent_variant |
@@ -15903,12 +15837,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `grègoire` | 2 | `gregoire` | 126 | accent_variant |
 | `grégo` | 2 | `grego` | 12,619 | accent_variant |
 | `grímur` | 2 | `grimur` | 2 | accent_variant |
-| `grítar` | 2 | `gritar` | 62,407 | accent_variant |
+| `grítar` | 2 | `gritar` | 62,415 | accent_variant |
 | `grăos` | 2 | `graos` | 11 | accent_variant |
 | `guamán` | 2 | `guaman` | 7 | accent_variant |
 | `guardiäo` | 2 | `guardião` | 10,794 | accent_variant |
-| `guardár` | 2 | `guardar` | 66,517 | accent_variant |
-| `guardâ` | 2 | `guarda` | 91,821 | accent_variant |
+| `guardár` | 2 | `guardar` | 68,152 | accent_variant |
+| `guardâ` | 2 | `guarda` | 93,038 | accent_variant |
 | `guardä-io` | 2 | `guardá-io` | 38 | accent_variant |
 | `guarniçoes` | 2 | `guarnicoes` | 2 | accent_variant |
 | `guerássime` | 2 | `guérassime` | 4 | accent_variant |
@@ -15917,8 +15851,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `guinía` | 2 | `guinia` | 14 | accent_variant |
 | `guiá-lo-à` | 2 | `guiá-lo-á` | 38 | accent_variant |
 | `guiá-los-à` | 2 | `guiá-los-á` | 11 | accent_variant |
-| `guiár` | 2 | `guiar` | 26,978 | accent_variant |
-| `guiâ` | 2 | `guia` | 15,711 | accent_variant |
+| `guiár` | 2 | `guiar` | 27,018 | accent_variant |
+| `guiâ` | 2 | `guia` | 15,762 | accent_variant |
 | `gutièrres` | 2 | `gutierres` | 17 | accent_variant |
 | `guérin` | 2 | `guerin` | 122 | accent_variant |
 | `guînes` | 2 | `guines` | 14 | accent_variant |
@@ -15949,7 +15883,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `gói` | 2 | `goi` | 99 | accent_variant |
 | `górgon` | 2 | `gorgon` | 80 | accent_variant |
 | `górki` | 2 | `gorki` | 31 | accent_variant |
-| `gôta` | 2 | `gota` | 10,796 | accent_variant |
+| `gôta` | 2 | `gota` | 10,797 | accent_variant |
 | `gõsta` | 2 | `gösta` | 13 | accent_variant |
 | `göebbles` | 2 | `goebbles` | 13 | accent_variant |
 | `göll` | 2 | `goll` | 6 | accent_variant |
@@ -15970,7 +15904,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `harmóninio` | 2 | `harmonínio` | 2 | accent_variant |
 | `harmônio` | 2 | `harmónio` | 59 | accent_variant |
 | `harpía` | 2 | `harpia` | 386 | accent_variant |
-| `haràs` | 2 | `haras` | 45 | accent_variant |
+| `haràs` | 2 | `haras` | 18 | accent_variant |
 | `hassídismo` | 2 | `hassidismo` | 11 | accent_variant |
 | `hauptsturmfuhrer` | 2 | `hauptsturmführer` | 43 | unaccented |
 | `havaíi` | 2 | `havaii` | 31 | accent_variant |
@@ -16070,7 +16004,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `hérege` | 2 | `herege` | 1,705 | accent_variant |
 | `héroe` | 2 | `heroe` | 6 | accent_variant |
 | `héxagono` | 2 | `hexágono` | 98 | accent_variant |
-| `héy` | 2 | `hey` | 37,476 | accent_variant |
+| `héy` | 2 | `hey` | 37,480 | accent_variant |
 | `hípsters` | 2 | `hipsters` | 170 | accent_variant |
 | `hísteria` | 2 | `histeria` | 1,403 | accent_variant |
 | `hístóría` | 2 | `história` | 248,045 | accent_variant |
@@ -16086,7 +16020,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `i'étoile` | 2 | `i'etoile` | 6 | accent_variant |
 | `iadróes` | 2 | `iadroes` | 2 | accent_variant |
 | `iamentarás` | 2 | `iamentaràs` | 2 | accent_variant |
-| `iargá` | 2 | `iarga` | 15 | accent_variant |
+| `iargá` | 2 | `iarga` | 18 | accent_variant |
 | `iaô` | 2 | `ião` | 635 | accent_variant |
 | `iaú` | 2 | `iau` | 9 | accent_variant |
 | `icógnitos` | 2 | `icognitos` | 2 | accent_variant |
@@ -16101,12 +16035,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `idêia` | 2 | `ideia` | 341,920 | accent_variant |
 | `idênt` | 2 | `ident` | 37 | accent_variant |
 | `idêntidade` | 2 | `identidade` | 22,663 | accent_variant |
-| `ierá` | 2 | `iera` | 3 | accent_variant |
+| `ierá` | 2 | `iera` | 2 | accent_variant |
 | `ieva-io` | 2 | `ievá-io` | 119 | unaccented |
 | `ievarão` | 2 | `ievarao` | 2 | accent_variant |
 | `ignicao` | 2 | `ignição` | 3,903 | unaccented |
 | `ignicão` | 2 | `ignição` | 3,903 | accent_variant |
-| `ignorár` | 2 | `ignorar` | 31,739 | accent_variant |
+| `ignorár` | 2 | `ignorar` | 32,435 | accent_variant |
 | `ihá` | 2 | `iha` | 59 | accent_variant |
 | `iigações` | 2 | `iigaçóes` | 3 | accent_variant |
 | `iiçäo` | 2 | `iicão` | 10 | accent_variant |
@@ -16114,7 +16048,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `iliáda` | 2 | `ilíada` | 95 | accent_variant |
 | `ilusionária` | 2 | `ilusionaria` | 13 | accent_variant |
 | `ilusóriamente` | 2 | `ilusoriamente` | 23 | accent_variant |
-| `imaginár` | 2 | `imaginar` | 135,766 | accent_variant |
+| `imaginár` | 2 | `imaginar` | 136,199 | accent_variant |
 | `imaginé` | 2 | `imagíne` | 5 | accent_variant |
 | `imbátivel` | 2 | `imbatível` | 1,198 | accent_variant |
 | `imbéciles` | 2 | `imbeciles` | 6 | accent_variant |
@@ -16132,7 +16066,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `implantaçao` | 2 | `implantação` | 362 | accent_variant |
 | `implantaçăo` | 2 | `implantação` | 362 | accent_variant |
 | `implicaçao` | 2 | `implicação` | 1,555 | accent_variant |
-| `implicár` | 2 | `implicar` | 9,538 | accent_variant |
+| `implicár` | 2 | `implicar` | 9,543 | accent_variant |
 | `implosao` | 2 | `implosão` | 656 | unaccented |
 | `implosäo` | 2 | `implosão` | 656 | accent_variant |
 | `importantissímo` | 2 | `importantíssimo` | 637 | accent_variant |
@@ -16239,7 +16173,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `insectoides` | 2 | `insectóides` | 38 | unaccented |
 | `insinuacao` | 2 | `insinuação` | 1,294 | unaccented |
 | `insinuacäo` | 2 | `insinuação` | 1,294 | accent_variant |
-| `inspecçiona` | 2 | `inspecciona` | 139 | accent_variant |
+| `inspecçiona` | 2 | `inspecciona` | 143 | accent_variant |
 | `inspecçöes` | 2 | `inspeccoes` | 2 | accent_variant |
 | `instalacao` | 2 | `instalação` | 15,745 | unaccented |
 | `instalaçao` | 2 | `instalação` | 15,745 | accent_variant |
@@ -16283,7 +16217,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `invadió` | 2 | `invadio` | 2 | accent_variant |
 | `invadí` | 2 | `invádi` | 3 | accent_variant |
 | `inventorio` | 2 | `inventório` | 20 | unaccented |
-| `inventástea` | 2 | `inventastea` | 78 | accent_variant |
 | `inversao` | 2 | `inversão` | 1,402 | unaccented |
 | `investigaçaõ` | 2 | `investigação` | 48,034 | accent_variant |
 | `invetigacão` | 2 | `invetigação` | 13 | accent_variant |
@@ -16333,7 +16266,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `iàtex` | 2 | `iátex` | 4 | accent_variant |
 | `iágua` | 2 | `iagua` | 2 | accent_variant |
 | `iáno` | 2 | `iano` | 3 | accent_variant |
-| `iéia` | 2 | `ieia` | 3 | accent_variant |
+| `iéia` | 2 | `ieia` | 4 | accent_variant |
 | `iéias` | 2 | `ieias` | 2 | accent_variant |
 | `iéltsin` | 2 | `ieltsin` | 15 | accent_variant |
 | `iééé` | 2 | `ieee` | 6 | accent_variant |
@@ -16346,7 +16279,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `jeannìe` | 2 | `jeannie` | 1,942 | accent_variant |
 | `jenö` | 2 | `jeno` | 4 | accent_variant |
 | `jerusalêm` | 2 | `jerusalém` | 5,273 | accent_variant |
-| `jogô` | 2 | `jogo` | 188,845 | accent_variant |
+| `jogô` | 2 | `jogo` | 188,860 | accent_variant |
 | `jonquière` | 2 | `jonquiére` | 12 | accent_variant |
 | `jordäo` | 2 | `jordão` | 632 | accent_variant |
 | `josuè` | 2 | `josué` | 699 | accent_variant |
@@ -16430,8 +16363,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lamentavél` | 2 | `lamentável` | 2,948 | accent_variant |
 | `lamentaçôes` | 2 | `lamentaçoes` | 2 | accent_variant |
 | `lampâdas` | 2 | `lampadas` | 26 | accent_variant |
-| `largà` | 2 | `lárga` | 5 | accent_variant |
-| `lasgá` | 2 | `lasga` | 10 | accent_variant |
+| `largà` | 2 | `lárga` | 6 | accent_variant |
+| `lasgá` | 2 | `lasga` | 35 | accent_variant |
 | `latríca` | 2 | `latrica` | 3 | accent_variant |
 | `lattés` | 2 | `lattes` | 120 | accent_variant |
 | `latäo` | 2 | `latão` | 747 | accent_variant |
@@ -16455,15 +16388,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lendáriamente` | 2 | `lendariamente` | 14 | accent_variant |
 | `lençóís` | 2 | `lencóis` | 38 | accent_variant |
 | `lesäo` | 2 | `lesão` | 11,426 | accent_variant |
-| `levaá` | 2 | `levaa` | 7,313 | accent_variant |
+| `levaá` | 2 | `levaa` | 3 | accent_variant |
 | `leviôsa` | 2 | `leviosa` | 266 | accent_variant |
-| `levávaa` | 2 | `levavaa` | 305 | accent_variant |
 | `levíticus` | 2 | `leviticus` | 96 | accent_variant |
-| `leí` | 2 | `lei` | 78,654 | accent_variant |
+| `leí` | 2 | `lei` | 78,669 | accent_variant |
 | `leôes` | 2 | `leoes` | 15 | accent_variant |
 | `lgnicao` | 2 | `lgnição` | 41 | unaccented |
 | `lgnlção` | 2 | `lgnlcão` | 2 | accent_variant |
-| `lgnorá` | 2 | `lgnora` | 36 | accent_variant |
+| `lgnorá` | 2 | `lgnora` | 43 | accent_variant |
 | `lguém` | 2 | `lguem` | 2 | accent_variant |
 | `libertar-se-à` | 2 | `libertar-se-á` | 30 | accent_variant |
 | `libertä` | 2 | `libertà` | 3 | accent_variant |
@@ -16472,8 +16404,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `licitaçäo` | 2 | `licitação` | 1,471 | accent_variant |
 | `licéu` | 2 | `liceu` | 22,843 | accent_variant |
 | `lilázes` | 2 | `lilazes` | 15 | accent_variant |
-| `limpà` | 2 | `limpa` | 23,945 | accent_variant |
-| `limpár` | 2 | `limpar` | 65,091 | accent_variant |
+| `limpà` | 2 | `limpa` | 24,181 | accent_variant |
+| `limpár` | 2 | `limpar` | 65,374 | accent_variant |
 | `linguistico` | 2 | `linguístico` | 663 | unaccented |
 | `linguíça` | 2 | `linguiça` | 378 | accent_variant |
 | `lingüa` | 2 | `língua` | 38,779 | accent_variant |
@@ -16484,7 +16416,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `liquidä-io` | 2 | `liquidá-io` | 11 | accent_variant |
 | `liquéns` | 2 | `liquens` | 2 | accent_variant |
 | `liríco` | 2 | `lírico` | 281 | accent_variant |
-| `livrár` | 2 | `livrar` | 47,015 | accent_variant |
+| `livrár` | 2 | `livrar` | 47,063 | accent_variant |
 | `lixivía` | 2 | `lixívia` | 1,616 | accent_variant |
 | `liçen` | 2 | `licen` | 15 | accent_variant |
 | `liçensa` | 2 | `licensa` | 268 | accent_variant |
@@ -16499,7 +16431,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lnformaçoes` | 2 | `lnformações` | 13 | accent_variant |
 | `lnquisicäo` | 2 | `lnquisição` | 14 | accent_variant |
 | `lnstruções` | 2 | `lnstrucões` | 3 | accent_variant |
-| `lnstruí` | 2 | `lnstrui` | 2 | accent_variant |
 | `lnterrupcão` | 2 | `lnterrupção` | 4 | accent_variant |
 | `lntrodução` | 2 | `lntroducão` | 10 | accent_variant |
 | `lntuicão` | 2 | `lntuição` | 11 | accent_variant |
@@ -16535,14 +16466,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `léchon` | 2 | `lechon` | 10 | accent_variant |
 | `léozinho` | 2 | `leozinho` | 4 | accent_variant |
 | `lésbot` | 2 | `lesbot` | 3 | accent_variant |
-| `léste` | 2 | `leste` | 28,407 | accent_variant |
+| `léste` | 2 | `leste` | 28,581 | accent_variant |
 | `léti` | 2 | `leti` | 21 | accent_variant |
 | `lévesque` | 2 | `levesque` | 30 | accent_variant |
 | `lévi` | 2 | `levi` | 1,444 | accent_variant |
 | `léviathan` | 2 | `leviathan` | 453 | accent_variant |
 | `lévá` | 2 | `levà` | 79 | accent_variant |
 | `lêa` | 2 | `lea` | 774 | accent_variant |
-| `lêia` | 2 | `leia` | 8,763 | accent_variant |
 | `lênc` | 2 | `lenç` | 4 | accent_variant |
 | `lêu` | 2 | `léu` | 379 | accent_variant |
 | `lìder` | 2 | `líder` | 44,680 | accent_variant |
@@ -16564,12 +16494,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lödro` | 2 | `lodrö` | 3 | accent_variant |
 | `löwenbrau` | 2 | `lowenbrau` | 14 | accent_variant |
 | `löwenstein` | 2 | `lowenstein` | 257 | accent_variant |
-| `lúa` | 2 | `lua` | 37,091 | accent_variant |
+| `lúa` | 2 | `lua` | 37,090 | accent_variant |
 | `lúcid` | 2 | `lucid` | 11 | accent_variant |
 | `lúcidez` | 2 | `lucidez` | 585 | accent_variant |
 | `lúdus` | 2 | `ludus` | 621 | accent_variant |
 | `lúnatica` | 2 | `lunática` | 879 | accent_variant |
-| `m-a-ç` | 2 | `m-a-c` | 11 | accent_variant |
+| `lę` | 2 | `lê` | 15,795 | accent_variant |
+| `m-a-ç` | 2 | `m-a-c` | 12 | accent_variant |
 | `macada` | 2 | `maçada` | 1,165 | unaccented |
 | `macarräo` | 2 | `macarrão` | 2,746 | accent_variant |
 | `macaú` | 2 | `macau` | 930 | accent_variant |
@@ -16577,13 +16508,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `macrame` | 2 | `macramé` | 108 | unaccented |
 | `macuás` | 2 | `macuas` | 3 | accent_variant |
 | `macácar` | 2 | `macáçar` | 3 | accent_variant |
-| `macár` | 2 | `maçar` | 1,002 | accent_variant |
+| `macár` | 2 | `maçar` | 1,005 | accent_variant |
 | `macäs` | 2 | `maçäs` | 14 | accent_variant |
 | `madrígal` | 2 | `madrigal` | 274 | accent_variant |
 | `magniífica` | 2 | `magniifica` | 2 | accent_variant |
 | `magnéton` | 2 | `magneton` | 6 | accent_variant |
 | `magnóiia` | 2 | `magnoiia` | 6 | accent_variant |
-| `magía` | 2 | `magia` | 38,783 | accent_variant |
+| `magía` | 2 | `magia` | 38,782 | accent_variant |
 | `maitrê` | 2 | `maître` | 132 | accent_variant |
 | `maiusculo` | 2 | `maiúsculo` | 963 | unaccented |
 | `makélélé` | 2 | `makelele` | 12 | accent_variant |
@@ -16597,7 +16528,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mamãdrasta` | 2 | `mamadrasta` | 3 | accent_variant |
 | `mandao` | 2 | `mandão` | 1,430 | unaccented |
 | `mandámo-ios` | 2 | `mandamo-ios` | 3 | accent_variant |
-| `mandár` | 2 | `mandar` | 265,357 | accent_variant |
+| `mandár` | 2 | `mandar` | 270,465 | accent_variant |
 | `mandâ` | 2 | `mandà` | 9 | accent_variant |
 | `mandä` | 2 | `mandà` | 9 | accent_variant |
 | `manequím` | 2 | `manequim` | 1,507 | accent_variant |
@@ -16608,13 +16539,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `manifestaçao` | 2 | `manifestação` | 3,805 | accent_variant |
 | `mante-ios` | 2 | `mantê-ios` | 21 | unaccented |
 | `manter-se-à` | 2 | `manter-se-á` | 154 | accent_variant |
-| `manté` | 2 | `mante` | 19 | accent_variant |
+| `manté` | 2 | `mante` | 22 | accent_variant |
 | `mantém-mo` | 2 | `mantem-mo` | 3 | accent_variant |
 | `mantémo` | 2 | `mantêmo` | 77 | accent_variant |
 | `manténte` | 2 | `mantente` | 9 | accent_variant |
 | `mantê-lo-à` | 2 | `mantê-lo-á` | 55 | accent_variant |
 | `mantês` | 2 | `mantes` | 43 | accent_variant |
-| `mantía` | 2 | `mantia` | 25 | accent_variant |
+| `mantía` | 2 | `mantia` | 24 | accent_variant |
 | `manutencao` | 2 | `manutenção` | 6,870 | unaccented |
 | `maome` | 2 | `maomé` | 920 | unaccented |
 | `maquinás` | 2 | `màquinas` | 3 | accent_variant |
@@ -16638,12 +16569,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mata-ios` | 2 | `matá-ios` | 81 | unaccented |
 | `matrìcula` | 2 | `matrícula` | 9,712 | accent_variant |
 | `matvéievitch` | 2 | `matveievitch` | 2 | accent_variant |
-| `matàia` | 2 | `mataia` | 33 | accent_variant |
 | `matá-lo-à` | 2 | `matá-lo-á` | 132 | accent_variant |
 | `matálos` | 2 | `matalos` | 6 | accent_variant |
-| `matástea` | 2 | `matastea` | 2,020 | accent_variant |
 | `matásteis` | 2 | `matasteis` | 3 | accent_variant |
-| `matò` | 2 | `mato` | 30,795 | accent_variant |
+| `matò` | 2 | `mato` | 32,414 | accent_variant |
 | `maurêt` | 2 | `mauret` | 2 | accent_variant |
 | `maurílio` | 2 | `maurilio` | 5 | accent_variant |
 | `mazé` | 2 | `maze` | 433 | accent_variant |
@@ -16689,7 +16618,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mercêdes` | 2 | `mercedes` | 4,715 | accent_variant |
 | `mercúrius` | 2 | `mercurius` | 10 | accent_variant |
 | `meretríssimo` | 2 | `meretrissimo` | 3 | accent_variant |
-| `mereçea` | 2 | `merecea` | 43 | accent_variant |
 | `meritorio` | 2 | `meritório` | 246 | unaccented |
 | `merçedores` | 2 | `mercedores` | 3 | accent_variant |
 | `mesias` | 2 | `mesías` | 26 | unaccented |
@@ -16768,7 +16696,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mostá` | 2 | `mosta` | 9 | accent_variant |
 | `moteís` | 2 | `móteis` | 8 | accent_variant |
 | `motivacao` | 2 | `motivação` | 3,920 | unaccented |
-| `movêr` | 2 | `mover` | 39,174 | accent_variant |
+| `movêr` | 2 | `mover` | 39,285 | accent_variant |
 | `moïshe` | 2 | `moishe` | 113 | accent_variant |
 | `mudavámos` | 2 | `mudavamos` | 2 | accent_variant |
 | `mulheré` | 2 | `mulhere` | 16 | accent_variant |
@@ -16799,7 +16727,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `máima` | 2 | `maima` | 2 | accent_variant |
 | `máior` | 2 | `maior` | 173,115 | accent_variant |
 | `mákina` | 2 | `makina` | 2 | accent_variant |
-| `máldito` | 2 | `maldito` | 84,310 | accent_variant |
+| `máldito` | 2 | `maldito` | 84,309 | accent_variant |
 | `máquia` | 2 | `maquia` | 416 | accent_variant |
 | `máribel` | 2 | `maribel` | 184 | accent_variant |
 | `máron` | 2 | `maron` | 13 | accent_variant |
@@ -16812,7 +16740,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `máxímo` | 2 | `máximo` | 46,136 | accent_variant |
 | `mânfia` | 2 | `manfia` | 2 | accent_variant |
 | `mâquina` | 2 | `máquina` | 73,410 | accent_variant |
-| `mãa` | 2 | `maa` | 73 | accent_variant |
+| `mãa` | 2 | `maa` | 72 | accent_variant |
 | `mãee` | 2 | `mäee` | 10 | accent_variant |
 | `mãso` | 2 | `maso` | 173 | accent_variant |
 | `mäkinen` | 2 | `makinen` | 16 | accent_variant |
@@ -16821,7 +16749,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mäscara` | 2 | `máscara` | 25,014 | accent_variant |
 | `mäscaras` | 2 | `mascáras` | 6 | accent_variant |
 | `mäzinha` | 2 | `mazinha` | 487 | accent_variant |
-| `mènage` | 2 | `ménage` | 1,277 | accent_variant |
+| `mènage` | 2 | `ménage` | 1,280 | accent_variant |
 | `mènage-à-trois` | 2 | `ménage-à-trois` | 49 | accent_variant |
 | `mèng` | 2 | `meng` | 390 | accent_variant |
 | `mènière` | 2 | `ménière` | 4 | accent_variant |
@@ -16844,7 +16772,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `métel` | 2 | `metel` | 5 | accent_variant |
 | `métro` | 2 | `metro` | 63,381 | accent_variant |
 | `météo` | 2 | `meteo` | 2 | accent_variant |
-| `méu` | 2 | `meu` | 4,786,029 | accent_variant |
+| `méu` | 2 | `meu` | 4,786,026 | accent_variant |
 | `méxi` | 2 | `mexí` | 2 | accent_variant |
 | `méxicano` | 2 | `mexicano` | 13,818 | accent_variant |
 | `mêdia` | 2 | `média` | 13,063 | accent_variant |
@@ -16852,7 +16780,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mêlech` | 2 | `melech` | 10 | accent_variant |
 | `mêlée` | 2 | `melee` | 5 | accent_variant |
 | `mêo` | 2 | `meo` | 87 | accent_variant |
-| `mêta` | 2 | `meta` | 20,136 | accent_variant |
+| `mêta` | 2 | `meta` | 20,296 | accent_variant |
 | `mêtodos` | 2 | `metodos` | 59 | accent_variant |
 | `míamí` | 2 | `miami` | 17,096 | accent_variant |
 | `mílicia` | 2 | `milícia` | 3,551 | accent_variant |
@@ -16956,7 +16884,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `norá` | 2 | `nora` | 8,347 | accent_variant |
 | `nostálgicamente` | 2 | `nostalgicamente` | 2 | accent_variant |
 | `nosé` | 2 | `nose` | 147 | accent_variant |
-| `notificár` | 2 | `notificar` | 4,273 | accent_variant |
+| `notificár` | 2 | `notificar` | 4,290 | accent_variant |
 | `notorio` | 2 | `notório` | 1,093 | unaccented |
 | `notíciario` | 2 | `noticiário` | 5,403 | accent_variant |
 | `novaorleäes` | 2 | `novaorleães` | 3 | accent_variant |
@@ -16968,7 +16896,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `nuvéns` | 2 | `núvens` | 77 | accent_variant |
 | `nuít` | 2 | `nuit` | 97 | accent_variant |
 | `nàuseas` | 2 | `nauseas` | 52 | accent_variant |
-| `nádá` | 2 | `nada` | 1,264,916 | accent_variant |
+| `nádá` | 2 | `nada` | 1,264,917 | accent_variant |
 | `náldegas` | 2 | `naldegas` | 2 | accent_variant |
 | `nárcoticos` | 2 | `narcoticos` | 37 | accent_variant |
 | `nárnianos` | 2 | `narnianos` | 164 | accent_variant |
@@ -17020,7 +16948,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `nôdoas` | 2 | `nodoas` | 20 | accent_variant |
 | `númerica` | 2 | `numerica` | 9 | accent_variant |
 | `númerico` | 2 | `numérico` | 1,369 | accent_variant |
-| `obedecêr` | 2 | `obedecer` | 15,912 | accent_variant |
+| `obedecêr` | 2 | `obedecer` | 15,923 | accent_variant |
 | `obelísco` | 2 | `obelisco` | 614 | accent_variant |
 | `obergruppenfuhrer` | 2 | `obergruppenführer` | 173 | unaccented |
 | `oberón` | 2 | `oberon` | 218 | accent_variant |
@@ -17079,7 +17007,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `oracões` | 2 | `oraçoes` | 20 | accent_variant |
 | `oratoria` | 2 | `oratória` | 209 | unaccented |
 | `ordenanca` | 2 | `ordenança` | 232 | unaccented |
-| `ordeneiàs` | 2 | `ordeneias` | 5 | accent_variant |
 | `ordinäria` | 2 | `ordinaria` | 8 | accent_variant |
 | `ordinärio` | 2 | `ordinário` | 3,240 | accent_variant |
 | `orfä` | 2 | `órfã` | 1,706 | accent_variant |
@@ -17113,7 +17040,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pacìfico` | 2 | `pacífico` | 11,275 | accent_variant |
 | `padaría` | 2 | `padaria` | 2,265 | accent_variant |
 | `pagar-me-às` | 2 | `pagar-me-ás` | 13 | accent_variant |
-| `pagár` | 2 | `pagar` | 276,520 | accent_variant |
+| `pagár` | 2 | `pagar` | 276,873 | accent_variant |
 | `pagína` | 2 | `página` | 29,951 | accent_variant |
 | `paisagistico` | 2 | `paisagístico` | 125 | unaccented |
 | `paisá` | 2 | `paisa` | 113 | accent_variant |
@@ -17149,14 +17076,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `participacao` | 2 | `participação` | 3,784 | unaccented |
 | `participaçâo` | 2 | `participação` | 3,784 | accent_variant |
 | `partidario` | 2 | `partidário` | 706 | unaccented |
-| `partilhà` | 2 | `partilha` | 4,499 | accent_variant |
-| `parté` | 2 | `parte` | 330,745 | accent_variant |
+| `partilhà` | 2 | `partilha` | 4,567 | accent_variant |
+| `parté` | 2 | `parte` | 330,905 | accent_variant |
 | `partía` | 2 | `pártia` | 15 | accent_variant |
 | `parvalhôes` | 2 | `parvalhoes` | 3 | accent_variant |
 | `parvalhöes` | 2 | `parvalhoes` | 3 | accent_variant |
 | `parvonia` | 2 | `parvónia` | 131 | unaccented |
 | `parvóice` | 2 | `parvoíce` | 6,131 | accent_variant |
-| `parà` | 2 | `para` | 7,211,920 | accent_variant |
+| `parà` | 2 | `para` | 7,211,969 | accent_variant |
 | `paràmos` | 2 | `páramos` | 27 | accent_variant |
 | `paráquedas` | 2 | `paraquedas` | 771 | accent_variant |
 | `parîs` | 2 | `paris` | 37,890 | accent_variant |
@@ -17178,7 +17105,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pañuelo` | 2 | `panuelo` | 2 | accent_variant |
 | `peccátis` | 2 | `peccatis` | 18 | accent_variant |
 | `peco-to` | 2 | `peço-to` | 39 | unaccented |
-| `pecoa` | 2 | `peçoa` | 77 | unaccented |
 | `pecâs` | 2 | `pecãs` | 64 | accent_variant |
 | `pederástia` | 2 | `pederastia` | 7 | accent_variant |
 | `pedrámos` | 2 | `pedramos` | 4 | accent_variant |
@@ -17212,7 +17138,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `perfuraçäo` | 2 | `perfuração` | 2,365 | accent_variant |
 | `perigosissíma` | 2 | `perigosissima` | 2 | accent_variant |
 | `permanencia` | 2 | `permanência` | 558 | unaccented |
-| `permitír` | 2 | `permitir` | 91,319 | accent_variant |
+| `permitír` | 2 | `permitir` | 91,324 | accent_variant |
 | `permiçao` | 2 | `permição` | 34 | accent_variant |
 | `peroxido` | 2 | `peróxido` | 234 | unaccented |
 | `perpétuidade` | 2 | `perpetuidade` | 53 | accent_variant |
@@ -17250,7 +17176,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pingüin` | 2 | `pinguin` | 32 | accent_variant |
 | `pingüinês` | 2 | `pinguinês` | 29 | accent_variant |
 | `pintaínho` | 2 | `pintainho` | 371 | accent_variant |
-| `pintár` | 2 | `pintar` | 28,515 | accent_variant |
+| `pintár` | 2 | `pintar` | 28,658 | accent_variant |
 | `pinôquio` | 2 | `pinóquio` | 1,284 | accent_variant |
 | `piorío` | 2 | `piorio` | 1,142 | accent_variant |
 | `pirosônico` | 2 | `pirosónico` | 10 | accent_variant |
@@ -17258,7 +17184,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pirômano` | 2 | `pirómano` | 192 | accent_variant |
 | `pisao` | 2 | `pisão` | 21 | unaccented |
 | `pistoläo` | 2 | `pistolão` | 47 | accent_variant |
-| `pistóla` | 2 | `pistola` | 19,139 | accent_variant |
+| `pistóla` | 2 | `pistola` | 19,137 | accent_variant |
 | `piça-mole` | 2 | `pica-mole` | 2 | accent_variant |
 | `piégas` | 2 | `piegas` | 773 | accent_variant |
 | `piñeda` | 2 | `pineda` | 94 | accent_variant |
@@ -17301,7 +17227,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `porquinhos-da-india` | 2 | `porquinhos-da-índia` | 67 | unaccented |
 | `porquê-porquê` | 2 | `porque-porque` | 5 | accent_variant |
 | `porqûe` | 2 | `porque` | 1,552,691 | accent_variant |
-| `porrâ` | 2 | `porra` | 122,752 | accent_variant |
+| `porrâ` | 2 | `porra` | 122,747 | accent_variant |
 | `porta-vóz` | 2 | `porta-voz` | 2,455 | accent_variant |
 | `portâo` | 2 | `portão` | 26,857 | accent_variant |
 | `poruquê` | 2 | `poruque` | 2 | accent_variant |
@@ -17349,7 +17275,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `prendêmo-ios` | 2 | `prendemo-ios` | 2 | accent_variant |
 | `preocupaçăo` | 2 | `preocupação` | 22,811 | accent_variant |
 | `preparacao` | 2 | `preparação` | 4,892 | unaccented |
-| `preparä` | 2 | `prepára` | 23 | accent_variant |
+| `preparä` | 2 | `prepára` | 24 | accent_variant |
 | `prescriçäo` | 2 | `prescrição` | 1,099 | accent_variant |
 | `presidío` | 2 | `presídio` | 284 | accent_variant |
 | `prestidigitacão` | 2 | `prestidigitação` | 117 | accent_variant |
@@ -17359,7 +17285,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `prevençäo` | 2 | `prevenção` | 1,478 | accent_variant |
 | `previdencia` | 2 | `previdência` | 298 | unaccented |
 | `preçissamos` | 2 | `precissamos` | 13 | accent_variant |
-| `primár` | 2 | `primar` | 3,095 | accent_variant |
+| `primár` | 2 | `primar` | 3,096 | accent_variant |
 | `prioritario` | 2 | `prioritário` | 1,742 | unaccented |
 | `privaçöes` | 2 | `privaçoes` | 2 | accent_variant |
 | `privê` | 2 | `privé` | 9 | accent_variant |
@@ -17369,7 +17295,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `proclamaçao` | 2 | `proclamação` | 582 | accent_variant |
 | `procura-io` | 2 | `procurá-io` | 52 | unaccented |
 | `procurà-io` | 2 | `procurá-io` | 52 | accent_variant |
-| `procurâ` | 2 | `procura` | 162,706 | accent_variant |
+| `procurâ` | 2 | `procura` | 163,080 | accent_variant |
 | `procúras` | 2 | `procurás` | 7 | accent_variant |
 | `produçoes` | 2 | `producões` | 3 | accent_variant |
 | `produçöes` | 2 | `producões` | 3 | accent_variant |
@@ -17377,7 +17303,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `profissăo` | 2 | `profissão` | 10,042 | accent_variant |
 | `profiîssional` | 2 | `profiissional` | 20 | accent_variant |
 | `progressao` | 2 | `progressão` | 823 | unaccented |
-| `proiboa` | 2 | `proíboa` | 41 | unaccented |
 | `projecçäo` | 2 | `projecçao` | 2 | accent_variant |
 | `prolifico` | 2 | `prolífico` | 174 | unaccented |
 | `prolongaçao` | 2 | `prolongação` | 13 | accent_variant |
@@ -17386,7 +17311,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `prontuario` | 2 | `prontuário` | 135 | unaccented |
 | `pronunciacäo` | 2 | `pronunciação` | 54 | accent_variant |
 | `pronuncía` | 2 | `pronúncia` | 1,464 | accent_variant |
-| `pronúnciar` | 2 | `pronunciar` | 6,540 | accent_variant |
+| `pronúnciar` | 2 | `pronunciar` | 6,548 | accent_variant |
 | `propagaçao` | 2 | `propagação` | 576 | accent_variant |
 | `proporçoes` | 2 | `proporçöes` | 3 | accent_variant |
 | `proprietàrio` | 2 | `proprietário` | 8,780 | accent_variant |
@@ -17409,7 +17334,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `provisäo` | 2 | `provisão` | 3,880 | accent_variant |
 | `provàvel` | 2 | `provável` | 18,959 | accent_variant |
 | `provàvelmente` | 2 | `provavelmente` | 100,611 | accent_variant |
-| `provár` | 2 | `provar` | 76,119 | accent_variant |
+| `provár` | 2 | `provar` | 76,195 | accent_variant |
 | `provávelemente` | 2 | `provavelemente` | 13 | accent_variant |
 | `províncial` | 2 | `provincial` | 194 | accent_variant |
 | `prà` | 2 | `pra` | 61,194 | accent_variant |
@@ -17437,12 +17362,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `prísão` | 2 | `prisão` | 105,392 | accent_variant |
 | `prívado` | 2 | `privado` | 39,539 | accent_variant |
 | `pró-palestina` | 2 | `pro-palestina` | 2 | accent_variant |
-| `prócura` | 2 | `procura` | 162,706 | accent_variant |
-| `prócurá` | 2 | `procura` | 162,706 | accent_variant |
+| `prócura` | 2 | `procura` | 163,080 | accent_variant |
+| `prócurá` | 2 | `procura` | 163,080 | accent_variant |
 | `prócônsul` | 2 | `procônsul` | 103 | accent_variant |
 | `próp` | 2 | `prop` | 214 | accent_variant |
 | `prôconsul` | 2 | `procônsul` | 103 | accent_variant |
-| `prôpor` | 2 | `propor` | 17,146 | accent_variant |
+| `prôpor` | 2 | `propor` | 17,148 | accent_variant |
 | `pröxima` | 2 | `proxima` | 953 | accent_variant |
 | `psicanalisá` | 2 | `psicanalisa` | 2 | accent_variant |
 | `psicanälise` | 2 | `psicanálise` | 520 | accent_variant |
@@ -17487,10 +17412,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `páragrafos` | 2 | `paragrafos` | 2 | accent_variant |
 | `párapente` | 2 | `parapente` | 206 | accent_variant |
 | `párava` | 2 | `paráva` | 10 | accent_variant |
-| `páreas` | 2 | `pareas` | 4 | accent_variant |
 | `pário` | 2 | `pario` | 7 | accent_variant |
 | `párt` | 2 | `part` | 561 | accent_variant |
-| `párte` | 2 | `parte` | 330,745 | accent_variant |
+| `párte` | 2 | `parte` | 330,905 | accent_variant |
 | `párvules` | 2 | `parvules` | 16 | accent_variant |
 | `pássato` | 2 | `passato` | 5 | accent_variant |
 | `pássu` | 2 | `passu` | 13 | accent_variant |
@@ -17508,7 +17432,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pägina` | 2 | `página` | 29,951 | accent_variant |
 | `päntano` | 2 | `pântano` | 7,234 | accent_variant |
 | `päntanos` | 2 | `pantanos` | 13 | accent_variant |
-| `päraa` | 2 | `paraa` | 190 | accent_variant |
 | `päscoa` | 2 | `páscoa` | 5,478 | accent_variant |
 | `pédio` | 2 | `pedio` | 11 | accent_variant |
 | `pélas` | 2 | `pelas` | 76,788 | accent_variant |
@@ -17528,7 +17451,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pêlo-de-çamelo` | 2 | `pêlo-de-camelo` | 45 | accent_variant |
 | `pêra-doce` | 2 | `pera-doce` | 2 | accent_variant |
 | `pêrro` | 2 | `perro` | 216 | accent_variant |
-| `pí` | 2 | `pi` | 2,581 | accent_variant |
+| `pí` | 2 | `pi` | 2,582 | accent_variant |
 | `pícaço` | 2 | `picaço` | 2 | accent_variant |
 | `píetà` | 2 | `pietà` | 117 | accent_variant |
 | `píor` | 2 | `pior` | 120,177 | accent_variant |
@@ -17549,7 +17472,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pôrr` | 2 | `porr` | 54 | accent_variant |
 | `pôs-traumático` | 2 | `pós-traumático` | 1,449 | accent_variant |
 | `põ-io` | 2 | `pô-io` | 160 | accent_variant |
-| `pöea` | 2 | `põea` | 306 | accent_variant |
 | `pöquer` | 2 | `póquer` | 5,084 | accent_variant |
 | `pös` | 2 | `põs` | 35 | accent_variant |
 | `públiço` | 2 | `público` | 68,950 | accent_variant |
@@ -17568,8 +17490,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `quantoà` | 2 | `quantoa` | 7 | accent_variant |
 | `quarentao` | 2 | `quarentão` | 262 | unaccented |
 | `quedó` | 2 | `quedo` | 17 | accent_variant |
-| `queimâ` | 2 | `queima` | 6,509 | accent_variant |
-| `queimä` | 2 | `queima` | 6,509 | accent_variant |
+| `queimâ` | 2 | `queima` | 6,850 | accent_variant |
+| `queimä` | 2 | `queima` | 6,850 | accent_variant |
 | `quejà` | 2 | `quejá` | 282 | accent_variant |
 | `quem-nos-sabemos` | 2 | `quem-nós-sabemos` | 332 | unaccented |
 | `quererä` | 2 | `querera` | 10 | accent_variant |
@@ -17604,8 +17526,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `quítame` | 2 | `quitame` | 2 | accent_variant |
 | `qçal` | 2 | `qcal` | 5 | accent_variant |
 | `qõ` | 2 | `qo` | 28 | accent_variant |
-| `qùê` | 2 | `que` | 22,332,777 | accent_variant |
-| `qúe` | 2 | `que` | 22,332,777 | accent_variant |
+| `qùê` | 2 | `que` | 22,332,778 | accent_variant |
+| `qúe` | 2 | `que` | 22,332,778 | accent_variant |
 | `rabanos` | 2 | `rábanos` | 31 | unaccented |
 | `rabdomiolise` | 2 | `rabdomiólise` | 178 | unaccented |
 | `racões` | 2 | `racöes` | 6 | accent_variant |
@@ -17657,7 +17579,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `reconstrucão` | 2 | `reconstrução` | 2,731 | accent_variant |
 | `reconstrucäo` | 2 | `reconstrução` | 2,731 | accent_variant |
 | `recordacäo` | 2 | `recordação` | 12,604 | accent_variant |
-| `recupéra` | 2 | `recuperà` | 8 | accent_variant |
 | `recèm-nascido` | 2 | `recém-nascido` | 1,820 | accent_variant |
 | `recêm-descobertas` | 2 | `recém-descobertas` | 6 | accent_variant |
 | `recêm-nascido` | 2 | `recém-nascido` | 1,820 | accent_variant |
@@ -17671,7 +17592,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `reempacotá` | 2 | `reempacota` | 4 | accent_variant |
 | `reencarnaçâo` | 2 | `reencarnação` | 774 | accent_variant |
 | `reencarnaçäo` | 2 | `reencarnação` | 774 | accent_variant |
-| `referênciar` | 2 | `referenciar` | 677 | accent_variant |
+| `referênciar` | 2 | `referenciar` | 679 | accent_variant |
 | `reflexäo` | 2 | `reflexão` | 1,653 | accent_variant |
 | `reformatorio` | 2 | `reformatório` | 1,979 | unaccented |
 | `reformatôrio` | 2 | `reformatório` | 1,979 | accent_variant |
@@ -17711,8 +17632,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `resoluçao` | 2 | `resolução` | 3,852 | accent_variant |
 | `resoluçäozinha` | 2 | `resoluçãozinha` | 2 | accent_variant |
 | `respiracão` | 2 | `respiração` | 11,306 | accent_variant |
-| `respondaàs` | 2 | `respondaas` | 7 | accent_variant |
-| `respondeà` | 2 | `respondea` | 2 | accent_variant |
 | `responsá` | 2 | `responsa` | 27 | accent_variant |
 | `responsâvei` | 2 | `responsàvei` | 4 | accent_variant |
 | `respíração` | 2 | `respiração` | 11,306 | accent_variant |
@@ -17720,14 +17639,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `restauracäo` | 2 | `restauração` | 1,253 | accent_variant |
 | `restia` | 2 | `réstia` | 599 | unaccented |
 | `restituiçao` | 2 | `restituição` | 304 | accent_variant |
-| `restituír` | 2 | `restituir` | 1,051 | accent_variant |
+| `restituír` | 2 | `restituir` | 1,052 | accent_variant |
 | `restriçäo` | 2 | `restrição` | 4,505 | accent_variant |
 | `resístor` | 2 | `resistor` | 14 | accent_variant |
 | `retaliacäo` | 2 | `retaliação` | 2,440 | accent_variant |
 | `retraír` | 2 | `retrair` | 1,324 | accent_variant |
 | `retribuíção` | 2 | `retribuição` | 963 | accent_variant |
 | `retríbuido` | 2 | `retribuido` | 2 | accent_variant |
-| `retríbuir` | 2 | `retribuir` | 6,475 | accent_variant |
+| `retríbuir` | 2 | `retribuir` | 6,480 | accent_variant |
 | `retírada` | 2 | `retirada` | 7,427 | accent_variant |
 | `reunir-se-à` | 2 | `reunir-se-á` | 49 | accent_variant |
 | `reunión` | 2 | `reunion` | 63 | accent_variant |
@@ -17738,10 +17657,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `revoluçăo` | 2 | `revolução` | 11,738 | accent_variant |
 | `revoîr` | 2 | `revoir` | 1,128 | accent_variant |
 | `reálidade` | 2 | `realidade` | 44,189 | accent_variant |
-| `reçeio` | 2 | `receio` | 32,940 | accent_variant |
+| `reçeio` | 2 | `receio` | 32,942 | accent_variant |
 | `reçu` | 2 | `recu` | 9 | accent_variant |
 | `reêntrancia` | 2 | `reentrância` | 68 | accent_variant |
-| `reí` | 2 | `rei` | 131,500 | accent_variant |
+| `reí` | 2 | `rei` | 131,502 | accent_variant |
 | `reúnimo` | 2 | `reunímo` | 4 | accent_variant |
 | `rhêa-m` | 2 | `rhéa-m` | 2 | accent_variant |
 | `riazán` | 2 | `riazan` | 7 | accent_variant |
@@ -17770,7 +17689,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rothière` | 2 | `rothiere` | 2 | accent_variant |
 | `rouba-io` | 2 | `roubá-io` | 40 | unaccented |
 | `roubá-lo-äo` | 2 | `roubá-lo-ão` | 2 | accent_variant |
-| `roubô` | 2 | `roubo` | 23,581 | accent_variant |
+| `roubô` | 2 | `roubo` | 23,626 | accent_variant |
 | `ruao` | 2 | `ruão` | 106 | unaccented |
 | `rubeola` | 2 | `rubéola` | 103 | unaccented |
 | `rubicón` | 2 | `rubicon` | 167 | accent_variant |
@@ -17806,8 +17725,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `réporter` | 2 | `repórter` | 9,312 | accent_variant |
 | `résidence` | 2 | `residence` | 9 | accent_variant |
 | `rênio` | 2 | `rénio` | 2 | accent_variant |
-| `rêver` | 2 | `rever` | 20,008 | accent_variant |
-| `rêvé` | 2 | `reve` | 313 | accent_variant |
+| `rêver` | 2 | `rever` | 20,042 | accent_variant |
+| `rêvé` | 2 | `reve` | 314 | accent_variant |
 | `rídiculos` | 2 | `ridicúlos` | 2 | accent_variant |
 | `rídícula` | 2 | `ridicula` | 187 | accent_variant |
 | `róbert` | 2 | `robert` | 36,133 | accent_variant |
@@ -17854,8 +17773,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `salva-lo-á` | 2 | `salvá-lo-á` | 5 | accent_variant |
 | `salvatoré` | 2 | `salvatore` | 2,307 | accent_variant |
 | `salvaçăo` | 2 | `salvação` | 7,270 | accent_variant |
-| `salvár` | 2 | `salvar` | 217,117 | accent_variant |
-| `salvástea` | 2 | `salvastea` | 217 | accent_variant |
+| `salvár` | 2 | `salvar` | 218,607 | accent_variant |
 | `salvã` | 2 | `salvà` | 27 | accent_variant |
 | `salàrios` | 2 | `salarios` | 22 | accent_variant |
 | `salón` | 2 | `salon` | 105 | accent_variant |
@@ -17895,7 +17813,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `saíriamos` | 2 | `sairiamos` | 13 | accent_variant |
 | `saírás` | 2 | `sairas` | 3 | accent_variant |
 | `saú` | 2 | `sau` | 29 | accent_variant |
-| `saûde` | 2 | `saúde` | 46,638 | accent_variant |
+| `saûde` | 2 | `saúde` | 46,640 | accent_variant |
 | `schicklgrüber` | 2 | `schicklgruber` | 9 | accent_variant |
 | `schiró` | 2 | `schirò` | 144 | accent_variant |
 | `schlöndorff` | 2 | `schlondorff` | 4 | accent_variant |
@@ -17909,8 +17827,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `secundaría` | 2 | `secundária` | 6,423 | accent_variant |
 | `secundâria` | 2 | `secundária` | 6,423 | accent_variant |
 | `secundärio` | 2 | `secundário` | 10,926 | accent_variant |
-| `secçâo` | 2 | `secção` | 16,840 | accent_variant |
-| `secçăo` | 2 | `secção` | 16,840 | accent_variant |
+| `secçâo` | 2 | `secção` | 16,842 | accent_variant |
+| `secçăo` | 2 | `secção` | 16,842 | accent_variant |
 | `sedimentacao` | 2 | `sedimentação` | 156 | unaccented |
 | `seduçao` | 2 | `sedução` | 1,475 | accent_variant |
 | `sedán` | 2 | `sedan` | 933 | accent_variant |
@@ -17921,7 +17839,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `segurançãs` | 2 | `segurancas` | 2 | accent_variant |
 | `sei-la-o-quê` | 2 | `sei-lá-o-quê` | 36 | accent_variant |
 | `sei-là-o-quê` | 2 | `sei-lá-o-quê` | 36 | accent_variant |
-| `seiá` | 2 | `seia` | 98 | accent_variant |
+| `seiá` | 2 | `seia` | 37 | accent_variant |
 | `seleçao` | 2 | `seleção` | 4,610 | accent_variant |
 | `semantica` | 2 | `semântica` | 631 | unaccented |
 | `semi-núa` | 2 | `semi-nua` | 113 | accent_variant |
@@ -17933,6 +17851,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `senáo` | 2 | `senão` | 43,225 | accent_variant |
 | `senõra` | 2 | `señora` | 481 | accent_variant |
 | `separámonos` | 2 | `separamonos` | 2 | accent_variant |
+| `sepára` | 2 | `separà` | 4 | accent_variant |
 | `sepúltura` | 2 | `sepultura` | 6,426 | accent_variant |
 | `seqüencial` | 2 | `sequencial` | 304 | accent_variant |
 | `seqüênciamento` | 2 | `sequenciamento` | 61 | accent_variant |
@@ -17976,7 +17895,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `significaçäo` | 2 | `significação` | 27 | accent_variant |
 | `signifícado` | 2 | `significado` | 15,369 | accent_variant |
 | `silex` | 2 | `sílex` | 73 | unaccented |
-| `silênciar` | 2 | `silenciar` | 2,557 | accent_variant |
+| `silênciar` | 2 | `silenciar` | 2,585 | accent_variant |
 | `simbelmyne` | 2 | `simbelmynë` | 26 | unaccented |
 | `simbología` | 2 | `simbologia` | 128 | accent_variant |
 | `simplorio` | 2 | `simplório` | 995 | unaccented |
@@ -18035,7 +17954,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `srá` | 2 | `sra` | 129,019 | accent_variant |
 | `ssíma` | 2 | `ssima` | 3 | accent_variant |
 | `stríder` | 2 | `strider` | 579 | accent_variant |
-| `sté` | 2 | `ste` | 131 | accent_variant |
+| `sté` | 2 | `ste` | 132 | accent_variant |
 | `stén` | 2 | `sten` | 144 | accent_variant |
 | `stöcker` | 2 | `stocker` | 54 | accent_variant |
 | `stúdio` | 2 | `studio` | 663 | accent_variant |
@@ -18102,10 +18021,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `széchuan` | 2 | `szechuan` | 105 | accent_variant |
 | `sábato` | 2 | `sabato` | 8 | accent_variant |
 | `sábem` | 2 | `sabém` | 4 | accent_variant |
-| `sáco` | 2 | `saco` | 52,247 | accent_variant |
+| `sáco` | 2 | `saco` | 52,254 | accent_variant |
 | `sáddam` | 2 | `saddam` | 2,668 | accent_variant |
 | `sádicamente` | 2 | `sadicamente` | 15 | accent_variant |
-| `sáida` | 2 | `saída` | 64,633 | accent_variant |
+| `sáida` | 2 | `saída` | 64,621 | accent_variant |
 | `sáido` | 2 | `saído` | 58 | accent_variant |
 | `sálários` | 2 | `salarios` | 22 | accent_variant |
 | `sára` | 2 | `sara` | 21,869 | accent_variant |
@@ -18113,7 +18032,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sáris` | 2 | `saris` | 94 | accent_variant |
 | `sátelite` | 2 | `satélite` | 19,996 | accent_variant |
 | `sátélite` | 2 | `satélite` | 19,996 | accent_variant |
-| `sáá` | 2 | `saa` | 57 | accent_variant |
+| `sáá` | 2 | `saa` | 55 | accent_variant |
 | `sâbado` | 2 | `sábado` | 23,857 | accent_variant |
 | `sânto` | 2 | `santo` | 36,197 | accent_variant |
 | `sãi` | 2 | `sái` | 28 | accent_variant |
@@ -18121,7 +18040,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `så` | 2 | `sã` | 3,061 | accent_variant |
 | `sçarfaçe` | 2 | `scarface` | 916 | accent_variant |
 | `sébastian` | 2 | `sebastian` | 8,524 | accent_variant |
-| `séca` | 2 | `seca` | 16,871 | accent_variant |
+| `séca` | 2 | `seca` | 16,904 | accent_variant |
 | `sécu` | 2 | `secu` | 14 | accent_variant |
 | `sémiramis` | 2 | `semiramis` | 69 | accent_variant |
 | `sénioridade` | 2 | `senioridade` | 22 | accent_variant |
@@ -18131,7 +18050,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sérial` | 2 | `serial` | 1,846 | accent_variant |
 | `sésame` | 2 | `sesame` | 23 | accent_variant |
 | `séssé` | 2 | `sesse` | 5 | accent_variant |
-| `sésta` | 2 | `sesta` | 5,082 | accent_variant |
+| `sésta` | 2 | `sesta` | 5,074 | accent_variant |
 | `séve` | 2 | `seve` | 16 | accent_variant |
 | `séçuio` | 2 | `sêcuio` | 6 | accent_variant |
 | `sêr-humano` | 2 | `ser-humano` | 76 | accent_variant |
@@ -18205,8 +18124,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `te-ios` | 2 | `tê-ios` | 75 | unaccented |
 | `te-la-á` | 2 | `tê-la-á` | 116 | accent_variant |
 | `tebaída` | 2 | `tebaida` | 7 | accent_variant |
-| `tecnológia` | 2 | `tecnologia` | 28,030 | accent_variant |
-| `tecnólogia` | 2 | `tecnologia` | 28,030 | accent_variant |
+| `tecnológia` | 2 | `tecnologia` | 28,029 | accent_variant |
+| `tecnólogia` | 2 | `tecnologia` | 28,029 | accent_variant |
 | `tectonicas` | 2 | `tectônicas` | 36 | unaccented |
 | `telecinetica` | 2 | `telecinética` | 149 | unaccented |
 | `telecineticas` | 2 | `telecinéticas` | 27 | unaccented |
@@ -18235,10 +18154,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `territòrio` | 2 | `território` | 18,181 | accent_variant |
 | `territóire` | 2 | `territoire` | 7 | accent_variant |
 | `terríves` | 2 | `terrives` | 3 | accent_variant |
-| `terä` | 2 | `tera` | 411 | accent_variant |
+| `terä` | 2 | `tera` | 408 | accent_variant |
 | `teró` | 2 | `tero` | 12 | accent_variant |
 | `tessalia` | 2 | `tessália` | 119 | unaccented |
-| `testà` | 2 | `testa` | 6,923 | accent_variant |
+| `testà` | 2 | `testa` | 6,963 | accent_variant |
 | `tesália` | 2 | `tesalia` | 2 | accent_variant |
 | `tetralogía` | 2 | `tetralogia` | 47 | accent_variant |
 | `tevá` | 2 | `teva` | 8 | accent_variant |
@@ -18286,7 +18205,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `touré` | 2 | `toure` | 6 | accent_variant |
 | `tovaríshch` | 2 | `tovarishch` | 22 | accent_variant |
 | `toça` | 2 | `tóca` | 5 | accent_variant |
-| `toçar` | 2 | `tocar` | 174,340 | accent_variant |
+| `toçar` | 2 | `tocar` | 174,708 | accent_variant |
 | `trabalhàmos` | 2 | `trabalhämos` | 3 | accent_variant |
 | `trabalhámosjuntos` | 2 | `trabalhamosjuntos` | 7 | accent_variant |
 | `trabálhamos` | 2 | `trabalhämos` | 3 | accent_variant |
@@ -18298,9 +18217,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `trajetóría` | 2 | `trajetória` | 3,337 | accent_variant |
 | `trajeçtória` | 2 | `trajectoria` | 28 | accent_variant |
 | `trajéctoria` | 2 | `trajectoria` | 28 | accent_variant |
-| `tramà` | 2 | `trama` | 1,562 | accent_variant |
+| `tramà` | 2 | `trama` | 1,564 | accent_variant |
 | `tranqúilidade` | 2 | `tranquilidade` | 1,759 | accent_variant |
-| `tranqúilizar` | 2 | `tranquilizar` | 2,012 | accent_variant |
+| `tranqúilizar` | 2 | `tranquilizar` | 2,062 | accent_variant |
 | `tranqúilize` | 2 | `tranqüilize` | 73 | accent_variant |
 | `transaccöes` | 2 | `transaccões` | 2 | accent_variant |
 | `transatlántico` | 2 | `transatlântico` | 365 | accent_variant |
@@ -18309,7 +18228,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `transcriçäo` | 2 | `transcrição` | 3,773 | accent_variant |
 | `transferęncia` | 2 | `transferência` | 12,954 | accent_variant |
 | `transformacäo` | 2 | `transformação` | 4,183 | accent_variant |
-| `transformár` | 2 | `transformar` | 59,467 | accent_variant |
+| `transformár` | 2 | `transformar` | 60,314 | accent_variant |
 | `transfusäo` | 2 | `transfusão` | 1,937 | accent_variant |
 | `transgenero` | 2 | `transgénero` | 76 | unaccented |
 | `transicao` | 2 | `transição` | 3,836 | unaccented |
@@ -18370,7 +18289,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `táça` | 2 | `taça` | 10,724 | accent_variant |
 | `tèrmita` | 2 | `termita` | 17 | accent_variant |
 | `té-io` | 2 | `tê-io` | 379 | accent_variant |
-| `técnología` | 2 | `tecnologia` | 28,030 | accent_variant |
+| `técnología` | 2 | `tecnologia` | 28,029 | accent_variant |
 | `télemóveis` | 2 | `telemoveis` | 153 | accent_variant |
 | `télé-cirurgia` | 2 | `tele-cirurgia` | 2 | accent_variant |
 | `télécom` | 2 | `telecom` | 143 | accent_variant |
@@ -18465,7 +18384,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vendę` | 2 | `vênde` | 4 | accent_variant |
 | `veneràvel` | 2 | `venerável` | 471 | accent_variant |
 | `ventilacão` | 2 | `ventilação` | 4,355 | accent_variant |
-| `vençer` | 2 | `vencer` | 59,711 | accent_variant |
+| `vençer` | 2 | `vencer` | 59,769 | accent_variant |
 | `verdadeíro` | 2 | `verdadeiro` | 128,646 | accent_variant |
 | `vergès` | 2 | `verges` | 3 | accent_variant |
 | `veridico` | 2 | `verídico` | 1,870 | unaccented |
@@ -18495,9 +18414,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `violençia` | 2 | `violência` | 21,741 | accent_variant |
 | `viraté` | 2 | `virate` | 5 | accent_variant |
 | `virà` | 2 | `víra` | 4 | accent_variant |
-| `viräs` | 2 | `viras` | 1,459 | accent_variant |
-| `virăo` | 2 | `virao` | 32 | accent_variant |
-| `vistá` | 2 | `vista` | 71,937 | accent_variant |
+| `viräs` | 2 | `viras` | 1,460 | accent_variant |
+| `virăo` | 2 | `viräo` | 26 | accent_variant |
+| `vistá` | 2 | `vista` | 71,975 | accent_variant |
 | `visualizacao` | 2 | `visualização` | 1,372 | unaccented |
 | `vitaminicos` | 2 | `vitamínicos` | 41 | unaccented |
 | `vitimizá` | 2 | `vitimiza` | 5 | accent_variant |
@@ -18553,7 +18472,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `véstia` | 2 | `vestía` | 3 | accent_variant |
 | `vê-la-à` | 2 | `vê-la-á` | 31 | accent_variant |
 | `vêen` | 2 | `veen` | 10 | accent_variant |
-| `vêsa` | 2 | `vesa` | 4 | accent_variant |
 | `víbio` | 2 | `vibio` | 4 | accent_variant |
 | `vídear` | 2 | `videar` | 16 | accent_variant |
 | `vídeogame` | 2 | `videogame` | 196 | accent_variant |
@@ -18678,7 +18596,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `árve` | 2 | `arve` | 10 | accent_variant |
 | `árvorezinha` | 2 | `arvorezinha` | 66 | accent_variant |
 | `ásperamente` | 2 | `asperamente` | 22 | accent_variant |
-| `áta` | 2 | `ata` | 1,402 | accent_variant |
 | `áttica` | 2 | `attica` | 390 | accent_variant |
 | `áu` | 2 | `au` | 3,937 | accent_variant |
 | `áudiovisual` | 2 | `audiovisual` | 1,017 | accent_variant |
@@ -18694,7 +18611,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ãah` | 2 | `aah` | 3,699 | accent_variant |
 | `ãdio` | 2 | `ádio` | 3 | accent_variant |
 | `ãhh` | 2 | `ahh` | 2,493 | accent_variant |
-| `ãla` | 2 | `ala` | 12,305 | accent_variant |
+| `ãla` | 2 | `ala` | 12,306 | accent_variant |
 | `ãndale` | 2 | `andale` | 130 | accent_variant |
 | `ãnh` | 2 | `anh` | 92 | accent_variant |
 | `ãpoiícia` | 2 | `apoiícia` | 11 | accent_variant |
@@ -18720,11 +18637,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `çannoii` | 2 | `cannoii` | 9 | accent_variant |
 | `çapital` | 2 | `capital` | 12,787 | accent_variant |
 | `çaram` | 2 | `caram` | 4 | accent_variant |
-| `çarregar` | 2 | `carregar` | 57,040 | accent_variant |
+| `çarregar` | 2 | `carregar` | 57,396 | accent_variant |
 | `çarter` | 2 | `carter` | 23,349 | accent_variant |
-| `çasa` | 2 | `casa` | 955,316 | accent_variant |
+| `çasa` | 2 | `casa` | 955,313 | accent_variant |
 | `çasa-de-banho` | 2 | `casa-de-banho` | 6,232 | accent_variant |
-| `çasar` | 2 | `casar` | 118,879 | accent_variant |
+| `çasar` | 2 | `casar` | 118,898 | accent_variant |
 | `çatólica` | 2 | `catolica` | 12 | accent_variant |
 | `çavalaria` | 2 | `cavalaria` | 5,504 | accent_variant |
 | `çavalheiro` | 2 | `cavalheiro` | 43,846 | accent_variant |
@@ -18736,21 +18653,21 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `çheyne` | 2 | `cheyne` | 71 | accent_variant |
 | `çlinton` | 2 | `clinton` | 3,017 | accent_variant |
 | `çoluna` | 2 | `coluna` | 12,401 | accent_variant |
-| `çoma` | 2 | `coma` | 18,030 | accent_variant |
+| `çoma` | 2 | `coma` | 18,082 | accent_variant |
 | `çomandante` | 2 | `comandante` | 63,599 | accent_variant |
 | `çoney` | 2 | `coney` | 947 | accent_variant |
 | `çonfia` | 2 | `confía` | 69 | accent_variant |
 | `çonhecem` | 2 | `conheçem` | 24 | accent_variant |
-| `çonheco` | 2 | `conhêço` | 5 | accent_variant |
-| `çonhecê` | 2 | `conheçe` | 167 | accent_variant |
+| `çonhecê` | 2 | `conheçe` | 178 | accent_variant |
+| `çontaçto` | 2 | `contacto` | 70,297 | accent_variant |
 | `çontinuo` | 2 | `contínuo` | 4,635 | accent_variant |
-| `çontrolo` | 2 | `controlo` | 64,600 | accent_variant |
+| `çontrolo` | 2 | `controlo` | 64,644 | accent_variant |
 | `çor-de-laranja` | 2 | `cor-de-laranja` | 624 | accent_variant |
-| `çortar` | 2 | `cortar` | 120,967 | accent_variant |
+| `çortar` | 2 | `cortar` | 122,138 | accent_variant |
 | `çostumava` | 2 | `costumáva` | 6 | accent_variant |
 | `çou` | 2 | `cou` | 24 | accent_variant |
 | `çreek` | 2 | `creek` | 3,513 | accent_variant |
-| `çuida` | 2 | `cuida` | 284 | accent_variant |
+| `çuida` | 2 | `cuida` | 285 | accent_variant |
 | `çuipa` | 2 | `cuipa` | 3 | accent_variant |
 | `çã` | 2 | `cá` | 419,586 | accent_variant |
 | `èglise` | 2 | `eglise` | 7 | accent_variant |
@@ -18797,7 +18714,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `érão` | 2 | `erao` | 32 | accent_variant |
 | `és-és` | 2 | `es-es` | 2 | accent_variant |
 | `éspectaculos` | 2 | `espectaculos` | 34 | accent_variant |
-| `ést` | 2 | `est` | 2,505 | accent_variant |
+| `ést` | 2 | `est` | 2,506 | accent_variant |
 | `éstão` | 2 | `estáo` | 134 | accent_variant |
 | `ésua` | 2 | `esua` | 3 | accent_variant |
 | `étar` | 2 | `etar` | 54 | accent_variant |
@@ -18809,12 +18726,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `éxacto` | 2 | `exaçto` | 4 | accent_variant |
 | `éxodo` | 2 | `êxodo` | 980 | accent_variant |
 | `éééé` | 2 | `eeee` | 20 | accent_variant |
-| `éí` | 2 | `ei` | 170,334 | accent_variant |
+| `éí` | 2 | `ei` | 170,339 | accent_variant |
 | `êmile` | 2 | `emile` | 1,108 | accent_variant |
 | `ênc` | 2 | `enc` | 17 | accent_variant |
 | `êpoca` | 2 | `época` | 28,291 | accent_variant |
-| `êu` | 2 | `eu` | 6,282,997 | accent_variant |
-| `ì` | 2 | `i` | 42,762 | accent_variant |
+| `êu` | 2 | `eu` | 6,283,004 | accent_variant |
+| `ì` | 2 | `i` | 42,774 | accent_variant |
 | `ìa` | 2 | `iá` | 5,482 | accent_variant |
 | `ìeu` | 2 | `ieu` | 78 | accent_variant |
 | `ìsto` | 2 | `isto` | 2,064,783 | accent_variant |
@@ -18839,12 +18756,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ínspíração` | 2 | `inspiração` | 6,340 | accent_variant |
 | `íntelectualóídes` | 2 | `intelectualóides` | 12 | accent_variant |
 | `ínterior` | 2 | `interior` | 32,274 | accent_variant |
-| `ínterno` | 2 | `interno` | 24,717 | accent_variant |
+| `ínterno` | 2 | `interno` | 24,723 | accent_variant |
 | `íntérprete` | 2 | `intérprete` | 1,619 | accent_variant |
 | `ínutil` | 2 | `inútil` | 25,207 | accent_variant |
-| `íra` | 2 | `ira` | 10,981 | accent_variant |
+| `íra` | 2 | `ira` | 10,982 | accent_variant |
 | `írreconhecíveís` | 2 | `irreconheciveis` | 3 | accent_variant |
-| `írá` | 2 | `ira` | 10,981 | accent_variant |
+| `írá` | 2 | `ira` | 10,982 | accent_variant |
 | `ísca` | 2 | `isca` | 3,145 | accent_variant |
 | `íso` | 2 | `iso` | 349 | accent_variant |
 | `ítalo-irlandês` | 2 | `italo-irlandês` | 4 | accent_variant |
@@ -18856,7 +18773,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ñeste` | 2 | `neste` | 196,558 | accent_variant |
 | `ñico` | 2 | `nico` | 2,458 | accent_variant |
 | `ñum` | 2 | `num` | 416,984 | accent_variant |
-| `ñå` | 2 | `na` | 2,539,819 | accent_variant |
+| `ñå` | 2 | `na` | 2,539,807 | accent_variant |
 | `ññå` | 2 | `nna` | 5 | accent_variant |
 | `òbvio` | 2 | `óbvio` | 34,283 | accent_variant |
 | `òculos` | 2 | `óculos` | 20,229 | accent_variant |
@@ -18887,7 +18804,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `óz` | 2 | `oz` | 5,179 | accent_variant |
 | `ôbvio` | 2 | `óbvio` | 34,283 | accent_variant |
 | `ôcuios` | 2 | `ócuios` | 2 | accent_variant |
-| `ôlho` | 2 | `olho` | 253,901 | accent_variant |
+| `ôlho` | 2 | `olho` | 253,938 | accent_variant |
 | `ôntem` | 2 | `ontem` | 142,295 | accent_variant |
 | `ôrra` | 2 | `orra` | 2 | accent_variant |
 | `ôtima` | 2 | `otima` | 73 | accent_variant |
@@ -18899,7 +18816,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `öd` | 2 | `od` | 62 | accent_variant |
 | `öln` | 2 | `oln` | 2 | accent_variant |
 | `öptima` | 2 | `optima` | 272 | accent_variant |
-| `öä` | 2 | `oa` | 404 | accent_variant |
+| `öä` | 2 | `oa` | 397 | accent_variant |
 | `ùltimamente` | 2 | `ultimamente` | 23,046 | accent_variant |
 | `ùtil` | 2 | `útil` | 29,216 | accent_variant |
 | `ùô` | 2 | `uo` | 24 | accent_variant |
@@ -18912,26 +18829,26 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `úntil` | 2 | `until` | 130 | accent_variant |
 | `úníca` | 2 | `unica` | 2,002 | accent_variant |
 | `úpsilon` | 2 | `upsilon` | 19 | accent_variant |
+| `úsa` | 2 | `usà` | 21 | accent_variant |
 | `úuu` | 2 | `uuu` | 79 | accent_variant |
 | `úísque` | 2 | `uísque` | 12,225 | accent_variant |
-| `ûm` | 2 | `um` | 13,939,971 | accent_variant |
+| `ûm` | 2 | `um` | 13,939,974 | accent_variant |
 | `ültimas` | 2 | `ultímas` | 7 | accent_variant |
-| `ý` | 2 | `y` | 6,799 | accent_variant |
-| `ė` | 2 | `e` | 10,295,459 | accent_variant |
+| `ý` | 2 | `y` | 6,800 | accent_variant |
+| `ė` | 2 | `e` | 10,295,476 | accent_variant |
 | `žao` | 2 | `zao` | 390 | accent_variant |
 | `и` | 2 | `й` | 338 | unaccented |
 | `a-mé-ri-ca` | 1 | `a-me-ri-ca` | 2 | accent_variant |
 | `aaí` | 1 | `aai` | 39 | accent_variant |
 | `abandonä` | 1 | `abandonà` | 6 | accent_variant |
-| `abandonó` | 1 | `abandono` | 2,247 | accent_variant |
+| `abandonó` | 1 | `abandono` | 2,262 | accent_variant |
 | `abarçar` | 1 | `abarcar` | 216 | accent_variant |
 | `abebias` | 1 | `abébias` | 80 | unaccented |
 | `abeculas` | 1 | `abéculas` | 17 | unaccented |
 | `abelha-raínha` | 1 | `abelha-rainha` | 36 | accent_variant |
 | `abelhäo` | 1 | `abelhão` | 160 | accent_variant |
-| `abencoaa` | 1 | `abençoaa` | 25 | unaccented |
+| `abencoa` | 1 | `abencoá` | 10 | unaccented |
 | `abençoádo` | 1 | `abençoado` | 3,102 | accent_variant |
-| `abençôoa` | 1 | `abençooa` | 1 | accent_variant |
 | `aberracao` | 1 | `aberração` | 8,957 | unaccented |
 | `aberraçöes` | 1 | `aberraçoes` | 2 | accent_variant |
 | `abnegaçäo` | 1 | `abnegação` | 172 | accent_variant |
@@ -18944,12 +18861,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aborìgine` | 1 | `aborígine` | 25 | accent_variant |
 | `aborígena` | 1 | `aborigena` | 1 | accent_variant |
 | `abraçao` | 1 | `abração` | 44 | accent_variant |
-| `abraçeia` | 1 | `abraceia` | 96 | accent_variant |
 | `abreviacao` | 1 | `abreviação` | 190 | unaccented |
 | `abrir-se-äo` | 1 | `abrir-se-ão` | 131 | accent_variant |
-| `abráce` | 1 | `abraçe` | 17 | accent_variant |
+| `abráce` | 1 | `abraçe` | 19 | accent_variant |
 | `abráça` | 1 | `abraca` | 47 | accent_variant |
-| `abráço` | 1 | `abraço` | 14,203 | accent_variant |
+| `abráço` | 1 | `abraço` | 14,249 | accent_variant |
 | `abríra` | 1 | `abrirà` | 1 | accent_variant |
 | `absolvicao` | 1 | `absolvição` | 1,430 | unaccented |
 | `absolvicão` | 1 | `absolvição` | 1,430 | accent_variant |
@@ -18959,7 +18875,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `abutrámos` | 1 | `abutramos` | 1 | accent_variant |
 | `abyssínia` | 1 | `abyssinia` | 1 | accent_variant |
 | `abáda` | 1 | `abada` | 414 | accent_variant |
-| `abáixar` | 1 | `abaixar` | 17,179 | accent_variant |
+| `abáixar` | 1 | `abaixar` | 17,291 | accent_variant |
 | `abé` | 1 | `abe` | 4,107 | accent_variant |
 | `abêncoe` | 1 | `abencoe` | 129 | accent_variant |
 | `abênçoada` | 1 | `abencoada` | 6 | accent_variant |
@@ -18970,7 +18886,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `acabà` | 1 | `acába` | 3 | accent_variant |
 | `acabá-ia` | 1 | `acaba-ia` | 1 | accent_variant |
 | `acabámosdereceberuma` | 1 | `acabamosdereceberuma` | 1 | accent_variant |
-| `acabár` | 1 | `acabar` | 657,838 | accent_variant |
+| `acabár` | 1 | `acabar` | 658,063 | accent_variant |
 | `acabâmos` | 1 | `acábamos` | 17 | accent_variant |
 | `acabóu` | 1 | `açabou` | 2 | accent_variant |
 | `académia` | 1 | `academia` | 11,212 | accent_variant |
@@ -18999,7 +18915,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `achà-lo-à` | 1 | `achá-lo-á` | 3 | accent_variant |
 | `achá-ia` | 1 | `acha-ia` | 1 | accent_variant |
 | `achá-lo-às` | 1 | `achá-lo-ás` | 8 | accent_variant |
-| `achár` | 1 | `achar` | 1,599,469 | accent_variant |
+| `achár` | 1 | `achar` | 1,601,943 | accent_variant |
 | `achã` | 1 | `achà` | 9 | accent_variant |
 | `achète` | 1 | `achete` | 1 | accent_variant |
 | `achô` | 1 | `açho` | 22 | accent_variant |
@@ -19010,7 +18926,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `acompanhar-me-à` | 1 | `acompanhar-me-á` | 22 | accent_variant |
 | `acompanhar-nos-à` | 1 | `acompanhar-nos-á` | 18 | accent_variant |
 | `acompanhà-io` | 1 | `acompanhá-io` | 24 | accent_variant |
-| `acompanháia` | 1 | `acompanhaia` | 6 | accent_variant |
 | `acompañarte` | 1 | `acompanarte` | 1 | accent_variant |
 | `acomunicação` | 1 | `acomunicaçao` | 1 | accent_variant |
 | `acomóda` | 1 | `acomodà` | 1 | accent_variant |
@@ -19052,7 +18967,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `acção-reacçao` | 1 | `acção-reacção` | 15 | accent_variant |
 | `acçãodegraças` | 1 | `accãodegracas` | 1 | accent_variant |
 | `acçőes` | 1 | `acçöes` | 22 | accent_variant |
-| `acérca` | 1 | `acerca` | 59,576 | accent_variant |
+| `acérca` | 1 | `acerca` | 59,572 | accent_variant |
 | `acídez` | 1 | `acidez` | 315 | accent_variant |
 | `acído` | 1 | `ácido` | 8,610 | accent_variant |
 | `acóolatra` | 1 | `acoólatra` | 1 | accent_variant |
@@ -19067,7 +18982,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `adesao` | 1 | `adesão` | 295 | unaccented |
 | `adeversário` | 1 | `adeversario` | 2 | accent_variant |
 | `adhémar` | 1 | `adhemar` | 442 | accent_variant |
-| `adivinhár` | 1 | `adivinhar` | 47,037 | accent_variant |
+| `adivinhár` | 1 | `adivinhar` | 47,038 | accent_variant |
 | `administraçào` | 1 | `administração` | 11,729 | accent_variant |
 | `admiracao` | 1 | `admiração` | 2,242 | unaccented |
 | `admiracão` | 1 | `admiração` | 2,242 | accent_variant |
@@ -19077,7 +18992,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `admistraçao` | 1 | `admistração` | 2 | accent_variant |
 | `admoestaçäo` | 1 | `admoestação` | 57 | accent_variant |
 | `admíravel` | 1 | `admirável` | 3,213 | accent_variant |
-| `adocar` | 1 | `adoçar` | 566 | unaccented |
+| `adocar` | 1 | `adoçar` | 569 | unaccented |
 | `adolecência` | 1 | `adolecencia` | 4 | accent_variant |
 | `adolesçênte` | 1 | `adolescente` | 17,060 | accent_variant |
 | `adopcão` | 1 | `adopçäo` | 11 | accent_variant |
@@ -19092,7 +19007,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `adoráveí` | 1 | `adoravei` | 1 | accent_variant |
 | `adorâveis` | 1 | `adoraveis` | 11 | accent_variant |
 | `adorävel` | 1 | `adorável` | 20,169 | accent_variant |
-| `adotár` | 1 | `adotar` | 12,384 | accent_variant |
+| `adotár` | 1 | `adotar` | 12,506 | accent_variant |
 | `adoçao` | 1 | `adoção` | 5,052 | accent_variant |
 | `adoçăo` | 1 | `adoção` | 5,052 | accent_variant |
 | `adriá` | 1 | `adria` | 317 | accent_variant |
@@ -19105,7 +19020,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `adéus` | 1 | `adeus` | 172,834 | accent_variant |
 | `adíós` | 1 | `adios` | 959 | accent_variant |
 | `adóravel` | 1 | `adorável` | 20,169 | accent_variant |
-| `adôrar` | 1 | `adorar` | 247,564 | accent_variant |
+| `adôrar` | 1 | `adorar` | 251,116 | accent_variant |
 | `adôrmeci` | 1 | `adormeçi` | 2 | accent_variant |
 | `aerofolio` | 1 | `aerofólio` | 16 | unaccented |
 | `aerografo` | 1 | `aerógrafo` | 13 | unaccented |
@@ -19143,10 +19058,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `afríca` | 1 | `áfrica` | 16,372 | accent_variant |
 | `afugentà-ios` | 1 | `afugentá-ios` | 10 | accent_variant |
 | `afundar-se-à` | 1 | `afundar-se-á` | 31 | accent_variant |
-| `afundár` | 1 | `afundar` | 14,939 | accent_variant |
+| `afundár` | 1 | `afundar` | 14,991 | accent_variant |
 | `afíado` | 1 | `afiado` | 1,290 | accent_variant |
 | `agarravámos` | 1 | `agarravamos` | 2 | accent_variant |
-| `agarrár` | 1 | `agarrar` | 71,242 | accent_variant |
+| `agarrár` | 1 | `agarrar` | 73,908 | accent_variant |
 | `agitaçao` | 1 | `agitação` | 2,960 | accent_variant |
 | `aglomeraçäo` | 1 | `aglomeração` | 154 | accent_variant |
 | `agnogênica` | 1 | `agnogénica` | 2 | accent_variant |
@@ -19157,7 +19072,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `agradar-me-à` | 1 | `agradar-me-á` | 13 | accent_variant |
 | `agradeco-ihe` | 1 | `agradeço-ihe` | 83 | unaccented |
 | `agradecê-ios` | 1 | `agradece-ios` | 1 | accent_variant |
-| `agradecêr` | 1 | `agradecer` | 105,691 | accent_variant |
+| `agradecêr` | 1 | `agradecer` | 105,705 | accent_variant |
 | `agradeçi` | 1 | `agradecí` | 5 | accent_variant |
 | `agradeçiamos` | 1 | `agradeciamos` | 9 | accent_variant |
 | `agradádo` | 1 | `agradado` | 363 | accent_variant |
@@ -19169,12 +19084,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `agronômo` | 1 | `agrónomo` | 32 | accent_variant |
 | `agrícula` | 1 | `agricula` | 2 | accent_variant |
 | `agrículas` | 1 | `agriculas` | 5 | accent_variant |
-| `agrícultura` | 1 | `agricultura` | 2,210 | accent_variant |
+| `agrícultura` | 1 | `agricultura` | 2,208 | accent_variant |
 | `agró-químicos` | 1 | `agro-químicos` | 3 | accent_variant |
 | `agucado` | 1 | `aguçado` | 338 | unaccented |
 | `aguentarà` | 1 | `agüentará` | 33 | accent_variant |
 | `aguentaräo` | 1 | `agüentarão` | 7 | accent_variant |
-| `aguêntar` | 1 | `aguentar` | 115,421 | accent_variant |
+| `aguêntar` | 1 | `aguentar` | 115,538 | accent_variant |
 | `aguëntam` | 1 | `agüentam` | 44 | accent_variant |
 | `aguënte` | 1 | `agüente` | 460 | accent_variant |
 | `aguía` | 1 | `águia` | 9,150 | accent_variant |
@@ -19187,7 +19102,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `agítação` | 1 | `agitação` | 2,960 | accent_variant |
 | `agônia` | 1 | `agonia` | 3,113 | accent_variant |
 | `agônico` | 1 | `agónico` | 3 | accent_variant |
-| `agúa` | 1 | `água` | 179,558 | accent_variant |
+| `agúa` | 1 | `água` | 179,546 | accent_variant |
 | `agúas` | 1 | `àguas` | 57 | accent_variant |
 | `agüentara` | 1 | `agüentará` | 33 | accent_variant |
 | `agüentaste` | 1 | `aguentáste` | 5 | accent_variant |
@@ -19207,7 +19122,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aindatêm` | 1 | `aindatem` | 3 | accent_variant |
 | `aindá` | 1 | `ainda` | 865,825 | accent_variant |
 | `aiojá-io` | 1 | `aioja-io` | 1 | accent_variant |
-| `airá` | 1 | `aira` | 10 | accent_variant |
+| `airá` | 1 | `aira` | 9 | accent_variant |
 | `aiteraçoes` | 1 | `aiteracões` | 2 | accent_variant |
 | `aiám` | 1 | `aiam` | 2 | accent_variant |
 | `aiê` | 1 | `aie` | 29 | accent_variant |
@@ -19217,11 +19132,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ajudar-lhe-à` | 1 | `ajudar-lhe-á` | 6 | accent_variant |
 | `ajudar-me-às` | 1 | `ajudar-me-ás` | 34 | accent_variant |
 | `ajudarăo` | 1 | `ajudaräo` | 2 | accent_variant |
-| `ajudaá` | 1 | `ajudaa` | 1,277 | accent_variant |
+| `ajudaá` | 1 | `ajudaa` | 9 | accent_variant |
 | `ajudà-ias` | 1 | `ajudá-ias` | 4 | accent_variant |
 | `ajudá-lá` | 1 | `ajuda-lá` | 7 | accent_variant |
 | `ajudá-lá-á` | 1 | `ajudá-la-á` | 46 | accent_variant |
-| `ajudámosa` | 1 | `ajudamosa` | 1 | accent_variant |
 | `ajudára` | 1 | `ajudarà` | 1 | accent_variant |
 | `ajudária` | 1 | `ajudaría` | 18 | accent_variant |
 | `ajudát` | 1 | `ajudat` | 1 | accent_variant |
@@ -19263,12 +19177,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `alemanhâ` | 1 | `alemanha` | 14,703 | accent_variant |
 | `alemãnia` | 1 | `alemania` | 8 | accent_variant |
 | `alergênicas` | 1 | `alergénicas` | 2 | accent_variant |
-| `alertaá` | 1 | `alertaa` | 2 | accent_variant |
 | `aleyküm` | 1 | `aleykum` | 16 | accent_variant |
 | `aleém` | 1 | `aleem` | 9 | accent_variant |
 | `alfanumerico` | 1 | `alfanumérico` | 128 | unaccented |
 | `alfréd` | 1 | `alfred` | 6,809 | accent_variant |
-| `algemà` | 1 | `algema` | 9,690 | accent_variant |
+| `algemà` | 1 | `algema` | 9,778 | accent_variant |
 | `algonquín` | 1 | `algonquin` | 74 | accent_variant |
 | `algorítomo` | 1 | `algoritomo` | 8 | accent_variant |
 | `algua` | 1 | `alguã` | 64 | unaccented |
@@ -19277,7 +19190,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `alguél` | 1 | `alguel` | 1 | accent_variant |
 | `alguémpôde` | 1 | `alguémpode` | 2 | accent_variant |
 | `alguëm` | 1 | `alguém` | 675,211 | accent_variant |
-| `algéma` | 1 | `algema` | 9,690 | accent_variant |
+| `algéma` | 1 | `algema` | 9,778 | accent_variant |
 | `algémas` | 1 | `algêmas` | 2 | accent_variant |
 | `algùn` | 1 | `algun` | 32 | accent_variant |
 | `algúmas` | 1 | `algumăs` | 1 | accent_variant |
@@ -19290,7 +19203,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `alimentar-se-à` | 1 | `alimentar-se-á` | 8 | accent_variant |
 | `alimenticio` | 1 | `alimentício` | 267 | unaccented |
 | `alimentã` | 1 | `alimentà` | 4 | accent_variant |
-| `alistár` | 1 | `alistar` | 6,890 | accent_variant |
+| `alistár` | 1 | `alistar` | 6,893 | accent_variant |
 | `aliviô` | 1 | `alívio` | 6,787 | accent_variant |
 | `alizée` | 1 | `alizee` | 9 | accent_variant |
 | `aliânças` | 1 | `aliancas` | 18 | accent_variant |
@@ -19316,11 +19229,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `alucinaçäo` | 1 | `alucinação` | 6,284 | accent_variant |
 | `alucinógenica` | 1 | `alucinogénica` | 35 | accent_variant |
 | `aluguér` | 1 | `aluguer` | 5,990 | accent_variant |
-| `alugámosa` | 1 | `alugamosa` | 2 | accent_variant |
 | `alugár-ma` | 1 | `alugar-ma` | 1 | accent_variant |
 | `alugém` | 1 | `alugem` | 2 | accent_variant |
 | `alusao` | 1 | `alusão` | 315 | unaccented |
-| `alvejár` | 1 | `alvejar` | 19,173 | accent_variant |
+| `alvejár` | 1 | `alvejar` | 19,366 | accent_variant |
 | `alvárez` | 1 | `alvarez` | 2,363 | accent_variant |
 | `aláh` | 1 | `alah` | 237 | accent_variant |
 | `alçapao` | 1 | `alçapão` | 1,295 | accent_variant |
@@ -19330,7 +19242,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aléguem` | 1 | `aleguém` | 1 | accent_variant |
 | `aléria` | 1 | `aleria` | 4 | accent_variant |
 | `alëm` | 1 | `além` | 116,045 | accent_variant |
-| `alì` | 1 | `ali` | 289,728 | accent_variant |
+| `alì` | 1 | `ali` | 289,729 | accent_variant |
 | `alíbis` | 1 | `alibis` | 94 | accent_variant |
 | `alíegena` | 1 | `aliegena` | 3 | accent_variant |
 | `alíejou` | 1 | `aliejou` | 3 | accent_variant |
@@ -19354,14 +19266,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ambuléncia` | 1 | `ambulência` | 2 | accent_variant |
 | `ambãrgãr` | 1 | `ambargar` | 4 | accent_variant |
 | `ameacador` | 1 | `ameaçador` | 2,416 | unaccented |
-| `ameaçeia` | 1 | `ameaceia` | 23 | accent_variant |
-| `ameaçár` | 1 | `ameaçar` | 30,585 | accent_variant |
+| `ameaçár` | 1 | `ameaçar` | 30,991 | accent_variant |
 | `ameaçãs` | 1 | `ameacas` | 12 | accent_variant |
-| `ameaçõu` | 1 | `ameacou` | 18 | accent_variant |
+| `ameaçõu` | 1 | `ameacou` | 22 | accent_variant |
 | `amendôa` | 1 | `amêndoa` | 1,505 | accent_variant |
 | `ameriçana` | 1 | `américana` | 5 | accent_variant |
 | `ameriçano` | 1 | `americano` | 94,566 | accent_variant |
-| `ameáça` | 1 | `ameaça` | 43,315 | accent_variant |
+| `ameáça` | 1 | `ameaça` | 43,337 | accent_variant |
 | `amigavéis` | 1 | `amigaveis` | 15 | accent_variant |
 | `amigävel` | 1 | `amigável` | 7,802 | accent_variant |
 | `amihaï` | 1 | `amihai` | 1 | accent_variant |
@@ -19371,8 +19282,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `amnistía` | 1 | `amnistia` | 1,288 | accent_variant |
 | `amnístia` | 1 | `amnistia` | 1,288 | accent_variant |
 | `amolaçäo` | 1 | `amolação` | 14 | accent_variant |
-| `amordacaa` | 1 | `amordaçaa` | 13 | unaccented |
-| `amordacar` | 1 | `amordaçar` | 1,047 | unaccented |
+| `amordacar` | 1 | `amordaçar` | 1,106 | unaccented |
 | `amordacá` | 1 | `amordáça` | 2 | accent_variant |
 | `amordaçá-io` | 1 | `amordaçà-io` | 1 | accent_variant |
 | `amordáce` | 1 | `amordaçe` | 2 | accent_variant |
@@ -19421,7 +19331,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `anastásio` | 1 | `anastasio` | 18 | accent_variant |
 | `anastásius` | 1 | `anastasius` | 58 | accent_variant |
 | `anatónia` | 1 | `anatonia` | 1 | accent_variant |
-| `anatômia` | 1 | `anatomia` | 2,529 | accent_variant |
+| `anatômia` | 1 | `anatomia` | 2,528 | accent_variant |
 | `anbulância` | 1 | `anbulancia` | 6 | accent_variant |
 | `anchôvas` | 1 | `anchóvas` | 1 | accent_variant |
 | `anciâ` | 1 | `anciã` | 580 | accent_variant |
@@ -19497,6 +19407,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `anti-taquiônico` | 1 | `anti-taquiónico` | 1 | accent_variant |
 | `anti-vampírico` | 1 | `anti-vampiríco` | 1 | accent_variant |
 | `anti-áereas` | 1 | `anti-aereas` | 1 | accent_variant |
+| `antia` | 1 | `antía` | 131 | unaccented |
 | `antibactérias` | 1 | `antibacterias` | 1 | accent_variant |
 | `antibiotico` | 1 | `antibiótico` | 4,506 | unaccented |
 | `anticentrômero` | 1 | `anticentrómero` | 42 | accent_variant |
@@ -19521,7 +19432,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `antàrctica` | 1 | `antarctica` | 19 | accent_variant |
 | `antália` | 1 | `antalia` | 3 | accent_variant |
 | `antäo` | 1 | `antão` | 11 | accent_variant |
-| `antí` | 1 | `anti` | 1,504 | accent_variant |
+| `antí` | 1 | `anti` | 1,507 | accent_variant |
 | `antícapitalismo` | 1 | `anticapitalismo` | 2 | accent_variant |
 | `antído` | 1 | `antido` | 2 | accent_variant |
 | `antígenes` | 1 | `antigenes` | 7 | accent_variant |
@@ -19556,7 +19467,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `apagao` | 1 | `apagão` | 3,479 | unaccented |
 | `apagar-se-äo` | 1 | `apagar-se-ão` | 4 | accent_variant |
 | `apagá-io` | 1 | `apagà-io` | 1 | accent_variant |
-| `apagár` | 1 | `apagar` | 42,949 | accent_variant |
+| `apagár` | 1 | `apagar` | 43,579 | accent_variant |
 | `apagé` | 1 | `apage` | 1 | accent_variant |
 | `apanha-ios` | 1 | `apanhá-ios` | 42 | unaccented |
 | `apanha-la-ão` | 1 | `apanhá-la-ão` | 4 | accent_variant |
@@ -19565,7 +19476,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `apanhà-ios` | 1 | `apanhá-ios` | 42 | accent_variant |
 | `apanhà-ios-emos` | 1 | `apanhá-ios-emos` | 2 | accent_variant |
 | `apanhàmo-ios` | 1 | `apanhámo-ios` | 24 | accent_variant |
-| `apanhár` | 1 | `apanhar` | 363,847 | accent_variant |
+| `apanhár` | 1 | `apanhar` | 371,030 | accent_variant |
 | `apanhár-mos` | 1 | `apanhar-mos` | 153 | accent_variant |
 | `apanná` | 1 | `apanna` | 2 | accent_variant |
 | `apanámo` | 1 | `apanàmo` | 1 | accent_variant |
@@ -19593,8 +19504,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `apoia-lo-á` | 1 | `apoiá-lo-á` | 24 | accent_variant |
 | `apoiar-nos-à` | 1 | `apoiar-nos-á` | 6 | accent_variant |
 | `apoiar-te-à` | 1 | `apoiar-te-á` | 10 | accent_variant |
-| `apoioà` | 1 | `apoioa` | 96 | accent_variant |
-| `apoioá` | 1 | `apoioa` | 96 | accent_variant |
+| `apoioà` | 1 | `apoioa` | 4 | accent_variant |
+| `apoioá` | 1 | `apoioa` | 4 | accent_variant |
 | `apolônio` | 1 | `apolónio` | 19 | accent_variant |
 | `aporrinhá` | 1 | `aporrinha` | 1 | accent_variant |
 | `aposentaçao` | 1 | `aposentação` | 217 | accent_variant |
@@ -19616,7 +19527,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `apresentára` | 1 | `apresentarà` | 3 | accent_variant |
 | `apresentã` | 1 | `apresentà` | 4 | accent_variant |
 | `apresentçao` | 1 | `apresentção` | 2 | accent_variant |
-| `apressár` | 1 | `apressar` | 15,638 | accent_variant |
+| `apressár` | 1 | `apressar` | 15,653 | accent_variant |
 | `apreçia` | 1 | `aprecía` | 5 | accent_variant |
 | `apreçie` | 1 | `aprecíe` | 3 | accent_variant |
 | `apropriar-se-äo` | 1 | `apropriar-se-ão` | 7 | accent_variant |
@@ -19643,8 +19554,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aquamán` | 1 | `aquaman` | 722 | accent_variant |
 | `aquenaton` | 1 | `aquenáton` | 23 | unaccented |
 | `aquesição` | 1 | `aquesiçâo` | 2 | accent_variant |
-| `aqueçeas` | 1 | `aqueceas` | 14 | accent_variant |
-| `aqueçer` | 1 | `aquecer` | 18,270 | accent_variant |
+| `aqueçer` | 1 | `aquecer` | 18,394 | accent_variant |
 | `aquifero` | 1 | `aquífero` | 176 | unaccented |
 | `aquiléa` | 1 | `aquilea` | 1 | accent_variant |
 | `aquisiçaõ` | 1 | `aquisição` | 2,963 | accent_variant |
@@ -19683,7 +19593,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aristóxenes` | 1 | `aristoxenes` | 1 | accent_variant |
 | `armazé` | 1 | `armaze` | 1 | accent_variant |
 | `armendáriz` | 1 | `armendariz` | 2 | accent_variant |
-| `armár` | 1 | `armar` | 41,833 | accent_variant |
+| `armár` | 1 | `armar` | 41,872 | accent_variant |
 | `armónia` | 1 | `armonia` | 15 | accent_variant |
 | `arnošt` | 1 | `arnost` | 3 | accent_variant |
 | `arnés` | 1 | `arnês` | 436 | accent_variant |
@@ -19700,7 +19610,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `arquipêlago` | 1 | `arquipélago` | 285 | accent_variant |
 | `arragá` | 1 | `arraga` | 2 | accent_variant |
 | `arrancar-te-à` | 1 | `arrancar-te-á` | 9 | accent_variant |
-| `arrancåia` | 1 | `arrancaia` | 1 | accent_variant |
 | `arranha-ceu` | 1 | `arranha-céu` | 44 | unaccented |
 | `arranha-cèus` | 1 | `arranha-céus` | 1,285 | accent_variant |
 | `arranha-cêu` | 1 | `arranha-céu` | 44 | accent_variant |
@@ -19732,7 +19641,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `arrumaçäo` | 1 | `arrumação` | 712 | accent_variant |
 | `arruínaria` | 1 | `arruinaría` | 1 | accent_variant |
 | `arruínará` | 1 | `arruínara` | 1 | accent_variant |
-| `arrása` | 1 | `arrasa` | 1,449 | accent_variant |
+| `arrása` | 1 | `arrasa` | 1,474 | accent_variant |
 | `arrásta` | 1 | `arrastà` | 1 | accent_variant |
 | `arréte` | 1 | `arrête` | 8 | accent_variant |
 | `arrígna` | 1 | `arrigna` | 5 | accent_variant |
@@ -19753,7 +19662,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `arália` | 1 | `aralia` | 1 | accent_variant |
 | `arêgie` | 1 | `arégie` | 1 | accent_variant |
 | `arí` | 1 | `ari` | 8,049 | accent_variant |
-| `aríano` | 1 | `ariano` | 1,947 | accent_variant |
+| `aríano` | 1 | `ariano` | 1,946 | accent_variant |
 | `arîzona` | 1 | `arizona` | 5,929 | accent_variant |
 | `ascalón` | 1 | `ascalon` | 6 | accent_variant |
 | `ascendómetro` | 1 | `ascendômetro` | 2 | accent_variant |
@@ -19762,7 +19671,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aseguró` | 1 | `aseguro` | 12 | accent_variant |
 | `asegùrate` | 1 | `asegúrate` | 5 | accent_variant |
 | `asegúrese` | 1 | `asegùrese` | 1 | accent_variant |
-| `asfixía` | 1 | `asfixia` | 1,439 | accent_variant |
+| `asfixía` | 1 | `asfixia` | 1,440 | accent_variant |
 | `ashé` | 1 | `ashe` | 323 | accent_variant |
 | `asinstruçõesde` | 1 | `asinstrucõesde` | 5 | accent_variant |
 | `aspiracöes` | 1 | `aspiraçöes` | 3 | accent_variant |
@@ -19771,14 +19680,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `assaltä` | 1 | `assaltà` | 2 | accent_variant |
 | `assasinío` | 1 | `assasínio` | 6 | accent_variant |
 | `assassino-suicídio` | 1 | `assassino-suicidio` | 3 | accent_variant |
-| `assassínar` | 1 | `assassinar` | 40,029 | accent_variant |
+| `assassínar` | 1 | `assassinar` | 40,186 | accent_variant |
 | `assasína` | 1 | `assasina` | 28 | accent_variant |
 | `assemblé` | 1 | `assemble` | 9 | accent_variant |
 | `assirio` | 1 | `assírio` | 161 | unaccented |
 | `associaçào` | 1 | `associação` | 7,561 | accent_variant |
 | `assombracao` | 1 | `assombração` | 721 | unaccented |
 | `assombracãozinha` | 1 | `assombraçãozinha` | 2 | accent_variant |
-| `assombrár` | 1 | `assombrar` | 6,819 | accent_variant |
+| `assombrár` | 1 | `assombrar` | 6,831 | accent_variant |
 | `assumpcao` | 1 | `assumpção` | 30 | unaccented |
 | `assuntá` | 1 | `assunta` | 5 | accent_variant |
 | `assunçâo` | 1 | `assunção` | 118 | accent_variant |
@@ -19787,7 +19696,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `assustâ-ias` | 1 | `assustá-ias` | 2 | accent_variant |
 | `assí` | 1 | `assi` | 188 | accent_variant |
 | `assínalado` | 1 | `assinalado` | 308 | accent_variant |
-| `assínar` | 1 | `assinar` | 61,267 | accent_variant |
+| `assínar` | 1 | `assinar` | 61,515 | accent_variant |
 | `assóro` | 1 | `assoro` | 1 | accent_variant |
 | `assù` | 1 | `assu` | 5 | accent_variant |
 | `asteroidal` | 1 | `asteróidal` | 12 | unaccented |
@@ -19810,7 +19719,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `asustá` | 1 | `asusta` | 3 | accent_variant |
 | `asustáste` | 1 | `asustaste` | 14 | accent_variant |
 | `asvezes` | 1 | `àsvezes` | 31 | unaccented |
-| `asíatico` | 1 | `asiático` | 6,514 | accent_variant |
+| `asíatico` | 1 | `asiático` | 6,500 | accent_variant |
 | `asíático-americano` | 1 | `asiático-americano` | 17 | accent_variant |
 | `atacà-io` | 1 | `atacá-io` | 18 | accent_variant |
 | `atacâ` | 1 | `atacà` | 3 | accent_variant |
@@ -19829,13 +19738,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aterrizé` | 1 | `aterrize` | 4 | accent_variant |
 | `aterrizóu` | 1 | `aterrizou` | 14 | accent_variant |
 | `athenée` | 1 | `athénée` | 19 | accent_variant |
-| `atingír` | 1 | `atingir` | 66,472 | accent_variant |
+| `atingír` | 1 | `atingir` | 66,690 | accent_variant |
 | `atipico` | 1 | `atípico` | 354 | unaccented |
 | `atira-io` | 1 | `atirá-io` | 28 | unaccented |
 | `atiranco` | 1 | `atiranço` | 18 | unaccented |
 | `atiraräo` | 1 | `atirarao` | 2 | accent_variant |
-| `atirávaa` | 1 | `atiravaa` | 55 | accent_variant |
 | `atirã` | 1 | `atirà` | 3 | accent_variant |
+| `atiré` | 1 | `atíre` | 3 | accent_variant |
 | `ativacao` | 1 | `ativação` | 1,617 | unaccented |
 | `atiãntico` | 1 | `atiântico` | 1 | accent_variant |
 | `atiçus` | 1 | `àticus` | 24 | accent_variant |
@@ -19855,7 +19764,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `atraccâo` | 1 | `atracçäo` | 18 | accent_variant |
 | `atracçăo` | 1 | `atracçäo` | 18 | accent_variant |
 | `atrai-io` | 1 | `atraí-io` | 13 | unaccented |
-| `atrairàs` | 1 | `atrairas` | 2 | accent_variant |
 | `atrairía` | 1 | `atraíria` | 8 | accent_variant |
 | `atraiçoáste` | 1 | `atraicoaste` | 3 | accent_variant |
 | `atrapó` | 1 | `atrapo` | 2 | accent_variant |
@@ -19948,16 +19856,15 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `autênticamente` | 1 | `autenticamente` | 39 | accent_variant |
 | `autênticação` | 1 | `autenticação` | 508 | accent_variant |
 | `autòpsia` | 1 | `autópsia` | 8,671 | accent_variant |
-| `autógrafar` | 1 | `autografar` | 2,034 | accent_variant |
+| `autógrafar` | 1 | `autografar` | 2,042 | accent_variant |
 | `autónomamente` | 1 | `autonomamente` | 49 | accent_variant |
 | `autóps` | 1 | `autops` | 2 | accent_variant |
 | `auxilío` | 1 | `auxílio` | 2,542 | accent_variant |
 | `avaiiàmos` | 1 | `avaiiámos` | 2 | accent_variant |
-| `avaliaa` | 1 | `avaliaã` | 10 | unaccented |
 | `avaliacäo` | 1 | `avaliação` | 9,532 | accent_variant |
 | `avaliaçoes` | 1 | `avaliacoes` | 1 | accent_variant |
 | `avaliaçöes` | 1 | `avaliacoes` | 1 | accent_variant |
-| `avaliár` | 1 | `avaliar` | 11,561 | accent_variant |
+| `avaliár` | 1 | `avaliar` | 11,593 | accent_variant |
 | `avana` | 1 | `avanã` | 18 | unaccented |
 | `avançavámos` | 1 | `avançavamos` | 1 | accent_variant |
 | `avariádo` | 1 | `avariado` | 5,303 | accent_variant |
@@ -19985,13 +19892,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ayatólas` | 1 | `ayatolas` | 2 | accent_variant |
 | `azul-bébé` | 1 | `azul-bebé` | 62 | accent_variant |
 | `aâá` | 1 | `aaa` | 401 | accent_variant |
-| `açaba` | 1 | `acába` | 3 | accent_variant |
-| `açabaa` | 1 | `acabaa` | 88 | accent_variant |
 | `açabo` | 1 | `acabó` | 15 | accent_variant |
 | `açeita` | 1 | `aceitã` | 2 | accent_variant |
-| `açerca` | 1 | `acerca` | 59,576 | accent_variant |
+| `açerca` | 1 | `acerca` | 59,572 | accent_variant |
 | `açertares` | 1 | `acertáres` | 1 | accent_variant |
-| `açerça` | 1 | `acerca` | 59,576 | accent_variant |
+| `açerça` | 1 | `acerca` | 59,572 | accent_variant |
 | `açgo` | 1 | `acgo` | 3 | accent_variant |
 | `açidente` | 1 | `acidente` | 76,379 | accent_variant |
 | `açonteçeu` | 1 | `aconteçeu` | 68 | accent_variant |
@@ -19999,8 +19904,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `açtion-man` | 1 | `action-man` | 13 | accent_variant |
 | `açuc` | 1 | `açúc` | 9 | accent_variant |
 | `açucár` | 1 | `açúcar` | 15,049 | accent_variant |
-| `açusar` | 1 | `acusar` | 41,788 | accent_variant |
-| `aççiona` | 1 | `acciona` | 652 | accent_variant |
+| `açusar` | 1 | `acusar` | 42,047 | accent_variant |
+| `aççiona` | 1 | `acciona` | 655 | accent_variant |
 | `açúçar` | 1 | `açúcar` | 15,049 | accent_variant |
 | `aér` | 1 | `aer` | 22 | accent_variant |
 | `aéro` | 1 | `aero` | 100 | accent_variant |
@@ -20013,7 +19918,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aíhá` | 1 | `aihá` | 2 | accent_variant |
 | `aíli` | 1 | `aili` | 1 | accent_variant |
 | `aípreso` | 1 | `aipreso` | 1 | accent_variant |
-| `aír` | 1 | `air` | 5,945 | accent_variant |
+| `aír` | 1 | `air` | 5,946 | accent_variant |
 | `aítem` | 1 | `aitem` | 1 | accent_variant |
 | `aívêm` | 1 | `aívem` | 18 | accent_variant |
 | `aî` | 1 | `aí` | 485,559 | accent_variant |
@@ -20027,7 +19932,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `aúltimaesperançade` | 1 | `aultimaesperançade` | 1 | accent_variant |
 | `aúrica` | 1 | `aurica` | 1 | accent_variant |
 | `aý` | 1 | `ay` | 886 | accent_variant |
-| `b-é` | 1 | `b-e` | 9 | accent_variant |
+| `b-é` | 1 | `b-e` | 11 | accent_variant |
 | `baarova` | 1 | `baarová` | 38 | unaccented |
 | `babação` | 1 | `babacão` | 27 | accent_variant |
 | `babilonicas` | 1 | `babilônicas` | 14 | unaccented |
@@ -20051,8 +19956,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `baixà` | 1 | `baíxa` | 2 | accent_variant |
 | `baixà-io` | 1 | `baixá-io` | 2 | accent_variant |
 | `balabán` | 1 | `balaban` | 64 | accent_variant |
-| `balançà` | 1 | `balança` | 3,692 | accent_variant |
-| `balançé` | 1 | `balance` | 441 | accent_variant |
+| `balançà` | 1 | `balança` | 3,709 | accent_variant |
+| `balançé` | 1 | `balance` | 444 | accent_variant |
 | `balcas` | 1 | `balcãs` | 497 | unaccented |
 | `balchão` | 1 | `balchao` | 1 | accent_variant |
 | `balcâ` | 1 | `balcã` | 25 | accent_variant |
@@ -20155,9 +20060,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `beta-amilóide` | 1 | `beta-amiloide` | 5 | accent_variant |
 | `betäo` | 1 | `betão` | 1,611 | accent_variant |
 | `beçky` | 1 | `becky` | 6,357 | accent_variant |
-| `beìjar` | 1 | `beijar` | 52,385 | accent_variant |
+| `beìjar` | 1 | `beijar` | 53,785 | accent_variant |
 | `beía` | 1 | `beiã` | 1 | accent_variant |
-| `beíjo` | 1 | `beijo` | 34,940 | accent_variant |
+| `beíjo` | 1 | `beijo` | 35,002 | accent_variant |
 | `beócia` | 1 | `beocia` | 14 | accent_variant |
 | `bi-localizacao` | 1 | `bi-localização` | 15 | unaccented |
 | `bibiioteça` | 1 | `bibiioteca` | 1 | accent_variant |
@@ -20333,9 +20238,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `busca-polos` | 1 | `busca-pólos` | 17 | unaccented |
 | `buscà-ia` | 1 | `buscá-ia` | 66 | accent_variant |
 | `buscá-ío` | 1 | `buscá-io` | 265 | accent_variant |
-| `buscáa` | 1 | `buscaa` | 3 | accent_variant |
-| `buscár` | 1 | `buscar` | 189,236 | accent_variant |
-| `buscä` | 1 | `busca` | 34,802 | accent_variant |
+| `buscár` | 1 | `buscar` | 189,249 | accent_variant |
+| `buscä` | 1 | `busca` | 34,805 | accent_variant |
 | `bussólas` | 1 | `bussolas` | 1 | accent_variant |
 | `bussúlas` | 1 | `bússulas` | 2 | accent_variant |
 | `busçá-ios` | 1 | `buscá-ios` | 51 | accent_variant |
@@ -20365,7 +20269,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `bähr` | 1 | `bahr` | 39 | accent_variant |
 | `bäumer` | 1 | `baumer` | 77 | accent_variant |
 | `bébedas` | 1 | `bebedas` | 5 | accent_variant |
-| `béber` | 1 | `beber` | 184,021 | accent_variant |
+| `béber` | 1 | `beber` | 184,302 | accent_variant |
 | `bébezinha` | 1 | `bebezinha` | 188 | accent_variant |
 | `bébè` | 1 | `bebé` | 137,840 | accent_variant |
 | `bécher` | 1 | `becher` | 8 | accent_variant |
@@ -20422,7 +20326,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `búúús` | 1 | `buuus` | 13 | accent_variant |
 | `bückmann` | 1 | `buckmann` | 2 | accent_variant |
 | `bý` | 1 | `by` | 6,594 | accent_variant |
-| `bă` | 1 | `ba` | 2,511 | accent_variant |
+| `bă` | 1 | `ba` | 2,496 | accent_variant |
 | `bănh` | 1 | `banh` | 59 | accent_variant |
 | `břežany` | 1 | `brezany` | 2 | accent_variant |
 | `c'e` | 1 | `c'è` | 12 | unaccented |
@@ -20490,9 +20394,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `calistênica` | 1 | `calisténica` | 2 | accent_variant |
 | `calorifíco` | 1 | `calorífico` | 19 | accent_variant |
 | `caloría` | 1 | `caloria` | 2,014 | accent_variant |
-| `calár` | 1 | `calar` | 164,055 | accent_variant |
+| `calár` | 1 | `calar` | 164,304 | accent_variant |
 | `calâo` | 1 | `calão` | 788 | accent_variant |
-| `calçeas` | 1 | `calceas` | 13 | accent_variant |
 | `calçőes` | 1 | `calçöes` | 9 | accent_variant |
 | `calê` | 1 | `cále` | 28 | accent_variant |
 | `calí` | 1 | `cali` | 876 | accent_variant |
@@ -20559,9 +20462,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `capitôlio` | 1 | `capitólio` | 3,265 | accent_variant |
 | `captao` | 1 | `captão` | 78 | unaccented |
 | `captitao` | 1 | `captitão` | 15 | unaccented |
-| `capturà` | 1 | `captura` | 6,226 | accent_variant |
+| `capturà` | 1 | `captura` | 6,244 | accent_variant |
 | `capturà-io` | 1 | `capturá-io` | 16 | accent_variant |
-| `capturár` | 1 | `capturar` | 25,166 | accent_variant |
+| `capturár` | 1 | `capturar` | 25,285 | accent_variant |
 | `capêlo` | 1 | `capelo` | 37 | accent_variant |
 | `capìtao` | 1 | `capitão` | 143,903 | accent_variant |
 | `capívara` | 1 | `capivara` | 34 | accent_variant |
@@ -20638,7 +20541,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `catòlica` | 1 | `catolica` | 12 | accent_variant |
 | `catõlicos` | 1 | `catolicos` | 4 | accent_variant |
 | `caucasico` | 1 | `caucásico` | 20 | unaccented |
-| `causà` | 1 | `causa` | 189,943 | accent_variant |
+| `causà` | 1 | `causa` | 189,946 | accent_variant |
 | `cavalaría` | 1 | `cavalaria` | 5,504 | accent_variant |
 | `cavaleíro` | 1 | `cavaleiro` | 26,427 | accent_variant |
 | `cavàmos` | 1 | `cávamos` | 5 | accent_variant |
@@ -20647,7 +20550,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `caça-niqueis` | 1 | `caça-níqueis` | 66 | accent_variant |
 | `caça-policias` | 1 | `caça-polícias` | 12 | accent_variant |
 | `caça-ás-bruxas` | 1 | `caça-às-bruxas` | 1 | accent_variant |
-| `caçeia` | 1 | `caceia` | 5 | accent_variant |
 | `caçhalot` | 1 | `cachalot` | 18 | accent_variant |
 | `caçifo` | 1 | `cacifo` | 5,600 | accent_variant |
 | `caçifos` | 1 | `cacífos` | 2 | accent_variant |
@@ -20658,7 +20560,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `caíse` | 1 | `caise` | 1 | accent_variant |
 | `caóticamente` | 1 | `caoticamente` | 8 | accent_variant |
 | `cecê` | 1 | `cece` | 1,833 | accent_variant |
-| `cedêr` | 1 | `ceder` | 13,758 | accent_variant |
+| `cedêr` | 1 | `ceder` | 13,767 | accent_variant |
 | `cefalopode` | 1 | `cefalópode` | 50 | unaccented |
 | `celebraçöes` | 1 | `celebraçoes` | 2 | accent_variant |
 | `celibatàrio` | 1 | `celibatário` | 364 | accent_variant |
@@ -20715,7 +20617,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `chatêaus` | 1 | `chateaus` | 12 | accent_variant |
 | `chatêaux` | 1 | `châteaux` | 30 | accent_variant |
 | `chatísse` | 1 | `chatisse` | 39 | accent_variant |
-| `chatô` | 1 | `chato` | 24,595 | accent_variant |
+| `chatô` | 1 | `chato` | 24,594 | accent_variant |
 | `chaväo` | 1 | `chavão` | 287 | accent_variant |
 | `chavés` | 1 | `cháves` | 6 | accent_variant |
 | `chaînés` | 1 | `chaines` | 4 | accent_variant |
@@ -20763,7 +20665,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `chárles` | 1 | `charles` | 30,996 | accent_variant |
 | `chássis` | 1 | `chassis` | 534 | accent_variant |
 | `cháteau` | 1 | `chateau` | 826 | accent_variant |
-| `cháto` | 1 | `chato` | 24,595 | accent_variant |
+| `cháto` | 1 | `chato` | 24,594 | accent_variant |
 | `cháve` | 1 | `chave` | 98,362 | accent_variant |
 | `chávee` | 1 | `chavee` | 1 | accent_variant |
 | `chávezinha` | 1 | `chavezinha` | 8 | accent_variant |
@@ -20836,7 +20738,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `civilizacöes` | 1 | `civilizaçoes` | 25 | accent_variant |
 | `civilizaç` | 1 | `civilizac` | 2 | accent_variant |
 | `civísmo` | 1 | `civismo` | 261 | accent_variant |
-| `ciència` | 1 | `ciência` | 28,987 | accent_variant |
+| `ciència` | 1 | `ciência` | 28,983 | accent_variant |
 | `ciéncias` | 1 | `ciencias` | 38 | accent_variant |
 | `ciêntífica` | 1 | `ciêntifica` | 24 | accent_variant |
 | `ción` | 1 | `cion` | 11 | accent_variant |
@@ -20883,9 +20785,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cobardiçe` | 1 | `cobardice` | 54 | accent_variant |
 | `cobardía` | 1 | `cobardia` | 1,043 | accent_variant |
 | `cobertôr` | 1 | `cobertor` | 8,124 | accent_variant |
-| `cobicar` | 1 | `cobiçar` | 850 | unaccented |
+| `cobicar` | 1 | `cobiçar` | 860 | unaccented |
 | `cobián` | 1 | `cobian` | 4 | accent_variant |
-| `cobrár` | 1 | `cobrar` | 12,237 | accent_variant |
+| `cobrár` | 1 | `cobrar` | 12,240 | accent_variant |
 | `cobrí-ia` | 1 | `cobri-ia` | 5 | accent_variant |
 | `cocaìna` | 1 | `cocaína` | 11,461 | accent_variant |
 | `cocaína-combustível` | 1 | `cocaína-combustivel` | 4 | accent_variant |
@@ -20916,8 +20818,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `colagéno` | 1 | `colágeno` | 59 | accent_variant |
 | `colagênio` | 1 | `colagénio` | 159 | accent_variant |
 | `colapsaría` | 1 | `colapsaria` | 10 | accent_variant |
-| `colasa` | 1 | `colása` | 14 | unaccented |
-| `coleccionà` | 1 | `colecciona` | 645 | accent_variant |
+| `coleccionà` | 1 | `colecciona` | 651 | accent_variant |
 | `colecistectomías` | 1 | `colecistectomias` | 8 | accent_variant |
 | `colecçionador` | 1 | `coleccionador` | 2,153 | accent_variant |
 | `colecçione` | 1 | `coleccione` | 20 | accent_variant |
@@ -20938,20 +20839,19 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `coloqué` | 1 | `çoloque` | 2 | accent_variant |
 | `colostomía` | 1 | `colostomia` | 192 | accent_variant |
 | `colquídas` | 1 | `cólquidas` | 16 | accent_variant |
-| `colà` | 1 | `cola` | 8,119 | accent_variant |
+| `colà` | 1 | `cola` | 8,158 | accent_variant |
 | `colágenio` | 1 | `colagénio` | 159 | accent_variant |
-| `colár` | 1 | `colar` | 17,490 | accent_variant |
+| `colár` | 1 | `colar` | 17,559 | accent_variant |
 | `colátra` | 1 | `colatra` | 5 | accent_variant |
 | `colãns` | 1 | `colans` | 15 | accent_variant |
-| `colé` | 1 | `cole` | 14,925 | accent_variant |
+| `colé` | 1 | `cole` | 14,926 | accent_variant |
 | `colécção` | 1 | `colecçäo` | 18 | accent_variant |
 | `coléra` | 1 | `cólera` | 1,775 | accent_variant |
 | `colêtania` | 1 | `coletânia` | 1 | accent_variant |
-| `colócaa` | 1 | `colocaa` | 1,514 | accent_variant |
 | `com'as` | 1 | `com'ás` | 13 | unaccented |
 | `com'e` | 1 | `com'é` | 95 | unaccented |
 | `comamãe` | 1 | `comamae` | 1 | accent_variant |
-| `combatë` | 1 | `combate` | 39,433 | accent_variant |
+| `combatë` | 1 | `combate` | 39,438 | accent_variant |
 | `combinaçoes` | 1 | `combinacöes` | 2 | accent_variant |
 | `combinaçöes` | 1 | `combinacöes` | 2 | accent_variant |
 | `combinão` | 1 | `combinao` | 20 | accent_variant |
@@ -20968,11 +20868,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `comer-nos-à` | 1 | `comer-nos-á` | 3 | accent_variant |
 | `comercializaçâo` | 1 | `comercialização` | 171 | accent_variant |
 | `comeràs` | 1 | `comeräs` | 2 | accent_variant |
-| `começaráa` | 1 | `começaraa` | 2 | accent_variant |
 | `começarémos` | 1 | `comecaremos` | 20 | accent_variant |
 | `começasteis` | 1 | `comecasteis` | 2 | accent_variant |
 | `começavámos` | 1 | `começavamos` | 31 | accent_variant |
-| `começár` | 1 | `começar` | 534,242 | accent_variant |
+| `começár` | 1 | `começar` | 534,588 | accent_variant |
 | `começáres` | 1 | `comecares` | 9 | accent_variant |
 | `começâmos` | 1 | `comecamos` | 73 | accent_variant |
 | `começãmos` | 1 | `comecamos` | 73 | accent_variant |
@@ -21024,7 +20923,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `compràmo-io` | 1 | `compramo-io` | 1 | accent_variant |
 | `comprámo-io` | 1 | `compramo-io` | 1 | accent_variant |
 | `comprâ-ia` | 1 | `comprá-ia` | 12 | accent_variant |
-| `comprä` | 1 | `compra` | 39,245 | accent_variant |
+| `comprä` | 1 | `compra` | 39,450 | accent_variant |
 | `comprè` | 1 | `compré` | 2 | accent_variant |
 | `compulsao` | 1 | `compulsão` | 777 | unaccented |
 | `computacao` | 1 | `computação` | 534 | unaccented |
@@ -21041,10 +20940,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `comçámos` | 1 | `comçamos` | 3 | accent_variant |
 | `comè` | 1 | `comé` | 55 | accent_variant |
 | `comèdia` | 1 | `comédia` | 5,733 | accent_variant |
-| `comér` | 1 | `comer` | 270,085 | accent_variant |
+| `comér` | 1 | `comer` | 271,254 | accent_variant |
 | `comércío` | 1 | `comércio` | 6,454 | accent_variant |
 | `comêmos` | 1 | `comémos` | 1 | accent_variant |
-| `comêr` | 1 | `comer` | 270,085 | accent_variant |
+| `comêr` | 1 | `comer` | 271,254 | accent_variant |
 | `comês` | 1 | `comes` | 6,609 | accent_variant |
 | `comíca` | 1 | `cômica` | 90 | accent_variant |
 | `conbustivél` | 1 | `conbustível` | 4 | accent_variant |
@@ -21089,7 +20988,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `confiscaçäo` | 1 | `confiscação` | 262 | accent_variant |
 | `confissionario` | 1 | `confissionário` | 12 | unaccented |
 | `confiàmos` | 1 | `confíamos` | 2 | accent_variant |
-| `confiár` | 1 | `confiar` | 168,396 | accent_variant |
+| `confiár` | 1 | `confiar` | 168,427 | accent_variant |
 | `confiêm` | 1 | `confíem` | 7 | accent_variant |
 | `confiîança` | 1 | `confiiança` | 16 | accent_variant |
 | `confiîes` | 1 | `confiies` | 1 | accent_variant |
@@ -21099,7 +20998,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `confortá-lo-á` | 1 | `confortá-lo-à` | 1 | accent_variant |
 | `confraternizaçao` | 1 | `confraternização` | 244 | accent_variant |
 | `confrontacao` | 1 | `confrontação` | 400 | unaccented |
-| `confrontár` | 1 | `confrontar` | 7,455 | accent_variant |
+| `confrontár` | 1 | `confrontar` | 7,629 | accent_variant |
 | `confusâo` | 1 | `confusão` | 32,721 | accent_variant |
 | `confusăo` | 1 | `confusão` | 32,721 | accent_variant |
 | `confêrencia` | 1 | `conferência` | 16,086 | accent_variant |
@@ -21109,7 +21008,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `confírme` | 1 | `confirmé` | 2 | accent_variant |
 | `confíável` | 1 | `confiável` | 3,849 | accent_variant |
 | `confíó` | 1 | `confío` | 43 | accent_variant |
-| `confôrto` | 1 | `conforto` | 7,498 | accent_variant |
+| `confôrto` | 1 | `conforto` | 7,502 | accent_variant |
 | `congelaçäo` | 1 | `congelação` | 288 | accent_variant |
 | `congenito` | 1 | `congénito` | 574 | unaccented |
 | `congenitos` | 1 | `congênitos` | 36 | unaccented |
@@ -21118,11 +21017,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `congrès` | 1 | `congres` | 1 | accent_variant |
 | `conhece-lo-á` | 1 | `conhecê-lo-á` | 20 | accent_variant |
 | `conhece-lá` | 1 | `conhecê-lá` | 3 | accent_variant |
-| `conheceça` | 1 | `conhececa` | 1 | accent_variant |
 | `conheciâ` | 1 | `conhecía` | 15 | accent_variant |
-| `conhecâ` | 1 | `conheca` | 20 | accent_variant |
-| `conhecè` | 1 | `conheçe` | 167 | accent_variant |
-| `conhecé` | 1 | `conheçe` | 167 | accent_variant |
+| `conhecâ` | 1 | `conheca` | 19 | accent_variant |
+| `conhecè` | 1 | `conheçe` | 178 | accent_variant |
+| `conhecé` | 1 | `conheçe` | 178 | accent_variant |
 | `conhecê-lo-äo` | 1 | `conhecê-lo-ão` | 1 | accent_variant |
 | `conhecê-se-mos` | 1 | `conhece-se-mos` | 2 | accent_variant |
 | `conhecêla` | 1 | `conhecela` | 2 | accent_variant |
@@ -21131,14 +21029,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `conhecîa` | 1 | `conhecía` | 15 | accent_variant |
 | `conheção` | 1 | `conheçao` | 7 | accent_variant |
 | `conháque` | 1 | `conhaque` | 1,742 | accent_variant |
-| `conhéces` | 1 | `conheçes` | 135 | accent_variant |
+| `conhéces` | 1 | `conheçes` | 137 | accent_variant |
 | `coniferas` | 1 | `coníferas` | 207 | unaccented |
 | `connecê` | 1 | `connece` | 2 | accent_variant |
 | `conocí` | 1 | `conoci` | 2 | accent_variant |
 | `conocía` | 1 | `conocia` | 1 | accent_variant |
 | `conometrá` | 1 | `conometra` | 3 | accent_variant |
-| `conquístar` | 1 | `conquistar` | 16,933 | accent_variant |
-| `conquístá` | 1 | `conquista` | 5,097 | accent_variant |
+| `conquístar` | 1 | `conquistar` | 17,058 | accent_variant |
+| `conquístá` | 1 | `conquista` | 5,139 | accent_variant |
 | `conrespondê` | 1 | `conresponde` | 1 | accent_variant |
 | `consagracao` | 1 | `consagração` | 208 | unaccented |
 | `consanguinêos` | 1 | `consangüíneos` | 6 | accent_variant |
@@ -21174,29 +21072,29 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `constantinópolis` | 1 | `constantinopolis` | 1 | accent_variant |
 | `constituiçào` | 1 | `constituição` | 4,478 | accent_variant |
 | `constopoioçoius` | 1 | `constopoiocoius` | 3 | accent_variant |
-| `constroia` | 1 | `constróia` | 18 | unaccented |
-| `constroí` | 1 | `constroi` | 109 | accent_variant |
+| `constroí` | 1 | `constroi` | 110 | accent_variant |
 | `constroí-um-urso` | 1 | `constrói-um-urso` | 4 | accent_variant |
+| `constroís` | 1 | `constrois` | 10 | accent_variant |
 | `construiría` | 1 | `construíria` | 3 | accent_variant |
 | `construçöes` | 1 | `construcoes` | 2 | accent_variant |
-| `constròi` | 1 | `constroi` | 109 | accent_variant |
+| `constròi` | 1 | `constroi` | 110 | accent_variant |
 | `constrõe` | 1 | `constroe` | 7 | accent_variant |
 | `constumávamos` | 1 | `constumavamos` | 1 | accent_variant |
 | `constítuido` | 1 | `constituido` | 31 | accent_variant |
-| `consultó` | 1 | `consulto` | 65 | accent_variant |
+| `consultó` | 1 | `consulto` | 68 | accent_variant |
 | `consumacao` | 1 | `consumação` | 141 | unaccented |
 | `consumacão` | 1 | `consumação` | 141 | accent_variant |
 | `consumi-la-äo` | 1 | `consumi-la-ão` | 4 | accent_variant |
 | `conségues` | 1 | `çonsegues` | 2 | accent_variant |
 | `consórtio` | 1 | `consortio` | 12 | accent_variant |
-| `consôlo` | 1 | `consolo` | 3,874 | accent_variant |
+| `consôlo` | 1 | `consolo` | 3,896 | accent_variant |
 | `consúl` | 1 | `cônsul` | 2,314 | accent_variant |
 | `contabil` | 1 | `contábil` | 24 | unaccented |
 | `contacta-io` | 1 | `contactá-io` | 25 | unaccented |
 | `contacta-ios` | 1 | `contactá-ios` | 18 | unaccented |
 | `contactàei` | 1 | `contactaei` | 1 | accent_variant |
 | `contactàvamos` | 1 | `contactavamos` | 2 | accent_variant |
-| `contactár` | 1 | `contactar` | 40,815 | accent_variant |
+| `contactár` | 1 | `contactar` | 40,930 | accent_variant |
 | `contaminaçäo` | 1 | `contaminação` | 2,240 | accent_variant |
 | `contaminaçăo` | 1 | `contaminação` | 2,240 | accent_variant |
 | `contar-nos-ás` | 1 | `contar-nos-às` | 1 | accent_variant |
@@ -21220,7 +21118,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `contratacao` | 1 | `contratação` | 874 | unaccented |
 | `contrataçäo` | 1 | `contratação` | 874 | accent_variant |
 | `contratã` | 1 | `contratà` | 1 | accent_variant |
-| `contrató` | 1 | `contrato` | 29,634 | accent_variant |
+| `contrató` | 1 | `contrato` | 29,659 | accent_variant |
 | `contravencao` | 1 | `contravenção` | 140 | unaccented |
 | `contravençäo` | 1 | `contravenção` | 140 | accent_variant |
 | `contribuiçâo` | 1 | `contribuição` | 3,333 | accent_variant |
@@ -21229,9 +21127,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `controlä` | 1 | `contróla` | 8 | accent_variant |
 | `controvérsios` | 1 | `controversios` | 1 | accent_variant |
 | `controvérso` | 1 | `controverso` | 1,827 | accent_variant |
-| `contráto` | 1 | `contrato` | 29,634 | accent_variant |
+| `contráto` | 1 | `contrato` | 29,659 | accent_variant |
 | `contrô` | 1 | `contro` | 31 | accent_variant |
-| `contrôlo` | 1 | `controlo` | 64,600 | accent_variant |
+| `contrôlo` | 1 | `controlo` | 64,644 | accent_variant |
 | `contàsse` | 1 | `contásse` | 3 | accent_variant |
 | `contágem` | 1 | `contagem` | 10,998 | accent_variant |
 | `contáriamos` | 1 | `contariamos` | 4 | accent_variant |
@@ -21243,7 +21141,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `contínuamos` | 1 | `continuàmos` | 2 | accent_variant |
 | `contô` | 1 | `contó` | 2 | accent_variant |
 | `convence-ia` | 1 | `convencê-ia` | 13 | unaccented |
-| `convencè` | 1 | `convençe` | 14 | accent_variant |
+| `convencè` | 1 | `convençe` | 16 | accent_variant |
 | `convencê-los-á` | 1 | `convencê-los-à` | 1 | accent_variant |
 | `convenio` | 1 | `convénio` | 434 | unaccented |
 | `conveniênte` | 1 | `conveniente` | 6,130 | accent_variant |
@@ -21261,7 +21159,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `convocaçäo` | 1 | `convocação` | 373 | accent_variant |
 | `convulsäo` | 1 | `convulsão` | 3,694 | accent_variant |
 | `convêncio` | 1 | `convencio` | 2 | accent_variant |
-| `convênçe` | 1 | `convençe` | 14 | accent_variant |
+| `convênçe` | 1 | `convençe` | 16 | accent_variant |
 | `convêçe` | 1 | `convecê` | 7 | accent_variant |
 | `convída` | 1 | `convidà` | 6 | accent_variant |
 | `convírtió` | 1 | `convirtiò` | 1 | accent_variant |
@@ -21272,7 +21170,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `copan` | 1 | `copán` | 10 | unaccented |
 | `copianco` | 1 | `copianço` | 58 | unaccented |
 | `copiapo` | 1 | `copiapó` | 18 | unaccented |
-| `copió` | 1 | `copio` | 147 | accent_variant |
+| `copió` | 1 | `copio` | 155 | accent_variant |
 | `copo-d'agua` | 1 | `copo-d'água` | 169 | unaccented |
 | `coppélia` | 1 | `coppelia` | 9 | accent_variant |
 | `copé` | 1 | `cope` | 84 | accent_variant |
@@ -21310,10 +21208,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `corsàrio` | 1 | `corsário` | 535 | accent_variant |
 | `cortesé` | 1 | `cortese` | 65 | accent_variant |
 | `corticoídes` | 1 | `corticóides` | 81 | accent_variant |
-| `cortár` | 1 | `cortar` | 120,967 | accent_variant |
+| `cortár` | 1 | `cortar` | 122,138 | accent_variant |
 | `cortêsia` | 1 | `cortesia` | 6,273 | accent_variant |
 | `corçel` | 1 | `corcel` | 353 | accent_variant |
 | `corîa` | 1 | `coria` | 2 | accent_variant |
+| `corô` | 1 | `coro` | 4,918 | accent_variant |
 | `coseguíamos` | 1 | `coseguiamos` | 1 | accent_variant |
 | `cosmopolítan` | 1 | `cosmopolitan` | 324 | accent_variant |
 | `cosmoquelônianos` | 1 | `cosmoquelonianos` | 1 | accent_variant |
@@ -21331,13 +21230,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `covê` | 1 | `cove` | 931 | accent_variant |
 | `covês` | 1 | `coves` | 7 | accent_variant |
 | `covíi` | 1 | `çovii` | 3 | accent_variant |
-| `cozinhà` | 1 | `cozinha` | 42,312 | accent_variant |
+| `cozinhà` | 1 | `cozinha` | 42,339 | accent_variant |
 | `coágular` | 1 | `coagular` | 817 | accent_variant |
+| `coçaa` | 1 | `cocaã` | 24 | accent_variant |
 | `coçaína` | 1 | `cocaína` | 11,461 | accent_variant |
 | `coçà` | 1 | `coca` | 8,546 | accent_variant |
 | `coçês` | 1 | `coces` | 144 | accent_variant |
 | `coíncidência` | 1 | `coincidência` | 18,490 | accent_variant |
-| `coña` | 1 | `cona` | 4,299 | accent_variant |
+| `coña` | 1 | `cona` | 4,298 | accent_variant |
 | `coó` | 1 | `cóó` | 5 | accent_variant |
 | `coûté` | 1 | `couté` | 5 | accent_variant |
 | `cpôr` | 1 | `cpor` | 1 | accent_variant |
@@ -21388,12 +21288,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cromossômico` | 1 | `cromossómico` | 66 | accent_variant |
 | `cromosômica` | 1 | `cromosomica` | 1 | accent_variant |
 | `cronológia` | 1 | `cronologia` | 766 | accent_variant |
+| `cronómetra` | 1 | `cronométra` | 3 | accent_variant |
 | `croquí` | 1 | `croqui` | 1 | accent_variant |
 | `croupiês` | 1 | `croupies` | 2 | accent_variant |
 | `croûton` | 1 | `crouton` | 15 | accent_variant |
 | `crucificacao` | 1 | `crucificação` | 922 | unaccented |
 | `crucifiîcar` | 1 | `crucifiicar` | 3 | accent_variant |
-| `crucíficar` | 1 | `crucificar` | 3,571 | accent_variant |
+| `crucíficar` | 1 | `crucificar` | 3,572 | accent_variant |
 | `crucífixo` | 1 | `crucifixo` | 1,269 | accent_variant |
 | `crustaceo` | 1 | `crustáceo` | 464 | unaccented |
 | `cryónica` | 1 | `cryonica` | 4 | accent_variant |
@@ -21411,7 +21312,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `crë` | 1 | `cre` | 77 | accent_variant |
 | `críada` | 1 | `criada` | 4,464 | accent_variant |
 | `críança` | 1 | `criança` | 224,005 | accent_variant |
-| `críar` | 1 | `criar` | 135,862 | accent_variant |
+| `críar` | 1 | `criar` | 136,510 | accent_variant |
 | `crícket` | 1 | `cricket` | 758 | accent_variant |
 | `críse` | 1 | `crise` | 19,011 | accent_variant |
 | `críticável` | 1 | `criticável` | 4 | accent_variant |
@@ -21453,8 +21354,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `curar-nos-à` | 1 | `curar-nos-á` | 5 | accent_variant |
 | `curavel` | 1 | `curável` | 203 | unaccented |
 | `curtiçäo` | 1 | `curtição` | 307 | accent_variant |
-| `curà` | 1 | `cura` | 22,665 | accent_variant |
-| `curár` | 1 | `curar` | 25,538 | accent_variant |
+| `curà` | 1 | `cura` | 22,749 | accent_variant |
+| `curár` | 1 | `curar` | 25,660 | accent_variant |
 | `custar-ihe-à` | 1 | `custar-ihe-á` | 4 | accent_variant |
 | `custar-te-à` | 1 | `custar-te-á` | 33 | accent_variant |
 | `custo-beneficío` | 1 | `custo-benefício` | 75 | accent_variant |
@@ -21474,7 +21375,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cào` | 1 | `cão` | 122,006 | accent_variant |
 | `cá-ching` | 1 | `ca-ching` | 1 | accent_variant |
 | `cábine` | 1 | `cabine` | 8,142 | accent_variant |
-| `cábra` | 1 | `cabra` | 50,807 | accent_variant |
+| `cábra` | 1 | `cabra` | 50,776 | accent_variant |
 | `cádaveres` | 1 | `cadaveres` | 78 | accent_variant |
 | `cádi` | 1 | `cadi` | 31 | accent_variant |
 | `cáe` | 1 | `cae` | 20 | accent_variant |
@@ -21483,7 +21384,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cájá` | 1 | `caja` | 17 | accent_variant |
 | `cálado` | 1 | `calado` | 24,907 | accent_variant |
 | `cálcario` | 1 | `calcário` | 806 | accent_variant |
-| `cálcular` | 1 | `calcular` | 13,839 | accent_variant |
+| `cálcular` | 1 | `calcular` | 13,842 | accent_variant |
 | `cálcuta` | 1 | `calcutá` | 770 | accent_variant |
 | `cálibos` | 1 | `calibos` | 121 | accent_variant |
 | `cálifornia` | 1 | `califórnia` | 21,589 | accent_variant |
@@ -21500,13 +21401,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cárdio-respiratória` | 1 | `cardio-respiratória` | 27 | accent_variant |
 | `cárite` | 1 | `carité` | 2 | accent_variant |
 | `cáros` | 1 | `çaros` | 3 | accent_variant |
-| `cárrego` | 1 | `carrego` | 1,941 | accent_variant |
+| `cárrego` | 1 | `carrego` | 1,994 | accent_variant |
 | `cárriere` | 1 | `carrière` | 3 | accent_variant |
 | `cárteis` | 1 | `carteís` | 3 | accent_variant |
 | `cártel` | 1 | `cartel` | 7,105 | accent_variant |
 | `cárters` | 1 | `carters` | 22 | accent_variant |
 | `cásamos` | 1 | `casàmos` | 6 | accent_variant |
-| `cásar` | 1 | `casar` | 118,879 | accent_variant |
+| `cásar` | 1 | `casar` | 118,898 | accent_variant |
 | `cásca` | 1 | `casca` | 3,964 | accent_variant |
 | `cásia` | 1 | `casia` | 7 | accent_variant |
 | `cáspita` | 1 | `caspita` | 8 | accent_variant |
@@ -21594,10 +21495,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `códígo` | 1 | `código` | 63,697 | accent_variant |
 | `cógete` | 1 | `cogete` | 2 | accent_variant |
 | `cólmeia` | 1 | `colmeia` | 4,445 | accent_variant |
-| `cóm` | 1 | `com` | 4,680,143 | accent_variant |
+| `cóm` | 1 | `com` | 4,680,146 | accent_variant |
 | `cómedia` | 1 | `comédia` | 5,733 | accent_variant |
 | `cómplice` | 1 | `complice` | 6 | accent_variant |
-| `cópiar` | 1 | `copiar` | 7,225 | accent_variant |
+| `cópiar` | 1 | `copiar` | 7,290 | accent_variant |
 | `cópo` | 1 | `copo` | 49,808 | accent_variant |
 | `cóppola` | 1 | `coppola` | 119 | accent_variant |
 | `cópía` | 1 | `cópia` | 25,251 | accent_variant |
@@ -21614,10 +21515,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `cômediante` | 1 | `comediante` | 3,541 | accent_variant |
 | `cômoda-pratt-thompson` | 1 | `cómoda-pratt-thompson` | 2 | accent_variant |
 | `cômoros` | 1 | `comoros` | 10 | accent_variant |
-| `cômpor` | 1 | `compor` | 8,533 | accent_variant |
+| `cômpor` | 1 | `compor` | 8,542 | accent_variant |
 | `cômpus` | 1 | `compûs` | 1 | accent_variant |
 | `cônjugar` | 1 | `conjugar` | 651 | accent_variant |
-| `cônsciencia` | 1 | `consciência` | 21,612 | accent_variant |
+| `cônsciencia` | 1 | `consciência` | 21,609 | accent_variant |
 | `côrtesia` | 1 | `cortesia` | 6,273 | accent_variant |
 | `côtier` | 1 | `cotier` | 10 | accent_variant |
 | `côtés` | 1 | `côtes` | 25 | accent_variant |
@@ -21661,7 +21562,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `danièle` | 1 | `daniele` | 230 | accent_variant |
 | `dankë` | 1 | `danke` | 240 | accent_variant |
 | `danáe` | 1 | `danae` | 83 | accent_variant |
-| `danár` | 1 | `danar` | 1,899 | accent_variant |
+| `danár` | 1 | `danar` | 1,891 | accent_variant |
 | `dançarcom` | 1 | `dancarcom` | 1 | accent_variant |
 | `dançing` | 1 | `dancing` | 528 | accent_variant |
 | `daquií` | 1 | `daquii` | 2 | accent_variant |
@@ -21685,7 +21586,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `daê` | 1 | `dae` | 193 | accent_variant |
 | `daíse` | 1 | `daise` | 12 | accent_variant |
 | `dañado` | 1 | `danado` | 1,768 | accent_variant |
-| `dañar` | 1 | `danar` | 1,899 | accent_variant |
+| `dañar` | 1 | `danar` | 1,891 | accent_variant |
 | `daõ` | 1 | `dao` | 202 | accent_variant |
 | `de-ihe` | 1 | `dê-ihe` | 123 | unaccented |
 | `de-ihes` | 1 | `dê-ihes` | 16 | unaccented |
@@ -21699,11 +21600,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `debá` | 1 | `deba` | 26 | accent_variant |
 | `debían` | 1 | `debian` | 13 | accent_variant |
 | `debíl` | 1 | `débil` | 1,530 | accent_variant |
+| `decepcionara` | 1 | `decepcionará` | 46 | unaccented |
 | `decepcionár` | 1 | `decepcionar` | 1,423 | accent_variant |
 | `decepcionára` | 1 | `decepcionará` | 46 | accent_variant |
 | `decepcionâ` | 1 | `decepcioná` | 443 | accent_variant |
 | `decepcionó` | 1 | `decepciono` | 66 | accent_variant |
-| `decepcionóu` | 1 | `decepcionou` | 389 | accent_variant |
+| `decepcionóu` | 1 | `decepcionou` | 393 | accent_variant |
 | `deciaracâo` | 1 | `deciaracão` | 8 | accent_variant |
 | `deciaraçao` | 1 | `deciaracão` | 8 | accent_variant |
 | `deciaraçoes` | 1 | `deciaracões` | 1 | accent_variant |
@@ -21734,7 +21636,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `deem-ma` | 1 | `dêem-ma` | 45 | unaccented |
 | `deem-mos` | 1 | `dêem-mos` | 39 | unaccented |
 | `deentrepaträoeempregado` | 1 | `deentrepatrãoeempregado` | 1 | accent_variant |
-| `defendêr` | 1 | `defender` | 45,258 | accent_variant |
+| `defendêr` | 1 | `defender` | 45,424 | accent_variant |
 | `defensavel` | 1 | `defensável` | 102 | unaccented |
 | `defensoría` | 1 | `defensoria` | 11 | accent_variant |
 | `definicao` | 1 | `definição` | 5,080 | unaccented |
@@ -21759,7 +21661,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `deixar-se-à` | 1 | `deixar-se-á` | 20 | accent_variant |
 | `deixar-te-à` | 1 | `deixar-te-á` | 52 | accent_variant |
 | `deixeaí` | 1 | `deixeai` | 2 | accent_variant |
-| `deixàr` | 1 | `deixar` | 1,341,565 | accent_variant |
+| `deixàr` | 1 | `deixar` | 1,370,546 | accent_variant |
 | `deixá-los-à` | 1 | `deixá-los-á` | 6 | accent_variant |
 | `deixá-lá` | 1 | `deixa-lá` | 27 | accent_variant |
 | `deixára` | 1 | `deixarä` | 2 | accent_variant |
@@ -21802,7 +21704,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `denuncia-io` | 1 | `denunciá-io` | 12 | unaccented |
 | `denuncía` | 1 | `denúncia` | 2,492 | accent_variant |
 | `denúncie` | 1 | `denuncíe` | 1 | accent_variant |
-| `denúncioa` | 1 | `denuncioa` | 9 | accent_variant |
 | `deontología` | 1 | `deontologia` | 1 | accent_variant |
 | `deploravél` | 1 | `deplorável` | 801 | accent_variant |
 | `deploráveís` | 1 | `deploraveis` | 2 | accent_variant |
@@ -21837,21 +21738,21 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `desagrádaveis` | 1 | `desagradaveis` | 13 | accent_variant |
 | `desagüe` | 1 | `desague` | 5 | accent_variant |
 | `desalgemá` | 1 | `desalgema` | 6 | accent_variant |
-| `desamarrà` | 1 | `desamarra` | 754 | accent_variant |
+| `desamarrà` | 1 | `desamarra` | 781 | accent_variant |
 | `desamará` | 1 | `desamara` | 6 | accent_variant |
 | `desançá-io` | 1 | `desancá-io` | 2 | accent_variant |
 | `desaparecerâo` | 1 | `desaparecerao` | 1 | accent_variant |
-| `desapareçer` | 1 | `desaparecer` | 182,185 | accent_variant |
+| `desapareçer` | 1 | `desaparecer` | 182,186 | accent_variant |
 | `desapariçao` | 1 | `desaparição` | 79 | accent_variant |
 | `desapariçâo` | 1 | `desaparição` | 79 | accent_variant |
 | `desapónta` | 1 | `desapontâ` | 1 | accent_variant |
-| `desarmár` | 1 | `desarmar` | 8,977 | accent_variant |
+| `desarmár` | 1 | `desarmar` | 9,064 | accent_variant |
 | `desarrumaçao` | 1 | `desarrumação` | 885 | accent_variant |
 | `desaré` | 1 | `desare` | 1 | accent_variant |
 | `desatívado` | 1 | `desativado` | 2,694 | accent_variant |
 | `descapotåvel` | 1 | `descapotável` | 1,554 | accent_variant |
 | `descartavél` | 1 | `descartável` | 2,360 | accent_variant |
-| `descaír` | 1 | `descair` | 1,151 | accent_variant |
+| `descaír` | 1 | `descair` | 1,153 | accent_variant |
 | `descifrá` | 1 | `descífra` | 2 | accent_variant |
 | `descobrirporquê` | 1 | `descobrirporque` | 1 | accent_variant |
 | `descodificacao` | 1 | `descodificação` | 575 | unaccented |
@@ -21870,13 +21771,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `desculpar-me-à` | 1 | `desculpar-me-á` | 9 | accent_variant |
 | `desculpar-se-à` | 1 | `desculpar-se-á` | 9 | accent_variant |
 | `desculé` | 1 | `descule` | 6 | accent_variant |
-| `descêr` | 1 | `descer` | 66,397 | accent_variant |
+| `descêr` | 1 | `descer` | 66,519 | accent_variant |
 | `descúlpe` | 1 | `desculpé` | 1 | accent_variant |
 | `desencantá-la-äo` | 1 | `desencantá-la-ão` | 6 | accent_variant |
 | `desencriptacão` | 1 | `desencriptação` | 119 | accent_variant |
 | `desespêro` | 1 | `desespero` | 6,499 | accent_variant |
 | `desfacam` | 1 | `desfaçam` | 449 | unaccented |
-| `desfazêr` | 1 | `desfazer` | 18,988 | accent_variant |
+| `desfazêr` | 1 | `desfazer` | 18,998 | accent_variant |
 | `desfibrilaçao` | 1 | `desfibrilação` | 38 | accent_variant |
 | `desfiguraçäo` | 1 | `desfiguração` | 75 | accent_variant |
 | `desfribilizaçao` | 1 | `desfribilização` | 4 | accent_variant |
@@ -21909,9 +21810,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `despachá-io` | 1 | `despachà-io` | 1 | accent_variant |
 | `despaçha` | 1 | `despachà` | 1 | accent_variant |
 | `despchá` | 1 | `despcha` | 4 | accent_variant |
-| `despecoa` | 1 | `despeçoa` | 25 | unaccented |
 | `despediçou` | 1 | `despedicou` | 1 | accent_variant |
-| `desperdicar` | 1 | `desperdiçar` | 22,629 | unaccented |
+| `desperdicar` | 1 | `desperdiçar` | 22,873 | unaccented |
 | `desperdí` | 1 | `desperdi` | 1 | accent_variant |
 | `desperdícío` | 1 | `desperdício` | 7,842 | accent_variant |
 | `desperdíçaste` | 1 | `desperdicaste` | 3 | accent_variant |
@@ -21923,34 +21823,32 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `desprezívelmente` | 1 | `desprezivelmente` | 5 | accent_variant |
 | `despromoçäo` | 1 | `despromoção` | 193 | accent_variant |
 | `despácha` | 1 | `despachà` | 1 | accent_variant |
-| `despír` | 1 | `despir` | 11,709 | accent_variant |
+| `despír` | 1 | `despir` | 11,959 | accent_variant |
 | `dessalinizacao` | 1 | `dessalinização` | 90 | unaccented |
 | `dessamarrá` | 1 | `dessamarra` | 8 | accent_variant |
 | `destabilizaçao` | 1 | `destabilização` | 24 | accent_variant |
 | `destituìdas` | 1 | `destituidas` | 1 | accent_variant |
-| `destituír` | 1 | `destituir` | 824 | accent_variant |
+| `destituír` | 1 | `destituir` | 840 | accent_variant |
 | `destraído` | 1 | `destraido` | 5 | accent_variant |
 | `destribuí` | 1 | `destribui` | 1 | accent_variant |
 | `destribuímos` | 1 | `destribuimos` | 7 | accent_variant |
 | `destroco` | 1 | `destroço` | 4,137 | unaccented |
 | `destrui-ios` | 1 | `destruí-ios` | 12 | unaccented |
 | `destruir-nos-à` | 1 | `destruir-nos-á` | 68 | accent_variant |
-| `destruiràs` | 1 | `destruiras` | 4 | accent_variant |
 | `destrutivel` | 1 | `destrutível` | 33 | unaccented |
 | `destruíriam` | 1 | `destruiríam` | 10 | accent_variant |
-| `destruírá` | 1 | `destruira` | 96 | accent_variant |
-| `destruíua` | 1 | `destruiua` | 183 | accent_variant |
+| `destruírá` | 1 | `destruira` | 17 | accent_variant |
 | `destruíído` | 1 | `destruíido` | 3 | accent_variant |
 | `destríbuir` | 1 | `destribuir` | 11 | accent_variant |
-| `destrôi` | 1 | `destroi` | 338 | accent_variant |
+| `destróia` | 1 | `destroía` | 3 | accent_variant |
+| `destrôi` | 1 | `destroi` | 354 | accent_variant |
 | `destrúido` | 1 | `destruído` | 3,532 | accent_variant |
 | `destuíu` | 1 | `destuiu` | 3 | accent_variant |
 | `destúrbio` | 1 | `desturbio` | 5 | accent_variant |
 | `desvalorizacäo` | 1 | `desvalorização` | 114 | accent_variant |
 | `desvalorizaçäo` | 1 | `desvalorização` | 114 | accent_variant |
 | `desvastação` | 1 | `desvastacão` | 1 | accent_variant |
-| `desáfio` | 1 | `desafio` | 19,795 | accent_variant |
-| `desátaa` | 1 | `desataa` | 26 | accent_variant |
+| `desáfio` | 1 | `desafio` | 19,855 | accent_variant |
 | `desçobri` | 1 | `descobrí` | 18 | accent_variant |
 | `desçuipas` | 1 | `descuipas` | 2 | accent_variant |
 | `dete-io` | 1 | `detê-io` | 56 | unaccented |
@@ -21970,7 +21868,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `deträs` | 1 | `detrás` | 12,463 | accent_variant |
 | `detá` | 1 | `deta` | 14 | accent_variant |
 | `deté-ios` | 1 | `detê-ios` | 26 | accent_variant |
-| `detêma` | 1 | `detema` | 9 | accent_variant |
 | `detę` | 1 | `dete` | 27 | accent_variant |
 | `deuxième` | 1 | `deuxiême` | 5 | accent_variant |
 | `deuxiéme` | 1 | `deuxiême` | 5 | accent_variant |
@@ -21983,14 +21880,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `devocão` | 1 | `devoção` | 2,659 | accent_variant |
 | `devocäo` | 1 | `devoção` | 2,659 | accent_variant |
 | `devoivé-io` | 1 | `devoivê-io` | 2 | accent_variant |
-| `devoivê` | 1 | `devoive` | 11 | accent_variant |
+| `devoivê` | 1 | `devoive` | 14 | accent_variant |
 | `devolvió` | 1 | `devolvio` | 1 | accent_variant |
 | `devolvâ` | 1 | `devolvá` | 1 | accent_variant |
-| `devolvé` | 1 | `devolvê` | 8 | accent_variant |
+| `devolvé` | 1 | `devolvê` | 15 | accent_variant |
 | `devolvê-los-á` | 1 | `devolvê-los-à` | 1 | accent_variant |
 | `devolvêlo` | 1 | `devolvelo` | 2 | accent_variant |
-| `devorár` | 1 | `devorar` | 5,880 | accent_variant |
-| `devêr` | 1 | `dever` | 1,412,888 | accent_variant |
+| `devorár` | 1 | `devorar` | 5,941 | accent_variant |
+| `devêr` | 1 | `dever` | 1,413,141 | accent_variant |
 | `devêsemos` | 1 | `devesemos` | 2 | accent_variant |
 | `devídamente` | 1 | `devidamente` | 3,042 | accent_variant |
 | `devído` | 1 | `devido` | 35,869 | accent_variant |
@@ -22034,7 +21931,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `digitáis` | 1 | `digítais` | 4 | accent_variant |
 | `dignatarios` | 1 | `dignatários` | 89 | unaccented |
 | `digítos` | 1 | `digitos` | 64 | accent_variant |
-| `diluír` | 1 | `diluir` | 902 | accent_variant |
+| `diluír` | 1 | `diluir` | 907 | accent_variant |
 | `diminuítivo` | 1 | `diminuitivo` | 42 | accent_variant |
 | `dinamico` | 1 | `dinâmico` | 840 | unaccented |
 | `dinosáurio` | 1 | `dinosaurio` | 1 | accent_variant |
@@ -22056,7 +21953,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dirào` | 1 | `dirao` | 9 | accent_variant |
 | `dirécção` | 1 | `direccão` | 136 | accent_variant |
 | `diréto` | 1 | `direto` | 41,541 | accent_variant |
-| `dirígir` | 1 | `dirigir` | 47,561 | accent_variant |
+| `dirígir` | 1 | `dirigir` | 47,621 | accent_variant |
 | `dirò` | 1 | `diro` | 11 | accent_variant |
 | `disciplinário` | 1 | `disciplinario` | 1 | accent_variant |
 | `discipula` | 1 | `discípula` | 190 | unaccented |
@@ -22108,8 +22005,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `distraccöes` | 1 | `distracçöes` | 8 | accent_variant |
 | `distraiú` | 1 | `distraíu` | 8 | accent_variant |
 | `distraçao` | 1 | `distração` | 8,685 | accent_variant |
-| `distraíoas` | 1 | `distraioas` | 2 | accent_variant |
-| `distraírá` | 1 | `distraira` | 25 | accent_variant |
 | `distribuiçào` | 1 | `distribuição` | 4,454 | accent_variant |
 | `distribuírá` | 1 | `distribuira` | 1 | accent_variant |
 | `distribuíção` | 1 | `distribuição` | 4,454 | accent_variant |
@@ -22123,7 +22018,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `divergencia` | 1 | `divergência` | 1,357 | unaccented |
 | `diversăo` | 1 | `diversão` | 21,435 | accent_variant |
 | `dividí-ia` | 1 | `dividi-ia` | 2 | accent_variant |
-| `dividír` | 1 | `dividir` | 28,616 | accent_variant |
+| `dividír` | 1 | `dividir` | 28,693 | accent_variant |
 | `dividíriamos` | 1 | `dividiriamos` | 2 | accent_variant |
 | `división` | 1 | `division` | 1,890 | accent_variant |
 | `divulgacao` | 1 | `divulgação` | 898 | unaccented |
@@ -22145,7 +22040,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `doaçoes` | 1 | `doaçöes` | 3 | accent_variant |
 | `doaçâo` | 1 | `doação` | 4,230 | accent_variant |
 | `doblé` | 1 | `doble` | 77 | accent_variant |
-| `dobré` | 1 | `dobre` | 812 | accent_variant |
+| `dobré` | 1 | `dobre` | 835 | accent_variant |
 | `docanhâo` | 1 | `docanhão` | 2 | accent_variant |
 | `docencia` | 1 | `docência` | 21 | unaccented |
 | `docería` | 1 | `doceria` | 13 | accent_variant |
@@ -22165,15 +22060,15 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dominé` | 1 | `dómine` | 4 | accent_variant |
 | `dominíos` | 1 | `dominios` | 18 | accent_variant |
 | `domremy` | 1 | `domrémy` | 10 | unaccented |
-| `domésticar` | 1 | `domesticar` | 1,238 | accent_variant |
+| `domésticar` | 1 | `domesticar` | 1,240 | accent_variant |
 | `domína` | 1 | `dómina` | 4 | accent_variant |
-| `domínar` | 1 | `dominar` | 18,717 | accent_variant |
+| `domínar` | 1 | `dominar` | 18,849 | accent_variant |
 | `domíno` | 1 | `dominó` | 1,252 | accent_variant |
 | `donnés` | 1 | `donnes` | 2 | accent_variant |
 | `dopplegangërs` | 1 | `dopplegangers` | 10 | accent_variant |
 | `dormirao` | 1 | `dormirão` | 167 | unaccented |
 | `dormiámos` | 1 | `dormiamos` | 21 | accent_variant |
-| `dormír` | 1 | `dormir` | 219,536 | accent_variant |
+| `dormír` | 1 | `dormir` | 219,535 | accent_variant |
 | `dorças` | 1 | `dorcas` | 120 | accent_variant |
 | `dostoiévsky` | 1 | `dostoievsky` | 90 | accent_variant |
 | `doutrináriamente` | 1 | `doutrinariamente` | 1 | accent_variant |
@@ -22185,7 +22080,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dragăo` | 1 | `dragão` | 26,433 | accent_variant |
 | `drakúla` | 1 | `drakula` | 1 | accent_variant |
 | `drogár` | 1 | `drogar` | 1,989 | accent_variant |
-| `drogáste` | 1 | `drogaste` | 478 | accent_variant |
+| `drogáste` | 1 | `drogaste` | 524 | accent_variant |
 | `druÿid` | 1 | `drüÿid` | 3 | accent_variant |
 | `druže` | 1 | `druze` | 27 | accent_variant |
 | `drógado` | 1 | `drogado` | 15,420 | accent_variant |
@@ -22218,9 +22113,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dálá` | 1 | `dala` | 69 | accent_variant |
 | `dálí` | 1 | `dali` | 12,548 | accent_variant |
 | `dámballa` | 1 | `damballa` | 27 | accent_variant |
-| `dámeas` | 1 | `dameas` | 1 | accent_variant |
 | `dánae` | 1 | `danae` | 83 | accent_variant |
-| `dáqui` | 1 | `daqui` | 410,163 | accent_variant |
+| `dáqui` | 1 | `daqui` | 410,165 | accent_variant |
 | `dár-ihe` | 1 | `dar-ihe` | 25 | accent_variant |
 | `dár-lhas` | 1 | `dar-lhas` | 118 | accent_variant |
 | `dár-lho` | 1 | `dar-lho` | 607 | accent_variant |
@@ -22231,14 +22125,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dár-vos-á` | 1 | `dar-vos-á` | 229 | accent_variant |
 | `dárias` | 1 | `darías` | 11 | accent_variant |
 | `dáva-to` | 1 | `dava-to` | 46 | accent_variant |
-| `dávaas` | 1 | `davaas` | 14 | accent_variant |
 | `dávas-mo` | 1 | `davas-mo` | 8 | accent_variant |
 | `dááá` | 1 | `daaá` | 6 | accent_variant |
 | `dã-e` | 1 | `dá-e` | 47 | accent_variant |
-| `dãme` | 1 | `dame` | 1,201 | accent_variant |
+| `dãme` | 1 | `dame` | 1,202 | accent_variant |
 | `dãome` | 1 | `daomé` | 8 | accent_variant |
 | `däo-ihe` | 1 | `dão-ihe` | 21 | accent_variant |
-| `där` | 1 | `dar` | 1,632,629 | accent_variant |
+| `där` | 1 | `dar` | 1,634,277 | accent_variant |
 | `dås` | 1 | `das` | 622,233 | accent_variant |
 | `dé-ihe` | 1 | `dê-ihe` | 123 | accent_variant |
 | `déa` | 1 | `dea` | 4,571 | accent_variant |
@@ -22255,7 +22148,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `déija` | 1 | `deija` | 2 | accent_variant |
 | `déixala` | 1 | `deixála` | 1 | accent_variant |
 | `déiz` | 1 | `deiz` | 1 | accent_variant |
-| `déme` | 1 | `deme` | 22 | accent_variant |
+| `déme` | 1 | `dême` | 10 | accent_variant |
 | `démonios` | 1 | `demonios` | 254 | accent_variant |
 | `démons` | 1 | `demons` | 152 | accent_variant |
 | `dénle` | 1 | `denle` | 5 | accent_variant |
@@ -22269,7 +22162,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `désir` | 1 | `desir` | 5 | accent_variant |
 | `désse` | 1 | `desse` | 60,349 | accent_variant |
 | `désses` | 1 | `desses` | 33,371 | accent_variant |
-| `désta` | 1 | `desta` | 198,386 | accent_variant |
+| `désta` | 1 | `desta` | 198,387 | accent_variant |
 | `déste-ma` | 1 | `deste-ma` | 125 | accent_variant |
 | `désteis` | 1 | `desteis` | 9 | accent_variant |
 | `détail` | 1 | `detail` | 7 | accent_variant |
@@ -22310,7 +22203,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dírígível` | 1 | `dirigível` | 881 | accent_variant |
 | `díscipula` | 1 | `discípula` | 190 | accent_variant |
 | `dísparado` | 1 | `disparado` | 729 | accent_variant |
-| `dísparo` | 1 | `disparo` | 12,032 | accent_variant |
+| `dísparo` | 1 | `disparo` | 12,035 | accent_variant |
 | `dísponíbílídade` | 1 | `disponibilidade` | 829 | accent_variant |
 | `dísponíveís` | 1 | `disponiveis` | 139 | accent_variant |
 | `díspor` | 1 | `dispor` | 6,747 | accent_variant |
@@ -22320,7 +22213,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dístante` | 1 | `distante` | 11,339 | accent_variant |
 | `dísturbio` | 1 | `distúrbio` | 4,702 | accent_variant |
 | `díver` | 1 | `diver` | 427 | accent_variant |
-| `dívertido` | 1 | `divertido` | 68,579 | accent_variant |
+| `dívertido` | 1 | `divertido` | 68,574 | accent_variant |
 | `dívidida` | 1 | `divídida` | 3 | accent_variant |
 | `dívidido` | 1 | `dividido` | 744 | accent_variant |
 | `dívída` | 1 | `dívida` | 24,232 | accent_variant |
@@ -22351,7 +22244,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `dôi-dôi` | 1 | `dói-dói` | 357 | accent_variant |
 | `dôme` | 1 | `dome` | 306 | accent_variant |
 | `dông` | 1 | `dong` | 805 | accent_variant |
-| `dôrmi` | 1 | `dormí` | 6 | accent_variant |
+| `dôrmi` | 1 | `dormí` | 7 | accent_variant |
 | `dôssie` | 1 | `dossiê` | 647 | accent_variant |
 | `dõs` | 1 | `dos` | 988,360 | accent_variant |
 | `döberitz` | 1 | `dõberitz` | 2 | accent_variant |
@@ -22425,7 +22318,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `eidetica` | 1 | `eidética` | 75 | unaccented |
 | `eifél` | 1 | `eifel` | 8 | accent_variant |
 | `eivro` | 1 | `éivro` | 13 | unaccented |
-| `eiá` | 1 | `eia` | 592 | accent_variant |
+| `eiá` | 1 | `eia` | 586 | accent_variant |
 | `ejaculacão` | 1 | `ejaculação` | 527 | accent_variant |
 | `ejercito` | 1 | `ejército` | 19 | unaccented |
 | `ejusto` | 1 | `éjusto` | 35 | unaccented |
@@ -22458,8 +22351,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `eliminacao` | 1 | `eliminação` | 1,698 | unaccented |
 | `eliminacäo` | 1 | `eliminação` | 1,698 | accent_variant |
 | `eliminaçäo` | 1 | `eliminação` | 1,698 | accent_variant |
-| `eliminár` | 1 | `eliminar` | 27,492 | accent_variant |
-| `elimína` | 1 | `eliminà` | 4 | accent_variant |
+| `eliminár` | 1 | `eliminar` | 27,680 | accent_variant |
 | `eliptíca` | 1 | `eliptica` | 3 | accent_variant |
 | `eliseu-grandebêsta` | 1 | `eliseu-grandebesta` | 1 | accent_variant |
 | `elisé` | 1 | `elise` | 2,287 | accent_variant |
@@ -22480,15 +22372,15 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `elétriciclo` | 1 | `eletriciclo` | 5 | accent_variant |
 | `elétricidade` | 1 | `eletricidade` | 11,422 | accent_variant |
 | `elétro-químicos` | 1 | `eletro-químicos` | 3 | accent_variant |
-| `elógio` | 1 | `elogio` | 9,603 | accent_variant |
+| `elógio` | 1 | `elogio` | 9,610 | accent_variant |
 | `emalamos` | 1 | `emalámos` | 11 | unaccented |
 | `embalsamaçäo` | 1 | `embalsamação` | 19 | accent_variant |
 | `embarcacao` | 1 | `embarcação` | 1,946 | unaccented |
 | `embaínhá` | 1 | `embaínha` | 10 | accent_variant |
-| `embraçá` | 1 | `embraça` | 3 | accent_variant |
+| `embraçá` | 1 | `embraça` | 4 | accent_variant |
 | `emergerá` | 1 | `emergera` | 1 | accent_variant |
 | `emergêncial` | 1 | `emergencial` | 66 | accent_variant |
-| `emergêncîa` | 1 | `emergência` | 41,636 | accent_variant |
+| `emergêncîa` | 1 | `emergência` | 41,633 | accent_variant |
 | `emergênte` | 1 | `emergente` | 506 | accent_variant |
 | `emergêçia` | 1 | `emergêcia` | 1 | accent_variant |
 | `emigracão` | 1 | `emigração` | 262 | accent_variant |
@@ -22508,13 +22400,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `empresàrio` | 1 | `empresário` | 5,842 | accent_variant |
 | `emprèstimos` | 1 | `emprestimos` | 18 | accent_variant |
 | `emprégo` | 1 | `emprego` | 80,430 | accent_variant |
-| `empréstar` | 1 | `emprestar` | 28,713 | accent_variant |
+| `empréstar` | 1 | `emprestar` | 28,776 | accent_variant |
 | `empujé` | 1 | `empuje` | 1 | accent_variant |
 | `empurra-io` | 1 | `empurrá-io` | 21 | unaccented |
 | `empurrà-io` | 1 | `empurrá-io` | 21 | accent_variant |
 | `empurràmos` | 1 | `empurramos` | 251 | accent_variant |
 | `empurrá-ia` | 1 | `empurrâ-ia` | 4 | accent_variant |
-| `empurrástea` | 1 | `empurrastea` | 74 | accent_variant |
 | `empáticamente` | 1 | `empaticamente` | 6 | accent_variant |
 | `emulaçao` | 1 | `emulação` | 21 | accent_variant |
 | `emé` | 1 | `eme` | 86 | accent_variant |
@@ -22533,44 +22424,43 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `encefálo` | 1 | `encéfalo` | 30 | accent_variant |
 | `encenaçäo` | 1 | `encenação` | 1,918 | accent_variant |
 | `enchergá` | 1 | `encherga` | 4 | accent_variant |
-| `enchêr` | 1 | `encher` | 29,500 | accent_variant |
+| `enchêr` | 1 | `encher` | 29,915 | accent_variant |
 | `enciclopêdias` | 1 | `enciclopedias` | 8 | accent_variant |
 | `encilhá` | 1 | `encilha` | 4 | accent_variant |
-| `encomodá` | 1 | `encomoda` | 13 | accent_variant |
+| `encomodá` | 1 | `encomoda` | 14 | accent_variant |
 | `encondê` | 1 | `enconde` | 5 | accent_variant |
 | `encontra-lo-ás` | 1 | `encontrá-lo-ás` | 36 | accent_variant |
 | `encontra-lo-ão` | 1 | `encontrá-lo-ão` | 56 | accent_variant |
 | `encontrar-nos-äo` | 1 | `encontrar-nos-ão` | 51 | accent_variant |
 | `encontrar-te-à` | 1 | `encontrar-te-á` | 95 | accent_variant |
 | `encontrar-vos-à` | 1 | `encontrar-vos-á` | 13 | accent_variant |
-| `encontraá` | 1 | `encontraa` | 1,696 | accent_variant |
+| `encontraá` | 1 | `encontraa` | 1 | accent_variant |
 | `encontro-violacão` | 1 | `encontro-violação` | 5 | accent_variant |
 | `encontrà-io-ei` | 1 | `encontrá-io-ei` | 5 | accent_variant |
 | `encontràei` | 1 | `encontraei` | 15 | accent_variant |
 | `encontràemos` | 1 | `encontraemos` | 26 | accent_variant |
 | `encontrá-la-às` | 1 | `encontrá-la-ás` | 19 | accent_variant |
-| `encontrádo` | 1 | `encontrado` | 4,240 | accent_variant |
+| `encontrádo` | 1 | `encontrado` | 4,241 | accent_variant |
 | `encontrálas` | 1 | `encontralas` | 1 | accent_variant |
-| `encontrámosa` | 1 | `encontramosa` | 9 | accent_variant |
 | `encontrária` | 1 | `encontraría` | 26 | accent_variant |
 | `encontráriamos` | 1 | `encontrariamos` | 24 | accent_variant |
 | `encontrâo` | 1 | `encontrão` | 422 | accent_variant |
-| `encontrò` | 1 | `encontro` | 97,862 | accent_variant |
-| `encontró` | 1 | `encontro` | 97,862 | accent_variant |
-| `encontrô` | 1 | `encontro` | 97,862 | accent_variant |
+| `encontrò` | 1 | `encontro` | 98,590 | accent_variant |
+| `encontró` | 1 | `encontro` | 98,590 | accent_variant |
+| `encontrô` | 1 | `encontro` | 98,590 | accent_variant |
 | `encontámo` | 1 | `encontamo` | 11 | accent_variant |
 | `encontássemos` | 1 | `encontassemos` | 1 | accent_variant |
 | `encorajá-io` | 1 | `encorajä-io` | 2 | accent_variant |
-| `encorajár` | 1 | `encorajar` | 6,889 | accent_variant |
+| `encorajár` | 1 | `encorajar` | 7,072 | accent_variant |
 | `encurajá` | 1 | `encuraja` | 1 | accent_variant |
 | `encárgate` | 1 | `encargate` | 1 | accent_variant |
 | `encéfalograma` | 1 | `encefalograma` | 51 | accent_variant |
 | `encías` | 1 | `encias` | 5 | accent_variant |
 | `endarterectomía` | 1 | `endarterectomia` | 9 | accent_variant |
-| `enderêço` | 1 | `endereço` | 12,779 | accent_variant |
+| `enderêço` | 1 | `endereço` | 12,781 | accent_variant |
 | `endocrino` | 1 | `endócrino` | 137 | unaccented |
 | `endoscopía` | 1 | `endoscopia` | 225 | accent_variant |
-| `endêreço` | 1 | `endereço` | 12,779 | accent_variant |
+| `endêreço` | 1 | `endereço` | 12,781 | accent_variant |
 | `endócrinologista` | 1 | `endocrinologista` | 46 | accent_variant |
 | `energumenos` | 1 | `energúmenos` | 39 | unaccented |
 | `enfermò` | 1 | `enfermo` | 566 | accent_variant |
@@ -22579,24 +22469,23 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `enforcà-ios` | 1 | `enforcá-ios` | 13 | accent_variant |
 | `enfrentarăo` | 1 | `enfrentarâo` | 3 | accent_variant |
 | `enfrentà-io` | 1 | `enfrentá-io` | 12 | accent_variant |
-| `enfrentár` | 1 | `enfrentar` | 48,222 | accent_variant |
+| `enfrentár` | 1 | `enfrentar` | 48,328 | accent_variant |
 | `enfím` | 1 | `enfim` | 13,914 | accent_variant |
-| `enfîar` | 1 | `enfiar` | 27,708 | accent_variant |
+| `enfîar` | 1 | `enfiar` | 28,243 | accent_variant |
 | `engagé` | 1 | `engage` | 3 | accent_variant |
 | `enganaçäo` | 1 | `enganação` | 66 | accent_variant |
 | `enganá-ia` | 1 | `engana-ia` | 1 | accent_variant |
 | `enganá-los-á` | 1 | `enganá-los-à` | 2 | accent_variant |
-| `enganástea` | 1 | `enganastea` | 55 | accent_variant |
-| `enganô` | 1 | `engano` | 16,106 | accent_variant |
+| `enganô` | 1 | `engano` | 16,113 | accent_variant |
 | `engatatao` | 1 | `engatatão` | 441 | unaccented |
 | `engañado` | 1 | `enganado` | 21,238 | accent_variant |
-| `engañaste` | 1 | `enganáste` | 21 | accent_variant |
-| `engaño` | 1 | `engano` | 16,106 | accent_variant |
+| `engañaste` | 1 | `enganáste` | 22 | accent_variant |
+| `engaño` | 1 | `engano` | 16,113 | accent_variant |
 | `engenheíro` | 1 | `engenheiro` | 10,212 | accent_variant |
 | `engracia` | 1 | `engrácia` | 15 | unaccented |
 | `engraçãdo` | 1 | `engraçado` | 73,014 | accent_variant |
 | `engreído` | 1 | `engreido` | 4 | accent_variant |
-| `enlouqueçer` | 1 | `enlouquecer` | 17,950 | accent_variant |
+| `enlouqueçer` | 1 | `enlouquecer` | 17,970 | accent_variant |
 | `enlouqueçê` | 1 | `enlouqueçe` | 1 | accent_variant |
 | `enocntrá` | 1 | `enocntra` | 1 | accent_variant |
 | `enocômicos` | 1 | `enocómicos` | 1 | accent_variant |
@@ -22611,7 +22500,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ensinar-te-à` | 1 | `ensinar-te-á` | 64 | accent_variant |
 | `ensinar-te-äo` | 1 | `ensinar-te-ão` | 9 | accent_variant |
 | `ensiná-lo-à` | 1 | `ensiná-lo-á` | 11 | accent_variant |
-| `ensinár` | 1 | `ensinar` | 92,725 | accent_variant |
+| `ensinár` | 1 | `ensinar` | 93,294 | accent_variant |
 | `entenderàn` | 1 | `entenderan` | 1 | accent_variant |
 | `enterná` | 1 | `enterna` | 1 | accent_variant |
 | `enterra-io` | 1 | `enterrá-io` | 19 | unaccented |
@@ -22619,7 +22508,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `enterrà-io` | 1 | `enterrá-io` | 19 | accent_variant |
 | `enterràmo-ios` | 1 | `enterrámo-ios` | 6 | accent_variant |
 | `enterrämo` | 1 | `enterrâmo` | 1 | accent_variant |
-| `enterró` | 1 | `enterro` | 3,771 | accent_variant |
+| `enterró` | 1 | `enterro` | 3,801 | accent_variant |
 | `entervistá` | 1 | `entervista` | 10 | accent_variant |
 | `entitulá` | 1 | `entitula` | 14 | accent_variant |
 | `entomología` | 1 | `entomologia` | 111 | accent_variant |
@@ -22630,9 +22519,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `entregar-me-à` | 1 | `entregar-me-á` | 13 | accent_variant |
 | `entregàei` | 1 | `entregaei` | 1 | accent_variant |
 | `entregàssemos` | 1 | `entregassemos` | 17 | accent_variant |
-| `entregár` | 1 | `entregar` | 98,029 | accent_variant |
+| `entregár` | 1 | `entregar` | 98,942 | accent_variant |
 | `entrelacado` | 1 | `entrelaçado` | 431 | unaccented |
-| `entrevistà` | 1 | `entrevista` | 25,646 | accent_variant |
+| `entrevistà` | 1 | `entrevista` | 25,652 | accent_variant |
 | `entrevistà-io` | 1 | `entrevistá-io` | 16 | accent_variant |
 | `entré` | 1 | `entre` | 244,322 | accent_variant |
 | `entusiamá` | 1 | `entusiama` | 1 | accent_variant |
@@ -22651,13 +22540,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `enumeracão` | 1 | `enumeração` | 14 | accent_variant |
 | `enumeraçao` | 1 | `enumeração` | 14 | accent_variant |
 | `envelheceràs` | 1 | `envelheceräs` | 2 | accent_variant |
-| `envenenár` | 1 | `envenenar` | 13,994 | accent_variant |
+| `envenenár` | 1 | `envenenar` | 14,246 | accent_variant |
 | `envia-io` | 1 | `enviá-io` | 17 | unaccented |
 | `envia-lo-á` | 1 | `enviá-lo-á` | 7 | accent_variant |
 | `envia-los-á` | 1 | `enviá-los-á` | 2 | accent_variant |
 | `enviar-me-à` | 1 | `enviar-me-á` | 8 | accent_variant |
 | `enviar-nos-à` | 1 | `enviar-nos-á` | 13 | accent_variant |
-| `enviástea` | 1 | `enviastea` | 43 | accent_variant |
 | `enviò` | 1 | `envío` | 10 | accent_variant |
 | `envoivê-io` | 1 | `envoive-io` | 1 | accent_variant |
 | `envontrá` | 1 | `envontra` | 1 | accent_variant |
@@ -22668,14 +22556,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `envólocro` | 1 | `envolocro` | 5 | accent_variant |
 | `enântico` | 1 | `enantico` | 2 | accent_variant |
 | `ençaiço` | 1 | `encaico` | 2 | accent_variant |
-| `ençarrego` | 1 | `encarrego` | 1,684 | accent_variant |
-| `ençontrar` | 1 | `encontrar` | 852,363 | accent_variant |
+| `ençarrego` | 1 | `encarrego` | 1,689 | accent_variant |
+| `ençontrar` | 1 | `encontrar` | 863,775 | accent_variant |
 | `ençontrá` | 1 | `encontrà` | 52 | accent_variant |
 | `ençontrámos` | 1 | `encontràmos` | 13 | accent_variant |
-| `ençostandoa` | 1 | `encostandoa` | 2 | accent_variant |
 | `ençurraiados` | 1 | `encurraiados` | 9 | accent_variant |
 | `enérgetico` | 1 | `energético` | 3,328 | accent_variant |
-| `enôjo` | 1 | `enojo` | 61 | accent_variant |
+| `enôjo` | 1 | `enojo` | 63 | accent_variant |
 | `enûma` | 1 | `enuma` | 7 | accent_variant |
 | `eored` | 1 | `éored` | 27 | unaccented |
 | `epidemiología` | 1 | `epidemiologia` | 77 | accent_variant |
@@ -22697,11 +22584,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `equacao` | 1 | `equação` | 4,442 | unaccented |
 | `equaçăo` | 1 | `equação` | 4,442 | accent_variant |
 | `equilíbio` | 1 | `equilibio` | 1 | accent_variant |
-| `equilíbrar` | 1 | `equilibrar` | 4,487 | accent_variant |
+| `equilíbrar` | 1 | `equilibrar` | 4,489 | accent_variant |
 | `equivalencia` | 1 | `equivalência` | 303 | unaccented |
 | `equivocó` | 1 | `equívoco` | 1,206 | accent_variant |
-| `equípa` | 1 | `equipa` | 163,417 | accent_variant |
-| `equîpa` | 1 | `equipa` | 163,417 | accent_variant |
+| `equípa` | 1 | `equipa` | 163,404 | accent_variant |
+| `equîpa` | 1 | `equipa` | 163,404 | accent_variant |
 | `eqüentemente` | 1 | `equentemente` | 1 | accent_variant |
 | `eqüidistante` | 1 | `equidistante` | 70 | accent_variant |
 | `eqüitativamente` | 1 | `equitativamente` | 69 | accent_variant |
@@ -22745,8 +22632,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `escavaçoes` | 1 | `escavaçöes` | 2 | accent_variant |
 | `escocés` | 1 | `escocês` | 5,106 | accent_variant |
 | `escodê` | 1 | `escode` | 1 | accent_variant |
-| `escolhêr` | 1 | `escolher` | 144,542 | accent_variant |
-| `escoltâ` | 1 | `escolta` | 5,381 | accent_variant |
+| `escolhêr` | 1 | `escolher` | 146,616 | accent_variant |
+| `escoltâ` | 1 | `escolta` | 5,388 | accent_variant |
 | `escondémo` | 1 | `escondêmo` | 22 | accent_variant |
 | `escondéssemos` | 1 | `escondessemos` | 2 | accent_variant |
 | `escontrámos` | 1 | `escontramos` | 3 | accent_variant |
@@ -22756,7 +22643,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `escortá` | 1 | `escorta` | 7 | accent_variant |
 | `escravizaçao` | 1 | `escravização` | 52 | accent_variant |
 | `escrebê` | 1 | `escrebe` | 6 | accent_variant |
-| `escreveuà` | 1 | `escreveua` | 180 | accent_variant |
 | `escribió` | 1 | `escribiò` | 3 | accent_variant |
 | `escribí` | 1 | `escribi` | 2 | accent_variant |
 | `escritòrio` | 1 | `escritório` | 78,059 | accent_variant |
@@ -22784,7 +22670,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `esfregaçao` | 1 | `esfregação` | 6 | accent_variant |
 | `esféra` | 1 | `esfera` | 4,148 | accent_variant |
 | `esféroides` | 1 | `esferóides` | 21 | accent_variant |
-| `esfóla` | 1 | `esfola` | 229 | accent_variant |
 | `esfôrço` | 1 | `esforço` | 22,522 | accent_variant |
 | `eslógan` | 1 | `eslogan` | 1 | accent_variant |
 | `eslóvenia` | 1 | `eslovénia` | 122 | accent_variant |
@@ -22824,7 +22709,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `esperò` | 1 | `esperó` | 2 | accent_variant |
 | `espeçie` | 1 | `espécie` | 56,730 | accent_variant |
 | `espeçtáculos` | 1 | `espectaculos` | 34 | accent_variant |
-| `espiâ` | 1 | `espia` | 3,291 | accent_variant |
+| `espiâ` | 1 | `espia` | 3,315 | accent_variant |
 | `espiâo` | 1 | `espião` | 21,645 | accent_variant |
 | `espléndida` | 1 | `esplendida` | 58 | accent_variant |
 | `esplênico` | 1 | `esplénico` | 16 | accent_variant |
@@ -22852,7 +22737,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `esquecémo` | 1 | `esquecêmo` | 4 | accent_variant |
 | `esquecê-ia` | 1 | `esquece-ia` | 3 | accent_variant |
 | `esquecêmos` | 1 | `esqueçemos` | 9 | accent_variant |
-| `esquecę` | 1 | `esqueçe` | 898 | accent_variant |
+| `esquecę` | 1 | `esqueçe` | 913 | accent_variant |
 | `esqueçãm` | 1 | `esquecam` | 44 | accent_variant |
 | `esquisitäo` | 1 | `esquisitão` | 61 | accent_variant |
 | `esquisofrênica` | 1 | `esquisofrénica` | 5 | accent_variant |
@@ -22864,7 +22749,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `esquizôfrenia` | 1 | `esquizofrenia` | 1,464 | accent_variant |
 | `esquçe` | 1 | `esquce` | 2 | accent_variant |
 | `esquéci` | 1 | `esqueçi` | 41 | accent_variant |
-| `esquêce` | 1 | `esqueçe` | 898 | accent_variant |
+| `esquêce` | 1 | `esqueçe` | 913 | accent_variant |
 | `esquêmá` | 1 | `esquema` | 12,287 | accent_variant |
 | `essencíalmente` | 1 | `essencialmente` | 2,287 | accent_variant |
 | `esséncia` | 1 | `essência` | 4,672 | accent_variant |
@@ -22930,7 +22815,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `estropicio` | 1 | `estropício` | 19 | unaccented |
 | `estrová` | 1 | `estrova` | 1 | accent_variant |
 | `estrupá` | 1 | `estrupa` | 1 | accent_variant |
-| `estrátegia` | 1 | `estratégia` | 12,421 | accent_variant |
+| `estrátegia` | 1 | `estratégia` | 12,418 | accent_variant |
 | `estrógeneo` | 1 | `estrogéneo` | 22 | accent_variant |
 | `estuda-io` | 1 | `estudá-io` | 11 | unaccented |
 | `estudà-ios` | 1 | `estudá-ios` | 3 | accent_variant |
@@ -22984,7 +22869,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `estôrvo` | 1 | `estorvo` | 423 | accent_variant |
 | `estõo` | 1 | `estoo` | 1 | accent_variant |
 | `estùpido` | 1 | `estúpido` | 109,912 | accent_variant |
-| `estúdo` | 1 | `estudo` | 26,212 | accent_variant |
+| `estúdo` | 1 | `estudo` | 26,241 | accent_variant |
 | `estúpides` | 1 | `estupides` | 16 | accent_variant |
 | `estúpidissímo` | 1 | `estupidíssimo` | 1 | accent_variant |
 | `estúpidês` | 1 | `estupides` | 16 | accent_variant |
@@ -22994,10 +22879,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `estüpida` | 1 | `estúpida` | 2,333 | accent_variant |
 | `estăm` | 1 | `estám` | 4 | accent_variant |
 | `esvanecerá` | 1 | `esvanecera` | 1 | accent_variant |
-| `esvaziástea` | 1 | `esvaziastea` | 6 | accent_variant |
 | `esvoacar` | 1 | `esvoaçar` | 462 | unaccented |
 | `esáa` | 1 | `esaa` | 8 | accent_variant |
-| `esçoihe` | 1 | `escoihe` | 1 | accent_variant |
+| `esçoihe` | 1 | `escoihe` | 2 | accent_variant |
 | `esçravatura` | 1 | `escravatura` | 2,660 | accent_variant |
 | `esçusa` | 1 | `escusa` | 1,130 | accent_variant |
 | `esçuteirinha` | 1 | `escuteirinha` | 8 | accent_variant |
@@ -23078,7 +22962,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `execuçöes` | 1 | `execucöes` | 3 | accent_variant |
 | `exequias` | 1 | `exéquias` | 80 | unaccented |
 | `exerciçíos` | 1 | `exercicios` | 117 | accent_variant |
-| `exercítar` | 1 | `exercitar` | 1,919 | accent_variant |
+| `exercítar` | 1 | `exercitar` | 1,922 | accent_variant |
 | `exibicão` | 1 | `exibição` | 4,248 | accent_variant |
 | `exibiçaõ` | 1 | `exibição` | 4,248 | accent_variant |
 | `exibiçào` | 1 | `exibição` | 4,248 | accent_variant |
@@ -23125,7 +23009,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `expêriencia` | 1 | `experiência` | 59,124 | accent_variant |
 | `expöem` | 1 | `expoem` | 2 | accent_variant |
 | `extasís` | 1 | `extasis` | 3 | accent_variant |
-| `extendía` | 1 | `extendia` | 12 | accent_variant |
+| `extendía` | 1 | `extendia` | 7 | accent_variant |
 | `extensívamente` | 1 | `extensivamente` | 135 | accent_variant |
 | `extensăo` | 1 | `extensão` | 5,336 | accent_variant |
 | `exterminacão` | 1 | `exterminação` | 378 | accent_variant |
@@ -23135,49 +23019,49 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `extorçäo` | 1 | `extorção` | 93 | accent_variant |
 | `extradicao` | 1 | `extradição` | 1,671 | unaccented |
 | `extradiçao` | 1 | `extradição` | 1,671 | accent_variant |
-| `extraordinarío` | 1 | `extraordinário` | 18,822 | accent_variant |
+| `extraordinarío` | 1 | `extraordinário` | 18,820 | accent_variant |
 | `extraordinärias` | 1 | `extraordinarias` | 14 | accent_variant |
-| `extraordinärio` | 1 | `extraordinário` | 18,822 | accent_variant |
+| `extraordinärio` | 1 | `extraordinário` | 18,820 | accent_variant |
 | `extrema-uncão` | 1 | `extrema-unção` | 156 | accent_variant |
 | `extrema-uncäo` | 1 | `extrema-unção` | 156 | accent_variant |
 | `extrema-unçăo` | 1 | `extrema-unção` | 156 | accent_variant |
 | `extrãnha` | 1 | `extranha` | 41 | accent_variant |
 | `extrême` | 1 | `extreme` | 279 | accent_variant |
-| `extínguír` | 1 | `extinguir` | 5,924 | accent_variant |
+| `extínguír` | 1 | `extinguir` | 5,925 | accent_variant |
 | `exumacäo` | 1 | `exumação` | 276 | accent_variant |
 | `exáctamente` | 1 | `exactámente` | 1 | accent_variant |
 | `exêrc` | 1 | `exerc` | 7 | accent_variant |
-| `exílar` | 1 | `exilar` | 2,021 | accent_variant |
+| `exílar` | 1 | `exilar` | 2,027 | accent_variant |
 | `exógamia` | 1 | `exogamia` | 2 | accent_variant |
 | `eyup` | 1 | `eyüp` | 12 | unaccented |
-| `eía` | 1 | `eia` | 592 | accent_variant |
+| `eía` | 1 | `eia` | 586 | accent_variant |
 | `eídolon` | 1 | `eidolon` | 22 | accent_variant |
 | `eín` | 1 | `ein` | 405 | accent_variant |
 | `eñenhum` | 1 | `énenhum` | 4 | accent_variant |
 | `eúna` | 1 | `eunã` | 3 | accent_variant |
-| `eā` | 1 | `ea` | 728 | accent_variant |
+| `eā` | 1 | `ea` | 712 | accent_variant |
 | `fa-io` | 1 | `fá-io` | 207 | unaccented |
+| `fa-ios` | 1 | `fá-ios` | 30 | unaccented |
 | `fa-la-á` | 1 | `fá-la-á` | 45 | accent_variant |
 | `fa-las-á` | 1 | `fá-las-á` | 2 | accent_variant |
 | `fa-lo-ão` | 1 | `fá-lo-ão` | 206 | accent_variant |
-| `fabrícar` | 1 | `fabricar` | 8,242 | accent_variant |
+| `fabrícar` | 1 | `fabricar` | 8,279 | accent_variant |
 | `fabrízio` | 1 | `fabrizio` | 305 | accent_variant |
 | `facalhäo` | 1 | `facalhão` | 247 | accent_variant |
 | `facilitar-me-à` | 1 | `facilitar-me-á` | 7 | accent_variant |
 | `faco-ihe` | 1 | `faço-ihe` | 39 | unaccented |
-| `facoas` | 1 | `façoas` | 315 | unaccented |
 | `facámo` | 1 | `facamo` | 3 | accent_variant |
 | `fae-bebê` | 1 | `fae-bebé` | 1 | accent_variant |
 | `faisâo` | 1 | `faisão` | 791 | accent_variant |
 | `faiàmos` | 1 | `faiámos` | 8 | accent_variant |
 | `fakirmãs` | 1 | `fakirmas` | 1 | accent_variant |
-| `falacia` | 1 | `falácia` | 236 | unaccented |
+| `falacia` | 1 | `falácia` | 235 | unaccented |
 | `falarsó` | 1 | `falarso` | 1 | accent_variant |
 | `falaräo` | 1 | `falarao` | 3 | accent_variant |
 | `falasêrio` | 1 | `falasério` | 1 | accent_variant |
 | `falatôrio` | 1 | `falatório` | 754 | accent_variant |
 | `falcăo` | 1 | `falcão` | 5,360 | accent_variant |
-| `falhádo` | 1 | `falhado` | 12,156 | accent_variant |
+| `falhádo` | 1 | `falhado` | 12,151 | accent_variant |
 | `falico` | 1 | `fálico` | 245 | unaccented |
 | `falivel` | 1 | `falível` | 233 | unaccented |
 | `fallujá` | 1 | `falluja` | 112 | accent_variant |
@@ -23225,18 +23109,18 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fasciola` | 1 | `fascíola` | 24 | unaccented |
 | `fasciotomía` | 1 | `fasciotomia` | 19 | accent_variant |
 | `favorà` | 1 | `favora` | 2 | accent_variant |
-| `fazerá` | 1 | `fazera` | 41 | accent_variant |
+| `fazerá` | 1 | `fazera` | 36 | accent_variant |
 | `fazeê` | 1 | `fazee` | 16 | accent_variant |
 | `fazrê` | 1 | `fazre` | 1 | accent_variant |
-| `fazá` | 1 | `faza` | 22 | accent_variant |
-| `fazãš` | 1 | `fazas` | 4 | accent_variant |
+| `fazá` | 1 | `faza` | 9 | accent_variant |
+| `fazãš` | 1 | `fazas` | 3 | accent_variant |
 | `fazè-io` | 1 | `fazê-io` | 11 | accent_variant |
 | `fazé` | 1 | `fazë` | 23 | accent_variant |
 | `fazê-l` | 1 | `faze-l` | 1 | accent_variant |
 | `fazêio` | 1 | `fazeio` | 1 | accent_variant |
 | `fazêlos` | 1 | `fazelos` | 3 | accent_variant |
 | `fazí` | 1 | `fazi` | 3 | accent_variant |
-| `faá` | 1 | `faa` | 930 | accent_variant |
+| `faá` | 1 | `faa` | 932 | accent_variant |
 | `façad` | 1 | `facad` | 5 | accent_variant |
 | `façade` | 1 | `facade` | 1 | accent_variant |
 | `façi` | 1 | `fáci` | 8 | accent_variant |
@@ -23275,7 +23159,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `festín` | 1 | `festin` | 3 | accent_variant |
 | `fetido` | 1 | `fétido` | 309 | unaccented |
 | `fezé` | 1 | `feze` | 4 | accent_variant |
-| `feçhaste` | 1 | `fechaste` | 1,167 | accent_variant |
+| `feçhaste` | 1 | `fechaste` | 1,185 | accent_variant |
 | `fhá` | 1 | `fha` | 14 | accent_variant |
 | `fháser` | 1 | `fhaser` | 1 | accent_variant |
 | `fiacöes` | 1 | `fiacões` | 1 | accent_variant |
@@ -23323,9 +23207,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fiutuaçao` | 1 | `fiutuacão` | 2 | accent_variant |
 | `fizerão` | 1 | `fizerao` | 1 | accent_variant |
 | `fizé-mo` | 1 | `fizê-mo` | 4 | accent_variant |
-| `fizéstea` | 1 | `fizestea` | 423 | accent_variant |
 | `fizêssemos` | 1 | `fizessemos` | 125 | accent_variant |
-| `fiçar` | 1 | `ficar` | 1,633,484 | accent_variant |
+| `fiçar` | 1 | `ficar` | 1,633,485 | accent_variant |
 | `fiçaram` | 1 | `ficáram` | 2 | accent_variant |
 | `fiço` | 1 | `ficô` | 6 | accent_variant |
 | `fiéís` | 1 | `fieís` | 2 | accent_variant |
@@ -23361,8 +23244,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fodessemos` | 1 | `fodêssemos` | 21 | unaccented |
 | `fodilhao` | 1 | `fodilhão` | 235 | unaccented |
 | `fodásticamente` | 1 | `fodasticamente` | 1 | accent_variant |
-| `fodâ` | 1 | `foda` | 62,711 | accent_variant |
-| `fodías` | 1 | `fodias` | 268 | accent_variant |
+| `fodâ` | 1 | `foda` | 62,723 | accent_variant |
+| `fodías` | 1 | `fodias` | 238 | accent_variant |
 | `fogo-de-artifíco` | 1 | `fogo-de-artifico` | 1 | accent_variant |
 | `foguetăo` | 1 | `foguetão` | 3,373 | accent_variant |
 | `foií` | 1 | `foii` | 12 | accent_variant |
@@ -23392,7 +23275,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `forámen` | 1 | `foramen` | 22 | accent_variant |
 | `força-io` | 1 | `forçá-io` | 6 | accent_variant |
 | `forçaaèrea` | 1 | `forçaaérea` | 10 | accent_variant |
-| `forçâ` | 1 | `força` | 175,144 | accent_variant |
+| `forçâ` | 1 | `força` | 175,227 | accent_variant |
 | `foréis` | 1 | `foreis` | 3 | accent_variant |
 | `forênsico` | 1 | `forensico` | 3 | accent_variant |
 | `forênsicos` | 1 | `forensicos` | 9 | accent_variant |
@@ -23469,7 +23352,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fumaçeira` | 1 | `fumaceira` | 5 | accent_variant |
 | `fumigacao` | 1 | `fumigação` | 100 | unaccented |
 | `fumigaçâo` | 1 | `fumigação` | 100 | accent_variant |
-| `fumô` | 1 | `fumo` | 19,308 | accent_variant |
+| `fumô` | 1 | `fumo` | 19,315 | accent_variant |
 | `funambulo` | 1 | `funâmbulo` | 26 | unaccented |
 | `funaná` | 1 | `funana` | 1 | accent_variant |
 | `funcionàvel` | 1 | `funcionável` | 8 | accent_variant |
@@ -23521,13 +23404,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fántástica` | 1 | `fantastica` | 104 | accent_variant |
 | `fánáticos` | 1 | `fanaticos` | 14 | accent_variant |
 | `fár-me-à` | 1 | `far-me-á` | 168 | accent_variant |
-| `fáras` | 1 | `faras` | 44 | accent_variant |
+| `fáras` | 1 | `faras` | 43 | accent_variant |
 | `fáres` | 1 | `farès` | 69 | accent_variant |
 | `fárlley` | 1 | `farlley` | 1 | accent_variant |
-| `fáza` | 1 | `faza` | 22 | accent_variant |
 | `fáçii` | 1 | `fàcii` | 14 | accent_variant |
 | `fâcil` | 1 | `fácil` | 129,963 | accent_variant |
-| `fâz` | 1 | `fáz` | 127 | accent_variant |
+| `fâz` | 1 | `fáz` | 128 | accent_variant |
 | `fâze` | 1 | `fazë` | 23 | accent_variant |
 | `fäei` | 1 | `faei` | 37 | accent_variant |
 | `fäia` | 1 | `faia` | 248 | accent_variant |
@@ -23547,7 +23429,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fêma` | 1 | `fema` | 639 | accent_variant |
 | `fêmeas-alce` | 1 | `fémeas-alce` | 2 | accent_variant |
 | `fênomeno` | 1 | `fenómeno` | 4,529 | accent_variant |
-| `fêza` | 1 | `feza` | 62 | accent_variant |
 | `fí-io` | 1 | `fi-io` | 36 | accent_variant |
 | `fíasco` | 1 | `fiasco` | 1,647 | accent_variant |
 | `fícará` | 1 | `ficarà` | 7 | accent_variant |
@@ -23566,7 +23447,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fínais` | 1 | `fináis` | 3 | accent_variant |
 | `fínje` | 1 | `finje` | 99 | accent_variant |
 | `fíquei` | 1 | `fíqueí` | 2 | accent_variant |
-| `fírme` | 1 | `firme` | 17,489 | accent_variant |
+| `fírme` | 1 | `firme` | 17,492 | accent_variant |
 | `físher` | 1 | `fisher` | 5,867 | accent_variant |
 | `físio` | 1 | `fisio` | 9 | accent_variant |
 | `físiológica` | 1 | `fisiologica` | 1 | accent_variant |
@@ -23574,7 +23455,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fístola` | 1 | `fistola` | 1 | accent_variant |
 | `físíco` | 1 | `físico` | 28,967 | accent_variant |
 | `fízemos` | 1 | `fizêmos` | 5 | accent_variant |
-| `fízeste` | 1 | `fizéste` | 44 | accent_variant |
+| `fízeste` | 1 | `fizéste` | 45 | accent_variant |
 | `fíêis` | 1 | `fieís` | 2 | accent_variant |
 | `fíïsico` | 1 | `fíísico` | 8 | accent_variant |
 | `fîança` | 1 | `fiança` | 8,218 | accent_variant |
@@ -23582,17 +23463,17 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `fîcas` | 1 | `fiças` | 2 | accent_variant |
 | `fînălmente` | 1 | `finalmente` | 80,348 | accent_variant |
 | `fïllha` | 1 | `fillha` | 30 | accent_variant |
-| `fódeu` | 1 | `fodeu` | 2,034 | accent_variant |
-| `fódia` | 1 | `fodia` | 907 | accent_variant |
+| `fódeu` | 1 | `fodeu` | 2,133 | accent_variant |
+| `fódia` | 1 | `fodia` | 820 | accent_variant |
 | `fórmulário` | 1 | `formulário` | 5,940 | accent_variant |
 | `fórro` | 1 | `forro` | 718 | accent_variant |
 | `fós` | 1 | `fos` | 70 | accent_variant |
 | `fósf` | 1 | `fosf` | 2 | accent_variant |
 | `fôesse` | 1 | `foésse` | 1 | accent_variant |
 | `fôfô` | 1 | `fofo` | 8,235 | accent_variant |
-| `fôrnicar` | 1 | `fornicar` | 3,366 | accent_variant |
+| `fôrnicar` | 1 | `fornicar` | 3,387 | accent_variant |
 | `fôrte` | 1 | `forte` | 128,228 | accent_variant |
-| `fõda` | 1 | `foda` | 62,711 | accent_variant |
+| `fõda` | 1 | `foda` | 62,723 | accent_variant |
 | `fölego` | 1 | `fôlego` | 5,218 | accent_variant |
 | `fössemos` | 1 | `fossêmos` | 15 | accent_variant |
 | `fùria` | 1 | `fúria` | 7,146 | accent_variant |
@@ -23626,7 +23507,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ganglândia` | 1 | `ganglandia` | 1 | accent_variant |
 | `ganha-pâo` | 1 | `ganha-pão` | 860 | accent_variant |
 | `ganhà` | 1 | `gánha` | 2 | accent_variant |
-| `ganhár` | 1 | `ganhar` | 236,626 | accent_variant |
+| `ganhár` | 1 | `ganhar` | 237,031 | accent_variant |
 | `ganzá` | 1 | `ganza` | 1,636 | accent_variant |
 | `ganâciosa` | 1 | `ganaciosa` | 6 | accent_variant |
 | `garantir-te-à` | 1 | `garantir-te-á` | 5 | accent_variant |
@@ -23642,7 +23523,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `garibáldis` | 1 | `garibaldis` | 5 | accent_variant |
 | `garrafäo` | 1 | `garrafão` | 459 | accent_variant |
 | `garzón` | 1 | `garzon` | 1 | accent_variant |
-| `garântia` | 1 | `garantia` | 10,707 | accent_variant |
+| `garântia` | 1 | `garantia` | 10,705 | accent_variant |
 | `garçón` | 1 | `garçon` | 568 | accent_variant |
 | `gas-pimenta` | 1 | `gás-pimenta` | 92 | unaccented |
 | `gascöes` | 1 | `gascões` | 19 | accent_variant |
@@ -23704,7 +23585,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `gipsofilas` | 1 | `gipsófilas` | 11 | unaccented |
 | `girissímo` | 1 | `giríssimo` | 234 | accent_variant |
 | `giráça` | 1 | `giraça` | 319 | accent_variant |
-| `girô` | 1 | `giro` | 26,744 | accent_variant |
+| `girô` | 1 | `giro` | 26,753 | accent_variant |
 | `giòria` | 1 | `giôria` | 2 | accent_variant |
 | `glazé` | 1 | `glaze` | 24 | accent_variant |
 | `glicoproteinas` | 1 | `glicoproteínas` | 20 | unaccented |
@@ -23716,8 +23597,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `gláucoma` | 1 | `glaucoma` | 399 | accent_variant |
 | `gländulas` | 1 | `glandulas` | 21 | accent_variant |
 | `glóriosa` | 1 | `gloríosa` | 2 | accent_variant |
-| `glóría` | 1 | `glória` | 15,704 | accent_variant |
-| `glöria` | 1 | `glória` | 15,704 | accent_variant |
+| `glóría` | 1 | `glória` | 15,703 | accent_variant |
+| `glöria` | 1 | `glória` | 15,703 | accent_variant |
 | `glühwein` | 1 | `gluhwein` | 5 | accent_variant |
 | `golías` | 1 | `golias` | 1,130 | accent_variant |
 | `goló` | 1 | `golo` | 5,200 | accent_variant |
@@ -23809,7 +23690,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `gustávio` | 1 | `gustavio` | 3 | accent_variant |
 | `gusté` | 1 | `guste` | 5 | accent_variant |
 | `gustò` | 1 | `gusto` | 154 | accent_variant |
-| `guárda` | 1 | `guarda` | 91,821 | accent_variant |
+| `guárda` | 1 | `guarda` | 93,038 | accent_variant |
 | `guárdalo` | 1 | `guardalo` | 1 | accent_variant |
 | `guão` | 1 | `guao` | 1 | accent_variant |
 | `gué` | 1 | `gue` | 38 | accent_variant |
@@ -23822,10 +23703,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `gádara` | 1 | `gadara` | 2 | accent_variant |
 | `gáius` | 1 | `gaius` | 3,507 | accent_variant |
 | `gángster` | 1 | `gangster` | 2,830 | accent_variant |
-| `gánhar` | 1 | `ganhar` | 236,626 | accent_variant |
+| `gánhar` | 1 | `ganhar` | 237,031 | accent_variant |
 | `gánhas` | 1 | `ganhás` | 14 | accent_variant |
 | `gánhasse` | 1 | `ganhásse` | 3 | accent_variant |
-| `gánhár` | 1 | `ganhar` | 236,626 | accent_variant |
+| `gánhár` | 1 | `ganhar` | 237,031 | accent_variant |
 | `gárgla` | 1 | `gargla` | 4 | accent_variant |
 | `gáscar` | 1 | `gascar` | 2 | accent_variant |
 | `gásoleo` | 1 | `gasóleo` | 709 | accent_variant |
@@ -23862,7 +23743,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `gígante` | 1 | `gigante` | 25,502 | accent_variant |
 | `gínásio` | 1 | `ginásio` | 11,131 | accent_variant |
 | `gíovanní` | 1 | `giovanni` | 1,566 | accent_variant |
-| `gírar` | 1 | `girar` | 25,069 | accent_variant |
+| `gírar` | 1 | `girar` | 25,149 | accent_variant |
 | `góji` | 1 | `goji` | 62 | accent_variant |
 | `góndola` | 1 | `gôndola` | 364 | accent_variant |
 | `góto` | 1 | `goto` | 347 | accent_variant |
@@ -23928,13 +23809,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `haveiá` | 1 | `haveia` | 1 | accent_variant |
 | `haverä` | 1 | `havera` | 84 | accent_variant |
 | `havái` | 1 | `havai` | 3,926 | accent_variant |
-| `havêr` | 1 | `haver` | 2,136,666 | accent_variant |
+| `havêr` | 1 | `haver` | 2,136,720 | accent_variant |
 | `havîa` | 1 | `hávia` | 2 | accent_variant |
 | `hawaíían` | 1 | `hawaiian` | 171 | accent_variant |
 | `hawái` | 1 | `hawai` | 746 | accent_variant |
 | `haydeé` | 1 | `haydee` | 6 | accent_variant |
 | `haydée` | 1 | `haydee` | 6 | accent_variant |
-| `haá` | 1 | `haa` | 311 | accent_variant |
+| `haá` | 1 | `haa` | 323 | accent_variant |
 | `haägen-dazs` | 1 | `haagen-dazs` | 55 | accent_variant |
 | `hebráico` | 1 | `hebraico` | 1,153 | accent_variant |
 | `hecantônqueires` | 1 | `hecantonqueires` | 1 | accent_variant |
@@ -24020,7 +23901,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `hipnogenése` | 1 | `hipnogénese` | 3 | accent_variant |
 | `hipnotico` | 1 | `hipnótico` | 537 | unaccented |
 | `hipnóticamente` | 1 | `hipnoticamente` | 8 | accent_variant |
-| `hipnótizar` | 1 | `hipnotizar` | 1,932 | accent_variant |
+| `hipnótizar` | 1 | `hipnotizar` | 1,977 | accent_variant |
 | `hipo-alergênicos` | 1 | `hipo-alergénicos` | 1 | accent_variant |
 | `hipoalergenicas` | 1 | `hipoalergénicas` | 20 | unaccented |
 | `hipoalergenico` | 1 | `hipoalergénico` | 36 | unaccented |
@@ -24093,7 +23974,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `horrípilante` | 1 | `horripilante` | 800 | accent_variant |
 | `horríveí` | 1 | `horrìvei` | 2 | accent_variant |
 | `hortência` | 1 | `hortencia` | 24 | accent_variant |
-| `horá` | 1 | `hora` | 504,139 | accent_variant |
+| `horá` | 1 | `hora` | 504,135 | accent_variant |
 | `horárío` | 1 | `horário` | 13,848 | accent_variant |
 | `hospedádo` | 1 | `hospedado` | 1,929 | accent_variant |
 | `hospicío` | 1 | `hospício` | 2,065 | accent_variant |
@@ -24124,13 +24005,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `háan` | 1 | `haan` | 1 | accent_variant |
 | `háb` | 1 | `hab` | 178 | accent_variant |
 | `hábilidade` | 1 | `habilidade` | 18,153 | accent_variant |
-| `hábituar` | 1 | `habituar` | 13,838 | accent_variant |
+| `hábituar` | 1 | `habituar` | 13,839 | accent_variant |
 | `hádoisanosatrásodepartamento` | 1 | `hadoisanosatrásodepartamento` | 1 | accent_variant |
 | `hákarl` | 1 | `hakarl` | 2 | accent_variant |
 | `hálibi` | 1 | `halibi` | 4 | accent_variant |
 | `hámburguer` | 1 | `hambúrguer` | 9,222 | accent_variant |
 | `hándicap` | 1 | `handicap` | 251 | accent_variant |
-| `háver` | 1 | `haver` | 2,136,666 | accent_variant |
+| `háver` | 1 | `haver` | 2,136,720 | accent_variant |
 | `hááááá` | 1 | `haaaaa` | 18 | accent_variant |
 | `hâ-de` | 1 | `há-de` | 11,984 | accent_variant |
 | `hâ-hâ` | 1 | `ha-ha` | 419 | accent_variant |
@@ -24142,7 +24023,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `hãh` | 1 | `hah` | 389 | accent_variant |
 | `hãos` | 1 | `haos` | 2 | accent_variant |
 | `hãs-de` | 1 | `hás-de` | 3,727 | accent_variant |
-| `hããa` | 1 | `haaa` | 53 | accent_variant |
+| `hããa` | 1 | `hããã` | 46 | accent_variant |
 | `häbito` | 1 | `hábito` | 13,510 | accent_variant |
 | `hägar` | 1 | `hagar` | 111 | accent_variant |
 | `hände` | 1 | `hande` | 9 | accent_variant |
@@ -24386,15 +24267,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `incluíndos` | 1 | `incluindos` | 2 | accent_variant |
 | `incluíria` | 1 | `incluiría` | 2 | accent_variant |
 | `incluíriamos` | 1 | `incluiriamos` | 4 | accent_variant |
-| `incluíua` | 1 | `incluiua` | 13 | accent_variant |
 | `inclúi` | 1 | `ínclui` | 2 | accent_variant |
 | `incomestivel` | 1 | `incomestível` | 16 | unaccented |
 | `incomodar-me-á` | 1 | `incomodar-me-à` | 1 | accent_variant |
 | `incomodà-io` | 1 | `incomodá-io` | 51 | accent_variant |
-| `incomodár` | 1 | `incomodar` | 56,350 | accent_variant |
-| `incomódaa` | 1 | `incomodaa` | 192 | accent_variant |
+| `incomodár` | 1 | `incomodar` | 56,657 | accent_variant |
 | `incomódamente` | 1 | `incomodamente` | 12 | accent_variant |
-| `incomódoas` | 1 | `incomodoas` | 1 | accent_variant |
 | `incomôda` | 1 | `incômoda` | 74 | accent_variant |
 | `inconcevibel` | 1 | `inconcevíbel` | 22 | unaccented |
 | `inconsciênte` | 1 | `inconsciente` | 11,640 | accent_variant |
@@ -24417,12 +24295,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `incumbęncia` | 1 | `incumbência` | 341 | accent_variant |
 | `incuràvel` | 1 | `incurável` | 860 | accent_variant |
 | `incêdiário` | 1 | `incediário` | 1 | accent_variant |
+| `incêndei` | 1 | `incendei` | 7 | accent_variant |
 | `incêndia` | 1 | `incendia` | 30 | accent_variant |
-| `incêndiar` | 1 | `incendiar` | 9,979 | accent_variant |
-| `incêntivo` | 1 | `incentivo` | 2,982 | accent_variant |
+| `incêndiar` | 1 | `incendiar` | 10,028 | accent_variant |
+| `incêntivo` | 1 | `incentivo` | 2,986 | accent_variant |
 | `incómodado` | 1 | `incomodado` | 1,013 | accent_variant |
 | `incômod` | 1 | `incomod` | 1 | accent_variant |
-| `incômodar` | 1 | `incomodar` | 56,350 | accent_variant |
+| `incômodar` | 1 | `incomodar` | 56,657 | accent_variant |
 | `incõlume` | 1 | `incólume` | 519 | accent_variant |
 | `incömodo` | 1 | `incómodo` | 5,476 | accent_variant |
 | `incúbo` | 1 | `íncubo` | 60 | accent_variant |
@@ -24530,7 +24409,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `injeccäo` | 1 | `injecçäo` | 12 | accent_variant |
 | `injeccões` | 1 | `injecçöes` | 3 | accent_variant |
 | `injeçoes` | 1 | `injeçöes` | 3 | accent_variant |
-| `injétar` | 1 | `injetar` | 9,084 | accent_variant |
+| `injétar` | 1 | `injetar` | 9,211 | accent_variant |
 | `injênua` | 1 | `injenua` | 1 | accent_variant |
 | `inlges` | 1 | `inlgês` | 10 | unaccented |
 | `inocênte` | 1 | `inocente` | 49,238 | accent_variant |
@@ -24558,7 +24437,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `insolvencia` | 1 | `insolvência` | 118 | unaccented |
 | `insolênte` | 1 | `insolente` | 2,196 | accent_variant |
 | `insoportavel` | 1 | `insoportável` | 12 | unaccented |
-| `inspeccionà` | 1 | `inspecciona` | 139 | accent_variant |
+| `inspeccionà` | 1 | `inspecciona` | 143 | accent_variant |
 | `inspectôr` | 1 | `ínspector` | 3 | accent_variant |
 | `inspecçionar` | 1 | `inspeccionar` | 1,865 | accent_variant |
 | `inspecçâo` | 1 | `inspeccao` | 11 | accent_variant |
@@ -24581,7 +24460,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `instruçcöes` | 1 | `instruccoes` | 1 | accent_variant |
 | `instruçâo` | 1 | `instrução` | 17,442 | accent_variant |
 | `instruçôes` | 1 | `instruçöes` | 59 | accent_variant |
-| `instruír` | 1 | `instruir` | 3,475 | accent_variant |
+| `instruír` | 1 | `instruir` | 3,498 | accent_variant |
 | `instàvel` | 1 | `instável` | 7,272 | accent_variant |
 | `instântaneas` | 1 | `instantanêas` | 2 | accent_variant |
 | `instínto` | 1 | `instinto` | 16,205 | accent_variant |
@@ -24590,7 +24469,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `insupurtável` | 1 | `insupurtavel` | 3 | accent_variant |
 | `insurreiçäo` | 1 | `insurreição` | 693 | accent_variant |
 | `insáciavel` | 1 | `insaciável` | 1,082 | accent_variant |
-| `insçrever` | 1 | `inscrever` | 7,056 | accent_variant |
+| `insçrever` | 1 | `inscrever` | 7,081 | accent_variant |
 | `insência` | 1 | `insencia` | 1 | accent_variant |
 | `insígne` | 1 | `insigne` | 20 | accent_variant |
 | `insôlencia` | 1 | `insolência` | 917 | accent_variant |
@@ -24633,7 +24512,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `interrogatôrio` | 1 | `interrogatório` | 11,573 | accent_variant |
 | `interrogatörio` | 1 | `interrogatório` | 11,573 | accent_variant |
 | `interrogá-lo-ão` | 1 | `interroga-lo-ão` | 1 | accent_variant |
-| `interrogár` | 1 | `interrogar` | 21,064 | accent_variant |
+| `interrogár` | 1 | `interrogar` | 21,208 | accent_variant |
 | `interrogátorios` | 1 | `interrogatorios` | 11 | accent_variant |
 | `interrrogatório` | 1 | `interrrogatorio` | 1 | accent_variant |
 | `interrupcäo` | 1 | `interrupção` | 3,348 | accent_variant |
@@ -24675,7 +24554,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `invençã` | 1 | `invencã` | 3 | accent_variant |
 | `invençöes` | 1 | `invencöes` | 5 | accent_variant |
 | `inversäo` | 1 | `inversão` | 1,402 | accent_variant |
-| `investigástea` | 1 | `investigastea` | 29 | accent_variant |
 | `invincível` | 1 | `invincivel` | 8 | accent_variant |
 | `inviolavel` | 1 | `inviolável` | 402 | unaccented |
 | `invitaciòn` | 1 | `invitación` | 5 | accent_variant |
@@ -24683,7 +24561,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `invitó` | 1 | `invito` | 2 | accent_variant |
 | `involuntäria` | 1 | `involuntaria` | 1 | accent_variant |
 | `invulneravél` | 1 | `invulnerável` | 504 | accent_variant |
-| `invádir` | 1 | `invadir` | 24,865 | accent_variant |
+| `invádir` | 1 | `invadir` | 24,881 | accent_variant |
 | `invêncível` | 1 | `invencível` | 3,999 | accent_variant |
 | `invôlucros` | 1 | `involucros` | 1 | accent_variant |
 | `inçrívei` | 1 | `incrívei` | 2 | accent_variant |
@@ -24769,10 +24647,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `iunãticos` | 1 | `iunàticos` | 1 | accent_variant |
 | `iução` | 1 | `iucão` | 1 | accent_variant |
 | `ivanóvna` | 1 | `ivanovna` | 80 | accent_variant |
-| `ivá` | 1 | `iva` | 172 | accent_variant |
+| `ivá` | 1 | `iva` | 170 | accent_variant |
 | `ivánovitch` | 1 | `ivanovitch` | 19 | accent_variant |
 | `ivê` | 1 | `ive` | 55 | accent_variant |
-| `ixá` | 1 | `ixa` | 10 | accent_variant |
+| `ixá` | 1 | `ixa` | 11 | accent_variant |
 | `ixíon` | 1 | `ixion` | 41 | accent_variant |
 | `izá` | 1 | `iza` | 30 | accent_variant |
 | `izák` | 1 | `izak` | 1 | accent_variant |
@@ -24782,7 +24660,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `iámen` | 1 | `iamen` | 1 | accent_variant |
 | `iámos` | 1 | `ìamos` | 5 | accent_variant |
 | `iána` | 1 | `iana` | 31 | accent_variant |
-| `iáá` | 1 | `iaa` | 53 | accent_variant |
+| `iáá` | 1 | `iaa` | 48 | accent_variant |
 | `iááá` | 1 | `iaaa` | 1 | accent_variant |
 | `iâpis` | 1 | `iàpis` | 3 | accent_variant |
 | `iéne` | 1 | `iene` | 667 | accent_variant |
@@ -24794,7 +24672,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `iñez` | 1 | `inez` | 529 | accent_variant |
 | `iórque` | 1 | `iorque` | 50,635 | accent_variant |
 | `iôô` | 1 | `ioo` | 7 | accent_variant |
-| `išso` | 1 | `isso` | 3,438,858 | accent_variant |
+| `išso` | 1 | `isso` | 3,438,864 | accent_variant |
 | `išta` | 1 | `ista` | 133 | accent_variant |
 | `jacké` | 1 | `jacke` | 33 | accent_variant |
 | `jacób` | 1 | `jacob` | 14,437 | accent_variant |
@@ -24985,20 +24863,18 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lanca-granadas` | 1 | `lança-granadas` | 495 | unaccented |
 | `lanca-mísseis` | 1 | `lança-mísseis` | 232 | accent_variant |
 | `lanca-rockets` | 1 | `lança-rockets` | 125 | unaccented |
-| `lancaas` | 1 | `lançaas` | 32 | unaccented |
 | `lancador` | 1 | `lançador` | 2,421 | unaccented |
-| `lancoa` | 1 | `lançoa` | 14 | unaccented |
 | `lança-çhamas` | 1 | `lança-chamas` | 922 | accent_variant |
 | `lançarào` | 1 | `lançarao` | 1 | accent_variant |
 | `lançemos` | 1 | `lancêmos` | 1 | accent_variant |
-| `lançár` | 1 | `lançar` | 51,271 | accent_variant |
-| `lançâ` | 1 | `lanca` | 66 | accent_variant |
+| `lançár` | 1 | `lançar` | 51,539 | accent_variant |
+| `lançâ` | 1 | `lanca` | 67 | accent_variant |
 | `laparotomías` | 1 | `laparotomias` | 3 | accent_variant |
 | `laparóscopia` | 1 | `laparoscopia` | 136 | accent_variant |
 | `larapio` | 1 | `larápio` | 537 | unaccented |
 | `largàemos` | 1 | `largaemos` | 4 | accent_variant |
-| `largár` | 1 | `largar` | 121,272 | accent_variant |
-| `largâ` | 1 | `lárga` | 5 | accent_variant |
+| `largár` | 1 | `largar` | 127,847 | accent_variant |
+| `largâ` | 1 | `lárga` | 6 | accent_variant |
 | `laróca` | 1 | `laroca` | 432 | accent_variant |
 | `lassérre` | 1 | `lasserre` | 1 | accent_variant |
 | `lastimavél` | 1 | `lastimável` | 321 | accent_variant |
@@ -25049,12 +24925,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `leva-los-ás` | 1 | `levá-los-ás` | 9 | accent_variant |
 | `levantar-te-ás` | 1 | `levantar-te-às` | 1 | accent_variant |
 | `levantàvamo` | 1 | `levantavamo` | 2 | accent_variant |
-| `levantár` | 1 | `levantar` | 150,278 | accent_variant |
+| `levantár` | 1 | `levantar` | 151,357 | accent_variant |
 | `levanté` | 1 | `levánte` | 3 | accent_variant |
 | `levar-nos-äo` | 1 | `levar-nos-ão` | 93 | accent_variant |
 | `levar-vos-à` | 1 | `levar-vos-á` | 82 | accent_variant |
 | `levaräo` | 1 | `levarao` | 6 | accent_variant |
-| `levaà` | 1 | `levaa` | 7,313 | accent_variant |
+| `levaà` | 1 | `levaa` | 3 | accent_variant |
 | `levissimo` | 1 | `levíssimo` | 13 | unaccented |
 | `levà-ia` | 1 | `levá-ia` | 16 | accent_variant |
 | `levà-io` | 1 | `levá-io` | 224 | accent_variant |
@@ -25063,17 +24939,16 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `levá-las-à` | 1 | `levá-las-á` | 7 | accent_variant |
 | `levámo-ios` | 1 | `levamo-ios` | 6 | accent_variant |
 | `levámos-lhos` | 1 | `levamos-lhos` | 8 | accent_variant |
-| `levámosa` | 1 | `levamosa` | 1 | accent_variant |
 | `levár-nos-ão` | 1 | `levar-nos-ão` | 93 | accent_variant |
 | `leváram` | 1 | `levarám` | 1 | accent_variant |
 | `levárnos` | 1 | `levarnos` | 3 | accent_variant |
-| `levâva` | 1 | `leváva` | 19 | accent_variant |
-| `leväia` | 1 | `levaia` | 146 | accent_variant |
+| `levâva` | 1 | `leváva` | 21 | accent_variant |
+| `leväia` | 1 | `levaia` | 4 | accent_variant |
 | `levéque` | 1 | `leveque` | 35 | accent_variant |
 | `levê` | 1 | `léve` | 10 | accent_variant |
 | `leví` | 1 | `levi` | 1,444 | accent_variant |
 | `leçourbe` | 1 | `lecourbe` | 28 | accent_variant |
-| `leía` | 1 | `leia` | 8,763 | accent_variant |
+| `leía` | 1 | `leia` | 8,924 | accent_variant |
 | `leăl` | 1 | `leal` | 13,019 | accent_variant |
 | `leőes` | 1 | `leoes` | 15 | accent_variant |
 | `lfâ` | 1 | `lfa` | 10 | accent_variant |
@@ -25095,7 +24970,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `licântropos` | 1 | `licantropos` | 281 | accent_variant |
 | `licênças` | 1 | `licencas` | 3 | accent_variant |
 | `licía` | 1 | `lícia` | 12 | accent_variant |
-| `licítar` | 1 | `licitar` | 1,019 | accent_variant |
+| `licítar` | 1 | `licitar` | 1,026 | accent_variant |
 | `licíto` | 1 | `lícito` | 112 | accent_variant |
 | `licõr` | 1 | `licor` | 2,274 | accent_variant |
 | `lidér` | 1 | `líder` | 44,680 | accent_variant |
@@ -25105,7 +24980,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ligaçôes` | 1 | `ligacões` | 14 | accent_variant |
 | `ligaçăo` | 1 | `ligação` | 55,553 | accent_variant |
 | `ligaçőes` | 1 | `ligacões` | 14 | accent_variant |
-| `ligueà` | 1 | `liguea` | 81 | accent_variant |
+| `ligueà` | 1 | `liguea` | 7 | accent_variant |
 | `limitacao` | 1 | `limitação` | 2,065 | unaccented |
 | `limitaçôes` | 1 | `limitaçöes` | 3 | accent_variant |
 | `limitrofe` | 1 | `limítrofe` | 118 | unaccented |
@@ -25127,7 +25002,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `liquidaçäo` | 1 | `liquidação` | 765 | accent_variant |
 | `liquidà` | 1 | `liquída` | 7 | accent_variant |
 | `liquídado` | 1 | `liquidado` | 484 | accent_variant |
-| `liqüidar` | 1 | `liquidar` | 2,806 | accent_variant |
+| `liqüidar` | 1 | `liquidar` | 2,835 | accent_variant |
 | `liqüidificador` | 1 | `liquidificador` | 375 | accent_variant |
 | `lirá` | 1 | `lira` | 1,515 | accent_variant |
 | `lirícas` | 1 | `liricas` | 2 | accent_variant |
@@ -25146,7 +25021,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `liçensas` | 1 | `licensas` | 9 | accent_variant |
 | `liçäozinha` | 1 | `liçãozinha` | 26 | accent_variant |
 | `liçăo` | 1 | `lição` | 26,513 | accent_variant |
-| `liés` | 1 | `lies` | 208 | accent_variant |
+| `liés` | 1 | `lies` | 211 | accent_variant |
 | `llamarà` | 1 | `llamara` | 5 | accent_variant |
 | `llamaría` | 1 | `llamaria` | 1 | accent_variant |
 | `llamé` | 1 | `llame` | 11 | accent_variant |
@@ -25159,8 +25034,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `llão` | 1 | `llao` | 1 | accent_variant |
 | `llíon` | 1 | `llion` | 5 | accent_variant |
 | `llíria` | 1 | `lliria` | 3 | accent_variant |
-| `lmaginá` | 1 | `lmagina` | 64 | accent_variant |
-| `lmagíne` | 1 | `lmagine` | 73 | accent_variant |
+| `lmaginá` | 1 | `lmagina` | 69 | accent_variant |
+| `lmagíne` | 1 | `lmagine` | 75 | accent_variant |
 | `lmigracao` | 1 | `lmigração` | 60 | unaccented |
 | `lmigraçâo` | 1 | `lmigração` | 60 | accent_variant |
 | `lmltaçao` | 1 | `lmltação` | 5 | accent_variant |
@@ -25174,7 +25049,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lncisões` | 1 | `lncisöes` | 3 | accent_variant |
 | `lncluí` | 1 | `lnclui` | 9 | accent_variant |
 | `lncrivél` | 1 | `lncrível` | 283 | accent_variant |
-| `lncómoda` | 1 | `lncomoda` | 38 | accent_variant |
+| `lncómoda` | 1 | `lncomoda` | 43 | accent_variant |
 | `lndependêncla` | 1 | `lndependencla` | 3 | accent_variant |
 | `lnfelízmente` | 1 | `lnfelizmente` | 113 | accent_variant |
 | `lnflamàvel` | 1 | `lnflamável` | 15 | accent_variant |
@@ -25258,7 +25133,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lác` | 1 | `lac` | 192 | accent_variant |
 | `lácrosse` | 1 | `lacrosse` | 1,334 | accent_variant |
 | `ládi` | 1 | `ladi` | 2 | accent_variant |
-| `ládo` | 1 | `lado` | 350,240 | accent_variant |
+| `ládo` | 1 | `lado` | 350,245 | accent_variant |
 | `ládrazinha` | 1 | `ladrazinha` | 69 | accent_variant |
 | `láem` | 1 | `laem` | 6 | accent_variant |
 | `lágopodes` | 1 | `lagópodes` | 7 | accent_variant |
@@ -25273,8 +25148,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lánão` | 1 | `lanao` | 1 | accent_variant |
 | `lápis-lazuli` | 1 | `lápis-lazúli` | 42 | accent_variant |
 | `láque` | 1 | `laque` | 11 | accent_variant |
-| `lárgaa` | 1 | `largaa` | 4,593 | accent_variant |
-| `lárguea` | 1 | `larguea` | 1,646 | accent_variant |
 | `lário` | 1 | `lario` | 3 | accent_variant |
 | `láter` | 1 | `later` | 95 | accent_variant |
 | `látido` | 1 | `latido` | 393 | accent_variant |
@@ -25294,7 +25167,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lämpada` | 1 | `lâmpada` | 6,182 | accent_variant |
 | `lätta` | 1 | `latta` | 9 | accent_variant |
 | `lçamo` | 1 | `lçámo` | 2 | accent_variant |
-| `lè` | 1 | `lê` | 15,496 | accent_variant |
+| `lè` | 1 | `lê` | 15,795 | accent_variant |
 | `lècher` | 1 | `lécher` | 3 | accent_variant |
 | `lègion` | 1 | `legion` | 127 | accent_variant |
 | `lèna` | 1 | `lena` | 5,595 | accent_variant |
@@ -25312,8 +25185,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lésbo` | 1 | `lesbo` | 16 | accent_variant |
 | `léva-to` | 1 | `leva-to` | 4 | accent_variant |
 | `lêgar` | 1 | `legar` | 533 | accent_variant |
-| `lêiaa` | 1 | `leiaa` | 148 | accent_variant |
-| `lêiaas` | 1 | `leiaas` | 26 | accent_variant |
 | `lêndias` | 1 | `lendias` | 15 | accent_variant |
 | `lênçois` | 1 | `lencóis` | 38 | accent_variant |
 | `lêvêque` | 1 | `leveque` | 35 | accent_variant |
@@ -25331,9 +25202,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `líke` | 1 | `like` | 2,130 | accent_variant |
 | `líll` | 1 | `lill` | 5 | accent_variant |
 | `límp` | 1 | `limp` | 61 | accent_variant |
-| `límpa` | 1 | `limpa` | 23,945 | accent_variant |
-| `límpar` | 1 | `limpar` | 65,091 | accent_variant |
-| `límpo` | 1 | `limpo` | 46,006 | accent_variant |
+| `límpa` | 1 | `limpa` | 24,181 | accent_variant |
+| `límpar` | 1 | `limpar` | 65,374 | accent_variant |
+| `límpo` | 1 | `limpo` | 46,068 | accent_variant |
 | `línce` | 1 | `lince` | 733 | accent_variant |
 | `líng` | 1 | `ling` | 2,347 | accent_variant |
 | `língua-de-trapo` | 1 | `lingua-de-trapo` | 1 | accent_variant |
@@ -25349,7 +25220,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lípases` | 1 | `lipases` | 2 | accent_variant |
 | `lípton` | 1 | `lipton` | 391 | accent_variant |
 | `líquidez` | 1 | `liquidez` | 441 | accent_variant |
-| `líqüido` | 1 | `líquido` | 9,854 | accent_variant |
+| `líqüido` | 1 | `líquido` | 9,847 | accent_variant |
 | `lísa` | 1 | `lisa` | 27,299 | accent_variant |
 | `lísia` | 1 | `lisia` | 1 | accent_variant |
 | `lítio-argônio` | 1 | `lítio-argónio` | 1 | accent_variant |
@@ -25372,12 +25243,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `lúcilius` | 1 | `lucilius` | 1 | accent_variant |
 | `lúcius` | 1 | `lucius` | 2,084 | accent_variant |
 | `lúmina` | 1 | `lumina` | 33 | accent_variant |
-| `lútea` | 1 | `lutea` | 7 | accent_variant |
+| `lútea` | 1 | `lutea` | 3 | accent_variant |
 | `lûbricos` | 1 | `lúbrícos` | 2 | accent_variant |
 | `lüderitz` | 1 | `luderitz` | 5 | accent_variant |
 | `lărue` | 1 | `larue` | 367 | accent_variant |
-| `lę` | 1 | `lê` | 15,496 | accent_variant |
-| `lęa` | 1 | `lea` | 774 | accent_variant |
 | `ma-fé` | 1 | `má-fé` | 93 | accent_variant |
 | `macacäo` | 1 | `macacão` | 797 | accent_variant |
 | `macarico` | 1 | `maçarico` | 1,720 | unaccented |
@@ -25407,7 +25276,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `magnífiços` | 1 | `magnifícos` | 2 | accent_variant |
 | `magnòlia` | 1 | `magnólia` | 193 | accent_variant |
 | `magoa-io` | 1 | `magoá-io` | 24 | unaccented |
-| `magoár` | 1 | `magoar` | 96,672 | accent_variant |
+| `magoár` | 1 | `magoar` | 97,129 | accent_variant |
 | `magrico` | 1 | `magriço` | 25 | unaccented |
 | `magía-pode` | 1 | `magia-pode` | 1 | accent_variant |
 | `magíca` | 1 | `màgica` | 3 | accent_variant |
@@ -25432,7 +25301,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mamà` | 1 | `mamã` | 69,988 | accent_variant |
 | `mamáe` | 1 | `mamãe` | 10,373 | accent_variant |
 | `mamã-zilla` | 1 | `mama-zilla` | 9 | accent_variant |
-| `mamãa` | 1 | `mamaa` | 8 | accent_variant |
+| `mamãa` | 1 | `mamaã` | 2 | accent_variant |
 | `mamãããã` | 1 | `mamaaaã` | 8 | accent_variant |
 | `mamón` | 1 | `mamon` | 9 | accent_variant |
 | `mamă` | 1 | `mamã` | 69,988 | accent_variant |
@@ -25448,7 +25317,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mandê` | 1 | `mandé` | 1 | accent_variant |
 | `mandí` | 1 | `mandi` | 381 | accent_variant |
 | `mandíngo` | 1 | `mandingo` | 213 | accent_variant |
-| `manejár` | 1 | `manejar` | 2,089 | accent_variant |
+| `manejár` | 1 | `manejar` | 2,107 | accent_variant |
 | `maneävel` | 1 | `maneável` | 18 | accent_variant |
 | `mangiapáne` | 1 | `mangiapane` | 2 | accent_variant |
 | `mangáis` | 1 | `mangais` | 45 | accent_variant |
@@ -25467,8 +25336,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mante-ia` | 1 | `mantê-ia` | 15 | unaccented |
 | `manter-se-ã` | 1 | `manter-se-á` | 154 | accent_variant |
 | `manter-te-às` | 1 | `manter-te-ás` | 18 | accent_variant |
-| `manterà` | 1 | `mantera` | 14 | accent_variant |
+| `manterà` | 1 | `mantera` | 13 | accent_variant |
 | `manterêmo` | 1 | `manteremo` | 7 | accent_variant |
+| `mantéma` | 1 | `mantêma` | 2 | accent_variant |
 | `mantés` | 1 | `mantes` | 43 | accent_variant |
 | `mantéu` | 1 | `manteu` | 13 | accent_variant |
 | `mantê-los-à` | 1 | `mantê-los-á` | 18 | accent_variant |
@@ -25484,7 +25354,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `manês` | 1 | `manés` | 16 | accent_variant |
 | `maníacamente` | 1 | `maniacamente` | 15 | accent_variant |
 | `manícómio` | 1 | `manicómio` | 2,691 | accent_variant |
-| `manípular` | 1 | `manipular` | 13,252 | accent_variant |
+| `manípular` | 1 | `manipular` | 13,346 | accent_variant |
 | `maomê` | 1 | `maomé` | 920 | accent_variant |
 | `maquiavelico` | 1 | `maquiavélico` | 342 | unaccented |
 | `maquinaçoes` | 1 | `maquinacoes` | 2 | accent_variant |
@@ -25500,7 +25370,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `marcacão` | 1 | `marcação` | 5,103 | accent_variant |
 | `marcaçăo` | 1 | `marcação` | 5,103 | accent_variant |
 | `marcha-a-tràs` | 1 | `marcha-a-trás` | 13 | accent_variant |
-| `marcà` | 1 | `marca` | 50,329 | accent_variant |
+| `marcà` | 1 | `marca` | 50,440 | accent_variant |
 | `margéns` | 1 | `márgens` | 3 | accent_variant |
 | `margínais` | 1 | `margináis` | 1 | accent_variant |
 | `margínalís` | 1 | `marginalis` | 10 | accent_variant |
@@ -25520,7 +25390,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `marçal` | 1 | `marcal` | 14 | accent_variant |
 | `março-ihe` | 1 | `marco-ihe` | 1 | accent_variant |
 | `marée` | 1 | `maree` | 9 | accent_variant |
-| `marìa` | 1 | `maria` | 30,775 | accent_variant |
+| `marìa` | 1 | `maria` | 30,773 | accent_variant |
 | `marído` | 1 | `marido` | 140,707 | accent_variant |
 | `marínha` | 1 | `marinha` | 17,807 | accent_variant |
 | `marítíma` | 1 | `maritima` | 46 | accent_variant |
@@ -25561,7 +25431,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `matá-las-à` | 1 | `matá-las-á` | 14 | accent_variant |
 | `matáforas` | 1 | `mataforas` | 1 | accent_variant |
 | `matámo-ia` | 1 | `matamo-ia` | 1 | accent_variant |
-| `matä` | 1 | `máta` | 103 | accent_variant |
+| `matä` | 1 | `máta` | 107 | accent_variant |
 | `matämos` | 1 | `matàmos` | 11 | accent_variant |
 | `matèria` | 1 | `matéria` | 10,743 | accent_variant |
 | `matématica` | 1 | `matemática` | 13,375 | accent_variant |
@@ -25607,9 +25477,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mediterrãneo` | 1 | `mediterrâneo` | 1,419 | accent_variant |
 | `mediûnico` | 1 | `mediúnico` | 17 | accent_variant |
 | `medê` | 1 | `mêdê` | 10 | accent_variant |
-| `medí` | 1 | `medi` | 483 | accent_variant |
+| `medí` | 1 | `médi` | 3 | accent_variant |
 | `medío` | 1 | `médio` | 9,496 | accent_variant |
-| `medír` | 1 | `medir` | 10,636 | accent_variant |
+| `medír` | 1 | `medir` | 11,146 | accent_variant |
 | `medíum` | 1 | `médium` | 2,005 | accent_variant |
 | `megalômano` | 1 | `megalómano` | 95 | accent_variant |
 | `megatón` | 1 | `megaton` | 19 | accent_variant |
@@ -25623,7 +25493,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `meio-àrabe` | 1 | `meio-árabe` | 3 | accent_variant |
 | `meió` | 1 | `meio` | 152,770 | accent_variant |
 | `melancölica` | 1 | `melancolica` | 1 | accent_variant |
-| `melhorà` | 1 | `melhora` | 2,877 | accent_variant |
+| `melhorà` | 1 | `melhora` | 2,882 | accent_variant |
 | `melhoría` | 1 | `melhoria` | 2,630 | accent_variant |
 | `melpômene` | 1 | `melpomene` | 9 | accent_variant |
 | `melãncias` | 1 | `melâncias` | 7 | accent_variant |
@@ -25687,7 +25557,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `metémo` | 1 | `metêmo` | 28 | accent_variant |
 | `metéssemos` | 1 | `metessemos` | 8 | accent_variant |
 | `metêla` | 1 | `métela` | 3 | accent_variant |
-| `metêr` | 1 | `meter` | 148,526 | accent_variant |
+| `metêr` | 1 | `meter` | 150,319 | accent_variant |
 | `metódo` | 1 | `método` | 15,303 | accent_variant |
 | `meubebê` | 1 | `meubebé` | 1 | accent_variant |
 | `meucoraçâo` | 1 | `meucoração` | 3 | accent_variant |
@@ -25773,13 +25643,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `miópe` | 1 | `míope` | 415 | accent_variant |
 | `miùda` | 1 | `miúda` | 126,718 | accent_variant |
 | `miùdas` | 1 | `míudas` | 146 | accent_variant |
-| `miùdo` | 1 | `miúdo` | 161,639 | accent_variant |
+| `miùdo` | 1 | `miúdo` | 161,636 | accent_variant |
 | `miùdos` | 1 | `míudos` | 254 | accent_variant |
 | `miúda-aranha` | 1 | `miuda-aranha` | 2 | accent_variant |
 | `miúdezas` | 1 | `miudezas` | 130 | accent_variant |
 | `miúdinhos` | 1 | `míudinhos` | 3 | accent_variant |
 | `miûda` | 1 | `miúda` | 126,718 | accent_variant |
-| `miüdo` | 1 | `miúdo` | 161,639 | accent_variant |
+| `miüdo` | 1 | `miúdo` | 161,636 | accent_variant |
 | `miüdos` | 1 | `míudos` | 254 | accent_variant |
 | `mišel` | 1 | `misel` | 2 | accent_variant |
 | `mlnhá` | 1 | `mlnha` | 2 | accent_variant |
@@ -25811,7 +25681,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `monitorará` | 1 | `monitorara` | 1 | accent_variant |
 | `monitorizaçao` | 1 | `monitorização` | 794 | accent_variant |
 | `monopòlio` | 1 | `monopólio` | 1,657 | accent_variant |
-| `monopólizar` | 1 | `monopolizar` | 528 | accent_variant |
+| `monopólizar` | 1 | `monopolizar` | 538 | accent_variant |
 | `monossílábico` | 1 | `monossilábico` | 77 | accent_variant |
 | `monotorizá` | 1 | `monotoriza` | 3 | accent_variant |
 | `monotânium` | 1 | `monotanium` | 4 | accent_variant |
@@ -25828,8 +25698,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `monógâmos` | 1 | `monogamos` | 1 | accent_variant |
 | `monópolio` | 1 | `monopólio` | 1,657 | accent_variant |
 | `monôtona` | 1 | `monotona` | 2 | accent_variant |
-| `mordè` | 1 | `morde` | 4,744 | accent_variant |
-| `mordé` | 1 | `morde` | 4,744 | accent_variant |
+| `mordè` | 1 | `morde` | 4,856 | accent_variant |
+| `mordé` | 1 | `morde` | 4,856 | accent_variant |
 | `morfogênese` | 1 | `morfogénese` | 12 | accent_variant |
 | `morirá` | 1 | `morira` | 1 | accent_variant |
 | `morirás` | 1 | `moriras` | 1 | accent_variant |
@@ -25857,13 +25727,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mosén` | 1 | `mosen` | 9 | accent_variant |
 | `motivacão` | 1 | `motivação` | 3,920 | accent_variant |
 | `motivaçâo` | 1 | `motivação` | 3,920 | accent_variant |
-| `motivár` | 1 | `motivar` | 3,257 | accent_variant |
+| `motivár` | 1 | `motivar` | 3,270 | accent_variant |
 | `motím` | 1 | `motim` | 5,418 | accent_variant |
 | `motín` | 1 | `motin` | 3 | accent_variant |
 | `mover-se-à` | 1 | `mover-se-á` | 21 | accent_variant |
 | `movimentacao` | 1 | `movimentação` | 995 | unaccented |
 | `movimentaçao` | 1 | `movimentação` | 995 | accent_variant |
-| `movimentár` | 1 | `movimentar` | 4,759 | accent_variant |
+| `movimentár` | 1 | `movimentar` | 4,763 | accent_variant |
 | `moçöes` | 1 | `moçoes` | 2 | accent_variant |
 | `moésia` | 1 | `moesia` | 6 | accent_variant |
 | `moín` | 1 | `moin` | 6 | accent_variant |
@@ -25874,7 +25744,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mudà` | 1 | `mudã` | 2 | accent_variant |
 | `mudàvamo` | 1 | `mudavamo` | 2 | accent_variant |
 | `mudásteis` | 1 | `mudasteis` | 1 | accent_variant |
-| `mudávaa` | 1 | `mudavaa` | 1 | accent_variant |
 | `mudâ` | 1 | `mudã` | 2 | accent_variant |
 | `muffíns` | 1 | `muffins` | 535 | accent_variant |
 | `muitísssimo` | 1 | `muitisssimo` | 9 | accent_variant |
@@ -25930,7 +25799,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `máquinista` | 1 | `maquinista` | 1,220 | accent_variant |
 | `máquína` | 1 | `máquina` | 73,410 | accent_variant |
 | `mártie` | 1 | `martie` | 4 | accent_variant |
-| `mátel` | 1 | `matel` | 1 | accent_variant |
+| `mátel` | 1 | `matel` | 13 | accent_variant |
 | `máteme` | 1 | `mateme` | 1 | accent_variant |
 | `máteria` | 1 | `matéria` | 10,743 | accent_variant |
 | `máuzinho` | 1 | `mauzinho` | 783 | accent_variant |
@@ -25943,7 +25812,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mãc` | 1 | `mac` | 12,203 | accent_variant |
 | `mãeda` | 1 | `maeda` | 26 | accent_variant |
 | `mãnhas` | 1 | `manhäs` | 16 | accent_variant |
-| `mãoa` | 1 | `maoa` | 34 | accent_variant |
+| `mãoa` | 1 | `maoa` | 17 | accent_variant |
 | `mãos-a-obra` | 1 | `mãos-à-obra` | 8 | accent_variant |
 | `mãxima` | 1 | `màxima` | 9 | accent_variant |
 | `mãããee` | 1 | `mãaaee` | 2 | accent_variant |
@@ -25991,7 +25860,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mêmo` | 1 | `memo` | 919 | accent_variant |
 | `mência` | 1 | `mencia` | 10 | accent_variant |
 | `mêrito` | 1 | `mérito` | 4,765 | accent_variant |
-| `mì` | 1 | `mi` | 7,215 | accent_variant |
+| `mì` | 1 | `mi` | 7,216 | accent_variant |
 | `mìlfìelds` | 1 | `milfields` | 1 | accent_variant |
 | `mìssão` | 1 | `missão` | 84,134 | accent_variant |
 | `mìssìonária` | 1 | `missionária` | 293 | accent_variant |
@@ -26014,8 +25883,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mínucíoso` | 1 | `minucioso` | 1,633 | accent_variant |
 | `mínusculas` | 1 | `minusculas` | 2 | accent_variant |
 | `mínusculos` | 1 | `minusculos` | 10 | accent_variant |
-| `mínístro` | 1 | `ministro` | 17,643 | accent_variant |
-| `míra` | 1 | `mira` | 10,520 | accent_variant |
+| `mínístro` | 1 | `ministro` | 17,644 | accent_variant |
+| `míra` | 1 | `mira` | 10,522 | accent_variant |
 | `mírale` | 1 | `mirale` | 1 | accent_variant |
 | `mírian` | 1 | `mirian` | 37 | accent_variant |
 | `mírtilo` | 1 | `mirtilo` | 879 | accent_variant |
@@ -26026,7 +25895,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `míssile` | 1 | `missile` | 131 | accent_variant |
 | `místerio` | 1 | `mistério` | 18,753 | accent_variant |
 | `místic` | 1 | `mistic` | 1 | accent_variant |
-| `místura` | 1 | `mistura` | 9,850 | accent_variant |
+| `místura` | 1 | `mistura` | 9,877 | accent_variant |
 | `míúda` | 1 | `miúda` | 126,718 | accent_variant |
 | `mîchael` | 1 | `michael` | 84,173 | accent_variant |
 | `mòdulo` | 1 | `módulo` | 4,043 | accent_variant |
@@ -26041,7 +25910,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `móro` | 1 | `morô` | 1 | accent_variant |
 | `môco` | 1 | `moço` | 3,549 | accent_variant |
 | `môfo` | 1 | `mofo` | 934 | accent_variant |
-| `môlho` | 1 | `molho` | 14,575 | accent_variant |
+| `môlho` | 1 | `molho` | 14,577 | accent_variant |
 | `môlhos` | 1 | `mólhos` | 3 | accent_variant |
 | `môsca` | 1 | `mosca` | 9,810 | accent_variant |
 | `môças` | 1 | `moçãs` | 1 | accent_variant |
@@ -26050,7 +25919,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `mödel` | 1 | `model` | 377 | accent_variant |
 | `möllberg` | 1 | `mollberg` | 9 | accent_variant |
 | `möllmann` | 1 | `mollmann` | 1 | accent_variant |
-| `mörder` | 1 | `morder` | 27,905 | accent_variant |
+| `mörder` | 1 | `morder` | 28,084 | accent_variant |
 | `múda` | 1 | `mudã` | 2 | accent_variant |
 | `múlti` | 1 | `multi` | 110 | accent_variant |
 | `múltidão` | 1 | `multidão` | 14,839 | accent_variant |
@@ -26075,7 +25944,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `münsch` | 1 | `munsch` | 121 | accent_variant |
 | `müsico` | 1 | `músico` | 6,492 | accent_variant |
 | `müslüm` | 1 | `muslum` | 9 | accent_variant |
-| `măl` | 1 | `mal` | 356,980 | accent_variant |
+| `măl` | 1 | `mal` | 356,984 | accent_variant |
 | `n-â` | 1 | `n-ã` | 109 | accent_variant |
 | `n-ä` | 1 | `n-ã` | 109 | accent_variant |
 | `na-nâo` | 1 | `na-não` | 9 | accent_variant |
@@ -26167,7 +26036,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `negligèe` | 1 | `negligée` | 6 | accent_variant |
 | `negligées` | 1 | `nêgligêes` | 4 | accent_variant |
 | `negligê` | 1 | `negligé` | 17 | accent_variant |
-| `negligêncieia` | 1 | `negligencieia` | 13 | accent_variant |
 | `negociavél` | 1 | `negociável` | 1,450 | accent_variant |
 | `negociaçăo` | 1 | `negociação` | 9,052 | accent_variant |
 | `negoçio` | 1 | `negócio` | 141,109 | accent_variant |
@@ -26289,7 +26157,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `nàusea` | 1 | `náusea` | 2,881 | accent_variant |
 | `náaa` | 1 | `naaa` | 28 | accent_variant |
 | `náaaa` | 1 | `naaaa` | 11 | accent_variant |
-| `náda` | 1 | `nada` | 1,264,916 | accent_variant |
+| `náda` | 1 | `nada` | 1,264,917 | accent_variant |
 | `námaste` | 1 | `namaste` | 648 | accent_variant |
 | `námos` | 1 | `namos` | 3 | accent_variant |
 | `nápole` | 1 | `napole` | 5 | accent_variant |
@@ -26314,7 +26182,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `nãaoo` | 1 | `nããoo` | 11 | accent_variant |
 | `nãaooo` | 1 | `nããooo` | 18 | accent_variant |
 | `nãaoooo` | 1 | `nããoooo` | 8 | accent_variant |
-| `nãda` | 1 | `nada` | 1,264,916 | accent_variant |
+| `nãda` | 1 | `nada` | 1,264,917 | accent_variant |
 | `nãhá` | 1 | `naha` | 12 | accent_variant |
 | `nãme` | 1 | `name` | 381 | accent_variant |
 | `não-alcóolica` | 1 | `não-alcoólica` | 15 | accent_variant |
@@ -26411,9 +26279,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `núnez` | 1 | `nuñez` | 349 | accent_variant |
 | `nûmeros` | 1 | `numéros` | 1 | accent_variant |
 | `nürenberg` | 1 | `nurenberg` | 3 | accent_variant |
-| `nā` | 1 | `na` | 2,539,819 | accent_variant |
+| `nā` | 1 | `na` | 2,539,807 | accent_variant |
 | `nāo` | 1 | `não` | 17,877,211 | accent_variant |
-| `nă` | 1 | `na` | 2,539,819 | accent_variant |
+| `nă` | 1 | `na` | 2,539,807 | accent_variant |
 | `năo-renovável` | 1 | `não-renovável` | 3 | accent_variant |
 | `năooooo` | 1 | `nãooooo` | 73 | accent_variant |
 | `nό` | 1 | `nο` | 3 | accent_variant |
@@ -26421,7 +26289,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `obcecacão` | 1 | `obcecação` | 5 | accent_variant |
 | `obedecer-me-à` | 1 | `obedecer-me-á` | 5 | accent_variant |
 | `obedecêr-ihe` | 1 | `obedecer-ihe` | 4 | accent_variant |
-| `obedeçer` | 1 | `obedecer` | 15,912 | accent_variant |
+| `obedeçer` | 1 | `obedecer` | 15,923 | accent_variant |
 | `obersturmbanfuhrer` | 1 | `obersturmbanführer` | 14 | unaccented |
 | `oberstürmbanführer` | 1 | `obersturmbanführer` | 14 | accent_variant |
 | `oberstürmführer` | 1 | `obersturmführer` | 18 | accent_variant |
@@ -26463,7 +26331,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `octàvio` | 1 | `octávio` | 620 | accent_variant |
 | `oculo` | 1 | `óculo` | 190 | unaccented |
 | `ocultaçäo` | 1 | `ocultação` | 493 | accent_variant |
-| `ocultár` | 1 | `ocultar` | 6,496 | accent_variant |
+| `ocultár` | 1 | `ocultar` | 6,509 | accent_variant |
 | `ocurría` | 1 | `ocurria` | 3 | accent_variant |
 | `océanos` | 1 | `oceânos` | 7 | accent_variant |
 | `ocêanico` | 1 | `oceânico` | 595 | accent_variant |
@@ -26472,7 +26340,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `odiásse` | 1 | `ódiasse` | 3 | accent_variant |
 | `odíamos` | 1 | `odiamos` | 1,460 | accent_variant |
 | `odôr` | 1 | `odor` | 3,423 | accent_variant |
-| `oferecoa` | 1 | `ofereçoa` | 36 | unaccented |
 | `ofereçeu-mo` | 1 | `ofereceu-mo` | 113 | accent_variant |
 | `ofereçi` | 1 | `oferecí` | 2 | accent_variant |
 | `oficíal` | 1 | `oficial` | 54,985 | accent_variant |
@@ -26481,7 +26348,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ofìcial` | 1 | `oficial` | 54,985 | accent_variant |
 | `ofìcìais` | 1 | `ofíciais` | 2 | accent_variant |
 | `ofìcìalmente` | 1 | `oficialmente` | 12,984 | accent_variant |
-| `ofícializar` | 1 | `oficializar` | 617 | accent_variant |
+| `ofícializar` | 1 | `oficializar` | 618 | accent_variant |
 | `ofícíaís` | 1 | `ofíciais` | 2 | accent_variant |
 | `ofídio` | 1 | `ofidio` | 2 | accent_variant |
 | `ofíicio` | 1 | `ofiicio` | 8 | accent_variant |
@@ -26507,7 +26374,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `olhar-me-à` | 1 | `olhar-me-á` | 3 | accent_variant |
 | `olhos-do-cú` | 1 | `olhos-do-cu` | 2 | accent_variant |
 | `olhá-la-ás` | 1 | `olhá-la-às` | 1 | accent_variant |
-| `olhár` | 1 | `olhar` | 772,696 | accent_variant |
+| `olhár` | 1 | `olhar` | 773,324 | accent_variant |
 | `olimpíco` | 1 | `olímpico` | 3,640 | accent_variant |
 | `olivé` | 1 | `olive` | 2,737 | accent_variant |
 | `oluçao` | 1 | `olucäo` | 1 | accent_variant |
@@ -26613,7 +26480,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `otéro` | 1 | `otero` | 111 | accent_variant |
 | `otíma` | 1 | `otima` | 73 | accent_variant |
 | `oublíette` | 1 | `oubliette` | 16 | accent_variant |
-| `oucoas` | 1 | `ouçoas` | 69 | unaccented |
 | `ounao` | 1 | `ounão` | 17 | unaccented |
 | `ouquê` | 1 | `ouque` | 1 | accent_variant |
 | `ouricos-cacheiros` | 1 | `ouriços-cacheiros` | 11 | unaccented |
@@ -26624,7 +26490,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ouvísteis` | 1 | `ouvisteis` | 9 | accent_variant |
 | `ouçe` | 1 | `ouce` | 3 | accent_variant |
 | `ouços` | 1 | `oucos` | 1 | accent_variant |
-| `ouçá` | 1 | `ouca` | 292 | accent_variant |
+| `ouçá` | 1 | `ouca` | 294 | accent_variant |
 | `ouésso` | 1 | `ouesso` | 1 | accent_variant |
 | `ouê` | 1 | `oue` | 35 | accent_variant |
 | `ovacao` | 1 | `ovação` | 331 | unaccented |
@@ -26633,7 +26499,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ovärica` | 1 | `ovarica` | 1 | accent_variant |
 | `ové` | 1 | `ove` | 196 | accent_variant |
 | `ovídos` | 1 | `ovidos` | 4 | accent_variant |
-| `ovô` | 1 | `ovo` | 36,278 | accent_variant |
+| `ovô` | 1 | `ovo` | 36,279 | accent_variant |
 | `ovôo` | 1 | `ovoo` | 5 | accent_variant |
 | `oxigènio` | 1 | `oxigénio` | 12,664 | accent_variant |
 | `oxígênio` | 1 | `oxigénio` | 12,664 | accent_variant |
@@ -26669,7 +26535,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pagavél` | 1 | `pagável` | 74 | accent_variant |
 | `pagámos-ihe` | 1 | `pagamos-ihe` | 5 | accent_variant |
 | `pagáste-ihe` | 1 | `pagaste-ihe` | 5 | accent_variant |
-| `pagô` | 1 | `pago` | 1,836 | accent_variant |
+| `pagô` | 1 | `pago` | 1,840 | accent_variant |
 | `pai-guardiäo` | 1 | `pai-guardião` | 5 | accent_variant |
 | `paineís` | 1 | `páineis` | 36 | accent_variant |
 | `paixào` | 1 | `paixão` | 15,713 | accent_variant |
@@ -26701,7 +26567,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pancá` | 1 | `pança` | 750 | accent_variant |
 | `pandórica` | 1 | `pandorica` | 2 | accent_variant |
 | `pangénese` | 1 | `pangênese` | 2 | accent_variant |
-| `panhá` | 1 | `panha` | 10 | accent_variant |
+| `panhá` | 1 | `panha` | 11 | accent_variant |
 | `panhámo` | 1 | `panhamo` | 1 | accent_variant |
 | `panificaçäo` | 1 | `panificação` | 26 | accent_variant |
 | `pannónia` | 1 | `pannonia` | 12 | accent_variant |
@@ -26713,7 +26579,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `papel-mâché` | 1 | `papel-maché` | 5 | accent_variant |
 | `papier-mache` | 1 | `papier-mâché` | 68 | unaccented |
 | `papáe` | 1 | `papae` | 4 | accent_variant |
-| `papéia` | 1 | `papeia` | 6 | accent_variant |
+| `papéia` | 1 | `papeia` | 1 | accent_variant |
 | `papíllon` | 1 | `papillon` | 230 | accent_variant |
 | `papíro` | 1 | `papiro` | 348 | accent_variant |
 | `paquerette` | 1 | `pâquerette` | 24 | unaccented |
@@ -26754,10 +26620,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `parágens` | 1 | `paragéns` | 3 | accent_variant |
 | `parásita` | 1 | `parasita` | 6,351 | accent_variant |
 | `parásito` | 1 | `parasito` | 2 | accent_variant |
-| `parâ` | 1 | `para` | 7,211,920 | accent_variant |
+| `parâ` | 1 | `para` | 7,211,969 | accent_variant |
 | `parão` | 1 | `parao` | 143 | accent_variant |
 | `parêntisis` | 1 | `parentisis` | 1 | accent_variant |
-| `parí` | 1 | `pari` | 199 | accent_variant |
+| `parí` | 1 | `pari` | 201 | accent_variant |
 | `paróco` | 1 | `pároco` | 309 | accent_variant |
 | `parólo` | 1 | `parolo` | 1,008 | accent_variant |
 | `pasca` | 1 | `pascà` | 14 | unaccented |
@@ -26862,10 +26728,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `perdéssemos` | 1 | `perdessemos` | 35 | accent_variant |
 | `perdê-las-à` | 1 | `perdê-las-á` | 4 | accent_variant |
 | `perdëmo` | 1 | `perdémo` | 1 | accent_variant |
-| `perdì` | 1 | `perdí` | 110 | accent_variant |
+| `perdì` | 1 | `perdí` | 115 | accent_variant |
 | `perdído` | 1 | `perdido` | 21,231 | accent_variant |
 | `perdòn` | 1 | `perdón` | 52 | accent_variant |
-| `perdóe` | 1 | `perdoe` | 15,543 | accent_variant |
+| `perdóe` | 1 | `perdoe` | 15,615 | accent_variant |
 | `perdăo` | 1 | `perdão` | 35,449 | accent_variant |
 | `perecivel` | 1 | `perecível` | 189 | unaccented |
 | `peregrinaçao` | 1 | `peregrinação` | 1,268 | accent_variant |
@@ -26918,7 +26784,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pescaría` | 1 | `pescaria` | 1,040 | accent_variant |
 | `pescà-ios` | 1 | `pescá-ios` | 9 | accent_variant |
 | `pescá-io` | 1 | `pesca-io` | 1 | accent_variant |
-| `pescáste` | 1 | `pescaste` | 153 | accent_variant |
+| `pescáste` | 1 | `pescaste` | 165 | accent_variant |
 | `pessadêlo` | 1 | `pessadelo` | 2 | accent_variant |
 | `pessimísmo` | 1 | `pessimismo` | 317 | accent_variant |
 | `pessoá` | 1 | `pessoa` | 798,644 | accent_variant |
@@ -26940,12 +26806,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `phû` | 1 | `phu` | 101 | accent_variant |
 | `piadäo` | 1 | `piadão` | 125 | accent_variant |
 | `picardía` | 1 | `picardia` | 76 | accent_variant |
-| `picò` | 1 | `pico` | 5,506 | accent_variant |
+| `picò` | 1 | `pico` | 5,508 | accent_variant |
 | `pidiò` | 1 | `pidió` | 7 | accent_variant |
 | `pifô` | 1 | `pifo` | 297 | accent_variant |
 | `pigméu` | 1 | `pigmeu` | 680 | accent_variant |
 | `pilao` | 1 | `pilão` | 187 | unaccented |
-| `pilóto` | 1 | `piloto` | 31,551 | accent_variant |
+| `pilóto` | 1 | `piloto` | 31,558 | accent_variant |
 | `pimentao` | 1 | `pimentão` | 316 | unaccented |
 | `pimentäo` | 1 | `pimentão` | 316 | accent_variant |
 | `pincípe` | 1 | `píncipe` | 2 | accent_variant |
@@ -26954,7 +26820,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pinoia` | 1 | `pinóia` | 12 | unaccented |
 | `pintaróla` | 1 | `pintarola` | 22 | accent_variant |
 | `pintaínhas` | 1 | `pintainhas` | 1 | accent_variant |
-| `pintó` | 1 | `pinto` | 2,706 | accent_variant |
+| `pintó` | 1 | `pinto` | 2,721 | accent_variant |
 | `pinãtas` | 1 | `piñatas` | 68 | accent_variant |
 | `pinè` | 1 | `pine` | 2,411 | accent_variant |
 | `pinòquio` | 1 | `pinóquio` | 1,284 | accent_variant |
@@ -26974,7 +26840,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pistaçh` | 1 | `pistach` | 4 | accent_variant |
 | `pistolao` | 1 | `pistolão` | 47 | unaccented |
 | `pistàcios` | 1 | `pistacios` | 3 | accent_variant |
-| `pisà` | 1 | `pisa` | 2,638 | accent_variant |
+| `pisà` | 1 | `pisa` | 2,653 | accent_variant |
 | `pisô` | 1 | `piso` | 11,626 | accent_variant |
 | `pitia` | 1 | `pítia` | 12 | unaccented |
 | `pitàgoras` | 1 | `pitágoras` | 523 | accent_variant |
@@ -26989,7 +26855,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `piú` | 1 | `piu` | 385 | accent_variant |
 | `piški` | 1 | `piski` | 6 | accent_variant |
 | `placê` | 1 | `place` | 1,790 | accent_variant |
-| `planeár` | 1 | `planear` | 54,110 | accent_variant |
+| `planeár` | 1 | `planear` | 54,129 | accent_variant |
 | `planicíe` | 1 | `planície` | 2,663 | accent_variant |
 | `planicíes` | 1 | `planicies` | 28 | accent_variant |
 | `planimetría` | 1 | `planimetria` | 1 | accent_variant |
@@ -27024,14 +26890,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `podridăo` | 1 | `podridão` | 501 | accent_variant |
 | `podràs` | 1 | `podrás` | 2 | accent_variant |
 | `podré` | 1 | `podre` | 8,343 | accent_variant |
-| `podér` | 1 | `poder` | 4,486,636 | accent_variant |
+| `podér` | 1 | `poder` | 4,486,993 | accent_variant |
 | `podéssem` | 1 | `podessem` | 73 | accent_variant |
 | `podésses` | 1 | `podesses` | 92 | accent_variant |
 | `podês` | 1 | `pôdes` | 13 | accent_variant |
 | `podìamos` | 1 | `podiámos` | 4 | accent_variant |
 | `podíiamos` | 1 | `podííamos` | 2 | accent_variant |
 | `poequê` | 1 | `poeque` | 16 | accent_variant |
-| `poerá` | 1 | `poera` | 7 | accent_variant |
 | `poiicía` | 1 | `poiíçia` | 18 | accent_variant |
 | `poiiçiai` | 1 | `poiiciai` | 1 | accent_variant |
 | `poilícia` | 1 | `poilicia` | 2 | accent_variant |
@@ -27105,8 +26970,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `porquêele` | 1 | `porqueele` | 1 | accent_variant |
 | `porquêvocê` | 1 | `porquevocê` | 2 | accent_variant |
 | `porquė` | 1 | `porque` | 1,552,691 | accent_variant |
-| `porsché` | 1 | `porsche` | 2,270 | accent_variant |
-| `porschê` | 1 | `porsche` | 2,270 | accent_variant |
+| `porsché` | 1 | `porsche` | 2,273 | accent_variant |
+| `porschê` | 1 | `porsche` | 2,273 | accent_variant |
 | `porta-aviòes` | 1 | `porta-aviões` | 1,515 | accent_variant |
 | `porta-aviôes` | 1 | `porta-aviões` | 1,515 | accent_variant |
 | `porta-bebes` | 1 | `porta-bebés` | 38 | unaccented |
@@ -27156,7 +27021,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `poupa-lo-á` | 1 | `poupá-lo-á` | 14 | accent_variant |
 | `poupar-me-à` | 1 | `poupar-me-á` | 13 | accent_variant |
 | `poupar-nos-à` | 1 | `poupar-nos-á` | 10 | accent_variant |
-| `poupár` | 1 | `poupar` | 37,715 | accent_variant |
+| `poupár` | 1 | `poupar` | 37,844 | accent_variant |
 | `povoaçäozinha` | 1 | `povoaçãozinha` | 2 | accent_variant |
 | `povoaçöes` | 1 | `povoacöes` | 2 | accent_variant |
 | `poçäo` | 1 | `poção` | 6,717 | accent_variant |
@@ -27199,18 +27064,18 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pre-requisitos` | 1 | `pré-requisitos` | 68 | unaccented |
 | `pre-voo` | 1 | `pré-voo` | 126 | unaccented |
 | `pre-álgebra` | 1 | `pré-álgebra` | 10 | accent_variant |
-| `precario` | 1 | `precário` | 810 | unaccented |
+| `precario` | 1 | `precário` | 808 | unaccented |
 | `precaucoes` | 1 | `precauçöes` | 11 | unaccented |
 | `precaucão` | 1 | `precaução` | 7,671 | accent_variant |
 | `precisävamos` | 1 | `precisavámos` | 1 | accent_variant |
 | `precisô` | 1 | `preçiso` | 9 | accent_variant |
-| `precisõa` | 1 | `precisoa` | 3 | accent_variant |
+| `precisõa` | 1 | `precisoa` | 2 | accent_variant |
 | `precisăo` | 1 | `precisão` | 4,251 | accent_variant |
 | `precogniçao` | 1 | `precognição` | 118 | accent_variant |
 | `precogniçäo` | 1 | `precognição` | 118 | accent_variant |
 | `precáriamente` | 1 | `precariamente` | 66 | accent_variant |
 | `precísa` | 1 | `precisã` | 1 | accent_variant |
-| `precísar` | 1 | `precisar` | 1,397,650 | accent_variant |
+| `precísar` | 1 | `precisar` | 1,397,653 | accent_variant |
 | `predatorio` | 1 | `predatório` | 229 | unaccented |
 | `predatór` | 1 | `predator` | 242 | accent_variant |
 | `predilecão` | 1 | `predileção` | 244 | accent_variant |
@@ -27221,14 +27086,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `preferêncialmente` | 1 | `preferencialmente` | 260 | accent_variant |
 | `preferívelmente` | 1 | `preferivelmente` | 64 | accent_variant |
 | `prefàcio` | 1 | `prefácio` | 181 | accent_variant |
-| `pregunté` | 1 | `pregunte` | 14 | accent_variant |
+| `pregunté` | 1 | `pregunte` | 15 | accent_variant |
 | `preguntéi` | 1 | `preguntei` | 28 | accent_variant |
 | `preguntó` | 1 | `pregunto` | 37 | accent_variant |
 | `preguíçoso` | 1 | `preguiçoso` | 6,792 | accent_variant |
 | `pregá-io` | 1 | `prega-io` | 1 | accent_variant |
 | `prejudicà` | 1 | `prejudicâ` | 2 | accent_variant |
-| `prejudicár` | 1 | `prejudicar` | 10,317 | accent_variant |
-| `prejudícar` | 1 | `prejudicar` | 10,317 | accent_variant |
+| `prejudicár` | 1 | `prejudicar` | 10,330 | accent_variant |
+| `prejudícar` | 1 | `prejudicar` | 10,330 | accent_variant |
 | `prejudícios` | 1 | `prejudicios` | 1 | accent_variant |
 | `prejúizo` | 1 | `prejuízo` | 2,208 | accent_variant |
 | `premonicão` | 1 | `premonição` | 1,377 | accent_variant |
@@ -27246,7 +27111,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `preocupão` | 1 | `preocupao` | 2 | accent_variant |
 | `preparatorio` | 1 | `preparatório` | 337 | unaccented |
 | `preparatórla` | 1 | `preparatorla` | 1 | accent_variant |
-| `prepáraas` | 1 | `preparaas` | 48 | accent_variant |
 | `prepáramos` | 1 | `preparàmos` | 1 | accent_variant |
 | `prepárense` | 1 | `preparense` | 7 | accent_variant |
 | `presagió` | 1 | `preságio` | 5 | accent_variant |
@@ -27304,7 +27168,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pro-união` | 1 | `pró-união` | 2 | accent_variant |
 | `problemá` | 1 | `problema` | 476,442 | accent_variant |
 | `processa-io` | 1 | `processá-io` | 15 | unaccented |
-| `processár` | 1 | `processar` | 21,040 | accent_variant |
+| `processár` | 1 | `processar` | 21,150 | accent_variant |
 | `procissao` | 1 | `procissão` | 662 | unaccented |
 | `proclamaçâo` | 1 | `proclamação` | 582 | accent_variant |
 | `proconsul` | 1 | `procônsul` | 103 | unaccented |
@@ -27312,8 +27176,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `procura-ia` | 1 | `procurá-ia` | 18 | unaccented |
 | `procura-ios` | 1 | `procurá-ios` | 14 | unaccented |
 | `procuraçäo` | 1 | `procuração` | 695 | accent_variant |
-| `procurár` | 1 | `procurar` | 226,031 | accent_variant |
-| `procurä` | 1 | `procura` | 162,706 | accent_variant |
+| `procurár` | 1 | `procurar` | 226,941 | accent_variant |
+| `procurä` | 1 | `procura` | 163,080 | accent_variant |
 | `procópio` | 1 | `procopio` | 2 | accent_variant |
 | `prodigo` | 1 | `pródigo` | 1,029 | unaccented |
 | `prodigío` | 1 | `prodígio` | 1,852 | accent_variant |
@@ -27340,11 +27204,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `projetil` | 1 | `projétil` | 2,097 | unaccented |
 | `projeçao` | 1 | `projeção` | 3,583 | accent_variant |
 | `projeçäo` | 1 | `projeção` | 3,583 | accent_variant |
-| `projéto` | 1 | `projeto` | 38,156 | accent_variant |
+| `projéto` | 1 | `projeto` | 38,163 | accent_variant |
 | `proletáriado` | 1 | `proletariado` | 270 | accent_variant |
 | `proliferaçao` | 1 | `proliferação` | 218 | accent_variant |
 | `prolápso` | 1 | `prolapso` | 109 | accent_variant |
-| `prometêr` | 1 | `prometer` | 159,226 | accent_variant |
+| `prometêr` | 1 | `prometer` | 159,229 | accent_variant |
 | `promiscuídade` | 1 | `promiscuidade` | 271 | accent_variant |
 | `promontorio` | 1 | `promontório` | 73 | unaccented |
 | `promoçaõ` | 1 | `promoção` | 8,625 | accent_variant |
@@ -27397,12 +27261,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `protéa` | 1 | `protea` | 14 | accent_variant |
 | `protéases` | 1 | `proteases` | 4 | accent_variant |
 | `protée` | 1 | `protee` | 1 | accent_variant |
-| `protégido` | 1 | `protegido` | 10,985 | accent_variant |
+| `protégido` | 1 | `protegido` | 10,987 | accent_variant |
 | `protéina` | 1 | `proteína` | 4,690 | accent_variant |
 | `protéinas` | 1 | `proteinas` | 59 | accent_variant |
 | `protéção` | 1 | `proteção` | 34,014 | accent_variant |
 | `protêge` | 1 | `protégé` | 38 | accent_variant |
-| `protêjaas` | 1 | `protejaas` | 4 | accent_variant |
 | `protócolos` | 1 | `protocólos` | 3 | accent_variant |
 | `protón` | 1 | `próton` | 78 | accent_variant |
 | `protóns` | 1 | `prótons` | 122 | accent_variant |
@@ -27418,7 +27281,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `prováve` | 1 | `provave` | 4 | accent_variant |
 | `provávelmento` | 1 | `provavelmento` | 10 | accent_variant |
 | `provávelmte` | 1 | `provavelmte` | 1 | accent_variant |
-| `provä` | 1 | `prova` | 132,394 | accent_variant |
+| `provä` | 1 | `prova` | 132,476 | accent_variant |
 | `provérvio` | 1 | `provervio` | 1 | accent_variant |
 | `provídencíou` | 1 | `providênciou` | 3 | accent_variant |
 | `proxenêta` | 1 | `proxeneta` | 351 | accent_variant |
@@ -27427,7 +27290,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `proìbido` | 1 | `proibido` | 6,205 | accent_variant |
 | `proíbidissimo` | 1 | `proibidíssimo` | 30 | accent_variant |
 | `proíbisse` | 1 | `proibísse` | 2 | accent_variant |
-| `proíbiua` | 1 | `proibiua` | 18 | accent_variant |
 | `proíbídos` | 1 | `proíbidos` | 42 | accent_variant |
 | `prošao` | 1 | `prosão` | 1 | accent_variant |
 | `prquê` | 1 | `prque` | 19 | accent_variant |
@@ -27462,15 +27324,15 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `précognitivo` | 1 | `precognitivo` | 32 | accent_variant |
 | `prédi` | 1 | `predi` | 1 | accent_variant |
 | `prédío` | 1 | `prédio` | 26,126 | accent_variant |
-| `préga` | 1 | `prega` | 1,624 | accent_variant |
+| `préga` | 1 | `prega` | 1,630 | accent_variant |
 | `prégamos` | 1 | `pregämos` | 1 | accent_variant |
 | `prégava` | 1 | `pregáva` | 1 | accent_variant |
-| `prégo` | 1 | `prego` | 6,256 | accent_variant |
+| `prégo` | 1 | `prego` | 6,260 | accent_variant |
 | `préjean` | 1 | `prejean` | 32 | accent_variant |
 | `prénatal` | 1 | `prenatal` | 1 | accent_variant |
 | `prénome` | 1 | `prenome` | 3 | accent_variant |
 | `préparation` | 1 | `preparation` | 10 | accent_variant |
-| `prévenir` | 1 | `prevenir` | 6,185 | accent_variant |
+| `prévenir` | 1 | `prevenir` | 6,199 | accent_variant |
 | `prê-história` | 1 | `pré-história` | 196 | accent_variant |
 | `prê-pagamento` | 1 | `pré-pagamento` | 77 | accent_variant |
 | `prê-programado` | 1 | `pré-programado` | 125 | accent_variant |
@@ -27479,7 +27341,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `prêmiação` | 1 | `premiação` | 91 | accent_variant |
 | `prêmiações` | 1 | `premiações` | 6 | accent_variant |
 | `prêpotencia` | 1 | `prepotência` | 76 | accent_variant |
-| `prêver` | 1 | `prever` | 20,701 | accent_variant |
+| `prêver` | 1 | `prever` | 20,718 | accent_variant |
 | `prêço` | 1 | `preço` | 48,430 | accent_variant |
 | `prìmeiramente` | 1 | `primeiramente` | 669 | accent_variant |
 | `prìsão` | 1 | `prisão` | 105,392 | accent_variant |
@@ -27562,11 +27424,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `puneta` | 1 | `puñeta` | 43 | unaccented |
 | `punhámos` | 1 | `punhamos` | 50 | accent_variant |
 | `punhêta` | 1 | `punheta` | 2,009 | accent_variant |
-| `punír` | 1 | `punir` | 8,054 | accent_variant |
+| `punír` | 1 | `punir` | 8,072 | accent_variant |
 | `pupílo` | 1 | `pupilo` | 579 | accent_variant |
 | `purificacao` | 1 | `purificação` | 948 | unaccented |
 | `purísima` | 1 | `purisima` | 9 | accent_variant |
-| `pussémos` | 1 | `pussemos` | 4 | accent_variant |
+| `pussémos` | 1 | `pussemos` | 5 | accent_variant |
 | `pusséste` | 1 | `pusseste` | 9 | accent_variant |
 | `pustulas` | 1 | `pústulas` | 225 | unaccented |
 | `pusá` | 1 | `pusa` | 1 | accent_variant |
@@ -27602,7 +27464,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `párese` | 1 | `parese` | 4 | accent_variant |
 | `pároquia` | 1 | `paróquia` | 1,777 | accent_variant |
 | `párs` | 1 | `pars` | 20 | accent_variant |
-| `párá` | 1 | `para` | 7,211,920 | accent_variant |
+| `párá` | 1 | `para` | 7,211,969 | accent_variant |
 | `pásame` | 1 | `pàsame` | 2 | accent_variant |
 | `pásc` | 1 | `pasc` | 103 | accent_variant |
 | `páscua` | 1 | `pascua` | 14 | accent_variant |
@@ -27631,7 +27493,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pâr` | 1 | `par` | 53,873 | accent_variant |
 | `pâra-brisa` | 1 | `pára-brisa` | 145 | accent_variant |
 | `pâraquedismo` | 1 | `paraquedismo` | 120 | accent_variant |
-| `pâre` | 1 | `páre` | 2,569 | accent_variant |
+| `pâre` | 1 | `páre` | 2,579 | accent_variant |
 | `pârra` | 1 | `parra` | 198 | accent_variant |
 | `pâscoa` | 1 | `páscoa` | 5,478 | accent_variant |
 | `pâtes` | 1 | `patês` | 11 | accent_variant |
@@ -27644,7 +27506,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pèrsia` | 1 | `pérsia` | 858 | accent_variant |
 | `pé-grandes` | 1 | `pé-grandês` | 2 | accent_variant |
 | `pé-no-chao` | 1 | `pé-no-chão` | 5 | accent_variant |
-| `péca` | 1 | `peça` | 61,405 | accent_variant |
+| `péca` | 1 | `peça` | 61,428 | accent_variant |
 | `péch` | 1 | `pech` | 93 | accent_variant |
 | `péda` | 1 | `peda` | 11 | accent_variant |
 | `pédia` | 1 | `pedía` | 5 | accent_variant |
@@ -27705,14 +27567,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `póes` | 1 | `pöes` | 33 | accent_variant |
 | `pól` | 1 | `pol` | 728 | accent_variant |
 | `pólarons` | 1 | `polarons` | 2 | accent_variant |
-| `pólicia` | 1 | `polícia` | 298,898 | accent_variant |
+| `pólicia` | 1 | `polícia` | 298,896 | accent_variant |
 | `póliciais` | 1 | `políciais` | 86 | accent_variant |
 | `póney` | 1 | `poney` | 63 | accent_variant |
 | `póngase` | 1 | `pongase` | 1 | accent_variant |
 | `pónha` | 1 | `pônha` | 14 | accent_variant |
 | `pórno` | 1 | `porno` | 5,247 | accent_variant |
 | `pórque` | 1 | `porque` | 1,552,691 | accent_variant |
-| `pórta` | 1 | `porta` | 251,606 | accent_variant |
+| `pórta` | 1 | `porta` | 251,603 | accent_variant |
 | `pórtia` | 1 | `portia` | 770 | accent_variant |
 | `pós-apocaliptico` | 1 | `pós-apocalíptico` | 50 | accent_variant |
 | `pós-apocalypse` | 1 | `pos-apocalypse` | 2 | accent_variant |
@@ -27726,10 +27588,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pô-los-à` | 1 | `pô-los-á` | 9 | accent_variant |
 | `pôd` | 1 | `pod` | 649 | accent_variant |
 | `pôdeser` | 1 | `podeser` | 21 | accent_variant |
-| `pôdeste` | 1 | `podeste` | 171 | accent_variant |
 | `pôe-ihe` | 1 | `põe-ihe` | 28 | accent_variant |
 | `pôe-mo` | 1 | `põe-mo` | 86 | accent_variant |
-| `pôeas` | 1 | `põeas` | 83 | accent_variant |
 | `pôen` | 1 | `põen` | 10 | accent_variant |
 | `pôf` | 1 | `pof` | 16 | accent_variant |
 | `pôia` | 1 | `poia` | 149 | accent_variant |
@@ -27749,7 +27609,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `pôt` | 1 | `pot` | 372 | accent_variant |
 | `pôte` | 1 | `pote` | 3,363 | accent_variant |
 | `pôtro` | 1 | `potro` | 857 | accent_variant |
-| `põema` | 1 | `poema` | 9,996 | accent_variant |
 | `põmo` | 1 | `pômo` | 54 | accent_variant |
 | `põnha` | 1 | `pônha` | 14 | accent_variant |
 | `põnham` | 1 | `pónham` | 6 | accent_variant |
@@ -27766,7 +27625,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `púublica` | 1 | `puublica` | 1 | accent_variant |
 | `pûblicas` | 1 | `publicás` | 1 | accent_variant |
 | `păo` | 1 | `pão` | 22,130 | accent_variant |
-| `pără` | 1 | `para` | 7,211,920 | accent_variant |
+| `pără` | 1 | `para` | 7,211,969 | accent_variant |
 | `q-q-qué` | 1 | `q-q-que` | 40 | accent_variant |
 | `qaëda` | 1 | `qaeda` | 801 | accent_variant |
 | `quadriceps` | 1 | `quadríceps` | 71 | unaccented |
@@ -27784,14 +27643,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `quaí` | 1 | `quai` | 91 | accent_variant |
 | `quaíquer` | 1 | `quaiquer` | 17 | accent_variant |
 | `quañto` | 1 | `quanto` | 472,801 | accent_variant |
-| `quebrà` | 1 | `quebra` | 5,104 | accent_variant |
+| `quebrà` | 1 | `quebra` | 5,130 | accent_variant |
 | `quebéc` | 1 | `quebec` | 440 | accent_variant |
 | `queestas` | 1 | `queestás` | 12 | unaccented |
 | `queficasbemaíemcima` | 1 | `queficasbemaiemcima` | 1 | accent_variant |
 | `queijo-suiço` | 1 | `queijo-suíço` | 4 | accent_variant |
 | `queimar-nos-á` | 1 | `queimar-nos-à` | 3 | accent_variant |
 | `queimar-se-à` | 1 | `queimar-se-á` | 8 | accent_variant |
-| `queimà` | 1 | `queima` | 6,509 | accent_variant |
+| `queimà` | 1 | `queima` | 6,850 | accent_variant |
 | `quelá` | 1 | `quela` | 35 | accent_variant |
 | `quelônios` | 1 | `quelónios` | 2 | accent_variant |
 | `quemsâo` | 1 | `quemsão` | 2 | accent_variant |
@@ -27804,7 +27663,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `querê-ia` | 1 | `quere-ia` | 3 | accent_variant |
 | `quessê` | 1 | `quesse` | 1 | accent_variant |
 | `questionavél` | 1 | `questionável` | 1,201 | accent_variant |
-| `questionár` | 1 | `questionar` | 18,754 | accent_variant |
+| `questionár` | 1 | `questionar` | 18,776 | accent_variant |
 | `questionärio` | 1 | `questionário` | 1,356 | accent_variant |
 | `quetêm` | 1 | `quetem` | 2 | accent_variant |
 | `quevêmde` | 1 | `quevemde` | 2 | accent_variant |
@@ -27870,7 +27729,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `racão` | 1 | `ração` | 3,308 | accent_variant |
 | `racíal` | 1 | `racial` | 2,396 | accent_variant |
 | `radar-termômetro` | 1 | `radar-termómetro` | 1 | accent_variant |
-| `radiacäo` | 1 | `radiação` | 11,385 | accent_variant |
+| `radiacäo` | 1 | `radiação` | 11,386 | accent_variant |
 | `radio-observatório` | 1 | `rádio-observatório` | 2 | accent_variant |
 | `radio-tâxis` | 1 | `radio-táxis` | 1 | accent_variant |
 | `radiocomunicaçao` | 1 | `radiocomunicação` | 7 | accent_variant |
@@ -27896,7 +27755,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rapazâo` | 1 | `rapazão` | 343 | accent_variant |
 | `rapidinhá` | 1 | `rapidinha` | 1,052 | accent_variant |
 | `rapporté` | 1 | `rapporte` | 2 | accent_variant |
-| `raptó` | 1 | `rapto` | 11,244 | accent_variant |
+| `raptó` | 1 | `rapto` | 11,248 | accent_variant |
 | `rapunzél` | 1 | `rapunzel` | 906 | accent_variant |
 | `rapádo` | 1 | `rapado` | 331 | accent_variant |
 | `rapâ` | 1 | `rapa` | 501 | accent_variant |
@@ -27904,9 +27763,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rarió` | 1 | `rário` | 12 | accent_variant |
 | `rasga-la-á` | 1 | `rasgá-la-á` | 6 | accent_variant |
 | `rasgao` | 1 | `rasgão` | 552 | unaccented |
-| `rasgàia` | 1 | `rasgaia` | 1 | accent_variant |
 | `rasgäo` | 1 | `rasgão` | 552 | accent_variant |
-| `rasgó` | 1 | `rasgo` | 749 | accent_variant |
+| `rasgó` | 1 | `rasgo` | 784 | accent_variant |
 | `raskólnikov` | 1 | `raskolnikov` | 50 | accent_variant |
 | `rastá` | 1 | `rasta` | 185 | accent_variant |
 | `ratafía` | 1 | `ratafia` | 1 | accent_variant |
@@ -27941,12 +27799,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rebulico` | 1 | `rebuliço` | 288 | unaccented |
 | `recalíbrar` | 1 | `recalibrar` | 282 | accent_variant |
 | `recarreguá` | 1 | `recarregua` | 6 | accent_variant |
+| `recebe-io` | 1 | `recebê-io` | 33 | unaccented |
 | `recebe-los-á` | 1 | `recebê-los-á` | 4 | accent_variant |
 | `receber-me-à` | 1 | `receber-me-á` | 19 | accent_variant |
 | `receber-te-à` | 1 | `receber-te-á` | 6 | accent_variant |
 | `receberâo` | 1 | `receberäo` | 8 | accent_variant |
 | `receberăo` | 1 | `receberäo` | 8 | accent_variant |
-| `recebêr` | 1 | `receber` | 214,593 | accent_variant |
+| `recebêr` | 1 | `receber` | 215,049 | accent_variant |
 | `recebía` | 1 | `recebiá` | 2 | accent_variant |
 | `recebę` | 1 | `recebë` | 5 | accent_variant |
 | `recem-criado` | 1 | `recém-criado` | 39 | unaccented |
@@ -27971,24 +27830,22 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `recomendã` | 1 | `recomendà` | 2 | accent_variant |
 | `recomeçàmos` | 1 | `recomecamos` | 11 | accent_variant |
 | `recompensar-te-à` | 1 | `recompensar-te-á` | 28 | accent_variant |
-| `recompensár` | 1 | `recompensar` | 6,771 | accent_variant |
-| `recompensâ` | 1 | `recompensa` | 18,638 | accent_variant |
+| `recompensár` | 1 | `recompensar` | 6,783 | accent_variant |
+| `recompensâ` | 1 | `recompensa` | 18,656 | accent_variant |
 | `recompoêm` | 1 | `recompoem` | 6 | accent_variant |
 | `recompõr` | 1 | `recompor` | 5,058 | accent_variant |
 | `reconciliacäo` | 1 | `reconciliação` | 1,313 | accent_variant |
 | `reconciliaçäo` | 1 | `reconciliação` | 1,313 | accent_variant |
 | `reconduçäo` | 1 | `recondução` | 26 | accent_variant |
 | `reconhecer-te-à` | 1 | `reconhecer-te-á` | 4 | accent_variant |
-| `reconhecoa` | 1 | `reconheçoa` | 200 | unaccented |
 | `reconhecá` | 1 | `reconheca` | 3 | accent_variant |
 | `reconhecês` | 1 | `reconheçes` | 2 | accent_variant |
-| `reconhecë` | 1 | `reconheçe` | 22 | accent_variant |
-| `reconhecę` | 1 | `reconheçe` | 22 | accent_variant |
-| `reconheçea` | 1 | `reconhecea` | 264 | accent_variant |
+| `reconhecë` | 1 | `reconheçe` | 23 | accent_variant |
+| `reconhecę` | 1 | `reconheçe` | 23 | accent_variant |
 | `reconheçi` | 1 | `reconhecí` | 2 | accent_variant |
-| `reconheçê` | 1 | `reconheçe` | 22 | accent_variant |
+| `reconheçê` | 1 | `reconheçe` | 23 | accent_variant |
 | `reconhéces` | 1 | `reconheçes` | 2 | accent_variant |
-| `reconhêce` | 1 | `reconheçe` | 22 | accent_variant |
+| `reconhêce` | 1 | `reconheçe` | 23 | accent_variant |
 | `reconocerà` | 1 | `reconocera` | 1 | accent_variant |
 | `reconsideracäo` | 1 | `reconsideração` | 51 | accent_variant |
 | `reconsideraçao` | 1 | `reconsideração` | 51 | accent_variant |
@@ -27999,13 +27856,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `reconéctarmos` | 1 | `reconectarmos` | 11 | accent_variant |
 | `recordacao` | 1 | `recordação` | 12,604 | unaccented |
 | `recordaräo` | 1 | `recordarao` | 2 | accent_variant |
-| `recordár` | 1 | `recordar` | 35,024 | accent_variant |
+| `recordár` | 1 | `recordar` | 35,091 | accent_variant |
 | `recordò` | 1 | `recordó` | 2 | accent_variant |
 | `recreacao` | 1 | `recreação` | 452 | unaccented |
 | `recriacao` | 1 | `recriação` | 362 | unaccented |
 | `recriaçäo` | 1 | `recriação` | 362 | accent_variant |
 | `recriminacäo` | 1 | `recriminação` | 228 | accent_variant |
-| `recrutà` | 1 | `recruta` | 6,483 | accent_variant |
+| `recrutà` | 1 | `recruta` | 6,486 | accent_variant |
 | `rectidäo` | 1 | `rectidao` | 1 | accent_variant |
 | `rectoscopía` | 1 | `rectoscopia` | 3 | accent_variant |
 | `recuperacao` | 1 | `recuperação` | 8,495 | unaccented |
@@ -28014,7 +27871,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `recuperaçăo` | 1 | `recuperação` | 8,495 | accent_variant |
 | `recuperà-io` | 1 | `recuperá-io` | 19 | accent_variant |
 | `recuperálo` | 1 | `recupéralo` | 2 | accent_variant |
-| `recusár` | 1 | `recusar` | 51,648 | accent_variant |
+| `recusár` | 1 | `recusar` | 51,808 | accent_variant |
 | `recêm-nascida` | 1 | `recém-nascida` | 269 | accent_variant |
 | `recêm-saídos` | 1 | `recém-saídos` | 2 | accent_variant |
 | `recíbo` | 1 | `recibo` | 6,425 | accent_variant |
@@ -28052,13 +27909,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `regressâmos` | 1 | `regressàmos` | 3 | accent_variant |
 | `regresó` | 1 | `regreso` | 27 | accent_variant |
 | `regulaçao` | 1 | `regulação` | 426 | accent_variant |
-| `regístre` | 1 | `registre` | 97 | accent_variant |
-| `regó` | 1 | `rego` | 470 | accent_variant |
+| `regístre` | 1 | `registre` | 98 | accent_variant |
+| `regó` | 1 | `rego` | 475 | accent_variant |
 | `rei-demônio` | 1 | `rei-demónio` | 1 | accent_variant |
 | `reiacâo` | 1 | `reiacão` | 8 | accent_variant |
 | `reiaçâo` | 1 | `reiacão` | 8 | accent_variant |
 | `reinacäo` | 1 | `reinação` | 77 | accent_variant |
-| `reincidencia` | 1 | `reincidência` | 132 | unaccented |
+| `reincidencia` | 1 | `reincidência` | 131 | unaccented |
 | `reinstrução` | 1 | `reinstrucão` | 2 | accent_variant |
 | `reinvidicá` | 1 | `reinvidica` | 7 | accent_variant |
 | `reivindicacäo` | 1 | `reivindicação` | 1,097 | accent_variant |
@@ -28076,7 +27933,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `relãmpago` | 1 | `relâmpago` | 5,495 | accent_variant |
 | `relåmpagos` | 1 | `relampagos` | 20 | accent_variant |
 | `relève` | 1 | `relevé` | 22 | accent_variant |
-| `relêr` | 1 | `reler` | 653 | accent_variant |
+| `relêr` | 1 | `reler` | 656 | accent_variant |
 | `relóginho` | 1 | `reloginho` | 3 | accent_variant |
 | `relógío` | 1 | `relógio` | 35,733 | accent_variant |
 | `relú` | 1 | `relu` | 13 | accent_variant |
@@ -28085,7 +27942,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rememórias` | 1 | `rememorias` | 1 | accent_variant |
 | `remercié` | 1 | `remercie` | 3 | accent_variant |
 | `remissao` | 1 | `remissão` | 850 | unaccented |
-| `removêr` | 1 | `remover` | 17,899 | accent_variant |
+| `removêr` | 1 | `remover` | 17,981 | accent_variant |
 | `remuneraçäo` | 1 | `remuneração` | 478 | accent_variant |
 | `remípede` | 1 | `remipede` | 1 | accent_variant |
 | `remóra` | 1 | `rêmora` | 35 | accent_variant |
@@ -28130,7 +27987,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `reputaçôes` | 1 | `reputaçöes` | 4 | accent_variant |
 | `repéte` | 1 | `répète` | 2 | accent_variant |
 | `repórtagem` | 1 | `reportagem` | 4,774 | accent_variant |
-| `repõr` | 1 | `repor` | 2,272 | accent_variant |
+| `repõr` | 1 | `repor` | 2,273 | accent_variant |
 | `repörter` | 1 | `repórter` | 9,312 | accent_variant |
 | `rescisâo` | 1 | `rescisão` | 357 | accent_variant |
 | `resconstruír` | 1 | `resconstruir` | 2 | accent_variant |
@@ -28155,7 +28012,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `respiràvamos` | 1 | `respiravamos` | 1 | accent_variant |
 | `responder-me-ão` | 1 | `responder-me-äo` | 2 | accent_variant |
 | `responder-vos-á` | 1 | `responder-vos-à` | 5 | accent_variant |
-| `responsábilizar` | 1 | `responsabilizar` | 3,886 | accent_variant |
+| `responsábilizar` | 1 | `responsabilizar` | 3,891 | accent_variant |
 | `resposavél` | 1 | `resposável` | 3 | accent_variant |
 | `respostá` | 1 | `resposta` | 98,336 | accent_variant |
 | `resquicio` | 1 | `resquício` | 308 | unaccented |
@@ -28179,7 +28036,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `resídencias` | 1 | `residencias` | 9 | accent_variant |
 | `resídio` | 1 | `residio` | 2 | accent_variant |
 | `resítem` | 1 | `resitem` | 1 | accent_variant |
-| `resólver` | 1 | `resolver` | 113,275 | accent_variant |
+| `resólver` | 1 | `resolver` | 113,424 | accent_variant |
 | `retaliacao` | 1 | `retaliação` | 2,440 | unaccented |
 | `retaliacão` | 1 | `retaliação` | 2,440 | accent_variant |
 | `retardatario` | 1 | `retardatário` | 149 | unaccented |
@@ -28190,7 +28047,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `retroalimentaçao` | 1 | `retroalimentação` | 35 | accent_variant |
 | `retropropulsâo` | 1 | `retropropulsão` | 15 | accent_variant |
 | `retêem` | 1 | `reteêm` | 2 | accent_variant |
-| `retêr` | 1 | `reter` | 6,638 | accent_variant |
+| `retêr` | 1 | `reter` | 6,678 | accent_variant |
 | `reumatico` | 1 | `reumático` | 168 | unaccented |
 | `reumátismo` | 1 | `reumatismo` | 307 | accent_variant |
 | `reunao` | 1 | `reunão` | 17 | unaccented |
@@ -28209,9 +28066,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `revolucionár` | 1 | `revolucionar` | 894 | accent_variant |
 | `revoluçöes` | 1 | `revoluçoes` | 3 | accent_variant |
 | `revézes` | 1 | `revezes` | 53 | accent_variant |
-| `revísta` | 1 | `revista` | 25,188 | accent_variant |
-| `revíste` | 1 | `reviste` | 539 | accent_variant |
-| `revę` | 1 | `reve` | 313 | accent_variant |
+| `revísta` | 1 | `revista` | 25,279 | accent_variant |
+| `revíste` | 1 | `reviste` | 576 | accent_variant |
+| `revę` | 1 | `reve` | 314 | accent_variant |
 | `reçeberá` | 1 | `receberà` | 3 | accent_variant |
 | `reçebi` | 1 | `recebí` | 26 | accent_variant |
 | `reçonstituiu` | 1 | `reconstituíu` | 7 | accent_variant |
@@ -28220,7 +28077,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `reè` | 1 | `ree` | 295 | accent_variant |
 | `reínicio` | 1 | `reinício` | 186 | accent_variant |
 | `reínvindica` | 1 | `reinvindica` | 2 | accent_variant |
-| `reúnaas` | 1 | `reunaas` | 1 | accent_variant |
 | `reúniao` | 1 | `reunião` | 71,610 | accent_variant |
 | `reúnido` | 1 | `reunido` | 3,533 | accent_variant |
 | `ribonucléico` | 1 | `ribonucleico` | 2 | accent_variant |
@@ -28288,7 +28144,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rotúlo` | 1 | `rótulo` | 2,094 | accent_variant |
 | `roubà-ios` | 1 | `roubá-ios` | 4 | accent_variant |
 | `roubáste-mo` | 1 | `roubaste-mo` | 67 | accent_variant |
-| `roubásteas` | 1 | `roubasteas` | 48 | accent_variant |
 | `rudná` | 1 | `rudna` | 6 | accent_variant |
 | `rufiőes` | 1 | `rufioes` | 3 | accent_variant |
 | `rugído` | 1 | `rugido` | 1,121 | accent_variant |
@@ -28321,14 +28176,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rápid` | 1 | `rapid` | 151 | accent_variant |
 | `rápidol` | 1 | `ràpidol` | 4 | accent_variant |
 | `rápito` | 1 | `rapito` | 1 | accent_variant |
-| `rásgaa` | 1 | `rasgaa` | 34 | accent_variant |
 | `ráteres` | 1 | `rateres` | 2 | accent_variant |
 | `rátings` | 1 | `ratings` | 61 | accent_variant |
 | `ráá` | 1 | `raa` | 11 | accent_variant |
-| `râm` | 1 | `ram` | 1,833 | accent_variant |
+| `râm` | 1 | `ram` | 1,834 | accent_variant |
 | `râs` | 1 | `rás` | 11 | accent_variant |
 | `rãdio` | 1 | `rádio` | 42,826 | accent_variant |
-| `rãm` | 1 | `ram` | 1,833 | accent_variant |
+| `rãm` | 1 | `ram` | 1,834 | accent_variant |
 | `rä-gigante` | 1 | `rã-gigante` | 8 | accent_variant |
 | `räpida` | 1 | `rapida` | 83 | accent_variant |
 | `räpidos` | 1 | `ràpidos` | 1 | accent_variant |
@@ -28355,7 +28209,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rêmoras` | 1 | `remoras` | 18 | accent_variant |
 | `rìca` | 1 | `riçá` | 12 | accent_variant |
 | `ríade` | 1 | `riade` | 124 | accent_variant |
-| `ríco` | 1 | `rico` | 60,602 | accent_variant |
+| `ríco` | 1 | `rico` | 60,601 | accent_variant |
 | `rícordare` | 1 | `ricordare` | 10 | accent_variant |
 | `rídicuios` | 1 | `ridìcuios` | 1 | accent_variant |
 | `rídiculamente` | 1 | `ridiculamente` | 477 | accent_variant |
@@ -28383,7 +28237,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `rôtie` | 1 | `rotie` | 2 | accent_variant |
 | `rões` | 1 | `roes` | 8 | accent_variant |
 | `röslein` | 1 | `roslein` | 1 | accent_variant |
-| `rúa` | 1 | `rua` | 122,297 | accent_variant |
+| `rúa` | 1 | `rua` | 122,296 | accent_variant |
 | `rúbi` | 1 | `rubi` | 1,890 | accent_variant |
 | `rúgido` | 1 | `rugido` | 1,121 | accent_variant |
 | `rúina` | 1 | `ruína` | 7,098 | accent_variant |
@@ -28416,7 +28270,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sacrilegos` | 1 | `sacrílegos` | 19 | unaccented |
 | `sacrífício` | 1 | `sacrifício` | 17,128 | accent_variant |
 | `sacäo` | 1 | `sacão` | 40 | accent_variant |
-| `sacóde` | 1 | `sacode` | 639 | accent_variant |
+| `sacóde` | 1 | `sacode` | 690 | accent_variant |
 | `sado-masô` | 1 | `sado-maso` | 57 | accent_variant |
 | `sadíca` | 1 | `sadica` | 2 | accent_variant |
 | `safanäo` | 1 | `safanão` | 145 | accent_variant |
@@ -28448,7 +28302,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `salva-io` | 1 | `salvá-io` | 56 | unaccented |
 | `salvar-te-à` | 1 | `salvar-te-á` | 49 | accent_variant |
 | `salvé-rainha` | 1 | `salve-rainha` | 1 | accent_variant |
-| `salvô` | 1 | `salvo` | 37,797 | accent_variant |
+| `salvô` | 1 | `salvo` | 37,861 | accent_variant |
 | `salém's` | 1 | `salem's` | 21 | accent_variant |
 | `salómina` | 1 | `salomina` | 24 | accent_variant |
 | `samambáia` | 1 | `samambaia` | 37 | accent_variant |
@@ -28500,7 +28354,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `saíída` | 1 | `saíida` | 11 | accent_variant |
 | `saîa` | 1 | `sáia` | 15 | accent_variant |
 | `saîu` | 1 | `saiú` | 4 | accent_variant |
-| `saúdaa` | 1 | `saudaã` | 2 | accent_variant |
 | `sbtitlacão` | 1 | `sbtitlação` | 10 | accent_variant |
 | `scenário` | 1 | `scenario` | 9 | accent_variant |
 | `schläft` | 1 | `schlaft` | 1 | accent_variant |
@@ -28527,9 +28380,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `secreçao` | 1 | `secreção` | 415 | accent_variant |
 | `secréto` | 1 | `secreto` | 59,696 | accent_variant |
 | `secundáriamente` | 1 | `secundariamente` | 4 | accent_variant |
-| `secçaõ` | 1 | `secção` | 16,840 | accent_variant |
-| `secó` | 1 | `seco` | 10,751 | accent_variant |
-| `secô` | 1 | `seco` | 10,751 | accent_variant |
+| `secçaõ` | 1 | `secção` | 16,842 | accent_variant |
+| `secó` | 1 | `seco` | 10,762 | accent_variant |
+| `secô` | 1 | `seco` | 10,762 | accent_variant |
 | `sedicao` | 1 | `sedição` | 124 | unaccented |
 | `seducão` | 1 | `sedução` | 1,475 | accent_variant |
 | `seduçaõ` | 1 | `sedução` | 1,475 | accent_variant |
@@ -28546,9 +28399,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `seguirãa` | 1 | `seguiráa` | 1 | accent_variant |
 | `segurã` | 1 | `segurà` | 5 | accent_variant |
 | `segurísimo` | 1 | `segurisimo` | 1 | accent_variant |
-| `seguì` | 1 | `seguí` | 7 | accent_variant |
+| `seguì` | 1 | `seguí` | 8 | accent_variant |
 | `seguída` | 1 | `seguida` | 9,027 | accent_variant |
-| `seguír` | 1 | `seguir` | 278,047 | accent_variant |
+| `seguír` | 1 | `seguir` | 279,435 | accent_variant |
 | `segúndo` | 1 | `segundo` | 273,762 | accent_variant |
 | `sejà` | 1 | `sejá` | 73 | accent_variant |
 | `sejêmos` | 1 | `sejemos` | 7 | accent_variant |
@@ -28582,7 +28435,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sentirăo` | 1 | `sentirao` | 3 | accent_variant |
 | `sentìamos` | 1 | `sentiamos` | 41 | accent_variant |
 | `sentí-ios` | 1 | `senti-ios` | 1 | accent_variant |
-| `sentíaas` | 1 | `sentiaas` | 11 | accent_variant |
 | `senéca` | 1 | `seneca` | 181 | accent_variant |
 | `senõ` | 1 | `seno` | 96 | accent_variant |
 | `separar-se-äo` | 1 | `separar-se-ão` | 6 | accent_variant |
@@ -28590,8 +28442,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `separaçâo` | 1 | `separação` | 5,995 | accent_variant |
 | `separà-ios` | 1 | `separá-ios` | 8 | accent_variant |
 | `separâ` | 1 | `separà` | 4 | accent_variant |
-| `sepára` | 1 | `separà` | 4 | accent_variant |
-| `sepáraas` | 1 | `separaas` | 22 | accent_variant |
 | `sepúlcro` | 1 | `sepulcro` | 477 | accent_variant |
 | `sequestráram` | 1 | `seqüestraram` | 53 | accent_variant |
 | `sequistá` | 1 | `sequista` | 1 | accent_variant |
@@ -28600,7 +28450,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sequênciais` | 1 | `seqüenciais` | 3 | accent_variant |
 | `sequëstro` | 1 | `sequestro` | 3,378 | accent_variant |
 | `sequęncia` | 1 | `sequência` | 9,624 | accent_variant |
-| `seqüela` | 1 | `sequela` | 1,145 | accent_variant |
+| `seqüela` | 1 | `sequela` | 1,144 | accent_variant |
 | `seqüelado` | 1 | `sequelado` | 2 | accent_variant |
 | `seqüelou` | 1 | `sequelou` | 1 | accent_variant |
 | `seqüencialmente` | 1 | `sequencialmente` | 61 | accent_variant |
@@ -28608,7 +28458,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `seqüenciar` | 1 | `sequenciar` | 132 | accent_variant |
 | `seqüentes` | 1 | `sequentes` | 8 | accent_variant |
 | `seqüestar` | 1 | `sequestar` | 6 | accent_variant |
-| `seqüestreia` | 1 | `sequestreia` | 5 | accent_variant |
 | `seqüênciais` | 1 | `seqüenciais` | 3 | accent_variant |
 | `seqüêncial` | 1 | `sequencial` | 304 | accent_variant |
 | `ser-ihes-à` | 1 | `ser-ihes-á` | 7 | accent_variant |
@@ -28686,7 +28535,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `silénclo` | 1 | `silênclo` | 4 | accent_variant |
 | `silésiana` | 1 | `silesiana` | 3 | accent_variant |
 | `silênciador` | 1 | `silenciador` | 1,180 | accent_variant |
-| `silênciandoa` | 1 | `silenciandoa` | 9 | accent_variant |
 | `silênciá` | 1 | `silência` | 13 | accent_variant |
 | `silęncio` | 1 | `silêncio` | 40,585 | accent_variant |
 | `simbiotica` | 1 | `simbiótica` | 204 | unaccented |
@@ -28784,7 +28632,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `solitärio` | 1 | `solitário` | 11,175 | accent_variant |
 | `soljenitsin` | 1 | `soljenítsin` | 34 | unaccented |
 | `solnão` | 1 | `solnao` | 3 | accent_variant |
-| `soltó` | 1 | `solto` | 19,762 | accent_variant |
+| `soltó` | 1 | `solto` | 20,610 | accent_variant |
 | `solucões` | 1 | `solucoes` | 4 | accent_variant |
 | `soluçào` | 1 | `solução` | 29,426 | accent_variant |
 | `soluçőes` | 1 | `solucoes` | 4 | accent_variant |
@@ -28855,7 +28703,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `subcutáneamente` | 1 | `subcutaneamente` | 18 | accent_variant |
 | `subgenero` | 1 | `subgénero` | 22 | unaccented |
 | `subirâo` | 1 | `subirao` | 2 | accent_variant |
-| `subiuà` | 1 | `subiua` | 4 | accent_variant |
 | `subjunçâo` | 1 | `subjunção` | 7 | accent_variant |
 | `submersâo` | 1 | `submersão` | 291 | accent_variant |
 | `submissäo` | 1 | `submissão` | 1,222 | accent_variant |
@@ -28871,7 +28718,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `substituì` | 1 | `substítui` | 4 | accent_variant |
 | `substituío` | 1 | `substituio` | 1 | accent_variant |
 | `substí` | 1 | `substi` | 2 | accent_variant |
-| `substítuir` | 1 | `substituir` | 27,788 | accent_variant |
+| `substítuir` | 1 | `substituir` | 28,114 | accent_variant |
 | `substítuí` | 1 | `substítui` | 4 | accent_variant |
 | `subterranêa` | 1 | `subterranea` | 20 | accent_variant |
 | `subterranêo` | 1 | `subterrâneo` | 5,713 | accent_variant |
@@ -28880,7 +28727,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `subtrônicos` | 1 | `subtrónicos` | 1 | accent_variant |
 | `suburbíos` | 1 | `suburbios` | 44 | accent_variant |
 | `subxifoide` | 1 | `subxifóide` | 14 | unaccented |
-| `subôrno` | 1 | `suborno` | 5,584 | accent_variant |
+| `subôrno` | 1 | `suborno` | 5,586 | accent_variant |
 | `sucçäo` | 1 | `sucção` | 1,725 | accent_variant |
 | `sudao` | 1 | `sudão` | 1,385 | unaccented |
 | `sudâo` | 1 | `sudão` | 1,385 | accent_variant |
@@ -28923,13 +28770,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `supervalorizá` | 1 | `supervaloriza` | 2 | accent_variant |
 | `supervirús` | 1 | `supervírus` | 35 | accent_variant |
 | `supervísão` | 1 | `supervisão` | 3,137 | accent_variant |
-| `superár` | 1 | `superar` | 17,453 | accent_variant |
-| `superáste` | 1 | `superaste` | 641 | accent_variant |
+| `superár` | 1 | `superar` | 17,502 | accent_variant |
+| `superáste` | 1 | `superaste` | 642 | accent_variant |
 | `superície` | 1 | `supericie` | 1 | accent_variant |
 | `superíor` | 1 | `superior` | 27,958 | accent_variant |
 | `supetao` | 1 | `supetão` | 17 | unaccented |
-| `supiiço` | 1 | `supiico` | 17 | accent_variant |
-| `suportár` | 1 | `suportar` | 25,054 | accent_variant |
+| `supiiço` | 1 | `supiico` | 18 | accent_variant |
+| `suportár` | 1 | `suportar` | 25,077 | accent_variant |
 | `suposicao` | 1 | `suposição` | 3,233 | unaccented |
 | `supositorio` | 1 | `supositório` | 265 | unaccented |
 | `supreendí` | 1 | `supreendi` | 1 | accent_variant |
@@ -28969,15 +28816,15 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sáfaris` | 1 | `safáris` | 18 | accent_variant |
 | `sáiba` | 1 | `saíba` | 7 | accent_variant |
 | `sáimos` | 1 | `saìmos` | 1 | accent_variant |
-| `sáiva` | 1 | `saiva` | 29 | accent_variant |
+| `sáiva` | 1 | `saiva` | 32 | accent_variant |
 | `sáivamos` | 1 | `saivamos` | 5 | accent_variant |
-| `sála` | 1 | `sala` | 119,786 | accent_variant |
+| `sála` | 1 | `sala` | 119,787 | accent_variant |
 | `sálem` | 1 | `salem` | 1,900 | accent_variant |
 | `sálve` | 1 | `salvé` | 605 | accent_variant |
 | `sámo` | 1 | `samo` | 52 | accent_variant |
 | `sángue` | 1 | `sangue` | 179,792 | accent_variant |
 | `sáturno` | 1 | `saturno` | 1,406 | accent_variant |
-| `sáuda` | 1 | `sauda` | 76 | accent_variant |
+| `sáuda` | 1 | `sauda` | 77 | accent_variant |
 | `sávio` | 1 | `savio` | 50 | accent_variant |
 | `sáwol` | 1 | `sawol` | 3 | accent_variant |
 | `sáxonia` | 1 | `saxônia` | 29 | accent_variant |
@@ -28996,8 +28843,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sèneca` | 1 | `seneca` | 181 | accent_variant |
 | `sèriamente` | 1 | `seriamente` | 4,467 | accent_variant |
 | `sève` | 1 | `seve` | 16 | accent_variant |
-| `sécção` | 1 | `secção` | 16,840 | accent_variant |
-| `séde` | 1 | `sede` | 21,644 | accent_variant |
+| `sécção` | 1 | `secção` | 16,842 | accent_variant |
+| `séde` | 1 | `sede` | 21,657 | accent_variant |
 | `sége` | 1 | `sege` | 5 | accent_variant |
 | `séja` | 1 | `sejá` | 73 | accent_variant |
 | `sém` | 1 | `sem` | 648,526 | accent_variant |
@@ -29026,7 +28873,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sígame` | 1 | `sigame` | 2 | accent_variant |
 | `sígilo` | 1 | `sigilo` | 2,072 | accent_variant |
 | `sígnifíca` | 1 | `signifíca` | 3 | accent_variant |
-| `sílo` | 1 | `silo` | 1,487 | accent_variant |
+| `sílo` | 1 | `silo` | 1,488 | accent_variant |
 | `sílício` | 1 | `silício` | 372 | accent_variant |
 | `símbiote` | 1 | `simbiote` | 446 | accent_variant |
 | `símbol` | 1 | `simbol` | 1 | accent_variant |
@@ -29072,7 +28919,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sôi` | 1 | `sói` | 12 | accent_variant |
 | `sôpa` | 1 | `sopa` | 15,605 | accent_variant |
 | `sôzinho` | 1 | `sozinho` | 213,447 | accent_variant |
-| `sõbre` | 1 | `sobre` | 770,489 | accent_variant |
+| `sõbre` | 1 | `sobre` | 770,490 | accent_variant |
 | `sõcrates` | 1 | `sócrates` | 847 | accent_variant |
 | `sõe` | 1 | `sóé` | 3 | accent_variant |
 | `söner` | 1 | `soner` | 1 | accent_variant |
@@ -29080,7 +28927,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `súb` | 1 | `sub` | 5,703 | accent_variant |
 | `súban` | 1 | `suban` | 1 | accent_variant |
 | `súbete` | 1 | `subete` | 3 | accent_variant |
-| `súbir` | 1 | `subir` | 99,166 | accent_variant |
+| `súbir` | 1 | `subir` | 99,252 | accent_variant |
 | `súbitmente` | 1 | `subitmente` | 2 | accent_variant |
 | `súbteis` | 1 | `subteis` | 1 | accent_variant |
 | `súde` | 1 | `sude` | 2 | accent_variant |
@@ -29094,10 +28941,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `sûrement` | 1 | `surement` | 1 | accent_variant |
 | `sûretê` | 1 | `sûreté` | 69 | accent_variant |
 | `sübita` | 1 | `subita` | 22 | accent_variant |
-| `süper` | 1 | `super` | 24,294 | accent_variant |
+| `süper` | 1 | `super` | 24,295 | accent_variant |
 | `să` | 1 | `sã` | 3,061 | accent_variant |
 | `t-têm` | 1 | `t-tem` | 8 | accent_variant |
-| `t-ã-m-a-ra` | 1 | `t-a-m-a-ra` | 1 | accent_variant |
+| `t-ã-m-a-r` | 1 | `t-a-m-a-r` | 1 | accent_variant |
 | `t-ó-t-ó` | 1 | `t-o-t-ó` | 1 | accent_variant |
 | `ta-tá` | 1 | `tá-tá` | 14 | accent_variant |
 | `tabeliâo` | 1 | `tabelião` | 135 | accent_variant |
@@ -29184,7 +29031,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tematico` | 1 | `temático` | 1,074 | unaccented |
 | `tembem` | 1 | `tembém` | 85 | unaccented |
 | `temeráriamente` | 1 | `temerariamente` | 1 | accent_variant |
-| `temeá` | 1 | `temea` | 10 | accent_variant |
 | `temivél` | 1 | `temível` | 1,353 | accent_variant |
 | `tempao` | 1 | `tempão` | 217 | unaccented |
 | `temporas` | 1 | `têmporas` | 93 | unaccented |
@@ -29200,6 +29046,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tencöes` | 1 | `tencões` | 5 | accent_variant |
 | `tendràs` | 1 | `tendrás` | 3 | accent_variant |
 | `tendőes` | 1 | `tendöes` | 5 | accent_variant |
+| `tenhç` | 1 | `tenhc` | 2 | accent_variant |
 | `tenhêm` | 1 | `tenhem` | 17 | accent_variant |
 | `tensil` | 1 | `tênsil` | 37 | unaccented |
 | `tensiòn` | 1 | `tension` | 6 | accent_variant |
@@ -29208,8 +29055,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tensăo` | 1 | `tensão` | 12,769 | accent_variant |
 | `tentaculo` | 1 | `tentáculo` | 1,549 | unaccented |
 | `tentatîva` | 1 | `tentativa` | 26,560 | accent_variant |
-| `tenteá` | 1 | `tentea` | 14 | accent_variant |
-| `tentár` | 1 | `tentar` | 713,966 | accent_variant |
+| `tenteá` | 1 | `tentea` | 13 | accent_variant |
+| `tentár` | 1 | `tentar` | 713,997 | accent_variant |
 | `tentämos` | 1 | `tentàmos` | 12 | accent_variant |
 | `tenues` | 1 | `tênues` | 23 | unaccented |
 | `tença` | 1 | `tenca` | 6 | accent_variant |
@@ -29233,18 +29080,18 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `termodinamica` | 1 | `termodinâmica` | 213 | unaccented |
 | `termogênicos` | 1 | `termogénicos` | 1 | accent_variant |
 | `termoiônica` | 1 | `termoiónica` | 2 | accent_variant |
-| `termínar` | 1 | `terminar` | 125,307 | accent_variant |
-| `termínea` | 1 | `terminea` | 17 | accent_variant |
+| `termínar` | 1 | `terminar` | 125,472 | accent_variant |
+| `termíne` | 1 | `terminé` | 3 | accent_variant |
 | `terra-à-terra` | 1 | `terra-a-terra` | 113 | accent_variant |
 | `terraformá` | 1 | `terraforma` | 2 | accent_variant |
 | `terrigenese` | 1 | `terrigénese` | 37 | unaccented |
 | `territôrio` | 1 | `território` | 18,181 | accent_variant |
 | `terriveís` | 1 | `terrivéis` | 5 | accent_variant |
-| `terrá` | 1 | `terra` | 171,133 | accent_variant |
+| `terrá` | 1 | `terra` | 171,129 | accent_variant |
 | `terrìvelmente` | 1 | `terrivelmente` | 3,829 | accent_variant |
 | `tertulia` | 1 | `tertúlia` | 35 | unaccented |
 | `terán` | 1 | `teran` | 2 | accent_variant |
-| `terâ` | 1 | `tera` | 411 | accent_variant |
+| `terâ` | 1 | `tera` | 408 | accent_variant |
 | `terâo` | 1 | `terao` | 81 | accent_variant |
 | `terâpeuta` | 1 | `terapeuta` | 6,117 | accent_variant |
 | `terç` | 1 | `terc` | 1 | accent_variant |
@@ -29254,7 +29101,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `terú` | 1 | `teru` | 9 | accent_variant |
 | `tesouraría` | 1 | `tesouraria` | 423 | accent_variant |
 | `testiclés` | 1 | `testicles` | 3 | accent_variant |
-| `testé` | 1 | `teste` | 72,420 | accent_variant |
+| `testé` | 1 | `teste` | 72,461 | accent_variant |
 | `testícu` | 1 | `testicu` | 1 | accent_variant |
 | `testículozinhos` | 1 | `testiculozinhos` | 2 | accent_variant |
 | `testís` | 1 | `testis` | 3 | accent_variant |
@@ -29285,15 +29132,16 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `timbuktú` | 1 | `timbuktu` | 187 | accent_variant |
 | `timídas` | 1 | `timidas` | 8 | accent_variant |
 | `timó` | 1 | `timo` | 681 | accent_variant |
-| `tinhãa` | 1 | `tinhaa` | 1,586 | accent_variant |
+| `tinhãa` | 1 | `tinhaa` | 15 | accent_variant |
 | `tinturaría` | 1 | `tinturaria` | 121 | accent_variant |
-| `tiná` | 1 | `tina` | 8,448 | accent_variant |
+| `tiná` | 1 | `tina` | 8,450 | accent_variant |
 | `tipografía` | 1 | `tipografia` | 308 | accent_variant |
 | `tira-ios` | 1 | `tirá-ios` | 31 | unaccented |
 | `tiramissú` | 1 | `tiramissu` | 5 | accent_variant |
 | `tiranìa` | 1 | `tirania` | 2,120 | accent_variant |
 | `tirar-lhe-à` | 1 | `tirar-lhe-á` | 24 | accent_variant |
 | `tiraräo` | 1 | `tirarao` | 3 | accent_variant |
+| `tiresé` | 1 | `tirese` | 3 | accent_variant |
 | `tirá-lha` | 1 | `tira-lha` | 127 | accent_variant |
 | `tirá-lhos` | 1 | `tira-lhos` | 1 | accent_variant |
 | `tirámo-ios` | 1 | `tiramo-ios` | 2 | accent_variant |
@@ -29316,20 +29164,18 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tlön` | 1 | `tlon` | 1 | accent_variant |
 | `tobì` | 1 | `tobi` | 235 | accent_variant |
 | `tocà` | 1 | `tóca` | 5 | accent_variant |
-| `tocástea` | 1 | `tocastea` | 25 | accent_variant |
 | `tod'à` | 1 | `tod'a` | 2 | accent_variant |
 | `todasasdamasdacôrte` | 1 | `todasasdamasdacorte` | 1 | accent_variant |
 | `todostêm` | 1 | `todostem` | 1 | accent_variant |
 | `todá` | 1 | `tôda` | 2 | accent_variant |
 | `toierámos` | 1 | `toieramos` | 1 | accent_variant |
 | `tolíce` | 1 | `tolice` | 6,227 | accent_variant |
-| `tomaiá` | 1 | `tomaia` | 24 | accent_variant |
 | `tomalá` | 1 | `tomala` | 14 | accent_variant |
 | `tomaräo` | 1 | `tomarao` | 1 | accent_variant |
 | `tomasó` | 1 | `tomaso` | 128 | accent_variant |
 | `tommáso` | 1 | `tommaso` | 313 | accent_variant |
 | `tomográfia` | 1 | `tomografia` | 1,657 | accent_variant |
-| `tomà` | 1 | `tóma` | 13 | accent_variant |
+| `tomà` | 1 | `tóma` | 14 | accent_variant |
 | `tomá-ia` | 1 | `toma-ia` | 1 | accent_variant |
 | `tomáte` | 1 | `tomate` | 25,187 | accent_variant |
 | `tomó` | 1 | `tomò` | 1 | accent_variant |
@@ -29347,7 +29193,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tornar-me-äo` | 1 | `tornar-me-ão` | 4 | accent_variant |
 | `tornar-nos-à` | 1 | `tornar-nos-á` | 35 | accent_variant |
 | `tornar-te-à` | 1 | `tornar-te-á` | 53 | accent_variant |
-| `tornaá` | 1 | `tornaa` | 486 | accent_variant |
+| `tornaá` | 1 | `tornaa` | 1 | accent_variant |
 | `tornà-ios` | 1 | `torná-ios` | 16 | accent_variant |
 | `tornà-lo-à` | 1 | `torná-lo-á` | 55 | accent_variant |
 | `torná-lo-à` | 1 | `torná-lo-á` | 55 | accent_variant |
@@ -29358,10 +29204,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `torreäo` | 1 | `torreão` | 80 | accent_variant |
 | `torrêncialmente` | 1 | `torrencialmente` | 99 | accent_variant |
 | `tortellí` | 1 | `tortelli` | 25 | accent_variant |
-| `torturà` | 1 | `tortura` | 10,312 | accent_variant |
+| `torturà` | 1 | `tortura` | 10,353 | accent_variant |
 | `torç` | 1 | `torc` | 7 | accent_variant |
 | `torçao` | 1 | `torção` | 481 | accent_variant |
-| `torçea` | 1 | `torcea` | 23 | accent_variant |
 | `tostaslovàquia` | 1 | `tostaslováquia` | 4 | accent_variant |
 | `tostão-à-danca` | 1 | `tostão-à-dança` | 2 | accent_variant |
 | `tostäo-à-danca` | 1 | `tostão-à-dança` | 2 | accent_variant |
@@ -29381,7 +29226,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `trabalhàssemos` | 1 | `trabalhassemos` | 6 | accent_variant |
 | `trabalhâmos` | 1 | `trabalhämos` | 3 | accent_variant |
 | `trabalhãar` | 1 | `trabalhaar` | 2 | accent_variant |
-| `trabalhô` | 1 | `trabalho` | 505,387 | accent_variant |
+| `trabalhô` | 1 | `trabalho` | 505,391 | accent_variant |
 | `trabaího` | 1 | `trabaiho` | 4 | accent_variant |
 | `tracado` | 1 | `traçado` | 225 | unaccented |
 | `tracçäo` | 1 | `traccão` | 5 | accent_variant |
@@ -29402,7 +29247,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `trambôlho` | 1 | `trambolho` | 89 | accent_variant |
 | `trancà-io` | 1 | `trancá-io` | 5 | accent_variant |
 | `tranferencia` | 1 | `tranferência` | 81 | unaccented |
-| `tranquilízaa` | 1 | `tranquilizaa` | 28 | accent_variant |
 | `tranquílos` | 1 | `tranqüilos` | 100 | accent_variant |
 | `tranqüiiizar` | 1 | `tranquiiizar` | 1 | accent_variant |
 | `trans-históricos` | 1 | `trans-historicos` | 3 | accent_variant |
@@ -29447,10 +29291,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `trava-linguas` | 1 | `trava-línguas` | 25 | unaccented |
 | `travaillé` | 1 | `travaille` | 6 | accent_variant |
 | `travestí` | 1 | `travesti` | 1,883 | accent_variant |
-| `travê` | 1 | `trave` | 1,077 | accent_variant |
+| `travê` | 1 | `trave` | 1,078 | accent_variant |
 | `traze-la-á` | 1 | `trazê-la-á` | 2 | accent_variant |
 | `trazemo-íos` | 1 | `trazemo-ios` | 1 | accent_variant |
 | `trazería` | 1 | `trazeria` | 13 | accent_variant |
+| `traziâmos` | 1 | `traziamos` | 9 | accent_variant |
 | `trazé-io` | 1 | `trazê-io` | 91 | accent_variant |
 | `trazê-lo-á` | 1 | `traze-lo-á` | 8 | accent_variant |
 | `trazë-ia` | 1 | `trazê-ia` | 21 | accent_variant |
@@ -29459,7 +29304,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tražiš` | 1 | `trazis` | 2 | accent_variant |
 | `trebaš` | 1 | `trebas` | 3 | accent_variant |
 | `trebônius` | 1 | `trebonius` | 11 | accent_variant |
-| `treinár` | 1 | `treinar` | 44,484 | accent_variant |
+| `treinár` | 1 | `treinar` | 44,676 | accent_variant |
 | `tremúla` | 1 | `trêmula` | 52 | accent_variant |
 | `trenózinho` | 1 | `trenozinho` | 1 | accent_variant |
 | `trezê` | 1 | `treze` | 4,335 | accent_variant |
@@ -29488,15 +29333,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `triádica` | 1 | `triadica` | 3 | accent_variant |
 | `triátlo` | 1 | `triatlo` | 227 | accent_variant |
 | `triátlon` | 1 | `triatlon` | 2 | accent_variant |
-| `triângular` | 1 | `triangular` | 1,336 | accent_variant |
-| `triçoteia` | 1 | `tricoteia` | 7 | accent_variant |
-| `trocáste` | 1 | `trocaste` | 1,214 | accent_variant |
-| `trocä` | 1 | `troca` | 41,648 | accent_variant |
+| `triângular` | 1 | `triangular` | 1,340 | accent_variant |
+| `trocáste` | 1 | `trocaste` | 1,257 | accent_variant |
+| `trocä` | 1 | `troca` | 41,728 | accent_variant |
 | `trolá` | 1 | `tróla` | 2 | accent_variant |
 | `trombóne` | 1 | `trombone` | 867 | accent_variant |
 | `tropecäo` | 1 | `tropeção` | 249 | accent_variant |
 | `trouxê` | 1 | `trouxé` | 1 | accent_variant |
-| `trouçe` | 1 | `trouce` | 17 | accent_variant |
+| `trouçe` | 1 | `trouce` | 19 | accent_variant |
 | `trouçemos` | 1 | `troucemos` | 3 | accent_variant |
 | `trouçou` | 1 | `troucou` | 3 | accent_variant |
 | `trovőes` | 1 | `trovöes` | 6 | accent_variant |
@@ -29507,11 +29351,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `trá-la-ri-trá-lá-rá` | 1 | `trá-lá-ri-trá-lá-rá` | 5 | accent_variant |
 | `trá-los-à` | 1 | `trá-los-á` | 15 | accent_variant |
 | `trá-ía` | 1 | `trá-ia` | 5 | accent_variant |
-| `tráficar` | 1 | `traficar` | 3,761 | accent_variant |
+| `tráficar` | 1 | `traficar` | 3,767 | accent_variant |
 | `tráfíco` | 1 | `tráfico` | 6,994 | accent_variant |
 | `trágam-mos` | 1 | `tragam-mos` | 74 | accent_variant |
 | `trágico-cômico` | 1 | `trágico-cómico` | 3 | accent_variant |
-| `trágoa` | 1 | `tragoa` | 573 | accent_variant |
+| `trágo` | 1 | `tragó` | 5 | accent_variant |
 | `trágédias` | 1 | `tragedias` | 10 | accent_variant |
 | `trágícas` | 1 | `tragicas` | 6 | accent_variant |
 | `trária` | 1 | `traría` | 8 | accent_variant |
@@ -29519,7 +29363,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `trástezito` | 1 | `trastezito` | 1 | accent_variant |
 | `trátalo` | 1 | `tratalo` | 1 | accent_variant |
 | `tráumicos` | 1 | `traumicos` | 1 | accent_variant |
-| `tráza` | 1 | `traza` | 31 | accent_variant |
 | `trâgico` | 1 | `trágico` | 7,950 | accent_variant |
 | `trânsferência` | 1 | `transferência` | 12,954 | accent_variant |
 | `trãdãtoareo` | 1 | `tradatoareo` | 1 | accent_variant |
@@ -29538,7 +29381,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tróikas` | 1 | `troikas` | 8 | accent_variant |
 | `tróles` | 1 | `troles` | 15 | accent_variant |
 | `trôs` | 1 | `tros` | 8 | accent_variant |
-| `trõco` | 1 | `troco` | 13,255 | accent_variant |
+| `trõco` | 1 | `troco` | 13,341 | accent_variant |
 | `tsahík` | 1 | `tsahik` | 136 | accent_variant |
 | `tsão` | 1 | `tsao` | 31 | accent_variant |
 | `tubulacao` | 1 | `tubulação` | 153 | unaccented |
@@ -29577,11 +29420,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tãmara` | 1 | `tamara` | 1,511 | accent_variant |
 | `tãntrica` | 1 | `tântrica` | 51 | accent_variant |
 | `tãobonita` | 1 | `täobonita` | 2 | accent_variant |
-| `tãpo` | 1 | `tapo` | 123 | accent_variant |
+| `tãpo` | 1 | `tapo` | 131 | accent_variant |
 | `tãão` | 1 | `taão` | 1 | accent_variant |
 | `täo-pouco` | 1 | `tão-pouco` | 120 | accent_variant |
 | `tåxi` | 1 | `táxi` | 29,949 | accent_variant |
-| `tè` | 1 | `te` | 4,163,573 | accent_variant |
+| `tè` | 1 | `te` | 4,164,229 | accent_variant |
 | `tèem` | 1 | `teêm` | 100 | accent_variant |
 | `té-ios` | 1 | `tê-ios` | 75 | accent_variant |
 | `té-lo-ás` | 1 | `tê-lo-ás` | 137 | accent_variant |
@@ -29598,13 +29441,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `télémovél` | 1 | `telemóvel` | 69,130 | accent_variant |
 | `tématica` | 1 | `tematica` | 2 | accent_variant |
 | `ténuas` | 1 | `tenuas` | 1 | accent_variant |
-| `tér` | 1 | `ter` | 9,540,062 | accent_variant |
+| `tér` | 1 | `ter` | 9,545,514 | accent_variant |
 | `téria` | 1 | `tería` | 94 | accent_variant |
 | `términal` | 1 | `terminal` | 7,494 | accent_variant |
-| `términar` | 1 | `terminar` | 125,307 | accent_variant |
+| `términar` | 1 | `terminar` | 125,472 | accent_variant |
 | `térmícas` | 1 | `termicas` | 2 | accent_variant |
 | `téron` | 1 | `teron` | 28 | accent_variant |
-| `téste` | 1 | `teste` | 72,420 | accent_variant |
+| `téste` | 1 | `teste` | 72,461 | accent_variant |
 | `tétara` | 1 | `tetara` | 4 | accent_variant |
 | `tétaravó` | 1 | `tetaravô` | 2 | accent_variant |
 | `téte-à-téte` | 1 | `tête-à-tête` | 49 | accent_variant |
@@ -29617,7 +29460,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `têla` | 1 | `tela` | 3,699 | accent_variant |
 | `têm-ihe` | 1 | `tem-ihe` | 4 | accent_variant |
 | `tême` | 1 | `temé` | 3 | accent_variant |
-| `têmpero` | 1 | `tempero` | 1,147 | accent_variant |
+| `têmpero` | 1 | `tempero` | 1,148 | accent_variant |
 | `têmperos` | 1 | `tempêros` | 3 | accent_variant |
 | `têmpura` | 1 | `tempura` | 132 | accent_variant |
 | `têmsido` | 1 | `temsido` | 3 | accent_variant |
@@ -29635,28 +29478,26 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tíbor` | 1 | `tibor` | 90 | accent_variant |
 | `tícket` | 1 | `ticket` | 379 | accent_variant |
 | `tímbre` | 1 | `timbre` | 299 | accent_variant |
-| `tínhaa` | 1 | `tinhaa` | 1,586 | accent_variant |
-| `tínhamosa` | 1 | `tinhamosa` | 7 | accent_variant |
+| `tínhaa` | 1 | `tinhaa` | 15 | accent_variant |
 | `tínhanos` | 1 | `tinhanos` | 1 | accent_variant |
 | `tíquet` | 1 | `tiquet` | 1 | accent_variant |
-| `tíro` | 1 | `tiro` | 88,438 | accent_variant |
+| `tíro` | 1 | `tiro` | 88,914 | accent_variant |
 | `títinius` | 1 | `titinius` | 6 | accent_variant |
 | `títã` | 1 | `titã` | 2,430 | accent_variant |
 | `tívessem` | 1 | `tivéssem` | 7 | accent_variant |
 | `tîo` | 1 | `tio` | 75,591 | accent_variant |
-| `tîpo` | 1 | `tipo` | 604,536 | accent_variant |
+| `tîpo` | 1 | `tipo` | 604,540 | accent_variant |
 | `tîroteîo` | 1 | `tiroteio` | 13,081 | accent_variant |
 | `tòmala` | 1 | `tomala` | 14 | accent_variant |
 | `tòrrido` | 1 | `tórrido` | 274 | accent_variant |
 | `tóinos` | 1 | `toinos` | 4 | accent_variant |
 | `tóla` | 1 | `tôla` | 5 | accent_variant |
-| `tómaa` | 1 | `tomaa` | 326 | accent_variant |
 | `tómala` | 1 | `tomala` | 14 | accent_variant |
 | `tómasz` | 1 | `tomasz` | 93 | accent_variant |
 | `tómate` | 1 | `tomate` | 25,187 | accent_variant |
 | `tóni` | 1 | `toni` | 1,436 | accent_variant |
 | `tónic` | 1 | `tonic` | 40 | accent_variant |
-| `tóque` | 1 | `toque` | 45,567 | accent_variant |
+| `tóque` | 1 | `toque` | 45,615 | accent_variant |
 | `tóraxico` | 1 | `toráxico` | 23 | accent_variant |
 | `tóri` | 1 | `tori` | 1,447 | accent_variant |
 | `tótócice` | 1 | `totocice` | 3 | accent_variant |
@@ -29672,7 +29513,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `tõa` | 1 | `toa` | 2,063 | accent_variant |
 | `tõo` | 1 | `too` | 891 | accent_variant |
 | `tö` | 1 | `to` | 18,103 | accent_variant |
-| `túa` | 1 | `tua` | 1,095,192 | accent_variant |
+| `túa` | 1 | `tua` | 1,095,191 | accent_variant |
 | `túbarão` | 1 | `tubarão` | 15,861 | accent_variant |
 | `túberculo` | 1 | `tubérculo` | 118 | accent_variant |
 | `túdo` | 1 | `tudo` | 1,643,478 | accent_variant |
@@ -29680,10 +29521,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `túnnel` | 1 | `tunnel` | 142 | accent_variant |
 | `tús` | 1 | `tus` | 858 | accent_variant |
 | `tútsi` | 1 | `tutsi` | 308 | accent_variant |
-| `tüa` | 1 | `tua` | 1,095,192 | accent_variant |
+| `tüa` | 1 | `tua` | 1,095,191 | accent_variant |
 | `tübigen` | 1 | `tubigen` | 2 | accent_variant |
 | `tüneis` | 1 | `tuneis` | 217 | accent_variant |
-| `tă` | 1 | `ta` | 4,839 | accent_variant |
+| `tă` | 1 | `ta` | 4,833 | accent_variant |
 | `tćc` | 1 | `tcc` | 26 | accent_variant |
 | `těm` | 1 | `tém` | 113 | accent_variant |
 | `tẽm` | 1 | `tém` | 113 | accent_variant |
@@ -29750,15 +29591,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `usá-io` | 1 | `usa-io` | 1 | accent_variant |
 | `usá-lá` | 1 | `usa-lá` | 1 | accent_variant |
 | `usá-ses` | 1 | `usa-ses` | 1 | accent_variant |
-| `usándoa` | 1 | `usandoa` | 93 | accent_variant |
 | `usárme-ias` | 1 | `usarme-ias` | 2 | accent_variant |
-| `usása` | 1 | `usasa` | 3 | accent_variant |
-| `usástea` | 1 | `usastea` | 145 | accent_variant |
-| `usávaas` | 1 | `usavaas` | 77 | accent_variant |
 | `usâ` | 1 | `usà` | 21 | accent_variant |
 | `usâvamos` | 1 | `usavamos` | 46 | accent_variant |
 | `usäo` | 1 | `usão` | 9 | accent_variant |
-| `utilisá` | 1 | `utilisa` | 1 | accent_variant |
+| `utilisá` | 1 | `utilisa` | 3 | accent_variant |
 | `utilizavel` | 1 | `utilizável` | 256 | unaccented |
 | `utilizaçao` | 1 | `utilização` | 1,710 | accent_variant |
 | `utilizaçâo` | 1 | `utilização` | 1,710 | accent_variant |
@@ -29769,13 +29606,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `utílízador` | 1 | `utilizador` | 3,442 | accent_variant |
 | `uvula` | 1 | `úvula` | 63 | unaccented |
 | `uzes` | 1 | `uzès` | 11 | unaccented |
-| `uä` | 1 | `ua` | 199 | accent_variant |
+| `uä` | 1 | `ua` | 190 | accent_variant |
 | `uäs` | 1 | `uas` | 8 | accent_variant |
 | `uém` | 1 | `uem` | 17 | accent_variant |
 | `uívo` | 1 | `uivo` | 673 | accent_variant |
 | `uó` | 1 | `uo` | 24 | accent_variant |
 | `uô` | 1 | `uo` | 24 | accent_variant |
 | `uú` | 1 | `uu` | 294 | accent_variant |
+| `v-i-t-o-r-i` | 1 | `v-i-t-ó-r-i` | 18 | unaccented |
 | `v-v-v-v-vêr` | 1 | `v-v-v-v-ver` | 2 | accent_variant |
 | `vacilao` | 1 | `vacilão` | 181 | unaccented |
 | `vadalà` | 1 | `vadala` | 1 | accent_variant |
@@ -29841,10 +29679,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vendelá` | 1 | `vendela` | 11 | accent_variant |
 | `venderãs` | 1 | `venderàs` | 1 | accent_variant |
 | `vendré` | 1 | `vendre` | 4 | accent_variant |
-| `vendâ` | 1 | `venda` | 30,254 | accent_variant |
+| `vendâ` | 1 | `venda` | 30,309 | accent_variant |
 | `vendèmo` | 1 | `vendêmo` | 31 | accent_variant |
 | `vendé-io` | 1 | `vendê-io` | 24 | accent_variant |
-| `vendíaa` | 1 | `vendiaa` | 67 | accent_variant |
 | `veneraçäo` | 1 | `veneração` | 356 | accent_variant |
 | `veneís` | 1 | `veneis` | 1 | accent_variant |
 | `ventilacäo` | 1 | `ventilação` | 4,355 | accent_variant |
@@ -29859,18 +29696,18 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vergê` | 1 | `verge` | 23 | accent_variant |
 | `verifiîcar` | 1 | `verifiicar` | 4 | accent_variant |
 | `verifícamos` | 1 | `verificàmos` | 4 | accent_variant |
-| `verifícar` | 1 | `verificar` | 92,222 | accent_variant |
+| `verifícar` | 1 | `verificar` | 92,452 | accent_variant |
 | `veritá` | 1 | `verita` | 2 | accent_variant |
 | `versâo` | 1 | `versão` | 18,716 | accent_variant |
 | `versôes` | 1 | `versoes` | 3 | accent_variant |
 | `vertebraçöes` | 1 | `vertebrações` | 3 | accent_variant |
-| `verâ` | 1 | `vera` | 5,280 | accent_variant |
+| `verâ` | 1 | `vera` | 4,820 | accent_variant |
 | `verâs` | 1 | `veràs` | 7 | accent_variant |
-| `verä` | 1 | `vera` | 5,280 | accent_variant |
+| `verä` | 1 | `vera` | 4,820 | accent_variant |
 | `veräs` | 1 | `veràs` | 7 | accent_variant |
 | `verås` | 1 | `veràs` | 7 | accent_variant |
 | `verídito` | 1 | `veridito` | 2 | accent_variant |
-| `veríficar` | 1 | `verificar` | 92,222 | accent_variant |
+| `veríficar` | 1 | `verificar` | 92,452 | accent_variant |
 | `vestiàrio` | 1 | `vestiário` | 1,619 | accent_variant |
 | `vestlàrlo` | 1 | `vestlárlo` | 2 | accent_variant |
 | `veterenário` | 1 | `veterenario` | 6 | accent_variant |
@@ -29898,17 +29735,15 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vigilência` | 1 | `vigilencia` | 2 | accent_variant |
 | `vigià-io` | 1 | `vigiá-io` | 14 | accent_variant |
 | `vigiàmos` | 1 | `vigíamos` | 2 | accent_variant |
-| `vigíaa` | 1 | `vigiaa` | 327 | accent_variant |
 | `vigíl` | 1 | `vigil` | 18 | accent_variant |
 | `vinicola` | 1 | `vinícola` | 167 | unaccented |
 | `vinçent` | 1 | `vincent` | 15,332 | accent_variant |
 | `vioiaçao` | 1 | `vioiaçáo` | 4 | accent_variant |
-| `violástea` | 1 | `violastea` | 103 | accent_variant |
 | `violín` | 1 | `violin` | 3 | accent_variant |
 | `virgìnia` | 1 | `virginia` | 7,100 | accent_variant |
 | `virgín` | 1 | `virgin` | 375 | accent_variant |
 | `virál` | 1 | `viral` | 2,176 | accent_variant |
-| `virâs` | 1 | `viras` | 1,459 | accent_variant |
+| `virâs` | 1 | `viras` | 1,460 | accent_variant |
 | `virílidade` | 1 | `virilidade` | 932 | accent_variant |
 | `visicúla` | 1 | `visícula` | 5 | accent_variant |
 | `visita-io` | 1 | `visitá-io` | 28 | unaccented |
@@ -29920,21 +29755,21 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `visualizaçao` | 1 | `visualização` | 1,372 | accent_variant |
 | `visualizaçäo` | 1 | `visualização` | 1,372 | accent_variant |
 | `visâo` | 1 | `visão` | 38,316 | accent_variant |
-| `visíta` | 1 | `visita` | 53,131 | accent_variant |
+| `visíta` | 1 | `visita` | 53,229 | accent_variant |
 | `visón` | 1 | `vison` | 235 | accent_variant |
 | `visőes` | 1 | `visöes` | 17 | accent_variant |
 | `vitalíciamente` | 1 | `vitaliciamente` | 4 | accent_variant |
 | `vitróla` | 1 | `vitrola` | 109 | accent_variant |
 | `vitáli` | 1 | `vitali` | 32 | accent_variant |
 | `vitãria` | 1 | `vitária` | 1 | accent_variant |
-| `vitòria` | 1 | `vitória` | 30,321 | accent_variant |
+| `vitòria` | 1 | `vitória` | 30,303 | accent_variant |
 | `vitó` | 1 | `vito` | 2,763 | accent_variant |
 | `vitória's` | 1 | `vitoria's` | 1 | accent_variant |
 | `vitórina` | 1 | `vitorina` | 15 | accent_variant |
 | `vitóriosos` | 1 | `vitoriósos` | 2 | accent_variant |
-| `vitôria` | 1 | `vitória` | 30,321 | accent_variant |
+| `vitôria` | 1 | `vitória` | 30,303 | accent_variant |
 | `viuva-negra` | 1 | `viúva-negra` | 75 | unaccented |
-| `viuà` | 1 | `viua` | 2,203 | accent_variant |
+| `viuà` | 1 | `viua` | 1 | accent_variant |
 | `vivão` | 1 | `vivao` | 2 | accent_variant |
 | `vivê-ia` | 1 | `vive-ia` | 1 | accent_variant |
 | `vivę` | 1 | `víve` | 2 | accent_variant |
@@ -29977,7 +29812,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `voltarăo` | 1 | `voltaräo` | 19 | accent_variant |
 | `voltejá` | 1 | `volteja` | 10 | accent_variant |
 | `voltios` | 1 | `vóltios` | 15 | unaccented |
-| `voltár` | 1 | `voltar` | 710,461 | accent_variant |
+| `voltár` | 1 | `voltar` | 710,511 | accent_variant |
 | `voltãmos` | 1 | `voltàmos` | 7 | accent_variant |
 | `voluntariáste` | 1 | `voluntariaste` | 157 | accent_variant |
 | `voluntári` | 1 | `voluntari` | 3 | accent_variant |
@@ -29992,13 +29827,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vorílio` | 1 | `vorilio` | 1 | accent_variant |
 | `vossemece` | 1 | `vossemecê` | 172 | unaccented |
 | `voujã` | 1 | `voujá` | 32 | accent_variant |
-| `vouá` | 1 | `voua` | 72 | accent_variant |
+| `vouá` | 1 | `voua` | 12 | accent_variant |
 | `vovôzinho` | 1 | `vovozinho` | 7 | accent_variant |
 | `vozê` | 1 | `voze` | 1 | accent_variant |
 | `voçâs` | 1 | `voças` | 9 | accent_variant |
 | `voíla` | 1 | `voilá` | 1,255 | accent_variant |
 | `voílà` | 1 | `voilá` | 1,255 | accent_variant |
-| `voíta` | 1 | `voita` | 13 | accent_variant |
+| `voíta` | 1 | `voita` | 14 | accent_variant |
 | `vsê` | 1 | `vse` | 4 | accent_variant |
 | `vulcanico` | 1 | `vulcânico` | 1,233 | unaccented |
 | `vulneravéis` | 1 | `vulneraveis` | 14 | accent_variant |
@@ -30008,7 +29843,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vvoçê` | 1 | `vvocê` | 1 | accent_variant |
 | `vàyase` | 1 | `váyase` | 3 | accent_variant |
 | `váem` | 1 | `vaem` | 1 | accent_variant |
-| `vágina` | 1 | `vagina` | 7,998 | accent_variant |
+| `vágina` | 1 | `vagina` | 7,996 | accent_variant |
 | `váiao` | 1 | `vaiao` | 13 | accent_variant |
 | `válvular` | 1 | `valvular` | 23 | accent_variant |
 | `vápor` | 1 | `vapor` | 6,125 | accent_variant |
@@ -30027,7 +29862,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vãnia` | 1 | `vania` | 168 | accent_variant |
 | `vãopara` | 1 | `vaopara` | 1 | accent_variant |
 | `vãoreunir-sealguresnazona` | 1 | `väoreunir-sealguresnazona` | 2 | accent_variant |
-| `vãoà` | 1 | `vãoa` | 3 | accent_variant |
+| `vãoà` | 1 | `vãoa` | 1 | accent_variant |
 | `vãão` | 1 | `vaão` | 5 | accent_variant |
 | `väs` | 1 | `vas` | 427 | accent_variant |
 | `vèm` | 1 | `vém` | 29 | accent_variant |
@@ -30051,15 +29886,15 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vêio` | 1 | `veío` | 2 | accent_variant |
 | `vêlas` | 1 | `velás` | 2 | accent_variant |
 | `vêmo-io` | 1 | `vemo-io` | 18 | accent_variant |
-| `vêmosa` | 1 | `vemosa` | 1 | accent_variant |
 | `vêmà` | 1 | `vema` | 2 | accent_variant |
 | `vêneta` | 1 | `veneta` | 88 | accent_variant |
 | `vêneto` | 1 | `veneto` | 73 | accent_variant |
-| `vêra` | 1 | `vera` | 5,280 | accent_variant |
+| `vêra` | 1 | `vera` | 4,820 | accent_variant |
 | `vêremos` | 1 | `verêmos` | 1 | accent_variant |
+| `vêsa` | 1 | `vesa` | 4 | accent_variant |
 | `vêsperas` | 1 | `vesperas` | 3 | accent_variant |
 | `vìrtude` | 1 | `virtude` | 4,936 | accent_variant |
-| `vìrus` | 1 | `vírus` | 25,099 | accent_variant |
+| `vìrus` | 1 | `vírus` | 25,105 | accent_variant |
 | `vìtimas` | 1 | `vitímas` | 67 | accent_variant |
 | `vìvida` | 1 | `vivída` | 4 | accent_variant |
 | `vìvido` | 1 | `vívido` | 409 | accent_variant |
@@ -30078,12 +29913,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vím` | 1 | `vìm` | 4 | accent_variant |
 | `vímeo` | 1 | `vimeo` | 21 | accent_variant |
 | `víos` | 1 | `vios` | 3 | accent_variant |
-| `vír` | 1 | `vir` | 1,629,665 | accent_variant |
+| `vír` | 1 | `vir` | 1,609,213 | accent_variant |
 | `víram` | 1 | `virãm` | 1 | accent_variant |
 | `vírgenes` | 1 | `virgenes` | 3 | accent_variant |
 | `vírgina` | 1 | `virgina` | 48 | accent_variant |
 | `víriões` | 1 | `viriões` | 3 | accent_variant |
-| `vírás` | 1 | `viras` | 1,459 | accent_variant |
+| `vírás` | 1 | `viras` | 1,460 | accent_variant |
 | `víría` | 1 | `viría` | 16 | accent_variant |
 | `vístão` | 1 | `vistão` | 8 | accent_variant |
 | `vítal` | 1 | `vital` | 11,330 | accent_variant |
@@ -30091,7 +29926,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `víteliú` | 1 | `viteliu` | 3 | accent_variant |
 | `vítria` | 1 | `vitria` | 20 | accent_variant |
 | `vítus` | 1 | `vitus` | 120 | accent_variant |
-| `vítóría` | 1 | `vitória` | 30,321 | accent_variant |
+| `vítóría` | 1 | `vitória` | 30,303 | accent_variant |
 | `víu` | 1 | `viú` | 2 | accent_variant |
 | `vívas` | 1 | `vivãs` | 1 | accent_variant |
 | `vívianne` | 1 | `vivianne` | 66 | accent_variant |
@@ -30099,7 +29934,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `vííí` | 1 | `viii` | 580 | accent_variant |
 | `vîce-versa` | 1 | `vice-versa` | 934 | accent_variant |
 | `vîlle` | 1 | `ville` | 236 | accent_variant |
-| `vîsto` | 1 | `visto` | 12,673 | accent_variant |
+| `vîsto` | 1 | `visto` | 12,674 | accent_variant |
 | `vòs` | 1 | `vos` | 315,880 | accent_variant |
 | `vòzinha` | 1 | `vozinha` | 353 | accent_variant |
 | `vóltio` | 1 | `voltio` | 9 | accent_variant |
@@ -30157,7 +29992,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `yucatân` | 1 | `yucatan` | 78 | accent_variant |
 | `yucátan` | 1 | `yucatan` | 78 | accent_variant |
 | `yuppíe` | 1 | `yuppie` | 196 | accent_variant |
-| `yà` | 1 | `ya` | 5,296 | accent_variant |
+| `yà` | 1 | `ya` | 5,295 | accent_variant |
 | `yárd` | 1 | `yard` | 2,182 | accent_variant |
 | `yão` | 1 | `yao` | 522 | accent_variant |
 | `yèyè` | 1 | `yéyé` | 5 | accent_variant |
@@ -30179,7 +30014,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `zubeyde` | 1 | `zübeyde` | 19 | unaccented |
 | `zubiôn` | 1 | `zubion` | 4 | accent_variant |
 | `zurïch` | 1 | `zurich` | 216 | accent_variant |
-| `zá` | 1 | `za` | 235 | accent_variant |
+| `zá` | 1 | `za` | 225 | accent_variant |
 | `zágon` | 1 | `zagon` | 25 | accent_variant |
 | `zéquinha` | 1 | `zequinha` | 20 | accent_variant |
 | `zípper` | 1 | `zipper` | 201 | accent_variant |
@@ -30207,7 +30042,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `àlcoolico` | 1 | `alcoólico` | 6,858 | accent_variant |
 | `àlibi` | 1 | `álibi` | 8,477 | accent_variant |
 | `àlveolos` | 1 | `álveolos` | 5 | accent_variant |
-| `àm` | 1 | `am` | 4,015 | accent_variant |
+| `àm` | 1 | `am` | 4,016 | accent_variant |
 | `àmaioria` | 1 | `amaioria` | 7 | accent_variant |
 | `àmatinee` | 1 | `amatinée` | 1 | accent_variant |
 | `àmaya` | 1 | `amaya` | 241 | accent_variant |
@@ -30220,7 +30055,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `àpolícia` | 1 | `apolícia` | 22 | accent_variant |
 | `àpossibilidade` | 1 | `apossibilidade` | 1 | accent_variant |
 | `àquem` | 1 | `aquém` | 458 | accent_variant |
-| `àr` | 1 | `ar` | 143,202 | accent_variant |
+| `àr` | 1 | `ar` | 143,210 | accent_variant |
 | `àrtica` | 1 | `ártica` | 231 | accent_variant |
 | `àrvorezinha` | 1 | `arvorezinha` | 66 | accent_variant |
 | `àsaída` | 1 | `asaída` | 2 | accent_variant |
@@ -30238,8 +30073,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `àvila` | 1 | `avila` | 168 | accent_variant |
 | `àvilla` | 1 | `avilla` | 33 | accent_variant |
 | `àvossa` | 1 | `avossa` | 46 | accent_variant |
-| `àà` | 1 | `aa` | 2,203 | accent_variant |
-| `àá` | 1 | `aa` | 2,203 | accent_variant |
+| `àà` | 1 | `aa` | 2,128 | accent_variant |
+| `àá` | 1 | `aa` | 2,128 | accent_variant |
 | `àás` | 1 | `àas` | 5 | accent_variant |
 | `àáááa` | 1 | `aaaaa` | 21 | accent_variant |
 | `àî` | 1 | `aí` | 485,559 | accent_variant |
@@ -30248,7 +30083,6 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `á-á-á` | 1 | `à-à-à` | 10 | accent_variant |
 | `áali` | 1 | `aali` | 1 | accent_variant |
 | `ábandona` | 1 | `abandonà` | 6 | accent_variant |
-| `ábraas` | 1 | `abraas` | 44 | accent_variant |
 | `ábril` | 1 | `abril` | 8,757 | accent_variant |
 | `ábside` | 1 | `abside` | 10 | accent_variant |
 | `ácabem` | 1 | `açabem` | 1 | accent_variant |
@@ -30269,9 +30103,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `água-de-cólonia` | 1 | `água-de-colónia` | 274 | accent_variant |
 | `água-parque` | 1 | `agua-parque` | 1 | accent_variant |
 | `águadilha` | 1 | `aguadilha` | 1 | accent_variant |
-| `águar` | 1 | `aguar` | 194 | accent_variant |
+| `águar` | 1 | `aguar` | 189 | accent_variant |
 | `águardente` | 1 | `aguardente` | 884 | accent_variant |
-| `áha` | 1 | `aha` | 1,070 | accent_variant |
+| `áha` | 1 | `aha` | 1,080 | accent_variant |
 | `áhaaa` | 1 | `ahaaa` | 13 | accent_variant |
 | `áiguém` | 1 | `aiguêm` | 43 | accent_variant |
 | `ájustiça` | 1 | `àjustiça` | 5 | accent_variant |
@@ -30283,10 +30117,10 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `álcóol` | 1 | `álcool` | 18,441 | accent_variant |
 | `álef` | 1 | `alef` | 20 | accent_variant |
 | `álegria` | 1 | `alegria` | 17,997 | accent_variant |
-| `álerta` | 1 | `alerta` | 25,978 | accent_variant |
+| `álerta` | 1 | `alerta` | 25,980 | accent_variant |
 | `álgo` | 1 | `algo` | 565,031 | accent_variant |
 | `álgumas` | 1 | `algumăs` | 1 | accent_variant |
-| `áli` | 1 | `ali` | 289,728 | accent_variant |
+| `áli` | 1 | `ali` | 289,729 | accent_variant |
 | `álibe` | 1 | `alibe` | 10 | accent_variant |
 | `álica` | 1 | `alica` | 18 | accent_variant |
 | `álmirante` | 1 | `almirante` | 11,249 | accent_variant |
@@ -30302,7 +30136,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ána` | 1 | `ana` | 9,609 | accent_variant |
 | `ánalise` | 1 | `análise` | 21,118 | accent_variant |
 | `ángola` | 1 | `angola` | 872 | accent_variant |
-| `ánna` | 1 | `anna` | 26,211 | accent_variant |
+| `ánna` | 1 | `anna` | 26,207 | accent_variant |
 | `ánossa` | 1 | `anossa` | 23 | accent_variant |
 | `ántónio` | 1 | `antonio` | 4,701 | accent_variant |
 | `ápanhámo` | 1 | `apanhàmo` | 10 | accent_variant |
@@ -30327,11 +30161,11 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ártérias` | 1 | `arterias` | 7 | accent_variant |
 | `ártíco` | 1 | `ártico` | 2,621 | accent_variant |
 | `árvo` | 1 | `arvo` | 4 | accent_variant |
-| `ása` | 1 | `asa` | 18,822 | accent_variant |
+| `ása` | 1 | `asa` | 18,820 | accent_variant |
 | `áse` | 1 | `åse` | 2 | accent_variant |
 | `ásia-pacifico` | 1 | `ásia-pacífico` | 17 | accent_variant |
 | `ásio-americana` | 1 | `asió-americana` | 1 | accent_variant |
-| `ásiático` | 1 | `asiático` | 6,514 | accent_variant |
+| `ásiático` | 1 | `asiático` | 6,500 | accent_variant |
 | `ássistente` | 1 | `assistente` | 28,038 | accent_variant |
 | `ássunto` | 1 | `assunto` | 99,323 | accent_variant |
 | `ástes` | 1 | `astes` | 10 | accent_variant |
@@ -30348,12 +30182,12 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ávontade` | 1 | `àvontade` | 27 | accent_variant |
 | `ávotação` | 1 | `avotação` | 1 | accent_variant |
 | `ázes` | 1 | `azes` | 35 | accent_variant |
-| `áá` | 1 | `aa` | 2,203 | accent_variant |
+| `áá` | 1 | `aa` | 2,128 | accent_variant |
 | `áçores` | 1 | `acores` | 6 | accent_variant |
 | `â-vontade` | 1 | `à-vontade` | 332 | accent_variant |
-| `âcerca` | 1 | `acerca` | 59,576 | accent_variant |
+| `âcerca` | 1 | `acerca` | 59,572 | accent_variant |
 | `âdeus` | 1 | `adeus` | 172,834 | accent_variant |
-| `âgora` | 1 | `agora` | 1,524,160 | accent_variant |
+| `âgora` | 1 | `agora` | 1,524,159 | accent_variant |
 | `âh-rã` | 1 | `ah-rã` | 2 | accent_variant |
 | `âmbiente` | 1 | `ambiente` | 17,320 | accent_variant |
 | `âmbigua` | 1 | `ambigua` | 5 | accent_variant |
@@ -30403,7 +30237,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ãrrepiante` | 1 | `arrepiante` | 2,041 | accent_variant |
 | `ãtia` | 1 | `átia` | 283 | accent_variant |
 | `ãvista` | 1 | `àvista` | 2 | accent_variant |
-| `ãà` | 1 | `aa` | 2,203 | accent_variant |
+| `ãà` | 1 | `aa` | 2,128 | accent_variant |
 | `ãçà` | 1 | `aca` | 163 | accent_variant |
 | `äat` | 1 | `aat` | 28 | accent_variant |
 | `äaú` | 1 | `aau` | 76 | accent_variant |
@@ -30415,8 +30249,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `änsia` | 1 | `ânsia` | 1,078 | accent_variant |
 | `ärido` | 1 | `árido` | 756 | accent_variant |
 | `ätomos` | 1 | `atomos` | 26 | accent_variant |
-| `äå` | 1 | `aa` | 2,203 | accent_variant |
-| `åa` | 1 | `aa` | 2,203 | accent_variant |
+| `äå` | 1 | `aa` | 2,128 | accent_variant |
+| `åa` | 1 | `aa` | 2,128 | accent_variant |
 | `åat` | 1 | `aat` | 28 | accent_variant |
 | `åaì` | 1 | `aai` | 39 | accent_variant |
 | `åmen` | 1 | `ámen` | 9,863 | accent_variant |
@@ -30425,7 +30259,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `åí` | 1 | `aí` | 485,559 | accent_variant |
 | `ç-o-d-y` | 1 | `c-o-d-y` | 2 | accent_variant |
 | `çaa` | 1 | `caa` | 122 | accent_variant |
-| `çabelo` | 1 | `cabelo` | 85,304 | accent_variant |
+| `çabelo` | 1 | `cabelo` | 85,305 | accent_variant |
 | `çabéçou` | 1 | `cabécou` | 17 | accent_variant |
 | `çaesar` | 1 | `caesar` | 2,601 | accent_variant |
 | `çaia` | 1 | `cáia` | 6 | accent_variant |
@@ -30443,7 +30277,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `çançar` | 1 | `cançar` | 1 | accent_variant |
 | `çapela` | 1 | `capela` | 4,282 | accent_variant |
 | `çapítulo` | 1 | `capítulo` | 10,555 | accent_variant |
-| `çareça` | 1 | `careca` | 7,179 | accent_variant |
+| `çareça` | 1 | `careca` | 7,178 | accent_variant |
 | `çarnaval` | 1 | `carnaval` | 2,092 | accent_variant |
 | `çarniceiro` | 1 | `carniceiro` | 3,883 | accent_variant |
 | `çaro` | 1 | `caro` | 34,154 | accent_variant |
@@ -30461,14 +30295,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `çelik` | 1 | `celik` | 15 | accent_variant |
 | `çena` | 1 | `cena` | 72,826 | accent_variant |
 | `çenterville` | 1 | `centerville` | 34 | accent_variant |
-| `çerca` | 1 | `cerca` | 54,060 | accent_variant |
+| `çerca` | 1 | `cerca` | 54,068 | accent_variant |
 | `çertifica` | 1 | `certificá` | 1 | accent_variant |
 | `çertificarei` | 1 | `certificarei` | 893 | accent_variant |
 | `çertifiquei` | 1 | `certifiquei` | 727 | accent_variant |
 | `çeu` | 1 | `céu` | 103,169 | accent_variant |
 | `çg` | 1 | `cg` | 103 | accent_variant |
 | `çhain` | 1 | `chain` | 220 | accent_variant |
-| `çhamar` | 1 | `chamar` | 646,156 | accent_variant |
+| `çhamar` | 1 | `chamar` | 648,130 | accent_variant |
 | `çhamar-ihe` | 1 | `chamar-ihe` | 105 | accent_variant |
 | `çhamemos` | 1 | `chamêmos` | 1 | accent_variant |
 | `çhancellorsville` | 1 | `chancellorsville` | 32 | accent_variant |
@@ -30489,8 +30323,8 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `çirçum-navegar` | 1 | `circum-navegar` | 59 | accent_variant |
 | `çity` | 1 | `city` | 21,057 | accent_variant |
 | `çivil` | 1 | `civil` | 26,941 | accent_variant |
-| `çiência` | 1 | `ciência` | 28,987 | accent_variant |
-| `çlasse` | 1 | `classe` | 28,581 | accent_variant |
+| `çiência` | 1 | `ciência` | 28,983 | accent_variant |
+| `çlasse` | 1 | `classe` | 28,619 | accent_variant |
 | `çlay` | 1 | `clay` | 11,185 | accent_variant |
 | `çldade` | 1 | `cldade` | 1 | accent_variant |
 | `çleveland` | 1 | `cleveland` | 5,751 | accent_variant |
@@ -30513,7 +30347,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `çomeço` | 1 | `coméço` | 1 | accent_variant |
 | `çomeçámos` | 1 | `comecamos` | 73 | accent_variant |
 | `çomi` | 1 | `comí` | 17 | accent_variant |
-| `çomida` | 1 | `comida` | 107,885 | accent_variant |
+| `çomida` | 1 | `comida` | 107,876 | accent_variant |
 | `çomigo` | 1 | `comigo` | 472,955 | accent_variant |
 | `çompensação` | 1 | `compensação` | 2,568 | accent_variant |
 | `çomporta` | 1 | `comporta` | 3,889 | accent_variant |
@@ -30525,10 +30359,9 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `çonfiei` | 1 | `confíei` | 1 | accent_variant |
 | `çonhaque` | 1 | `conhaque` | 1,742 | accent_variant |
 | `çonhecemo` | 1 | `conhecêmo` | 114 | accent_variant |
-| `çonhecendoa` | 1 | `conhecendoa` | 56 | accent_variant |
-| `çonheci` | 1 | `conhecí` | 41 | accent_variant |
-| `çonhecoa` | 1 | `conheçoa` | 3,975 | accent_variant |
-| `çonheçi` | 1 | `conhecí` | 41 | accent_variant |
+| `çonhecendo` | 1 | `conheçendo` | 1 | accent_variant |
+| `çonheci` | 1 | `conhecí` | 43 | accent_variant |
+| `çonheçi` | 1 | `conhecí` | 43 | accent_variant |
 | `çonheçias` | 1 | `conheçias` | 1 | accent_variant |
 | `çonheçê-io` | 1 | `conhecê-io` | 256 | accent_variant |
 | `çonsegui` | 1 | `conseguí` | 79 | accent_variant |
@@ -30536,19 +30369,17 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `çonseguiu` | 1 | `conseguíu` | 4 | accent_variant |
 | `çonselho` | 1 | `conselho` | 59,736 | accent_variant |
 | `çonsulado` | 1 | `consulado` | 3,672 | accent_variant |
-| `çontar` | 1 | `contar` | 358,611 | accent_variant |
+| `çontar` | 1 | `contar` | 358,846 | accent_variant |
 | `çontar-ihe` | 1 | `contar-ihe` | 151 | accent_variant |
-| `çontaçto` | 1 | `contacto` | 70,206 | accent_variant |
-| `çontaçtoa` | 1 | `contactoa` | 90 | accent_variant |
 | `çonti` | 1 | `conti` | 246 | accent_variant |
 | `çontinuam` | 1 | `contínuam` | 1 | accent_variant |
 | `çontinuas` | 1 | `continuás` | 4 | accent_variant |
 | `çonto` | 1 | `contó` | 2 | accent_variant |
 | `çontou` | 1 | `contóu` | 1 | accent_variant |
 | `çontrola` | 1 | `contróla` | 8 | accent_variant |
-| `çontrole` | 1 | `controle` | 27,150 | accent_variant |
+| `çontrole` | 1 | `controle` | 27,167 | accent_variant |
 | `çonversar` | 1 | `conversar` | 77,741 | accent_variant |
-| `çonvidar` | 1 | `convidar` | 64,237 | accent_variant |
+| `çonvidar` | 1 | `convidar` | 66,494 | accent_variant |
 | `çonvidaste` | 1 | `convidáste` | 5 | accent_variant |
 | `çoopers` | 1 | `coopers` | 130 | accent_variant |
 | `çop` | 1 | `cop` | 667 | accent_variant |
@@ -30563,20 +30394,21 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `çortará` | 1 | `cortarâ` | 1 | accent_variant |
 | `çortem` | 1 | `córtem` | 1 | accent_variant |
 | `çosta` | 1 | `costa` | 83,615 | accent_variant |
-| `çoxeia` | 1 | `coxeia` | 269 | accent_variant |
+| `çoxeia` | 1 | `coxeia` | 268 | accent_variant |
 | `çredo` | 1 | `credo` | 28,458 | accent_variant |
 | `çremos` | 1 | `crêmos` | 8 | accent_variant |
 | `çrenna` | 1 | `crenna` | 56 | accent_variant |
 | `çreto` | 1 | `creto` | 16 | accent_variant |
 | `çriassem` | 1 | `criássem` | 3 | accent_variant |
 | `çrossley` | 1 | `crossley` | 20 | accent_variant |
+| `çrê` | 1 | `cre` | 77 | accent_variant |
 | `çrêpe-çhignon` | 1 | `crêpe-chignon` | 18 | accent_variant |
 | `çrónica` | 1 | `crônica` | 139 | accent_variant |
 | `çs` | 1 | `cs` | 324 | accent_variant |
 | `çupido` | 1 | `cupido` | 1,308 | accent_variant |
 | `çupöes` | 1 | `cupöes` | 3 | accent_variant |
-| `çuspir` | 1 | `cuspir` | 10,336 | accent_variant |
-| `çuspo` | 1 | `cuspo` | 1,315 | accent_variant |
+| `çuspir` | 1 | `cuspir` | 10,428 | accent_variant |
+| `çuspo` | 1 | `cuspo` | 1,320 | accent_variant |
 | `çuster` | 1 | `custer` | 1,122 | accent_variant |
 | `çäa` | 1 | `caa` | 122 | accent_variant |
 | `çélula` | 1 | `célula` | 15,472 | accent_variant |
@@ -30586,13 +30418,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `èap` | 1 | `eap` | 1 | accent_variant |
 | `èeta` | 1 | `eeta` | 11 | accent_variant |
 | `èh` | 1 | `eh` | 16,389 | accent_variant |
-| `èi` | 1 | `ei` | 170,334 | accent_variant |
+| `èi` | 1 | `ei` | 170,339 | accent_variant |
 | `èisto` | 1 | `eisto` | 13 | accent_variant |
 | `èito` | 1 | `eito` | 39 | accent_variant |
 | `èke` | 1 | `eke` | 19 | accent_variant |
-| `èle` | 1 | `ele` | 3,858,001 | accent_variant |
+| `èle` | 1 | `ele` | 3,858,000 | accent_variant |
 | `ènte` | 1 | `ente` | 3,842 | accent_variant |
-| `èste` | 1 | `este` | 2,344,427 | accent_variant |
+| `èste` | 1 | `este` | 2,344,426 | accent_variant |
 | `èstá` | 1 | `estã` | 854 | accent_variant |
 | `èuo` | 1 | `euo` | 7 | accent_variant |
 | `èåò` | 1 | `eão` | 5 | accent_variant |
@@ -30644,20 +30476,20 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `élvis` | 1 | `elvis` | 5,153 | accent_variant |
 | `élégance` | 1 | `elegance` | 9 | accent_variant |
 | `émau` | 1 | `emau` | 229 | accent_variant |
-| `émbora` | 1 | `embora` | 338,809 | accent_variant |
+| `émbora` | 1 | `embora` | 338,808 | accent_variant |
 | `émeio` | 1 | `emeio` | 3 | accent_variant |
 | `émigracao` | 1 | `emigração` | 262 | accent_variant |
 | `éminence` | 1 | `eminence` | 3 | accent_variant |
 | `émpata` | 1 | `empáta` | 1 | accent_variant |
-| `éncendeia` | 1 | `encendeia` | 3 | accent_variant |
+| `éncendeia` | 1 | `encendeia` | 1 | accent_variant |
 | `éncia` | 1 | `encia` | 60 | accent_variant |
 | `énhora` | 1 | `enhora` | 3 | accent_variant |
 | `énisso` | 1 | `enisso` | 1 | accent_variant |
 | `éno` | 1 | `eno` | 95 | accent_variant |
 | `énoite` | 1 | `enoite` | 1 | accent_variant |
 | `éntramos` | 1 | `entràmos` | 7 | accent_variant |
-| `éntrar` | 1 | `entrar` | 504,245 | accent_variant |
-| `éntréga` | 1 | `entrega` | 28,385 | accent_variant |
+| `éntrar` | 1 | `entrar` | 504,248 | accent_variant |
+| `éntréga` | 1 | `entrega` | 28,742 | accent_variant |
 | `énão` | 1 | `enão` | 83 | accent_variant |
 | `ép` | 1 | `ep` | 1,685 | accent_variant |
 | `épecial` | 1 | `epecial` | 2 | accent_variant |
@@ -30710,7 +30542,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `éçaa` | 1 | `ecaa` | 2 | accent_variant |
 | `ééo` | 1 | `eéo` | 4 | accent_variant |
 | `éïè` | 1 | `eie` | 1,815 | accent_variant |
-| `éú` | 1 | `eu` | 6,282,997 | accent_variant |
+| `éú` | 1 | `eu` | 6,283,004 | accent_variant |
 | `ê-ihe` | 1 | `é-ihe` | 16 | accent_variant |
 | `êfā` | 1 | `efa` | 2 | accent_variant |
 | `êhh` | 1 | `ehh` | 125 | accent_variant |
@@ -30719,13 +30551,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `êla` | 1 | `ela` | 2,046,331 | accent_variant |
 | `ên` | 1 | `en` | 2,930 | accent_variant |
 | `êpicondilo` | 1 | `epicôndilo` | 32 | accent_variant |
-| `êta` | 1 | `eta` | 696 | accent_variant |
+| `êta` | 1 | `eta` | 695 | accent_variant |
 | `êtres` | 1 | `etrês` | 4 | accent_variant |
 | `êxodus` | 1 | `exodus` | 262 | accent_variant |
 | `êxtasy` | 1 | `extasy` | 79 | accent_variant |
 | `êê` | 1 | `ee` | 490 | accent_variant |
 | `ëno` | 1 | `eno` | 95 | accent_variant |
-| `ëu` | 1 | `eu` | 6,282,997 | accent_variant |
+| `ëu` | 1 | `eu` | 6,283,004 | accent_variant |
 | `ëáë` | 1 | `eae` | 3 | accent_variant |
 | `ìaé` | 1 | `ìae` | 6 | accent_variant |
 | `ìdìotice` | 1 | `idiotice` | 2,322 | accent_variant |
@@ -30747,14 +30579,14 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `íidiche` | 1 | `iídiche` | 161 | accent_variant |
 | `íinha` | 1 | `ìinha` | 3 | accent_variant |
 | `ílegivel` | 1 | `ilegível` | 326 | accent_variant |
-| `ílha` | 1 | `ilha` | 54,485 | accent_variant |
+| `ílha` | 1 | `ilha` | 54,482 | accent_variant |
 | `íliaca` | 1 | `iliaca` | 1 | accent_variant |
 | `ílias` | 1 | `ilias` | 15 | accent_variant |
 | `íma` | 1 | `imã` | 738 | accent_variant |
 | `ímortal` | 1 | `imortal` | 7,547 | accent_variant |
 | `ímovel` | 1 | `imóvel` | 3,985 | accent_variant |
 | `ímplicito` | 1 | `implícito` | 789 | accent_variant |
-| `ímportar` | 1 | `importar` | 253,348 | accent_variant |
+| `ímportar` | 1 | `importar` | 253,371 | accent_variant |
 | `ímpus` | 1 | `impús` | 1 | accent_variant |
 | `ímune` | 1 | `imune` | 3,612 | accent_variant |
 | `ímân` | 1 | `íman` | 1,840 | accent_variant |
@@ -30810,13 +30642,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `íé` | 1 | `ie` | 132 | accent_variant |
 | `ííntima` | 1 | `iintima` | 1 | accent_variant |
 | `îh` | 1 | `ih` | 107 | accent_variant |
-| `îlha` | 1 | `ilha` | 54,485 | accent_variant |
+| `îlha` | 1 | `ilha` | 54,482 | accent_variant |
 | `îmedîatamente` | 1 | `imediatamente` | 58,253 | accent_variant |
 | `îmi` | 1 | `imi` | 23 | accent_variant |
-| `îndio` | 1 | `índio` | 15,267 | accent_variant |
+| `îndio` | 1 | `índio` | 15,262 | accent_variant |
 | `înfimo` | 1 | `ínfimo` | 772 | accent_variant |
-| `înventar` | 1 | `inventar` | 38,726 | accent_variant |
-| `îsso` | 1 | `isso` | 3,438,858 | accent_variant |
+| `înventar` | 1 | `inventar` | 39,098 | accent_variant |
+| `îsso` | 1 | `isso` | 3,438,864 | accent_variant |
 | `îsto` | 1 | `isto` | 2,064,783 | accent_variant |
 | `îò` | 1 | `io` | 766 | accent_variant |
 | `ïele` | 1 | `iele` | 3 | accent_variant |
@@ -30826,7 +30658,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ïî` | 1 | `ii` | 5,624 | accent_variant |
 | `ñàãà` | 1 | `naaa` | 28 | accent_variant |
 | `ñï` | 1 | `ni` | 1,265 | accent_variant |
-| `ñós` | 1 | `nos` | 1,714,154 | accent_variant |
+| `ñós` | 1 | `nos` | 1,714,351 | accent_variant |
 | `òbviamente` | 1 | `obviamente` | 29,734 | accent_variant |
 | `òp` | 1 | `op` | 450 | accent_variant |
 | `òpio` | 1 | `ópio` | 2,564 | accent_variant |
@@ -30864,7 +30696,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ópioides` | 1 | `opióides` | 43 | accent_variant |
 | `óptimot` | 1 | `optimot` | 1 | accent_variant |
 | `óptmizar` | 1 | `optmizar` | 1 | accent_variant |
-| `órbitar` | 1 | `orbitar` | 950 | accent_variant |
+| `órbitar` | 1 | `orbitar` | 951 | accent_variant |
 | `órdinaria` | 1 | `ordinaria` | 8 | accent_variant |
 | `órdinária` | 1 | `ordinaria` | 8 | accent_variant |
 | `órganica` | 1 | `organica` | 11 | accent_variant |
@@ -30894,7 +30726,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `ôni` | 1 | `oni` | 282 | accent_variant |
 | `ôoa` | 1 | `ooa` | 14 | accent_variant |
 | `ôuuuu` | 1 | `ouuuu` | 4 | accent_variant |
-| `ôá` | 1 | `oa` | 404 | accent_variant |
+| `ôá` | 1 | `oa` | 397 | accent_variant |
 | `ôîò` | 1 | `oio` | 9 | accent_variant |
 | `ôôaa` | 1 | `ooaa` | 3 | accent_variant |
 | `õe` | 1 | `oe` | 118 | accent_variant |
@@ -30924,14 +30756,13 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `únicaquetenho` | 1 | `unicaquetenho` | 1 | accent_variant |
 | `únificar` | 1 | `unificar` | 863 | accent_variant |
 | `úniforme` | 1 | `uniforme` | 15,353 | accent_variant |
-| `únir` | 1 | `unir` | 20,139 | accent_variant |
+| `únir` | 1 | `unir` | 20,189 | accent_variant |
 | `únuca` | 1 | `unuca` | 1 | accent_variant |
 | `úpi` | 1 | `upi` | 25 | accent_variant |
 | `úpido` | 1 | `upido` | 2 | accent_variant |
 | `úranio` | 1 | `urânio` | 2,460 | accent_variant |
 | `úrgencia` | 1 | `urgência` | 12,357 | accent_variant |
 | `úrgências` | 1 | `urgencias` | 38 | accent_variant |
-| `úsa` | 1 | `usà` | 21 | accent_variant |
 | `úte` | 1 | `ute` | 52 | accent_variant |
 | `útíl` | 1 | `útil` | 29,216 | accent_variant |
 | `úu` | 1 | `uu` | 294 | accent_variant |
@@ -30950,15 +30781,15 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `þâ` | 1 | `þá` | 3 | accent_variant |
 | `þín` | 1 | `þin` | 1 | accent_variant |
 | `þă` | 1 | `þá` | 3 | accent_variant |
-| `ÿ` | 1 | `y` | 6,799 | accent_variant |
+| `ÿ` | 1 | `y` | 6,800 | accent_variant |
 | `ÿmça` | 1 | `ymca` | 173 | accent_variant |
 | `ÿÿ` | 1 | `yy` | 5 | accent_variant |
 | `ăc` | 1 | `ac` | 1,159 | accent_variant |
-| `ăm` | 1 | `am` | 4,015 | accent_variant |
+| `ăm` | 1 | `am` | 4,016 | accent_variant |
 | `ătră` | 1 | `atra` | 23 | accent_variant |
-| `č` | 1 | `c` | 46,021 | accent_variant |
+| `č` | 1 | `c` | 46,102 | accent_variant |
 | `őptimo` | 1 | `optimo` | 1,726 | accent_variant |
-| `šala` | 1 | `sala` | 119,786 | accent_variant |
+| `šala` | 1 | `sala` | 119,787 | accent_variant |
 | `širi` | 1 | `siri` | 315 | accent_variant |
 | `šopska` | 1 | `sopska` | 2 | accent_variant |
 | `štefan` | 1 | `stefan` | 9,729 | accent_variant |

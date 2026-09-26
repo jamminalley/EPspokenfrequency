@@ -3,34 +3,34 @@
   "simplemma_version": "2.0.0",
   "fingerprint": {
     "lines": 118469705,
-    "tokens": 636214452,
-    "types": 838358
+    "tokens": 636582535,
+    "types": 827895
   },
-  "bigram_pairs": 8365112,
+  "bigram_pairs": 8351843,
   "context_types": 70000,
   "tier_min_count": 144,
-  "tagged_types": 62494,
-  "tagged_sentences": 498791,
+  "tagged_types": 62523,
+  "tagged_sentences": 499160,
   "conventions": {
     "1_clitic_allomorphs": {
       "surfaces": 4,
-      "tokens": 1895087
+      "tokens": 1895133
     },
     "1_contractions": {
       "surfaces": 8,
-      "tokens": 4525790
+      "tokens": 4526109
     },
     "1_pronouns": {
       "surfaces": 7,
-      "tokens": 13530404
+      "tokens": 13531154
     },
     "2_gender": {
       "surfaces": 30,
-      "tokens": 104849
+      "tokens": 106312
     },
     "2_gender_exception": {
       "surfaces": 38,
-      "tokens": 22202883
+      "tokens": 22522410
     },
     "3_diminutives": {
       "surfaces": 1349,
@@ -41,8 +41,8 @@
       "tokens": 453357
     },
     "5_spelling_reform": {
-      "surfaces": 2748,
-      "tokens": 1471646
+      "surfaces": 2746,
+      "tokens": 1472398
     }
   },
   "serir": {
@@ -70,28 +70,28 @@
   },
   "split_surfaces": 4931,
   "split_multi_lemma": 1527,
-  "split_tokens": 9961305,
-  "lemma_closure_redirects": 7723,
+  "split_tokens": 9963180,
+  "lemma_closure_redirects": 7668,
   "mwes_retained": 657,
-  "diacritic_folded": 30210,
-  "foreign_dropped": 11153,
+  "diacritic_folded": 30047,
+  "foreign_dropped": 11154,
   "short_dropped": 717,
   "bp_excluded": 16,
-  "proper_nouns_dropped": 251322,
-  "pos_votes_counted": 444620,
-  "pos_votes_inconsistent": 13876,
+  "proper_nouns_dropped": 251294,
+  "pos_votes_counted": 444955,
+  "pos_votes_inconsistent": 13927,
   "contraction_pos": {
     "det": 58,
     "pron": 19,
     "adv": 3
   },
   "pos_source": "tagger",
-  "pos_split_lemmas_all": 656,
-  "pos_split_in_list": 309,
-  "pos_heuristic_in_list": 148,
+  "pos_split_lemmas_all": 657,
+  "pos_split_in_list": 311,
+  "pos_heuristic_in_list": 97,
   "entries": 10000,
   "apkg": {
-    "bytes": 3453146,
+    "bytes": 3457242,
     "notes": {
       "Portuguese::European Portuguese - Spoken::01 · 1–500": 500,
       "Portuguese::European Portuguese - Spoken::02 · 501–1000": 500,
@@ -119,5 +119,5 @@
   "gold": {
     "pipeline, stage 2 (gated)": 0.9849397590361446
   },
-  "elapsed_s": 55.7
+  "elapsed_s": 3524.3
 }

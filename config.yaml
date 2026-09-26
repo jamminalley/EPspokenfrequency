@@ -76,6 +76,32 @@ tokenizer:
               "me", "te", "se", "os", "as", "o", "a", "no", "na", "nas"]
   # Mesoclitic future/conditional infixes: dar-lhe-ia, far-se-a
   mesoclitic_suffixes: ["ia", "iam", "ias", "iamos", "a", "ao", "as", "emos", "ei"]
+  # Subtitles write the same enclitic cluster with and without its hyphen.
+  # Without it the cluster survives as one type and reaches the list as a
+  # word: `conheçoa` sat at rank 5,290 in 1.0.0, glossed "I know her". A rule
+  # cannot tell these from real words -- stripping a clitic-shaped tail also
+  # breaks `sera` (a missing accent on será), `rodeo` and `eramos` -- so the
+  # repair works from a generated table of clusters the corpus writes both
+  # ways. scripts/make_glue_table.py builds it; the thresholds below are its
+  # tests, and config.py hashes the table into every cache key.
+  # Set by --stage 2 from fixes.repair_glued_enclitics; false here so the
+  # stage 1 baseline tokenizes exactly as the April pipeline did.
+  repair_glue: false
+  glue_repair:
+    table: scripts/data/enclitic_clusters.tsv
+    min_hyphenated: 100      # occurrences of the hyphenated spelling
+    min_glued: 20            # occurrences of the glued spelling
+    # hyphenated / glued. The hyphen has to be the clearly normal spelling
+    # before the glued one is read as a slip. At 0.10 this let `saiste` in
+    # (206 hyphenated `sais-te`, 1,070 glued) -- but `saiste` is a missing
+    # accent on *saíste*, the preterite, not a cluster at all.
+    min_ratio: 2.0
+    # A glued form that is capitalized mid-line is a name, not a cluster:
+    # `mateo` is written 1,113 times away from a line start and capitalized
+    # every time. Casing needs enough instances to mean anything, so a form
+    # seen fewer than min_cap_evidence times mid-line is not judged by it.
+    max_cap_ratio: 0.50
+    min_cap_evidence: 10
   keep_digits: false
   min_token_len: 1
 
@@ -247,6 +273,10 @@ fixes:
   # Apply the human decisions in filters.proper_nouns.keep_file: `keep`
   # words are never dropped as proper nouns, `drop` words always are.
   proper_noun_review: true
+  # Split a glued enclitic cluster (conheçoa, fazêlo) as if its hyphen were
+  # there, from the table in tokenizer.glue_repair. Off in stage 1, which has
+  # to keep reproducing the April output.
+  repair_glued_enclitics: true
   # Publish every contraction under one part of speech (pos.contraction_pos)
   # instead of whatever the tagger and the rule heuristic make of it. Stanza
   # expands contractions before tagging, so the surface token collects

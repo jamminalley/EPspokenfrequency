@@ -67,9 +67,65 @@ when the glosses have been reviewed.
   or the lines were unintelligible fragments. Those entries have a gloss and
   no example; the reverse Anki card still works, the sentence fields are
   just empty.
+- **`largar` is now published twice, and one of the two rows is wrong.**
+  Splitting the glued clusters pushed the surface `larga` to 55,702
+  occurrences, and with a larger sample Stanza's adjective reading of it
+  (*uma rua larga*, "a wide street") crossed the POS-splitting threshold. So
+  rank 1,063 reads `largar` / `adj` / 49,057 — a verb lemma with an adjective
+  tag, which is not a thing. The adjective's lemma should be *largo*, and
+  those tokens were already being counted under *largar* before this release;
+  the split has made a pre-existing lemma error visible rather than created
+  one. `larga` and `largas` belong in `fixes.ambiguous_forms`, where the
+  per-occurrence splitter already divides a form's count between two lemmas
+  by tag votes, as it does for `foi`/`fui`. Not done here: it changes counts
+  for two more entries and wants its own verification.
 - **The glosses are not reproducible byte for byte.** The lists are; these
   are one model's answers on one day, and the response cache in `cache/gloss/`
   is what makes a rerun repeat them rather than re-derive them.
+
+### Fixed
+
+- **51 rows were not words at all: `conheçoa`, `deixaa`, `levaa` and 48 more.**
+  `conheçoa` sat at rank 5,290 in 1.0.0, glossed "I know her". They were
+  `conheço-a`, `deixa-a`, `leva-a` — properly hyphenated in the corpus — and
+  the tokenizer glued them back together.
+
+  `a` and `as` are both enclitic pronouns and future/conditional tense
+  infixes, and `split_enclitic` reassembled a mesoclitic verb whenever the
+  tail it had peeled ended in one. Mesoclisis always puts the clitic
+  *between* stem and infix (`dar-lhe-ia` = *daria* + *lhe*), so a tail of one
+  can never be an infix; that single condition was missing. Every affected
+  row ended in `-a` or `-as`, which is what gave the cause away — genuine
+  hyphen loss would not favour one clitic so heavily.
+
+  The tokens went where they belong: *deixar* +28,981, *levar* +19,546,
+  *matar* +11,196, *conhecer* +7,941.
+
+- **Clusters the corpus writes without their hyphen are now repaired**
+  (`fixes.repair_glued_enclitics`): `deixame`, `dáme`, `calate`, `sêlo` and
+  26 more, 1,556 tokens. This is the smaller half of the problem and it
+  cannot be done by rule — stripping a clitic-shaped tail and checking that
+  the stem is a verb form also breaks `sera` (a missing accent on *será*),
+  `saiste` (*saíste*), `rodeo`, `eramos` and `fodeste`. So
+  `scripts/make_glue_table.py` generates `scripts/data/enclitic_clusters.tsv`
+  from clusters the corpus writes **both** ways, and the tokenizer consults
+  the table rather than guessing. A cluster has to be attested hyphenated at
+  least 100 times, at least twice as often as glued, be neither a dictionary
+  word nor a recognised verb form, and not be capitalized mid-line — that
+  last test is the one that matters: `mateo` occurs 1,113 times away from the
+  start of a line and is capitalized every single time. It is *Mateo*, not
+  `mate-o`. `nola`, `pirate`, `rise` and `rite` are the same story. The
+  table's digest is hashed into every cache key, so regenerating it
+  invalidates the passes that depend on it.
+
+  **Effect on the list:** 52 rows out, 52 in. 636,582,535 tokens (+368,083)
+  over 827,895 types (−10,463). The gold-set score is unchanged at 98.5%, the
+  quality gate still finds 0 suspects, and the `ser`/`ir` rule fingerprint is
+  unchanged (`2defd01d6b1615a7`, 95.9%), so the rule still applies: *ser*
+  21,334,148 and *ir* 9,023,260, both within 400 of before. One multi-word
+  entry (`guarda costeira`) dropped out as bigram counts shifted and
+  `efeitos colaterais` took its place; the other 51 replacements are new
+  entries at the bottom of the list, ranks 9,904–10,000.
 
 ### Changed
 

@@ -87,6 +87,8 @@ def effective_config(cfg: dict[str, Any]) -> dict[str, Any]:
     the two stages never share a stale cache."""
     if cfg["run"]["stage"] >= 2 and cfg["fixes"].get("split_enclitics"):
         cfg = config_mod.with_overrides(cfg, {"tokenizer.split_enclitics": True})
+    if cfg["run"]["stage"] >= 2 and cfg["fixes"].get("repair_glued_enclitics"):
+        cfg = config_mod.with_overrides(cfg, {"tokenizer.repair_glue": True})
     return cfg
 
 
