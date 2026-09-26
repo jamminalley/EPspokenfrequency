@@ -76,3 +76,4 @@ build/
 # row is free while these are here; the published glosses live in
 # out/glosses.tsv, which is committed.
 cache/
+_to_delete/
