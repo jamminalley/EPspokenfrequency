@@ -284,7 +284,12 @@ fixes:
   # nas, no, num and 25 others -- and worse than unk for the rest: `pelo`
   # noun, `deste` verb, `ao` conj, `contigo` split across intj, adj and adv.
   contraction_pos: true
-  ambiguous_forms: ["foi", "fui", "fomos", "foram", "fora", "for", "esta"]
+  # larga/largas: the adjective (uma rua larga) and the verb (larga isso!)
+  # share a surface, and the lemmatizer gave the whole 55,702 to largar, which
+  # then published a `largar` adj row. Listed here, the count is divided
+  # between largar and largo by tag, as fomos is between ir and ser.
+  ambiguous_forms: ["foi", "fui", "fomos", "foram", "fora", "for", "esta",
+                    "larga", "largas"]
   irregular_participles: ["morto", "feito", "dito", "visto", "escrito",
                           "aberto", "posto", "coberto", "preso", "solto",
                           "aceite", "entregue", "ganho", "gasto", "pago",

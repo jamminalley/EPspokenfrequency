@@ -188,6 +188,7 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
     # One Stanza tagging pass over every frequent word's sample sentences
     # supplies lemmas, per-occurrence splits and POS alike.
     tags: dict | None = None
+    vote_filter = None
     if lem["backend"] == "gated" and lem["gate"]["primary"] == "stanza_tags":
         tier_types = [t for t in types if uni.counts[t] >= (min_count or 1)]
         tags = occurrence_mod.tag_cached(tier_types, bg.contexts, cfg)
@@ -195,7 +196,6 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
         stats["tagged_sentences"] = sum(len(v) for v in tags.values())
         is_verb = pos_mod.verb_lemmas(tags)
         closed = frozenset(PosTagger.load().closed)
-        vote_filter = None
         if lem.get("tags_vote_filter") == "consistency":
             vote_filter = lambda s, l, u: pos_mod.consistent(s, l, u, is_verb, closed)
         backend = lemmas_mod.GatedBackend(
@@ -246,7 +246,9 @@ def run(cfg: dict[str, Any]) -> dict[str, Any]:
             tagged = occurrence_mod.tag_cached(cands, bg.contexts, cfg)
         simple = lemmas_mod.SimplemmaBackend()
         sm = lambda w: simple.lemmatize_types([w])[w]
-        joint = occurrence_mod.resolve_joint(tagged, lemma_map, cfg, lemmas_mod.in_dictionary, sm)
+        joint = occurrence_mod.resolve_joint(tagged, lemma_map, cfg,
+                                             lemmas_mod.in_dictionary, sm,
+                                             consistent=vote_filter)
         for surface, j in joint.items():
             norm_joint: Counter = Counter()
             for (lemma, upos), n in j.items():

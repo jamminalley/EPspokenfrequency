@@ -24873,7 +24873,7 @@ Merged since the ratio was lowered from 20x to 10x. Each is a missing-accent for
 | `laparóscopia` | 1 | `laparoscopia` | 136 | accent_variant |
 | `larapio` | 1 | `larápio` | 537 | unaccented |
 | `largàemos` | 1 | `largaemos` | 4 | accent_variant |
-| `largár` | 1 | `largar` | 127,847 | accent_variant |
+| `largár` | 1 | `largar` | 111,473 | accent_variant |
 | `largâ` | 1 | `lárga` | 6 | accent_variant |
 | `laróca` | 1 | `laroca` | 432 | accent_variant |
 | `lassérre` | 1 | `lasserre` | 1 | accent_variant |

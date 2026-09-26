@@ -174,10 +174,21 @@ def resolve_joint(
     cfg: dict[str, Any],
     in_dictionary: Callable[[str], bool],
     fallback: Callable[[str], str],
+    consistent: Callable[[str, str, str], bool] | None = None,
 ) -> dict[str, Counter]:
     """Counter{(lemma, upos): votes} for each tagged surface, keeping each
     sentence's lemma and POS together so a count can be split across both.
-    Only surfaces with at least one tagged occurrence are returned."""
+    Only surfaces with at least one tagged occurrence are returned.
+
+    ``consistent(surface, lemma, upos)`` drops a sentence whose lemma and tag
+    contradict each other, the same rule the lemma votes use. It applies to a
+    listed ambiguous form only, because only that branch takes Stanza's lemma
+    at face value: of 50 sampled `larga` sentences, 21 come back with lemma
+    *largo* tagged VERB -- Stanza reading "eu largo" as a form of the
+    adjective -- and counting those would have put most of a verb's
+    occurrences on *largo*. As in TagsBackend, if every vote for a surface is
+    dropped they all count, so a surface is never left with nothing.
+    """
     ambiguous = set(cfg["fixes"].get("ambiguous_forms", ()))
     out: dict[str, Counter] = {}
     for surface in sorted(tagged):
@@ -187,6 +198,12 @@ def resolve_joint(
         default = lemma_map.get(surface, surface)
         joint: Counter = Counter()
         participle = surface not in ambiguous
+        if not participle and consistent is not None:
+            # Only the ambiguous branch below takes Stanza's lemma at face
+            # value, so only it needs the filter. The participle branch
+            # derives its lemma from the surface instead, and filtering it
+            # would change how every participle resolves.
+            occs = [o for o in occs if consistent(surface, o[0], o[1])] or occs
         for lemma, upos, feats in occs:
             gated = lemma if in_dictionary(lemma) else None
             if participle:

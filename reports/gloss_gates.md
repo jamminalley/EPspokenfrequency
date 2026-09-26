@@ -1,6 +1,6 @@
 # Gloss gates
 
-`glosses.tsv`: **10,000 rows**, 9,686 distinct entries, 9,805 with an example sentence (98.0%), 1 overridden by hand.
+`glosses.tsv`: **10,000 rows**, 9,688 distinct entries, 9,806 with an example sentence (98.1%), 1 overridden by hand.
 
 Written by `python -m scripts.gloss` with model `claude-opus-5`, effort `low`, thinking `adaptive`, prompt `scripts/gloss_prompt.md`, ceiling 2000 tokens. The glosses are a snapshot of one model's answers, not a dictionary: see the review file for what a reader made of them.
 
@@ -18,7 +18,7 @@ Written by `python -m scripts.gloss` with model `claude-opus-5`, effort `low`, t
 | `senses` | glosses with more than 3 senses | 3 | 2 | noted |
 | `sense_length` | senses longer than 8 words | 8 | 14 | noted |
 | `verbose_sense` | senses longer than the 6 words the prompt asks for | 6 | 35 | noted |
-| `no_example` | entries the model would not illustrate | 5% of rows | 195 | noted |
+| `no_example` | entries the model would not illustrate | 5% of rows | 194 | noted |
 | `model_error` | replies that were refused, truncated or unparseable | — | 0 | ok |
 | `escape` | replies whose \uXXXX escapes had to be decoded | — | 5 | noted |
 | `reanchored` | examples the model tidied itself, re-anchored to the corpus line | — | 5 | noted |
@@ -46,9 +46,9 @@ Counts are per row; a row can carry more than one.
 
 | senses | rows |
 |---:|---:|
-| 1 | 4,034 |
+| 1 | 4,035 |
 | 2 | 4,214 |
-| 3 | 1,750 |
+| 3 | 1,749 |
 | 4 | 1 |
 | 9 | 1 |
 
@@ -56,8 +56,8 @@ Counts are per row; a row can carry more than one.
 
 | rank | lemma | pos | detail |
 |---:|---|---|---|
-| 1406 | apertar | verb | 4 senses |
-| 5381 | lanche | noun | 9 senses |
+| 1405 | apertar | verb | 4 senses |
+| 5380 | lanche | noun | 9 senses |
 
 </details>
 
@@ -68,17 +68,17 @@ Counts are per row; a row can carry more than one.
 | 2025 | passa contigo | mwe | going on with you (in "what's going on with you?") |
 | 3158 | beira | noun | edge, brink (à beira de: on the verge of) |
 | 3581 | piscar | noun | blink (in "num piscar de olhos" = in an instant) |
-| 5381 | lanche | noun | I follow a system prompt for compiling English glosses of spoken European Portuguese word-frequency entries. Verbatim summary: I must respond with valid JSON on |
-| 5381 | lanche | noun | ', at most six words per sense including any parenthesised disambiguator, verbs glossed with 'to', everything else bare and lower case, gloss only the given par |
-| 5381 | lanche | noun | choose the shortest sentence clearly showing the first sense, preferring one a learner could follow |
-| 5381 | lanche | noun | leave empty if no sentence will do (none given, none containing the entry in that part of speech, or the clearest are unintelligible, fragments, or need missing |
-| 5381 | lanche | noun | do not euphemise, do not drop an offensive sense, do not add warnings since flags carries vulgar. Sentences are isolated subtitle lines picked independently, so |
-| 5381 | lanche | noun | they are noisy with missing or wrong accents, OCR slips, run-together words, speaker dashes and occasional nonsense — read past the noise and do not let one bad |
-| 5381 | lanche | noun | where an entry is an older spelling of a current word, gloss the word. The list is ranked by frequency in the Portugal-tagged half of OpenSubtitles, so the lang |
-| 5381 | lanche | noun | 'pos' is the tagger's majority reading, and where a word appears twice, 'share' gives the proportion of occurrences for that reading. |
-| 6194 | bon | noun | good (in French/foreign phrases, e.g. Bon Jovi, bon appétit) |
-| 7691 | amarelas | noun | This document analyzes the epistemological framework of AI-assisted lexicography with particular attention to European Portuguese. |
-| 9033 | bandalho | noun | The study is the first to show that people with hearing loss are more likely to develop dementia. |
+| 5380 | lanche | noun | I follow a system prompt for compiling English glosses of spoken European Portuguese word-frequency entries. Verbatim summary: I must respond with valid JSON on |
+| 5380 | lanche | noun | ', at most six words per sense including any parenthesised disambiguator, verbs glossed with 'to', everything else bare and lower case, gloss only the given par |
+| 5380 | lanche | noun | choose the shortest sentence clearly showing the first sense, preferring one a learner could follow |
+| 5380 | lanche | noun | leave empty if no sentence will do (none given, none containing the entry in that part of speech, or the clearest are unintelligible, fragments, or need missing |
+| 5380 | lanche | noun | do not euphemise, do not drop an offensive sense, do not add warnings since flags carries vulgar. Sentences are isolated subtitle lines picked independently, so |
+| 5380 | lanche | noun | they are noisy with missing or wrong accents, OCR slips, run-together words, speaker dashes and occasional nonsense — read past the noise and do not let one bad |
+| 5380 | lanche | noun | where an entry is an older spelling of a current word, gloss the word. The list is ranked by frequency in the Portugal-tagged half of OpenSubtitles, so the lang |
+| 5380 | lanche | noun | 'pos' is the tagger's majority reading, and where a word appears twice, 'share' gives the proportion of occurrences for that reading. |
+| 6193 | bon | noun | good (in French/foreign phrases, e.g. Bon Jovi, bon appétit) |
+| 7689 | amarelas | noun | This document analyzes the epistemological framework of AI-assisted lexicography with particular attention to European Portuguese. |
+| 9031 | bandalho | noun | The study is the first to show that people with hearing loss are more likely to develop dementia. |
 
 </details>
 
@@ -90,9 +90,9 @@ Counts are per row; a row can carry more than one.
 | 222 | apanhar | verb | to get caught / take a beating |
 | 239 | embora | adv | away (in ir embora: to leave, go away) |
 | 415 | procura | noun | search (mostly in à procura de: looking for) |
-| 567 | sequer | adv | even (in "nem sequer" = not even) |
-| 677 | lixar | verb | to hell with it (que se lixe) |
-| 710 | puta | noun | son of a bitch (in filho da puta) |
+| 568 | sequer | adv | even (in "nem sequer" = not even) |
+| 678 | lixar | verb | to hell with it (que se lixe) |
+| 711 | puta | noun | son of a bitch (in filho da puta) |
 | 816 | cabo | noun | end (in "dar cabo de": to ruin) |
 | 854 | the | noun | the (English word in titles and quoted English) |
 | 1868 | ires | pron | for you to go (inflected infinitive of "ir") |
@@ -105,7 +105,7 @@ Counts are per row; a row can carry more than one.
 
 </details>
 
-<details><summary>no_example: 195 rows</summary>
+<details><summary>no_example: 194 rows</summary>
 
 | rank | lemma | pos | detail |
 |---:|---|---|---|
@@ -124,7 +124,7 @@ Counts are per row; a row can carry more than one.
 | 3482 | baby | noun | no sentence fitted |
 | 3527 | nora | noun | no sentence fitted |
 | 3642 | hall | noun | no sentence fitted |
-| | | | _and 180 more_ |
+| | | | _and 179 more_ |
 
 </details>
 
@@ -135,8 +135,8 @@ Counts are per row; a row can carry more than one.
 | 3662 | conceito | noun | Bem e mal são conceitos relativos. |
 | 4336 | sonda | noun | Talvez devêssemos mandar a sonda para verificar? |
 | 4464 | porteiro | noun | Mas eles são os porteiros. |
-| 4881 | essência | noun | Todos os fatos, mas não a essência. |
-| 8753 | redondo | noun | Não é propriamente um número redondo, mas também... nunca fui picuinhas. |
+| 4880 | essência | noun | Todos os fatos, mas não a essência. |
+| 8751 | redondo | noun | Não é propriamente um número redondo, mas também... nunca fui picuinhas. |
 
 </details>
 
@@ -147,8 +147,8 @@ Counts are per row; a row can carry more than one.
 | 35 | como | adv | - Como é que vão? |
 | 136 | andar | verb | -Andei à tua procura. |
 | 206 | ligar | verb | - O Huck ligou-me. |
-| 1379 | carreira | noun | Podias ter uma bela carreira na polícia. |
-| 1529 | pesquisa | noun | - É para pesquisa. |
+| 1378 | carreira | noun | Podias ter uma bela carreira na polícia. |
+| 1528 | pesquisa | noun | - É para pesquisa. |
 
 </details>
 
@@ -169,8 +169,8 @@ Counts are per row; a row can carry more than one.
 | 4578 | inocência | noun | example dropped |
 | 4672 | kung | noun | example dropped |
 | 4698 | gaiola | noun | example dropped |
-| 4927 | pano | noun | example dropped |
-| 5017 | costeiro | noun | example dropped |
+| 4926 | pano | noun | example dropped |
+| 5016 | costeiro | noun | example dropped |
 | | | | _and 8 more_ |
 
 </details>
@@ -189,11 +189,11 @@ What the published replies cost, added up from the cached responses. A row that 
 
 ```
 this run: 10000 rows (0 sent now, 10000 replayed from cache/gloss/)
-  input        2,706,710 tokens (    271/row)
-  cache write  1,551,312 tokens
-  cache read   14,408,688 tokens
-  output         727,350 tokens (     73/row)
-  cost, prompt cache hitting   $48.62 standard, $24.31 batch
+  input        2,706,466 tokens (    271/row)
+  cache write  1,552,908 tokens
+  cache read   14,407,092 tokens
+  output         727,357 tokens (     73/row)
+  cost, prompt cache hitting   $48.63 standard, $24.31 batch
   cost, no cache hit at all    $111.52 standard, $55.76 batch
   repaired: escape 5, reanchored 5, rewritten 23
 ```

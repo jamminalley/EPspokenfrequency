@@ -67,18 +67,6 @@ when the glosses have been reviewed.
   or the lines were unintelligible fragments. Those entries have a gloss and
   no example; the reverse Anki card still works, the sentence fields are
   just empty.
-- **`largar` is now published twice, and one of the two rows is wrong.**
-  Splitting the glued clusters pushed the surface `larga` to 55,702
-  occurrences, and with a larger sample Stanza's adjective reading of it
-  (*uma rua larga*, "a wide street") crossed the POS-splitting threshold. So
-  rank 1,063 reads `largar` / `adj` / 49,057 — a verb lemma with an adjective
-  tag, which is not a thing. The adjective's lemma should be *largo*, and
-  those tokens were already being counted under *largar* before this release;
-  the split has made a pre-existing lemma error visible rather than created
-  one. `larga` and `largas` belong in `fixes.ambiguous_forms`, where the
-  per-occurrence splitter already divides a form's count between two lemmas
-  by tag votes, as it does for `foi`/`fui`. Not done here: it changes counts
-  for two more entries and wants its own verification.
 - **The glosses are not reproducible byte for byte.** The lists are; these
   are one model's answers on one day, and the response cache in `cache/gloss/`
   is what makes a rerun repeat them rather than re-derive them.
@@ -126,6 +114,32 @@ when the glosses have been reviewed.
   entry (`guarda costeira`) dropped out as bigram counts shifted and
   `efeitos colaterais` took its place; the other 51 replacements are new
   entries at the bottom of the list, ranks 9,904–10,000.
+
+- **`larga` and `largas` are divided between *largar* and *largo* by tag**
+  (`fixes.ambiguous_forms`). The surface is both the verb (*larga isso!*) and
+  the feminine adjective (*uma rua larga*), and the whole 55,702 occurrences
+  were going to *largar* — which, once the enclitic fix pushed the count up,
+  published a `largar` / `adj` row at rank 1,063. The per-occurrence splitter
+  now divides the count the way it divides *fomos* between *ir* and *ser*:
+  *largar* 111,474 and *largo* 23,636, conserving the total.
+
+  This needed one more thing to be right. `resolve_joint` took Stanza's lemma
+  at face value for a listed ambiguous form, and 21 of 50 sampled `larga`
+  sentences come back with lemma *largo* tagged VERB — Stanza reading "eu
+  largo" as a form of the adjective. Counting those would have moved most of
+  a verb's occurrences onto *largo*, so the consistency rule that already
+  filters the lemma votes now filters these too. It applies to the ambiguous
+  branch only: the participle branch derives its lemma from the surface
+  rather than from Stanza, and filtering it moved 63 entries and 324 counts.
+
+  **Effect:** two entries out (`largar` adj, `largo` noun), two in at the
+  bottom (`obediente`, `hebraico`), two counts changed, and nothing else.
+  Token total, gold score (98.5%), quality gate (0 suspects) and the ser/ir
+  fingerprint are all unchanged. One consequence worth knowing: `largo` used
+  to be published twice, as a noun (*o largo*, a square — 4,986) and an
+  adjective (2,276). With 16,374 adjectival occurrences added, the noun share
+  falls to 21%, below the 25% POS-split threshold, so `largo` is now a single
+  adjective row and the "square" sense no longer has one of its own.
 
 ### Changed
 

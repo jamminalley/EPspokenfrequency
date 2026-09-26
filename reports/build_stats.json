@@ -68,9 +68,9 @@
       "ser": 0.0111
     }
   },
-  "split_surfaces": 4931,
-  "split_multi_lemma": 1527,
-  "split_tokens": 9963180,
+  "split_surfaces": 4933,
+  "split_multi_lemma": 1529,
+  "split_tokens": 10021402,
   "lemma_closure_redirects": 7668,
   "mwes_retained": 657,
   "diacritic_folded": 30047,
@@ -78,16 +78,16 @@
   "short_dropped": 717,
   "bp_excluded": 16,
   "proper_nouns_dropped": 251294,
-  "pos_votes_counted": 444955,
-  "pos_votes_inconsistent": 13927,
+  "pos_votes_counted": 444944,
+  "pos_votes_inconsistent": 13906,
   "contraction_pos": {
     "det": 58,
     "pron": 19,
     "adv": 3
   },
   "pos_source": "tagger",
-  "pos_split_lemmas_all": 657,
-  "pos_split_in_list": 311,
+  "pos_split_lemmas_all": 655,
+  "pos_split_in_list": 309,
   "pos_heuristic_in_list": 97,
   "entries": 10000,
   "apkg": {
@@ -119,5 +119,5 @@
   "gold": {
     "pipeline, stage 2 (gated)": 0.9849397590361446
   },
-  "elapsed_s": 3524.3
+  "elapsed_s": 57.4
 }
