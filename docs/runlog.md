@@ -3,6 +3,24 @@
 Newest first. One entry per working session: what changed, which issues it touched,
 and what comes next. The CHANGELOG records what shipped; this records what happened.
 
+## 2026-10-15 — Her first-round answers carried in the page (#7)
+
+The review page no longer depends on her opening it in the same browser. Each row
+now carries the verdict she gave in round one — 247 of them, being the 257 in
+`eval/gloss_review.tsv` less the ten re-opened — and `st()` falls back to it when
+the browser has nothing stored, so the filters, the progress bar and "Jump to first
+unreviewed" all count those rows as done. On a fresh browser the bar opens at 247
+of 500, with 253 left: the 243 she never saw plus the ten that changed.
+
+Copy answers is unchanged and still reads the browser's own store, so an embedded
+verdict is never copied back as though she had just given it. If she re-rates one
+of those rows, her new answer is stored and copied as usual.
+
+One repair alongside: a row marked Good never showed a coloured edge, because the
+script writes the class `v-good` while the stylesheet only knew `v-ok`. Barely
+visible before; with 243 rows now opening as good it would have looked as though
+nothing was marked.
+
 ## 2026-10-15 — Gloss review page, round two (#7, #8, #9)
 
 Republished the tutor's "Gloss Check for Learners" page to the same URL, so her
