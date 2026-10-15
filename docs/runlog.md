@@ -3,6 +3,24 @@
 Newest first. One entry per working session: what changed, which issues it touched,
 and what comes next. The CHANGELOG records what shipped; this records what happened.
 
+## 2026-10-15 — Gloss review page, round two (#7, #8, #9)
+
+Republished the tutor's "Gloss Check for Learners" page to the same URL, so her
+link and the answers saved in her browser keep working. 700 rows refreshed from
+the current glosses, ten re-opened with an Updated chip because their text changed
+after she rated them, and a new "Your sentences" section with the thirteen examples
+she chose or edited, for her to check the English we wrote for them.
+
+Counting against the previous page: 33 rows changed, 10 of them never reviewed and
+23 already carrying a verdict. Of those 23, thirteen are her own edits and seven
+were already flagged, which leaves three that nobody had noticed — `encontrar`,
+`deste` and `pegar`. Issue #8 said eight rows; the real number is ten.
+
+Two small repairs on the way through: the Find box had never filtered anything, and
+two offered sentences carried an undecodable byte from the corpus, which would have
+shown as a black diamond on a card had she picked one. No published gloss is
+affected.
+
 ## 2026-10-04 — Decision records, and a label for Jim's own tasks
 
 Wrote the eleven decision records skipped during the adoption, one per paragraph of
